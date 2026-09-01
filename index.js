@@ -10,6 +10,11 @@ const productsFile = path.join(__dirname, "products.json");
 app.use(express.json());
 app.use(express.static(__dirname));
 
+
+app.get("/googlea9562297fa6e53f6.html", (req, res) => {
+  res.type("text/plain");
+  res.send("google-site-verification: googlea9562297fa6e53f6.html");
+});
 function loadProducts() {
     try {
         const data = fs.readFileSync(productsFile, "utf8");
