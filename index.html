@@ -272,9 +272,7 @@ async function loadProducts() {
                     ? highestPrice - lowestPrice
                     : 0;
 
-            const image =
-                product.image ||
-                "https://via.placeholder.com/600x400?text=NorwayTechDeals";
+            const image = product.image ? product.image.replace(/^\/images\//, "/") : "https://via.placeholder.com/600x400?text=NorwayTechDeals";
 
             let offersHTML = "";
 
