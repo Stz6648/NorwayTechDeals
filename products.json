@@ -1,0 +1,83 @@
+[
+    {
+        "name": "Lenovo LOQ 15",
+        "category": "Laptop",
+        "description": "15.6 Gaming Laptop",
+        "cpu": "AMD Ryzen 7 250",
+        "gpu": "NVIDIA GeForce RTX 5060 8GB",
+        "ram": "16 GB DDR5",
+        "storage": "1 TB SSD",
+        "screen": "15.6 Full HD 144 Hz",
+        "image": "/images/lenovo-loq.jpg",
+        "offers": [
+            {
+                "store": "Proshop",
+                "price": 12990,
+                "url": "https://www.proshop.no/"
+            },
+            {
+                "store": "Komplett",
+                "price": 14990,
+                "url": "https://www.komplett.no/"
+            }
+        ],
+        "lowestPrice": 12990,
+        "lowestStore": "Proshop",
+        "savings": 2000,
+        "savingsPercent": 13.34
+    },
+    {
+        "name": "ASUS ROG Strix G16",
+        "category": "Laptop",
+        "description": "16 Gaming Laptop",
+        "cpu": "AMD Ryzen 9 9955HX",
+        "gpu": "NVIDIA GeForce RTX 5070 8GB",
+        "ram": "32 GB DDR5",
+        "storage": "1 TB SSD",
+        "screen": "16 WQXGA 240 Hz",
+        "image": "/images/asus-rog-g16.jpg",
+        "offers": [
+            {
+                "store": "Proshop",
+                "price": 21990,
+                "url": "https://www.proshop.no/"
+            },
+            {
+                "store": "Komplett",
+                "price": 22990,
+                "url": "https://www.komplett.no/"
+            }
+        ],
+        "lowestPrice": 21990,
+        "lowestStore": "Proshop",
+        "savings": 1000,
+        "savingsPercent": 4.35
+    },
+    {
+        "name": "GIGABYTE Gaming Laptop",
+        "category": "Laptop",
+        "description": "16 Gaming Laptop",
+        "cpu": "Intel Core i7",
+        "gpu": "NVIDIA GeForce RTX 5060",
+        "ram": "16 GB DDR5",
+        "storage": "1 TB SSD",
+        "screen": "16 165 Hz",
+        "image": "/images/gigabyte-gaming.jpg",
+        "offers": [
+            {
+                "store": "Proshop",
+                "price": 15990,
+                "url": "https://www.proshop.no/"
+            },
+            {
+                "store": "Komplett",
+                "price": 16990,
+                "url": "https://www.komplett.no/"
+            }
+        ],
+        "lowestPrice": 15990,
+        "lowestStore": "Proshop",
+        "savings": 1000,
+        "savingsPercent": 5.89
+    }
+]

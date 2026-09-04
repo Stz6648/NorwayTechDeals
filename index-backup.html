@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NorwayTechDeals</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+.header {
+    max-width: 1200px;
+    margin: 0 auto 35px;
+}
+
+.header h1 {
+    font-size: 42px;
+    margin: 0 0 10px;
+}
+
+.header p {
+    color: #666;
+    font-size: 18px;
+}
+
+.products {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    padding: 18px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #eee;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 6px 10px;
+    background: #e5483e;
+    color: white;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.card h2 {
+    font-size: 22px;
+    margin: 12px 0 8px;
+}
+
+.description {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.specs {
+    line-height: 1.8;
+    font-size: 14px;
+    color: #555;
+}
+
+.price {
+    margin-top: 18px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.price-note {
+    color: #888;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.best-store {
+    margin-top: 10px;
+    padding: 10px 12px;
+    background: #f0f8f0;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.best-store strong {
+    color: #16823b;
+}
+
+.savings {
+    margin-top: 8px;
+    color: #16823b;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.offers {
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+    padding-top: 12px;
+}
+
+.offer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 8px;
+    margin-bottom: 3px;
+    font-size: 14px;
+    border-radius: 7px;
+    transition: background 0.15s;
+}
+
+.offer:hover {
+    background: #f5f5f5;
+}
+
+.offer-store {
+    color: #555;
+}
+
+.offer-price {
+    font-weight: bold;
+}
+
+.offer.best .offer-store,
+.offer.best .offer-price {
+    color: #16823b;
+}
+
+.offer-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.button {
+    display: block;
+    margin-top: 18px;
+    padding: 13px;
+    text-align: center;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #333;
+}
+
+@media (max-width: 900px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>🔥 Best Tech Deals</h1>
+    <p>Compare the best laptop and PC deals in Norway</p>
+</div>
+
+<div class="products" id="products">
+    Loading products...
+</div>
+
+<script>
+
+async function loadProducts() {
+
+    try {
+
+        const response = await fetch("/api/products");
+
+        if (!response.ok) {
+            throw new Error("Failed to load products");
+        }
+
+        const products = await response.json();
+
+        const container = document.getElementById("products");
+
+        container.innerHTML = "";
+
+        products.forEach(product => {
+
+            const card = document.createElement("div");
+
+            card.className = "card";
+
+            const offers = Array.isArray(product.offers)
+                ? product.offers
+                    .filter(o => o && Number(o.price) > 0)
+                    .sort((a, b) => Number(a.price) - Number(b.price))
+                : [];
+
+            const lowestOffer = offers[0];
+
+            const lowestPrice = lowestOffer
+                ? Number(lowestOffer.price)
+                : null;
+
+            const highestPrice = offers.length
+                ? Math.max(...offers.map(o => Number(o.price)))
+                : null;
+
+            const savings =
+                lowestPrice !== null && highestPrice !== null
+                    ? highestPrice - lowestPrice
+                    : 0;
+
+            const image =
+                product.image ||
+                "https://via.placeholder.com/600x400";
+
+            const offersHTML = offers.length
+                ? `
+                    <div class="offers">
+
+                        ${offers.map((offer, index) => `
+
+                            <div class="offer ${index === 0 ? "best" : ""}">
+
+                                <a
+                                    class="offer-link"
+                                    href="${offer.url || "#"}"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+
+                                    <span class="offer-store">
+                                        ${index === 0 ? "🏆 " : ""}
+                                        ${offer.store}
+                                    </span>
+
+                                    <span class="offer-price">
+                                        ${Number(offer.price).toLocaleString("nb-NO")} NOK
+                                    </span>
+
+                                </a>
+
+                            </div>
+
+                        `).join("")}
+
+                    </div>
+                `
+                : "";
+
+            card.innerHTML = `
+
+                <img
+                    src="${image}"
+                    alt="${product.name}"
+                    onerror="this.src='https://via.placeholder.com/600x400'"
+                >
+
+                <span class="badge">DEAL</span>
+
+                <h2>${product.name}</h2>
+
+                <div class="description">
+                    ${product.description || ""}
+                </div>
+
+                <div class="specs">
+                    🔥 ${product.cpu || ""}<br>
+                    🎮 ${product.gpu || ""}<br>
+                    💾 ${product.ram || ""}<br>
+                    💿 ${product.storage || ""}<br>
+                    🖥️ ${product.screen || ""}
+                </div>
+
+                <div class="price">
+
+                    ${
+                        lowestPrice !== null
+                            ? "From " +
+                              lowestPrice.toLocaleString("nb-NO") +
+                              " NOK"
+                            : "Price coming soon"
+                    }
+
+                </div>
+
+                ${
+                    lowestOffer
+                        ? `
+
+                            <div class="best-store">
+
+                                Best price:
+                                <strong>
+                                    ${lowestOffer.store}
+                                </strong>
+
+                            </div>
+
+                        `
+                        : ""
+                }
+
+                ${
+                    savings > 0
+                        ? `
+
+                            <div class="savings">
+
+                                💰 Save up to
+                                ${savings.toLocaleString("nb-NO")}
+                                NOK
+
+                            </div>
+
+                        `
+                        : ""
+                }
+
+                ${offersHTML}
+
+                <div class="price-note">
+
+                    We compare Norwegian retailers to find the best price.
+
+                </div>
+
+                <a
+                    class="button"
+                    href="${lowestOffer ? lowestOffer.url : "#"}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View Best Deal
+                </a>
+
+            `;
+
+            container.appendChild(card);
+
+        });
+
+    } catch (error) {
+
+        document.getElementById("products").innerHTML =
+            "<p>Unable to load products.</p>";
+
+        console.error(error);
+
+    }
+
+}
+
+loadProducts();
+
+</script>
+
+</body>
+</html>
