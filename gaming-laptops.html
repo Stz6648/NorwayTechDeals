@@ -296,9 +296,11 @@ async function loadLaptopDeals() {
         const response = await fetch("/api/products");
         if (!response.ok) throw new Error("Could not load products");
 
-        let products = await response.json();
+        let data = await response.json();
+        let products = Array.isArray(data) ? data : (data.products || data.items || []);
 
         products = products.filter(p => {
+            if (!p || typeof p !== "object") return false;
             const text = JSON.stringify(p).toLowerCase();
             return text.includes("laptop") || text.includes("notebook");
         });
