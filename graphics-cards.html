@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Grafikkort tilbud i Norge | NorwayTechDeals</title>
+  <title>Grafikkort tilbud i Norge | TechKjop</title>
 
   <meta name="description" content="Finn gode grafikkort tilbud i Norge. Sammenlign NVIDIA GeForce RTX, AMD Radeon, priser og spesifikasjoner før du kjøper grafikkort.">
 
@@ -73,6 +73,23 @@
       margin: 35px 0;
     }
   </style>
+
+<style>
+.deals-wrap{margin:40px auto;max-width:1200px}
+.deals-head{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.deals-tools{display:flex;gap:10px}
+.deals-tools input,.deals-tools select{padding:12px;border:1px solid #ddd;border-radius:8px}
+.deals-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:25px}
+.deal-card{background:#fff;border:1px solid #e5e5e5;border-radius:14px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.deal-card img{width:100%;height:190px;object-fit:contain;border-radius:10px;background:#f7f7f7}
+.deal-card h3{font-size:19px;margin:14px 0 8px}
+.deal-specs{color:#555;line-height:1.6;font-size:14px}
+.best-price{font-size:24px;font-weight:700;margin:12px 0}
+.store{color:#666;font-size:14px}
+.deal-button{display:inline-block;margin-top:12px;padding:10px 16px;background:#111;color:#fff;border-radius:8px;text-decoration:none}
+.no-results{padding:30px;text-align:center;color:#666}
+</style>
+
 </head>
 
 <body>
@@ -88,7 +105,7 @@
     <h2>Finn et godt grafikkort</h2>
 
     <p>
-      På NorwayTechDeals hjelper vi deg med å finne og sammenligne
+      På TechKjop hjelper vi deg med å finne og sammenligne
       grafikkort som er tilgjengelige i Norge. Målet er å gjøre det
       enklere å sammenligne pris, ytelse og viktige spesifikasjoner
       før du kjøper.
@@ -213,16 +230,150 @@
     </p>
 
     <p>
-      NorwayTechDeals skal gjøre det enklere å finne interessante
+      TechKjop skal gjøre det enklere å finne interessante
       teknologi- og PC-tilbud i Norge.
     </p>
   </section>
 
   <div class="back">
-    <a href="/">← Tilbake til NorwayTechDeals</a>
+    <a href="/">← Tilbake til TechKjop</a>
   </div>
 
+
+<section class="deals-wrap">
+  <div class="deals-head">
+    <h2>🔥 Graphics Card Deals</h2>
+    <div class="deals-tools">
+      <input id="dealSearch" type="text" placeholder="Search GPU, RTX, Radeon...">
+      <select id="dealSort">
+        <option value="recommended">Recommended</option>
+        <option value="price-low">Lowest price</option>
+        <option value="price-high">Highest price</option>
+      </select>
+    </div>
+  </div>
+  <div id="gpuDeals" class="deals-grid">
+    <div class="no-results">Loading graphics card deals...</div>
+  </div>
+</section>
+
 </main>
+
+
+<script>
+async function loadGPUDeals() {
+  const container = document.getElementById("gpuDeals");
+
+  try {
+    const response = await fetch("/products.json", {cache:"no-store"});
+    if (!response.ok) throw new Error("Could not load products");
+
+    let data = await response.json();
+    let products = Array.isArray(data)
+      ? data
+      : (data.products || data.items || []);
+
+    products = products.filter(p => {
+      if (!p || typeof p !== "object") return false;
+
+      const fields = [
+        p.category,
+        p.name,
+        p.title,
+        p.description,
+        p.type,
+        p.gpu,
+        p.graphics
+      ].map(v => String(v || "").toLowerCase()).join(" ");
+
+      return fields.includes("gpu") ||
+             fields.includes("graphics card") ||
+             fields.includes("rtx") ||
+             fields.includes("radeon") ||
+             fields.includes("geforce");
+    });
+
+    const search = document.getElementById("dealSearch");
+    const sort = document.getElementById("dealSort");
+
+    function price(p) {
+      return Number(
+        p.lowestPrice ??
+        p.lowest_price ??
+        p.price ??
+        p.bestPrice ??
+        p.best_price ??
+        p.offers?.[0]?.price ??
+        999999
+      );
+    }
+
+    function render() {
+      let list = [...products];
+      const q = search.value.trim().toLowerCase();
+
+      if (q) {
+        list = list.filter(p =>
+          JSON.stringify(p).toLowerCase().includes(q)
+        );
+      }
+
+      if (sort.value === "price-low") list.sort((a,b) => price(a)-price(b));
+      if (sort.value === "price-high") list.sort((a,b) => price(b)-price(a));
+
+      if (!list.length) {
+        container.innerHTML =
+          '<div class="no-results">No graphics cards found.</div>';
+        return;
+      }
+
+      container.innerHTML = list.map(p => {
+        const name = p.name || p.title || "Graphics Card";
+        const image = p.image || p.imageUrl || "/images/lenovo-loq.jpg";
+        const gpu = p.gpu || p.graphics || name;
+        const vram = p.vram || p.memory || "VRAM not listed";
+        const store = p.lowestStore || p.lowest_store ||
+                      p.store || p.merchant || p.shop ||
+                      p.offers?.[0]?.store || "Norwegian retailer";
+
+        const currentPrice = price(p);
+        const priceText = currentPrice < 999999
+          ? currentPrice.toLocaleString("nb-NO") + " kr"
+          : "See price";
+
+        const link = p.url || p.link || p.productUrl ||
+                     p.offers?.[0]?.url || "#";
+
+        return `
+          <article class="deal-card">
+            <img src="${image}" alt="${name}" loading="lazy">
+            <h3>${name}</h3>
+            <div class="deal-specs">
+              <div>GPU: ${gpu}</div>
+              <div>VRAM: ${vram}</div>
+            </div>
+            <div class="best-price">${priceText}</div>
+            <div class="store">Best price · ${store}</div>
+            <a class="deal-button" href="${link}" target="_blank" rel="noopener">
+              View deal
+            </a>
+          </article>
+        `;
+      }).join("");
+    }
+
+    search.addEventListener("input", render);
+    sort.addEventListener("change", render);
+    render();
+
+  } catch (error) {
+    container.innerHTML =
+      '<div class="no-results">Unable to load deals right now.</div>';
+  }
+}
+
+loadGPUDeals();
+</script>
 
 </body>
 </html>
