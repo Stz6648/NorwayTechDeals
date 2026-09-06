@@ -86,7 +86,7 @@
     "description": "Desktop Graphics Card",
     "gpu": "NVIDIA GeForce RTX 5060",
     "vram": "8 GB GDDR7",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/PNY_RTX_5060_at_Computex_2025.jpg?width=1280",
+    "image": "/images/rtx-5060.jpg",
     "offers": [],
     "imageCredit": "Photo: 4300streetcar / Wikimedia Commons / CC BY 4.0"
   },
@@ -96,7 +96,7 @@
     "description": "Desktop Graphics Card",
     "gpu": "NVIDIA GeForce RTX 5070 Ti",
     "vram": "16 GB GDDR7",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/PNY_RTX_5070_Ti_at_Computex_2025.jpg?width=1280",
+    "image": "/images/rtx-5070-ti.jpg",
     "offers": [],
     "imageCredit": "Photo: 4300streetcar / Wikimedia Commons / CC BY 4.0"
   },
@@ -106,7 +106,7 @@
     "description": "Desktop Graphics Card",
     "gpu": "NVIDIA GeForce RTX 5080",
     "vram": "16 GB GDDR7",
-    "image": "https://commons.wikimedia.org/wiki/Special:Redirect/file/RTX_5080.png?width=1280",
+    "image": "/images/rtx-5080.jpg",
     "offers": [],
     "imageCredit": "Photo: XD7006 / Wikimedia Commons / CC BY 4.0"
   }
