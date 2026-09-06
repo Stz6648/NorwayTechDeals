@@ -298,13 +298,16 @@ async function loadPCDeals() {
 
     products = products.filter(p => {
       if (!p || typeof p !== "object") return false;
-      const category = String(p.category || "").toLowerCase();
-      const text = JSON.stringify(p).toLowerCase();
-      return category.includes("pc") ||
-             category.includes("desktop") ||
-             text.includes("gaming pc") ||
-             text.includes("gaming desktop") ||
-             text.includes("desktop pc");
+      const fields = [
+        p.category,
+        p.name,
+        p.title,
+        p.description,
+        p.type
+      ].map(v => String(v || "").toLowerCase()).join(" ");
+      return fields.includes("pc") ||
+             fields.includes("desktop") ||
+             fields.includes("gaming");
     });
 
     const search = document.getElementById("dealSearch");
