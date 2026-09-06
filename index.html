@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -200,21 +200,151 @@ body {
         font-size: 32px;
     }
 }
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto 22px;
+    background: #111;
+    border-radius: 12px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+.navbar a:hover {
+    color: #ff6b4a;
+}
+.search-box {
+    max-width: 1200px;
+    margin: 0 auto 22px;
+    display: flex;
+    gap: 10px;
+}
+.search-box input {
+    flex: 1;
+    padding: 15px 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.search-box button {
+    padding: 0 25px;
+    border: 0;
+    border-radius: 10px;
+    background: #e5483e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.categories {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+.category {
+    background: white;
+    padding: 18px 12px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    box-shadow: 0 3px 12px rgba(0,0,0,.06);
+}
+.category:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,.10);
+}
+.section-title {
+    max-width: 1200px;
+    margin: 0 auto 18px;
+    font-size: 25px;
+}
+@media (max-width: 700px) {
+    .categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .navbar {
+        gap: 14px;
+    }
+    .search-box button {
+        padding: 0 15px;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
+<div class="navbar">
+    <a href="/">TechKjop</a>
+    <a href="/gaming-laptops.html">Gaming Laptops</a>
+    <a href="/gaming-pc.html">Gaming PC</a>
+    <a href="/graphics-cards.html">GPU</a>
+    <a href="/ram.html">RAM</a>
+    <a href="/laptop-tilbud.html">Laptop Deals</a>
+</div>
+
 <div class="header">
-    <h1>Techkjop</h1>
+    <h1>TechKjop</h1>
     <p>Compare the best laptop and PC deals in Norway</p>
 </div>
+
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search laptop, GPU, gaming PC, RAM...">
+    <button onclick="searchProducts()">Search</button>
+</div>
+
+<div class="categories">
+    <a class="category" href="/gaming-laptops.html">💻 Gaming Laptop</a>
+    <a class="category" href="/gaming-pc.html">🖥️ Gaming PC</a>
+    <a class="category" href="/graphics-cards.html">🎮 Graphics Cards</a>
+    <a class="category" href="/ram.html">⚡ RAM</a>
+    <a class="category" href="/laptop-tilbud.html">🔥 Laptop Deals</a>
+</div>
+
+<h2 class="section-title">🔥 Best Tech Deals</h2>
 
 <div class="products" id="products">
     Loading products...
 </div>
 
 <script>
+
+function searchProducts() {
+    const q = document.getElementById("searchInput").value.trim().toLowerCase();
+    if (!q) return;
+
+    const links = {
+        "laptop": "/gaming-laptops.html",
+        "gaming laptop": "/gaming-laptops.html",
+        "gaming pc": "/gaming-pc.html",
+        "pc": "/gaming-pc.html",
+        "gpu": "/graphics-cards.html",
+        "graphics card": "/graphics-cards.html",
+        "ram": "/ram.html"
+    };
+
+    for (const key in links) {
+        if (q.includes(key)) {
+            window.location.href = links[key];
+            return;
+        }
+    }
+
+    alert("Try searching for Gaming Laptop, Gaming PC, GPU or RAM.");
+}
+
 async function loadProducts() {
     const container = document.getElementById("products");
 
