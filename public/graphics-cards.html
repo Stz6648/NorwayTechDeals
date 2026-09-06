@@ -275,22 +275,9 @@ async function loadGPUDeals() {
 
     products = products.filter(p => {
       if (!p || typeof p !== "object") return false;
-
-      const fields = [
-        p.category,
-        p.name,
-        p.title,
-        p.description,
-        p.type,
-        p.gpu,
-        p.graphics
-      ].map(v => String(v || "").toLowerCase()).join(" ");
-
-      return fields.includes("gpu") ||
-             fields.includes("graphics card") ||
-             fields.includes("rtx") ||
-             fields.includes("radeon") ||
-             fields.includes("geforce");
+      const category = String(p.category || "").toLowerCase();
+      return category === "graphics card" ||
+             category === "gpu";
     });
 
     const search = document.getElementById("dealSearch");
