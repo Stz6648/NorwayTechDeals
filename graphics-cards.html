@@ -329,7 +329,7 @@ async function loadGPUDeals() {
 
       container.innerHTML = list.map(p => {
         const name = p.name || p.title || "Graphics Card";
-        const image = p.image || p.imageUrl || "/images/lenovo-loq.jpg";
+        const image = p.image || p.imageUrl || "/images/gpu.jpg";
         const gpu = p.gpu || p.graphics || name;
         const vram = p.vram || p.memory || "VRAM not listed";
         const store = p.lowestStore || p.lowest_store ||
