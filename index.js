@@ -8,6 +8,7 @@ const PORT = 3000;
 const productsFile = path.join(__dirname, "products.json");
 
 app.use(express.json());
+app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname));
 
 function loadProducts() {
