@@ -309,5 +309,55 @@
     "lowestPrice": 10155,
     "lowestStore": "Proshop",
     "updatedAt": "2026-09-07"
+  },
+  {
+    "id": "gigabyte-rtx-5090-gaming-oc-32gb",
+    "brand": "GIGABYTE",
+    "name": "GIGABYTE GeForce RTX 5090 GAMING OC 32GB",
+    "model": "GV-N5090GAMING OC-32GD",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/rtx-5090.jpg",
+    "description": "Desktop Graphics Card",
+    "specifications": {
+      "cpu": "",
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "32 GB GDDR7"
+    },
+    "offers": [
+      {
+        "store": "Komplett",
+        "country": "NO",
+        "condition": "New",
+        "price": 49990,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.komplett.no/product/1319436/datautstyr/pc-komponenter/skjermkort/gigabyte-geforce-rtx-5090-gaming-oc",
+        "updatedAt": "2026-09-07"
+      },
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 59990,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/GIGABYTE-GeForce-RTX-5090-GAMING-OC-32GB-GDDR7-RAM-Grafikkort/3331129",
+        "updatedAt": "2026-09-07"
+      }
+    ],
+    "lowestPrice": 49990,
+    "lowestStore": "Komplett",
+    "updatedAt": "2026-09-07"
   }
 ]
