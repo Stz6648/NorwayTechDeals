@@ -341,6 +341,7 @@ async function loadGPUDeals() {
             </div>
             <div class="best-price">${priceText}</div>
             <div class="store">Best price · ${store}</div>
+<div class="offer-count">${Array.isArray(p.offers) ? p.offers.length : 0} ${Array.isArray(p.offers) && p.offers.length === 1 ? 'store' : 'stores'} · Compare prices</div>
             <a class="deal-button" href="${link}" target="_blank" rel="noopener">
               View deal
             </a>
