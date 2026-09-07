@@ -359,5 +359,42 @@
     "lowestPrice": 49990,
     "lowestStore": "Komplett",
     "updatedAt": "2026-09-07"
+  },
+  {
+    "id": "asus-geforce-rtx-5060-ti-dual-oc-16gb",
+    "brand": "ASUS",
+    "name": "ASUS GeForce RTX 5060 Ti DUAL OC 16GB",
+    "model": "DUAL-RTX5060TI-O16G",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/asus-rtx-5060-ti-dual-16gb.jpg",
+    "description": "ASUS GeForce RTX 5060 Ti DUAL OC 16GB GDDR7 Graphics Card",
+    "specifications": {
+      "cpu": "",
+      "gpu": "NVIDIA GeForce RTX 5060 Ti",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "16 GB GDDR7"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 8190,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/ASUS-GeForce-RTX-5060-Ti-DUAL-OC-16GB-GDDR7-RAM-Grafikkort/3354513",
+        "updatedAt": "2026-09-07"
+      }
+    ],
+    "lowestPrice": 8190,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-07"
   }
 ]
