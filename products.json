@@ -272,5 +272,42 @@
     "lowestPrice": 15790,
     "lowestStore": "Proshop",
     "updatedAt": "2026-09-07"
+  },
+  {
+    "id": "pny-geforce-rtx-5070-12gb",
+    "brand": "PNY",
+    "name": "PNY GeForce RTX 5070 Triple Fan 12GB",
+    "model": "VCG507012TFXPB1-O",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/rtx-5070.jpg",
+    "description": "Desktop Graphics Card",
+    "specifications": {
+      "cpu": "",
+      "gpu": "NVIDIA GeForce RTX 5070",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "12 GB GDDR7"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 10155,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5070-Triple-Fan-12GB-GDDR7-RAM-Grafikkort/3338127",
+        "updatedAt": "2026-09-07"
+      }
+    ],
+    "lowestPrice": 10155,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-07"
   }
 ]
