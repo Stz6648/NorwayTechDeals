@@ -225,9 +225,9 @@
   },
   {
     "id": "nvidia-geforce-rtx-5080",
-    "brand": "NVIDIA",
-    "name": "NVIDIA GeForce RTX 5080",
-    "model": "GeForce RTX 5080",
+    "brand": "PNY",
+    "name": "PNY GeForce RTX 5080 Triple Fan 16GB",
+    "model": "VCG508016TFXPB1",
     "category": "Graphics Card",
     "subcategory": "Graphics Card",
     "condition": "New",
@@ -241,9 +241,36 @@
       "screen": "",
       "vram": "16 GB GDDR7"
     },
-    "offers": [],
-    "lowestPrice": null,
-    "lowestStore": null,
-    "updatedAt": null
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 15790,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5080-Triple-Fan-16GB-GDDR7-RAM-Grafikkort/3338113",
+        "updatedAt": "2026-09-07"
+      },
+      {
+        "store": "Komplett",
+        "country": "NO",
+        "condition": "New",
+        "price": 15990,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.komplett.no/product/1323904/datautstyr/pc-komponenter/skjermkort/pny-geforce-rtx-5080",
+        "updatedAt": "2026-09-07"
+      }
+    ],
+    "lowestPrice": 15790,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-07"
   }
 ]
