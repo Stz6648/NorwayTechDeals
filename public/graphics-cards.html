@@ -328,7 +328,7 @@ async function loadGPUDeals() {
           ? currentPrice.toLocaleString("nb-NO") + " kr"
           : "See price";
 
-        const link = p.url || p.link || p.productUrl ||
+        const link = p.id ? "/product.html?id=" + encodeURIComponent(p.id) : (p.url || p.link || p.productUrl || "");
                      p.offers?.[0]?.url || "#";
 
         return `
