@@ -152,8 +152,8 @@
   {
     "id": "pny-geforce-rtx-5060-8gb",
     "brand": "PNY",
-    "name": "PNY GeForce RTX 5060 8GB",
-    "model": "GeForce RTX 5060 8GB",
+    "name": "PNY GeForce RTX 5060 Dual Fan 8GB",
+    "model": "VCG50608DFXPB1",
     "category": "Graphics Card",
     "subcategory": "Graphics Card",
     "condition": "New",
@@ -167,9 +167,23 @@
       "screen": "",
       "vram": "8 GB GDDR7"
     },
-    "offers": [],
-    "lowestPrice": null,
-    "lowestStore": null,
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 5389,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5060-Dual-Fan-8GB-GDDR7-RAM-Grafikkort/3365812",
+        "updatedAt": null
+      }
+    ],
+    "lowestPrice": 5389,
+    "lowestStore": "Proshop",
     "updatedAt": null
   },
   {
