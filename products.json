@@ -1,113 +1,221 @@
 [
   {
+    "id": "lenovo-loq-15",
+    "brand": "Lenovo",
     "name": "Lenovo LOQ 15",
+    "model": "LOQ 15",
     "category": "Laptop",
-    "description": "15.6 Gaming Laptop",
-    "cpu": "AMD Ryzen 7 250",
-    "gpu": "NVIDIA GeForce RTX 5060 8GB",
-    "ram": "16 GB DDR5",
-    "storage": "1 TB SSD",
-    "screen": "15.6 Full HD 144 Hz",
+    "subcategory": "Laptop",
+    "condition": "New",
     "image": "/images/lenovo-loq.jpg",
+    "description": "15.6 Gaming Laptop",
+    "specifications": {
+      "cpu": "AMD Ryzen 7 250",
+      "gpu": "NVIDIA GeForce RTX 5060 8GB",
+      "ram": "16 GB DDR5",
+      "storage": "1 TB SSD",
+      "screen": "15.6 Full HD 144 Hz",
+      "vram": ""
+    },
     "offers": [
       {
         "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
         "price": 12990,
-        "url": "https://www.proshop.no/"
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": null,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/",
+        "updatedAt": null
       },
       {
         "store": "Komplett",
+        "country": "NO",
+        "condition": "New",
         "price": 14990,
-        "url": "https://www.komplett.no/"
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": null,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.komplett.no/",
+        "updatedAt": null
       }
     ],
     "lowestPrice": 12990,
     "lowestStore": "Proshop",
-    "savings": 2000,
-    "savingsPercent": 13.34
+    "updatedAt": null
   },
   {
+    "id": "asus-rog-strix-g16",
+    "brand": "ASUS",
     "name": "ASUS ROG Strix G16",
+    "model": "ROG Strix G16",
     "category": "Laptop",
-    "description": "16 Gaming Laptop",
-    "cpu": "AMD Ryzen 9 9955HX",
-    "gpu": "NVIDIA GeForce RTX 5070 8GB",
-    "ram": "32 GB DDR5",
-    "storage": "1 TB SSD",
-    "screen": "16 WQXGA 240 Hz",
+    "subcategory": "Laptop",
+    "condition": "New",
     "image": "/images/asus-rog-g16.jpg",
+    "description": "16 Gaming Laptop",
+    "specifications": {
+      "cpu": "AMD Ryzen 9 9955HX",
+      "gpu": "NVIDIA GeForce RTX 5070 8GB",
+      "ram": "32 GB DDR5",
+      "storage": "1 TB SSD",
+      "screen": "16 WQXGA 240 Hz",
+      "vram": ""
+    },
     "offers": [
       {
         "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
         "price": 21990,
-        "url": "https://www.proshop.no/"
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": null,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/",
+        "updatedAt": null
       },
       {
         "store": "Komplett",
+        "country": "NO",
+        "condition": "New",
         "price": 22990,
-        "url": "https://www.komplett.no/"
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": null,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.komplett.no/",
+        "updatedAt": null
       }
     ],
     "lowestPrice": 21990,
     "lowestStore": "Proshop",
-    "savings": 1000,
-    "savingsPercent": 4.35
+    "updatedAt": null
   },
   {
+    "id": "gigabyte-gaming-laptop",
+    "brand": "GIGABYTE",
     "name": "GIGABYTE Gaming Laptop",
+    "model": "Gaming Laptop",
     "category": "Laptop",
-    "description": "16 Gaming Laptop",
-    "cpu": "Intel Core i7",
-    "gpu": "NVIDIA GeForce RTX 5060",
-    "ram": "16 GB DDR5",
-    "storage": "1 TB SSD",
-    "screen": "16 165 Hz",
+    "subcategory": "Laptop",
+    "condition": "New",
     "image": "/images/gigabyte-gaming.jpg",
+    "description": "16 Gaming Laptop",
+    "specifications": {
+      "cpu": "Intel Core i7",
+      "gpu": "NVIDIA GeForce RTX 5060",
+      "ram": "16 GB DDR5",
+      "storage": "1 TB SSD",
+      "screen": "16 165 Hz",
+      "vram": ""
+    },
     "offers": [
       {
         "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
         "price": 15990,
-        "url": "https://www.proshop.no/"
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": null,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/",
+        "updatedAt": null
       },
       {
         "store": "Komplett",
+        "country": "NO",
+        "condition": "New",
         "price": 16990,
-        "url": "https://www.komplett.no/"
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": null,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.komplett.no/",
+        "updatedAt": null
       }
     ],
     "lowestPrice": 15990,
     "lowestStore": "Proshop",
-    "savings": 1000,
-    "savingsPercent": 5.89
+    "updatedAt": null
   },
   {
+    "id": "pny-geforce-rtx-5060-8gb",
+    "brand": "PNY",
     "name": "PNY GeForce RTX 5060 8GB",
+    "model": "GeForce RTX 5060 8GB",
     "category": "Graphics Card",
-    "description": "Desktop Graphics Card",
-    "gpu": "NVIDIA GeForce RTX 5060",
-    "vram": "8 GB GDDR7",
+    "subcategory": "Graphics Card",
+    "condition": "New",
     "image": "/images/rtx-5060.jpg",
+    "description": "Desktop Graphics Card",
+    "specifications": {
+      "cpu": "",
+      "gpu": "NVIDIA GeForce RTX 5060",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "8 GB GDDR7"
+    },
     "offers": [],
-    "imageCredit": "Photo: 4300streetcar / Wikimedia Commons / CC BY 4.0"
+    "lowestPrice": null,
+    "lowestStore": null,
+    "updatedAt": null
   },
   {
+    "id": "pny-geforce-rtx-5070-ti-16gb",
+    "brand": "PNY",
     "name": "PNY GeForce RTX 5070 Ti 16GB",
+    "model": "GeForce RTX 5070 Ti 16GB",
     "category": "Graphics Card",
-    "description": "Desktop Graphics Card",
-    "gpu": "NVIDIA GeForce RTX 5070 Ti",
-    "vram": "16 GB GDDR7",
+    "subcategory": "Graphics Card",
+    "condition": "New",
     "image": "/images/rtx-5070-ti.jpg",
+    "description": "Desktop Graphics Card",
+    "specifications": {
+      "cpu": "",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "16 GB GDDR7"
+    },
     "offers": [],
-    "imageCredit": "Photo: 4300streetcar / Wikimedia Commons / CC BY 4.0"
+    "lowestPrice": null,
+    "lowestStore": null,
+    "updatedAt": null
   },
   {
+    "id": "nvidia-geforce-rtx-5080",
+    "brand": "NVIDIA",
     "name": "NVIDIA GeForce RTX 5080",
+    "model": "GeForce RTX 5080",
     "category": "Graphics Card",
-    "description": "Desktop Graphics Card",
-    "gpu": "NVIDIA GeForce RTX 5080",
-    "vram": "16 GB GDDR7",
+    "subcategory": "Graphics Card",
+    "condition": "New",
     "image": "/images/rtx-5080.jpg",
+    "description": "Desktop Graphics Card",
+    "specifications": {
+      "cpu": "",
+      "gpu": "NVIDIA GeForce RTX 5080",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "16 GB GDDR7"
+    },
     "offers": [],
-    "imageCredit": "Photo: XD7006 / Wikimedia Commons / CC BY 4.0"
+    "lowestPrice": null,
+    "lowestStore": null,
+    "updatedAt": null
   }
 ]

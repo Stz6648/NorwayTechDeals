@@ -358,31 +358,34 @@ async function loadLaptopDeals() {
                     ? currentPrice.toLocaleString("nb-NO") + " kr"
                     : "See price";
 
-                const link =
-                    p.url ||
-                    p.link ||
-                    p.productUrl ||
-                    p.offers?.[0]?.url ||
-                    "#";
+                const link = `product.html?id=${encodeURIComponent(p.id)}`;
 
-                return `
-                    <article class="deal-card">
-                        <img src="${image}" alt="${name}" loading="lazy">
-                        <h3>${name}</h3>
-                        <div class="specs">
-                            ${cpu ? cpu + "<br>" : ""}
-                            ${gpu}<br>
-                            ${ram}
-                        </div>
-                        <div class="price-row">
-                            <span class="best-price">${priceText}</span>
-                            <span class="store">${store}</span>
-                        </div>
-                        <a class="deal-button" href="${link}" target="_blank" rel="noopener">
-                            View Deal
-                        </a>
-                    </article>
-                `;
+    return `
+      <article class="deal-card">
+        <a href="${link}">
+          <img src="${image}" alt="${name}" loading="lazy">
+        </a>
+
+        <h3>
+          <a href="${link}">${name}</a>
+        </h3>
+
+        <div class="specs">
+          ${cpu ? cpu + "<br>" : ""}
+          ${gpu}<br>
+          ${ram}
+        </div>
+
+        <div class="price-row">
+          <span class="best-price">${priceText}</span>
+          <span class="store">${store}</span>
+        </div>
+
+        <a class="deal-button" href="${link}">
+          View Product
+        </a>
+      </article>`;
+               `;
             }).join("");
         }
 

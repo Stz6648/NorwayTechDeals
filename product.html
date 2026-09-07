@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product - TechKjop</title>
+  <meta name="description" content="Compare product prices and offers at TechKjop.">
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 18px 24px;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 14px;
+      padding: 25px;
+      margin-bottom: 25px;
+    }
+
+    .product-top {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 35px;
+    }
+
+    .product-image {
+      width: 100%;
+      height: 320px;
+      object-fit: contain;
+      background: #fafafa;
+      border-radius: 12px;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 32px;
+    }
+
+    .brand {
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 30px;
+      font-weight: 700;
+      margin: 20px 0;
+    }
+
+    .specs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .spec {
+      background: #f5f5f5;
+      padding: 12px;
+      border-radius: 8px;
+    }
+
+    .offers h2 {
+      margin-top: 0;
+    }
+
+    .offer {
+      display: grid;
+      grid-template-columns: 1fr 150px 130px;
+      align-items: center;
+      gap: 15px;
+      border-top: 1px solid #eee;
+      padding: 18px 0;
+    }
+
+    .store {
+      font-weight: 700;
+    }
+
+    .offer-price {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .deal-button {
+      background: #2563eb;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .empty {
+      padding: 25px 0;
+      color: #666;
+    }
+
+    @media (max-width: 700px) {
+      .product-top {
+        grid-template-columns: 1fr;
+      }
+
+      .product-image {
+        height: 250px;
+      }
+
+      .specs {
+        grid-template-columns: 1fr;
+      }
+
+      .offer {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="/">TechKjop</a>
+</header>
+
+<main>
+  <div id="product"></div>
+</main>
+
+<script>
+async function loadProduct() {
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+
+  const container = document.getElementById("product");
+
+  if (!id) {
+    container.innerHTML = "<div class='product'><h1>Product not found</h1></div>";
+    return;
+  }
+
+  try {
+    const response = await fetch("/products.json");
+    const products = await response.json();
+
+    const product = products.find(p => p.id === id);
+
+    if (!product) {
+      container.innerHTML = "<div class='product'><h1>Product not found</h1></div>";
+      return;
+    }
+
+    document.title = product.name + " - TechKjop";
+
+    const specs = product.specifications || {};
+    const offers = product.offers || [];
+
+    const validOffers = offers.filter(o =>
+      o && typeof o.price === "number"
+    );
+
+    const lowestPrice = validOffers.length
+      ? Math.min(...validOffers.map(o => o.price))
+      : product.lowestPrice;
+
+    container.innerHTML = `
+      <section class="product">
+        <div class="product-top">
+
+          <div>
+            <img
+              class="product-image"
+              src="${product.image || '/images/techkjop-placeholder.jpg'}"
+              alt="${product.name}"
+            >
+          </div>
+
+          <div>
+            <div class="brand">${product.brand || ""}</div>
+            <h1>${product.name}</h1>
+            <p>${product.description || ""}</p>
+
+            ${
+              lowestPrice
+                ? `<div class="price">From ${lowestPrice.toLocaleString('no-NO')} kr</div>`
+                : `<div class="price">Price not available</div>`
+            }
+
+            <div class="specs">
+              ${specs.cpu ? `<div class="spec"><strong>CPU</strong><br>${specs.cpu}</div>` : ""}
+              ${specs.gpu ? `<div class="spec"><strong>GPU</strong><br>${specs.gpu}</div>` : ""}
+              ${specs.ram ? `<div class="spec"><strong>RAM</strong><br>${specs.ram}</div>` : ""}
+              ${specs.storage ? `<div class="spec"><strong>Storage</strong><br>${specs.storage}</div>` : ""}
+              ${specs.screen ? `<div class="spec"><strong>Screen</strong><br>${specs.screen}</div>` : ""}
+              ${specs.vram ? `<div class="spec"><strong>VRAM</strong><br>${specs.vram}</div>` : ""}
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="product offers">
+        <h2>Compare prices</h2>
+
+        ${
+          offers.length
+          ? offers.map(o => `
+              <div class="offer">
+                <div>
+                  <div class="store">${o.store || "Store"}</div>
+                  <div>${o.condition || "New"} · ${o.country || ""}</div>
+                </div>
+
+                <div class="offer-price">
+                  ${typeof o.price === "number"
+                    ? o.price.toLocaleString('no-NO') + " kr"
+                    : "See price"}
+                </div>
+
+                ${
+                  o.url
+                  ? `<a class="deal-button" href="${o.url}" target="_blank" rel="noopener">View deal</a>`
+                  : ""
+                }
+              </div>
+            `).join("")
+          : `<div class="empty">No prices available yet.</div>`
+        }
+      </section>
+    `;
+  } catch (error) {
+    console.error(error);
+    container.innerHTML =
+      "<div class='product'><h1>Unable to load product</h1></div>";
+  }
+}
+
+loadProduct();
+</script>
+
+</body>
+</html>
