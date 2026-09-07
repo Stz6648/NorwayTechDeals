@@ -189,8 +189,8 @@
   {
     "id": "pny-geforce-rtx-5070-ti-16gb",
     "brand": "PNY",
-    "name": "PNY GeForce RTX 5070 Ti 16GB",
-    "model": "GeForce RTX 5070 Ti 16GB",
+    "name": "PNY GeForce RTX 5070 Ti Triple Fan 16GB",
+    "model": "VCG5070T16TFXPB1",
     "category": "Graphics Card",
     "subcategory": "Graphics Card",
     "condition": "New",
@@ -204,10 +204,24 @@
       "screen": "",
       "vram": "16 GB GDDR7"
     },
-    "offers": [],
-    "lowestPrice": null,
-    "lowestStore": null,
-    "updatedAt": null
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 14806,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5070-Ti-Triple-Fan-16GB-GDDR7-RAM-Grafikkort/3338123",
+        "updatedAt": "2026-09-07"
+      }
+    ],
+    "lowestPrice": 14806,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-07"
   },
   {
     "id": "nvidia-geforce-rtx-5080",
