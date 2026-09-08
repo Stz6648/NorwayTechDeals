@@ -139,16 +139,7 @@ async function loadPCDeals() {
 
     products = products.filter(p => {
       if (!p || typeof p !== "object") return false;
-      const fields = [
-        p.category,
-        p.name,
-        p.title,
-        p.description,
-        p.type
-      ].map(v => String(v || "").toLowerCase()).join(" ");
-      return fields.includes("pc") ||
-             fields.includes("desktop") ||
-             fields.includes("gaming");
+      return String(p.category || "").toLowerCase() === "gaming pc";
     });
 
     const search = document.getElementById("dealSearch");
@@ -238,6 +229,7 @@ loadPCDeals();
 
 </body>
 </html>
+
 
 
 
