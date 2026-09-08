@@ -509,7 +509,7 @@
         "category":  "Graphics Card",
         "subcategory":  "Graphics Card",
         "condition":  "New",
-        "image":  "/images/gpu.jpg",
+        "image":  "/images/sapphire-rx-9070.jpg",
         "description":  "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for high-performance gaming.",
         "gpu":  "AMD Radeon RX 9070",
         "vram":  "16 GB GDDR6",
@@ -548,7 +548,7 @@
         "category":  "Graphics Card",
         "subcategory":  "Graphics Card",
         "condition":  "New",
-        "image":  "/images/gpu.jpg",
+        "image":  "/images/sapphire-rx-9070.jpg",
         "description":  "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for gaming and high-performance PCs.",
         "gpu":  "AMD Radeon RX 9070",
         "vram":  "16 GB GDDR6",
@@ -587,7 +587,7 @@
         "category":  "Graphics Card",
         "subcategory":  "Graphics Card",
         "condition":  "New",
-        "image":  "/images/gpu.jpg",
+        "image":  "/images/powercolor-rx-9070.jpg",
         "description":  "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for gaming and high-performance PCs.",
         "gpu":  "AMD Radeon RX 9070",
         "vram":  "16 GB GDDR6",
@@ -626,7 +626,7 @@
         "category":  "Graphics Card",
         "subcategory":  "Graphics Card",
         "condition":  "New",
-        "image":  "/images/gpu.jpg",
+        "image":  "/images/gigabyte-rx-9070-xt-ice.jpg",
         "description":  "AMD Radeon RX 9070 XT graphics card with 16GB GDDR6 memory for high-performance gaming.",
         "gpu":  "AMD Radeon RX 9070 XT",
         "vram":  "16 GB GDDR6",
@@ -892,3 +892,4 @@
         "description":  "PCSpecialist Prime 400 gaming desktop with Intel Core i7 processor, RTX 5070 graphics, 16GB RAM and 1TB SSD."
     }
 ]
+
