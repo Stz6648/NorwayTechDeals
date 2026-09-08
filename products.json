@@ -1,660 +1,894 @@
-[
-  {
-    "id": "lenovo-loq-15",
-    "brand": "Lenovo",
-    "name": "Lenovo LOQ 15",
-    "model": "LOQ 15",
-    "category": "Laptop",
-    "subcategory": "Laptop",
-    "condition": "New",
-    "image": "/images/lenovo-loq.jpg",
-    "description": "15.6 Gaming Laptop",
-    "specifications": {
-      "cpu": "AMD Ryzen 7 250",
-      "gpu": "NVIDIA GeForce RTX 5060 8GB",
-      "ram": "16 GB DDR5",
-      "storage": "1 TB SSD",
-      "screen": "15.6 Full HD 144 Hz",
-      "vram": ""
-    },
-    "offers": [
-      {
-        "store": "Proshop",
-        "country": "NO",
-        "condition": "New",
-        "price": 12990,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": null,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.proshop.no/",
-        "updatedAt": null
-      },
-      {
-        "store": "Komplett",
-        "country": "NO",
-        "condition": "New",
-        "price": 14990,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": null,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.komplett.no/",
-        "updatedAt": null
-      }
-    ],
-    "lowestPrice": 12990,
-    "lowestStore": "Proshop",
-    "updatedAt": null
-  },
-  {
-    "id": "asus-rog-strix-g16",
-    "brand": "ASUS",
-    "name": "ASUS ROG Strix G16",
-    "model": "ROG Strix G16",
-    "category": "Laptop",
-    "subcategory": "Laptop",
-    "condition": "New",
-    "image": "/images/asus-rog-g16.jpg",
-    "description": "16 Gaming Laptop",
-    "specifications": {
-      "cpu": "AMD Ryzen 9 9955HX",
-      "gpu": "NVIDIA GeForce RTX 5070 8GB",
-      "ram": "32 GB DDR5",
-      "storage": "1 TB SSD",
-      "screen": "16 WQXGA 240 Hz",
-      "vram": ""
-    },
-    "offers": [
-      {
-        "store": "Proshop",
-        "country": "NO",
-        "condition": "New",
-        "price": 21990,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": null,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.proshop.no/",
-        "updatedAt": null
-      },
-      {
-        "store": "Komplett",
-        "country": "NO",
-        "condition": "New",
-        "price": 22990,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": null,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.komplett.no/",
-        "updatedAt": null
-      }
-    ],
-    "lowestPrice": 21990,
-    "lowestStore": "Proshop",
-    "updatedAt": null
-  },
-  {
-    "id": "gigabyte-gaming-laptop",
-    "brand": "GIGABYTE",
-    "name": "GIGABYTE Gaming Laptop",
-    "model": "Gaming Laptop",
-    "category": "Laptop",
-    "subcategory": "Laptop",
-    "condition": "New",
-    "image": "/images/gigabyte-gaming.jpg",
-    "description": "16 Gaming Laptop",
-    "specifications": {
-      "cpu": "Intel Core i7",
-      "gpu": "NVIDIA GeForce RTX 5060",
-      "ram": "16 GB DDR5",
-      "storage": "1 TB SSD",
-      "screen": "16 165 Hz",
-      "vram": ""
-    },
-    "offers": [
-      {
-        "store": "Proshop",
-        "country": "NO",
-        "condition": "New",
-        "price": 15990,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": null,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.proshop.no/",
-        "updatedAt": null
-      },
-      {
-        "store": "Komplett",
-        "country": "NO",
-        "condition": "New",
-        "price": 16990,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": null,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.komplett.no/",
-        "updatedAt": null
-      }
-    ],
-    "lowestPrice": 15990,
-    "lowestStore": "Proshop",
-    "updatedAt": null
-  },
-  {
-    "id": "pny-geforce-rtx-5060-8gb",
-    "brand": "PNY",
-    "name": "PNY GeForce RTX 5060 Dual Fan 8GB",
-    "model": "VCG50608DFXPB1",
-    "category": "Graphics Card",
-    "subcategory": "Graphics Card",
-    "condition": "New",
-    "image": "/images/rtx-5060.jpg",
-    "description": "RTX 5060 graphics card with 8GB GDDR7, suitable for gaming and everyday high-performance PCs.",
-    "specifications": {
-      "cpu": "",
-      "gpu": "NVIDIA GeForce RTX 5060",
-      "ram": "",
-      "storage": "",
-      "screen": "",
-      "vram": "8 GB GDDR7"
-    },
-    "offers": [
-      {
-        "store": "Proshop",
-        "country": "NO",
-        "condition": "New",
-        "price": 5389,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5060-Dual-Fan-8GB-GDDR7-RAM-Grafikkort/3365812",
-        "updatedAt": null
-      }
-    ],
-    "lowestPrice": 5389,
-    "lowestStore": "Proshop",
-    "updatedAt": null
-  },
-  {
-    "id": "pny-geforce-rtx-5070-ti-16gb",
-    "brand": "PNY",
-    "name": "PNY GeForce RTX 5070 Ti Triple Fan 16GB",
-    "model": "VCG5070T16TFXPB1",
-    "category": "Graphics Card",
-    "subcategory": "Graphics Card",
-    "condition": "New",
-    "image": "/images/rtx-5070-ti.jpg",
-    "description": "RTX 5070 Ti graphics card with 16GB GDDR7, suitable for demanding gaming and high-performance PCs.",
-    "specifications": {
-      "cpu": "",
-      "gpu": "NVIDIA GeForce RTX 5070 Ti",
-      "ram": "",
-      "storage": "",
-      "screen": "",
-      "vram": "16 GB GDDR7"
-    },
-    "offers": [
-      {
-        "store": "Proshop",
-        "country": "NO",
-        "condition": "New",
-        "price": 14806,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5070-Ti-Triple-Fan-16GB-GDDR7-RAM-Grafikkort/3338123",
-        "updatedAt": "2026-09-07"
-      }
-    ],
-    "lowestPrice": 14806,
-    "lowestStore": "Proshop",
-    "updatedAt": "2026-09-07"
-  },
-  {
-    "id": "nvidia-geforce-rtx-5080",
-    "brand": "PNY",
-    "name": "PNY GeForce RTX 5080 Triple Fan 16GB",
-    "model": "VCG508016TFXPB1",
-    "category": "Graphics Card",
-    "subcategory": "Graphics Card",
-    "condition": "New",
-    "image": "/images/rtx-5080.jpg",
-    "description": "RTX 5080 graphics card with 16GB GDDR7, designed for demanding gaming and high-performance PCs.",
-    "specifications": {
-      "cpu": "",
-      "gpu": "NVIDIA GeForce RTX 5080",
-      "ram": "",
-      "storage": "",
-      "screen": "",
-      "vram": "16 GB GDDR7"
-    },
-    "offers": [
-      {
-        "store": "Proshop",
-        "country": "NO",
-        "condition": "New",
-        "price": 15790,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5080-Triple-Fan-16GB-GDDR7-RAM-Grafikkort/3338113",
-        "updatedAt": "2026-09-07"
-      },
-      {
-        "store": "Komplett",
-        "country": "NO",
-        "condition": "New",
-        "price": 15990,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.komplett.no/product/1323904/datautstyr/pc-komponenter/skjermkort/pny-geforce-rtx-5080",
-        "updatedAt": "2026-09-07"
-      }
-    ],
-    "lowestPrice": 15790,
-    "lowestStore": "Proshop",
-    "updatedAt": "2026-09-07"
-  },
-  {
-    "id": "pny-geforce-rtx-5070-12gb",
-    "brand": "PNY",
-    "name": "PNY GeForce RTX 5070 Triple Fan 12GB",
-    "model": "VCG507012TFXPB1-O",
-    "category": "Graphics Card",
-    "subcategory": "Graphics Card",
-    "condition": "New",
-    "image": "/images/rtx-5070.jpg",
-    "description": "RTX 5070 graphics card with 12GB GDDR7, suitable for gaming and high-performance PCs.",
-    "specifications": {
-      "cpu": "",
-      "gpu": "NVIDIA GeForce RTX 5070",
-      "ram": "",
-      "storage": "",
-      "screen": "",
-      "vram": "12 GB GDDR7"
-    },
-    "offers": [
-      {
-        "store": "Proshop",
-        "country": "NO",
-        "condition": "New",
-        "price": 10155,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5070-Triple-Fan-12GB-GDDR7-RAM-Grafikkort/3338133",
-        "updatedAt": "2026-09-07"
-      }
-    ],
-    "lowestPrice": 10155,
-    "lowestStore": "Proshop",
-    "updatedAt": "2026-09-07"
-  },
-  {
-    "id": "gigabyte-rtx-5090-gaming-oc-32gb",
-    "brand": "GIGABYTE",
-    "name": "GIGABYTE GeForce RTX 5090 GAMING OC 32GB",
-    "model": "GV-N5090GAMING OC-32GD",
-    "category": "Graphics Card",
-    "subcategory": "Graphics Card",
-    "condition": "New",
-    "image": "/images/rtx-5090.jpg",
-    "description": "RTX 5090 graphics card with 32GB GDDR7, designed for extreme gaming and high-performance workloads.",
-    "specifications": {
-      "cpu": "",
-      "gpu": "NVIDIA GeForce RTX 5090",
-      "ram": "",
-      "storage": "",
-      "screen": "",
-      "vram": "32 GB GDDR7"
-    },
-    "offers": [
-      {
-        "store": "Komplett",
-        "country": "NO",
-        "condition": "New",
-        "price": 49990,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.komplett.no/product/1319436/datautstyr/pc-komponenter/skjermkort/gigabyte-geforce-rtx-5090-gaming-oc",
-        "updatedAt": "2026-09-07"
-      },
-      {
-        "store": "Proshop",
-        "country": "NO",
-        "condition": "New",
-        "price": 59990,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.proshop.no/Grafikkort/GIGABYTE-GeForce-RTX-5090-GAMING-OC-32GB-GDDR7-RAM-Grafikkort/3331129",
-        "updatedAt": "2026-09-07"
-      }
-    ],
-    "lowestPrice": 49990,
-    "lowestStore": "Komplett",
-    "updatedAt": "2026-09-07"
-  },
-  {
-    "id": "asus-geforce-rtx-5060-ti-dual-oc-16gb",
-    "brand": "ASUS",
-    "name": "ASUS GeForce RTX 5060 Ti DUAL OC 16GB",
-    "model": "DUAL-RTX5060TI-O16G",
-    "category": "Graphics Card",
-    "subcategory": "Graphics Card",
-    "condition": "New",
-    "image": "/images/asus-rtx-5060-ti-dual-16gb.jpg",
-    "description": "RTX 5060 Ti graphics card with 16GB GDDR7, suitable for gaming and high-performance PCs.",
-    "specifications": {
-      "cpu": "",
-      "gpu": "NVIDIA GeForce RTX 5060 Ti",
-      "ram": "",
-      "storage": "",
-      "screen": "",
-      "vram": "16 GB GDDR7"
-    },
-    "offers": [
-      {
-        "store": "Proshop",
-        "country": "NO",
-        "condition": "New",
-        "price": 8190,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.proshop.no/Grafikkort/ASUS-GeForce-RTX-5060-Ti-DUAL-OC-16GB-GDDR7-RAM-Grafikkort/3354513",
-        "updatedAt": "2026-09-07"
-      }
-    ],
-    "lowestPrice": 8190,
-    "lowestStore": "Proshop",
-    "updatedAt": "2026-09-07"
-      },
+﻿[
     {
-        "id": "asrock-radeon-rx-9070-challenger-16gb",
-        "name": "ASRock Radeon RX 9070 Challenger 16GB",
-        "category": "Graphics Cards",
-        "description": "RX 9070 med 16GB GDDR6, RDNA 4-arkitektur og høy ytelse for gaming.",
-        "gpu": "AMD Radeon RX 9070",
-        "vram": "16 GB GDDR6",
-        "offers": [
-            {
-                "store": "Proshop",
-                "country": "NO",
-                "condition": "New",
-                "price": 7867,
-                "currency": "NOK",
-                "shipping": null,
-                "inStock": true,
-                "affiliate": null,
-                "affiliateNetwork": null,
-                "url": "https://www.proshop.no/Grafikkort/ASRock-Radeon-RX-9070-Challenger-16GB-GDDR6-RAM-Grafikkort/3348384",
-                "updatedAt": "2026-09-08"
-            }
-        ],
-        "lowestPrice": 7867,
-        "lowestStore": "Proshop",
-        "updatedAt": "2026-09-08"
+        "id":  "lenovo-loq-15",
+        "brand":  "Lenovo",
+        "name":  "Lenovo LOQ 15",
+        "model":  "LOQ 15",
+        "category":  "Laptop",
+        "subcategory":  "Laptop",
+        "condition":  "New",
+        "image":  "/images/lenovo-loq.jpg",
+        "description":  "15.6 Gaming Laptop",
+        "specifications":  {
+                               "cpu":  "AMD Ryzen 7 250",
+                               "gpu":  "NVIDIA GeForce RTX 5060 8GB",
+                               "ram":  "16 GB DDR5",
+                               "storage":  "1 TB SSD",
+                               "screen":  "15.6 Full HD 144 Hz",
+                               "vram":  ""
+                           },
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  12990,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  null,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/",
+                           "updatedAt":  null
+                       },
+                       {
+                           "store":  "Komplett",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  14990,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  null,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.komplett.no/",
+                           "updatedAt":  null
+                       }
+                   ],
+        "lowestPrice":  12990,
+        "lowestStore":  "Proshop",
+        "updatedAt":  null
     },
     {
-        "id": "sapphire-radeon-rx-9070-pulse-16gb",
-        "name": "Sapphire Radeon RX 9070 Pulse 16GB",
-        "category": "Graphics Cards",
-        "description": "RX 9070 med 16GB GDDR6 og effektiv kjøling for moderne gaming.",
-        "gpu": "AMD Radeon RX 9070",
-        "vram": "16 GB GDDR6",
-        "offers": [
-            {
-                "store": "Proshop",
-                "country": "NO",
-                "condition": "New",
-                "price": 8692,
-                "currency": "NOK",
-                "shipping": null,
-                "inStock": true,
-                "affiliate": null,
-                "affiliateNetwork": null,
-                "url": "https://www.proshop.no/Grafikkort/Sapphire-Radeon-RX-9070-Pulse-16GB-GDDR6-RAM-Grafikkort/3331611",
-                "updatedAt": "2026-09-08"
-            }
-        ],
-        "lowestPrice": 8692,
-        "lowestStore": "Proshop",
-        "updatedAt": "2026-09-08"
+        "id":  "asus-rog-strix-g16",
+        "brand":  "ASUS",
+        "name":  "ASUS ROG Strix G16",
+        "model":  "ROG Strix G16",
+        "category":  "Laptop",
+        "subcategory":  "Laptop",
+        "condition":  "New",
+        "image":  "/images/asus-rog-g16.jpg",
+        "description":  "16 Gaming Laptop",
+        "specifications":  {
+                               "cpu":  "AMD Ryzen 9 9955HX",
+                               "gpu":  "NVIDIA GeForce RTX 5070 8GB",
+                               "ram":  "32 GB DDR5",
+                               "storage":  "1 TB SSD",
+                               "screen":  "16 WQXGA 240 Hz",
+                               "vram":  ""
+                           },
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  21990,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  null,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/",
+                           "updatedAt":  null
+                       },
+                       {
+                           "store":  "Komplett",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  22990,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  null,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.komplett.no/",
+                           "updatedAt":  null
+                       }
+                   ],
+        "lowestPrice":  21990,
+        "lowestStore":  "Proshop",
+        "updatedAt":  null
     },
     {
-        "id": "powercolor-radeon-rx-9070-reaper-16gb",
-        "name": "PowerColor Radeon RX 9070 Reaper 16GB",
-        "category": "Graphics Cards",
-        "description": "RX 9070 med 16GB GDDR6 og kraftig kjøling for gaming og kreativ bruk.",
-        "gpu": "AMD Radeon RX 9070",
-        "vram": "16 GB GDDR6",
-        "offers": [
-            {
-                "store": "Proshop",
-                "country": "NO",
-                "condition": "New",
-                "price": 8990,
-                "currency": "NOK",
-                "shipping": null,
-                "inStock": true,
-                "affiliate": null,
-                "affiliateNetwork": null,
-                "url": "https://www.proshop.no/Grafikkort/PowerColor-Radeon-RX-9070-Reaper-16GB-GDDR6-RAM-Grafikkort/3331583",
-                "updatedAt": "2026-09-08"
-            }
-        ],
-        "lowestPrice": 8990,
-        "lowestStore": "Proshop",
-        "updatedAt": "2026-09-08"
+        "id":  "gigabyte-gaming-laptop",
+        "brand":  "GIGABYTE",
+        "name":  "GIGABYTE Gaming Laptop",
+        "model":  "Gaming Laptop",
+        "category":  "Laptop",
+        "subcategory":  "Laptop",
+        "condition":  "New",
+        "image":  "/images/gigabyte-gaming.jpg",
+        "description":  "16 Gaming Laptop",
+        "specifications":  {
+                               "cpu":  "Intel Core i7",
+                               "gpu":  "NVIDIA GeForce RTX 5060",
+                               "ram":  "16 GB DDR5",
+                               "storage":  "1 TB SSD",
+                               "screen":  "16 165 Hz",
+                               "vram":  ""
+                           },
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  15990,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  null,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/",
+                           "updatedAt":  null
+                       },
+                       {
+                           "store":  "Komplett",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  16990,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  null,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.komplett.no/",
+                           "updatedAt":  null
+                       }
+                   ],
+        "lowestPrice":  15990,
+        "lowestStore":  "Proshop",
+        "updatedAt":  null
     },
     {
-        "id": "gigabyte-radeon-rx-9070-xt-gaming-oc-ice-16gb",
-        "name": "GIGABYTE Radeon RX 9070 XT GAMING OC ICE 16GB",
-        "category": "Graphics Cards",
-        "description": "RX 9070 XT med 16GB GDDR6 og kraftig trippelviftekjøling.",
-        "gpu": "AMD Radeon RX 9070 XT",
-        "vram": "16 GB GDDR6",
-        "offers": [
-            {
-                "store": "Proshop",
-                "country": "NO",
-                "condition": "New",
-                "price": 9690,
-                "currency": "NOK",
-                "shipping": null,
-                "inStock": true,
-                "affiliate": null,
-                "affiliateNetwork": null,
-                "url": "https://www.proshop.no/Grafikkort/GIGABYTE-Radeon-RX-9070-XT-GAMING-OC-ICE-16GB-GDDR6-RAM-Grafikkort/3425155",
-                "updatedAt": "2026-09-08"
-            }
-        ],
-        "lowestPrice": 9690,
-        "lowestStore": "Proshop",
-        "updatedAt": "2026-09-08"
-      },
-  {
-    "id": "asrock-radeon-rx-9070-challenger-16gb",
-    "brand": "ASRock",
-    "name": "ASRock Radeon RX 9070 Challenger 16GB",
-    "model": "90-GA5NZZ-00UANF",
-    "category": "Graphics Card",
-    "subcategory": "Graphics Card",
-    "condition": "New",
-    "image": "/images/gpu.jpg",
-    "description": "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for high-performance gaming.",
-    "gpu": "AMD Radeon RX 9070",
-    "vram": "16 GB GDDR6",
-    "specifications": {
-      "cpu": "",
-      "gpu": "AMD Radeon RX 9070",
-      "ram": "",
-      "storage": "",
-      "screen": "",
-      "vram": "16 GB GDDR6"
+        "id":  "pny-geforce-rtx-5060-8gb",
+        "brand":  "PNY",
+        "name":  "PNY GeForce RTX 5060 Dual Fan 8GB",
+        "model":  "VCG50608DFXPB1",
+        "category":  "Graphics Card",
+        "subcategory":  "Graphics Card",
+        "condition":  "New",
+        "image":  "/images/rtx-5060.jpg",
+        "description":  "RTX 5060 graphics card with 8GB GDDR7, suitable for gaming and everyday high-performance PCs.",
+        "specifications":  {
+                               "cpu":  "",
+                               "gpu":  "NVIDIA GeForce RTX 5060",
+                               "ram":  "",
+                               "storage":  "",
+                               "screen":  "",
+                               "vram":  "8 GB GDDR7"
+                           },
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  5389,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5060-Dual-Fan-8GB-GDDR7-RAM-Grafikkort/3365812",
+                           "updatedAt":  null
+                       }
+                   ],
+        "lowestPrice":  5389,
+        "lowestStore":  "Proshop",
+        "updatedAt":  null
     },
-    "offers": [
-      {
-        "store": "Proshop",
-        "country": "NO",
-        "condition": "New",
-        "price": 7867,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.proshop.no/Grafikkort/ASRock-Radeon-RX-9070-Challenger-16GB-GDDR6-RAM-Grafikkort/3348384",
-        "updatedAt": "2026-09-08"
-      }
-    ],
-    "lowestPrice": 7867,
-    "lowestStore": "Proshop",
-    "updatedAt": "2026-09-08"
-  },
-  {
-    "id": "sapphire-radeon-rx-9070-pulse-16gb",
-    "brand": "Sapphire",
-    "name": "Sapphire Radeon RX 9070 Pulse 16GB",
-    "model": "11349-03-20G",
-    "category": "Graphics Card",
-    "subcategory": "Graphics Card",
-    "condition": "New",
-    "image": "/images/gpu.jpg",
-    "description": "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for gaming and high-performance PCs.",
-    "gpu": "AMD Radeon RX 9070",
-    "vram": "16 GB GDDR6",
-    "specifications": {
-      "cpu": "",
-      "gpu": "AMD Radeon RX 9070",
-      "ram": "",
-      "storage": "",
-      "screen": "",
-      "vram": "16 GB GDDR6"
+    {
+        "id":  "pny-geforce-rtx-5070-ti-16gb",
+        "brand":  "PNY",
+        "name":  "PNY GeForce RTX 5070 Ti Triple Fan 16GB",
+        "model":  "VCG5070T16TFXPB1",
+        "category":  "Graphics Card",
+        "subcategory":  "Graphics Card",
+        "condition":  "New",
+        "image":  "/images/rtx-5070-ti.jpg",
+        "description":  "RTX 5070 Ti graphics card with 16GB GDDR7, suitable for demanding gaming and high-performance PCs.",
+        "specifications":  {
+                               "cpu":  "",
+                               "gpu":  "NVIDIA GeForce RTX 5070 Ti",
+                               "ram":  "",
+                               "storage":  "",
+                               "screen":  "",
+                               "vram":  "16 GB GDDR7"
+                           },
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  14806,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5070-Ti-Triple-Fan-16GB-GDDR7-RAM-Grafikkort/3338123",
+                           "updatedAt":  "2026-09-07"
+                       }
+                   ],
+        "lowestPrice":  14806,
+        "lowestStore":  "Proshop",
+        "updatedAt":  "2026-09-07"
     },
-    "offers": [
-      {
-        "store": "Proshop",
-        "country": "NO",
-        "condition": "New",
-        "price": 8692,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.proshop.no/Grafikkort/Sapphire-Radeon-RX-9070-Pulse-16GB-GDDR6-RAM-Grafikkort/3331611",
-        "updatedAt": "2026-09-08"
-      }
-    ],
-    "lowestPrice": 8692,
-    "lowestStore": "Proshop",
-    "updatedAt": "2026-09-08"
-  },
-  {
-    "id": "powercolor-radeon-rx-9070-reaper-16gb",
-    "brand": "PowerColor",
-    "name": "PowerColor Radeon RX 9070 Reaper 16GB",
-    "model": "RX9070 16G-A",
-    "category": "Graphics Card",
-    "subcategory": "Graphics Card",
-    "condition": "New",
-    "image": "/images/gpu.jpg",
-    "description": "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for gaming and high-performance PCs.",
-    "gpu": "AMD Radeon RX 9070",
-    "vram": "16 GB GDDR6",
-    "specifications": {
-      "cpu": "",
-      "gpu": "AMD Radeon RX 9070",
-      "ram": "",
-      "storage": "",
-      "screen": "",
-      "vram": "16 GB GDDR6"
+    {
+        "id":  "nvidia-geforce-rtx-5080",
+        "brand":  "PNY",
+        "name":  "PNY GeForce RTX 5080 Triple Fan 16GB",
+        "model":  "VCG508016TFXPB1",
+        "category":  "Graphics Card",
+        "subcategory":  "Graphics Card",
+        "condition":  "New",
+        "image":  "/images/rtx-5080.jpg",
+        "description":  "RTX 5080 graphics card with 16GB GDDR7, designed for demanding gaming and high-performance PCs.",
+        "specifications":  {
+                               "cpu":  "",
+                               "gpu":  "NVIDIA GeForce RTX 5080",
+                               "ram":  "",
+                               "storage":  "",
+                               "screen":  "",
+                               "vram":  "16 GB GDDR7"
+                           },
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  15790,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5080-Triple-Fan-16GB-GDDR7-RAM-Grafikkort/3338113",
+                           "updatedAt":  "2026-09-07"
+                       },
+                       {
+                           "store":  "Komplett",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  15990,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.komplett.no/product/1323904/datautstyr/pc-komponenter/skjermkort/pny-geforce-rtx-5080",
+                           "updatedAt":  "2026-09-07"
+                       }
+                   ],
+        "lowestPrice":  15790,
+        "lowestStore":  "Proshop",
+        "updatedAt":  "2026-09-07"
     },
-    "offers": [
-      {
-        "store": "Proshop",
-        "country": "NO",
-        "condition": "New",
-        "price": 8990,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.proshop.no/Grafikkort/PowerColor-Radeon-RX-9070-Reaper-16GB-GDDR6-RAM-Grafikkort/3331583",
-        "updatedAt": "2026-09-08"
-      }
-    ],
-    "lowestPrice": 8990,
-    "lowestStore": "Proshop",
-    "updatedAt": "2026-09-08"
-  },
-  {
-    "id": "gigabyte-radeon-rx-9070-xt-gaming-oc-ice-16gb",
-    "brand": "GIGABYTE",
-    "name": "GIGABYTE Radeon RX 9070 XT GAMING OC ICE 16GB",
-    "model": "GV-R907XGAMINGOCICE-16GD",
-    "category": "Graphics Card",
-    "subcategory": "Graphics Card",
-    "condition": "New",
-    "image": "/images/gpu.jpg",
-    "description": "AMD Radeon RX 9070 XT graphics card with 16GB GDDR6 memory for high-performance gaming.",
-    "gpu": "AMD Radeon RX 9070 XT",
-    "vram": "16 GB GDDR6",
-    "specifications": {
-      "cpu": "",
-      "gpu": "AMD Radeon RX 9070 XT",
-      "ram": "",
-      "storage": "",
-      "screen": "",
-      "vram": "16 GB GDDR6"
+    {
+        "id":  "pny-geforce-rtx-5070-12gb",
+        "brand":  "PNY",
+        "name":  "PNY GeForce RTX 5070 Triple Fan 12GB",
+        "model":  "VCG507012TFXPB1-O",
+        "category":  "Graphics Card",
+        "subcategory":  "Graphics Card",
+        "condition":  "New",
+        "image":  "/images/rtx-5070.jpg",
+        "description":  "RTX 5070 graphics card with 12GB GDDR7, suitable for gaming and high-performance PCs.",
+        "specifications":  {
+                               "cpu":  "",
+                               "gpu":  "NVIDIA GeForce RTX 5070",
+                               "ram":  "",
+                               "storage":  "",
+                               "screen":  "",
+                               "vram":  "12 GB GDDR7"
+                           },
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  10155,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5070-Triple-Fan-12GB-GDDR7-RAM-Grafikkort/3338133",
+                           "updatedAt":  "2026-09-07"
+                       }
+                   ],
+        "lowestPrice":  10155,
+        "lowestStore":  "Proshop",
+        "updatedAt":  "2026-09-07"
     },
-    "offers": [
-      {
-        "store": "Proshop",
-        "country": "NO",
-        "condition": "New",
-        "price": 9690,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": null,
-        "affiliateNetwork": null,
-        "url": "https://www.proshop.no/Grafikkort/GIGABYTE-Radeon-RX-9070-XT-GAMING-OC-ICE-16GB-GDDR6-RAM-Grafikkort/3425155",
-        "updatedAt": "2026-09-08"
-      }
-    ],
-    "lowestPrice": 9690,
-    "lowestStore": "Proshop",
-    "updatedAt": "2026-09-08"
-  }
+    {
+        "id":  "gigabyte-rtx-5090-gaming-oc-32gb",
+        "brand":  "GIGABYTE",
+        "name":  "GIGABYTE GeForce RTX 5090 GAMING OC 32GB",
+        "model":  "GV-N5090GAMING OC-32GD",
+        "category":  "Graphics Card",
+        "subcategory":  "Graphics Card",
+        "condition":  "New",
+        "image":  "/images/rtx-5090.jpg",
+        "description":  "RTX 5090 graphics card with 32GB GDDR7, designed for extreme gaming and high-performance workloads.",
+        "specifications":  {
+                               "cpu":  "",
+                               "gpu":  "NVIDIA GeForce RTX 5090",
+                               "ram":  "",
+                               "storage":  "",
+                               "screen":  "",
+                               "vram":  "32 GB GDDR7"
+                           },
+        "offers":  [
+                       {
+                           "store":  "Komplett",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  49990,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.komplett.no/product/1319436/datautstyr/pc-komponenter/skjermkort/gigabyte-geforce-rtx-5090-gaming-oc",
+                           "updatedAt":  "2026-09-07"
+                       },
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  59990,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/Grafikkort/GIGABYTE-GeForce-RTX-5090-GAMING-OC-32GB-GDDR7-RAM-Grafikkort/3331129",
+                           "updatedAt":  "2026-09-07"
+                       }
+                   ],
+        "lowestPrice":  49990,
+        "lowestStore":  "Komplett",
+        "updatedAt":  "2026-09-07"
+    },
+    {
+        "id":  "asus-geforce-rtx-5060-ti-dual-oc-16gb",
+        "brand":  "ASUS",
+        "name":  "ASUS GeForce RTX 5060 Ti DUAL OC 16GB",
+        "model":  "DUAL-RTX5060TI-O16G",
+        "category":  "Graphics Card",
+        "subcategory":  "Graphics Card",
+        "condition":  "New",
+        "image":  "/images/asus-rtx-5060-ti-dual-16gb.jpg",
+        "description":  "RTX 5060 Ti graphics card with 16GB GDDR7, suitable for gaming and high-performance PCs.",
+        "specifications":  {
+                               "cpu":  "",
+                               "gpu":  "NVIDIA GeForce RTX 5060 Ti",
+                               "ram":  "",
+                               "storage":  "",
+                               "screen":  "",
+                               "vram":  "16 GB GDDR7"
+                           },
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  8190,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/Grafikkort/ASUS-GeForce-RTX-5060-Ti-DUAL-OC-16GB-GDDR7-RAM-Grafikkort/3354513",
+                           "updatedAt":  "2026-09-07"
+                       }
+                   ],
+        "lowestPrice":  8190,
+        "lowestStore":  "Proshop",
+        "updatedAt":  "2026-09-07"
+    },
+    {
+        "id":  "asrock-radeon-rx-9070-challenger-16gb",
+        "name":  "ASRock Radeon RX 9070 Challenger 16GB",
+        "category":  "Graphics Cards",
+        "description":  "RX 9070 med 16GB GDDR6, RDNA 4-arkitektur og hÃ¸y ytelse for gaming.",
+        "gpu":  "AMD Radeon RX 9070",
+        "vram":  "16 GB GDDR6",
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  7867,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/Grafikkort/ASRock-Radeon-RX-9070-Challenger-16GB-GDDR6-RAM-Grafikkort/3348384",
+                           "updatedAt":  "2026-09-08"
+                       }
+                   ],
+        "lowestPrice":  7867,
+        "lowestStore":  "Proshop",
+        "updatedAt":  "2026-09-08"
+    },
+    {
+        "id":  "sapphire-radeon-rx-9070-pulse-16gb",
+        "name":  "Sapphire Radeon RX 9070 Pulse 16GB",
+        "category":  "Graphics Cards",
+        "description":  "RX 9070 med 16GB GDDR6 og effektiv kjÃ¸ling for moderne gaming.",
+        "gpu":  "AMD Radeon RX 9070",
+        "vram":  "16 GB GDDR6",
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  8692,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/Grafikkort/Sapphire-Radeon-RX-9070-Pulse-16GB-GDDR6-RAM-Grafikkort/3331611",
+                           "updatedAt":  "2026-09-08"
+                       }
+                   ],
+        "lowestPrice":  8692,
+        "lowestStore":  "Proshop",
+        "updatedAt":  "2026-09-08"
+    },
+    {
+        "id":  "powercolor-radeon-rx-9070-reaper-16gb",
+        "name":  "PowerColor Radeon RX 9070 Reaper 16GB",
+        "category":  "Graphics Cards",
+        "description":  "RX 9070 med 16GB GDDR6 og kraftig kjÃ¸ling for gaming og kreativ bruk.",
+        "gpu":  "AMD Radeon RX 9070",
+        "vram":  "16 GB GDDR6",
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  8990,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/Grafikkort/PowerColor-Radeon-RX-9070-Reaper-16GB-GDDR6-RAM-Grafikkort/3331583",
+                           "updatedAt":  "2026-09-08"
+                       }
+                   ],
+        "lowestPrice":  8990,
+        "lowestStore":  "Proshop",
+        "updatedAt":  "2026-09-08"
+    },
+    {
+        "id":  "gigabyte-radeon-rx-9070-xt-gaming-oc-ice-16gb",
+        "name":  "GIGABYTE Radeon RX 9070 XT GAMING OC ICE 16GB",
+        "category":  "Graphics Cards",
+        "description":  "RX 9070 XT med 16GB GDDR6 og kraftig trippelviftekjÃ¸ling.",
+        "gpu":  "AMD Radeon RX 9070 XT",
+        "vram":  "16 GB GDDR6",
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  9690,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/Grafikkort/GIGABYTE-Radeon-RX-9070-XT-GAMING-OC-ICE-16GB-GDDR6-RAM-Grafikkort/3425155",
+                           "updatedAt":  "2026-09-08"
+                       }
+                   ],
+        "lowestPrice":  9690,
+        "lowestStore":  "Proshop",
+        "updatedAt":  "2026-09-08"
+    },
+    {
+        "id":  "asrock-radeon-rx-9070-challenger-16gb",
+        "brand":  "ASRock",
+        "name":  "ASRock Radeon RX 9070 Challenger 16GB",
+        "model":  "90-GA5NZZ-00UANF",
+        "category":  "Graphics Card",
+        "subcategory":  "Graphics Card",
+        "condition":  "New",
+        "image":  "/images/gpu.jpg",
+        "description":  "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for high-performance gaming.",
+        "gpu":  "AMD Radeon RX 9070",
+        "vram":  "16 GB GDDR6",
+        "specifications":  {
+                               "cpu":  "",
+                               "gpu":  "AMD Radeon RX 9070",
+                               "ram":  "",
+                               "storage":  "",
+                               "screen":  "",
+                               "vram":  "16 GB GDDR6"
+                           },
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  7867,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/Grafikkort/ASRock-Radeon-RX-9070-Challenger-16GB-GDDR6-RAM-Grafikkort/3348384",
+                           "updatedAt":  "2026-09-08"
+                       }
+                   ],
+        "lowestPrice":  7867,
+        "lowestStore":  "Proshop",
+        "updatedAt":  "2026-09-08"
+    },
+    {
+        "id":  "sapphire-radeon-rx-9070-pulse-16gb",
+        "brand":  "Sapphire",
+        "name":  "Sapphire Radeon RX 9070 Pulse 16GB",
+        "model":  "11349-03-20G",
+        "category":  "Graphics Card",
+        "subcategory":  "Graphics Card",
+        "condition":  "New",
+        "image":  "/images/gpu.jpg",
+        "description":  "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for gaming and high-performance PCs.",
+        "gpu":  "AMD Radeon RX 9070",
+        "vram":  "16 GB GDDR6",
+        "specifications":  {
+                               "cpu":  "",
+                               "gpu":  "AMD Radeon RX 9070",
+                               "ram":  "",
+                               "storage":  "",
+                               "screen":  "",
+                               "vram":  "16 GB GDDR6"
+                           },
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  8692,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/Grafikkort/Sapphire-Radeon-RX-9070-Pulse-16GB-GDDR6-RAM-Grafikkort/3331611",
+                           "updatedAt":  "2026-09-08"
+                       }
+                   ],
+        "lowestPrice":  8692,
+        "lowestStore":  "Proshop",
+        "updatedAt":  "2026-09-08"
+    },
+    {
+        "id":  "powercolor-radeon-rx-9070-reaper-16gb",
+        "brand":  "PowerColor",
+        "name":  "PowerColor Radeon RX 9070 Reaper 16GB",
+        "model":  "RX9070 16G-A",
+        "category":  "Graphics Card",
+        "subcategory":  "Graphics Card",
+        "condition":  "New",
+        "image":  "/images/gpu.jpg",
+        "description":  "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for gaming and high-performance PCs.",
+        "gpu":  "AMD Radeon RX 9070",
+        "vram":  "16 GB GDDR6",
+        "specifications":  {
+                               "cpu":  "",
+                               "gpu":  "AMD Radeon RX 9070",
+                               "ram":  "",
+                               "storage":  "",
+                               "screen":  "",
+                               "vram":  "16 GB GDDR6"
+                           },
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  8990,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/Grafikkort/PowerColor-Radeon-RX-9070-Reaper-16GB-GDDR6-RAM-Grafikkort/3331583",
+                           "updatedAt":  "2026-09-08"
+                       }
+                   ],
+        "lowestPrice":  8990,
+        "lowestStore":  "Proshop",
+        "updatedAt":  "2026-09-08"
+    },
+    {
+        "id":  "gigabyte-radeon-rx-9070-xt-gaming-oc-ice-16gb",
+        "brand":  "GIGABYTE",
+        "name":  "GIGABYTE Radeon RX 9070 XT GAMING OC ICE 16GB",
+        "model":  "GV-R907XGAMINGOCICE-16GD",
+        "category":  "Graphics Card",
+        "subcategory":  "Graphics Card",
+        "condition":  "New",
+        "image":  "/images/gpu.jpg",
+        "description":  "AMD Radeon RX 9070 XT graphics card with 16GB GDDR6 memory for high-performance gaming.",
+        "gpu":  "AMD Radeon RX 9070 XT",
+        "vram":  "16 GB GDDR6",
+        "specifications":  {
+                               "cpu":  "",
+                               "gpu":  "AMD Radeon RX 9070 XT",
+                               "ram":  "",
+                               "storage":  "",
+                               "screen":  "",
+                               "vram":  "16 GB GDDR6"
+                           },
+        "offers":  [
+                       {
+                           "store":  "Proshop",
+                           "country":  "NO",
+                           "condition":  "New",
+                           "price":  9690,
+                           "currency":  "NOK",
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "affiliateNetwork":  null,
+                           "url":  "https://www.proshop.no/Grafikkort/GIGABYTE-Radeon-RX-9070-XT-GAMING-OC-ICE-16GB-GDDR6-RAM-Grafikkort/3425155",
+                           "updatedAt":  "2026-09-08"
+                       }
+                   ],
+        "lowestPrice":  9690,
+        "lowestStore":  "Proshop",
+        "updatedAt":  "2026-09-08"
+    },
+    {
+        "lowestStore":  "ElkjÃ¸p",
+        "id":  "lenovo-loq-17irr9-rtx3050",
+        "model":  "17IRR9",
+        "updatedAt":  "2026-09-08",
+        "offers":  [
+                       {
+                           "currency":  "NOK",
+                           "url":  "https://www.elkjop.no/product/pc-datautstyr-og-kontor/pc/stasjonar-pc/lenovo-loq-17irr9-i5-1481tb3050-gaming-desktop/913582",
+                           "price":  14995,
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "condition":  "New",
+                           "updatedAt":  "2026-09-08",
+                           "store":  "ElkjÃ¸p",
+                           "country":  "NO",
+                           "affiliateNetwork":  null
+                       }
+                   ],
+        "image":  "/images/gaming-pc.jpg",
+        "name":  "Lenovo LOQ 17IRR9 Gaming Desktop",
+        "subcategory":  "Gaming Desktop",
+        "specifications":  {
+                               "vram":  "6 GB",
+                               "gpu":  "NVIDIA GeForce RTX 3050",
+                               "storage":  "1 TB SSD",
+                               "screen":  "",
+                               "ram":  "8 GB",
+                               "cpu":  "Intel Core i5-14400"
+                           },
+        "brand":  "Lenovo",
+        "gpu":  "NVIDIA GeForce RTX 3050",
+        "vram":  "6 GB",
+        "lowestPrice":  14995,
+        "category":  "Gaming PC",
+        "condition":  "New",
+        "description":  "Lenovo LOQ gaming desktop with Intel Core i5 processor, NVIDIA GeForce RTX 3050 graphics, 8GB RAM and 1TB SSD."
+    },
+    {
+        "lowestStore":  "ElkjÃ¸p",
+        "id":  "asus-tuf-t500-rtx5060",
+        "model":  "T500",
+        "updatedAt":  "2026-09-08",
+        "offers":  [
+                       {
+                           "currency":  "NOK",
+                           "url":  "https://www.elkjop.no/",
+                           "price":  18495,
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "condition":  "New",
+                           "updatedAt":  "2026-09-08",
+                           "store":  "ElkjÃ¸p",
+                           "country":  "NO",
+                           "affiliateNetwork":  null
+                       }
+                   ],
+        "image":  "/images/gaming-pc.jpg",
+        "name":  "ASUS TUF T500 Gaming Desktop RTX 5060",
+        "subcategory":  "Gaming Desktop",
+        "specifications":  {
+                               "vram":  "8 GB",
+                               "gpu":  "NVIDIA GeForce RTX 5060",
+                               "storage":  "1 TB SSD",
+                               "screen":  "",
+                               "ram":  "16 GB",
+                               "cpu":  "Intel Core 5 210H"
+                           },
+        "brand":  "ASUS",
+        "gpu":  "NVIDIA GeForce RTX 5060",
+        "vram":  "8 GB",
+        "lowestPrice":  18495,
+        "category":  "Gaming PC",
+        "condition":  "New",
+        "description":  "ASUS TUF gaming desktop with Intel Core 5 processor, RTX 5060 graphics, 16GB RAM and 1TB SSD."
+    },
+    {
+        "lowestStore":  "ElkjÃ¸p",
+        "id":  "lenovo-legion-t5-rtx5060ti",
+        "model":  "Legion T5",
+        "updatedAt":  "2026-09-08",
+        "offers":  [
+                       {
+                           "currency":  "NOK",
+                           "url":  "https://www.elkjop.no/",
+                           "price":  19995,
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "condition":  "New",
+                           "updatedAt":  "2026-09-08",
+                           "store":  "ElkjÃ¸p",
+                           "country":  "NO",
+                           "affiliateNetwork":  null
+                       }
+                   ],
+        "image":  "/images/gaming-pc.jpg",
+        "name":  "Lenovo Legion T5 Gaming Desktop RTX 5060 Ti",
+        "subcategory":  "Gaming Desktop",
+        "specifications":  {
+                               "vram":  "16 GB",
+                               "gpu":  "NVIDIA GeForce RTX 5060 Ti",
+                               "storage":  "1 TB SSD",
+                               "screen":  "",
+                               "ram":  "16 GB",
+                               "cpu":  "AMD Ryzen 5 7600"
+                           },
+        "brand":  "Lenovo",
+        "gpu":  "NVIDIA GeForce RTX 5060 Ti",
+        "vram":  "16 GB",
+        "lowestPrice":  19995,
+        "category":  "Gaming PC",
+        "condition":  "New",
+        "description":  "Lenovo Legion T5 gaming desktop with AMD Ryzen processor, RTX 5060 Ti graphics, 16GB RAM and 1TB SSD."
+    },
+    {
+        "lowestStore":  "ElkjÃ¸p",
+        "id":  "hp-omen-35l-rtx5060ti",
+        "model":  "OMEN 35L",
+        "updatedAt":  "2026-09-08",
+        "offers":  [
+                       {
+                           "currency":  "NOK",
+                           "url":  "https://www.elkjop.no/",
+                           "price":  19995,
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "condition":  "New",
+                           "updatedAt":  "2026-09-08",
+                           "store":  "ElkjÃ¸p",
+                           "country":  "NO",
+                           "affiliateNetwork":  null
+                       }
+                   ],
+        "image":  "/images/gaming-pc.jpg",
+        "name":  "HP OMEN 35L Gaming Desktop RTX 5060 Ti",
+        "subcategory":  "Gaming Desktop",
+        "specifications":  {
+                               "vram":  "16 GB",
+                               "gpu":  "NVIDIA GeForce RTX 5060 Ti",
+                               "storage":  "1 TB SSD",
+                               "screen":  "",
+                               "ram":  "16 GB",
+                               "cpu":  "Intel Core i5-14400F"
+                           },
+        "brand":  "HP",
+        "gpu":  "NVIDIA GeForce RTX 5060 Ti",
+        "vram":  "16 GB",
+        "lowestPrice":  19995,
+        "category":  "Gaming PC",
+        "condition":  "New",
+        "description":  "HP OMEN 35L gaming desktop with Intel Core i5 processor, RTX 5060 Ti graphics, 16GB RAM and 1TB SSD."
+    },
+    {
+        "lowestStore":  "ElkjÃ¸p",
+        "id":  "lenovo-legion-tower-5i-rtx5060ti",
+        "model":  "Legion Tower 5i",
+        "updatedAt":  "2026-09-08",
+        "offers":  [
+                       {
+                           "currency":  "NOK",
+                           "url":  "https://www.elkjop.no/",
+                           "price":  22995,
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "condition":  "New",
+                           "updatedAt":  "2026-09-08",
+                           "store":  "ElkjÃ¸p",
+                           "country":  "NO",
+                           "affiliateNetwork":  null
+                       }
+                   ],
+        "image":  "/images/gaming-pc.jpg",
+        "name":  "Lenovo Legion Tower 5i Gaming Desktop RTX 5060 Ti",
+        "subcategory":  "Gaming Desktop",
+        "specifications":  {
+                               "vram":  "16 GB",
+                               "gpu":  "NVIDIA GeForce RTX 5060 Ti",
+                               "storage":  "1 TB SSD",
+                               "screen":  "",
+                               "ram":  "16 GB",
+                               "cpu":  "Intel Core Ultra 7 265"
+                           },
+        "brand":  "Lenovo",
+        "gpu":  "NVIDIA GeForce RTX 5060 Ti",
+        "vram":  "16 GB",
+        "lowestPrice":  22995,
+        "category":  "Gaming PC",
+        "condition":  "New",
+        "description":  "Lenovo Legion Tower 5i gaming desktop with Intel Core Ultra processor, RTX 5060 Ti graphics, 16GB RAM and 1TB SSD."
+    },
+    {
+        "lowestStore":  "ElkjÃ¸p",
+        "id":  "pcspecialist-prime-400-rtx5070",
+        "model":  "Prime 400",
+        "updatedAt":  "2026-09-08",
+        "offers":  [
+                       {
+                           "currency":  "NOK",
+                           "url":  "https://www.elkjop.no/",
+                           "price":  24995,
+                           "shipping":  null,
+                           "inStock":  true,
+                           "affiliate":  null,
+                           "condition":  "New",
+                           "updatedAt":  "2026-09-08",
+                           "store":  "ElkjÃ¸p",
+                           "country":  "NO",
+                           "affiliateNetwork":  null
+                       }
+                   ],
+        "image":  "/images/gaming-pc.jpg",
+        "name":  "PCSpecialist Prime 400 Gaming Desktop RTX 5070",
+        "subcategory":  "Gaming Desktop",
+        "specifications":  {
+                               "vram":  "12 GB",
+                               "gpu":  "NVIDIA GeForce RTX 5070",
+                               "storage":  "1 TB SSD",
+                               "screen":  "",
+                               "ram":  "16 GB",
+                               "cpu":  "Intel Core i7-14700F"
+                           },
+        "brand":  "PCSpecialist",
+        "gpu":  "NVIDIA GeForce RTX 5070",
+        "vram":  "12 GB",
+        "lowestPrice":  24995,
+        "category":  "Gaming PC",
+        "condition":  "New",
+        "description":  "PCSpecialist Prime 400 gaming desktop with Intel Core i7 processor, RTX 5070 graphics, 16GB RAM and 1TB SSD."
+    }
 ]
