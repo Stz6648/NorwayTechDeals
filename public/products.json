@@ -677,7 +677,7 @@
                            "affiliateNetwork":  null
                        }
                    ],
-        "image":  "/images/gaming-pc.jpg",
+        "image":  "/images/lenovo-loq-17irr9.jpg",
         "name":  "Lenovo LOQ 17IRR9 Gaming Desktop",
         "subcategory":  "Gaming Desktop",
         "specifications":  {
@@ -689,7 +689,7 @@
                                "cpu":  "Intel Core i5-14400"
                            },
         "brand":  "Lenovo",
-        "gpu":  "NVIDIA GeForce RTX 3050",
+        "gpu":  "NVIDIA GeForce RTX 3050 6GB",
         "vram":  "6 GB",
         "lowestPrice":  14995,
         "category":  "Gaming PC",
@@ -716,7 +716,7 @@
                            "affiliateNetwork":  null
                        }
                    ],
-        "image":  "/images/gaming-pc.jpg",
+        "image":  "/images/asus-tuf-t500.jpg",
         "name":  "ASUS TUF T500 Gaming Desktop RTX 5060",
         "subcategory":  "Gaming Desktop",
         "specifications":  {
@@ -755,7 +755,7 @@
                            "affiliateNetwork":  null
                        }
                    ],
-        "image":  "/images/gaming-pc.jpg",
+        "image":  "/images/lenovo-legion-t5.jpg",
         "name":  "Lenovo Legion T5 Gaming Desktop RTX 5060 Ti",
         "subcategory":  "Gaming Desktop",
         "specifications":  {
@@ -794,7 +794,7 @@
                            "affiliateNetwork":  null
                        }
                    ],
-        "image":  "/images/gaming-pc.jpg",
+        "image":  "/images/hp-omen-35l.jpg",
         "name":  "HP OMEN 35L Gaming Desktop RTX 5060 Ti",
         "subcategory":  "Gaming Desktop",
         "specifications":  {
@@ -833,7 +833,7 @@
                            "affiliateNetwork":  null
                        }
                    ],
-        "image":  "/images/gaming-pc.jpg",
+        "image":  "/images/lenovo-legion-tower-5i.jpg",
         "name":  "Lenovo Legion Tower 5i Gaming Desktop RTX 5060 Ti",
         "subcategory":  "Gaming Desktop",
         "specifications":  {
@@ -872,7 +872,7 @@
                            "affiliateNetwork":  null
                        }
                    ],
-        "image":  "/images/gaming-pc.jpg",
+        "image":  "/images/pcspecialist-prime-400.jpg",
         "name":  "PCSpecialist Prime 400 Gaming Desktop RTX 5070",
         "subcategory":  "Gaming Desktop",
         "specifications":  {
@@ -892,4 +892,3 @@
         "description":  "PCSpecialist Prime 400 gaming desktop with Intel Core i7 processor, RTX 5070 graphics, 16GB RAM and 1TB SSD."
     }
 ]
-
