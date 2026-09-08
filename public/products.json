@@ -158,7 +158,7 @@
     "subcategory": "Graphics Card",
     "condition": "New",
     "image": "/images/rtx-5060.jpg",
-    "description": "Desktop Graphics Card",
+    "description": "RTX 5060 graphics card with 8GB GDDR7, suitable for gaming and everyday high-performance PCs.",
     "specifications": {
       "cpu": "",
       "gpu": "NVIDIA GeForce RTX 5060",
@@ -195,7 +195,7 @@
     "subcategory": "Graphics Card",
     "condition": "New",
     "image": "/images/rtx-5070-ti.jpg",
-    "description": "Desktop Graphics Card",
+    "description": "RTX 5070 Ti graphics card with 16GB GDDR7, suitable for demanding gaming and high-performance PCs.",
     "specifications": {
       "cpu": "",
       "gpu": "NVIDIA GeForce RTX 5070 Ti",
@@ -232,7 +232,7 @@
     "subcategory": "Graphics Card",
     "condition": "New",
     "image": "/images/rtx-5080.jpg",
-    "description": "Desktop Graphics Card",
+    "description": "RTX 5080 graphics card with 16GB GDDR7, designed for demanding gaming and high-performance PCs.",
     "specifications": {
       "cpu": "",
       "gpu": "NVIDIA GeForce RTX 5080",
@@ -282,7 +282,7 @@
     "subcategory": "Graphics Card",
     "condition": "New",
     "image": "/images/rtx-5070.jpg",
-    "description": "Desktop Graphics Card",
+    "description": "RTX 5070 graphics card with 12GB GDDR7, suitable for gaming and high-performance PCs.",
     "specifications": {
       "cpu": "",
       "gpu": "NVIDIA GeForce RTX 5070",
@@ -319,7 +319,7 @@
     "subcategory": "Graphics Card",
     "condition": "New",
     "image": "/images/rtx-5090.jpg",
-    "description": "Desktop Graphics Card",
+    "description": "RTX 5090 graphics card with 32GB GDDR7, designed for extreme gaming and high-performance workloads.",
     "specifications": {
       "cpu": "",
       "gpu": "NVIDIA GeForce RTX 5090",
@@ -369,7 +369,7 @@
     "subcategory": "Graphics Card",
     "condition": "New",
     "image": "/images/asus-rtx-5060-ti-dual-16gb.jpg",
-    "description": "ASUS GeForce RTX 5060 Ti DUAL OC 16GB GDDR7 Graphics Card",
+    "description": "RTX 5060 Ti graphics card with 16GB GDDR7, suitable for gaming and high-performance PCs.",
     "specifications": {
       "cpu": "",
       "gpu": "NVIDIA GeForce RTX 5060 Ti",
