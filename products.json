@@ -396,5 +396,265 @@
     "lowestPrice": 8190,
     "lowestStore": "Proshop",
     "updatedAt": "2026-09-07"
+      },
+    {
+        "id": "asrock-radeon-rx-9070-challenger-16gb",
+        "name": "ASRock Radeon RX 9070 Challenger 16GB",
+        "category": "Graphics Cards",
+        "description": "RX 9070 med 16GB GDDR6, RDNA 4-arkitektur og høy ytelse for gaming.",
+        "gpu": "AMD Radeon RX 9070",
+        "vram": "16 GB GDDR6",
+        "offers": [
+            {
+                "store": "Proshop",
+                "country": "NO",
+                "condition": "New",
+                "price": 7867,
+                "currency": "NOK",
+                "shipping": null,
+                "inStock": true,
+                "affiliate": null,
+                "affiliateNetwork": null,
+                "url": "https://www.proshop.no/Grafikkort/ASRock-Radeon-RX-9070-Challenger-16GB-GDDR6-RAM-Grafikkort/3348384",
+                "updatedAt": "2026-09-08"
+            }
+        ],
+        "lowestPrice": 7867,
+        "lowestStore": "Proshop",
+        "updatedAt": "2026-09-08"
+    },
+    {
+        "id": "sapphire-radeon-rx-9070-pulse-16gb",
+        "name": "Sapphire Radeon RX 9070 Pulse 16GB",
+        "category": "Graphics Cards",
+        "description": "RX 9070 med 16GB GDDR6 og effektiv kjøling for moderne gaming.",
+        "gpu": "AMD Radeon RX 9070",
+        "vram": "16 GB GDDR6",
+        "offers": [
+            {
+                "store": "Proshop",
+                "country": "NO",
+                "condition": "New",
+                "price": 8692,
+                "currency": "NOK",
+                "shipping": null,
+                "inStock": true,
+                "affiliate": null,
+                "affiliateNetwork": null,
+                "url": "https://www.proshop.no/Grafikkort/Sapphire-Radeon-RX-9070-Pulse-16GB-GDDR6-RAM-Grafikkort/3331611",
+                "updatedAt": "2026-09-08"
+            }
+        ],
+        "lowestPrice": 8692,
+        "lowestStore": "Proshop",
+        "updatedAt": "2026-09-08"
+    },
+    {
+        "id": "powercolor-radeon-rx-9070-reaper-16gb",
+        "name": "PowerColor Radeon RX 9070 Reaper 16GB",
+        "category": "Graphics Cards",
+        "description": "RX 9070 med 16GB GDDR6 og kraftig kjøling for gaming og kreativ bruk.",
+        "gpu": "AMD Radeon RX 9070",
+        "vram": "16 GB GDDR6",
+        "offers": [
+            {
+                "store": "Proshop",
+                "country": "NO",
+                "condition": "New",
+                "price": 8990,
+                "currency": "NOK",
+                "shipping": null,
+                "inStock": true,
+                "affiliate": null,
+                "affiliateNetwork": null,
+                "url": "https://www.proshop.no/Grafikkort/PowerColor-Radeon-RX-9070-Reaper-16GB-GDDR6-RAM-Grafikkort/3331583",
+                "updatedAt": "2026-09-08"
+            }
+        ],
+        "lowestPrice": 8990,
+        "lowestStore": "Proshop",
+        "updatedAt": "2026-09-08"
+    },
+    {
+        "id": "gigabyte-radeon-rx-9070-xt-gaming-oc-ice-16gb",
+        "name": "GIGABYTE Radeon RX 9070 XT GAMING OC ICE 16GB",
+        "category": "Graphics Cards",
+        "description": "RX 9070 XT med 16GB GDDR6 og kraftig trippelviftekjøling.",
+        "gpu": "AMD Radeon RX 9070 XT",
+        "vram": "16 GB GDDR6",
+        "offers": [
+            {
+                "store": "Proshop",
+                "country": "NO",
+                "condition": "New",
+                "price": 9690,
+                "currency": "NOK",
+                "shipping": null,
+                "inStock": true,
+                "affiliate": null,
+                "affiliateNetwork": null,
+                "url": "https://www.proshop.no/Grafikkort/GIGABYTE-Radeon-RX-9070-XT-GAMING-OC-ICE-16GB-GDDR6-RAM-Grafikkort/3425155",
+                "updatedAt": "2026-09-08"
+            }
+        ],
+        "lowestPrice": 9690,
+        "lowestStore": "Proshop",
+        "updatedAt": "2026-09-08"
+      },
+  {
+    "id": "asrock-radeon-rx-9070-challenger-16gb",
+    "brand": "ASRock",
+    "name": "ASRock Radeon RX 9070 Challenger 16GB",
+    "model": "90-GA5NZZ-00UANF",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/gpu.jpg",
+    "description": "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for high-performance gaming.",
+    "gpu": "AMD Radeon RX 9070",
+    "vram": "16 GB GDDR6",
+    "specifications": {
+      "cpu": "",
+      "gpu": "AMD Radeon RX 9070",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "16 GB GDDR6"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 7867,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/ASRock-Radeon-RX-9070-Challenger-16GB-GDDR6-RAM-Grafikkort/3348384",
+        "updatedAt": "2026-09-08"
+      }
+    ],
+    "lowestPrice": 7867,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-08"
+  },
+  {
+    "id": "sapphire-radeon-rx-9070-pulse-16gb",
+    "brand": "Sapphire",
+    "name": "Sapphire Radeon RX 9070 Pulse 16GB",
+    "model": "11349-03-20G",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/gpu.jpg",
+    "description": "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for gaming and high-performance PCs.",
+    "gpu": "AMD Radeon RX 9070",
+    "vram": "16 GB GDDR6",
+    "specifications": {
+      "cpu": "",
+      "gpu": "AMD Radeon RX 9070",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "16 GB GDDR6"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 8692,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/Sapphire-Radeon-RX-9070-Pulse-16GB-GDDR6-RAM-Grafikkort/3331611",
+        "updatedAt": "2026-09-08"
+      }
+    ],
+    "lowestPrice": 8692,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-08"
+  },
+  {
+    "id": "powercolor-radeon-rx-9070-reaper-16gb",
+    "brand": "PowerColor",
+    "name": "PowerColor Radeon RX 9070 Reaper 16GB",
+    "model": "RX9070 16G-A",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/gpu.jpg",
+    "description": "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for gaming and high-performance PCs.",
+    "gpu": "AMD Radeon RX 9070",
+    "vram": "16 GB GDDR6",
+    "specifications": {
+      "cpu": "",
+      "gpu": "AMD Radeon RX 9070",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "16 GB GDDR6"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 8990,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/PowerColor-Radeon-RX-9070-Reaper-16GB-GDDR6-RAM-Grafikkort/3331583",
+        "updatedAt": "2026-09-08"
+      }
+    ],
+    "lowestPrice": 8990,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-08"
+  },
+  {
+    "id": "gigabyte-radeon-rx-9070-xt-gaming-oc-ice-16gb",
+    "brand": "GIGABYTE",
+    "name": "GIGABYTE Radeon RX 9070 XT GAMING OC ICE 16GB",
+    "model": "GV-R907XGAMINGOCICE-16GD",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/gpu.jpg",
+    "description": "AMD Radeon RX 9070 XT graphics card with 16GB GDDR6 memory for high-performance gaming.",
+    "gpu": "AMD Radeon RX 9070 XT",
+    "vram": "16 GB GDDR6",
+    "specifications": {
+      "cpu": "",
+      "gpu": "AMD Radeon RX 9070 XT",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "16 GB GDDR6"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 9690,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/GIGABYTE-Radeon-RX-9070-XT-GAMING-OC-ICE-16GB-GDDR6-RAM-Grafikkort/3425155",
+        "updatedAt": "2026-09-08"
+      }
+    ],
+    "lowestPrice": 9690,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-08"
   }
 ]
