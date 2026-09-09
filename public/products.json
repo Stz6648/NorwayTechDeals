@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "lenovo-loq-15",
     "brand": "Lenovo",
@@ -804,5 +804,565 @@
     "cpu": "Intel Core i7-14700F",
     "ram": "16 GB",
     "storage": "1 TB SSD"
+  },
+  {
+    "id": "acer-39508336961",
+    "name": "Acer Veriton N, VN4710GT, Desktop, Intel® Core™ i7, 16 GB RAM, 512 GB SSD",
+    "category": "Desktop",
+    "description": "Windows 11 Pro, Intel&#174; Core&#8482; i7-13700T prosessor Hexadeca-kjerne 1,40 GHz, 16 GB, DDR4 SDRAM, 512 GB SSD, Intel&#174; HD Graphics delt minne  Tastatur og mus er IKKE inkludert,",
+    "price": 10090,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/_/a/_acer-veriton-4000-mini-1l-vn4710gt-1l-no_kb_main1000_dt.vxveh.00c.png",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 10090,
+        "url": "https://www.awin1.com/pclick.php?p=39508336961&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "39508336961",
+    "merchant_product_id": "DT.VXVEH.00C",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-39585560447",
+    "name": "Acer Aspire C 24 C24-195ES, Alt-i-ett, 23.8\" Full HD, Intel® Core™ Ultra 7, 16 GB RAM, 1 TB SSD, Intel® Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 7 155U prosessor 1,70 GHz, 60,5 cm (23,8\") Full HD (1920 x 1080) 16:9, 16 GB, DDR5 SDRAM, 1 TB SSD, Intel® Graphics delt minne,",
+    "price": 9590,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-c24-c24-195es-wp-start-screen-elite19-rf-kbms-white-01_2.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 9590,
+        "url": "https://www.awin1.com/pclick.php?p=39585560447&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "39585560447",
+    "merchant_product_id": "DQ.BM5EQ.002",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-39585560448",
+    "name": "Acer Aspire C 24, C24-195ES, Alt-i-ett, 23.8\" Full HD, Intel Core Ultra 7, 32GB RAM, 2TB SSD, Intel Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 7 155U prosessor 1,70 GHz, 60,5 cm (23,8\") Full HD (1920 x 1080) 16:9, 32 GB, DDR5 SDRAM, 2 TB SSD, Intel® Graphics delt minne,",
+    "price": 12990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-c24-c24-195es-wp-start-screen-elite19-rf-kbms-white-01_3.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 12990,
+        "url": "https://www.awin1.com/pclick.php?p=39585560448&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "39585560448",
+    "merchant_product_id": "DQ.BM5EQ.003",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41803316581",
+    "name": "Acer Aspire C 27 Alt-i-ett, C27-195ES, 27\" FHD, Intel® Core™ Ultra 7, 16GB RAM, 1TB SSD, Intel® Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 7 155U prosessor 1,70 GHz, 68,6 cm (27\") Full HD (1920 x 1080) 16:9, 16 GB, DDR5 SDRAM, 1 TB SSD, Intel® Graphics delt minne,",
+    "price": 13190,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-c27-c27-195es-wp-start-screen-elite19-rf-kbms-white-01_2.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 13190,
+        "url": "https://www.awin1.com/pclick.php?p=41803316581&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41803316581",
+    "merchant_product_id": "DQ.BMGEQ.002",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41393005081",
+    "name": "Predator Helios Neo 16 AI, PHN16-73, Gaming Laptop, 16\" Screen, Intel Core Ultra 9, 32GB RAM, 2TB SSD, NVIDIA GeForce RTX 5070Ti",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 9 275HX prosessor 2,70 GHz, 40,6 cm (16\") WQXGA (2560 x 1600) 16:10 IPS 240 Hz, 32 GB, DDR5 SDRAM, 2 TB SSD, NVIDIA® GeForce RTX™ 5070Ti med 12 GB dedikert minne,",
+    "price": 32990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-16-ai-phn16-73-non-fingerprint-with-backlit-on-wp-oled-abyssal-black-01_6.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 32990,
+        "url": "https://www.awin1.com/pclick.php?p=41393005081&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41393005081",
+    "merchant_product_id": "NH.QX2ED.007",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-44672687973",
+    "name": "Acer Aspire XC XC-1860, Stasjonær PC, Intel® Core™ Ultra 5, 16GB RAM, 1TB SSD, UHD Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 5 225 prosessor 3,30 GHz, 16 GB, DDR5 SDRAM, 1 TB SSD, Intel® UHD Graphics delt minne  Tastatur og mus er IKKE inkludert,",
+    "price": 12049,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-xc-1860-non-odd-with-sd-card-reader-02_2.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 12049,
+        "url": "https://www.awin1.com/pclick.php?p=44672687973&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "44672687973",
+    "merchant_product_id": "DT.BMYEH.002",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41618473902",
+    "name": "Acer Aspire XC XC-1860, Desktop, Intel® Core™ Ultra 7, 16 GB RAM, 1 TB SSD, Intel® UHD Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 7 265 prosessor 2,40 GHz, 16 GB, DDR5 SDRAM, 1 TB SSD, Intel® UHD Graphics delt minne  Tastatur og mus er IKKE inkludert,",
+    "price": 11290,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-xc-1860-non-odd-with-sd-card-reader-02_5.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 11290,
+        "url": "https://www.awin1.com/pclick.php?p=41618473902&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41618473902",
+    "merchant_product_id": "DT.BMYEH.003",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-43373214503",
+    "name": "Acer Aspire XC XC-1860, Stasjonær PC, Intel® Core™ Ultra 7, 32 GB RAM, 1 TB SSD, 2 TB HDD, UHD Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 7 265 prosessor 2,40 GHz, 32 GB, DDR5 SDRAM, 1 TB SSD, 2 TB HDD, Intel® UHD Graphics delt minne  Tastatur og mus er IKKE inkludert,",
+    "price": 18390,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-xc-1860-non-odd-with-sd-card-reader-02_4.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 18390,
+        "url": "https://www.awin1.com/pclick.php?p=43373214503&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "43373214503",
+    "merchant_product_id": "DT.BMYEH.004",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41749311691",
+    "name": "Predator Helios Neo 18 AI, PHN18-72, Bærbar gaming-PC, 18\", Intel® Core™ Ultra 9, 64 GB RAM, 2 TB SSD, NVIDIA® GeForce RTX™ 5070Ti",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 9 275HX prosessor 2,70 GHz, 45,7 cm (18\") WQXGA (2560 x 1600) 16:10 IPS 240 Hz, 64 GB, DDR5 SDRAM, 2 TB SSD, NVIDIA® GeForce RTX™ 5070Ti med 12 GB dedikert minne,",
+    "price": 36990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-18-ai-phn18-72-non-fingerprint-with-backlit-on-wp-abyssal-black-01_8.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 36990,
+        "url": "https://www.awin1.com/pclick.php?p=41749311691&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41749311691",
+    "merchant_product_id": "NH.QVLED.00A",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41758563862",
+    "name": "Predator Helios 16 AI OLED, PH16-73, Bærbar gaming-PC, Svart",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 9 275HX prosessor 2,70 GHz, 40,6 cm (16\") OLED 2,5K (2560 x 1600) 16:10 240 Hz, 64 GB, DDR5 SDRAM, 2 TB SSD, NVIDIA® GeForce RTX™ 5090 med 24 GB dedikert minne,",
+    "price": 49990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-16-ai-ph16-73-non-fingerprint-with-backlit-on-wp-abyssal-black-01_8.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 49990,
+        "url": "https://www.awin1.com/pclick.php?p=41758563862&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41758563862",
+    "merchant_product_id": "NH.QW0ED.006",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41803316583",
+    "name": "Acer Predator Helios Neo 16 AI, PHN16-73, Bærbar gaming-PC, 16\" WQXGA 180Hz, Intel Core Ultra 9, 32GB RAM, 1TB SSD, NVIDIA GeForce RTX 5060",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 9 275HX prosessor 2,70 GHz, 40,6 cm (16\") WQXGA (2560 x 1600) 16:10 IPS 180 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5060 med 8 GB dedikert minne,",
+    "price": 26990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-16-ai-phn16-73-non-fingerprint-with-backlit-on-wp-oled-abyssal-black-01_30.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 26990,
+        "url": "https://www.awin1.com/pclick.php?p=41803316583&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41803316583",
+    "merchant_product_id": "NH.QVQED.003",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41818938128",
+    "name": "Predator Helios Neo 16S AI OLED, PHN16S-71, Gaming-PC, 16\" OLED, Intel Core Ultra 9, 32GB RAM, 1TB SSD, GeForce RTX 5060",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 9 275HX prosessor 2,70 GHz, 40,6 cm (16\") OLED 2,5K (2560 x 1600) 16:10 240 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5060 med 8 GB dedikert minne,",
+    "price": 23490,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-16s-ai-phn16s-71-non-fingerprint-with-backlit-on-wp-oled-abyssal-black-01_15.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 23490,
+        "url": "https://www.awin1.com/pclick.php?p=41818938128&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41818938128",
+    "merchant_product_id": "NH.QX9ED.003",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41818938129",
+    "name": "Acer Predator Helios Neo 16S AI OLED, PHN16S-71, Gaming Laptop, 16\" OLED 2.5K 240Hz, Intel Core Ultra 9, 32GB RAM, 1TB SSD, NVIDIA GeForce RTX 5070",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 9 275HX prosessor 2,70 GHz, 40,6 cm (16\") OLED 2,5K (2560 x 1600) 16:10 240 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5070 med 8 GB dedikert minne,",
+    "price": 25990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-16s-ai-phn16s-71-non-fingerprint-with-backlit-on-wp-oled-abyssal-black-01_19.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 25990,
+        "url": "https://www.awin1.com/pclick.php?p=41818938129&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41818938129",
+    "merchant_product_id": "NH.QXAED.007",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-42395856175",
+    "name": "Acer Nitro 18 AI, AN18-61, Bærbar gaming-PC, 18\" WQXGA, AMD Ryzen AI 9, 32 GB DDR5, 1 TB SSD, NVIDIA GeForce RTX 5070 Ti",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home, AMD Ryzen™ AI 9 365 prosessor 2 GHz, 45,7 cm (18\") WQXGA (2560 x 1600) 16:10 IPS 165 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5070 Ti med 12 GB dedikert minne,",
+    "price": 36490,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/n/i/nitro-18-ai-an18-61-non-fingerprint-with-backlit-on-wp-black-01_8.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 36490,
+        "url": "https://www.awin1.com/pclick.php?p=42395856175&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "42395856175",
+    "merchant_product_id": "NH.QYEED.003",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-44810930239",
+    "name": "Acer Aspire XC XC-1860, Desktop, Intel Core Ultra 5, 8GB RAM, 512GB SSD, Intel UHD Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 5 225 prosessor 3,30 GHz, 8 GB, DDR5 SDRAM, 512 GB SSD, Intel® UHD Graphics delt minne  Tastatur og mus er IKKE inkludert,",
+    "price": 7990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-xc-1860-non-odd-with-sd-card-reader-02_1.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 7990,
+        "url": "https://www.awin1.com/pclick.php?p=44810930239&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "44810930239",
+    "merchant_product_id": "DT.BMYEH.005",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-44972562987",
+    "name": "Acer Nitro V 15, ANV15-52, Bærbar Gaming-PC, 15.6\" FHD, Intel Core i9, 16GB RAM, 512GB SSD, NVIDIA RTX 5050",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ 9 270H prosessor 2,70 GHz, 39,6 cm (15,6\") Full HD (1920 x 1080) 16:9 IPS 165 Hz, 16 GB, DDR4 SDRAM, 512 GB SSD, NVIDIA® GeForce RTX™ 5050 med 8 GB dedikert minne,",
+    "price": 21490,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-nitro-v-15-anv15-52-non-fingerprint-with-backlit-on-wp-black-01_22.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 21490,
+        "url": "https://www.awin1.com/pclick.php?p=44972562987&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "44972562987",
+    "merchant_product_id": "NH.QZ9ED.00J",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-44972562988",
+    "name": "Acer Nitro V 15, ANV15-52, Bærbar gaming-PC, 15,6\" FHD, Intel Core 9, 16 GB RAM, 512 GB SSD, RTX 5060",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ 9 270H prosessor 2,70 GHz, 39,6 cm (15,6\") Full HD (1920 x 1080) 16:9 IPS 165 Hz, 16 GB, DDR4 SDRAM, 512 GB SSD, NVIDIA® GeForce RTX™ 5060 med 8 GB dedikert minne,",
+    "price": 23490,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-nitro-v-15-anv15-52-non-fingerprint-with-backlit-on-wp-black-01_23.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 23490,
+        "url": "https://www.awin1.com/pclick.php?p=44972562988&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "44972562988",
+    "merchant_product_id": "NH.QZAED.00H",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-44852662076",
+    "name": "Acer Nitro V 17 AI ANV17-41, Bærbar gaming-PC, 17,3\" FHD, AMD Ryzen 7, 16GB RAM, 512GB SSD, GeForce RTX 5050",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, AMD Ryzen™ AI 7 260 prosessor 3,80 GHz, 43,9 cm (17,3\") Full HD (1920 x 1080) 16:9 IPS 144 Hz, 16 GB, DDR5 SDRAM, 512 GB SSD, NVIDIA® GeForce RTX™ 5050 med 8 GB dedikert minne,",
+    "price": 22490,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-nitro-v-17-ai-anv17-41-non-fingerprint-with-backlit-on-wp-black-01_1_27.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 22490,
+        "url": "https://www.awin1.com/pclick.php?p=44852662076&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "44852662076",
+    "merchant_product_id": "NH.QYSED.009",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-44972562990",
+    "name": "Acer Predator Helios Neo 16S AI. PHN16S-I51. Gaming-PC. 16\" OLED. Intel Core Ultra 9. 32 GB RAM. 1 TB SSD. NVIDIA GeForce RTX 5060",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 9 386H prosessor 2,10 GHz, 40,6 cm (16\") OLED 2,5K (2560 x 1600) 16:10 165 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5060 med 8 GB dedikert minne,",
+    "price": 31990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-16s-ai-phn16s-i51-non-fingerprint-with-backlit-on-wp-oled-abyssal-black-01_4.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 31990,
+        "url": "https://www.awin1.com/pclick.php?p=44972562990&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "44972562990",
+    "merchant_product_id": "NH.U3UED.005",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-44993641494",
+    "name": "Predator Helios Neo 18 AI, PHN18-I71, Gaming-PC, 18\", Intel Core Ultra 9, 32GB RAM, 1TB SSD, NVIDIA RTX 5080",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 9 290HX Plus prosessor 2,70 GHz, 45,7 cm (18\") WQXGA (2560 x 1600) 16:10 IPS 240 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5080 med 16 GB dedikert minne,",
+    "price": 45990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-18-ai-phn18-i71-non-fingerprint-with-backlit-on-wp-abyssal-black-01_1.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 45990,
+        "url": "https://www.awin1.com/pclick.php?p=44993641494&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "44993641494",
+    "merchant_product_id": "NH.U55ED.001",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45083367942",
+    "name": "Predator Helios 18 AI, PH18-I71, Bærbar gaming-PC, 18\", Intel Core Ultra 9, 96 GB RAM, 2 TB SSD, NVIDIA GeForce RTX 5090",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 9 290HX Plus prosessor 2,70 GHz, 45,7 cm (18\") WQUXGA MINI-LED (3840 x 2400) 16:10 IPS 120 Hz, 96 GB, DDR5 SDRAM, 2 TB SSD, NVIDIA® GeForce RTX™ 5090 med 24 GB dedikert minne,",
+    "price": 69990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-18-ai-ph18-i71-non-fingerprint-with-backlit-on-wp-abyssal-black-01_2.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 69990,
+        "url": "https://www.awin1.com/pclick.php?p=45083367942&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45083367942",
+    "merchant_product_id": "NH.U3GED.006",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45075498185",
+    "name": "Predator Helios Neo 18 AI, PHN18-I71, Gaming-PC, 18\", Intel Core Ultra 9, 32 GB RAM, 1 TB SSD, GeForce RTX 5060",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 9 290HX Plus prosessor 2,70 GHz, 45,7 cm (18\") WQXGA (2560 x 1600) 16:10 IPS 165 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5060 med 8 GB dedikert minne,",
+    "price": 31990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-18-ai-phn18-i71-non-fingerprint-with-backlit-on-wp-abyssal-black-01_9.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 31990,
+        "url": "https://www.awin1.com/pclick.php?p=45075498185&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45075498185",
+    "merchant_product_id": "NH.U52ED.005",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45075498186",
+    "name": "Predator Helios Neo 18 AI, PHN18-I71, Bærbar gaming-PC, 18\", Intel Core Ultra 9, 32GB RAM, 1TB SSD, NVIDIA GeForce RTX 5070",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 9 290HX Plus prosessor 2,70 GHz, 45,7 cm (18\") WQXGA (2560 x 1600) 16:10 IPS 165 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5070 med 8 GB dedikert minne,",
+    "price": 34490,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-18-ai-phn18-i71-non-fingerprint-with-backlit-on-wp-abyssal-black-01_10.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 34490,
+        "url": "https://www.awin1.com/pclick.php?p=45075498186&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45075498186",
+    "merchant_product_id": "NH.U60ED.001",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45713810412",
+    "name": "Acer Revo Box AI RB102-LNL mini-PC, Intel Core Ultra 5, 16 GB RAM, 512 GB SSD, Intel Arc Graphics, Svart",
+    "category": "Mini PC",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 5 226V prosessor 2,10 GHz, 16 GB, LPDDR5X, 512 GB SSD, Intel® Arc™ Graphics delt minne  Tastatur og mus er IKKE inkludert, VESA-festebrakett for skjerm inkludert",
+    "price": 11890,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-revo-box-ai-rb102-lnl-black-05_1.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 11890,
+        "url": "https://www.awin1.com/pclick.php?p=45713810412&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45713810412",
+    "merchant_product_id": "DT.BPLEH.003",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45713810413",
+    "name": "Acer Revo Box AI RB102-LNL, mini-PC, Intel Core Ultra 7, 16 GB RAM, 512 GB SSD, Intel Arc Graphics",
+    "category": "Mini PC",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 7 256V prosessor 2,20 GHz, 16 GB, LPDDR5X, 512 GB SSD, Intel® Arc™ Graphics delt minne  Tastatur og mus er IKKE inkludert, VESA-festebrakett for skjerm inkludert",
+    "price": 13290,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-revo-box-ai-rb102-lnl-black-05_2.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 13290,
+        "url": "https://www.awin1.com/pclick.php?p=45713810413&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45713810413",
+    "merchant_product_id": "DT.BPMEH.002",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45713810414",
+    "name": "Acer Revo Box AI RB102-LNL mini-PC, Intel Core Ultra 7, 16 GB RAM, 1 TB SSD, Intel Arc Graphics, Svart",
+    "category": "Mini PC",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 7 256V prosessor 2,20 GHz, 16 GB, LPDDR5X, 1 TB SSD, Intel® Arc™ Graphics delt minne  Tastatur og mus er IKKE inkludert, VESA-festebrakett for skjerm inkludert",
+    "price": 15390,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-revo-box-ai-rb102-lnl-black-05.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 15390,
+        "url": "https://www.awin1.com/pclick.php?p=45713810414&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45713810414",
+    "merchant_product_id": "DT.BPMEH.003",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45921947865",
+    "name": "Acer Aspire XC, XC-1860, Stasjonær PC, Intel Core Ultra 7, 16 GB RAM, 512 GB SSD, Intel UHD Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 7 265 prosessor 2,40 GHz, 16 GB, DDR5 SDRAM, 512 GB SSD, Intel® UHD Graphics delt minne  Tastatur og mus er IKKE inkludert,",
+    "price": 16490,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-xc-1860-non-odd-non-sd-card-reader-02.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 16490,
+        "url": "https://www.awin1.com/pclick.php?p=45921947865&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45921947865",
+    "merchant_product_id": "DT.BMYEH.008",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45921947866",
+    "name": "Acer Aspire XC, XC-1860, stasjonær PC, Intel Core Ultra 7, 16 GB RAM, 1 TB SSD, Intel UHD Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 7 265 prosessor 2,40 GHz, 16 GB, DDR5 SDRAM, 1 TB SSD, Intel® UHD Graphics delt minne  Tastatur og mus er IKKE inkludert,",
+    "price": 18690,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-xc-1860-non-odd-non-sd-card-reader-02_1.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 18690,
+        "url": "https://www.awin1.com/pclick.php?p=45921947866&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45921947866",
+    "merchant_product_id": "DT.BMYEH.009",
+    "merchant_category": "Desktops",
+    "category_name": ""
   }
 ]
