@@ -590,7 +590,10 @@
     "lowestPrice": 14995,
     "category": "Gaming PC",
     "condition": "New",
-    "description": "Lenovo LOQ gaming desktop with Intel Core i5 processor, NVIDIA GeForce RTX 3050 graphics, 8GB RAM and 1TB SSD."
+    "description": "Lenovo LOQ gaming desktop with Intel Core i5 processor, NVIDIA GeForce RTX 3050 graphics, 8GB RAM and 1TB SSD.",
+    "cpu": "Intel Core i5-14400",
+    "ram": "8 GB",
+    "storage": "1 TB SSD"
   },
   {
     "lowestStore": "Elkjøp",
@@ -629,7 +632,10 @@
     "lowestPrice": 18495,
     "category": "Gaming PC",
     "condition": "New",
-    "description": "ASUS TUF gaming desktop with Intel Core 5 processor, RTX 5060 graphics, 16GB RAM and 1TB SSD."
+    "description": "ASUS TUF gaming desktop with Intel Core 5 processor, RTX 5060 graphics, 16GB RAM and 1TB SSD.",
+    "cpu": "Intel Core 5 210H",
+    "ram": "16 GB",
+    "storage": "1 TB SSD"
   },
   {
     "lowestStore": "Elkjøp",
@@ -668,7 +674,10 @@
     "lowestPrice": 19995,
     "category": "Gaming PC",
     "condition": "New",
-    "description": "Lenovo Legion T5 gaming desktop with AMD Ryzen processor, RTX 5060 Ti graphics, 16GB RAM and 1TB SSD."
+    "description": "Lenovo Legion T5 gaming desktop with AMD Ryzen processor, RTX 5060 Ti graphics, 16GB RAM and 1TB SSD.",
+    "cpu": "AMD Ryzen 5 7600",
+    "ram": "16 GB",
+    "storage": "1 TB SSD"
   },
   {
     "lowestStore": "Elkjøp",
@@ -707,7 +716,10 @@
     "lowestPrice": 19995,
     "category": "Gaming PC",
     "condition": "New",
-    "description": "HP OMEN 35L gaming desktop with Intel Core i5 processor, RTX 5060 Ti graphics, 16GB RAM and 1TB SSD."
+    "description": "HP OMEN 35L gaming desktop with Intel Core i5 processor, RTX 5060 Ti graphics, 16GB RAM and 1TB SSD.",
+    "cpu": "Intel Core i5-14400F",
+    "ram": "16 GB",
+    "storage": "1 TB SSD"
   },
   {
     "lowestStore": "Elkjøp",
@@ -746,7 +758,10 @@
     "lowestPrice": 22995,
     "category": "Gaming PC",
     "condition": "New",
-    "description": "Lenovo Legion Tower 5i gaming desktop with Intel Core Ultra processor, RTX 5060 Ti graphics, 16GB RAM and 1TB SSD."
+    "description": "Lenovo Legion Tower 5i gaming desktop with Intel Core Ultra processor, RTX 5060 Ti graphics, 16GB RAM and 1TB SSD.",
+    "cpu": "Intel Core Ultra 7 265",
+    "ram": "16 GB",
+    "storage": "1 TB SSD"
   },
   {
     "lowestStore": "Elkjøp",
@@ -785,6 +800,9 @@
     "lowestPrice": 24995,
     "category": "Gaming PC",
     "condition": "New",
-    "description": "PCSpecialist Prime 400 gaming desktop with Intel Core i7 processor, RTX 5070 graphics, 16GB RAM and 1TB SSD."
+    "description": "PCSpecialist Prime 400 gaming desktop with Intel Core i7 processor, RTX 5070 graphics, 16GB RAM and 1TB SSD.",
+    "cpu": "Intel Core i7-14700F",
+    "ram": "16 GB",
+    "storage": "1 TB SSD"
   }
 ]
