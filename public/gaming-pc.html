@@ -90,7 +90,7 @@
 .no-results{padding:30px;text-align:center;color:#666}
 </style>
 
-<style>.product-card img,.deal-card img{width:100%;height:260px;object-fit:contain;display:block;margin:auto}</style></head>
+<style>.product-card img,.deal-card img{width:100%;height:190px;object-fit:contain;display:block;margin:auto}.deal-card img.acer-image{height:260px}</style></head>
 
 <body>
 
@@ -196,7 +196,7 @@ async function loadPCDeals() {
 
         return `
           <article class="deal-card">
-            <img src="${image}" alt="${name}" loading="lazy">
+            <img class="${String(name).toLowerCase().includes("acer") ? "acer-image" : ""}" src="${image}" alt="${name}" loading="lazy">
             <h3>${name}</h3>
             <div class="deal-specs">
               <div>CPU: ${cpu}</div>
@@ -229,6 +229,7 @@ loadPCDeals();
 
 </body>
 </html>
+
 
 
 
