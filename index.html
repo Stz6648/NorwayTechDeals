@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Techkjop - Best Tech Deals in Norway</title>
-    <meta name="description" content="Compare the best laptop, PC, gaming, GPU and RAM deals in Norway. Find the best prices and tech deals at TechKjop.">
+<meta name="description" content="Compare the best laptop, PC, gaming, GPU and RAM deals in Norway. Find the best prices and tech deals at TechKjop.">
 
 <style>
 * {
@@ -187,6 +187,115 @@ body {
     border-radius: 10px;
 }
 
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto 22px;
+    background: #111;
+    border-radius: 12px;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.navbar a:hover {
+    color: #ff6b4a;
+}
+
+.search-box {
+    max-width: 1200px;
+    margin: 0 auto 22px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px 18px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.search-box button {
+    padding: 0 25px;
+    border: 0;
+    border-radius: 10px;
+    background: #e5483e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.categories {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.category {
+    background: white;
+    padding: 18px 12px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    box-shadow: 0 3px 12px rgba(0,0,0,.06);
+}
+
+.category:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,.10);
+}
+
+.section-title {
+    max-width: 1200px;
+    margin: 0 auto 18px;
+    font-size: 25px;
+}
+
+.ebay-result {
+    position: relative;
+}
+
+.ebay-result .badge {
+    background: #0064d2;
+}
+
+.ebay-price {
+    color: #16823b;
+}
+
+.ebay-condition {
+    color: #666;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.ebay-shipping {
+    color: #555;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.search-status {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    color: #666;
+    font-size: 15px;
+}
+
 @media (max-width: 900px) {
     .products {
         grid-template-columns: 1fr;
@@ -201,86 +310,19 @@ body {
     }
 }
 
-.navbar {
-    max-width: 1200px;
-    margin: 0 auto 22px;
-    background: #111;
-    border-radius: 12px;
-    padding: 14px 18px;
-    display: flex;
-    align-items: center;
-    gap: 22px;
-    flex-wrap: wrap;
-}
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-}
-.navbar a:hover {
-    color: #ff6b4a;
-}
-.search-box {
-    max-width: 1200px;
-    margin: 0 auto 22px;
-    display: flex;
-    gap: 10px;
-}
-.search-box input {
-    flex: 1;
-    padding: 15px 18px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    font-size: 16px;
-}
-.search-box button {
-    padding: 0 25px;
-    border: 0;
-    border-radius: 10px;
-    background: #e5483e;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-}
-.categories {
-    max-width: 1200px;
-    margin: 0 auto 30px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 12px;
-}
-.category {
-    background: white;
-    padding: 18px 12px;
-    border-radius: 12px;
-    text-align: center;
-    text-decoration: none;
-    color: #222;
-    font-weight: bold;
-    box-shadow: 0 3px 12px rgba(0,0,0,.06);
-}
-.category:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(0,0,0,.10);
-}
-.section-title {
-    max-width: 1200px;
-    margin: 0 auto 18px;
-    font-size: 25px;
-}
 @media (max-width: 700px) {
     .categories {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .navbar {
         gap: 14px;
     }
+
     .search-box button {
         padding: 0 15px;
     }
 }
-
 </style>
 </head>
 
@@ -301,7 +343,12 @@ body {
 </div>
 
 <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Search laptop, GPU, gaming PC, RAM...">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search laptop, GPU, gaming PC, RAM..."
+        onkeydown="if(event.key === 'Enter') searchProducts()"
+    >
     <button onclick="searchProducts()">Search</button>
 </div>
 
@@ -313,7 +360,9 @@ body {
     <a class="category" href="/laptop-tilbud.html">🔥 Laptop Deals</a>
 </div>
 
-<h2 class="section-title">🔥 Best Tech Deals</h2>
+<h2 class="section-title" id="sectionTitle">🔥 Best Tech Deals</h2>
+
+<div class="search-status" id="searchStatus"></div>
 
 <div class="products" id="products">
     Loading products...
@@ -321,85 +370,255 @@ body {
 
 <script>
 
-function searchProducts() {
-    const q = document.getElementById("searchInput").value.trim().toLowerCase();
-    if (!q) return;
+async function searchProducts() {
 
-    const links = {
-        "laptop": "/gaming-laptops.html",
-        "gaming laptop": "/gaming-laptops.html",
-        "gaming pc": "/gaming-pc.html",
-        "pc": "/gaming-pc.html",
-        "gpu": "/graphics-cards.html",
-        "graphics card": "/graphics-cards.html",
-        "ram": "/ram.html"
-    };
+    const q = document.getElementById("searchInput").value.trim();
 
-    for (const key in links) {
-        if (q.includes(key)) {
-            window.location.href = links[key];
-            return;
-        }
+    if (!q) {
+        return;
     }
 
-    alert("Try searching for Gaming Laptop, Gaming PC, GPU or RAM.");
-}
-
-async function loadProducts() {
     const container = document.getElementById("products");
+    const status = document.getElementById("searchStatus");
+    const title = document.getElementById("sectionTitle");
+
+    title.textContent = "🔎 eBay Results";
+
+    status.textContent = "Searching eBay for: " + q;
+
+    container.innerHTML = "<p>Searching eBay...</p>";
 
     try {
-        const response = await fetch("/products.json", {
-            cache: "no-store"
-        });
+
+        const response = await fetch(
+            "/api/ebay-search?q=" + encodeURIComponent(q)
+        );
+
+        const data = await response.json();
 
         if (!response.ok) {
             throw new Error(
-                "products.json could not be loaded. HTTP " + response.status
+                data.error_description ||
+                data.message ||
+                "eBay search failed"
             );
         }
 
-        const products = await response.json();
+        if (
+            !data.itemSummaries ||
+            data.itemSummaries.length === 0
+        ) {
+
+            container.innerHTML =
+                "<p>No eBay results found.</p>";
+
+            status.textContent =
+                "No results found for: " + q;
+
+            return;
+        }
+
+        status.textContent =
+            "Showing eBay results for: " + q;
+
+        container.innerHTML = data.itemSummaries.map(function(item) {
+
+            const image =
+                item.image &&
+                item.image.imageUrl
+                    ? item.image.imageUrl
+                    : "https://via.placeholder.com/600x400?text=eBay";
+
+            const title =
+                item.title || "eBay Product";
+
+            const price =
+                item.price &&
+                item.price.value
+                    ? item.price.value
+                    : "";
+
+            const currency =
+                item.price &&
+                item.price.currency
+                    ? item.price.currency
+                    : "";
+
+            const condition =
+                item.condition || "";
+
+            const shipping =
+                item.shippingOptions &&
+                item.shippingOptions[0] &&
+                item.shippingOptions[0].shippingCost &&
+                item.shippingOptions[0].shippingCost.value
+                    ? "Shipping: " +
+                      item.shippingOptions[0].shippingCost.value +
+                      " " +
+                      item.shippingOptions[0].shippingCost.currency
+                    : "";
+
+            const affiliateUrl =
+                item.itemAffiliateWebUrl ||
+                item.itemWebUrl ||
+                "#";
+
+            return `
+                <div class="card ebay-result">
+
+                    <img
+                        src="${image}"
+                        alt="${escapeHtml(title)}"
+                        onerror="this.style.display='none'"
+                    >
+
+                    <span class="badge">eBay</span>
+
+                    <h2>${escapeHtml(title)}</h2>
+
+                    <div class="ebay-condition">
+                        ${escapeHtml(condition)}
+                    </div>
+
+                    <div class="price ebay-price">
+                        ${escapeHtml(price)}
+                        ${escapeHtml(currency)}
+                    </div>
+
+                    <div class="ebay-shipping">
+                        ${escapeHtml(shipping)}
+                    </div>
+
+                    <a
+                        class="button"
+                        href="${affiliateUrl}"
+                        target="_blank"
+                        rel="nofollow sponsored noopener"
+                    >
+                        View on eBay
+                    </a>
+
+                </div>
+            `;
+
+        }).join("");
+
+    } catch (error) {
+
+        console.error("eBay search error:", error);
+
+        status.textContent = "";
+
+        container.innerHTML =
+            '<div class="error">' +
+            "<strong>eBay search failed.</strong><br><br>" +
+            escapeHtml(error.message) +
+            "</div>";
+    }
+}
+
+
+function escapeHtml(value) {
+
+    if (value === null || value === undefined) {
+        return "";
+    }
+
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+
+async function loadProducts() {
+
+    const container =
+        document.getElementById("products");
+
+    try {
+
+        const response = await fetch(
+            "/products.json",
+            {
+                cache: "no-store"
+            }
+        );
+
+        if (!response.ok) {
+
+            throw new Error(
+                "products.json could not be loaded. HTTP " +
+                response.status
+            );
+
+        }
+
+        const products =
+            await response.json();
 
         container.innerHTML = "";
 
-        if (!Array.isArray(products) || products.length === 0) {
-            container.innerHTML = "<p>No products available yet.</p>";
+        if (
+            !Array.isArray(products) ||
+            products.length === 0
+        ) {
+
+            container.innerHTML =
+                "<p>No products available yet.</p>";
+
             return;
         }
 
         products.forEach(function(product) {
 
-            const card = document.createElement("div");
+            const card =
+                document.createElement("div");
+
             card.className = "card";
 
-            const offers = Array.isArray(product.offers)
-                ? product.offers
-                    .filter(function(offer) {
-                        return offer && Number(offer.price) > 0;
-                    })
-                    .sort(function(a, b) {
-                        return Number(a.price) - Number(b.price);
-                    })
-                : [];
+            const offers =
+                Array.isArray(product.offers)
+                    ? product.offers
+                        .filter(function(offer) {
+                            return (
+                                offer &&
+                                Number(offer.price) > 0
+                            );
+                        })
+                        .sort(function(a, b) {
+                            return (
+                                Number(a.price) -
+                                Number(b.price)
+                            );
+                        })
+                    : [];
 
-            const lowestOffer = offers.length > 0 ? offers[0] : null;
+            const lowestOffer =
+                offers.length > 0
+                    ? offers[0]
+                    : null;
 
-            const lowestPrice = lowestOffer
-                ? Number(lowestOffer.price)
-                : null;
+            const lowestPrice =
+                lowestOffer
+                    ? Number(lowestOffer.price)
+                    : null;
 
-            const highestPrice = offers.length > 0
-                ? Math.max.apply(
-                    null,
-                    offers.map(function(offer) {
-                        return Number(offer.price);
-                    })
-                )
-                : null;
+            const highestPrice =
+                offers.length > 0
+                    ? Math.max.apply(
+                        null,
+                        offers.map(function(offer) {
+                            return Number(offer.price);
+                        })
+                    )
+                    : null;
 
             const savings =
-                lowestPrice !== null && highestPrice !== null
+                lowestPrice !== null &&
+                highestPrice !== null
                     ? highestPrice - lowestPrice
                     : 0;
 
@@ -410,19 +629,33 @@ async function loadProducts() {
             let offersHTML = "";
 
             if (offers.length > 0) {
-                offersHTML = '<div class="offers">';
 
-                offers.forEach(function(offer, index) {
+                offersHTML =
+                    '<div class="offers">';
 
-                    const storeName = offer.store || "Store";
-                    const price = Number(offer.price)
-                        .toLocaleString("nb-NO");
+                offers.forEach(function(
+                    offer,
+                    index
+                ) {
 
-                    const url = offer.url || "#";
+                    const storeName =
+                        offer.store || "Store";
+
+                    const price =
+                        Number(
+                            offer.price
+                        ).toLocaleString("nb-NO");
+
+                    const url =
+                        offer.url || "#";
 
                     offersHTML +=
                         '<div class="offer ' +
-                        (index === 0 ? "best" : "") +
+                        (
+                            index === 0
+                                ? "best"
+                                : ""
+                        ) +
                         '">' +
 
                         '<a class="offer-link" href="' +
@@ -440,9 +673,11 @@ async function loadProducts() {
                         "</a>" +
 
                         "</div>";
+
                 });
 
-                offersHTML += "</div>";
+                offersHTML +=
+                    "</div>";
             }
 
             const productName =
@@ -469,42 +704,55 @@ async function loadProducts() {
             let specsHTML = "";
 
             if (cpu) {
-                specsHTML += cpu + "<br>";
+                specsHTML +=
+                    cpu + "<br>";
             }
 
             if (gpu) {
-                specsHTML += gpu + "<br>";
+                specsHTML +=
+                    gpu + "<br>";
             }
 
             if (ram) {
-                specsHTML += ram + "<br>";
+                specsHTML +=
+                    ram + "<br>";
             }
 
             if (storage) {
-                specsHTML += storage + "<br>";
+                specsHTML +=
+                    storage + "<br>";
             }
 
             if (screen) {
-                specsHTML += screen;
+                specsHTML +=
+                    screen;
             }
 
-            let priceHTML = "Price coming soon";
+            let priceHTML =
+                "Price coming soon";
 
             if (lowestPrice !== null) {
+
                 priceHTML =
                     "From " +
-                    lowestPrice.toLocaleString("nb-NO") +
+                    lowestPrice.toLocaleString(
+                        "nb-NO"
+                    ) +
                     " NOK";
             }
 
             let bestStoreHTML = "";
 
             if (lowestOffer) {
+
                 bestStoreHTML =
                     '<div class="best-store">' +
                     "Best price: " +
                     "<strong>" +
-                    (lowestOffer.store || "Store") +
+                    (
+                        lowestOffer.store ||
+                        "Store"
+                    ) +
                     "</strong>" +
                     "</div>";
             }
@@ -512,34 +760,39 @@ async function loadProducts() {
             let savingsHTML = "";
 
             if (savings > 0) {
+
                 savingsHTML =
                     '<div class="savings">' +
                     "Save up to " +
-                    savings.toLocaleString("nb-NO") +
+                    savings.toLocaleString(
+                        "nb-NO"
+                    ) +
                     " NOK" +
                     "</div>";
             }
 
             const bestUrl =
-                lowestOffer && lowestOffer.url
+                lowestOffer &&
+                lowestOffer.url
                     ? lowestOffer.url
                     : "#";
 
             card.innerHTML =
+
                 '<img src="' +
                 image +
                 '" alt="' +
-                productName +
+                escapeHtml(productName) +
                 '" onerror="this.style.display=\'none\'">' +
 
                 '<span class="badge">DEAL</span>' +
 
                 "<h2>" +
-                productName +
+                escapeHtml(productName) +
                 "</h2>" +
 
                 '<div class="description">' +
-                description +
+                escapeHtml(description) +
                 "</div>" +
 
                 '<div class="specs">' +
@@ -567,23 +820,28 @@ async function loadProducts() {
                 "</a>";
 
             container.appendChild(card);
+
         });
 
     } catch (error) {
 
-        console.error("TechKjop error:", error);
+        console.error(
+            "TechKjop error:",
+            error
+        );
 
         container.innerHTML =
             '<div class="error">' +
             "<strong>Unable to load products.</strong><br><br>" +
-            error.message +
+            escapeHtml(error.message) +
             "</div>";
     }
 }
 
+
 loadProducts();
+
 </script>
 
 </body>
 </html>
-
