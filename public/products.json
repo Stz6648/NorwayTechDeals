@@ -1392,5 +1392,130 @@
       "url": "https://www.proshop.no/RAM/Kingston-FURY-Beast-DDR5-6000-32GB-CL30-Dual-Channel-2-pcs-AMD-EXPO-Intel-XMP-Black/3251783"
     }
   ]
+},
+  {
+  "id": "kingston-fury-beast-ddr5-6000-16gb-cl30",
+  "brand": "Kingston",
+  "name": "Kingston FURY Beast DDR5-6000 16GB CL30",
+  "category": "RAM",
+  "subcategory": "DDR5 RAM",
+  "condition": "New",
+  "image": "https://www.proshop.no/Images/915x900/3251782_3e06137c4cce.jpg",
+  "description": "16GB DDR5-6000 CL30 Dual Channel",
+  "specifications": {
+    "ram": "16 GB (2 x 8 GB)",
+    "type": "DDR5",
+    "speed": "6000 MT/s",
+    "latency": "CL30"
+  },
+  "price": 3893,
+  "lowestPrice": 3893,
+  "lowestStore": "Proshop",
+  "offers": [{
+    "store": "Proshop",
+    "price": 3893,
+    "currency": "NOK",
+    "url": "https://www.proshop.no/RAM/Kingston-FURY-Beast-DDR5-6000-16GB-CL30-Dual-Channel-2-pcs-AMD-EXPO-Intel-XMP-Black/3251782"
+  }]
+},
+{
+  "id": "kingston-fury-beast-ddr5-6000-32gb-cl36",
+  "brand": "Kingston",
+  "name": "Kingston FURY Beast DDR5-6000 32GB CL36",
+  "category": "RAM",
+  "subcategory": "DDR5 RAM",
+  "condition": "New",
+  "image": "https://www.proshop.no/Images/300x251/3288956_8706e2956a36.jpg",
+  "description": "32GB DDR5-6000 CL36",
+  "specifications": {
+    "ram": "32 GB",
+    "type": "DDR5",
+    "speed": "6000 MT/s",
+    "latency": "CL36"
+  },
+  "price": 6467,
+  "lowestPrice": 6467,
+  "lowestStore": "Proshop",
+  "offers": [{
+    "store": "Proshop",
+    "price": 6467,
+    "currency": "NOK",
+    "url": "https://www.proshop.no/RAM/Kingston-FURY-Beast-DDR5-6000-32GB-CL36-Single-Channel-1-pcs-AMD-EXPO-Intel-XMP-Black/3288956"
+  }]
+},
+{
+  "id": "kingston-fury-beast-rgb-ddr5-6000-32gb-cl30",
+  "brand": "Kingston",
+  "name": "Kingston FURY Beast RGB DDR5-6000 32GB CL30",
+  "category": "RAM",
+  "subcategory": "DDR5 RAM",
+  "condition": "New",
+  "image": "https://www.proshop.no/Images/915x900/3252704_21f8c19565bb.jpg",
+  "description": "32GB DDR5-6000 CL30 RGB",
+  "specifications": {
+    "ram": "32 GB",
+    "type": "DDR5",
+    "speed": "6000 MT/s",
+    "latency": "CL30"
+  },
+  "price": 7553,
+  "lowestPrice": 7553,
+  "lowestStore": "Proshop",
+  "offers": [{
+    "store": "Proshop",
+    "price": 7553,
+    "currency": "NOK",
+    "url": "https://www.proshop.no/RAM/Kingston-FURY-Beast-RGB-DDR5-6000-32GB-CL30-Single-Channel-1-pcs-AMD-EXPO-Intel-XMP-Svart-med-RGB/3252704"
+  }]
+},
+{
+  "id": "kingston-fury-beast-ddr5-5600-32gb-cl36",
+  "brand": "Kingston",
+  "name": "Kingston FURY Beast DDR5-5600 32GB CL36",
+  "category": "RAM",
+  "subcategory": "DDR5 RAM",
+  "condition": "New",
+  "image": "https://www.proshop.no/Images/915x900/3383014_e1a0efa0d42b.jpg",
+  "description": "32GB DDR5-5600 CL36",
+  "specifications": {
+    "ram": "32 GB",
+    "type": "DDR5",
+    "speed": "5600 MT/s",
+    "latency": "CL36"
+  },
+  "price": 5795,
+  "lowestPrice": 5795,
+  "lowestStore": "Proshop",
+  "offers": [{
+    "store": "Proshop",
+    "price": 5795,
+    "currency": "NOK",
+    "url": "https://www.proshop.no/RAM/Kingston-FURY-Beast-DDR5-5600-32GB-CL36-Single-Channel-1-pcs-AMD-EXPO-Intel-XMP-Svart/3383014"
+  }]
+},
+{
+  "id": "kingston-fury-beast-rgb-white-ddr5-6000-32gb",
+  "brand": "Kingston",
+  "name": "Kingston FURY Beast RGB White DDR5-6000 32GB",
+  "category": "RAM",
+  "subcategory": "DDR5 RAM",
+  "condition": "New",
+  "image": "https://www.proshop.no/Images/915x900/3252720_2dee68e5fc5f.jpg",
+  "description": "32GB DDR5-6000 CL30 RGB White",
+  "specifications": {
+    "ram": "32 GB (2 x 16 GB)",
+    "type": "DDR5",
+    "speed": "6000 MT/s",
+    "latency": "CL30"
+  },
+  "price": 7289,
+  "lowestPrice": 7289,
+  "lowestStore": "Proshop",
+  "offers": [{
+    "store": "Proshop",
+    "price": 7289,
+    "currency": "NOK",
+    "url": "https://www.proshop.no/RAM/Kingston-FURY-Beast-RGB-DDR5-6000-32GB-CL30-Dual-Channel-2-pcs-AMD-EXPO-Intel-XMP-Hvit-med-RGB/3252720"
+  }]
 }
 ]
