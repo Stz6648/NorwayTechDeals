@@ -1,743 +1,1368 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Gaming Laptops – Compare Prices in Norway | TechKjop</title>
-<meta name="description" content="Compare gaming laptop prices in Norway. Find gaming laptops, specifications, prices and the best deals from Norwegian stores.">
-
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f5f7fa;
-  color: #172033;
-}
-
-header {
-  background: #111827;
-  color: white;
-  padding: 18px 20px;
-}
-
-.header-inner {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.logo {
-  font-size: 25px;
-  font-weight: 800;
-  color: white;
-  text-decoration: none;
-}
-
-nav {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  color: #dbe4f0;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: white;
-}
-
-.hero {
-  background: white;
-  padding: 45px 20px 35px;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.hero-inner {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.hero h1 {
-  margin: 0 0 12px;
-  font-size: 38px;
-}
-
-.hero p {
-  margin: 0;
-  max-width: 800px;
-  color: #5b6577;
-  line-height: 1.6;
-}
-
-.controls {
-  max-width: 1200px;
-  margin: 25px auto;
-  padding: 0 20px;
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.search-box {
-  flex: 1;
-  min-width: 250px;
-  padding: 14px 16px;
-  border: 1px solid #d5dbe5;
-  border-radius: 9px;
-  font-size: 15px;
-}
-
-.sort-box {
-  padding: 14px 16px;
-  border: 1px solid #d5dbe5;
-  border-radius: 9px;
-  background: white;
-  font-size: 15px;
-}
-
-.products {
-  max-width: 1200px;
-  margin: 0 auto 50px;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.card {
-  background: white;
-  border: 1px solid #e2e6ed;
-  border-radius: 14px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition: transform .15s ease, box-shadow .15s ease;
-}
-
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0,0,0,.08);
-}
-
-.image-wrap {
-  height: 220px;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 18px;
-  border-bottom: 1px solid #edf0f4;
-}
-
-.image-wrap img {
-  max-width: 100%;
-  max-height: 185px;
-  object-fit: contain;
-}
-
-.card-content {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.card h2 {
-  margin: 0 0 10px;
-  font-size: 20px;
-  line-height: 1.3;
-}
-
-.description {
-  color: #667085;
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
-
-.specs {
-  display: grid;
-  gap: 7px;
-  margin-bottom: 18px;
-}
-
-.spec {
-  font-size: 13px;
-  color: #465164;
-}
-
-.spec strong {
-  color: #172033;
-}
-
-.price {
-  font-size: 25px;
-  font-weight: 800;
-  margin-top: auto;
-  margin-bottom: 5px;
-}
-
-.store {
-  color: #667085;
-  font-size: 13px;
-  margin-bottom: 14px;
-}
-
-.offers {
-  margin-bottom: 15px;
-}
-
-.offer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 9px 0;
-  border-top: 1px solid #edf0f4;
-  font-size: 13px;
-}
-
-.offer-price {
-  font-weight: 700;
-}
-
-.deal-button {
-  display: block;
-  width: 100%;
-  text-align: center;
-  background: #111827;
-  color: white;
-  text-decoration: none;
-  padding: 13px 15px;
-  border-radius: 8px;
-  font-weight: 700;
-}
-
-.deal-button:hover {
-  background: #273449;
-}
-
-.empty,
-.loading {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 30px 20px;
-  text-align: center;
-  color: #667085;
-}
-
-footer {
-  background: #111827;
-  color: #cbd5e1;
-  padding: 35px 20px;
-  margin-top: 50px;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-footer a {
-  color: #cbd5e1;
-  text-decoration: none;
-}
-
-@media (max-width: 900px) {
-  .products {
-    grid-template-columns: repeat(2, 1fr);
+[
+  {
+    "id": "lenovo-loq-15",
+    "brand": "Lenovo",
+    "name": "Lenovo LOQ 15",
+    "model": "LOQ 15",
+    "category": "Laptop",
+    "subcategory": "Laptop",
+    "condition": "New",
+    "image": "/images/lenovo-loq.jpg",
+    "description": "15.6 Gaming Laptop",
+    "specifications": {
+      "cpu": "AMD Ryzen 7 250",
+      "gpu": "NVIDIA GeForce RTX 5060 8GB",
+      "ram": "16 GB DDR5",
+      "storage": "1 TB SSD",
+      "screen": "15.6 Full HD 144 Hz",
+      "vram": ""
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 12990,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": null,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/",
+        "updatedAt": null
+      },
+      {
+        "store": "Komplett",
+        "country": "NO",
+        "condition": "New",
+        "price": 14990,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": null,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.komplett.no/",
+        "updatedAt": null
+      }
+    ],
+    "lowestPrice": 12990,
+    "lowestStore": "Proshop",
+    "updatedAt": null
+  },
+  {
+    "id": "asus-rog-strix-g16",
+    "brand": "ASUS",
+    "name": "ASUS ROG Strix G16",
+    "model": "ROG Strix G16",
+    "category": "Laptop",
+    "subcategory": "Laptop",
+    "condition": "New",
+    "image": "/images/asus-rog-g16.jpg",
+    "description": "16 Gaming Laptop",
+    "specifications": {
+      "cpu": "AMD Ryzen 9 9955HX",
+      "gpu": "NVIDIA GeForce RTX 5070 8GB",
+      "ram": "32 GB DDR5",
+      "storage": "1 TB SSD",
+      "screen": "16 WQXGA 240 Hz",
+      "vram": ""
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 21990,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": null,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/",
+        "updatedAt": null
+      },
+      {
+        "store": "Komplett",
+        "country": "NO",
+        "condition": "New",
+        "price": 22990,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": null,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.komplett.no/",
+        "updatedAt": null
+      }
+    ],
+    "lowestPrice": 21990,
+    "lowestStore": "Proshop",
+    "updatedAt": null
+  },
+  {
+    "id": "gigabyte-gaming-laptop",
+    "brand": "GIGABYTE",
+    "name": "GIGABYTE Gaming Laptop",
+    "model": "Gaming Laptop",
+    "category": "Laptop",
+    "subcategory": "Laptop",
+    "condition": "New",
+    "image": "/images/gigabyte-gaming.jpg",
+    "description": "16 Gaming Laptop",
+    "specifications": {
+      "cpu": "Intel Core i7",
+      "gpu": "NVIDIA GeForce RTX 5060",
+      "ram": "16 GB DDR5",
+      "storage": "1 TB SSD",
+      "screen": "16 165 Hz",
+      "vram": ""
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 15990,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": null,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/",
+        "updatedAt": null
+      },
+      {
+        "store": "Komplett",
+        "country": "NO",
+        "condition": "New",
+        "price": 16990,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": null,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.komplett.no/",
+        "updatedAt": null
+      }
+    ],
+    "lowestPrice": 15990,
+    "lowestStore": "Proshop",
+    "updatedAt": null
+  },
+  {
+    "id": "pny-geforce-rtx-5060-8gb",
+    "brand": "PNY",
+    "name": "PNY GeForce RTX 5060 Dual Fan 8GB",
+    "model": "VCG50608DFXPB1",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/rtx-5060.jpg",
+    "description": "RTX 5060 graphics card with 8GB GDDR7, suitable for gaming and everyday high-performance PCs.",
+    "specifications": {
+      "cpu": "",
+      "gpu": "NVIDIA GeForce RTX 5060",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "8 GB GDDR7"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 5389,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5060-Dual-Fan-8GB-GDDR7-RAM-Grafikkort/3365812",
+        "updatedAt": null
+      }
+    ],
+    "lowestPrice": 5389,
+    "lowestStore": "Proshop",
+    "updatedAt": null
+  },
+  {
+    "id": "pny-geforce-rtx-5070-ti-16gb",
+    "brand": "PNY",
+    "name": "PNY GeForce RTX 5070 Ti Triple Fan 16GB",
+    "model": "VCG5070T16TFXPB1",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/rtx-5070-ti.jpg",
+    "description": "RTX 5070 Ti graphics card with 16GB GDDR7, suitable for demanding gaming and high-performance PCs.",
+    "specifications": {
+      "cpu": "",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "16 GB GDDR7"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 14806,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5070-Ti-Triple-Fan-16GB-GDDR7-RAM-Grafikkort/3338123",
+        "updatedAt": "2026-09-07"
+      }
+    ],
+    "lowestPrice": 14806,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-07"
+  },
+  {
+    "id": "nvidia-geforce-rtx-5080",
+    "brand": "PNY",
+    "name": "PNY GeForce RTX 5080 Triple Fan 16GB",
+    "model": "VCG508016TFXPB1",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/rtx-5080.jpg",
+    "description": "RTX 5080 graphics card with 16GB GDDR7, designed for demanding gaming and high-performance PCs.",
+    "specifications": {
+      "cpu": "",
+      "gpu": "NVIDIA GeForce RTX 5080",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "16 GB GDDR7"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 15790,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5080-Triple-Fan-16GB-GDDR7-RAM-Grafikkort/3338113",
+        "updatedAt": "2026-09-07"
+      },
+      {
+        "store": "Komplett",
+        "country": "NO",
+        "condition": "New",
+        "price": 15990,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.komplett.no/product/1323904/datautstyr/pc-komponenter/skjermkort/pny-geforce-rtx-5080",
+        "updatedAt": "2026-09-07"
+      }
+    ],
+    "lowestPrice": 15790,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-07"
+  },
+  {
+    "id": "pny-geforce-rtx-5070-12gb",
+    "brand": "PNY",
+    "name": "PNY GeForce RTX 5070 Triple Fan 12GB",
+    "model": "VCG507012TFXPB1-O",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/rtx-5070.jpg",
+    "description": "RTX 5070 graphics card with 12GB GDDR7, suitable for gaming and high-performance PCs.",
+    "specifications": {
+      "cpu": "",
+      "gpu": "NVIDIA GeForce RTX 5070",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "12 GB GDDR7"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 10155,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/PNY-GeForce-RTX-5070-Triple-Fan-12GB-GDDR7-RAM-Grafikkort/3338133",
+        "updatedAt": "2026-09-07"
+      }
+    ],
+    "lowestPrice": 10155,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-07"
+  },
+  {
+    "id": "gigabyte-rtx-5090-gaming-oc-32gb",
+    "brand": "GIGABYTE",
+    "name": "GIGABYTE GeForce RTX 5090 GAMING OC 32GB",
+    "model": "GV-N5090GAMING OC-32GD",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/rtx-5090.jpg",
+    "description": "RTX 5090 graphics card with 32GB GDDR7, designed for extreme gaming and high-performance workloads.",
+    "specifications": {
+      "cpu": "",
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "32 GB GDDR7"
+    },
+    "offers": [
+      {
+        "store": "Komplett",
+        "country": "NO",
+        "condition": "New",
+        "price": 49990,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.komplett.no/product/1319436/datautstyr/pc-komponenter/skjermkort/gigabyte-geforce-rtx-5090-gaming-oc",
+        "updatedAt": "2026-09-07"
+      },
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 59990,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/GIGABYTE-GeForce-RTX-5090-GAMING-OC-32GB-GDDR7-RAM-Grafikkort/3331129",
+        "updatedAt": "2026-09-07"
+      }
+    ],
+    "lowestPrice": 49990,
+    "lowestStore": "Komplett",
+    "updatedAt": "2026-09-07"
+  },
+  {
+    "id": "asus-geforce-rtx-5060-ti-dual-oc-16gb",
+    "brand": "ASUS",
+    "name": "ASUS GeForce RTX 5060 Ti DUAL OC 16GB",
+    "model": "DUAL-RTX5060TI-O16G",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/asus-rtx-5060-ti-dual-16gb.jpg",
+    "description": "RTX 5060 Ti graphics card with 16GB GDDR7, suitable for gaming and high-performance PCs.",
+    "specifications": {
+      "cpu": "",
+      "gpu": "NVIDIA GeForce RTX 5060 Ti",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "16 GB GDDR7"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 8190,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/ASUS-GeForce-RTX-5060-Ti-DUAL-OC-16GB-GDDR7-RAM-Grafikkort/3354513",
+        "updatedAt": "2026-09-07"
+      }
+    ],
+    "lowestPrice": 8190,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-07"
+  },
+  {
+    "id": "asrock-radeon-rx-9070-challenger-16gb",
+    "brand": "ASRock",
+    "name": "ASRock Radeon RX 9070 Challenger 16GB",
+    "model": "90-GA5NZZ-00UANF",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/sapphire-rx-9070.jpg",
+    "description": "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for high-performance gaming.",
+    "gpu": "AMD Radeon RX 9070",
+    "vram": "16 GB GDDR6",
+    "specifications": {
+      "cpu": "",
+      "gpu": "AMD Radeon RX 9070",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "16 GB GDDR6"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 7867,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/ASRock-Radeon-RX-9070-Challenger-16GB-GDDR6-RAM-Grafikkort/3348384",
+        "updatedAt": "2026-09-08"
+      }
+    ],
+    "lowestPrice": 7867,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-08"
+  },
+  {
+    "id": "sapphire-radeon-rx-9070-pulse-16gb",
+    "brand": "Sapphire",
+    "name": "Sapphire Radeon RX 9070 Pulse 16GB",
+    "model": "11349-03-20G",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/sapphire-rx-9070.jpg",
+    "description": "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for gaming and high-performance PCs.",
+    "gpu": "AMD Radeon RX 9070",
+    "vram": "16 GB GDDR6",
+    "specifications": {
+      "cpu": "",
+      "gpu": "AMD Radeon RX 9070",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "16 GB GDDR6"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 8692,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/Sapphire-Radeon-RX-9070-Pulse-16GB-GDDR6-RAM-Grafikkort/3331611",
+        "updatedAt": "2026-09-08"
+      }
+    ],
+    "lowestPrice": 8692,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-08"
+  },
+  {
+    "id": "powercolor-radeon-rx-9070-reaper-16gb",
+    "brand": "PowerColor",
+    "name": "PowerColor Radeon RX 9070 Reaper 16GB",
+    "model": "RX9070 16G-A",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/powercolor-rx-9070.jpg",
+    "description": "AMD Radeon RX 9070 graphics card with 16GB GDDR6 memory for gaming and high-performance PCs.",
+    "gpu": "AMD Radeon RX 9070",
+    "vram": "16 GB GDDR6",
+    "specifications": {
+      "cpu": "",
+      "gpu": "AMD Radeon RX 9070",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "16 GB GDDR6"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 8990,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/PowerColor-Radeon-RX-9070-Reaper-16GB-GDDR6-RAM-Grafikkort/3331583",
+        "updatedAt": "2026-09-08"
+      }
+    ],
+    "lowestPrice": 8990,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-08"
+  },
+  {
+    "id": "gigabyte-radeon-rx-9070-xt-gaming-oc-ice-16gb",
+    "brand": "GIGABYTE",
+    "name": "GIGABYTE Radeon RX 9070 XT GAMING OC ICE 16GB",
+    "model": "GV-R907XGAMINGOCICE-16GD",
+    "category": "Graphics Card",
+    "subcategory": "Graphics Card",
+    "condition": "New",
+    "image": "/images/gigabyte-rx-9070-xt-ice.jpg",
+    "description": "AMD Radeon RX 9070 XT graphics card with 16GB GDDR6 memory for high-performance gaming.",
+    "gpu": "AMD Radeon RX 9070 XT",
+    "vram": "16 GB GDDR6",
+    "specifications": {
+      "cpu": "",
+      "gpu": "AMD Radeon RX 9070 XT",
+      "ram": "",
+      "storage": "",
+      "screen": "",
+      "vram": "16 GB GDDR6"
+    },
+    "offers": [
+      {
+        "store": "Proshop",
+        "country": "NO",
+        "condition": "New",
+        "price": 9690,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "affiliateNetwork": null,
+        "url": "https://www.proshop.no/Grafikkort/GIGABYTE-Radeon-RX-9070-XT-GAMING-OC-ICE-16GB-GDDR6-RAM-Grafikkort/3425155",
+        "updatedAt": "2026-09-08"
+      }
+    ],
+    "lowestPrice": 9690,
+    "lowestStore": "Proshop",
+    "updatedAt": "2026-09-08"
+  },
+  {
+    "lowestStore": "Elkjøp",
+    "id": "lenovo-loq-17irr9-rtx3050",
+    "model": "17IRR9",
+    "updatedAt": "2026-09-08",
+    "offers": [
+      {
+        "currency": "NOK",
+        "url": "https://www.elkjop.no/product/pc-datautstyr-og-kontor/pc/stasjonar-pc/lenovo-loq-17irr9-i5-1481tb3050-gaming-desktop/913582",
+        "price": 14995,
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "condition": "New",
+        "updatedAt": "2026-09-08",
+        "store": "Elkjøp",
+        "country": "NO",
+        "affiliateNetwork": null
+      }
+    ],
+    "image": "/images/lenovo-loq-17irr9.jpg",
+    "name": "Lenovo LOQ 17IRR9 Gaming Desktop",
+    "subcategory": "Gaming Desktop",
+    "specifications": {
+      "vram": "6 GB",
+      "gpu": "NVIDIA GeForce RTX 3050",
+      "storage": "1 TB SSD",
+      "screen": "",
+      "ram": "8 GB",
+      "cpu": "Intel Core i5-14400"
+    },
+    "brand": "Lenovo",
+    "gpu": "NVIDIA GeForce RTX 3050 6GB",
+    "vram": "6 GB",
+    "lowestPrice": 14995,
+    "category": "Gaming PC",
+    "condition": "New",
+    "description": "Lenovo LOQ gaming desktop with Intel Core i5 processor, NVIDIA GeForce RTX 3050 graphics, 8GB RAM and 1TB SSD.",
+    "cpu": "Intel Core i5-14400",
+    "ram": "8 GB",
+    "storage": "1 TB SSD"
+  },
+  {
+    "lowestStore": "Elkjøp",
+    "id": "asus-tuf-t500-rtx5060",
+    "model": "T500",
+    "updatedAt": "2026-09-08",
+    "offers": [
+      {
+        "currency": "NOK",
+        "url": "https://www.elkjop.no/product/pc-datautstyr-og-kontor/pc/stasjonar-pc/asus-tuf-t500-core5-210h161024rtx5060-stasjonar-gaming-pc/998871",
+        "price": 18495,
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "condition": "New",
+        "updatedAt": "2026-09-08",
+        "store": "Elkjøp",
+        "country": "NO",
+        "affiliateNetwork": null
+      }
+    ],
+    "image": "/images/asus-tuf-t500.jpg",
+    "name": "ASUS TUF T500 Gaming Desktop RTX 5060",
+    "subcategory": "Gaming Desktop",
+    "specifications": {
+      "vram": "8 GB",
+      "gpu": "NVIDIA GeForce RTX 5060",
+      "storage": "1 TB SSD",
+      "screen": "",
+      "ram": "16 GB",
+      "cpu": "Intel Core 5 210H"
+    },
+    "brand": "ASUS",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "vram": "8 GB",
+    "lowestPrice": 18495,
+    "category": "Gaming PC",
+    "condition": "New",
+    "description": "ASUS TUF gaming desktop with Intel Core 5 processor, RTX 5060 graphics, 16GB RAM and 1TB SSD.",
+    "cpu": "Intel Core 5 210H",
+    "ram": "16 GB",
+    "storage": "1 TB SSD"
+  },
+  {
+    "lowestStore": "Elkjøp",
+    "id": "lenovo-legion-t5-rtx5060ti",
+    "model": "Legion T5",
+    "updatedAt": "2026-09-08",
+    "offers": [
+      {
+        "currency": "NOK",
+        "url": "https://www.elkjop.no/product/pc-datautstyr-og-kontor/pc/stasjonar-pc/lenovo-legion-t5-r5-760016gb1tbrtx5060-ti-stasjonar-gaming-pc/946220",
+        "price": 19995,
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "condition": "New",
+        "updatedAt": "2026-09-08",
+        "store": "Elkjøp",
+        "country": "NO",
+        "affiliateNetwork": null
+      }
+    ],
+    "image": "/images/lenovo-legion-t5.jpg",
+    "name": "Lenovo Legion T5 Gaming Desktop RTX 5060 Ti",
+    "subcategory": "Gaming Desktop",
+    "specifications": {
+      "vram": "16 GB",
+      "gpu": "NVIDIA GeForce RTX 5060 Ti",
+      "storage": "1 TB SSD",
+      "screen": "",
+      "ram": "16 GB",
+      "cpu": "AMD Ryzen 5 7600"
+    },
+    "brand": "Lenovo",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "vram": "16 GB",
+    "lowestPrice": 19995,
+    "category": "Gaming PC",
+    "condition": "New",
+    "description": "Lenovo Legion T5 gaming desktop with AMD Ryzen processor, RTX 5060 Ti graphics, 16GB RAM and 1TB SSD.",
+    "cpu": "AMD Ryzen 5 7600",
+    "ram": "16 GB",
+    "storage": "1 TB SSD"
+  },
+  {
+    "lowestStore": "Elkjøp",
+    "id": "hp-omen-35l-rtx5060ti",
+    "model": "OMEN 35L",
+    "updatedAt": "2026-09-08",
+    "offers": [
+      {
+        "currency": "NOK",
+        "url": "https://www.elkjop.no/product/pc-datautstyr-og-kontor/pc/stasjonar-pc/hp-omen-35l-i5-14400f1610245060ti-stasjonar-gaming-pc/946290",
+        "price": 19995,
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "condition": "New",
+        "updatedAt": "2026-09-08",
+        "store": "Elkjøp",
+        "country": "NO",
+        "affiliateNetwork": null
+      }
+    ],
+    "image": "/images/hp-omen-35l.jpg",
+    "name": "HP OMEN 35L Gaming Desktop RTX 5060 Ti",
+    "subcategory": "Gaming Desktop",
+    "specifications": {
+      "vram": "16 GB",
+      "gpu": "NVIDIA GeForce RTX 5060 Ti",
+      "storage": "1 TB SSD",
+      "screen": "",
+      "ram": "16 GB",
+      "cpu": "Intel Core i5-14400F"
+    },
+    "brand": "HP",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "vram": "16 GB",
+    "lowestPrice": 19995,
+    "category": "Gaming PC",
+    "condition": "New",
+    "description": "HP OMEN 35L gaming desktop with Intel Core i5 processor, RTX 5060 Ti graphics, 16GB RAM and 1TB SSD.",
+    "cpu": "Intel Core i5-14400F",
+    "ram": "16 GB",
+    "storage": "1 TB SSD"
+  },
+  {
+    "lowestStore": "Elkjøp",
+    "id": "lenovo-legion-tower-5i-rtx5060ti",
+    "model": "Legion Tower 5i",
+    "updatedAt": "2026-09-08",
+    "offers": [
+      {
+        "currency": "NOK",
+        "url": "https://www.elkjop.no/product/pc-datautstyr-og-kontor/pc/stasjonar-pc/lenovo-legion-tower-5i-u7-265161tb5060-ti-gaming-pc/946221",
+        "price": 22995,
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "condition": "New",
+        "updatedAt": "2026-09-08",
+        "store": "Elkjøp",
+        "country": "NO",
+        "affiliateNetwork": null
+      }
+    ],
+    "image": "/images/lenovo-legion-tower-5i.jpg",
+    "name": "Lenovo Legion Tower 5i Gaming Desktop RTX 5060 Ti",
+    "subcategory": "Gaming Desktop",
+    "specifications": {
+      "vram": "16 GB",
+      "gpu": "NVIDIA GeForce RTX 5060 Ti",
+      "storage": "1 TB SSD",
+      "screen": "",
+      "ram": "16 GB",
+      "cpu": "Intel Core Ultra 7 265"
+    },
+    "brand": "Lenovo",
+    "gpu": "NVIDIA GeForce RTX 5060 Ti",
+    "vram": "16 GB",
+    "lowestPrice": 22995,
+    "category": "Gaming PC",
+    "condition": "New",
+    "description": "Lenovo Legion Tower 5i gaming desktop with Intel Core Ultra processor, RTX 5060 Ti graphics, 16GB RAM and 1TB SSD.",
+    "cpu": "Intel Core Ultra 7 265",
+    "ram": "16 GB",
+    "storage": "1 TB SSD"
+  },
+  {
+    "lowestStore": "Elkjøp",
+    "id": "pcspecialist-prime-400-rtx5070",
+    "model": "Prime 400",
+    "updatedAt": "2026-09-08",
+    "offers": [
+      {
+        "currency": "NOK",
+        "url": "https://www.elkjop.no/product/pc-datautstyr-og-kontor/pc/stasjonar-pc/pcspecialist-prime-400-i7-14f1610005070-stasjonar-gaming-pc/901749",
+        "price": 24995,
+        "shipping": null,
+        "inStock": true,
+        "affiliate": null,
+        "condition": "New",
+        "updatedAt": "2026-09-08",
+        "store": "Elkjøp",
+        "country": "NO",
+        "affiliateNetwork": null
+      }
+    ],
+    "image": "/images/pcspecialist-prime-400.jpg",
+    "name": "PCSpecialist Prime 400 Gaming Desktop RTX 5070",
+    "subcategory": "Gaming Desktop",
+    "specifications": {
+      "vram": "12 GB",
+      "gpu": "NVIDIA GeForce RTX 5070",
+      "storage": "1 TB SSD",
+      "screen": "",
+      "ram": "16 GB",
+      "cpu": "Intel Core i7-14700F"
+    },
+    "brand": "PCSpecialist",
+    "gpu": "NVIDIA GeForce RTX 5070",
+    "vram": "12 GB",
+    "lowestPrice": 24995,
+    "category": "Gaming PC",
+    "condition": "New",
+    "description": "PCSpecialist Prime 400 gaming desktop with Intel Core i7 processor, RTX 5070 graphics, 16GB RAM and 1TB SSD.",
+    "cpu": "Intel Core i7-14700F",
+    "ram": "16 GB",
+    "storage": "1 TB SSD"
+  },
+  {
+    "id": "acer-39508336961",
+    "name": "Acer Veriton N, VN4710GT, Desktop, Intel® Core™ i7, 16 GB RAM, 512 GB SSD",
+    "category": "Desktop",
+    "description": "Windows 11 Pro, Intel&#174; Core&#8482; i7-13700T prosessor Hexadeca-kjerne 1,40 GHz, 16 GB, DDR4 SDRAM, 512 GB SSD, Intel&#174; HD Graphics delt minne  Tastatur og mus er IKKE inkludert,",
+    "price": 10090,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/_/a/_acer-veriton-4000-mini-1l-vn4710gt-1l-no_kb_main1000_dt.vxveh.00c.png",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 10090,
+        "url": "https://www.awin1.com/pclick.php?p=39508336961&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "39508336961",
+    "merchant_product_id": "DT.VXVEH.00C",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-39585560447",
+    "name": "Acer Aspire C 24 C24-195ES, Alt-i-ett, 23.8\" Full HD, Intel® Core™ Ultra 7, 16 GB RAM, 1 TB SSD, Intel® Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 7 155U prosessor 1,70 GHz, 60,5 cm (23,8\") Full HD (1920 x 1080) 16:9, 16 GB, DDR5 SDRAM, 1 TB SSD, Intel® Graphics delt minne,",
+    "price": 9590,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-c24-c24-195es-wp-start-screen-elite19-rf-kbms-white-01_2.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 9590,
+        "url": "https://www.awin1.com/pclick.php?p=39585560447&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "39585560447",
+    "merchant_product_id": "DQ.BM5EQ.002",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-39585560448",
+    "name": "Acer Aspire C 24, C24-195ES, Alt-i-ett, 23.8\" Full HD, Intel Core Ultra 7, 32GB RAM, 2TB SSD, Intel Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 7 155U prosessor 1,70 GHz, 60,5 cm (23,8\") Full HD (1920 x 1080) 16:9, 32 GB, DDR5 SDRAM, 2 TB SSD, Intel® Graphics delt minne,",
+    "price": 12990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-c24-c24-195es-wp-start-screen-elite19-rf-kbms-white-01_3.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 12990,
+        "url": "https://www.awin1.com/pclick.php?p=39585560448&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "39585560448",
+    "merchant_product_id": "DQ.BM5EQ.003",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41803316581",
+    "name": "Acer Aspire C 27 Alt-i-ett, C27-195ES, 27\" FHD, Intel® Core™ Ultra 7, 16GB RAM, 1TB SSD, Intel® Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 7 155U prosessor 1,70 GHz, 68,6 cm (27\") Full HD (1920 x 1080) 16:9, 16 GB, DDR5 SDRAM, 1 TB SSD, Intel® Graphics delt minne,",
+    "price": 13190,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-c27-c27-195es-wp-start-screen-elite19-rf-kbms-white-01_2.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 13190,
+        "url": "https://www.awin1.com/pclick.php?p=41803316581&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41803316581",
+    "merchant_product_id": "DQ.BMGEQ.002",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41393005081",
+    "name": "Predator Helios Neo 16 AI, PHN16-73, Gaming Laptop, 16\" Screen, Intel Core Ultra 9, 32GB RAM, 2TB SSD, NVIDIA GeForce RTX 5070Ti",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 9 275HX prosessor 2,70 GHz, 40,6 cm (16\") WQXGA (2560 x 1600) 16:10 IPS 240 Hz, 32 GB, DDR5 SDRAM, 2 TB SSD, NVIDIA® GeForce RTX™ 5070Ti med 12 GB dedikert minne,",
+    "price": 32990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-16-ai-phn16-73-non-fingerprint-with-backlit-on-wp-oled-abyssal-black-01_6.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 32990,
+        "url": "https://www.awin1.com/pclick.php?p=41393005081&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41393005081",
+    "merchant_product_id": "NH.QX2ED.007",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-44672687973",
+    "name": "Acer Aspire XC XC-1860, Stasjonær PC, Intel® Core™ Ultra 5, 16GB RAM, 1TB SSD, UHD Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 5 225 prosessor 3,30 GHz, 16 GB, DDR5 SDRAM, 1 TB SSD, Intel® UHD Graphics delt minne  Tastatur og mus er IKKE inkludert,",
+    "price": 12049,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-xc-1860-non-odd-with-sd-card-reader-02_2.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 12049,
+        "url": "https://www.awin1.com/pclick.php?p=44672687973&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "44672687973",
+    "merchant_product_id": "DT.BMYEH.002",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41618473902",
+    "name": "Acer Aspire XC XC-1860, Desktop, Intel® Core™ Ultra 7, 16 GB RAM, 1 TB SSD, Intel® UHD Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 7 265 prosessor 2,40 GHz, 16 GB, DDR5 SDRAM, 1 TB SSD, Intel® UHD Graphics delt minne  Tastatur og mus er IKKE inkludert,",
+    "price": 11290,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-xc-1860-non-odd-with-sd-card-reader-02_5.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 11290,
+        "url": "https://www.awin1.com/pclick.php?p=41618473902&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41618473902",
+    "merchant_product_id": "DT.BMYEH.003",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-43373214503",
+    "name": "Acer Aspire XC XC-1860, Stasjonær PC, Intel® Core™ Ultra 7, 32 GB RAM, 1 TB SSD, 2 TB HDD, UHD Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 7 265 prosessor 2,40 GHz, 32 GB, DDR5 SDRAM, 1 TB SSD, 2 TB HDD, Intel® UHD Graphics delt minne  Tastatur og mus er IKKE inkludert,",
+    "price": 18390,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-xc-1860-non-odd-with-sd-card-reader-02_4.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 18390,
+        "url": "https://www.awin1.com/pclick.php?p=43373214503&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "43373214503",
+    "merchant_product_id": "DT.BMYEH.004",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41749311691",
+    "name": "Predator Helios Neo 18 AI, PHN18-72, Bærbar gaming-PC, 18\", Intel® Core™ Ultra 9, 64 GB RAM, 2 TB SSD, NVIDIA® GeForce RTX™ 5070Ti",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 9 275HX prosessor 2,70 GHz, 45,7 cm (18\") WQXGA (2560 x 1600) 16:10 IPS 240 Hz, 64 GB, DDR5 SDRAM, 2 TB SSD, NVIDIA® GeForce RTX™ 5070Ti med 12 GB dedikert minne,",
+    "price": 36990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-18-ai-phn18-72-non-fingerprint-with-backlit-on-wp-abyssal-black-01_8.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 36990,
+        "url": "https://www.awin1.com/pclick.php?p=41749311691&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41749311691",
+    "merchant_product_id": "NH.QVLED.00A",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41758563862",
+    "name": "Predator Helios 16 AI OLED, PH16-73, Bærbar gaming-PC, Svart",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 9 275HX prosessor 2,70 GHz, 40,6 cm (16\") OLED 2,5K (2560 x 1600) 16:10 240 Hz, 64 GB, DDR5 SDRAM, 2 TB SSD, NVIDIA® GeForce RTX™ 5090 med 24 GB dedikert minne,",
+    "price": 49990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-16-ai-ph16-73-non-fingerprint-with-backlit-on-wp-abyssal-black-01_8.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 49990,
+        "url": "https://www.awin1.com/pclick.php?p=41758563862&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41758563862",
+    "merchant_product_id": "NH.QW0ED.006",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41803316583",
+    "name": "Acer Predator Helios Neo 16 AI, PHN16-73, Bærbar gaming-PC, 16\" WQXGA 180Hz, Intel Core Ultra 9, 32GB RAM, 1TB SSD, NVIDIA GeForce RTX 5060",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 9 275HX prosessor 2,70 GHz, 40,6 cm (16\") WQXGA (2560 x 1600) 16:10 IPS 180 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5060 med 8 GB dedikert minne,",
+    "price": 26990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-16-ai-phn16-73-non-fingerprint-with-backlit-on-wp-oled-abyssal-black-01_30.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 26990,
+        "url": "https://www.awin1.com/pclick.php?p=41803316583&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41803316583",
+    "merchant_product_id": "NH.QVQED.003",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41818938128",
+    "name": "Predator Helios Neo 16S AI OLED, PHN16S-71, Gaming-PC, 16\" OLED, Intel Core Ultra 9, 32GB RAM, 1TB SSD, GeForce RTX 5060",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 9 275HX prosessor 2,70 GHz, 40,6 cm (16\") OLED 2,5K (2560 x 1600) 16:10 240 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5060 med 8 GB dedikert minne,",
+    "price": 23490,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-16s-ai-phn16s-71-non-fingerprint-with-backlit-on-wp-oled-abyssal-black-01_15.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 23490,
+        "url": "https://www.awin1.com/pclick.php?p=41818938128&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41818938128",
+    "merchant_product_id": "NH.QX9ED.003",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-41818938129",
+    "name": "Acer Predator Helios Neo 16S AI OLED, PHN16S-71, Gaming Laptop, 16\" OLED 2.5K 240Hz, Intel Core Ultra 9, 32GB RAM, 1TB SSD, NVIDIA GeForce RTX 5070",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 9 275HX prosessor 2,70 GHz, 40,6 cm (16\") OLED 2,5K (2560 x 1600) 16:10 240 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5070 med 8 GB dedikert minne,",
+    "price": 25990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-16s-ai-phn16s-71-non-fingerprint-with-backlit-on-wp-oled-abyssal-black-01_19.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 25990,
+        "url": "https://www.awin1.com/pclick.php?p=41818938129&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "41818938129",
+    "merchant_product_id": "NH.QXAED.007",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-42395856175",
+    "name": "Acer Nitro 18 AI, AN18-61, Bærbar gaming-PC, 18\" WQXGA, AMD Ryzen AI 9, 32 GB DDR5, 1 TB SSD, NVIDIA GeForce RTX 5070 Ti",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home, AMD Ryzen™ AI 9 365 prosessor 2 GHz, 45,7 cm (18\") WQXGA (2560 x 1600) 16:10 IPS 165 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5070 Ti med 12 GB dedikert minne,",
+    "price": 36490,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/n/i/nitro-18-ai-an18-61-non-fingerprint-with-backlit-on-wp-black-01_8.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 36490,
+        "url": "https://www.awin1.com/pclick.php?p=42395856175&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "42395856175",
+    "merchant_product_id": "NH.QYEED.003",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-44810930239",
+    "name": "Acer Aspire XC XC-1860, Desktop, Intel Core Ultra 5, 8GB RAM, 512GB SSD, Intel UHD Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home, Intel® Core™ Ultra 5 225 prosessor 3,30 GHz, 8 GB, DDR5 SDRAM, 512 GB SSD, Intel® UHD Graphics delt minne  Tastatur og mus er IKKE inkludert,",
+    "price": 7990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-xc-1860-non-odd-with-sd-card-reader-02_1.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 7990,
+        "url": "https://www.awin1.com/pclick.php?p=44810930239&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "44810930239",
+    "merchant_product_id": "DT.BMYEH.005",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-44972562987",
+    "name": "Acer Nitro V 15, ANV15-52, Bærbar Gaming-PC, 15.6\" FHD, Intel Core i9, 16GB RAM, 512GB SSD, NVIDIA RTX 5050",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ 9 270H prosessor 2,70 GHz, 39,6 cm (15,6\") Full HD (1920 x 1080) 16:9 IPS 165 Hz, 16 GB, DDR4 SDRAM, 512 GB SSD, NVIDIA® GeForce RTX™ 5050 med 8 GB dedikert minne,",
+    "price": 21490,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-nitro-v-15-anv15-52-non-fingerprint-with-backlit-on-wp-black-01_22.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 21490,
+        "url": "https://www.awin1.com/pclick.php?p=44972562987&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "44972562987",
+    "merchant_product_id": "NH.QZ9ED.00J",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-44972562988",
+    "name": "Acer Nitro V 15, ANV15-52, Bærbar gaming-PC, 15,6\" FHD, Intel Core 9, 16 GB RAM, 512 GB SSD, RTX 5060",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ 9 270H prosessor 2,70 GHz, 39,6 cm (15,6\") Full HD (1920 x 1080) 16:9 IPS 165 Hz, 16 GB, DDR4 SDRAM, 512 GB SSD, NVIDIA® GeForce RTX™ 5060 med 8 GB dedikert minne,",
+    "price": 23490,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-nitro-v-15-anv15-52-non-fingerprint-with-backlit-on-wp-black-01_23.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 23490,
+        "url": "https://www.awin1.com/pclick.php?p=44972562988&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "44972562988",
+    "merchant_product_id": "NH.QZAED.00H",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-44852662076",
+    "name": "Acer Nitro V 17 AI ANV17-41, Bærbar gaming-PC, 17,3\" FHD, AMD Ryzen 7, 16GB RAM, 512GB SSD, GeForce RTX 5050",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, AMD Ryzen™ AI 7 260 prosessor 3,80 GHz, 43,9 cm (17,3\") Full HD (1920 x 1080) 16:9 IPS 144 Hz, 16 GB, DDR5 SDRAM, 512 GB SSD, NVIDIA® GeForce RTX™ 5050 med 8 GB dedikert minne,",
+    "price": 22490,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-nitro-v-17-ai-anv17-41-non-fingerprint-with-backlit-on-wp-black-01_1_27.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 22490,
+        "url": "https://www.awin1.com/pclick.php?p=44852662076&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "44852662076",
+    "merchant_product_id": "NH.QYSED.009",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-44972562990",
+    "name": "Acer Predator Helios Neo 16S AI. PHN16S-I51. Gaming-PC. 16\" OLED. Intel Core Ultra 9. 32 GB RAM. 1 TB SSD. NVIDIA GeForce RTX 5060",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 9 386H prosessor 2,10 GHz, 40,6 cm (16\") OLED 2,5K (2560 x 1600) 16:10 165 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5060 med 8 GB dedikert minne,",
+    "price": 31990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-16s-ai-phn16s-i51-non-fingerprint-with-backlit-on-wp-oled-abyssal-black-01_4.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 31990,
+        "url": "https://www.awin1.com/pclick.php?p=44972562990&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "44972562990",
+    "merchant_product_id": "NH.U3UED.005",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-44993641494",
+    "name": "Predator Helios Neo 18 AI, PHN18-I71, Gaming-PC, 18\", Intel Core Ultra 9, 32GB RAM, 1TB SSD, NVIDIA RTX 5080",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 9 290HX Plus prosessor 2,70 GHz, 45,7 cm (18\") WQXGA (2560 x 1600) 16:10 IPS 240 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5080 med 16 GB dedikert minne,",
+    "price": 45990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-18-ai-phn18-i71-non-fingerprint-with-backlit-on-wp-abyssal-black-01_1.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 45990,
+        "url": "https://www.awin1.com/pclick.php?p=44993641494&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "44993641494",
+    "merchant_product_id": "NH.U55ED.001",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45083367942",
+    "name": "Predator Helios 18 AI, PH18-I71, Bærbar gaming-PC, 18\", Intel Core Ultra 9, 96 GB RAM, 2 TB SSD, NVIDIA GeForce RTX 5090",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 9 290HX Plus prosessor 2,70 GHz, 45,7 cm (18\") WQUXGA MINI-LED (3840 x 2400) 16:10 IPS 120 Hz, 96 GB, DDR5 SDRAM, 2 TB SSD, NVIDIA® GeForce RTX™ 5090 med 24 GB dedikert minne,",
+    "price": 69990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-18-ai-ph18-i71-non-fingerprint-with-backlit-on-wp-abyssal-black-01_2.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 69990,
+        "url": "https://www.awin1.com/pclick.php?p=45083367942&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45083367942",
+    "merchant_product_id": "NH.U3GED.006",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45075498185",
+    "name": "Predator Helios Neo 18 AI, PHN18-I71, Gaming-PC, 18\", Intel Core Ultra 9, 32 GB RAM, 1 TB SSD, GeForce RTX 5060",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 9 290HX Plus prosessor 2,70 GHz, 45,7 cm (18\") WQXGA (2560 x 1600) 16:10 IPS 165 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5060 med 8 GB dedikert minne,",
+    "price": 31990,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-18-ai-phn18-i71-non-fingerprint-with-backlit-on-wp-abyssal-black-01_9.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 31990,
+        "url": "https://www.awin1.com/pclick.php?p=45075498185&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45075498185",
+    "merchant_product_id": "NH.U52ED.005",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45075498186",
+    "name": "Predator Helios Neo 18 AI, PHN18-I71, Bærbar gaming-PC, 18\", Intel Core Ultra 9, 32GB RAM, 1TB SSD, NVIDIA GeForce RTX 5070",
+    "category": "Gaming Laptop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 9 290HX Plus prosessor 2,70 GHz, 45,7 cm (18\") WQXGA (2560 x 1600) 16:10 IPS 165 Hz, 32 GB, DDR5 SDRAM, 1 TB SSD, NVIDIA® GeForce RTX™ 5070 med 8 GB dedikert minne,",
+    "price": 34490,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/p/r/predator-helios-neo-18-ai-phn18-i71-non-fingerprint-with-backlit-on-wp-abyssal-black-01_10.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 34490,
+        "url": "https://www.awin1.com/pclick.php?p=45075498186&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45075498186",
+    "merchant_product_id": "NH.U60ED.001",
+    "merchant_category": "Gaming",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45713810412",
+    "name": "Acer Revo Box AI RB102-LNL mini-PC, Intel Core Ultra 5, 16 GB RAM, 512 GB SSD, Intel Arc Graphics, Svart",
+    "category": "Mini PC",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 5 226V prosessor 2,10 GHz, 16 GB, LPDDR5X, 512 GB SSD, Intel® Arc™ Graphics delt minne  Tastatur og mus er IKKE inkludert, VESA-festebrakett for skjerm inkludert",
+    "price": 11890,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-revo-box-ai-rb102-lnl-black-05_1.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 11890,
+        "url": "https://www.awin1.com/pclick.php?p=45713810412&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45713810412",
+    "merchant_product_id": "DT.BPLEH.003",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45713810413",
+    "name": "Acer Revo Box AI RB102-LNL, mini-PC, Intel Core Ultra 7, 16 GB RAM, 512 GB SSD, Intel Arc Graphics",
+    "category": "Mini PC",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 7 256V prosessor 2,20 GHz, 16 GB, LPDDR5X, 512 GB SSD, Intel® Arc™ Graphics delt minne  Tastatur og mus er IKKE inkludert, VESA-festebrakett for skjerm inkludert",
+    "price": 13290,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-revo-box-ai-rb102-lnl-black-05_2.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 13290,
+        "url": "https://www.awin1.com/pclick.php?p=45713810413&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45713810413",
+    "merchant_product_id": "DT.BPMEH.002",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45713810414",
+    "name": "Acer Revo Box AI RB102-LNL mini-PC, Intel Core Ultra 7, 16 GB RAM, 1 TB SSD, Intel Arc Graphics, Svart",
+    "category": "Mini PC",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 7 256V prosessor 2,20 GHz, 16 GB, LPDDR5X, 1 TB SSD, Intel® Arc™ Graphics delt minne  Tastatur og mus er IKKE inkludert, VESA-festebrakett for skjerm inkludert",
+    "price": 15390,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-revo-box-ai-rb102-lnl-black-05.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 15390,
+        "url": "https://www.awin1.com/pclick.php?p=45713810414&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45713810414",
+    "merchant_product_id": "DT.BPMEH.003",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45921947865",
+    "name": "Acer Aspire XC, XC-1860, Stasjonær PC, Intel Core Ultra 7, 16 GB RAM, 512 GB SSD, Intel UHD Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 7 265 prosessor 2,40 GHz, 16 GB, DDR5 SDRAM, 512 GB SSD, Intel® UHD Graphics delt minne  Tastatur og mus er IKKE inkludert,",
+    "price": 16490,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-xc-1860-non-odd-non-sd-card-reader-02.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 16490,
+        "url": "https://www.awin1.com/pclick.php?p=45921947865&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45921947865",
+    "merchant_product_id": "DT.BMYEH.008",
+    "merchant_category": "Desktops",
+    "category_name": ""
+  },
+  {
+    "id": "acer-45921947866",
+    "name": "Acer Aspire XC, XC-1860, stasjonær PC, Intel Core Ultra 7, 16 GB RAM, 1 TB SSD, Intel UHD Graphics",
+    "category": "Desktop",
+    "description": "Windows 11 Home 64-bit, Intel® Core™ Ultra 7 265 prosessor 2,40 GHz, 16 GB, DDR5 SDRAM, 1 TB SSD, Intel® UHD Graphics delt minne  Tastatur og mus er IKKE inkludert,",
+    "price": 18690,
+    "image": "https://static2-ecemea.acer.com/media/catalog/product/a/c/acer-aspire-xc-1860-non-odd-non-sd-card-reader-02_1.jpg",
+    "offers": [
+      {
+        "store": "Acer NO",
+        "price": 18690,
+        "url": "https://www.awin1.com/pclick.php?p=45921947866&a=3072785&m=24784"
+      }
+    ],
+    "source": "Awin Acer NO",
+    "aw_product_id": "45921947866",
+    "merchant_product_id": "DT.BMYEH.009",
+    "merchant_category": "Desktops",
+    "category_name": ""
   }
-}
-
-@media (max-width: 600px) {
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav {
-    gap: 12px;
-  }
-
-  .hero h1 {
-    font-size: 30px;
-  }
-
-  .products {
-    grid-template-columns: 1fr;
-  }
-
-  .image-wrap {
-    height: 240px;
-  }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-  <div class="header-inner">
-    <a href="/" class="logo">TechKjop</a>
-
-    <nav>
-      <a href="/">Home</a>
-      <a href="/graphics-cards.html">Graphics Cards</a>
-      <a href="/ram.html">RAM</a>
-      <a href="/gaming-laptops.html">Gaming Laptops</a>
-      <a href="/gaming-pc.html">Gaming PC</a>
-      <a href="/laptop-tilbud.html">Laptop Deals</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="hero-inner">
-    <h1>Gaming Laptops</h1>
-    <p>
-      Compare gaming laptop prices, specifications and offers.
-      Find the best gaming laptop deals available in Norway.
-    </p>
-  </div>
-</section>
-
-<div class="controls">
-  <input
-    id="search"
-    class="search-box"
-    type="text"
-    placeholder="Search gaming laptops..."
-  >
-
-  <select id="sort" class="sort-box">
-    <option value="default">Sort: Recommended</option>
-    <option value="low">Price: Low to High</option>
-    <option value="high">Price: High to Low</option>
-    <option value="name">Name: A–Z</option>
-  </select>
-</div>
-
-<div id="status" class="loading">
-  Loading gaming laptops...
-</div>
-
-<main id="products" class="products"></main>
-
-<footer>
-  <div class="footer-inner">
-    <div>
-      <strong>TechKjop</strong>
-      <p>Compare technology prices in Norway.</p>
-    </div>
-
-    <div>
-      <a href="/about.html">About Us</a><br>
-      <a href="/contact.html">Contact</a><br>
-      <a href="/privacy.html">Privacy Policy</a><br>
-      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-
-let allLaptops = [];
-
-function escapeHtml(value) {
-  if (value === null || value === undefined) return "";
-
-  return String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
-}
-
-function getPrice(product) {
-  if (typeof product.price === "number") {
-    return product.price;
-  }
-
-  if (typeof product.lowestPrice === "number") {
-    return product.lowestPrice;
-  }
-
-  if (product.price) {
-    const number = parseFloat(
-      String(product.price).replace(/[^\d.,]/g, "").replace(",", ".")
-    );
-
-    if (!isNaN(number)) return number;
-  }
-
-  if (product.offers && product.offers.length) {
-    const prices = product.offers
-      .map(o => parseFloat(String(o.price || "").replace(/[^\d.,]/g, "").replace(",", ".")))
-      .filter(p => !isNaN(p));
-
-    if (prices.length) return Math.min(...prices);
-  }
-
-  return null;
-}
-
-function formatPrice(price) {
-  if (price === null || price === undefined || isNaN(price)) {
-    return "Price unavailable";
-  }
-
-  return new Intl.NumberFormat("nb-NO", {
-    style: "currency",
-    currency: "NOK",
-    maximumFractionDigits: 0
-  }).format(price);
-}
-
-function getSpecs(product) {
-
-  const specs = product.specifications || {};
-
-  return {
-    cpu: specs.cpu || product.cpu || "",
-    gpu: specs.gpu || product.gpu || "",
-    ram: specs.ram || product.ram || "",
-    storage: specs.storage || product.storage || "",
-    screen: specs.screen || product.screen || ""
-  };
-}
-
-function getImage(product) {
-
-  return (
-    product.image ||
-    product.imageUrl ||
-    product.thumbnail ||
-    "/images/placeholder.jpg"
-  );
-}
-
-function getBestStore(product) {
-
-  if (
-    product.bestStore
-  ) {
-    return product.bestStore;
-  }
-
-  if (
-    product.offers &&
-    product.offers.length
-  ) {
-    const sorted = [...product.offers].sort((a, b) => {
-      const pa = parseFloat(String(a.price || "").replace(/[^\d.,]/g, "").replace(",", "."));
-      const pb = parseFloat(String(b.price || "").replace(/[^\d.,]/g, "").replace(",", "."));
-
-      return pa - pb;
-    });
-
-    return sorted[0]?.store || sorted[0]?.merchant || "";
-  }
-
-  return "";
-}
-
-function getBestUrl(product) {
-
-  if (product.url) return product.url;
-
-  if (product.affiliateUrl) return product.affiliateUrl;
-
-  if (product.link) return product.link;
-
-  if (
-    product.offers &&
-    product.offers.length
-  ) {
-    const sorted = [...product.offers].sort((a, b) => {
-      const pa = parseFloat(String(a.price || "").replace(/[^\d.,]/g, "").replace(",", "."));
-      const pb = parseFloat(String(b.price || "").replace(/[^\d.,]/g, "").replace(",", "."));
-
-      return pa - pb;
-    });
-
-    return (
-      sorted[0]?.affiliateUrl ||
-      sorted[0]?.url ||
-      sorted[0]?.link ||
-      "#"
-    );
-  }
-
-  return "#";
-}
-
-function renderProducts(list) {
-
-  const container = document.getElementById("products");
-  const status = document.getElementById("status");
-
-  container.innerHTML = "";
-
-  if (!list.length) {
-    status.style.display = "block";
-    status.className = "empty";
-    status.textContent = "No gaming laptops found.";
-    return;
-  }
-
-  status.style.display = "none";
-
-  list.forEach(product => {
-
-    const specs = getSpecs(product);
-    const price = getPrice(product);
-    const store = getBestStore(product);
-    const image = getImage(product);
-    const url = getBestUrl(product);
-
-    let offersHtml = "";
-
-    if (product.offers && product.offers.length) {
-
-      const offers = [...product.offers].slice(0, 4);
-
-      offersHtml = `
-        <div class="offers">
-          ${offers.map(offer => `
-            <div class="offer">
-              <span>${escapeHtml(
-                offer.store ||
-                offer.merchant ||
-                offer.retailer ||
-                "Store"
-              )}</span>
-
-              <span class="offer-price">
-                ${escapeHtml(
-                  offer.price
-                    ? String(offer.price)
-                    : ""
-                )}
-              </span>
-            </div>
-          `).join("")}
-        </div>
-      `;
-    }
-
-    const card = document.createElement("article");
-
-    card.className = "card";
-
-    card.innerHTML = `
-      <div class="image-wrap">
-        <img
-          src="${escapeHtml(image)}"
-          alt="${escapeHtml(product.name || product.title || "Gaming Laptop")}"
-          loading="lazy"
-          onerror="this.style.display='none'"
-        >
-      </div>
-
-      <div class="card-content">
-
-        <h2>
-          ${escapeHtml(
-            product.name ||
-            product.title ||
-            "Gaming Laptop"
-          )}
-        </h2>
-
-        <div class="description">
-          ${escapeHtml(
-            product.description ||
-            "Gaming laptop with high-performance hardware."
-          )}
-        </div>
-
-        <div class="specs">
-
-          ${
-            specs.cpu
-              ? `<div class="spec"><strong>CPU:</strong> ${escapeHtml(specs.cpu)}</div>`
-              : ""
-          }
-
-          ${
-            specs.gpu
-              ? `<div class="spec"><strong>GPU:</strong> ${escapeHtml(specs.gpu)}</div>`
-              : ""
-          }
-
-          ${
-            specs.ram
-              ? `<div class="spec"><strong>RAM:</strong> ${escapeHtml(specs.ram)}</div>`
-              : ""
-          }
-
-          ${
-            specs.storage
-              ? `<div class="spec"><strong>Storage:</strong> ${escapeHtml(specs.storage)}</div>`
-              : ""
-          }
-
-          ${
-            specs.screen
-              ? `<div class="spec"><strong>Screen:</strong> ${escapeHtml(specs.screen)}</div>`
-              : ""
-          }
-
-        </div>
-
-        <div class="price">
-          ${formatPrice(price)}
-        </div>
-
-        ${
-          store
-            ? `<div class="store">Best offer: ${escapeHtml(store)}</div>`
-            : ""
-        }
-
-        ${offersHtml}
-
-        <a
-          class="deal-button"
-          href="${escapeHtml(url)}"
-          target="_blank"
-          rel="nofollow sponsored noopener"
-        >
-          View Best Deal
-        </a>
-
-      </div>
-    `;
-
-    container.appendChild(card);
-  });
-}
-
-function applyFilters() {
-
-  const search = document
-    .getElementById("search")
-    .value
-    .toLowerCase()
-    .trim();
-
-  const sort = document.getElementById("sort").value;
-
-  let filtered = allLaptops.filter(product => {
-
-    const text = [
-      product.name,
-      product.title,
-      product.description,
-      product.cpu,
-      product.gpu,
-      product.ram,
-      product.storage,
-      product.category,
-      JSON.stringify(product.specifications || {})
-    ]
-    .join(" ")
-    .toLowerCase();
-
-    return text.includes(search);
-  });
-
-  if (sort === "low") {
-    filtered.sort((a, b) => {
-      return (getPrice(a) || 999999) - (getPrice(b) || 999999);
-    });
-  }
-
-  if (sort === "high") {
-    filtered.sort((a, b) => {
-      return (getPrice(b) || 0) - (getPrice(a) || 0);
-    });
-  }
-
-  if (sort === "name") {
-    filtered.sort((a, b) => {
-      const nameA = a.name || a.title || "";
-      const nameB = b.name || b.title || "";
-
-      return nameA.localeCompare(nameB);
-    });
-  }
-
-  renderProducts(filtered);
-}
-
-async function loadProducts() {
-
-  try {
-
-    const response = await fetch("/products.json", {
-      cache: "no-store"
-    });
-
-    if (!response.ok) {
-      throw new Error("Could not load products.json");
-    }
-
-    const products = await response.json();
-
-    /*
-      IMPORTANT:
-      Both "Laptop" and "Gaming Laptop"
-      are included here.
-    */
-
-    allLaptops = products.filter(product =>
-      product.category === "Laptop" ||
-      product.category === "Gaming Laptop"
-    );
-
-    applyFilters();
-
-  } catch (error) {
-
-    console.error(error);
-
-    const status = document.getElementById("status");
-
-    status.className = "empty";
-    status.style.display = "block";
-
-    status.textContent =
-      "Unable to load gaming laptops right now.";
-  }
-}
-
-document
-  .getElementById("search")
-  .addEventListener("input", applyFilters);
-
-document
-  .getElementById("sort")
-  .addEventListener("change", applyFilters);
-
-loadProducts();
-
-</script>
-
-</body>
-</html>
+]
