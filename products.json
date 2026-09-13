@@ -1365,6 +1365,146 @@
     "merchant_category": "Desktops",
     "category_name": ""
   },
+  {
+  "id": "kingston-fury-beast-ddr5-6000-16gb-cl30",
+  "brand": "Kingston",
+  "name": "Kingston FURY Beast DDR5-6000 16GB CL30",
+  "model": "KF560C30BBEK2-16",
+  "category": "RAM",
+  "subcategory": "DDR5 RAM",
+  "condition": "New",
+  "image": "https://www.proshop.no/Images/915x900/3251782_3e06137c4cce.jpg",
+  "description": "16GB DDR5-6000 CL30 Dual Channel",
+  "specifications": {
+    "ram": "16 GB (2 x 8 GB)",
+    "type": "DDR5",
+    "speed": "6000 MT/s",
+    "latency": "CL30"
+  },
+  "price": 3595,
+  "lowestPrice": 3595,
+  "lowestStore": "Proshop",
+  "offers": [
+    {
+      "store": "Proshop",
+      "price": 3595,
+      "currency": "NOK",
+      "url": "https://www.proshop.no/RAM/Kingston-FURY-Beast-DDR5-6000-16GB-CL30-Dual-Channel-2-pcs-AMD-EXPO-Intel-XMP-Black/3251782"
+    }
+  ]
+},
+{
+  "id": "kingston-fury-beast-ddr5-6000-32gb-cl36-dual",
+  "brand": "Kingston",
+  "name": "Kingston FURY Beast DDR5-6000 32GB CL36",
+  "model": "KF560C36BBE2-32",
+  "category": "RAM",
+  "subcategory": "DDR5 RAM",
+  "condition": "New",
+  "image": "https://www.proshop.no/Images/915x900/3288956.jpg",
+  "description": "32GB DDR5-6000 CL36 Dual Channel",
+  "specifications": {
+    "ram": "32 GB (2 x 16 GB)",
+    "type": "DDR5",
+    "speed": "6000 MT/s",
+    "latency": "CL36"
+  },
+  "price": 6467,
+  "lowestPrice": 6467,
+  "lowestStore": "Proshop",
+  "offers": [
+    {
+      "store": "Proshop",
+      "price": 6467,
+      "currency": "NOK",
+      "url": "https://www.proshop.no/RAM/Kingston-FURY-Beast-DDR5-6000-32GB-CL36-Dual-Channel-2-pcs-AMD-EXPO-Intel-XMP-Black/3288956"
+    }
+  ]
+},
+{
+  "id": "kingston-fury-beast-ddr5-6000-64gb-cl36",
+  "brand": "Kingston",
+  "name": "Kingston FURY Beast DDR5-6000 64GB CL36",
+  "model": "KF560C36BBEK2-64",
+  "category": "RAM",
+  "subcategory": "DDR5 RAM",
+  "condition": "New",
+  "image": "https://www.proshop.no/Images/915x900/64gb.jpg",
+  "description": "64GB DDR5-6000 CL36 Dual Channel",
+  "specifications": {
+    "ram": "64 GB (2 x 32 GB)",
+    "type": "DDR5",
+    "speed": "6000 MT/s",
+    "latency": "CL36"
+  },
+  "price": 13839,
+  "lowestPrice": 13839,
+  "lowestStore": "Proshop",
+  "offers": [
+    {
+      "store": "Proshop",
+      "price": 13839,
+      "currency": "NOK",
+      "url": "https://www.proshop.no/Kingston-FURY-Beast-DDR5"
+    }
+  ]
+},
+{
+  "id": "kingston-fury-beast-ddr5-6000-32gb-cl30-white",
+  "brand": "Kingston",
+  "name": "Kingston FURY Beast DDR5-6000 32GB CL30 White",
+  "model": "KF560C30BWEK2-32",
+  "category": "RAM",
+  "subcategory": "DDR5 RAM",
+  "condition": "New",
+  "image": "https://www.proshop.no/Images/915x900/3252561.jpg",
+  "description": "32GB DDR5-6000 CL30 Dual Channel White",
+  "specifications": {
+    "ram": "32 GB (2 x 16 GB)",
+    "type": "DDR5",
+    "speed": "6000 MT/s",
+    "latency": "CL30"
+  },
+  "price": 7206,
+  "lowestPrice": 7206,
+  "lowestStore": "Proshop",
+  "offers": [
+    {
+      "store": "Proshop",
+      "price": 7206,
+      "currency": "NOK",
+      "url": "https://www.proshop.no/RAM/Kingston-FURY-Beast-DDR5-6000-32GB-CL30-Dual-Channel-2-pcs-AMD-EXPO-Intel-XMP-White/3252561"
+    }
+  ]
+},
+{
+  "id": "kingston-fury-beast-ddr5-5600-32gb-cl36",
+  "brand": "Kingston",
+  "name": "Kingston FURY Beast DDR5-5600 32GB CL36",
+  "model": "KF556C36BBE2-32",
+  "category": "RAM",
+  "subcategory": "DDR5 RAM",
+  "condition": "New",
+  "image": "https://www.proshop.no/Images/915x900/3383014.jpg",
+  "description": "32GB DDR5-5600 CL36",
+  "specifications": {
+    "ram": "32 GB",
+    "type": "DDR5",
+    "speed": "5600 MT/s",
+    "latency": "CL36"
+  },
+  "price": 5795,
+  "lowestPrice": 5795,
+  "lowestStore": "Proshop",
+  "offers": [
+    {
+      "store": "Proshop",
+      "price": 5795,
+      "currency": "NOK",
+      "url": "https://www.proshop.no/RAM/Kingston-FURY-Beast-DDR5-5600-32GB-CL36-Single-Channel-1-pcs-AMD-EXPO-Intel-XMP-Svart/3383014"
+    }
+  ]
+}
 {
   "id": "kingston-fury-beast-ddr5-6000-32gb-cl30",
   "brand": "Kingston",
