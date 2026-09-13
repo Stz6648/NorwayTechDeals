@@ -1,116 +1,272 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gaming Laptops | TechKjop</title>
+
+<title>Gaming Laptop tilbud i Norge | TechKjop</title>
+
+<meta name="description" content="Sammenlign gaming-laptoper, priser og tilbud i Norge. Finn gaming laptop fra norske butikker på TechKjop.">
 
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f5f6f8;color:#111}
-header{background:#111827;padding:18px 24px}
-.nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.logo{color:#fff;font-size:25px;font-weight:700;text-decoration:none}
-.logo span{color:#3b82f6}
-nav{display:flex;gap:18px;flex-wrap:wrap}
-nav a{color:#d1d5db;text-decoration:none;font-size:14px}
-nav a:hover{color:#fff}
-
-.hero{background:#fff;text-align:center;padding:42px 20px;border-bottom:1px solid #e5e7eb}
-.hero h1{margin:0 0 10px;font-size:38px}
-.hero p{margin:0;color:#6b7280}
-
-.container{max-width:1200px;margin:35px auto;padding:0 20px}
-.title{font-size:26px;margin-bottom:22px}
-
-.products{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-
-.card{
-background:#fff;
-border:1px solid #e5e7eb;
-border-radius:14px;
-overflow:hidden;
-box-shadow:0 4px 14px rgba(0,0,0,.06);
+* {
+  box-sizing: border-box;
 }
 
-.image{
-height:240px;
-display:flex;
-align-items:center;
-justify-content:center;
-padding:20px;
-background:#fff;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fa;
+  color: #172033;
 }
 
-.image img{
-max-width:100%;
-max-height:205px;
-object-fit:contain;
+header {
+  background: #111827;
+  color: white;
+  padding: 18px 20px;
 }
 
-.content{padding:20px}
-.badge{
-display:inline-block;
-background:#fee2e2;
-color:#b91c1c;
-padding:5px 9px;
-border-radius:20px;
-font-size:12px;
-font-weight:bold;
-margin-bottom:10px;
+.header-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
-h2{font-size:20px;margin:0 0 10px}
-.description{color:#6b7280;font-size:14px;line-height:1.5;margin-bottom:14px}
-
-.specs{
-font-size:14px;
-line-height:1.8;
-color:#374151;
-margin-bottom:15px;
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 800;
 }
 
-.price{font-size:24px;font-weight:bold;margin-top:10px}
-
-.best{
-margin-top:10px;
-padding:10px;
-background:#eef6ef;
-border-radius:8px;
-font-size:14px;
+nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
 }
 
-.offers{margin-top:12px}
-.offer{
-display:flex;
-justify-content:space-between;
-font-size:13px;
-padding:6px 0;
-border-bottom:1px solid #eee;
+nav a {
+  color: #dbe4f0;
+  text-decoration: none;
+  font-size: 14px;
 }
 
-.button{
-display:block;
-margin-top:16px;
-padding:13px;
-background:#111827;
-color:white;
-text-align:center;
-text-decoration:none;
-border-radius:9px;
-font-weight:bold;
+nav a:hover {
+  color: white;
 }
 
-.button:hover{background:#2563eb}
-
-@media(max-width:900px){
-.products{grid-template-columns:repeat(2,1fr)}
+.hero {
+  background: white;
+  padding: 45px 20px 35px;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-@media(max-width:600px){
-.nav{flex-direction:column;align-items:flex-start}
-.products{grid-template-columns:1fr}
-.hero h1{font-size:30px}
+.hero-inner {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-size: 38px;
+}
+
+.hero p {
+  margin: 0;
+  color: #5b6577;
+  line-height: 1.6;
+  max-width: 850px;
+}
+
+.controls {
+  max-width: 1200px;
+  margin: 25px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.search-box,
+.sort-box {
+  padding: 14px 16px;
+  border: 1px solid #d5dbe5;
+  border-radius: 9px;
+  background: white;
+  font-size: 15px;
+}
+
+.search-box {
+  flex: 1;
+}
+
+.products {
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e2e6ed;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-wrap {
+  height: 230px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.image-wrap img {
+  max-width: 100%;
+  max-height: 190px;
+  object-fit: contain;
+}
+
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 19px;
+  line-height: 1.35;
+}
+
+.description {
+  color: #667085;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.specs {
+  display: grid;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+
+.spec {
+  font-size: 13px;
+  color: #465164;
+}
+
+.spec strong {
+  color: #172033;
+}
+
+.price {
+  font-size: 25px;
+  font-weight: 800;
+  margin-top: auto;
+  margin-bottom: 5px;
+}
+
+.store {
+  color: #667085;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.offers {
+  margin-bottom: 15px;
+}
+
+.offer {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-top: 1px solid #edf0f4;
+  font-size: 13px;
+}
+
+.offer-price {
+  font-weight: 700;
+}
+
+.deal-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: #111827;
+  color: white;
+  text-decoration: none;
+  padding: 13px 15px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.deal-button:hover {
+  background: #273449;
+}
+
+.status {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  text-align: center;
+  color: #667085;
+}
+
+footer {
+  background: #111827;
+  color: #cbd5e1;
+  padding: 35px 20px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
 </head>
@@ -118,107 +274,564 @@ font-weight:bold;
 <body>
 
 <header>
-<div class="nav">
-<a href="/" class="logo">Tech<span>Kjop</span></a>
-<nav>
-<a href="/">Home</a>
-<a href="/gaming-laptops.html">Gaming Laptops</a>
-<a href="/gaming-pc.html">Gaming PC</a>
-<a href="/graphics-cards.html">Graphics Cards</a>
-<a href="/ram.html">RAM</a>
-<a href="/laptop-tilbud.html">Laptop Deals</a>
-</nav>
-</div>
+  <div class="header-inner">
+
+    <a href="/" class="logo">TechKjop</a>
+
+    <nav>
+      <a href="/">Home</a>
+      <a href="/graphics-cards.html">Graphics Cards</a>
+      <a href="/ram.html">RAM</a>
+      <a href="/gaming-laptops.html">Gaming Laptops</a>
+      <a href="/gaming-pc.html">Gaming PC</a>
+      <a href="/laptop-tilbud.html">Laptop Deals</a>
+    </nav>
+
+  </div>
 </header>
 
 <section class="hero">
-<h1>Gaming Laptops</h1>
-<p>Compare gaming laptop prices from Norwegian retailers.</p>
+  <div class="hero-inner">
+
+    <h1>Gaming Laptop tilbud i Norge</h1>
+
+    <p>
+      Sammenlign gaming-laptoper og finn gode teknologitilbud.
+      Se produkter, spesifikasjoner, priser og tilgjengelige butikktilbud.
+    </p>
+
+  </div>
 </section>
 
-<main class="container">
-<div class="title">Gaming Laptop Deals</div>
-<div id="products" class="products"></div>
-</main>
+<div class="controls">
+
+  <input
+    id="search"
+    class="search-box"
+    type="text"
+    placeholder="Søk etter gaming laptop..."
+  >
+
+  <select id="sort" class="sort-box">
+    <option value="default">Anbefalt</option>
+    <option value="low">Pris: lavest først</option>
+    <option value="high">Pris: høyest først</option>
+    <option value="name">Navn: A–Å</option>
+  </select>
+
+</div>
+
+<div id="status" class="status">
+  Laster gaming-laptoper...
+</div>
+
+<main id="products" class="products"></main>
+
+<footer>
+
+  <div class="footer-inner">
+
+    <div>
+      <strong>TechKjop</strong>
+      <p>Sammenlign teknologi og priser i Norge.</p>
+    </div>
+
+    <div>
+      <a href="/about.html">Om oss</a><br>
+      <a href="/contact.html">Kontakt</a><br>
+      <a href="/privacy.html">Personvern</a><br>
+      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
+    </div>
+
+  </div>
+
+</footer>
 
 <script>
-async function loadProducts(){
 
-const response=await fetch("/products.json");
-const products=await response.json();
+let allLaptops = [];
 
-const laptops=products.filter(p=>p.category==="Laptop");
+function escapeHtml(value) {
 
-const container=document.getElementById("products");
+  if (value === null || value === undefined) {
+    return "";
+  }
 
-laptops.forEach(product=>{
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
 
-const specs=product.specifications || {};
-const offers=product.offers || [];
+function numberPrice(value) {
 
-const sortedOffers=[...offers].sort((a,b)=>a.price-b.price);
-const best=sortedOffers[0];
+  if (typeof value === "number") {
+    return value;
+  }
 
-const offersHTML=sortedOffers.map(o=>`
-<div class="offer">
-<span>${o.store}</span>
-<strong>${Number(o.price).toLocaleString("nb-NO")} NOK</strong>
-</div>
-`).join("");
+  if (!value) {
+    return null;
+  }
 
-container.innerHTML+=`
+  const n = parseFloat(
+    String(value)
+      .replace(/[^\d.,]/g, "")
+      .replace(/\./g, "")
+      .replace(",", ".")
+  );
 
-<article class="card">
+  return isNaN(n) ? null : n;
+}
 
-<div class="image">
-<img src="${product.image}" alt="${product.name}">
-</div>
+function getPrice(product) {
 
-<div class="content">
+  if (product.lowestPrice !== undefined) {
+    return numberPrice(product.lowestPrice);
+  }
 
-<span class="badge">GAMING LAPTOP</span>
+  if (product.price !== undefined) {
+    return numberPrice(product.price);
+  }
 
-<h2>${product.name}</h2>
+  if (product.offers && product.offers.length) {
 
-<div class="description">
-${product.description || ""}
-</div>
+    const prices = product.offers
+      .map(o => numberPrice(o.price))
+      .filter(p => p !== null);
 
-<div class="specs">
-🔥 ${specs.cpu || ""}<br>
-🎮 ${specs.gpu || ""}<br>
-💾 ${specs.ram || ""}<br>
-💿 ${specs.storage || ""}<br>
-🖥️ ${specs.screen || ""}
-</div>
+    if (prices.length) {
+      return Math.min(...prices);
+    }
+  }
 
-<div class="price">
-From ${Number(best.price).toLocaleString("nb-NO")} NOK
-</div>
+  return null;
+}
 
-<div class="best">
-Best price: <strong>${best.store}</strong>
-</div>
+function formatPrice(price) {
 
-<div class="offers">
-${offersHTML}
-</div>
+  if (price === null) {
+    return "Pris mangler";
+  }
 
-<a class="button"
-href="${best.url}"
-target="_blank"
-rel="noopener noreferrer">
-View Best Deal
-</a>
+  return new Intl.NumberFormat("nb-NO", {
+    style: "currency",
+    currency: "NOK",
+    maximumFractionDigits: 0
+  }).format(price);
+}
 
-</div>
-</article>
-`;
-});
+function getSpecs(product) {
+
+  const s = product.specifications || {};
+
+  return {
+    cpu: s.cpu || product.cpu || "",
+    gpu: s.gpu || product.gpu || "",
+    ram: s.ram || product.ram || "",
+    storage: s.storage || product.storage || "",
+    screen: s.screen || product.screen || ""
+  };
+}
+
+function getImage(product) {
+
+  return product.image ||
+         product.imageUrl ||
+         product.thumbnail ||
+         "";
+}
+
+function getStore(product) {
+
+  if (product.lowestStore) {
+    return product.lowestStore;
+  }
+
+  if (product.bestStore) {
+    return product.bestStore;
+  }
+
+  if (product.offers && product.offers.length) {
+
+    const sorted = [...product.offers]
+      .sort((a, b) =>
+        (numberPrice(a.price) || 999999) -
+        (numberPrice(b.price) || 999999)
+      );
+
+    return sorted[0]?.store ||
+           sorted[0]?.merchant ||
+           "";
+  }
+
+  return "";
+}
+
+function getUrl(product) {
+
+  if (product.affiliateUrl) {
+    return product.affiliateUrl;
+  }
+
+  if (product.url) {
+    return product.url;
+  }
+
+  if (product.link) {
+    return product.link;
+  }
+
+  if (product.offers && product.offers.length) {
+
+    const sorted = [...product.offers]
+      .sort((a, b) =>
+        (numberPrice(a.price) || 999999) -
+        (numberPrice(b.price) || 999999)
+      );
+
+    return sorted[0]?.affiliateUrl ||
+           sorted[0]?.url ||
+           sorted[0]?.link ||
+           "#";
+  }
+
+  return "#";
+}
+
+function renderProducts(products) {
+
+  const container = document.getElementById("products");
+  const status = document.getElementById("status");
+
+  container.innerHTML = "";
+
+  if (!products.length) {
+
+    status.style.display = "block";
+    status.textContent = "Ingen gaming-laptoper funnet.";
+
+    return;
+  }
+
+  status.style.display = "none";
+
+  products.forEach(product => {
+
+    const name =
+      product.name ||
+      product.title ||
+      "Gaming Laptop";
+
+    const specs = getSpecs(product);
+    const price = getPrice(product);
+    const store = getStore(product);
+    const image = getImage(product);
+    const url = getUrl(product);
+
+    let offersHtml = "";
+
+    if (product.offers && product.offers.length) {
+
+      const offers = product.offers.slice(0, 4);
+
+      offersHtml = `
+        <div class="offers">
+
+          ${offers.map(offer => `
+
+            <div class="offer">
+
+              <span>
+                ${escapeHtml(
+                  offer.store ||
+                  offer.merchant ||
+                  offer.retailer ||
+                  "Butikk"
+                )}
+              </span>
+
+              <span class="offer-price">
+                ${escapeHtml(
+                  offer.price || ""
+                )}
+              </span>
+
+            </div>
+
+          `).join("")}
+
+        </div>
+      `;
+    }
+
+    const card = document.createElement("article");
+
+    card.className = "card";
+
+    card.innerHTML = `
+
+      <div class="image-wrap">
+
+        ${
+          image
+            ? `
+              <img
+                src="${escapeHtml(image)}"
+                alt="${escapeHtml(name)}"
+                loading="lazy"
+              >
+            `
+            : `
+              <div>Gaming Laptop</div>
+            `
+        }
+
+      </div>
+
+      <div class="card-content">
+
+        <h2>
+          ${escapeHtml(name)}
+        </h2>
+
+        <div class="description">
+          ${escapeHtml(
+            product.description ||
+            "Gaming laptop med høy ytelse."
+          )}
+        </div>
+
+        <div class="specs">
+
+          ${
+            specs.cpu
+              ? `
+                <div class="spec">
+                  <strong>CPU:</strong>
+                  ${escapeHtml(specs.cpu)}
+                </div>
+              `
+              : ""
+          }
+
+          ${
+            specs.gpu
+              ? `
+                <div class="spec">
+                  <strong>GPU:</strong>
+                  ${escapeHtml(specs.gpu)}
+                </div>
+              `
+              : ""
+          }
+
+          ${
+            specs.ram
+              ? `
+                <div class="spec">
+                  <strong>RAM:</strong>
+                  ${escapeHtml(specs.ram)}
+                </div>
+              `
+              : ""
+          }
+
+          ${
+            specs.storage
+              ? `
+                <div class="spec">
+                  <strong>Lagring:</strong>
+                  ${escapeHtml(specs.storage)}
+                </div>
+              `
+              : ""
+          }
+
+          ${
+            specs.screen
+              ? `
+                <div class="spec">
+                  <strong>Skjerm:</strong>
+                  ${escapeHtml(specs.screen)}
+                </div>
+              `
+              : ""
+          }
+
+        </div>
+
+        <div class="price">
+          ${formatPrice(price)}
+        </div>
+
+        ${
+          store
+            ? `
+              <div class="store">
+                Beste pris hos ${escapeHtml(store)}
+              </div>
+            `
+            : ""
+        }
+
+        ${offersHtml}
+
+        <a
+          class="deal-button"
+          href="${escapeHtml(url)}"
+          target="_blank"
+          rel="nofollow sponsored noopener"
+        >
+          Se beste tilbud
+        </a>
+
+      </div>
+    `;
+
+    container.appendChild(card);
+
+  });
+}
+
+function applyFilters() {
+
+  const search =
+    document
+      .getElementById("search")
+      .value
+      .toLowerCase()
+      .trim();
+
+  const sort =
+    document
+      .getElementById("sort")
+      .value;
+
+  let filtered = allLaptops.filter(product => {
+
+    const specs =
+      product.specifications || {};
+
+    const text = [
+
+      product.name,
+      product.title,
+      product.description,
+      product.brand,
+      product.model,
+      product.cpu,
+      product.gpu,
+      product.ram,
+      product.storage,
+      specs.cpu,
+      specs.gpu,
+      specs.ram,
+      specs.storage,
+      specs.screen
+
+    ]
+      .join(" ")
+      .toLowerCase();
+
+    return text.includes(search);
+
+  });
+
+  if (sort === "low") {
+
+    filtered.sort(
+      (a, b) =>
+        (getPrice(a) || 999999) -
+        (getPrice(b) || 999999)
+    );
+
+  }
+
+  if (sort === "high") {
+
+    filtered.sort(
+      (a, b) =>
+        (getPrice(b) || 0) -
+        (getPrice(a) || 0)
+    );
+
+  }
+
+  if (sort === "name") {
+
+    filtered.sort(
+      (a, b) =>
+        (a.name || a.title || "")
+          .localeCompare(
+            b.name || b.title || "",
+            "no"
+          )
+    );
+
+  }
+
+  renderProducts(filtered);
+}
+
+async function loadProducts() {
+
+  try {
+
+    const response =
+      await fetch(
+        "/products.json?x=" +
+        Date.now()
+      );
+
+    if (!response.ok) {
+      throw new Error(
+        "products.json kunne ikke lastes"
+      );
+    }
+
+    const products =
+      await response.json();
+
+    allLaptops =
+      products.filter(product =>
+        product.category === "Laptop" ||
+        product.category === "Gaming Laptop"
+      );
+
+    applyFilters();
+
+  } catch (error) {
+
+    console.error(error);
+
+    const status =
+      document.getElementById("status");
+
+    status.textContent =
+      "Kunne ikke laste gaming-laptoper.";
+
+  }
 
 }
 
+document
+  .getElementById("search")
+  .addEventListener(
+    "input",
+    applyFilters
+  );
+
+document
+  .getElementById("sort")
+  .addEventListener(
+    "change",
+    applyFilters
+  );
+
 loadProducts();
+
 </script>
 
 </body>
