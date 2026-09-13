@@ -289,7 +289,7 @@ async function loadRAMDeals() {
   const container = document.getElementById("ramDeals");
 
   try {
-    const response = await fetch("/products.json", {cache:"no-store"});
+    const response = await fetch("/api/products", {cache:"no-store"});
     if (!response.ok) throw new Error("Could not load products");
 
     let data = await response.json();
