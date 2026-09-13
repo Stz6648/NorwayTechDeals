@@ -1,174 +1,308 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Laptop tilbud i Norge | TechKjop</title>
+<title>Laptop tilbud i Norge | TechKjop</title>
+<meta name="description" content="Finn gode laptop tilbud i Norge. Sammenlign priser, spesifikasjoner og tilbud fra flere butikker.">
 
-  <meta name="description" content="Finn gode laptop tilbud i Norge. Sammenlign priser, spesifikasjoner, gaming-laptoper og vanlige bærbare PC-er før du kjøper.">
-
-  <meta name="robots" content="index, follow">
-
-  <link rel="canonical" href="https://techkjop.no/laptop-tilbud.html">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #222;
-      line-height: 1.7;
-    }
-
-    header {
-      background: #111;
-      color: white;
-      padding: 45px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0 0 10px;
-      font-size: 38px;
-    }
-
-    header p {
-      margin: 0;
-      font-size: 18px;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    section {
-      background: white;
-      padding: 30px;
-      margin-bottom: 25px;
-      border-radius: 8px;
-    }
-
-    h2 {
-      margin-top: 0;
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: #111;
-      color: white;
-    }
-  </style>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f6f8;color:#111}
+header{background:#111827;color:white;padding:18px 20px}
+.header{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:24px;font-weight:700}
+nav a{color:white;text-decoration:none;margin-left:18px}
+main{max-width:1200px;margin:30px auto;padding:0 16px}
+h1{font-size:32px;margin-bottom:8px}
+.intro{color:#555;margin-bottom:25px}
+.tools{display:flex;gap:10px;margin-bottom:25px}
+input,select{padding:12px;border:1px solid #ccc;border-radius:8px;font-size:15px}
+input{flex:1}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 2px 10px #00000012}
+.card img{width:100%;height:210px;object-fit:contain;background:#fff;padding:15px}
+.content{padding:18px}
+.name{font-size:19px;font-weight:700;margin-bottom:10px}
+.specs{color:#555;font-size:14px;line-height:1.6;min-height:65px}
+.price{font-size:23px;font-weight:700;margin:14px 0}
+.store{font-size:14px;color:#666;margin-bottom:12px}
+.btn{display:block;text-align:center;background:#111827;color:white;padding:12px;border-radius:8px;text-decoration:none}
+.ebay{margin-top:12px;border-top:1px solid #eee;padding-top:12px}
+.ebay-title{font-weight:700;margin-bottom:7px}
+.offer{display:flex;justify-content:space-between;gap:8px;padding:7px 0;font-size:13px}
+.offer a{color:#111827;font-weight:700}
+.no-results{text-align:center;padding:40px;color:#666}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Laptop tilbud i Norge</h1>
-  <p>Sammenlign laptop-priser og spesifikasjoner før du kjøper.</p>
+<div class="header">
+<div class="logo">TechKjop</div>
+<nav>
+<a href="/">Hjem</a>
+<a href="/gaming-laptops.html">Gaming Laptop</a>
+<a href="/gaming-pc.html">Gaming PC</a>
+<a href="/ram.html">RAM</a>
+</nav>
+</div>
 </header>
 
 <main>
 
-  <section>
-    <h2>Finn gode laptop tilbud</h2>
+<h1>Laptop tilbud i Norge</h1>
 
-    <p>
-      På TechKjop hjelper vi deg med å finne og sammenligne
-      bærbare PC-er som er tilgjengelige i Norge.
-    </p>
+<p class="intro">
+Finn interessante laptop-tilbud og sammenlign priser og spesifikasjoner før du kjøper.
+</p>
 
-    <p>
-      En god laptop bør passe til bruken din. For skole og kontor er
-      batteritid, skjerm og lav vekt viktig. For gaming og krevende
-      programmer er prosessor, grafikkort, RAM og lagring spesielt viktig.
-    </p>
-  </section>
+<div class="tools">
+<input id="search" type="text" placeholder="Søk etter laptop...">
+<select id="sort">
+<option value="recommended">Anbefalt</option>
+<option value="low">Laveste pris</option>
+<option value="high">Høyeste pris</option>
+</select>
+</div>
 
-  <section>
-    <h2>Hva bør du se etter?</h2>
-
-    <h3>Prosessor</h3>
-    <p>
-      En moderne Intel- eller AMD-prosessor gir god ytelse til de fleste
-      oppgaver. Gaming og krevende programmer kan kreve en kraftigere modell.
-    </p>
-
-    <h3>RAM</h3>
-    <p>
-      16 GB RAM er et godt utgangspunkt for mange brukere. Gaming,
-      bildebehandling og andre krevende oppgaver kan ha nytte av mer RAM.
-    </p>
-
-    <h3>Lagring</h3>
-    <p>
-      SSD gir rask oppstart og korte lastetider. 512 GB er ofte et godt
-      utgangspunkt, mens 1 TB eller mer passer bedre hvis du lagrer mange
-      programmer, spill eller filer.
-    </p>
-
-    <h3>Grafikkort</h3>
-    <p>
-      Et dedikert grafikkort er spesielt viktig for gaming og grafikkintensive
-      programmer. Til vanlig kontorbruk er integrert grafikk ofte tilstrekkelig.
-    </p>
-  </section>
-
-  <section>
-    <h2>Gaming laptop eller vanlig laptop?</h2>
-
-    <p>
-      Gaming-laptoper har vanligvis kraftigere prosessor, grafikkort og
-      kjøling. De passer godt til spill og krevende programmer, men er ofte
-      tyngre og har kortere batteritid.
-    </p>
-
-    <p>
-      En vanlig laptop kan være et bedre valg for skole, kontor, reise og
-      daglig bruk.
-    </p>
-
-    <p>
-      <a href="/gaming-laptops.html">Se vår guide til gaming laptops i Norge →</a>
-    </p>
-  </section>
-
-  <section>
-    <h2>Sammenlign før du kjøper</h2>
-
-    <p>
-      Laptop-priser kan variere mye mellom butikker og modeller.
-      Sammenlign derfor pris, prosessor, RAM, SSD, skjerm og grafikkort
-      før du bestemmer deg.
-    </p>
-
-    <p>
-      Målet med TechKjop er å gjøre det enklere å finne gode
-      PC-tilbud og gjøre et bedre kjøp.
-    </p>
-
-    <p>
-      <a href="/">← Tilbake til TechKjop</a>
-    </p>
-  </section>
+<div id="grid" class="grid">
+<div class="no-results">Laster laptop-tilbud...</div>
+</div>
 
 </main>
 
-<footer>
-  TechKjop
-</footer>
+<script>
+let products=[];
+
+async function loadProducts(){
+  try{
+    const response=await fetch("/products.json?"+Date.now());
+    const data=await response.json();
+
+    products=Array.isArray(data)
+      ? data
+      : (data.products || data.items || []);
+
+    products=products.filter(p=>{
+      const c=String(p.category||"").toLowerCase();
+      return c==="laptop" || c==="gaming laptop";
+    });
+
+    render();
+
+  }catch(e){
+    document.getElementById("grid").innerHTML=
+      '<div class="no-results">Kunne ikke laste produkter.</div>';
+  }
+}
+
+function getPrice(p){
+  return Number(
+    p.lowestPrice ??
+    p.lowest_price ??
+    p.price ??
+    p.bestPrice ??
+    p.best_price ??
+    p.offers?.[0]?.price ??
+    999999
+  );
+}
+
+function getImage(p){
+  return p.image ||
+         p.images?.[0] ||
+         "/images/laptop.jpg";
+}
+
+function getSpecs(p){
+  if(p.description) return p.description;
+
+  const s=p.specifications||{};
+  return [
+    s.cpu,
+    s.gpu,
+    s.ram,
+    s.storage,
+    s.display
+  ].filter(Boolean).join(" • ");
+}
+
+function render(){
+
+  let list=[...products];
+
+  const q=document.getElementById("search").value
+    .trim()
+    .toLowerCase();
+
+  if(q){
+    list=list.filter(p=>
+      String(p.name||"").toLowerCase().includes(q) ||
+      String(p.description||"").toLowerCase().includes(q)
+    );
+  }
+
+  const sort=document.getElementById("sort").value;
+
+  if(sort==="low"){
+    list.sort((a,b)=>getPrice(a)-getPrice(b));
+  }
+
+  if(sort==="high"){
+    list.sort((a,b)=>getPrice(b)-getPrice(a));
+  }
+
+  const grid=document.getElementById("grid");
+
+  if(!list.length){
+    grid.innerHTML='<div class="no-results">Ingen laptop funnet.</div>';
+    return;
+  }
+
+  grid.innerHTML=list.map(p=>{
+
+    const price=getPrice(p);
+
+    const offers=Array.isArray(p.offers)
+      ? p.offers
+      : [];
+
+    const mainOffer=offers[0] || {};
+
+    const store=mainOffer.store ||
+      p.lowestStore ||
+      p.store ||
+      "";
+
+    const url=mainOffer.url ||
+      p.url ||
+      "#";
+
+    return `
+    <article class="card">
+
+      <img
+        src="${getImage(p)}"
+        alt="${escapeHtml(p.name||"Laptop")}"
+        onerror="this.src='/images/laptop.jpg'"
+      >
+
+      <div class="content">
+
+        <div class="name">
+          ${escapeHtml(p.name||"Laptop")}
+        </div>
+
+        <div class="specs">
+          ${escapeHtml(getSpecs(p))}
+        </div>
+
+        <div class="price">
+          ${price.toLocaleString("no-NO")} kr
+        </div>
+
+        <div class="store">
+          ${escapeHtml(store)}
+        </div>
+
+        <a class="btn"
+           href="${url}"
+           target="_blank"
+           rel="nofollow sponsored noopener">
+           Se tilbud
+        </a>
+
+        <div class="ebay" data-ebay="${encodeURIComponent(p.name||"")}">
+          <div class="ebay-title">eBay tilbud</div>
+          <div class="ebay-list">Laster...</div>
+        </div>
+
+      </div>
+    </article>
+    `;
+  }).join("");
+
+  loadEbay();
+}
+
+async function loadEbay(){
+
+  const boxes=document.querySelectorAll("[data-ebay]");
+
+  for(const box of boxes){
+
+    const q=decodeURIComponent(box.dataset.ebay);
+
+    try{
+
+      const response=await fetch(
+        "/api/ebay-search?q="+encodeURIComponent(q)
+      );
+
+      if(!response.ok) throw new Error();
+
+      const data=await response.json();
+
+      const items=data.itemSummaries || data.items || [];
+
+      const list=items.slice(0,3);
+
+      if(!list.length){
+        box.querySelector(".ebay-list").innerHTML=
+          "Ingen eBay-tilbud funnet.";
+        continue;
+      }
+
+      box.querySelector(".ebay-list").innerHTML=
+        list.map(item=>`
+
+          <div class="offer">
+
+            <span>
+              ${escapeHtml(item.title||"eBay")}
+            </span>
+
+            <a
+              href="${item.itemWebUrl||item.itemAffiliateWebUrl||"#"}"
+              target="_blank"
+              rel="nofollow sponsored noopener">
+              ${item.price?.value
+                ? Number(item.price.value).toLocaleString("no-NO")+" kr"
+                : "Se"}
+            </a>
+
+          </div>
+
+        `).join("");
+
+    }catch(e){
+
+      box.querySelector(".ebay-list").innerHTML=
+        "eBay-tilbud ikke tilgjengelig.";
+    }
+  }
+}
+
+function escapeHtml(value){
+  return String(value)
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
+}
+
+document.getElementById("search")
+  .addEventListener("input",render);
+
+document.getElementById("sort")
+  .addEventListener("change",render);
+
+loadProducts();
+</script>
 
 </body>
 </html>
