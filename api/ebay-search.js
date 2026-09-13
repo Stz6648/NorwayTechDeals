@@ -26,7 +26,7 @@ export default async function handler(req, res) {
       return res.status(tokenResponse.status).json(tokenData);
     }
 
-    // Search eBay
+    // Search eBay with EPN affiliate tracking
     const ebayUrl =
       "https://api.ebay.com/buy/browse/v1/item_summary/search?" +
       new URLSearchParams({
@@ -38,6 +38,8 @@ export default async function handler(req, res) {
       headers: {
         Authorization: `Bearer ${tokenData.access_token}`,
         "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
+        "X-EBAY-C-ENDUSERCTX":
+          "affiliateCampaignId=5339206505",
         "Accept-Language": "en-US"
       }
     });
