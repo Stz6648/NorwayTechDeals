@@ -3,834 +3,317 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Gaming Laptop tilbud i Norge | TechKjop</title>
 
-<meta name="description" content="Sammenlign gaming-laptoper, priser og tilbud i Norge. Finn gaming laptop fra norske butikker på TechKjop.">
-
 <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f5f7fa;
-  color: #172033;
-}
-
-header {
-  background: #111827;
-  color: white;
-  padding: 18px 20px;
-}
-
-.header-inner {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-.logo {
-  color: white;
-  text-decoration: none;
-  font-size: 26px;
-  font-weight: 800;
-}
-
-nav {
-  display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-nav a {
-  color: #dbe4f0;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: white;
-}
-
-.hero {
-  background: white;
-  padding: 45px 20px 35px;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.hero-inner {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.hero h1 {
-  margin: 0 0 12px;
-  font-size: 38px;
-}
-
-.hero p {
-  margin: 0;
-  color: #5b6577;
-  line-height: 1.6;
-  max-width: 850px;
-}
-
-.controls {
-  max-width: 1200px;
-  margin: 25px auto;
-  padding: 0 20px;
-  display: flex;
-  gap: 12px;
-}
-
-.search-box,
-.sort-box {
-  padding: 14px 16px;
-  border: 1px solid #d5dbe5;
-  border-radius: 9px;
-  background: white;
-  font-size: 15px;
-}
-
-.search-box {
-  flex: 1;
-}
-
-.products {
-  max-width: 1200px;
-  margin: 0 auto 50px;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.card {
-  background: white;
-  border: 1px solid #e2e6ed;
-  border-radius: 14px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.image-wrap {
-  height: 230px;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 18px;
-  border-bottom: 1px solid #edf0f4;
-}
-
-.image-wrap img {
-  max-width: 100%;
-  max-height: 190px;
-  object-fit: contain;
-}
-
-.card-content {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.card h2 {
-  margin: 0 0 10px;
-  font-size: 19px;
-  line-height: 1.35;
-}
-
-.description {
-  color: #667085;
-  font-size: 14px;
-  line-height: 1.5;
-  margin-bottom: 16px;
-}
-
-.specs {
-  display: grid;
-  gap: 7px;
-  margin-bottom: 18px;
-}
-
-.spec {
-  font-size: 13px;
-  color: #465164;
-}
-
-.spec strong {
-  color: #172033;
-}
-
-.price {
-  font-size: 25px;
-  font-weight: 800;
-  margin-top: auto;
-  margin-bottom: 5px;
-}
-
-.store {
-  color: #667085;
-  font-size: 13px;
-  margin-bottom: 15px;
-}
-
-.offers {
-  margin-bottom: 15px;
-}
-
-.offer {
-  display: flex;
-  justify-content: space-between;
-  padding: 9px 0;
-  border-top: 1px solid #edf0f4;
-  font-size: 13px;
-}
-
-.offer-price {
-  font-weight: 700;
-}
-
-.deal-button {
-  display: block;
-  width: 100%;
-  text-align: center;
-  background: #111827;
-  color: white;
-  text-decoration: none;
-  padding: 13px 15px;
-  border-radius: 8px;
-  font-weight: 700;
-}
-
-.deal-button:hover {
-  background: #273449;
-}
-
-.status {
-  max-width: 1200px;
-  margin: 40px auto;
-  padding: 30px 20px;
-  text-align: center;
-  color: #667085;
-}
-
-footer {
-  background: #111827;
-  color: #cbd5e1;
-  padding: 35px 20px;
-}
-
-.footer-inner {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-footer a {
-  color: #cbd5e1;
-  text-decoration: none;
-}
-
-@media (max-width: 900px) {
-  .products {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .header-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero h1 {
-    font-size: 30px;
-  }
-
-  .controls {
-    flex-direction: column;
-  }
-
-  .products {
-    grid-template-columns: 1fr;
-  }
-}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7fa;color:#172033}
+header{background:#111827;color:#fff;padding:18px 20px}
+.header{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{color:#fff;text-decoration:none;font-size:26px;font-weight:800}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{color:#dbe4f0;text-decoration:none;font-size:14px}
+.hero{background:#fff;padding:40px 20px;border-bottom:1px solid #e5e7eb}
+.hero-inner{max-width:1200px;margin:auto}
+.hero h1{margin:0 0 10px;font-size:36px}
+.hero p{color:#667085;line-height:1.6}
+.controls{max-width:1200px;margin:25px auto;padding:0 20px;display:flex;gap:12px}
+input,select{padding:14px;border:1px solid #d5dbe5;border-radius:9px;background:#fff;font-size:15px}
+input{flex:1}
+.products{max-width:1200px;margin:auto;padding:0 20px 50px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid #e2e6ed;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.image-wrap{height:250px;background:#fff;display:flex;align-items:center;justify-content:center;padding:15px;border-bottom:1px solid #edf0f4}
+.image-wrap img{width:100%;height:100%;object-fit:contain}
+.card-content{padding:20px;display:flex;flex-direction:column;flex:1}
+.card h2{margin:0 0 10px;font-size:19px}
+.description{color:#667085;font-size:14px;margin-bottom:15px}
+.specs{display:grid;gap:7px;margin-bottom:18px;font-size:13px;color:#465164}
+.price{font-size:24px;font-weight:800;margin-top:auto;margin-bottom:6px}
+.store{font-size:13px;color:#667085;margin-bottom:15px}
+.offers{margin-bottom:15px}
+.offer{display:flex;justify-content:space-between;border-top:1px solid #edf0f4;padding:8px 0;font-size:13px}
+.offer-price{font-weight:700}
+.button{display:block;text-align:center;background:#111827;color:#fff;text-decoration:none;padding:13px;border-radius:8px;font-weight:700}
+.status{text-align:center;padding:40px;color:#667085}
+footer{background:#111827;color:#cbd5e1;padding:35px 20px}
+.footer{max-width:1200px;margin:auto}
+footer a{color:#cbd5e1}
+@media(max-width:900px){.products{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.header{flex-direction:column;align-items:flex-start}.controls{flex-direction:column}.products{grid-template-columns:1fr}}
 </style>
 </head>
 
 <body>
 
 <header>
-  <div class="header-inner">
-
-    <a href="/" class="logo">TechKjop</a>
-
-    <nav>
-      <a href="/">Home</a>
-      <a href="/graphics-cards.html">Graphics Cards</a>
-      <a href="/ram.html">RAM</a>
-      <a href="/gaming-laptops.html">Gaming Laptops</a>
-      <a href="/gaming-pc.html">Gaming PC</a>
-      <a href="/laptop-tilbud.html">Laptop Deals</a>
-    </nav>
-
-  </div>
+<div class="header">
+<a href="/" class="logo">TechKjop</a>
+<nav>
+<a href="/">Home</a>
+<a href="/graphics-cards.html">Graphics Cards</a>
+<a href="/ram.html">RAM</a>
+<a href="/gaming-laptops.html">Gaming Laptops</a>
+<a href="/gaming-pc.html">Gaming PC</a>
+<a href="/laptop-tilbud.html">Laptop Deals</a>
+</nav>
+</div>
 </header>
 
 <section class="hero">
-  <div class="hero-inner">
-
-    <h1>Gaming Laptop tilbud i Norge</h1>
-
-    <p>
-      Sammenlign gaming-laptoper og finn gode teknologitilbud.
-      Se produkter, spesifikasjoner, priser og tilgjengelige butikktilbud.
-    </p>
-
-  </div>
+<div class="hero-inner">
+<h1>Gaming Laptop tilbud i Norge</h1>
+<p>Sammenlign gaming-laptoper, spesifikasjoner og priser fra tilgjengelige butikker.</p>
+</div>
 </section>
 
 <div class="controls">
-
-  <input
-    id="search"
-    class="search-box"
-    type="text"
-    placeholder="Søk etter gaming laptop..."
-  >
-
-  <select id="sort" class="sort-box">
-    <option value="default">Anbefalt</option>
-    <option value="low">Pris: lavest først</option>
-    <option value="high">Pris: høyest først</option>
-    <option value="name">Navn: A–Å</option>
-  </select>
-
+<input id="search" placeholder="Søk etter gaming laptop...">
+<select id="sort">
+<option value="default">Anbefalt</option>
+<option value="low">Pris: lavest først</option>
+<option value="high">Pris: høyest først</option>
+<option value="name">Navn: A–Å</option>
+</select>
 </div>
 
-<div id="status" class="status">
-  Laster gaming-laptoper...
-</div>
-
+<div id="status" class="status">Laster gaming-laptoper...</div>
 <main id="products" class="products"></main>
 
 <footer>
-
-  <div class="footer-inner">
-
-    <div>
-      <strong>TechKjop</strong>
-      <p>Sammenlign teknologi og priser i Norge.</p>
-    </div>
-
-    <div>
-      <a href="/about.html">Om oss</a><br>
-      <a href="/contact.html">Kontakt</a><br>
-      <a href="/privacy.html">Personvern</a><br>
-      <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
-    </div>
-
-  </div>
-
+<div class="footer">
+<strong>TechKjop</strong>
+<p>Sammenlign teknologi og priser i Norge.</p>
+<a href="/about.html">Om oss</a> ·
+<a href="/contact.html">Kontakt</a> ·
+<a href="/privacy.html">Personvern</a>
+</div>
 </footer>
 
 <script>
 
-let allLaptops = [];
+let products=[];
 
-function escapeHtml(value) {
+/* 图片强制对应现有 images 文件 */
+const imageMap={
+"lenovo-loq-15":"/images/lenovo-loq.jpg",
+"asus-rog-strix-g16":"/images/asus-rog-g16.jpg",
+"gigabyte-gaming-laptop":"/images/gigabyte-gaming.jpg"
+};
 
-  if (value === null || value === undefined) {
-    return "";
-  }
-
-  return String(value)
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&#039;");
+function price(v){
+if(typeof v==="number") return v;
+if(!v)return null;
+let n=parseFloat(String(v).replace(/[^\d.,]/g,"").replace(/\./g,"").replace(",","."));
+return isNaN(n)?null:n;
 }
 
-function numberPrice(value) {
-
-  if (typeof value === "number") {
-    return value;
-  }
-
-  if (!value) {
-    return null;
-  }
-
-  const n = parseFloat(
-    String(value)
-      .replace(/[^\d.,]/g, "")
-      .replace(/\./g, "")
-      .replace(",", ".")
-  );
-
-  return isNaN(n) ? null : n;
+function getPrice(p){
+if(p.lowestPrice!=null)return price(p.lowestPrice);
+if(p.price!=null)return price(p.price);
+if(p.offers?.length){
+let a=p.offers.map(x=>price(x.price)).filter(x=>x!=null);
+if(a.length)return Math.min(...a);
+}
+return null;
 }
 
-function getPrice(product) {
-
-  if (product.lowestPrice !== undefined) {
-    return numberPrice(product.lowestPrice);
-  }
-
-  if (product.price !== undefined) {
-    return numberPrice(product.price);
-  }
-
-  if (product.offers && product.offers.length) {
-
-    const prices = product.offers
-      .map(o => numberPrice(o.price))
-      .filter(p => p !== null);
-
-    if (prices.length) {
-      return Math.min(...prices);
-    }
-  }
-
-  return null;
+function money(v){
+if(v==null)return "Pris mangler";
+return new Intl.NumberFormat("nb-NO",{
+style:"currency",
+currency:"NOK",
+maximumFractionDigits:0
+}).format(v);
 }
 
-function formatPrice(price) {
-
-  if (price === null) {
-    return "Pris mangler";
-  }
-
-  return new Intl.NumberFormat("nb-NO", {
-    style: "currency",
-    currency: "NOK",
-    maximumFractionDigits: 0
-  }).format(price);
+function esc(v){
+return String(v??"")
+.replace(/&/g,"&amp;")
+.replace(/</g,"&lt;")
+.replace(/>/g,"&gt;")
+.replace(/"/g,"&quot;")
+.replace(/'/g,"&#039;");
 }
 
-function getSpecs(product) {
-
-  const s = product.specifications || {};
-
-  return {
-    cpu: s.cpu || product.cpu || "",
-    gpu: s.gpu || product.gpu || "",
-    ram: s.ram || product.ram || "",
-    storage: s.storage || product.storage || "",
-    screen: s.screen || product.screen || ""
-  };
+function getImage(p){
+return imageMap[p.id] ||
+p.image ||
+p.imageUrl ||
+p.thumbnail ||
+"";
 }
 
-function getImage(product) {
-
-  return product.image ||
-         product.imageUrl ||
-         product.thumbnail ||
-         "";
+function getUrl(p){
+if(p.affiliateUrl)return p.affiliateUrl;
+if(p.url)return p.url;
+if(p.link)return p.link;
+if(p.offers?.length){
+return p.offers[0].affiliateUrl ||
+p.offers[0].url ||
+p.offers[0].link ||
+"#";
+}
+return "#";
 }
 
-function getStore(product) {
+function render(list){
 
-  if (product.lowestStore) {
-    return product.lowestStore;
-  }
+const box=document.getElementById("products");
+const status=document.getElementById("status");
 
-  if (product.bestStore) {
-    return product.bestStore;
-  }
+box.innerHTML="";
 
-  if (product.offers && product.offers.length) {
-
-    const sorted = [...product.offers]
-      .sort((a, b) =>
-        (numberPrice(a.price) || 999999) -
-        (numberPrice(b.price) || 999999)
-      );
-
-    return sorted[0]?.store ||
-           sorted[0]?.merchant ||
-           "";
-  }
-
-  return "";
+if(!list.length){
+status.style.display="block";
+status.textContent="Ingen gaming-laptoper funnet.";
+return;
 }
 
-function getUrl(product) {
+status.style.display="none";
 
-  if (product.affiliateUrl) {
-    return product.affiliateUrl;
-  }
+list.forEach(p=>{
 
-  if (product.url) {
-    return product.url;
-  }
+const s=p.specifications||{};
+const image=getImage(p);
+const name=p.name||p.title||"Gaming Laptop";
+const pprice=getPrice(p);
+const store=p.lowestStore||"";
+const url=getUrl(p);
 
-  if (product.link) {
-    return product.link;
-  }
+let offers="";
 
-  if (product.offers && product.offers.length) {
-
-    const sorted = [...product.offers]
-      .sort((a, b) =>
-        (numberPrice(a.price) || 999999) -
-        (numberPrice(b.price) || 999999)
-      );
-
-    return sorted[0]?.affiliateUrl ||
-           sorted[0]?.url ||
-           sorted[0]?.link ||
-           "#";
-  }
-
-  return "#";
+if(p.offers?.length){
+offers=`
+<div class="offers">
+${p.offers.slice(0,4).map(o=>`
+<div class="offer">
+<span>${esc(o.store||o.merchant||"Butikk")}</span>
+<span class="offer-price">${esc(o.price||"")}</span>
+</div>
+`).join("")}
+</div>`;
 }
 
-function renderProducts(products) {
+const card=document.createElement("article");
+card.className="card";
 
-  const container = document.getElementById("products");
-  const status = document.getElementById("status");
+card.innerHTML=`
 
-  container.innerHTML = "";
+<div class="image-wrap">
 
-  if (!products.length) {
+${image?`
+<img
+src="${esc(image)}"
+alt="${esc(name)}"
+loading="lazy"
+onerror="this.onerror=null;this.src='/images/lenovo-loq.jpg';">
+`:""}
 
-    status.style.display = "block";
-    status.textContent = "Ingen gaming-laptoper funnet.";
+</div>
 
-    return;
-  }
+<div class="card-content">
 
-  status.style.display = "none";
+<h2>${esc(name)}</h2>
 
-  products.forEach(product => {
+<div class="description">
+${esc(p.description||"Gaming laptop med høy ytelse.")}
+</div>
 
-    const name =
-      product.name ||
-      product.title ||
-      "Gaming Laptop";
+<div class="specs">
 
-    const specs = getSpecs(product);
-    const price = getPrice(product);
-    const store = getStore(product);
-    const image = getImage(product);
-    const url = getUrl(product);
+${s.cpu?`<div><strong>CPU:</strong> ${esc(s.cpu)}</div>`:""}
 
-    let offersHtml = "";
+${s.gpu?`<div><strong>GPU:</strong> ${esc(s.gpu)}</div>`:""}
 
-    if (product.offers && product.offers.length) {
+${s.ram?`<div><strong>RAM:</strong> ${esc(s.ram)}</div>`:""}
 
-      const offers = product.offers.slice(0, 4);
+${s.storage?`<div><strong>Lagring:</strong> ${esc(s.storage)}</div>`:""}
 
-      offersHtml = `
-        <div class="offers">
+${s.screen?`<div><strong>Skjerm:</strong> ${esc(s.screen)}</div>`:""}
 
-          ${offers.map(offer => `
+</div>
 
-            <div class="offer">
+<div class="price">${money(pprice)}</div>
 
-              <span>
-                ${escapeHtml(
-                  offer.store ||
-                  offer.merchant ||
-                  offer.retailer ||
-                  "Butikk"
-                )}
-              </span>
+${store?`<div class="store">Beste pris hos ${esc(store)}</div>`:""}
 
-              <span class="offer-price">
-                ${escapeHtml(
-                  offer.price || ""
-                )}
-              </span>
+${offers}
 
-            </div>
+<a class="button"
+href="${esc(url)}"
+target="_blank"
+rel="nofollow sponsored noopener">
+Se beste tilbud
+</a>
 
-          `).join("")}
+</div>
+`;
 
-        </div>
-      `;
-    }
+box.appendChild(card);
 
-    const card = document.createElement("article");
-
-    card.className = "card";
-
-    card.innerHTML = `
-
-      <div class="image-wrap">
-
-        ${
-          image
-            ? `
-              <img
-                src="${escapeHtml(image)}"
-                alt="${escapeHtml(name)}"
-                loading="lazy"
-              >
-            `
-            : `
-              <div>Gaming Laptop</div>
-            `
-        }
-
-      </div>
-
-      <div class="card-content">
-
-        <h2>
-          ${escapeHtml(name)}
-        </h2>
-
-        <div class="description">
-          ${escapeHtml(
-            product.description ||
-            "Gaming laptop med høy ytelse."
-          )}
-        </div>
-
-        <div class="specs">
-
-          ${
-            specs.cpu
-              ? `
-                <div class="spec">
-                  <strong>CPU:</strong>
-                  ${escapeHtml(specs.cpu)}
-                </div>
-              `
-              : ""
-          }
-
-          ${
-            specs.gpu
-              ? `
-                <div class="spec">
-                  <strong>GPU:</strong>
-                  ${escapeHtml(specs.gpu)}
-                </div>
-              `
-              : ""
-          }
-
-          ${
-            specs.ram
-              ? `
-                <div class="spec">
-                  <strong>RAM:</strong>
-                  ${escapeHtml(specs.ram)}
-                </div>
-              `
-              : ""
-          }
-
-          ${
-            specs.storage
-              ? `
-                <div class="spec">
-                  <strong>Lagring:</strong>
-                  ${escapeHtml(specs.storage)}
-                </div>
-              `
-              : ""
-          }
-
-          ${
-            specs.screen
-              ? `
-                <div class="spec">
-                  <strong>Skjerm:</strong>
-                  ${escapeHtml(specs.screen)}
-                </div>
-              `
-              : ""
-          }
-
-        </div>
-
-        <div class="price">
-          ${formatPrice(price)}
-        </div>
-
-        ${
-          store
-            ? `
-              <div class="store">
-                Beste pris hos ${escapeHtml(store)}
-              </div>
-            `
-            : ""
-        }
-
-        ${offersHtml}
-
-        <a
-          class="deal-button"
-          href="${escapeHtml(url)}"
-          target="_blank"
-          rel="nofollow sponsored noopener"
-        >
-          Se beste tilbud
-        </a>
-
-      </div>
-    `;
-
-    container.appendChild(card);
-
-  });
+});
 }
 
-function applyFilters() {
+function filter(){
 
-  const search =
-    document
-      .getElementById("search")
-      .value
-      .toLowerCase()
-      .trim();
+const q=document.getElementById("search").value.toLowerCase().trim();
+const sort=document.getElementById("sort").value;
 
-  const sort =
-    document
-      .getElementById("sort")
-      .value;
+let list=products.filter(p=>{
 
-  let filtered = allLaptops.filter(product => {
+const s=p.specifications||{};
 
-    const specs =
-      product.specifications || {};
+const text=[
+p.name,p.title,p.description,p.brand,p.model,
+p.cpu,p.gpu,p.ram,p.storage,
+s.cpu,s.gpu,s.ram,s.storage,s.screen
+].join(" ").toLowerCase();
 
-    const text = [
+return text.includes(q);
+});
 
-      product.name,
-      product.title,
-      product.description,
-      product.brand,
-      product.model,
-      product.cpu,
-      product.gpu,
-      product.ram,
-      product.storage,
-      specs.cpu,
-      specs.gpu,
-      specs.ram,
-      specs.storage,
-      specs.screen
+if(sort==="low")
+list.sort((a,b)=>(getPrice(a)||999999)-(getPrice(b)||999999));
 
-    ]
-      .join(" ")
-      .toLowerCase();
+if(sort==="high")
+list.sort((a,b)=>(getPrice(b)||0)-(getPrice(a)||0));
 
-    return text.includes(search);
+if(sort==="name")
+list.sort((a,b)=>(a.name||"").localeCompare(b.name||"","no"));
 
-  });
-
-  if (sort === "low") {
-
-    filtered.sort(
-      (a, b) =>
-        (getPrice(a) || 999999) -
-        (getPrice(b) || 999999)
-    );
-
-  }
-
-  if (sort === "high") {
-
-    filtered.sort(
-      (a, b) =>
-        (getPrice(b) || 0) -
-        (getPrice(a) || 0)
-    );
-
-  }
-
-  if (sort === "name") {
-
-    filtered.sort(
-      (a, b) =>
-        (a.name || a.title || "")
-          .localeCompare(
-            b.name || b.title || "",
-            "no"
-          )
-    );
-
-  }
-
-  renderProducts(filtered);
+render(list);
 }
 
-async function loadProducts() {
+async function load(){
 
-  try {
+try{
 
-    const response =
-      await fetch(
-        "/products.json?x=" +
-        Date.now()
-      );
+const r=await fetch("/products.json?x="+Date.now());
 
-    if (!response.ok) {
-      throw new Error(
-        "products.json kunne ikke lastes"
-      );
-    }
+if(!r.ok)throw new Error();
 
-    const products =
-      await response.json();
+const data=await r.json();
 
-    allLaptops =
-      products.filter(product =>
-        product.category === "Laptop" ||
-        product.category === "Gaming Laptop"
-      );
+products=data.filter(p=>
+p.category==="Laptop" ||
+p.category==="Gaming Laptop"
+);
 
-    applyFilters();
+filter();
 
-  } catch (error) {
+}catch(e){
 
-    console.error(error);
-
-    const status =
-      document.getElementById("status");
-
-    status.textContent =
-      "Kunne ikke laste gaming-laptoper.";
-
-  }
+document.getElementById("status").textContent=
+"Kunne ikke laste gaming-laptoper.";
 
 }
 
-document
-  .getElementById("search")
-  .addEventListener(
-    "input",
-    applyFilters
-  );
+}
 
-document
-  .getElementById("sort")
-  .addEventListener(
-    "change",
-    applyFilters
-  );
+document.getElementById("search").addEventListener("input",filter);
+document.getElementById("sort").addEventListener("change",filter);
 
-loadProducts();
+load();
 
 </script>
 
