@@ -1364,5 +1364,33 @@
     "merchant_product_id": "DT.BMYEH.009",
     "merchant_category": "Desktops",
     "category_name": ""
-  }
+  },
+  {
+  "id": "kingston-fury-beast-ddr5-6000-32gb-cl30",
+  "brand": "Kingston",
+  "name": "Kingston FURY Beast DDR5-6000 32GB CL30",
+  "model": "KF560C30BBEK2-32",
+  "category": "RAM",
+  "subcategory": "DDR5 RAM",
+  "condition": "New",
+  "image": "https://www.proshop.no/Images/915x900/3251783_b7378c24608a.jpg",
+  "description": "32GB DDR5-6000 CL30 Dual Channel",
+  "specifications": {
+    "ram": "32 GB (2 x 16 GB)",
+    "type": "DDR5",
+    "speed": "6000 MT/s",
+    "latency": "CL30"
+  },
+  "price": 7498,
+  "lowestPrice": 7498,
+  "lowestStore": "Proshop",
+  "offers": [
+    {
+      "store": "Proshop",
+      "price": 7498,
+      "currency": "NOK",
+      "url": "https://www.proshop.no/RAM/Kingston-FURY-Beast-DDR5-6000-32GB-CL30-Dual-Channel-2-pcs-AMD-EXPO-Intel-XMP-Black/3251783"
+    }
+  ]
+}
 ]
