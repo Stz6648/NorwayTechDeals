@@ -1,241 +1,244 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Gaming PC tilbud i Norge | TechKjop</title>
-
-  <meta name="description" content="Finn gode gaming PC tilbud i Norge. Sammenlign gaming PC-er, grafikkort, prosessor, RAM, lagring og priser.">
-
-  <meta name="robots" content="index, follow">
-
-  <link rel="canonical" href="https://www.norwaytechdeals.no/gaming-pc.html">
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #222;
-      line-height: 1.7;
-    }
-
-    header {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 45px 20px;
-    }
-
-    header h1 {
-      margin: 0 0 10px;
-      font-size: 36px;
-    }
-
-    header p {
-      margin: 0;
-      font-size: 18px;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    section {
-      background: white;
-      padding: 30px;
-      margin-bottom: 25px;
-      border-radius: 10px;
-    }
-
-    h2 {
-      margin-top: 0;
-      font-size: 27px;
-    }
-
-    h3 {
-      font-size: 21px;
-    }
-
-    ul {
-      padding-left: 25px;
-    }
-
-    a {
-      color: #0066cc;
-    }
-
-    .back {
-      text-align: center;
-      margin: 35px 0;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming PC tilbud i Norge | TechKjop</title>
 
 <style>
-.deals-wrap{margin:40px auto;max-width:1200px}
-.deals-head{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.deals-tools{display:flex;gap:10px}
-.deals-tools input,.deals-tools select{padding:12px;border:1px solid #ddd;border-radius:8px}
-.deals-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:25px}
-.deal-card{background:#fff;border:1px solid #e5e5e5;border-radius:14px;padding:16px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.deal-card img{width:100%;height:190px;object-fit:contain;border-radius:10px;background:#f7f7f7}
-.deal-card h3{font-size:19px;margin:14px 0 8px}
-.deal-specs{color:#555;line-height:1.6;font-size:14px}
-.best-price{font-size:24px;font-weight:700;margin:12px 0}
-.store{color:#666;font-size:14px}
-.deal-button{display:inline-block;margin-top:12px;padding:10px 16px;background:#111;color:#fff;border-radius:8px;text-decoration:none}
-.no-results{padding:30px;text-align:center;color:#666}
-</style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7fa;color:#172033}
+header{background:#111827;color:white;padding:18px 20px}
+.header{max-width:1200px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font-size:26px;font-weight:800;color:white;text-decoration:none}
+nav{display:flex;gap:16px;flex-wrap:wrap}
+nav a{color:#ddd;text-decoration:none;font-size:14px}
+.hero{background:white;padding:40px 20px}
+.hero-inner{max-width:1200px;margin:auto}
+.hero h1{margin:0 0 10px;font-size:36px}
+.hero p{color:#667085;margin:0}
+.controls{max-width:1200px;margin:25px auto;padding:0 20px;display:flex;gap:12px}
+.search{flex:1;padding:14px;border:1px solid #ddd;border-radius:8px;font-size:15px}
+.sort{padding:14px;border:1px solid #ddd;border-radius:8px;background:white}
+.grid{max-width:1200px;margin:0 auto 50px;padding:0 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.image-box{height:230px;display:flex;align-items:center;justify-content:center;padding:15px}
+.image-box img{width:100%;height:100%;object-fit:contain}
+.content{padding:18px}
+.title{font-size:18px;font-weight:700;line-height:1.35;margin-bottom:12px}
+.specs{color:#667085;font-size:14px;line-height:1.7}
+.price{font-size:25px;font-weight:800;margin-top:12px}
+.store{color:#667085;font-size:14px;margin:5px 0 15px}
+.offer-title{font-weight:700;margin-top:18px;margin-bottom:8px}
+.offer{border:1px solid #e5e7eb;border-radius:8px;padding:10px;margin-top:8px}
+.offer-name{font-size:14px;font-weight:600}
+.offer-price{font-weight:700;margin-top:4px}
+.offer a{display:block;background:#111827;color:white;text-align:center;padding:9px;border-radius:6px;text-decoration:none;margin-top:8px;font-size:13px}
+.loading{color:#888;font-size:13px}
+.status{text-align:center;padding:30px;color:#667085}
+footer{background:#111827;color:#aaa;text-align:center;padding:30px}
 
-<style>.product-card img,.deal-card img{width:100%;height:190px;object-fit:contain;display:block;margin:auto}.deal-card img.acer-image{height:260px}</style></head>
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){
+.header{flex-direction:column;align-items:flex-start}
+.grid{grid-template-columns:1fr}
+.controls{flex-direction:column}
+.hero h1{font-size:28px}
+}
+</style>
+</head>
 
 <body>
 
 <header>
-  <h1>Gaming PC tilbud i Norge</h1>
-  <p>Sammenlign gaming-PC-er, priser og spesifikasjoner fra norske butikker.</p>
+<div class="header">
+<a class="logo" href="/">TechKjop</a>
+<nav>
+<a href="/">Home</a>
+<a href="/gaming-laptops.html">Gaming Laptop</a>
+<a href="/gaming-pc.html">Gaming PC</a>
+<a href="/graphics-cards.html">Graphics Cards</a>
+<a href="/ram.html">RAM</a>
+<a href="/laptop-tilbud.html">Laptop Deals</a>
+</nav>
+</div>
 </header>
 
-<main>
-
-  <section><h2>Gaming PC tilbud</h2><p>Sammenlign gaming-PC-er, priser og spesifikasjoner fra norske butikker.</p></section>
-  <div class="back">
-    <a href="/">&larr; Tilbake til TechKjop</a>
-  </div>
-
-
-<section class="deals-wrap">
-  <div class="deals-head">
-    <h2>Gaming PC Deals</h2>
-    <div class="deals-tools">
-      <input id="dealSearch" type="text" placeholder="Search gaming PC...">
-      <select id="dealSort">
-        <option value="recommended">Recommended</option>
-        <option value="price-low">Lowest price</option>
-        <option value="price-high">Highest price</option>
-      </select>
-    </div>
-  </div>
-  <div id="pcDeals" class="deals-grid">
-    <div class="no-results">Loading gaming PC deals...</div>
-  </div>
+<section class="hero">
+<div class="hero-inner">
+<h1>Gaming PC tilbud i Norge</h1>
+<p>Sammenlign Gaming PC priser, spesifikasjoner og butikker.</p>
+</div>
 </section>
 
-</main>
+<div class="controls">
+<input id="search" class="search" placeholder="Søk etter Gaming PC...">
+<select id="sort" class="sort">
+<option value="recommended">Anbefalt</option>
+<option value="price-low">Laveste pris</option>
+<option value="price-high">Høyeste pris</option>
+</select>
+</div>
 
+<main id="grid" class="grid"></main>
+<div id="status" class="status">Laster Gaming PC...</div>
+
+<footer>© 2026 TechKjop.no</footer>
 
 <script>
-async function loadPCDeals() {
-  const container = document.getElementById("pcDeals");
-  try {
-    const response = await fetch("/products.json", {cache:"no-store"});
-    if (!response.ok) throw new Error("Could not load products");
+let products=[];
 
-    let data = await response.json();
-    let products = Array.isArray(data) ? data : (data.products || data.items || []);
-
-    products = products.filter(p => {
-      if (!p || typeof p !== "object") return false;
-      return String(p.category || "").toLowerCase() === "gaming pc";
-    });
-
-    const search = document.getElementById("dealSearch");
-    const sort = document.getElementById("dealSort");
-
-    function price(p) {
-      return Number(
-        p.lowestPrice ??
-        p.lowest_price ??
-        p.price ??
-        p.bestPrice ??
-        p.best_price ??
-        p.offers?.[0]?.price ??
-        999999
-      );
-    }
-
-    function render() {
-      let list = [...products];
-      const q = search.value.trim().toLowerCase();
-
-      if (q) {
-        list = list.filter(p =>
-          JSON.stringify(p).toLowerCase().includes(q)
-        );
-      }
-
-      if (sort.value === "price-low") list.sort((a,b) => price(a)-price(b));
-      if (sort.value === "price-high") list.sort((a,b) => price(b)-price(a));
-
-      if (!list.length) {
-        container.innerHTML = '<div class="no-results">No gaming PCs found.</div>';
-        return;
-      }
-
-      container.innerHTML = list.map(p => {
-        const name = p.name || p.title || "Gaming PC";
-        const image = p.image || p.imageUrl || "/images/lenovo-loq.jpg";
-        const cpu = p.cpu || p.processor || "Gaming CPU";
-        const gpu = p.gpu || p.graphics || "Gaming GPU";
-        const ram = p.ram || p.memory || "16 GB RAM";
-        const storage = p.storage || "SSD";
-        const store = p.lowestStore || p.lowest_store ||
-                      p.store || p.merchant || p.shop ||
-                      p.offers?.[0]?.store || "Norwegian retailer";
-
-        const currentPrice = price(p);
-        const priceText = currentPrice < 999999
-          ? currentPrice.toLocaleString("nb-NO") + " kr"
-          : "See price";
-
-        const link = p.id ? "/product.html?id=" + encodeURIComponent(p.id) : (p.url || p.link || p.productUrl || "");
-                     p.offers?.[0]?.url || "#";
-
-        return `
-          <article class="deal-card">
-            <img class="${String(name).toLowerCase().includes("acer") ? "acer-image" : ""}" src="${image}" alt="${name}" loading="lazy">
-            <h3>${name}</h3>
-            <div class="deal-specs">
-              <div>CPU: ${cpu}</div>
-              <div>GPU: ${gpu}</div>
-              <div>RAM: ${ram}</div>
-              <div>Storage: ${storage}</div>
-            </div>
-            <div class="best-price">${priceText}</div>
-      <div class="store">Best price: ${store}</div>
-            <a class="deal-button" href="${link}" target="_blank" rel="noopener">
-              View deal
-            </a>
-          </article>
-        `;
-      }).join("");
-    }
-
-    search.addEventListener("input", render);
-    sort.addEventListener("change", render);
-    render();
-
-  } catch (error) {
-    container.innerHTML =
-      '<div class="no-results">Unable to load deals right now.</div>';
-  }
+function price(p){
+if(typeof p.lowestPrice==="number")return p.lowestPrice;
+if(typeof p.price==="number")return p.price;
+const x=(p.offers||[]).map(o=>Number(o.price)).filter(x=>x>0);
+return x.length?Math.min(...x):0;
 }
 
-loadPCDeals();
+function image(p){
+return p.image||p.imageUrl||"/images/lenovo-legion-t5.jpg";
+}
+
+function specs(p){
+const s=p.specifications||{};
+let a=[];
+if(s.cpu)a.push("CPU: "+s.cpu);
+if(s.gpu)a.push("GPU: "+s.gpu);
+if(s.ram)a.push("RAM: "+s.ram);
+if(s.storage)a.push("Lagring: "+s.storage);
+if(s.screen)a.push("Skjerm: "+s.screen);
+return a.slice(0,5);
+}
+
+function money(n,c="NOK"){
+return new Intl.NumberFormat("nb-NO").format(Number(n))+" "+c;
+}
+
+function render(){
+const grid=document.getElementById("grid");
+const q=document.getElementById("search").value.toLowerCase();
+const sort=document.getElementById("sort").value;
+
+let list=products.filter(p=>{
+const c=String(p.category||"").toLowerCase();
+const isPC=
+c.includes("gaming pc")||
+c==="pc"||
+c.includes("desktop")||
+c.includes("gaming desktop");
+return isPC&&(!q||JSON.stringify(p).toLowerCase().includes(q));
+});
+
+if(sort==="price-low")list.sort((a,b)=>price(a)-price(b));
+if(sort==="price-high")list.sort((a,b)=>price(b)-price(a));
+
+grid.innerHTML="";
+
+if(!list.length){
+document.getElementById("status").textContent="Ingen Gaming PC funnet.";
+return;
+}
+
+document.getElementById("status").style.display="none";
+
+list.forEach((p,i)=>{
+const card=document.createElement("article");
+const offers=Array.isArray(p.offers)?p.offers:[];
+
+card.className="card";
+
+card.innerHTML=`
+<div class="image-box">
+<img src="${image(p)}"
+alt="${p.name||"Gaming PC"}"
+onerror="this.onerror=null;this.src='/images/lenovo-legion-t5.jpg';">
+</div>
+
+<div class="content">
+
+<div class="title">${p.name||"Gaming PC"}</div>
+
+<div class="specs">
+${specs(p).map(x=>`<div>${x}</div>`).join("")}
+</div>
+
+${price(p)?`<div class="price">${money(price(p))}</div>`:""}
+
+${p.lowestStore?`<div class="store">Beste pris hos ${p.lowestStore}</div>`:""}
+
+<div class="offer-title">Norske butikker</div>
+
+${offers.length?offers.map(o=>`
+<div class="offer">
+<div class="offer-name">${o.store||o.merchant||"Nettbutikk"}</div>
+${o.price?`<div class="offer-price">${money(o.price)}</div>`:""}
+${o.url||o.link||o.affiliateUrl?
+`<a href="${o.url||o.link||o.affiliateUrl}" target="_blank" rel="nofollow sponsored">Se tilbud</a>`:""}
+</div>
+`).join(""):"<div class='loading'>Ingen norske tilbud registrert.</div>"}
+
+<div class="offer-title">eBay</div>
+
+<div id="ebay-${i}" class="loading">Laster eBay tilbud...</div>
+
+</div>`;
+
+grid.appendChild(card);
+loadEbay(p,i);
+});
+}
+
+async function loadEbay(p,i){
+const box=document.getElementById("ebay-"+i);
+const name=p.name||"Gaming PC";
+
+try{
+const r=await fetch("/api/ebay-search?q="+encodeURIComponent(name));
+if(!r.ok)throw new Error();
+
+const data=await r.json();
+const items=data.items||data.itemSummaries||data.results||[];
+
+if(!items.length){
+box.textContent="Ingen eBay tilbud funnet.";
+return;
+}
+
+box.innerHTML=items.slice(0,3).map(x=>{
+const title=x.title||"eBay Gaming PC";
+const value=x.price?.value??x.price??"";
+const currency=x.price?.currency||"USD";
+const url=x.itemAffiliateWebUrl||x.itemWebUrl||x.url||"#";
+
+return `
+<div class="offer">
+<div class="offer-name">${title}</div>
+${value!==""?`<div class="offer-price">${money(value,currency)}</div>`:""}
+${url!=="#"?
+`<a href="${url}" target="_blank" rel="nofollow sponsored">Se på eBay</a>`:""}
+</div>`;
+}).join("");
+
+}catch(e){
+box.textContent="eBay tilbud kunne ikke lastes.";
+}
+}
+
+async function load(){
+try{
+const r=await fetch("/products.json?t="+Date.now());
+products=await r.json();
+render();
+}catch(e){
+document.getElementById("status").textContent="Kunne ikke laste produkter.";
+}
+}
+
+document.getElementById("search").addEventListener("input",render);
+document.getElementById("sort").addEventListener("change",render);
+
+load();
 </script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
