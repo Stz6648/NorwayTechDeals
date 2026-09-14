@@ -77,10 +77,22 @@ async function main() {
     }
   }
 
-  fs.writeFileSync(
-    "ebay-products.json",
-    JSON.stringify(allProducts, null, 2)
-  );
+  const existing = JSON.parse(fs.readFileSync("products.json", "utf8"));
+
+const merged = [
+  ...existing,
+  ...allProducts
+];
+
+fs.writeFileSync(
+  "products.json",
+  JSON.stringify(merged, null, 2)
+);
+
+fs.writeFileSync(
+  "public/products.json",
+  JSON.stringify(merged, null, 2)
+);
 
   console.log(`Saved ${allProducts.length} eBay products.`);
 }
