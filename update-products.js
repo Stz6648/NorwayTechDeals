@@ -1,98 +1,91 @@
 const fs = require("fs");
 
-const file = "products.json";
+const EBAY_API = "https://techkjop.no/api/ebay-search";
 
 const products = [
-  {
-    name: "Lenovo LOQ 15",
-    category: "laptop",
-    description: '15.6" Gaming Laptop',
-    gpu: "NVIDIA GeForce RTX 5060 8GB",
-    ram: "16 GB DDR5",
-    storage: "1 TB SSD",
-    screen: '15.6" Full HD 144 Hz',
-    offers: [
-      {
-        store: "Proshop",
-        price: 12990,
-        url: "https://www.proshop.no/"
-      },
-      {
-        store: "Komplett",
-        price: 22990,
-        url: "https://www.komplett.no/"
-      }
-    ]
-  },
-
-  {
-    name: "GIGABYTE Gaming A16",
-    category: "laptop",
-    description: '16" Gaming Laptop',
-    gpu: "NVIDIA GeForce RTX 5070 8GB",
-    ram: "16 GB DDR5",
-    storage: "1 TB SSD",
-    screen: '16" WUXGA 165 Hz',
-    offers: [
-      {
-        store: "Proshop",
-        price: 12990,
-        url: "https://www.proshop.no/"
-      }
-    ]
-  },
-
-  {
-    name: "ASUS ROG Strix G16",
-    category: "laptop",
-    description: '16" Premium Gaming Laptop',
-    gpu: "NVIDIA GeForce RTX 5070 8GB",
-    ram: "32 GB DDR5",
-    storage: "1 TB SSD",
-    screen: '16" WQXGA 240 Hz',
-    offers: [
-      {
-        store: "Proshop",
-        price: 24990,
-        url: "https://www.proshop.no/"
-      }
-    ]
-  },
-
-  {
-    name: "NVIDIA GeForce RTX 5070",
-    category: "gpu",
-    description: "Gaming Graphics Card",
-    gpu: "RTX 5070 12GB",
-    offers: [
-      {
-        store: "Proshop",
-        price: 6990,
-        url: "https://www.proshop.no/"
-      }
-    ]
-  },
-
-  {
-    name: "NVIDIA GeForce RTX 5060",
-    category: "gpu",
-    description: "Gaming Graphics Card",
-    gpu: "RTX 5060 8GB",
-    offers: [
-      {
-        store: "Proshop",
-        price: 3990,
-        url: "https://www.proshop.no/"
-      }
-    ]
-  }
+  "RTX 5090",
+  "RTX 5080",
+  "RTX 5070 Ti",
+  "RTX 5070",
+  "RTX 5060 Ti",
+  "RTX 5060",
+  "RX 9070",
+  "DDR5 32GB",
+  "DDR5 16GB",
+  "gaming laptop",
+  "gaming pc"
 ];
 
-fs.writeFileSync(
-  file,
-  JSON.stringify(products, null, 2),
-  "utf8"
-);
+async function searchEbay(query) {
+  try {
+    const response = await fetch(
+      `${EBAY_API}?q=${encodeURIComponent(query)}`
+    );
 
-console.log("products.json updated successfully.");
-console.log("Products:", products.length);
+    if (!response.ok) return [];
+
+    const data = await response.json();
+
+    return Array.isArray(data) ? data : data.items || [];
+  } catch (error) {
+    console.error("eBay error:", query, error.message);
+    return [];
+  }
+}
+
+async function main() {
+  const allProducts = [];
+
+  for (const query of products) {
+    console.log("Searching:", query);
+
+    const items = await searchEbay(query);
+
+    for (const item of items.slice(0, 10)) {
+      allProducts.push({
+        id: item.itemId || item.id || `${query}-${allProducts.length}`,
+        name: item.title || query,
+        category: query.toLowerCase().includes("laptop")
+          ? "Laptop"
+          : query.toLowerCase().includes("pc")
+          ? "Gaming PC"
+          : query.toLowerCase().includes("ddr")
+          ? "RAM"
+          : "Graphics Card",
+        image:
+          item.image ||
+          item.imageUrl ||
+          "/images/placeholder.jpg",
+        description: item.title || query,
+        specifications: {},
+        offers: [
+          {
+            store: "eBay",
+            country: "NO",
+            condition: "New",
+            price: Number(item.price || 0),
+            currency: "NOK",
+            shipping: null,
+            inStock: true,
+            affiliate: true,
+            affiliateNetwork: "eBay Partner Network",
+            url: item.url || item.itemWebUrl || "",
+            updatedAt: new Date().toISOString().slice(0, 10)
+          }
+        ],
+        lowestPrice: Number(item.price || 0),
+        lowestStore: "eBay",
+        updatedAt: new Date().toISOString().slice(0, 10)
+      });
+    }
+  }
+
+  fs.writeFileSync(
+    "ebay-products.json",
+    JSON.stringify(allProducts, null, 2)
+  );
+
+  console.log(`Saved ${allProducts.length} eBay products.`);
+}
+
+main().catch(console.error);
