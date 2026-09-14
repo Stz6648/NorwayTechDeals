@@ -52,10 +52,7 @@ async function main() {
           : query.toLowerCase().includes("ddr")
           ? "RAM"
           : "Graphics Card",
-        image:
-          item.image ||
-          item.imageUrl ||
-          "/images/placeholder.jpg",
+        image: item.image?.imageUrl || "/images/placeholder.jpg",
         description: item.title || query,
         specifications: {},
         offers: [
@@ -63,17 +60,17 @@ async function main() {
             store: "eBay",
             country: "NO",
             condition: "New",
-            price: Number(item.price || 0),
-            currency: "NOK",
+            price: Number(item.price?.value || 0),
+            currency: item.price?.currency || "USD",
             shipping: null,
             inStock: true,
             affiliate: true,
             affiliateNetwork: "eBay Partner Network",
-            url: item.url || item.itemWebUrl || "",
+            url: item.itemWebUrl || "",
             updatedAt: new Date().toISOString().slice(0, 10)
           }
         ],
-        lowestPrice: Number(item.price || 0),
+        lowestPrice: Number(item.price?.value || 0),
         lowestStore: "eBay",
         updatedAt: new Date().toISOString().slice(0, 10)
       });
