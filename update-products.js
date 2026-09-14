@@ -67,7 +67,7 @@ async function main() {
             country: "NO",
             condition: "New",
             price: Math.round(Number(item.price?.value || 0) * usdToNok),
-            currency: item.price?.currency || "USD",
+            currency: "NOK",
             shipping: null,
             inStock: true,
             affiliate: true,
