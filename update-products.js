@@ -26,7 +26,7 @@ async function searchEbay(query) {
 
     const data = await response.json();
 
-    return Array.isArray(data) ? data : data.items || [];
+    return Array.isArray(data) ? data : data.itemSummaries || [];
   } catch (error) {
     console.error("eBay error:", query, error.message);
     return [];
