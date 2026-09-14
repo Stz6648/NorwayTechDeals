@@ -86,7 +86,7 @@ async function main() {
   const existing = JSON.parse(fs.readFileSync("products.json", "utf8"));
 
 const merged = [
-  ...existing,
+  ...existing.filter(p => !p.offers?.some(o => o.store === "eBay")),
   ...allProducts
 ];
 
