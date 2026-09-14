@@ -1,6 +1,7 @@
 const fs = require("fs");
 
 const EBAY_API = "https://techkjop.no/api/ebay-search";
+const FX_API = "https://api.frankfurter.dev/v2/rate/usd/nok";
 
 const products = [
   "RTX 5090",
@@ -34,8 +35,13 @@ async function searchEbay(query) {
 }
 
 async function main() {
+  
   const allProducts = [];
+  const fxResponse = await fetch(FX_API);
+  const fxData = await fxResponse.json();
+  const usdToNok = Number(fxData.rate || 0);
 
+  
   for (const query of products) {
     console.log("Searching:", query);
 
@@ -60,7 +66,7 @@ async function main() {
             store: "eBay",
             country: "NO",
             condition: "New",
-            price: Number(item.price?.value || 0),
+            price: Math.round(Number(item.price?.value || 0) * usdToNok),
             currency: item.price?.currency || "USD",
             shipping: null,
             inStock: true,
@@ -70,7 +76,7 @@ async function main() {
             updatedAt: new Date().toISOString().slice(0, 10)
           }
         ],
-        lowestPrice: Number(item.price?.value || 0),
+        lowestPrice: Math.round(Number(item.price?.value || 0) * usdToNok),
         lowestStore: "eBay",
         updatedAt: new Date().toISOString().slice(0, 10)
       });
