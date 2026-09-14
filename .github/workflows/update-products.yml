@@ -23,6 +23,6 @@ jobs:
         run: |
           git config user.name "TechKjop Bot"
           git config user.email "actions@github.com"
-          git add ebay-products.json
+          git add products.json public/products.json
           git diff --cached --quiet || git commit -m "Automatic product update"
           git push
