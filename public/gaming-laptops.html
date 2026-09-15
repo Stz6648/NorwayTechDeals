@@ -515,7 +515,9 @@ async function loadEbay(product,index){
         item.price ??
         "";
 
-      const currency = "NOK";
+      const currency = item.price?.currency ?? "USD";
+      const usdPrice = Number(price);
+      const nokPrice = Math.round(usdPrice * 9.3);
 
       const url =
         item.itemWebUrl ||
@@ -533,7 +535,7 @@ async function loadEbay(product,index){
           ${
             price !== ""
             ? `<div class="offer-price">
-                ${formatPrice(price,currency)}
+                ${formatPrice(usdPrice, "USD")} ≈ ${formatPrice(nokPrice, "NOK")}
               </div>`
             : ""
           }
