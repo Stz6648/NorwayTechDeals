@@ -445,8 +445,13 @@ function render(){
                   ${
                     offerUrl !== "#"
                     ? `<a href="${offerUrl}" target="_blank" rel="nofollow sponsored">Se tilbud</a>`
+                    
                     : ""
                   }
+                  <a href="product.html?id=${encodeURIComponent(product.id)}"
+                     class="product-details">
+                    Se detaljer
+                  </a>
                 </div>
               `;
             }).join("")}
