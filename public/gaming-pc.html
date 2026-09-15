@@ -176,6 +176,12 @@ ${o.url||o.link||o.affiliateUrl?
 `<a href="${o.url||o.link||o.affiliateUrl}" target="_blank" rel="nofollow sponsored">Se tilbud</a>`:""}
 </div>
 `).join(""):"<div class='loading'>Ingen norske tilbud registrert.</div>"}
+${p.id ? `
+<a href="/product.html?id=${encodeURIComponent(p.id)}"
+   class="product-details">
+  Se detaljer
+</a>
+` : ""}
 
 <div class="offer-title">eBay</div>
 
