@@ -209,6 +209,9 @@ async function loadPCDeals() {
             <a class="deal-button" href="${link}" target="_blank" rel="noopener">
               View deal
             </a>
+            <a class="product-details" href="/product.html?id=${encodeURIComponent(p.id)}">
+              Se detaljer
+            </a>
           </article>
         `;
       }).join("");
