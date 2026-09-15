@@ -182,8 +182,33 @@ async function loadProduct() {
     );
 
     const lowestPrice = validOffers.length
+      
       ? Math.min(...validOffers.map(o => o.price))
       : product.lowestPrice;
+    const schema = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": product.name,
+  "image": product.image ? [product.image] : [],
+  "description": product.description || "",
+  "brand": product.brand
+    ? {
+        "@type": "Brand",
+        "name": product.brand
+      }
+    : undefined,
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "NOK",
+    "lowPrice": String(lowestPrice || 0),
+    "offerCount": validOffers.length
+  }
+};
+
+const schemaScript = document.createElement("script");
+schemaScript.type = "application/ld+json";
+schemaScript.textContent = JSON.stringify(schema);
+document.head.appendChild(schemaScript);
 
     container.innerHTML = `
       <section class="product">
