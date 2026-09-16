@@ -282,7 +282,9 @@ async function loadGPUDeals() {
 
         const currentPrice = price(p);
         const priceText = currentPrice < 999999
-          ? currentPrice.toLocaleString("nb-NO") + " kr"
+          ? (store.toLowerCase().includes("ebay")
+              ? `${Math.round(currentPrice / 9.3)} USD ≈ ${currentPrice.toLocaleString("nb-NO")} NOK`
+              : currentPrice.toLocaleString("nb-NO") + " kr")
           : "See price";
 
         const link = p.id ? "/product.html?id=" + encodeURIComponent(p.id) : (p.url || p.link || p.productUrl || "");
