@@ -265,14 +265,16 @@ async function loadEbay(){
               ${escapeHtml(item.title||"eBay")}
             </span>
 
-            <a
-              href="${item.itemWebUrl||item.itemAffiliateWebUrl||"#"}"
-              target="_blank"
-              rel="nofollow sponsored noopener">
-              ${item.price?.value
-                ? Number(item.price.value).toLocaleString("no-NO")+" kr"
-                : "Se"}
-            </a>
+           <a
+             href="${item.itemAffiliateWebUrl || item.itemWebUrl || "#"}"
+             target="_blank"
+             rel="nofollow sponsored noopener">
+
+             ${item.price?.value
+               ? `$${Number(item.price.value).toFixed(2)} USD ≈ ${Math.round(Number(item.price.value) * 9.3).toLocaleString("no-NO")} NOK`
+               : "Se"}
+
+          </a>
 
           </div>
 
