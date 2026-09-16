@@ -214,12 +214,14 @@ box.innerHTML=items.slice(0,3).map(x=>{
 const title=x.title||"eBay Gaming PC";
 const value=x.price?.value??x.price??"";
 const currency=x.price?.currency||"USD";
+const usdPrice=Number(value);
+const nokPrice=Math.round(usdPrice*9.34);
 const url=x.itemAffiliateWebUrl||x.itemWebUrl||x.url||"#";
 
 return `
 <div class="offer">
 <div class="offer-name">${title}</div>
-${value!==""?`<div class="offer-price">${money(value,currency)}</div>`:""}
+${value!==""?`<div class="offer-price">${money(usdPrice,"USD")} ≈ ${money(nokPrice,"NOK")}</div>`:""}
 ${url!=="#"?
 `<a href="${url}" target="_blank" rel="nofollow sponsored">Se på eBay</a>`:""}
 </div>`;
