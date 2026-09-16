@@ -1590,212 +1590,30 @@
     ]
   },
   {
-    "id": "v1|178500047867|0",
-    "name": "AORUS Master NVIDIA GeForce RTX 5090 32GB GDDR7 RGB PCIe x16 GPU",
+    "id": "v1|336793666290|0",
+    "name": "ASUS RTX 5090 ROG Astral NVIDIA GeForce OC Edition 32GB GDDR7",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/syoAAeSwmuBqqas9/s-l225.jpg",
-    "description": "AORUS Master NVIDIA GeForce RTX 5090 32GB GDDR7 RGB PCIe x16 GPU",
+    "image": "https://i.ebayimg.com/images/g/VHEAAeSwh4BqqCgr/s-l225.jpg",
+    "description": "ASUS RTX 5090 ROG Astral NVIDIA GeForce OC Edition 32GB GDDR7",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 51785,
+        "price": 23339,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/178500047867?_skw=RTX+5090&hash=item298f6e93fb:g:syoAAeSwmuBqqas9",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/336793666290?_skw=RTX+5090&hash=item4e6a7782f2:g:VHEAAeSwh4BqqCgr",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 51785,
+    "lowestPrice": 23339,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|407217990014|0",
-    "name": "HP OEM NVIDIA GeForce RTX 5090 32GB GDDR7 Graphics Card",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/~5gAAeSwdo1qqQrw/s-l225.jpg",
-    "description": "HP OEM NVIDIA GeForce RTX 5090 32GB GDDR7 Graphics Card",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 55984,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/407217990014?_skw=RTX+5090&hash=item5ed015697e:g:~5gAAeSwdo1qqQrw&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYzoi1ZPXxyGkIia8XBeRPCkQ3mbyaBFQOofhgzz9YHpAf0GUKCFrdLqUNKQD6Zn9AspcqyhOCRWnF5rDGr4erh5YxjwGdpqCDXNJVfol7qpsFijdJS1qaAkxtxifVxYFKtb37YhFtteBfvBlr0ticun3s0%2BKLE0QzMNY8cAuprxhqIPVsKqt5qB8egoOieSzmh8FYcH1purN%2FkkDKYgzAcMnbSb0F8gByTJtud2HkCGPoN74d604bm8ANtmnPV79D6baocgxQhgY%2BI9u35ftzEHA8223R9ZVa3vk63O82eJA%3D%3D",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 55984,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|158291803228|0",
-    "name": "NVIDIA GeForce RTX 5090 Founders Edition FE 32GB GDDR7 Graphics Card Excellent",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/1HIAAeSwoXNqqCFm/s-l225.jpg",
-    "description": "NVIDIA GeForce RTX 5090 Founders Edition FE 32GB GDDR7 Graphics Card Excellent",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 26126,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/158291803228?_skw=RTX+5090&hash=item24daed3c5c:g:1HIAAeSwoXNqqCFm",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 26126,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|398394515137|0",
-    "name": "4xNVIDIA GEFORCE RTX 5090 32GB Founders Edition (oem) Graphics Card",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/5D0AAeSwj0lqqDYz/s-l225.jpg",
-    "description": "4xNVIDIA GEFORCE RTX 5090 32GB Founders Edition (oem) Graphics Card",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 37836,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/398394515137?_skw=RTX+5090&hash=item5cc229dec1:g:5D0AAeSwj0lqqDYz",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 37836,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|307179101508|0",
-    "name": "GIGABYTE AORUS MASTER RTX 5090 32GB GDDR7 PCIe 5.0 Graphics Card NEW ",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/8yoAAeSwgQFqqCQt/s-l225.jpg",
-    "description": "GIGABYTE AORUS MASTER RTX 5090 32GB GDDR7 PCIe 5.0 Graphics Card NEW ",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 26126,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/307179101508?_skw=RTX+5090&hash=item47854d1d44:g:8yoAAeSwgQFqqCQt",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 26126,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|398386159662|0",
-    "name": "ASUS ROG ASTRAL NVIDIA GeForce RTX 5090 32G OC WHITE Edition GDDR7 Brand New",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/GKEAAeSwNv5qqSFY/s-l225.jpg",
-    "description": "ASUS ROG ASTRAL NVIDIA GeForce RTX 5090 32G OC WHITE Edition GDDR7 Brand New",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 18643,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/398386159662?_skw=RTX+5090&hash=item5cc1aa602e:g:GKEAAeSwNv5qqSFY",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 18643,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|188930393458|0",
-    "name": "GIGABYTE AORUS GeForce RTX 5090 Master 32G Graphics Card",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/YT8AAeSwkOJqqDET/s-l225.jpg",
-    "description": "GIGABYTE AORUS GeForce RTX 5090 Master 32G Graphics Card",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 24726,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/188930393458?_skw=RTX+5090&hash=item2bfd210572:g:YT8AAeSwkOJqqDET",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 24726,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|298674611493|0",
-    "name": "NVIDIA RTX 5090  Fe Founders Edition 32GB GDDR7 GPU Graphics Card",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/a6YAAeSwHahqqFcV/s-l225.jpg",
-    "description": "NVIDIA RTX 5090  Fe Founders Edition 32GB GDDR7 GPU Graphics Card",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 51837,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/298674611493?_skw=RTX+5090&hash=item458a64e525:g:a6YAAeSwHahqqFcV",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 51837,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|267697459617|0",
@@ -1809,45 +1627,227 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 3723,
+        "price": 3725,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/267697459617?_skw=RTX+5090&hash=item3e540311a1:g:w2EAAeSwPQxppYF0&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGbMcFTkgwmoxwsTprN52E0Q%2Bot3Ynx2L1fqR4k%2Frrhi7hwJnKXaQ8aZ7E5gOAXtKqL75IbVORlncVurtqM3%2B%2BpOjTR3vu93bSfVRTs9hlvBLHJlwZ3kHViTLwsZV1Ub0TMyqs64IFesd7bA8SkG3bTf5iYhWUeSUPJOyaqSIvW3FsasRsdiLzD2KHZaD8OcCpY0%2BUzVnLj2XR07oAfwrF%2FThI%2FCS3s1JRqOI4o1vHlOP5NpTf1400aCXFIx8NaqkjZyJo%2FEkQDkPLCHMQSa66xV",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/267697459617?_skw=RTX+5090&hash=item3e540311a1:g:w2EAAeSwPQxppYF0&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGbMcFTkgwmoxwsTprN52E0Q%2Bot3Ynx2L1fqR4k%2Frrhi7hwJnKXaQ8aZ7E5gOAXtKqL75IbVORlncVurtqM3%2B%2BpOjTR3vu93bSfVRTs9hlvBLHJlwZ3kHViTLwsZV1Ub0TPHL5tQB4%2FIytRxlOiH%2Fi2WLVNO6lnoOlKSSWAlWLbVwa5F3ZSJRTVnvCcBT80AaCsSlWRbFLG835eWZmKLNS5MnlCH8PF4Fex4IjAyex3tYnjuXmF133KOHbjDRTpR9snxakSPIwv41NcgsOOsi2Gq",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 3723,
+    "lowestPrice": 3725,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|267483338931|0",
-    "name": "MSI RTX 5090 GAMING Suprim Liquid GPU No Core & VRAM For parts (US stock)",
+    "id": "v1|377495273233|0",
+    "name": "ASUS ROG Astral GeForce RTX OC 5090 32GB GDDR7 Graphics Card Sealed Brand New!",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/xk4AAeSwNDppH5Lu/s-l225.jpg",
-    "description": "MSI RTX 5090 GAMING Suprim Liquid GPU No Core & VRAM For parts (US stock)",
+    "image": "https://i.ebayimg.com/images/g/FJoAAeSwx6lqqDjO/s-l225.jpg",
+    "description": "ASUS ROG Astral GeForce RTX OC 5090 32GB GDDR7 Graphics Card Sealed Brand New!",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 2799,
+        "price": 26139,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/267483338931?_skw=RTX+5090&hash=item3e473fd8b3:g:xk4AAeSwNDppH5Lu&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGZlQIymWCHr2ttcL3lb3rBF9ZWWTH4mG1x5zaWLR1GTh3b%2FFUHIrHncDVEsOHtDZy2PdZ3nFa0xk0%2F7TB7qvXZwN8Px9o4k5D0vE9SV4%2B8rOYekXGxGjJ4jlhPAHPzzRbko6dihajpcRs6UBUSFMrSsJaRU9OipUQh8dv7RVVxHlNrmcupG3zv%2BkSn4arjkkTivBqmUBq7vaFV0ttm6H93s8g2LVuLBCSpB1qfLCGKKfY%2BKgBANVsecgqGplrNmmFToPOb9J5aJtnp%2F3WoJLMbL",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/377495273233?_skw=RTX+5090&hash=item57e478bf11:g:FJoAAeSwx6lqqDjO",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 2799,
+    "lowestPrice": 26139,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|168688705066|0",
+    "name": "🔥Nvidia Geforce RTX 5090 Founders Edition - NEW, SEALED IN BOX .",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/lK8AAeSwnnJqqDLj/s-l225.jpg",
+    "description": "🔥Nvidia Geforce RTX 5090 Founders Edition - NEW, SEALED IN BOX .",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 25206,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/168688705066?_skw=RTX+5090&hash=item2746a15e2a:g:lK8AAeSwnnJqqDLj",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 25206,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|800665775173|0",
+    "name": "Gigabyte AORUS RTX 5090 MASTER ICE 32G",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/v04AAeSwXz1qqUXm/s-l225.jpg",
+    "description": "Gigabyte AORUS RTX 5090 MASTER ICE 32G",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 36109,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/800665775173?_skw=RTX+5090&hash=itemba6b662c45:g:v04AAeSwXz1qqUXm",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 36109,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|158291803228|0",
+    "name": "NVIDIA GeForce RTX 5090 Founders Edition FE 32GB GDDR7 Graphics Card Excellent",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/1HIAAeSwoXNqqCFm/s-l225.jpg",
+    "description": "NVIDIA GeForce RTX 5090 Founders Edition FE 32GB GDDR7 Graphics Card Excellent",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 26139,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/158291803228?_skw=RTX+5090&hash=item24daed3c5c:g:1HIAAeSwoXNqqCFm",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 26139,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|168688711768|0",
+    "name": "Zotac GeForce RTX 5090 AMP Extreme INFINITY RGB OC 32GB GDDR7 GPU",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/5X8AAeSwkUhqqDOc/s-l225.jpg",
+    "description": "Zotac GeForce RTX 5090 AMP Extreme INFINITY RGB OC 32GB GDDR7 GPU",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 25094,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/168688711768?_skw=RTX+5090&hash=item2746a17858:g:5X8AAeSwkUhqqDOc",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 25094,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|178500423118|0",
+    "name": "NVIDIA GeForce RTX 5090 32GB Founders Edition Graphics Card",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/40QAAeSw~n5qqctX/s-l225.jpg",
+    "description": "NVIDIA GeForce RTX 5090 32GB Founders Edition Graphics Card",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 56003,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/178500423118?_skw=RTX+5090&hash=item298f744dce:g:40QAAeSw~n5qqctX",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 56003,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|267097692576|0",
+    "name": "Asus Astral RTX 5090 Cooler + Pcb No Core And VRAM  With Box (Ship From HK)",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/ZMsAAeSwctZp-g3I/s-l225.jpg",
+    "description": "Asus Astral RTX 5090 Cooler + Pcb No Core And VRAM  With Box (Ship From HK)",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 3267,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/267097692576?_skw=RTX+5090&hash=item3e304359a0:g:ZMsAAeSwctZp-g3I&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGZWHVWbbs%2FIjbUzGN1Xb3N%2BfJ0AV0DCeF3UxwKwmupORS%2BVPAlujKwcLsiaVM%2BW0SoDk4hloaBIfm6EZbZ%2B7uQtRA7cctHTzOPHEIKKhxJQbfjDLdq%2FT6TPDvp2dsKVGDYEZRiQn4DK43%2FpkQ5M9F%2FdTXlqEYAv84Xcv4bDY%2BuyZdraXimfYY3xk%2FuyNr%2BtEPU8JMJ%2FrS1CvE7pVGpDJ0ar3%2BqpUGMAVFDD6%2F6CIjTBR4dIgORKdVI5NWdSSlCMwh2SiOkxlKV%2FPUbbHk2hmbQz",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 3267,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|267668134726|0",
+    "name": "Asus Astral RTX 5090 Gaming No Core And VRAM With Box (US Stock)",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/cRQAAeSwMCZqA9-Y/s-l225.jpg",
+    "description": "Asus Astral RTX 5090 Gaming No Core And VRAM With Box (US Stock)",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 3267,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/267668134726?_skw=RTX+5090&hash=item3e52439b46:g:cRQAAeSwMCZqA9-Y&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGb%2FEtz%2Bl2m3GpQbAacRBo6V7lIZE5CijmWRAocXrBvUejHopo8Rut9UgCtIyQWh7WsocHZgXnFX1EyWO0s9tYNKYmHna89Zvs6C3hgvdRsEHnAT%2FtgyL%2B72HGlRL3U5d%2BrhWe8m4Y4sLn9FWAXZHl0SXGiGRvz2dkTMLD9%2FAuVcSVBllGrbOtllx9a5exlDvO%2Fgxr%2Bl5YT4iUPPUErkIEttMBLwdV2za8ufCwBO%2Bbks0Lql6hj%2BwZ%2F2NRBvj4hsSi47psa73Gg%2F6nlLrIjbt1gp",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 3267,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|158295003645|0",
@@ -1861,45 +1861,97 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 14453,
+        "price": 14461,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
         "url": "https://www.ebay.com/itm/158295003645?_skw=RTX+5080&hash=item24db1e11fd:g:4ckAAeSwj7pqqVq4",
-        "updatedAt": "2026-09-15"
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 14453,
+    "lowestPrice": 14461,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|407219316777|0",
-    "name": "OPEN BOX Gigabyte Gaming Geforce RTX 5080 16GB GDDR7",
+    "id": "v1|298677388829|0",
+    "name": "PNY NVIDIA RTX 5080 Stealth Mode 16GB Graphic Card GDDR7 PCIe 5.0 • NEW",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/9ZsAAeSwJYxqqZ7b/s-l225.jpg",
-    "description": "OPEN BOX Gigabyte Gaming Geforce RTX 5080 16GB GDDR7",
+    "image": "https://i.ebayimg.com/images/g/OykAAeSwfEhqqYat/s-l225.jpg",
+    "description": "PNY NVIDIA RTX 5080 Stealth Mode 16GB Graphic Card GDDR7 PCIe 5.0 • NEW",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 13996,
+        "price": 13900,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/407219316777?_skw=RTX+5080&hash=item5ed029a829:g:9ZsAAeSwJYxqqZ7b",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/298677388829?_skw=RTX+5080&hash=item458a8f461d:g:OykAAeSwfEhqqYat",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 13996,
+    "lowestPrice": 13900,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|407219898302|0",
+    "name": "NEW OPEN BOX Gigabyte Gaming Geforce RTX 5080 16GB GDDR7",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/9ZsAAeSwJYxqqZ7b/s-l225.jpg",
+    "description": "NEW OPEN BOX Gigabyte Gaming Geforce RTX 5080 16GB GDDR7",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 14003,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/407219898302?_skw=RTX+5080&hash=item5ed03287be:g:9ZsAAeSwJYxqqZ7b",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 14003,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|178500658656|0",
+    "name": "New Asus Tuf  GeForce RTX 5080 16GB GDDR7 Graphics Card PRIME-RTX5080-16G-OC",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/JuoAAeSwd3NqqeNy/s-l225.jpg",
+    "description": "New Asus Tuf  GeForce RTX 5080 16GB GDDR7 Graphics Card PRIME-RTX5080-16G-OC",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 12742,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/178500658656?_skw=RTX+5080&hash=item298f77e5e0:g:JuoAAeSwd3NqqeNy",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 12742,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|127729874075|0",
@@ -1913,19 +1965,19 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 14183,
+        "price": 14190,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
         "url": "https://www.ebay.com/itm/127729874075?_skw=RTX+5080&hash=item1dbd4b349b:g:O7UAAeSwcQFpr1Ks",
-        "updatedAt": "2026-09-15"
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 14183,
+    "lowestPrice": 14190,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|147568810406|0",
@@ -1939,123 +1991,71 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 13996,
+        "price": 14003,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
         "url": "https://www.ebay.com/itm/147568810406?_skw=RTX+5080&hash=item225bc959a6:g:Vk4AAeSwpalqpaZd",
-        "updatedAt": "2026-09-15"
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 13996,
+    "lowestPrice": 14003,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|267785395882|0",
-    "name": "MSI GeForce RTX 5080 16G SHADOW 3X OC 16GB GDDR7 Graphics Card GPU",
+    "id": "v1|336795546417|0",
+    "name": "GIGABYTE GeForce RTX 5080 Gaming OC 16G",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/IwQAAeSwCvBqqGQx/s-l225.jpg",
-    "description": "MSI GeForce RTX 5080 16G SHADOW 3X OC 16GB GDDR7 Graphics Card GPU",
+    "image": "https://i.ebayimg.com/images/g/FxUAAeSwBuBqpvoH/s-l225.jpg",
+    "description": "GIGABYTE GeForce RTX 5080 Gaming OC 16G",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 13987,
+        "price": 14470,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/267785395882?_skw=RTX+5080&hash=item3e5940deaa:g:IwQAAeSwCvBqqGQx",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/336795546417?_skw=RTX+5080&hash=item4e6a943331:g:FxUAAeSwBuBqpvoH",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 13987,
+    "lowestPrice": 14470,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|298659211486|0",
-    "name": "PNY Triple Fan GeForce RTX 5080 16GB RAM - Graphics Card - Very Good Condition",
+    "id": "v1|147568871302|0",
+    "name": "GIGABYTE - NVIDIA GeForce RTX 5080 WINDFORCE OC (NO BOX) (B266)",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/EzoAAeSw1vdqoW-h/s-l225.jpg",
-    "description": "PNY Triple Fan GeForce RTX 5080 16GB RAM - Graphics Card - Very Good Condition",
+    "image": "https://i.ebayimg.com/images/g/zdwAAeSwr2JqpbGM/s-l225.jpg",
+    "description": "GIGABYTE - NVIDIA GeForce RTX 5080 WINDFORCE OC (NO BOX) (B266)",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 13436,
+        "price": 14003,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/298659211486?_skw=RTX+5080&hash=item458979e8de:g:EzoAAeSw1vdqoW-h",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/147568871302?_skw=RTX+5080&hash=item225bca4786:g:zdwAAeSwr2JqpbGM",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 13436,
+    "lowestPrice": 14003,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|278166505820|0",
-    "name": "ASUS Prime OC GeForce RTX 5080 16GB RAM - Graphics Card - Excellent Condition",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/vxYAAeSwT0xqTpQ7/s-l225.jpg",
-    "description": "ASUS Prime OC GeForce RTX 5080 16GB RAM - Graphics Card - Excellent Condition",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 13529,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/278166505820?_skw=RTX+5080&hash=item40c404095c:g:vxYAAeSwT0xqTpQ7",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 13529,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|117414116828|0",
-    "name": "PNY GeForce RTX 5080 Overclocked Triple Fan GPU, 16 GB GDDR7, PCI Express x16",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/5BoAAeSw6BlqqZb5/s-l225.jpg",
-    "description": "PNY GeForce RTX 5080 Overclocked Triple Fan GPU, 16 GB GDDR7, PCI Express x16",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 13940,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/117414116828?_skw=RTX+5080&hash=item1b566d3ddc:g:5BoAAeSw6BlqqZb5",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 13940,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|147464530056|0",
@@ -2069,19 +2069,19 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 10371,
+        "price": 10376,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/147464530056?_skw=RTX+5080&hash=item2255922888:g:vFMAAeSwGs1qZ1e7&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGbXNGk%2BhhOcb%2BDmpg64APciszt0Hn2uu61Fj8M4DlASdOMWdXdnO9PVT5XB97mcnS%2F1EXlCva7OF%2BFBbwBMLC831My%2FeHwFwYuK5ExcKgiJitS7rSsgFHV0tAOt1MqSLz4N%2F4M%2FPkTH%2B8KRUsVUFS%2F%2BYTjeAWOpqWVhSeC5j5%2Fn88t6Dr7jAg5lMK3VZd86OaJllFuUsl%2BK2qSIg%2FO33d%2BQubB8WocVcuO5OmbLO9Qwy7g2Tch0tFIycT%2FA79i9lk%2F8RpIs9tC%2BOngyLsqMcExK",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/147464530056?_skw=RTX+5080&hash=item2255922888:g:vFMAAeSwGs1qZ1e7&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGbXNGk%2BhhOcb%2BDmpg64APciszt0Hn2uu61Fj8M4DlASdOMWdXdnO9PVT5XB97mcnS%2F1EXlCva7OF%2BFBbwBMLC831My%2FeHwFwYuK5ExcKgiJitS7rSsgFHV0tAOt1MqSLz4LPRLXZ0Whk3xzgZ%2Fj8illWzzA4q1QPk%2FtsymCaQv8MJrBU2y3ctU0lv5gZovx%2Bxk9NTlEYKSNEuceUGeA1h1a4ClxnAeuX57S6GE4%2FWTk6wF6NxDQhJgpx0c0cLI8sXE6Yl%2FT6nR0oWhilQ9W4J9o",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 10371,
+    "lowestPrice": 10376,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|227463983875|0",
@@ -2095,19 +2095,19 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 27983,
+        "price": 27997,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/227463983875?_skw=RTX+5080&hash=item34f5e8f303:g:zHUAAeSwHg9qc8JT&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGYmzA%2BrDyY7h4gFMogGa%2BAc1clNNakFNIzCgg44t9qpcr2ca27%2BWxvm073KZ7cMVpQL0xVwTKU6OvPe7k6Z8lwnoNKxqsuSGj%2Fk3Vp9L6QhFryZml6UqQMCqIkSumbcPYJUKsaKYOrlu4FXP4VBfamK9yO2Rp7hPQ8rfvAmI%2BWr%2BlY%2Fdhz6UNRqPHbpufNpTuuRQR23EW3DEvobigUyT7AEM9eVOfOWa0cpaXk9OqM09dtMv61W%2FqCNoIkCVFUyltBbWr2t6SvnN2%2FZgda8ZeUR",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/227463983875?_skw=RTX+5080&hash=item34f5e8f303:g:zHUAAeSwHg9qc8JT&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGYmzA%2BrDyY7h4gFMogGa%2BAc1clNNakFNIzCgg44t9qpcr2ca27%2BWxvm073KZ7cMVpQL0xVwTKU6OvPe7k6Z8lwnoNKxqsuSGj%2Fk3Vp9L6QhFryZml6UqQMCqIkSumbcPYLNAYKTvVY5J3e1UtF4JWY1kS25dmxS2JnYa%2BPE5aQ%2BEu90c2BD1ASbIsCHHhT12TqX%2BF1AeGJOU2IIE8bI8EifK6U4p8KCPH5kFOtFHKAt4CMUV4omruJrCKfHK7mYif%2B2mU8nA2Ziy9FeXERApPmU",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 27983,
+    "lowestPrice": 27997,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|147172523267|0",
@@ -2121,97 +2121,19 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 10264,
+        "price": 10269,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
         "url": "https://www.ebay.com/itm/147172523267?_skw=RTX+5070+Ti&hash=item22442a7d03:g:DcIAAeSwYTBqgVzO",
-        "updatedAt": "2026-09-15"
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 10264,
+    "lowestPrice": 10269,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|277352801036|0",
-    "name": "Acer Predator Helios Neo 16S AI 16\" i9 275HX 2S RTX 5070 Ti 32GB 1TB SSD Refurb",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/lhcAAeSw4TBp0-D3/s-l225.jpg",
-    "description": "Acer Predator Helios Neo 16S AI 16\" i9 275HX 2S RTX 5070 Ti 32GB 1TB SSD Refurb",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 16740,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/277352801036?_skw=RTX+5070+Ti&hash=item409383e30c:g:lhcAAeSw4TBp0-D3",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 16740,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|366667070988|0",
-    "name": "MSI RTX 5070 TI 16G SHADOW 3X OC",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/Vn4AAeSwn35qpxEb/s-l225.jpg",
-    "description": "MSI RTX 5070 TI 16G SHADOW 3X OC",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 10348,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/366667070988?_skw=RTX+5070+Ti&hash=item555f0f7e0c:g:Vn4AAeSwn35qpxEb",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 10348,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|257498683381|0",
-    "name": "⚡️SUPER RARE⚡️MSI GeForce RTX 5070 Ti 16G VENTUS OC 3X PZ Edition - NEW!",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/4tsAAeSwfqVp~2tw/s-l225.jpg",
-    "description": "⚡️SUPER RARE⚡️MSI GeForce RTX 5070 Ti 16G VENTUS OC 3X PZ Edition - NEW!",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 10254,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/257498683381?_skw=RTX+5070+Ti&hash=item3bf41e17f5:g:4tsAAeSwfqVp~2tw",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 10254,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|298389851326|0",
@@ -2225,45 +2147,97 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 11239,
+        "price": 11244,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
         "url": "https://www.ebay.com/itm/298389851326?_skw=RTX+5070+Ti&hash=item45796bccbe:g:t~8AAeSw~bxqda6n",
-        "updatedAt": "2026-09-15"
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 11239,
+    "lowestPrice": 11244,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|306939698028|0",
-    "name": "MSI INSPIRE GeForce RTX 5070 Ti 16GB GDDR7 PCI Express 5.0 Video Card RTX 5070 T",
+    "id": "v1|178499358820|0",
+    "name": "ASUS Prime NVIDIA GeForce RTX 5070 Ti OC Edition 16GB",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/u0IAAeSwYudqBpOV/s-l225.jpg",
-    "description": "MSI INSPIRE GeForce RTX 5070 Ti 16GB GDDR7 PCI Express 5.0 Video Card RTX 5070 T",
+    "image": "https://i.ebayimg.com/images/g/nmwAAeSwFqxqqXR3/s-l225.jpg",
+    "description": "ASUS Prime NVIDIA GeForce RTX 5070 Ti OC Edition 16GB",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 9284,
+        "price": 10082,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/306939698028?_skw=RTX+5070+Ti&hash=item4777081b6c:g:u0IAAeSwYudqBpOV",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/178499358820?_skw=RTX+5070+Ti&hash=item298f641064:g:nmwAAeSwFqxqqXR3",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 9284,
+    "lowestPrice": 10082,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|277352801036|0",
+    "name": "Acer Predator Helios Neo 16S AI 16\" i9 275HX 2S RTX 5070 Ti 32GB 1TB SSD Refurb",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/lhcAAeSw4TBp0-D3/s-l225.jpg",
+    "description": "Acer Predator Helios Neo 16S AI 16\" i9 275HX 2S RTX 5070 Ti 32GB 1TB SSD Refurb",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 18088,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/277352801036?_skw=RTX+5070+Ti&hash=item409383e30c:g:lhcAAeSw4TBp0-D3",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 18088,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|366667070988|0",
+    "name": "MSI RTX 5070 TI 16G SHADOW 3X OC",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/Vn4AAeSwn35qpxEb/s-l225.jpg",
+    "description": "MSI RTX 5070 TI 16G SHADOW 3X OC",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 10353,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/366667070988?_skw=RTX+5070+Ti&hash=item555f0f7e0c:g:Vn4AAeSwn35qpxEb",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 10353,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|278375443125|0",
@@ -2277,45 +2251,71 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 16795,
+        "price": 16804,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
         "url": "https://www.ebay.com/itm/278375443125?_skw=RTX+5070+Ti&hash=item40d0782ab5:g:L9kAAeSwTctqqGMP",
-        "updatedAt": "2026-09-15"
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 16795,
+    "lowestPrice": 16804,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|387977751130|0",
-    "name": "GIGABYTE AERO GeForce RTX 5070 Ti 16GB GDDR7 PCI Express 5.0 ATX Graphics Card G",
+    "id": "v1|366671497835|0",
+    "name": "ASUS TUF Gaming GeForce RTX 5070 Ti OC 16GB GDDR7 RGB DLSS 4 RT",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/ansAAeSw9jhqda6f/s-l225.jpg",
-    "description": "GIGABYTE AERO GeForce RTX 5070 Ti 16GB GDDR7 PCI Express 5.0 ATX Graphics Card G",
+    "image": "https://i.ebayimg.com/images/g/720AAeSwVCxqqdaA/s-l225.jpg",
+    "description": "ASUS TUF Gaming GeForce RTX 5070 Ti OC 16GB GDDR7 RGB DLSS 4 RT",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 12312,
+        "price": 8869,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/387977751130?_skw=RTX+5070+Ti&hash=item5a5546aa5a:g:ansAAeSw9jhqda6f",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/366671497835?_skw=RTX+5070+Ti&hash=item555f530a6b:g:720AAeSwVCxqqdaA",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 12312,
+    "lowestPrice": 8869,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|137576002511|0",
+    "name": "ASUS TUF Gaming GeForce RTX ™ 5070 Ti 16GB GDDR7 OC Edition Gaming Graphics Card",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/010AAeSwT55qboGw/s-l225.jpg",
+    "description": "ASUS TUF Gaming GeForce RTX ™ 5070 Ti 16GB GDDR7 OC Edition Gaming Graphics Card",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 11669,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/137576002511?_skw=RTX+5070+Ti&hash=item20082b33cf:g:010AAeSwT55qboGw",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 11669,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|257333729950|0",
@@ -2329,51 +2329,51 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 18694,
+        "price": 20199,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/257333729950?_skw=RTX+5070+Ti&hash=item3bea491a9e:g:lZcAAeSwtrFp1AtV&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbe3Lk%2BaedHxaV%2Bt8elY1uKoLG1YwMFqRCT9BcTlkvB4KlVYj79NBTV4cwHt1wSMhW6GOfajPqns%2F4gAGvilRCgEbqDTfPZhGsADi%2BwxxPKEzkVTFMQcX%2BpK2lk1oPBCTQfHclMcRz5E5wxPGrOlUNz68la7hdr5xVWkpV0pXOE%2Bh1V5uq4nYhCutEqT4cnkWWOS2skoAUQNesRUsIWDHJ7p8XykeAjMqtt5eSFvImfoZgMKee0xNfPAa094eyUBhWPvscrtavfOI81PZZD4f%2BAM%2BBjL%2BhbSB6WYlbpR1DD7g%3D%3D",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/257333729950?_skw=RTX+5070+Ti&hash=item3bea491a9e:g:lZcAAeSwtrFp1AtV&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbe3Lk%2BaedHxaV%2Bt8elY1uKoLG1YwMFqRCT9BcTlkvB4KlVYj79NBTV4cwHt1wSMhW6GOfajPqns%2F4gAGvilRCgEbqDTfPZhGsADi%2BwxxPKEzkVTFMQcX%2BpK2lk1oPBCTQfAcCCEM82F27Mm8BPl8UhikZqt2oUfpT3b3%2BcMlicNKholphZItwINEXPSX3XMhs2cPiLHSdVQZEX%2BBVGRRguAqo5mIDjZuSvEq3ynzDA2DeCVIkVokVmZ%2Fr9u2hmp91naKYMxjVHd3GxpLIw4F745LpIerpW%2BZEFXZVaPD82qQ%3D%3D",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 18694,
+    "lowestPrice": 20199,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|287493552936|0",
-    "name": "Razer Blade 16 240Hz QHD+ 2025 2.0 GHz Ryzen AI 9 365 32GB 1TB SSD RTX 5070 Ti",
+    "id": "v1|277574864365|0",
+    "name": "Acer Nitro Slim 16\" Gaming Laptop RTX 5070 TI Ryzen AI 7 350 16GB RAM 512GB SSD",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/nnMAAeSwQw5qa7p0/s-l225.jpg",
-    "description": "Razer Blade 16 240Hz QHD+ 2025 2.0 GHz Ryzen AI 9 365 32GB 1TB SSD RTX 5070 Ti",
+    "image": "https://i.ebayimg.com/images/g/zrYAAeSw34ppRdYY/s-l225.jpg",
+    "description": "Acer Nitro Slim 16\" Gaming Laptop RTX 5070 TI Ryzen AI 7 350 16GB RAM 512GB SSD",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 20061,
+        "price": 14937,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/287493552936?_skw=RTX+5070+Ti&hash=item42eff37b28:g:nnMAAeSwQw5qa7p0&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZjdPBl8hewccLyBCUBlG0LgzgBqnEsubK7W%2BhvbqV91gXjN1C6VlkS56qG1NmBSiN7u6xi2sQzxDXJsf0BUTUxBRmf9p6eYKMz5wcJp1Oh%2BQHv%2B%2BsfDOrpbHSZnx%2FSvOvBTXYiFfA8yBYXxNyw9lPmExnYBtj%2FGQyuUnM9j0hS6E8sw7v01KlFB5iZWrvibbRcgZb1cJDLS1qtzBaUF86B6TN7gMReV%2FwIpwHZ71sScDnVnENXI3HE%2BX1hwj7tK7iy869pRQ4qObLkD0J8f43FQw8%2BMUDTE72DzxlN8cPHdg%3D%3D",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/277574864365?_skw=RTX+5070+Ti&hash=item40a0c04ded:g:zrYAAeSw34ppRdYY&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaw%2F1xZAsSRi2A9eLXDjUpQN%2FI4ksz4KHm1dQd7tn8AGBfLtW4dIFXfhYIFiD1p119o2b5bsqYLzHbmjROEW3bED%2BeMuT5k1En%2Frofc6ntF04Nxuv0AdvW2z%2FzOhv2xRU53c9Iet9NIbVhQlFv4p61gP8OcQylLEbqDiMsorJ5OXyFUbMQfNo4vnh%2Bp56WwsFPBq%2BSObsJwA5XslCjuRh1M8bPWFOPa581ltKz4%2FZ3%2BxYRrsvdXVLOyIuFpZ%2FqfnebjSBlDXnJ9qTXPwdrqza5IAUhuw6DXVlBnV8fERdxncg%3D%3D",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 20061,
+    "lowestPrice": 14937,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|168676432998|0",
     "name": "ASUS Dual GeForce RTX 5070 | 12GB GDDR7 | OC Edition | DUAL-RTX5070-O12G",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/OpQAAeSwdo1qqWXh/s-l225.jpg",
+    "image": "https://i.ebayimg.com/images/g/THUAAeSwwelqqcWM/s-l225.jpg",
     "description": "ASUS Dual GeForce RTX 5070 | 12GB GDDR7 | OC Edition | DUAL-RTX5070-O12G",
     "specifications": {},
     "offers": [
@@ -2381,45 +2381,45 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 6531,
+        "price": 6535,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/168676432998?_skw=RTX+5070&hash=item2745e61c66:g:OpQAAeSwdo1qqWXh",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/168676432998?_skw=RTX+5070&hash=item2745e61c66:g:THUAAeSwwelqqcWM",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 6531,
+    "lowestPrice": 6535,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|267490948937|0",
-    "name": "Acer Nitro 60 i7-14700F 14th Gen 32GB 1TB SSD RTX 5070 Win11 Desktop Refurb 2025",
+    "id": "v1|158296372396|0",
+    "name": "MSI GeForce RTX 5070 12GB Ventus 2X OC Graphics Card - Tested",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/YY8AAeSwVnxqPUyP/s-l225.jpg",
-    "description": "Acer Nitro 60 i7-14700F 14th Gen 32GB 1TB SSD RTX 5070 Win11 Desktop Refurb 2025",
+    "image": "https://i.ebayimg.com/images/g/iw4AAeSwGb1qqduL/s-l225.jpg",
+    "description": "MSI GeForce RTX 5070 12GB Ventus 2X OC Graphics Card - Tested",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 14771,
+        "price": 6161,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/267490948937?_skw=RTX+5070&hash=item3e47b3f749:g:YY8AAeSwVnxqPUyP&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGbn93%2FnLb5N8CfbKm%2ByWplbberlAVrTFRXIewBjJPm%2FzfsM2v0JnjRam6p8D%2BCRBxyZwGajYFUjwrs%2FmxK54cSSOuT%2FjBdKkae0sxBDPT%2FjZg4lHOYqj1rHRPEK%2Fhwah0SNElBsuTgcDU2GlhoUplERNUZbVl2TGNW5rH9Zmf8jWI%2BbR7guE00f9Y%2BuTtI%2BCLfueem6s1KJPcE8QBP52pI1p%2FnLbBLZdBvYdoFFz2PV2WcOBd65%2BYrhQPC4%2BBGPe5VJQTrhs1iFSYhwx22EyEL%2B",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/158296372396?_skw=RTX+5070&hash=item24db32f4ac:g:iw4AAeSwGb1qqduL&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGYT7LQTJknRXonOJShuy5Zt8Qx1DbPpKC7Da9AXqBgkkM%2BxaT7wErFFAnLtTawVauHXZTwlJni3cJG8KsrmIFtd7HpjZ5NbJD8TAnbNF4DCjggZue1r8EZonWFR9TsykT6NZNasuo0m5D%2BYWVL9%2FQongG3KwQ6SgvIpNhFVIMIl4K5vQQUaGKRzf4t23r6iHtvZIhQHm01haNusPzYwlEli%2BDIMujnzWjPmvtbk1NLYkkOUfjWSoDodJohZmm9tBBJIHl0vZdZvQ%2Fjoz9AW2rOi",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 14771,
+    "lowestPrice": 6161,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|137698943068|0",
@@ -2433,19 +2433,45 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 7744,
+        "price": 7748,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
         "url": "https://www.ebay.com/itm/137698943068?_skw=RTX+5070&hash=item200f7f205c:g:c-MAAeSwpLBqmvYC",
-        "updatedAt": "2026-09-15"
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 7744,
+    "lowestPrice": 7748,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|820132318851|0",
+    "name": "GIGABYTE GeForce RTX 5070 GAMING OC 12G GDDR7 ",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/AocAAeSwMXRqqfqt/s-l225.jpg",
+    "description": "GIGABYTE GeForce RTX 5070 GAMING OC 12G GDDR7 ",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 5228,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/820132318851?_skw=RTX+5070&hash=itembef3b20e83:g:AocAAeSwMXRqqfqt",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 5228,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|147172523267|0",
@@ -2459,19 +2485,19 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 10264,
+        "price": 10269,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
         "url": "https://www.ebay.com/itm/147172523267?_skw=RTX+5070&hash=item22442a7d03:g:DcIAAeSwYTBqgVzO",
-        "updatedAt": "2026-09-15"
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 10264,
+    "lowestPrice": 10269,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|298664138705|0",
@@ -2485,123 +2511,71 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 6998,
+        "price": 7001,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
         "url": "https://www.ebay.com/itm/298664138705?_skw=RTX+5070&hash=item4589c517d1:g:cMQAAeSwMaJqpAe5",
-        "updatedAt": "2026-09-15"
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 6998,
+    "lowestPrice": 7001,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|820107462425|0",
-    "name": "MSI - NVIDIA GeForce RTX 5070 12G VENTUS 3X OC 12GB GDDR7 PCI Express Gen 5 ",
+    "id": "v1|287588906744|0",
+    "name": "PNY NVIDIA GeForce RTX™ 5070 OC Triple Fan, Graphics Card 12GB GDDR7",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/MpEAAeSw86lpzW99/s-l225.jpg",
-    "description": "MSI - NVIDIA GeForce RTX 5070 12G VENTUS 3X OC 12GB GDDR7 PCI Express Gen 5 ",
+    "image": "https://i.ebayimg.com/images/g/V0gAAeSwHahqqdST/s-l225.jpg",
+    "description": "PNY NVIDIA GeForce RTX™ 5070 OC Triple Fan, Graphics Card 12GB GDDR7",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 6951,
+        "price": 7002,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/820107462425?_skw=RTX+5070&hash=itembef236c719:g:MpEAAeSw86lpzW99",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/287588906744?_skw=RTX+5070&hash=item42f5a276f8:g:V0gAAeSwHahqqdST",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 6951,
+    "lowestPrice": 7002,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|277352801036|0",
-    "name": "Acer Predator Helios Neo 16S AI 16\" i9 275HX 2S RTX 5070 Ti 32GB 1TB SSD Refurb",
+    "id": "v1|267490948937|0",
+    "name": "Acer Nitro 60 i7-14700F 14th Gen 32GB 1TB SSD RTX 5070 Win11 Desktop Refurb 2025",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/lhcAAeSw4TBp0-D3/s-l225.jpg",
-    "description": "Acer Predator Helios Neo 16S AI 16\" i9 275HX 2S RTX 5070 Ti 32GB 1TB SSD Refurb",
+    "image": "https://i.ebayimg.com/images/g/YY8AAeSwVnxqPUyP/s-l225.jpg",
+    "description": "Acer Nitro 60 i7-14700F 14th Gen 32GB 1TB SSD RTX 5070 Win11 Desktop Refurb 2025",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 16740,
+        "price": 14779,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/277352801036?_skw=RTX+5070&hash=item409383e30c:g:lhcAAeSw4TBp0-D3",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/267490948937?_skw=RTX+5070&hash=item3e47b3f749:g:YY8AAeSwVnxqPUyP",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 16740,
+    "lowestPrice": 14779,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|336787006890|0",
-    "name": "GIGABYTE GeForce RTX 5070 GAMING OC 12G GDDR7 GV-N5070GAMING OC-12GD Open Box",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/sfMAAeSwa5VqobgF/s-l225.jpg",
-    "description": "GIGABYTE GeForce RTX 5070 GAMING OC 12G GDDR7 GV-N5070GAMING OC-12GD Open Box",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 6765,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/336787006890?_skw=RTX+5070&hash=item4e6a11e5aa:g:sfMAAeSwa5VqobgF",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 6765,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|257260986863|0",
-    "name": "Acer Nitro V 16\" Gaming Laptop WUXGA NVIDIA RTX 5070 16GB 512GB SSD Core 7",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/JSUAAeSwy6hpl6yi/s-l225.jpg",
-    "description": "Acer Nitro V 16\" Gaming Laptop WUXGA NVIDIA RTX 5070 16GB 512GB SSD Core 7",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 11663,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/257260986863?_skw=RTX+5070&hash=item3be5f321ef:g:JSUAAeSwy6hpl6yi&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGYtYSKbMkQUhpS5cht0kk9VSAR1INIRoUsZleLpcQxsjzRUT4Xkz%2BjfNqIGU9epJ0w3Lci%2BTXCOy8Z0afVLAjl49bvH%2FyGHHUw6rlxQ9NxKWlzq6dyvZpqbBXc4Yt2Gl4DRJXp6zScSXtE%2BzPsjpkqKgpPkiVoUEI3nh41pJfpZHz9xlBcB7pYXU2SuCjYgkIs9tNlCerGwXLzv8Y1Vkb0KZuvBYYJ0ozNs8qurckz5qWVBp5lZ1jx1r0PUSDL5DDqqLd1sXl9bcbny%2B5T8inDh",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 11663,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|298537240332|0",
@@ -2615,19 +2589,45 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 10917,
+        "price": 10922,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/298537240332?_skw=RTX+5070&hash=item458234c70c:g:~QkAAeSwHjVqZ5vg&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGZA5KHXlS6YP3amR5iGHXN33vXwYcEJUAcAPOUGZhXuYLefhXOYP4i98GpCXu1y5TflEfAB4qNGc2HyUX%2FzPX%2FFnQnQ5ZRFZ9zscIbi2aki1LO2Q3XlkG5jO%2BMwtJdHG3RZuonBSqKjR1KUuV%2B5rki9tYZMQy%2FDcojH%2BNL%2F5UU9iEQXfn8pS3NUWuzyZ71DLfOebqbVKMo9nSCfK9st8xlA6zNPPEhCjn4bIoVpLowIAYTtJSW%2FB%2FsVzdveEiEdqcJNQQtbX3Bwx%2BclZGm1uEDL",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/298537240332?_skw=RTX+5070&hash=item458234c70c:g:~QkAAeSwHjVqZ5vg&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGZA5KHXlS6YP3amR5iGHXN33vXwYcEJUAcAPOUGZhXuYLefhXOYP4i98GpCXu1y5TflEfAB4qNGc2HyUX%2FzPX%2FFnQnQ5ZRFZ9zscIbi2aki1LO2Q3XlkG5jO%2BMwtJdHG3TV25n9I6JQwVm4GBtZS1n8sZhRMLQIkOIGwBnnXHWmfhtjYaHxVqmkl1b7347FBtDj6iYBdPyvmS93S1ouYS1UMon3PmBnT9iJgFDWDLjCf62iOmF6CMGBvdQMQmhH0QKk%2BDMq8rdJ7YP1DF4TXeIF",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 10917,
+    "lowestPrice": 10922,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|168653906514|0",
+    "name": "Alienware 16\" Gaming Laptop | RTX 5070 | Intel Ultra 9| 32GB RAM | 2TB",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/0igAAeSwk1JqlgHY/s-l225.jpg",
+    "description": "Alienware 16\" Gaming Laptop | RTX 5070 | Intel Ultra 9| 32GB RAM | 2TB",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 17728,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/168653906514?_skw=RTX+5070&hash=item27448e6252:g:0igAAeSwk1JqlgHY&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGb0lXtFyqXOJI%2BSebQVubl61S2C2Md7WAgNsrxyU2TCbebY1YQNWDxmXNgj2oxcZxVEs7buTXxYlQWw4stO%2BDEH0GgShXySFKjWcZia23h0o7Wm%2Fv50hpS01O9D4fuXrp%2BpsRzRhxpZXkQ4EzKGEnwL6jH3ktivvZyEXLxUOizq22KGPouILxXl42N4e7aRrn2jqpUCYx5eTxl3NRA0xlqicmfZjdnyCRn1aWG3AQvFL8%2FP0wf9kM16WQrSEZmAM%2BGqP%2FIWE3hoBbQwLAR6uxM29CwTa%2FZ4oQGrY4ODhzrRmA%3D%3D",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 17728,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|407214092058|0",
@@ -2641,201 +2641,19 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 3919,
+        "price": 3921,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
         "url": "https://www.ebay.com/itm/407214092058?_skw=RTX+5060+Ti&hash=item5ecfd9ef1a:g:EVQAAeSw03ZqpuIs",
-        "updatedAt": "2026-09-15"
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 3919,
+    "lowestPrice": 3921,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|407214122496|0",
-    "name": "New PNY GeForce RTX 5060 Ti OC 8GB GDDR7 Graphics Card VCG5060T8TFXXPB1-O",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/77gAAeSwDK9qpuX4/s-l225.jpg",
-    "description": "New PNY GeForce RTX 5060 Ti OC 8GB GDDR7 Graphics Card VCG5060T8TFXXPB1-O",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 4199,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/407214122496?_skw=RTX+5060+Ti&hash=item5ecfda6600:g:77gAAeSwDK9qpuX4",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 4199,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|198628276156|0",
-    "name": "GIGABYTE GeForce RTX 5060 Ti Gaming OC 16GB GDDR7 Graphics Card",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/PhsAAeSwZoJqoJwv/s-l225.jpg",
-    "description": "GIGABYTE GeForce RTX 5060 Ti Gaming OC 16GB GDDR7 Graphics Card",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 6064,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/198628276156?_skw=RTX+5060+Ti&hash=item2e3f2af7bc:g:PhsAAeSwZoJqoJwv",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 6064,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|820122540384|0",
-    "name": "ASUS RTX 5060 Ti 16GB OC DUAL-RTX5060TI-O16G Graphics Card",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/Yq4AAeSwN1lqpt3j/s-l225.jpg",
-    "description": "ASUS RTX 5060 Ti 16GB OC DUAL-RTX5060TI-O16G Graphics Card",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 6531,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/820122540384?_skw=RTX+5060+Ti&hash=itembef31cd960:g:Yq4AAeSwN1lqpt3j",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 6531,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|128022124238|0",
-    "name": "Nvidia GeForce RTX 5060 Ti 8GB GDDR7 Lenovo OEM Graphics Card",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/gCoAAeSwHdJqdiKu/s-l225.jpg",
-    "description": "Nvidia GeForce RTX 5060 Ti 8GB GDDR7 Lenovo OEM Graphics Card",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 4571,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/128022124238?_skw=RTX+5060+Ti&hash=item1dceb696ce:g:gCoAAeSwHdJqdiKu",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 4571,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|298667669854|0",
-    "name": "MSI SHADOW GeForce RTX 5060 Ti 16GB GDDR7 PCI Express 5.0 Graphics Card 2X OC",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/IcMAAeSw2DJqpaEq/s-l225.jpg",
-    "description": "MSI SHADOW GeForce RTX 5060 Ti 16GB GDDR7 PCI Express 5.0 Graphics Card 2X OC",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 7362,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/298667669854?_skw=RTX+5060+Ti&hash=item4589faf95e:g:IcMAAeSw2DJqpaEq",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 7362,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|800020842561|0",
-    "name": "MSI VANGUARD GeForce RTX 5060 Ti 16GB GDDR7 PCI Express 5.0 x 16 (use x8) Graphi",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/k3kAAeSwGgJqBpOZ/s-l225.jpg",
-    "description": "MSI VANGUARD GeForce RTX 5060 Ti 16GB GDDR7 PCI Express 5.0 x 16 (use x8) Graphi",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 5766,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/800020842561?_skw=RTX+5060+Ti&hash=itemba44f54841:g:k3kAAeSwGgJqBpOZ",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 5766,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|307180764294|0",
-    "name": "Gigabyte Nvidia GeFore RTX 5060 Ti 8GB GDDR7 Graphics Card GPU",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/LuwAAeSwZkVqqWPB/s-l225.jpg",
-    "description": "Gigabyte Nvidia GeFore RTX 5060 Ti 8GB GDDR7 Graphics Card GPU",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 4199,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/307180764294?_skw=RTX+5060+Ti&hash=item4785667c86:g:LuwAAeSwZkVqqWPB",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 4199,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|257716765074|0",
@@ -2849,97 +2667,71 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 4479,
+        "price": 4481,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/257716765074?_skw=RTX+5060+Ti&hash=item3c011dc192:g:iGUAAeSw9KNqlx18&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYJXli5CmIzRBiIgg3jOqJg%2Fq3dBoK7FzpchwygcgJ6KgBFiI2kIoFiTJIILqTsNrzJ10RE5N9jbBlS32bD8NEO0ccbNKeIhJ%2F12a3htz6yMRCE%2FYnK4Y5%2B4p6V3D%2BGuSX%2BPHSTBXXIDdqo6cDCyYKFWOFoUEtdEisfmCjRbASEybUM5IIzEveCHYPxpB2%2FBFtpE1YBq5qBISwk%2FvlbD4JJubc5EBk0IpiWKCWFgP7HcysVdvDy7ssmll4kFUwDgUAze0eM18qYC4BUGAU0o5PACoCI5sh8vyjhjNkTVvjssw%3D%3D",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/257716765074?_skw=RTX+5060+Ti&hash=item3c011dc192:g:iGUAAeSw9KNqlx18&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYJXli5CmIzRBiIgg3jOqJg%2Fq3dBoK7FzpchwygcgJ6KgBFiI2kIoFiTJIILqTsNrzJ10RE5N9jbBlS32bD8NEO0ccbNKeIhJ%2F12a3htz6yMRCE%2FYnK4Y5%2B4p6V3D%2BGuSUmVAPlBY0d9QV5tM8bhJobLy4QkjC3%2Fh0sbPOrpt6oBdyBpfxwCu8X8oxzDuNwpPJFtIazBh2sfOxpengcSekkWi7d%2BdHLVrHrIFaG7jcQmeaPnbFOvhVV9BzmEI8sA0cjUt6iamhU0%2BFR%2Bg2ZFeLPBJ5QuZ8XkDzRTJw7bGpj%2FA%3D%3D",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 4479,
+    "lowestPrice": 4481,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|278378101326|0",
-    "name": "New/Sealed MSI Ventus 3X OC GeForce RTX 5060 8GB GDDR7 GPU Graphics Card",
+    "id": "v1|377498165750|0",
+    "name": "MSI GAMING RTX 5060 TI 8G, OC GRAPHICS CARD - 8GB GDDR7, NVIDIA -  BLACK",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/xBMAAeSwtLZqqYHv/s-l225.jpg",
-    "description": "New/Sealed MSI Ventus 3X OC GeForce RTX 5060 8GB GDDR7 GPU Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/VvcAAeSwmuxqqcI2/s-l225.jpg",
+    "description": "MSI GAMING RTX 5060 TI 8G, OC GRAPHICS CARD - 8GB GDDR7, NVIDIA -  BLACK",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 3910,
+        "price": 5085,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/278378101326?_skw=RTX+5060+Ti&hash=item40d0a0ba4e:g:xBMAAeSwtLZqqYHv&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGbpAPtz4Dqr9q08n%2FA6m1zb05b3Iv60W8O%2BAL8UJ8B6qIclF3c5cIaN8I8B%2F2C2HaVRZhPGel2TXrHTNcrc2djUZFKGYly84KY1%2B8MzF2Ic1C%2BXaOu1zDt7oSuTB%2B2qp8yejRkQK0Vvf65sKhmkaf2Sd6eJ8AMyB%2BdRLEAtkRfq2RSDLZDzRY6OO0lPqsFueiApYXab8ilx4JYOsoDAHOudRSKYUcOz6YtfR708--pgPYMWOxd8JziGw%2BFh%2BEqhIIC1lR7NoDzXioIcygyqMLz70zPBU4sTVaKIo6nBrPpIfQ%3D%3D",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/377498165750?_skw=RTX+5060+Ti&hash=item57e4a4e1f6:g:VvcAAeSwmuxqqcI2&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZGQQgxdrR9KQa9r5GOrUYlDfwe%2FrPIKYmaWXFZwgp5VFpMF7EGq6wtYxi8Kaf2bRBx4RslIBkJbYU9kcTx%2F1QmK7OAkm9IE4UCHPJGlb8IIfYXqePQKGIuE3YI7ZqUrPl2szLUxkbYrq2QTG4TLe5jgyvmpGMwB1pIwBAg%2FdwDa16qzhfeGnp5%2FplhEhxljUaCUIQhuzb8R6j0emgNljI7qm3CXRor%2FEwkgaupsQZtM7rizIB0x5aOglmoHdekw2LtohSa7m82QDTxdsVRcOS7tiP817k3f8akKGfwNL4yYA%3D%3D",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 3910,
+    "lowestPrice": 5085,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|336702357417|0",
-    "name": "GIGABYTE GeForce RTX 5060 GAMING OC V2 8G Graphics Card, 8GB 128-bit GDDR7, PCIe",
+    "id": "v1|820122540384|0",
+    "name": "ASUS RTX 5060 Ti 16GB OC DUAL-RTX5060TI-O16G Graphics Card",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/rO4AAeSwxhdqYMWB/s-l225.jpg",
-    "description": "GIGABYTE GeForce RTX 5060 GAMING OC V2 8G Graphics Card, 8GB 128-bit GDDR7, PCIe",
+    "image": "https://i.ebayimg.com/images/g/Yq4AAeSwN1lqpt3j/s-l225.jpg",
+    "description": "ASUS RTX 5060 Ti 16GB OC DUAL-RTX5060TI-O16G Graphics Card",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 3844,
+        "price": 6535,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/336702357417?_skw=RTX+5060&hash=item4e65063fa9:g:rO4AAeSwxhdqYMWB",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/820122540384?_skw=RTX+5060+Ti&hash=itembef31cd960:g:Yq4AAeSwN1lqpt3j&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYcqICRk2q1P6rBEoIa0VLNbWnX7LjgnzQM9KjQOKOXP9b2cqG4q3q14Tc%2By%2FjU5y%2FQoNKzEDgTAVXFLUc7DHpcyIHn%2FiIoP82ghAbZK5RwYI0rdp9ruLwPAXhNhLfSQhi3lCs2w%2B%2FkyoocWtbaYWDFoS3f81AeE%2BPKzv3edJHy0WFr0DANsB8BtlbpXDhXHdd4fVl4R3E8nXBqnJ9b9XPWuNsGZ0FYspdWYW90T3WfzCTiAlt8daX%2FDtP2bevhprzSitWsxvYTDnhnv%2B0ijFV2geKTATVjWJ9G3PYvF6TJ5A%3D%3D",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 3844,
+    "lowestPrice": 6535,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|407214092058|0",
-    "name": "New PNY GeForce RTX 5060 Ti OC 8GB GDDR7 Graphics Card VCG5060T8TFXXPB1-O",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/EVQAAeSw03ZqpuIs/s-l225.jpg",
-    "description": "New PNY GeForce RTX 5060 Ti OC 8GB GDDR7 Graphics Card VCG5060T8TFXXPB1-O",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 3919,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/407214092058?_skw=RTX+5060&hash=item5ecfd9ef1a:g:EVQAAeSw03ZqpuIs",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 3919,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|407214122496|0",
@@ -2953,45 +2745,201 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 4199,
+        "price": 4201,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/407214122496?_skw=RTX+5060&hash=item5ecfda6600:g:77gAAeSwDK9qpuX4",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/407214122496?_skw=RTX+5060+Ti&hash=item5ecfda6600:g:77gAAeSwDK9qpuX4",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 4199,
+    "lowestPrice": 4201,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|128069461916|0",
-    "name": "NEW SEALED PNY Nvidia RTX 5060 8GB GDDR7 Graphics Card GPU",
+    "id": "v1|800666470784|0",
+    "name": "BLACK - MSI VENTUS GEFORCE RTX 5060 TI 16GB GDDR7 PCI EXPRESS 5.0 X 16 (USE X8)",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/KvoAAeSwdy9qkhNK/s-l225.jpg",
-    "description": "NEW SEALED PNY Nvidia RTX 5060 8GB GDDR7 Graphics Card GPU",
+    "image": "https://i.ebayimg.com/images/g/-nQAAeSwmuBqqXOF/s-l225.jpg",
+    "description": "BLACK - MSI VENTUS GEFORCE RTX 5060 TI 16GB GDDR7 PCI EXPRESS 5.0 X 16 (USE X8)",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 3965,
+        "price": 6068,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/128069461916?_skw=RTX+5060&hash=item1dd188e79c:g:KvoAAeSwdy9qkhNK",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/800666470784?_skw=RTX+5060+Ti&hash=itemba6b70c980:g:-nQAAeSwmuBqqXOF",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 3965,
+    "lowestPrice": 6068,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|188935361345|0",
+    "name": "ZOTAC GAMING GeForce RTX 5060 Ti Twin Edge OC 8GB",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/ImsAAeSwK45qqb15/s-l225.jpg",
+    "description": "ZOTAC GAMING GeForce RTX 5060 Ti Twin Edge OC 8GB",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 4948,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/188935361345?_skw=RTX+5060+Ti&hash=item2bfd6cd341:g:ImsAAeSwK45qqb15",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 4948,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|267770931811|0",
+    "name": "ZOTAC GeForce RTX 5060 Ti Twin Edge OC 8GB GDDR7 Ray Tracing DLSS 4",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/A1MAAeSwXSZqk5Je/s-l225.jpg",
+    "description": "ZOTAC GeForce RTX 5060 Ti Twin Edge OC 8GB GDDR7 Ray Tracing DLSS 4",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 3828,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/267770931811?_skw=RTX+5060+Ti&hash=item3e58642a63:g:A1MAAeSwXSZqk5Je",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 3828,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|137741223037|0",
+    "name": "V536 - MSI GAMING RTX 5060 TI 8G OC GRAPHICS CARD 8GB GDDR7 912",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/p7UAAeSwMqpqqcIs/s-l225.jpg",
+    "description": "V536 - MSI GAMING RTX 5060 TI 8G OC GRAPHICS CARD 8GB GDDR7 912",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 5080,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/137741223037?_skw=RTX+5060+Ti&hash=item201204447d:g:p7UAAeSwMqpqqcIs&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGb3bBYsVidjUBCsSxgN0Fqt3eTcvI38ebsRLF3sBiMCb%2BgbG8rNG35R37mJyJ4REnuPEbjWQhvc4GrQ99%2FBHCLRVh527bZkwkMYBrqwbvEIx3PbmcjJlkUanlTh%2F5XQhUq4WpyC9gtMM01Kng26NdfXgNhjfB8FkicqDgIPUogZB89iwxQdm737pTN3NLZd2B7spnWGL%2BdGUrC9%2Bbgv1CTeKi5JEZPyrRbc3pFTQPiMPuHlTMB4eM88d5wiPbJAZhAEz1QZ4%2Fe%2By2%2FqnghkZd7%2FO%2Fx0JN4NoFi9fOI5QTadpQ%3D%3D",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 5080,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|257725861640|0",
+    "name": "PNY NVIDIA GeForce RTX 5060 Ti OC Dual Fan 8GB GDDR7 PCIe 5.0 Graphics Card -New",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/IygAAeSwaGNqnHiV/s-l225.jpg",
+    "description": "PNY NVIDIA GeForce RTX 5060 Ti OC Dual Fan 8GB GDDR7 PCIe 5.0 Graphics Card -New",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 4481,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/257725861640?_skw=RTX+5060+Ti&hash=item3c01a88f08:g:IygAAeSwaGNqnHiV&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGag8YUFp%2FRFy7xfHiTd7KV4SY8A0DHc3BHrIr93mTpLPWXEnRuq7rIbJ8nk8%2F%2BE4y%2BWH1kt9QMWUXwIMNuHZRjagKA27O32J%2FXCTcj3d9HQZlWm2LkQxlu7VwJbYbEj7bcC4bqkTT5soAyoC2bY9aBfP5g41pXtvI8XnbdxY18yXpKMMRIQdIJiQS1WvLFKNL%2F75riRHSmaI2KcACrEPyHZw4ugT1D0U9iiPx4DVLXbgNQnLD2PkL0Gb1lg%2BWDkjN2gfI%2Bm4ZVYoYBAGhBgeZ%2FC%2FIUAyE6cmPw5gnjC0xrnEA%3D%3D",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 4481,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|336702357417|0",
+    "name": "GIGABYTE GeForce RTX 5060 GAMING OC V2 8G Graphics Card, 8GB 128-bit GDDR7, PCIe",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/rO4AAeSwxhdqYMWB/s-l225.jpg",
+    "description": "GIGABYTE GeForce RTX 5060 GAMING OC V2 8G Graphics Card, 8GB 128-bit GDDR7, PCIe",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 3846,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/336702357417?_skw=RTX+5060&hash=item4e65063fa9:g:rO4AAeSwxhdqYMWB",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 3846,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|407214092058|0",
+    "name": "New PNY GeForce RTX 5060 Ti OC 8GB GDDR7 Graphics Card VCG5060T8TFXXPB1-O",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/EVQAAeSw03ZqpuIs/s-l225.jpg",
+    "description": "New PNY GeForce RTX 5060 Ti OC 8GB GDDR7 Graphics Card VCG5060T8TFXXPB1-O",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 3921,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/407214092058?_skw=RTX+5060&hash=item5ecfd9ef1a:g:EVQAAeSw03ZqpuIs",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 3921,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|398398295898|0",
@@ -3005,45 +2953,97 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 3732,
+        "price": 3641,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
         "url": "https://www.ebay.com/itm/398398295898?_skw=RTX+5060&hash=item5cc2638f5a:g:b1sAAeSw-KZqqI-3",
-        "updatedAt": "2026-09-15"
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 3732,
+    "lowestPrice": 3641,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|198628276156|0",
-    "name": "GIGABYTE GeForce RTX 5060 Ti Gaming OC 16GB GDDR7 Graphics Card",
+    "id": "v1|407214122496|0",
+    "name": "New PNY GeForce RTX 5060 Ti OC 8GB GDDR7 Graphics Card VCG5060T8TFXXPB1-O",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/PhsAAeSwZoJqoJwv/s-l225.jpg",
-    "description": "GIGABYTE GeForce RTX 5060 Ti Gaming OC 16GB GDDR7 Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/77gAAeSwDK9qpuX4/s-l225.jpg",
+    "description": "New PNY GeForce RTX 5060 Ti OC 8GB GDDR7 Graphics Card VCG5060T8TFXXPB1-O",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 6064,
+        "price": 4201,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/198628276156?_skw=RTX+5060&hash=item2e3f2af7bc:g:PhsAAeSwZoJqoJwv",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/407214122496?_skw=RTX+5060&hash=item5ecfda6600:g:77gAAeSwDK9qpuX4",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 6064,
+    "lowestPrice": 4201,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|128069461916|0",
+    "name": "NEW SEALED PNY Nvidia RTX 5060 8GB GDDR7 Graphics Card GPU",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/KvoAAeSwdy9qkhNK/s-l225.jpg",
+    "description": "NEW SEALED PNY Nvidia RTX 5060 8GB GDDR7 Graphics Card GPU",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 3967,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/128069461916?_skw=RTX+5060&hash=item1dd188e79c:g:KvoAAeSwdy9qkhNK",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 3967,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|206555436625|0",
+    "name": "ASUS GEFORCE RTX 5060 OC 8GB Edition Memory PCIe 5.0",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/UfkAAeSwSaNqp14R/s-l225.jpg",
+    "description": "ASUS GEFORCE RTX 5060 OC 8GB Edition Memory PCIe 5.0",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 3725,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/206555436625?_skw=RTX+5060&hash=item3017a9d651:g:UfkAAeSwSaNqp14R",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 3725,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|820131395046|0",
@@ -3057,71 +3057,71 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 3592,
+        "price": 3594,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
         "url": "https://www.ebay.com/itm/820131395046?_skw=RTX+5060&hash=itembef3a3f5e6:g:Y6gAAeSwzmBqqaMX",
-        "updatedAt": "2026-09-15"
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 3592,
+    "lowestPrice": 3594,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|366671091033|0",
-    "name": "ASUS Prime GeForce RTX 5060 OC 8GB GDDR7 Graphics Card PCIe 5.0 Tested Working",
+    "id": "v1|198644435500|0",
+    "name": "GIGABYTE Windforce NVIDIA  GeForce RTX 5060 8GB GDDR7",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/JOMAAeSweKZqqZBj/s-l225.jpg",
-    "description": "ASUS Prime GeForce RTX 5060 OC 8GB GDDR7 Graphics Card PCIe 5.0 Tested Working",
+    "image": "https://i.ebayimg.com/images/g/1dMAAeSwKcBqqeKQ/s-l225.jpg",
+    "description": "GIGABYTE Windforce NVIDIA  GeForce RTX 5060 8GB GDDR7",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 3732,
+        "price": 3454,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/366671091033?_skw=RTX+5060&hash=item555f4cd559:g:JOMAAeSweKZqqZBj",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/198644435500?_skw=RTX+5060&hash=item2e40218a2c:g:1dMAAeSwKcBqqeKQ",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 3732,
+    "lowestPrice": 3454,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|278378101326|0",
-    "name": "New/Sealed MSI Ventus 3X OC GeForce RTX 5060 8GB GDDR7 GPU Graphics Card",
+    "id": "v1|237045654344|537450113706",
+    "name": "Gaming PC Desktop Computer i7 Ryzen 7 Up to 32GB RAM 2TB SSD RTX 5060 Win11 WiFi",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/xBMAAeSwtLZqqYHv/s-l225.jpg",
-    "description": "New/Sealed MSI Ventus 3X OC GeForce RTX 5060 8GB GDDR7 GPU Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/pA8AAeSwNoNqmwwH/s-l225.jpg",
+    "description": "Gaming PC Desktop Computer i7 Ryzen 7 Up to 32GB RAM 2TB SSD RTX 5060 Win11 WiFi",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 3910,
+        "price": 3267,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/278378101326?_skw=RTX+5060&hash=item40d0a0ba4e:g:xBMAAeSwtLZqqYHv&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGbpAPtz4Dqr9q08n%2FA6m1zb05b3Iv60W8O%2BAL8UJ8B6qIclF3c5cIaN8I8B%2F2C2HaVRZhPGel2TXrHTNcrc2djUZFKGYly84KY1%2B8MzF2Ic1C%2BXaOu1zDt7oSuTB%2B2qp8xlj2pkMx%2FtHhUNvWmt2juYp2utmQt5opC6HUiEF7LCN%2BO5V9YamDw90PfVUekd%2FposIDt%2BTdgO2PssA%2BXojeqzmwlp2beM0%2FJHdWBlo3R7Z0pOJZPGbh347j04HqveNgYbB0oxQvOYl06RuOMxTOlU",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/237045654344?_skw=RTX+5060&hash=item373105a348:g:pA8AAeSwNoNqmwwH&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGZ7r5LNwzJcs475KYJ438zbJQJ8I0wUCsXk%2BEIxmVDazA3GlfAH2yIrdDZwXNLAUDMoaTSUUIBV3Rm71pyGZqBTEeVKKDDw%2FGxOrILAJsZOKUz6Dx%2FzTpa7x7fqSh%2B96aqgFFfo6NEc2DvTmFtoMDSTPTKy8g46mgTDpOjirnLQhi1czLk8sAOhOIAyxLyCBcYjklfObnWE%2B%2F7gYQ6Uxxp8wZCMRRJWGcCNMlkeYrTRTMG%2BSfotR1Gm%2FagC%2BIAGqznd15W6pxsyp%2FXsNDN5MJSY",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 3910,
+    "lowestPrice": 3267,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|336719563079|0",
@@ -3135,19 +3135,19 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 3864,
+        "price": 3866,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/336719563079?_skw=RTX+5060&hash=item4e660cc947:g:0mAAAeSwHIVqo8G8&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGa2iYrRqQhdpXE%2B8o5KdZ%2FoIr3PQvA%2Bpf19Mx67sVHGCEGto1L97aGt6Z%2Bqr9NzYwbNOH2l959hsUKR8dylbsP10PUGIWq1BRonTWR1yB1G7iuQ6ttHqc20qJW6eD7bcrBDSbA1RTJ2DzoORcrs%2FeGlkKU4tZmL9bYYO7RwqO94FpLhb7PA7%2BJgBpCEtsFFclFU0ZgraqecDQhLstsCz5hlfg2KPUI3HtcMTW%2FBJwzReeGWwzsLwFhQ5VhBqahqabAgoc7ZVrX4%2FLSaVj22sR7K",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/336719563079?_skw=RTX+5060&hash=item4e660cc947:g:0mAAAeSwHIVqo8G8&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGa2iYrRqQhdpXE%2B8o5KdZ%2FoIr3PQvA%2Bpf19Mx67sVHGCEGto1L97aGt6Z%2Bqr9NzYwbNOH2l959hsUKR8dylbsP10PUGIWq1BRonTWR1yB1G7iuQ6ttHqc20qJW6eD7bcrD1irIRqKW2EJJXTPhJKtyhTWSdVj1FSvx6sEOfVubHbMST4RCNQZzBay9ft9aVrEdCCGTVSsSlUqer8E0CBb1ScZ%2BRu6ME%2BKizGF6X9VWAIjwvw2oQPuAku4gpiJNUX%2BpXMGc%2F14R1y%2BkPu0QG4t95",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 3864,
+    "lowestPrice": 3866,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|366668173573|0",
@@ -3161,123 +3161,19 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 6298,
+        "price": 6301,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
         "url": "https://www.ebay.com/itm/366668173573?_skw=RX+9070&hash=item555f205105:g:IOcAAeSwf8pqp8sf",
-        "updatedAt": "2026-09-15"
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 6298,
+    "lowestPrice": 6301,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|336787623439|0",
-    "name": "ASRock RX9070GRESLD12GO Radeon RX 9070 GRE Steel Legend Dark 12GB OC (rx9070gre",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/4LMAAeSwlo1qoj9y/s-l225.jpg",
-    "description": "ASRock RX9070GRESLD12GO Radeon RX 9070 GRE Steel Legend Dark 12GB OC (rx9070gre",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 4758,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/336787623439?_skw=RX+9070&hash=item4e6a1b4e0f:g:4LMAAeSwlo1qoj9y&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGbPynZwv22OPNyPzi8%2FEHgEjb9VPp2m9r0mT%2Flc7MgOWu1V8Rc5PbJA72YufufTCP%2BXPTCuItQmlc%2FmAbkbVCOqAWh92aYYKR7j6IXRgz53lHXKCgyDVvsCCZJt%2BV5fgmHvU%2BpEYgpBobtbnm%2BKNCTxa87Fh04PUEHqXDt8sHDSuBlMG2Buu7B4q6HK81P9IROiRusbh9FX%2FG7g3JOQe7aJs08KdLm40uF780yOL4%2FQdXMUoabGXQK7w7me6MKO0vI4ziiHZ44lUksYguiVeXFH",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 4758,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|128080571228|0",
-    "name": "ASRock AMD Radeon RX 9070 XT Steel Legend GPU | 16 GB - White - Brand New in Box",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/WT4AAeSw53VqNXaz/s-l225.jpg",
-    "description": "ASRock AMD Radeon RX 9070 XT Steel Legend GPU | 16 GB - White - Brand New in Box",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 7231,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/128080571228?_skw=RX+9070&hash=item1dd2326b5c:g:WT4AAeSw53VqNXaz",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 7231,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|128081285986|0",
-    "name": "XFX Swift AMD Radeon RX 9070 OC 16GB Graphics Card RX-97SWFB3B9",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/v0YAAeSwHYBqqYIs/s-l225.jpg",
-    "description": "XFX Swift AMD Radeon RX 9070 OC 16GB Graphics Card RX-97SWFB3B9",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 5878,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/128081285986?_skw=RX+9070&hash=item1dd23d5362:g:v0YAAeSwHYBqqYIs",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 5878,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|128080075906|0",
-    "name": "ASRock RX 9070 Challenger 16GB",
-    "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/FsYAAeSwtMVqqJVX/s-l225.jpg",
-    "description": "ASRock RX 9070 Challenger 16GB",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 6158,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/128080075906?_skw=RX+9070&hash=item1dd22adc82:g:FsYAAeSwtMVqqJVX",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 6158,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|287565866741|0",
@@ -3291,175 +3187,253 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 6709,
+        "price": 6712,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/287565866741?_skw=RX+9070&hash=item42f442e6f5:g:Wk0AAeSw58pqmy0P",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/287565866741?_skw=RX+9070&hash=item42f442e6f5:g:Wk0AAeSw58pqmy0P&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGaclU8YT0UdRPElyEj8xrNM%2F87Ow8aDTuH8ue8ysgvnuQ18tU3BN1jX%2FxVvaaPRiDkLbVW0AMozDvhHwcfAhZwCKgXmk5SfQ5pFtLiLYjAvwekRb68USvGxV4Ti9W1Sb7tw3YDiB0Bmf%2B4Pwe0mX7IVTW1GixCnREA8g8SpIjrkxM8pHUndHTsj8G3ptmM48xmlM1JGnGRdyiIgeU8yNFnv%2BaQu2SenuDxaw3J0RPyBO5%2F88LNlyib70Gma%2BwBvqCLWpgsluOHsHF2nLDG3CsoX",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 6709,
+    "lowestPrice": 6712,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|128076076012|0",
-    "name": "NEW SEALED ASUS AMD Radeon RX 9070 GRE (NON-XT) Gaming 12GB Graphics Card GPU",
+    "id": "v1|128081285986|0",
+    "name": "XFX Swift AMD Radeon RX 9070 OC 16GB Graphics Card RX-97SWFB3B9",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/sHcAAeSwPlBqoY5t/s-l225.jpg",
-    "description": "NEW SEALED ASUS AMD Radeon RX 9070 GRE (NON-XT) Gaming 12GB Graphics Card GPU",
+    "image": "https://i.ebayimg.com/images/g/v0YAAeSwHYBqqYIs/s-l225.jpg",
+    "description": "XFX Swift AMD Radeon RX 9070 OC 16GB Graphics Card RX-97SWFB3B9",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 5598,
+        "price": 5881,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/128076076012?_skw=RX+9070&hash=item1dd1edd3ec:g:sHcAAeSwPlBqoY5t",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/128081285986?_skw=RX+9070&hash=item1dd23d5362:g:v0YAAeSwHYBqqYIs",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 5598,
+    "lowestPrice": 5881,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|127990464620|0",
-    "name": "NEW XFX Swift AMD Radeon RX 9070 OC Triple Fan Graphics Card 16GB RX-97SWFB3BA",
+    "id": "v1|267786742592|0",
+    "name": "SHiPS 10/1! ASUS Prime Radeon RX 9070 XT 16GB GDDR6 OC Edition Graphics Card",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/0KcAAeSwNXNqjyZn/s-l225.jpg",
-    "description": "NEW XFX Swift AMD Radeon RX 9070 OC Triple Fan Graphics Card 16GB RX-97SWFB3BA",
+    "image": "https://i.ebayimg.com/images/g/IiwAAeSwhFRqjZ0n/s-l225.jpg",
+    "description": "SHiPS 10/1! ASUS Prime Radeon RX 9070 XT 16GB GDDR6 OC Edition Graphics Card",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 6345,
+        "price": 6525,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/127990464620?_skw=RX+9070&hash=item1dccd3806c:g:0KcAAeSwNXNqjyZn",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/267786742592?_skw=RX+9070&hash=item3e59556b40:g:IiwAAeSwhFRqjZ0n",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 6345,
+    "lowestPrice": 6525,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|377495651914|0",
-    "name": "ASUS PRIME RADEON™ RX 9070 GRE EVO OC EDITION GRAPHICS CARD PCIE 5.0 - BLACK",
+    "id": "v1|128080571228|0",
+    "name": "ASRock AMD Radeon RX 9070 XT Steel Legend GPU | 16 GB - White - Brand New in Box",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/yRIAAeSwEutqqI5K/s-l225.jpg",
-    "description": "ASUS PRIME RADEON™ RX 9070 GRE EVO OC EDITION GRAPHICS CARD PCIE 5.0 - BLACK",
+    "image": "https://i.ebayimg.com/images/g/WT4AAeSw53VqNXaz/s-l225.jpg",
+    "description": "ASRock AMD Radeon RX 9070 XT Steel Legend GPU | 16 GB - White - Brand New in Box",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 6103,
+        "price": 7235,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/377495651914?_skw=RX+9070&hash=item57e47e864a:g:yRIAAeSwEutqqI5K&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGasXVZlvuYs%2F1yIuRICgt4djqHfZ2cNpJJQCNi6rv9lIeA%2Fdf6Pqs6zDioayWSkQxiuxGUolhQ3CLtZ26eYU9dNelfbiLOPR5388U95scv3fjloku3LUvgaXZf1SCFkDC%2B4vmROqfAPuvWyCxQyd00M7RbYMhHPYll%2FL8OzM1lkt671n5ECt4KpFV21Yf7IFsCH2M4Rdz%2FBIwbS0mIpamvUnX%2BGUBO9cbbJVwDPMs6YHEWdKxRbtBiSIpzMQYO1w0Z9PCBMjtwxVvYrPG%2F3gOw3",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/128080571228?_skw=RX+9070&hash=item1dd2326b5c:g:WT4AAeSw53VqNXaz",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 6103,
+    "lowestPrice": 7235,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|137737628915|0",
-    "name": "BLACK - ASUS PRIME RADEON RX 9070 GRE EVO OC EDITION GRAPHICS CARD PCIE 5.0",
+    "id": "v1|178501521508|0",
+    "name": "rx 9070 16gb gpu",
     "category": "Graphics Card",
-    "image": "https://i.ebayimg.com/images/g/azQAAeSw7fFqqI5h/s-l225.jpg",
-    "description": "BLACK - ASUS PRIME RADEON RX 9070 GRE EVO OC EDITION GRAPHICS CARD PCIE 5.0",
+    "image": "https://i.ebayimg.com/images/g/m7YAAeSwmuBqqkXq/s-l225.jpg",
+    "description": "rx 9070 16gb gpu",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 6097,
+        "price": 5835,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/137737628915?_skw=RX+9070&hash=item2011cd6cf3:g:azQAAeSw7fFqqI5h&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGao%2B2eHjNXo%2F0hRnd797fbs9DRDG1Tn43m4wkT54yu7fJaRY%2FbRalOQW%2FyyO2hh%2FQGgVyw%2FDjWMaba0O0X0hcXneRW4yk0ujviJNHkW1rUGVs21KT9LnoRVj22gAaYEpqYluDuyjhXhIjHv0uA6KYUHfBSBrpA978Ty%2B5%2BHD85JNxkp21zrTlCuk2kEJqWyZm11Z2K8usJyYKsEQ2CfzTxnuKoayM45xBeAbWpiRv8LBmZtDoHHABRkKMZKTa6SnlcyESpLObKUn4hB2bYPGNsIoFrX0F9Bx9wpsuZNzYi9ig%3D%3D",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/178501521508?_skw=RX+9070&hash=item298f851064:g:m7YAAeSwmuBqqkXq",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 6097,
+    "lowestPrice": 5835,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|147575294998|0",
-    "name": "Corsair Vengeance RGB Pro 32GB (2x16GB) RAM DDR5 6000MHz CMH64GX5M2Y6400C32",
+    "id": "v1|158296464525|0",
+    "name": "ASRock RX9070XT CL 16G Challenger Radeon RX 9070 XT 16GB GDDR6 Graphics Card",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/48wAAeSwD91qqeQC/s-l225.jpg",
+    "description": "ASRock RX9070XT CL 16G Challenger Radeon RX 9070 XT 16GB GDDR6 Graphics Card",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 6534,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/158296464525?_skw=RX+9070&hash=item24db345c8d:g:48wAAeSwD91qqeQC",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 6534,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|128080075906|0",
+    "name": "ASRock RX 9070 Challenger 16GB",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/FsYAAeSwtMVqqJVX/s-l225.jpg",
+    "description": "ASRock RX 9070 Challenger 16GB",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 6161,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/128080075906?_skw=RX+9070&hash=item1dd22adc82:g:FsYAAeSwtMVqqJVX",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 6161,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|188788323742|0",
+    "name": "GIGABYTE Gaming Radeon RX 9070 GRE 12GB GDDR6 PCI Express 5.0 ATX Graphics Card",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/r1wAAeSw5TlqeNCZ/s-l225.jpg",
+    "description": "GIGABYTE Gaming Radeon RX 9070 GRE 12GB GDDR6 PCI Express 5.0 ATX Graphics Card",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 5321,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/188788323742?_skw=RX+9070&hash=item2bf4a9359e:g:r1wAAeSw5TlqeNCZ&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGZwjmCmXaxfNylOJIpp09m9hoxWtHVJAbmDyDfwD4hc2BecJPvJzk2s4Fy0%2FdHEAZK7IVxw60mnO%2FzqznmbAgjGEAhCDR8s18q2vmmjkjuIOl490z0zte3IVxQ%2FhNJFYiGB4ivF8xU6jxiA0tkVnmI9WEnTATNyb7X6jZT4a1AKH%2FRCMyv6sYPX0X26CGfnWi4a4E1wrozwMgjzgAAc0bpn3tODRjRr6Ss58fUm2r3hr40cA%2FSr5T%2Fc%2B2XaL7mIYd6q7zL60nEAlF%2B2XZj5IP3i",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 5321,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|407217659808|0",
+    "name": "Radeon RX 9070 Ryzen 7600X  Custom Prebuilt Gaming PC  16gb DDR5 Ram  1tb W11pro",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/oWMAAeSwKjZqo5BJ/s-l225.jpg",
+    "description": "Radeon RX 9070 Ryzen 7600X  Custom Prebuilt Gaming PC  16gb DDR5 Ram  1tb W11pro",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 12276,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/407217659808?_skw=RX+9070&hash=item5ed0105fa0:g:oWMAAeSwKjZqo5BJ&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGYondT0Lk%2BLWj0gh%2FCAC4gdHNydbe5H2a4hbi6OnotVCTbNeGdYGH4MLSCr%2BfRDJVrOjaKiXOE0wfmMjbaGJVGsJH6oTXGqGfaGdnxXaJG1u4bfGGTf4MPzr3daKZFchoI254Mh8vSOfYVyo0bug1QioqpETkHlHnHQMz7Vf0gmQrbmMVFsaXnTJ1jA8uO4tkGLgNKY2ln35pZozCoL%2BilIE%2Fdtz4wqkmJ%2Ftytio3QfTmpFLn4xRbHRrXk9dtWZvdU%2BQ3JA2vpJ7lW2R2GE5Op8",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 12276,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|398398576145|0",
+    "name": "XPG 32GB (2x16GB) DDR5 6000MHz CL48 AX5U6000C4816G-BLABRBK Desktop Memory RAM",
     "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/4tAAAeSwEutqqYQ8/s-l225.jpg",
-    "description": "Corsair Vengeance RGB Pro 32GB (2x16GB) RAM DDR5 6000MHz CMH64GX5M2Y6400C32",
+    "image": "https://i.ebayimg.com/images/g/xKcAAeSwXFhqqc2F/s-l225.jpg",
+    "description": "XPG 32GB (2x16GB) DDR5 6000MHz CL48 AX5U6000C4816G-BLABRBK Desktop Memory RAM",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 5785,
+        "price": 3267,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/147575294998?_skw=DDR5+32GB&hash=item225c2c4c16:g:4tAAAeSwEutqqYQ8",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/398398576145?_skw=DDR5+32GB&hash=item5cc267d611:g:xKcAAeSwXFhqqc2F",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 5785,
+    "lowestPrice": 3267,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|168688244592|0",
-    "name": "PATRIOT RGB DDR5 RAM 32GB (2X16GB) 6000MHZ CL36 1.35V, 9DE00297-PVVR532G600C36K",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/ujYAAeSwLgNqqKju/s-l225.jpg",
-    "description": "PATRIOT RGB DDR5 RAM 32GB (2X16GB) 6000MHZ CL36 1.35V, 9DE00297-PVVR532G600C36K",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 4102,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/168688244592?_skw=DDR5+32GB&hash=item27469a5770:g:ujYAAeSwLgNqqKju&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZIQQ%2F5x%2FE5Y8lUvsFoymS7YGlsrBiJn9RcwNLZD%2BEz9cnVgpOrBlqxF0BaP4irGkKXluaOWm7Y5Z0%2FgQHW%2BFe%2By8XK1OsyTpSxCA%2FXPJCyl7NmzEYuRwXUdW2w83wqKFYjcGQbejgIjcUky5F%2BHXCaH4qkmcjavln38VmTOKSa3m5h9Ndvpj2ulRhtwM1rrtvV0pESENSUnm0IU7pIgWwpgCkQbb7qdQtB5bDlqWP%2BPepCEug8zk8KbYWsHhb2NEpqJf%2BqyNSbOWJWgZtuMnB6K6fBE%2FUydOttL3jF0woKPQ%3D%3D",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 4102,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|287586434738|0",
@@ -3473,409 +3447,19 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 3611,
+        "price": 3613,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/287586434738?_skw=DDR5+32GB&hash=item42f57cbeb2:g:ot0AAeSwx9pqqET~&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGagi1cPElXbFFVLkONkYb9cHSArlvpI7qNfYIKcl6rHAYStMIOOD6nv7kbWVnOU8guRZkVAaq2%2BVGQLbdG8Ol49679UC266hA3KB1a5PQYNOG14zj9FkUw5BS3CCTruAxwi38xPqcRZAszFHtCSGD7lljTsyQXVM0r4IJgqViK5oI4iHVJABAGgWv1k3arqVIwdQpTMURM8qG1ExhCxmNAGXt7prz%2F3BulI84H2eJbfWUajJn%2F7OJSH2YdLuXM2RQkMocN2Jt4%2FgaLwsKqWpZDhfZyRIjS%2FIdDvhwp%2FDYW1xA%3D%3D",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/287586434738?_skw=DDR5+32GB&hash=item42f57cbeb2:g:ot0AAeSwx9pqqET~&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGagi1cPElXbFFVLkONkYb9cHSArlvpI7qNfYIKcl6rHAYStMIOOD6nv7kbWVnOU8guRZkVAaq2%2BVGQLbdG8Ol49679UC266hA3KB1a5PQYNOG14zj9FkUw5BS3CCTruAxwNqRXwoAtAZ7Qcwz%2BOJEf%2F6eEPxUe1%2FHFdJKhwoJLR0z2LnPwA2z2%2B6LM9b0Ra4WMcMEUzbDchMeFr%2BM83EaLnI2Cl2Hpd2qHAton81FaWV%2BPt0nB7a47K6k5pFjE3z846XHu0g89D6r8es44tgK0F8wG0XrbOpEc%2B2m8r3S%2Bjpw%3D%3D",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 3611,
+    "lowestPrice": 3613,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|407218020863|0",
-    "name": "32GB DDR5 6000MHz RGB Desktop RAM Unused Prebuilt Component",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/SuAAAeSwmuBqqQ70/s-l225.jpg",
-    "description": "32GB DDR5 6000MHz RGB Desktop RAM Unused Prebuilt Component",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 4199,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/407218020863?_skw=DDR5+32GB&hash=item5ed015e1ff:g:SuAAAeSwmuBqqQ70&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZP1rQS%2BLBaHVTSjpYBIp3U6DO%2BL3o%2BR8aSvTGJJCKT91iaN%2BYPFs1utAbMU5pN3aShK5eVxPT8IbWd32aN24yein3kZTm2NFZVRJqYi2oZ%2FJWJnD%2FXR7Nrca6ZfLHgWz7qqsoNTCqD5z9hnqGGtozCvAbc3ZFr40t2zxNvWtJg81Xn43ABn6j%2FD%2BnfcHmGPqikf7MVgB3oyDEDQWEEZFc1qwKMfKoocbvGPl6SsBd5jYANCiauimkMJjc%2BI3GNl%2BKoU2ui7wV%2FbaiW53j4JI1Sdrb3%2FEcEPPeiCeX0VTJGHw%3D%3D",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 4199,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|257744890705|0",
-    "name": "Corsair Vengeance RGB DDR5 32GB (2x16GB) 5200MHz DIMM Intel XMP MPN",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/3MsAAeSwfHtqqaur/s-l225.jpg",
-    "description": "Corsair Vengeance RGB DDR5 32GB (2x16GB) 5200MHz DIMM Intel XMP MPN",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 3499,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/257744890705?_skw=DDR5+32GB&hash=item3c02caeb51:g:3MsAAeSwfHtqqaur",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 3499,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|407219416771|0",
-    "name": "TeamGroup T-Force Vulcan 32GB (2x16GB) RAM DDR5 6000MHz FLRD516G6000HC38ABK",
-    "category": "RAM",
-    "image": "/images/placeholder.jpg",
-    "description": "TeamGroup T-Force Vulcan 32GB (2x16GB) RAM DDR5 6000MHz FLRD516G6000HC38ABK",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 2986,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/407219416771?_skw=DDR5+32GB&hash=item5ed02b2ec3:i:407219416771",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 2986,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|137715091441|0",
-    "name": "G.SKILL Flare X5 32GB (2x16GB) DDR5 6000MHz DIMM Memory",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/93MAAeSwBBBqoIA~/s-l225.jpg",
-    "description": "G.SKILL Flare X5 32GB (2x16GB) DDR5 6000MHz DIMM Memory",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 3545,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/137715091441?_skw=DDR5+32GB&hash=item20107587f1:g:93MAAeSwBBBqoIA~",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 3545,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|116237423865|0",
-    "name": "CORSAIR Vengeance RGB 32GB 2x16GB DDR5 RAM 6000MHz CMH32GX5M2E6000C36",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/wnAAAeSw04pqqYgC/s-l225.jpg",
-    "description": "CORSAIR Vengeance RGB 32GB 2x16GB DDR5 RAM 6000MHz CMH32GX5M2E6000C36",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 3452,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/116237423865?_skw=DDR5+32GB&hash=item1b104a54f9:g:wnAAAeSw04pqqYgC",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 3452,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|287582364938|0",
-    "name": "G.SKILL Ripjaws S5 32GB 1x32GB DDR5 6000 CL36 XMP EXPO Intel AMD",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/7GQAAeSwcXdqbrGy/s-l225.jpg",
-    "description": "G.SKILL Ripjaws S5 32GB 1x32GB DDR5 6000 CL36 XMP EXPO Intel AMD",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 3443,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/287582364938?_skw=DDR5+32GB&hash=item42f53ea50a:g:7GQAAeSwcXdqbrGy&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGaLA4YB9lyagdIWSb%2BuT%2B94%2BnCJuE%2Bj8F5r4%2F%2B1aQAW7U8pmPij%2FPR0i8CE1L9CkrJIfJSL2sIc0zwmysBercaw1F3X2TNKiYdxurSk2HZj9LOBfo7IlRAAzAUkxMczxhpGSP%2Fx1jzOMsQ1oKGlqLTWBdb097SyacTkBpQ%2Bw41YgDpVk%2BuEQxArLxm6QNNic0JhEFpvUzWjNxBl23m5uVr5lKUAWnHBEyV8PdxzIefobekg5ujXZHn1vwZWmYOwq2cFmVcWmGPT1Sh9DunV8Q5Y",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 3443,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|287584343933|0",
-    "name": "Corsair Dominator Platinum RGB 32GB 2x16GB DDR5 5200 CL40 Intel XMP",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/wSQAAeSwmuxqpucJ/s-l225.jpg",
-    "description": "Corsair Dominator Platinum RGB 32GB 2x16GB DDR5 5200 CL40 Intel XMP",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 3723,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/287584343933?_skw=DDR5+32GB&hash=item42f55cd77d:g:wSQAAeSwmuxqpucJ&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGaKktMfTr4qR8jjTQLWlgHLR1EuC2Q4MrbyutZsjPF9dH2B%2FW%2BQrEsEBr6KMdK5GVzOFopBGrPjtPXreiDr5tRCULSZi9rKHuXV8OyYf5CQ5gXNYeWcxLtr%2B2LVfbKL2HZE8IGTGCfkVuQYcBtp23yS1X0qbTJJf5OiE4LIHTCYJXeZDGgCRpAxoYjOCwSfIAIRRhvJOOS33SLD93h6kvSWMkSwkH8vOqKtG%2FaH4ss9Y0cW7YtgBGm--UloOYTUADMHL%2BmcsjtwqacaFwDsbGmm",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 3723,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|147575294998|0",
-    "name": "Corsair Vengeance RGB Pro 32GB (2x16GB) RAM DDR5 6000MHz CMH64GX5M2Y6400C32",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/4tAAAeSwEutqqYQ8/s-l225.jpg",
-    "description": "Corsair Vengeance RGB Pro 32GB (2x16GB) RAM DDR5 6000MHz CMH64GX5M2Y6400C32",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 5785,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/147575294998?_skw=DDR5+16GB&hash=item225c2c4c16:g:4tAAAeSwEutqqYQ8",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 5785,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|336748623109|0",
-    "name": "G.SKILL Flare X5 16GB 288-Pin PC RAM DDR5 6000",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/tMEAAeSwFJZqhDM1/s-l225.jpg",
-    "description": "G.SKILL Flare X5 16GB 288-Pin PC RAM DDR5 6000",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 2230,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/336748623109?_skw=DDR5+16GB&hash=item4e67c83505:g:tMEAAeSwFJZqhDM1&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGY93gdDPYnsaQTVVv1gtngc769qspOllT3NEtS%2BWXSebJQzpP5SNkNDioVi1Q4wGpBrZiPLpv9CT6%2BYug9DzYeji%2BR7%2B9pcEfot6eIrFrRxV%2BGptbdxAaJH7xXl539fSaoh9m8W7R2Dn7y4S57EEHU9MBitqaf1%2Bsszu%2BTcLFI6EjRhUfbcSgD99ZzNr0lS28Teac7n1eKuRmBe8OXka3w8X7hPQPkukLTPd8Pox2ykiiJErRkky%2FFeM4FZRJhGot8RrbDk0YhikgOBgVKgmZxrqst34t8c1e0OiXmYGJVqCg%3D%3D",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 2230,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|298674948405|0",
-    "name": "Kingston FURY Beast DDR5 SDRAM DIMM 288-Pin Desktop RAM 2-Module 16gb 5200mhz",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/dLQAAeSw3HxqpwZ~/s-l225.jpg",
-    "description": "Kingston FURY Beast DDR5 SDRAM DIMM 288-Pin Desktop RAM 2-Module 16gb 5200mhz",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 2333,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/298674948405?_skw=DDR5+16GB&hash=item458a6a0935:g:dLQAAeSw3HxqpwZ~&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZ4j56Vr46dQrTLaxibro8jICVeKofYiy3YlPobJYMDYGmGaPZ4sA475eAme1cF96AYVpG9rwS0EPKmEAYkMtARMW5ljsFSpmYh1Fgxrf75RxriK8Pv%2B49UT1lQGhjA8VrovXvHCCCt4bFQ7FvNRZNA6IfZT1RxcKGmlDqTzUvB7CVLePSFwMLfmLuYF21nIjEaSoUKb96b4ddOutzqhVIyZsR7TAeHt8ohDf5TYr%2FiHsgUELXbIywbrqJtZCl16y3DgH7BpWysQrLxh4%2FiMC7ia7RRRwVZD4Eci4QKN2%2BDyw%3D%3D",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 2333,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|168643541417|0",
-    "name": "Team Group 16GB (2 x 8GB) 288-Pin PC RAM DDR5 6000 (PC5 48000) Memory Model",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/X0YAAeSwKYJqqV5D/s-l225.jpg",
-    "description": "Team Group 16GB (2 x 8GB) 288-Pin PC RAM DDR5 6000 (PC5 48000) Memory Model",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 4197,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/168643541417?_skw=DDR5+16GB&hash=item2743f039a9:g:X0YAAeSwKYJqqV5D&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaWSw2oQ30lff9pz3B2GX2ZhNHGtrq%2FtvrFXWsKoHdcwSQMJPTM8B8xJZRc34YoVHaLzxYRV8YDGkWCAvZU8lhqY3AMHFw08yZOH5qBiBZ2It69EwowV4RIIHNI3pb2%2FwX78ofOaDw8Ul5rsndGkK%2BerBOYzararB7X72yQKF1Od0a%2BLvi5XtCRc5PL7%2BehT4CywDboQKLnpXfGHaF8nelZjjlL7Dq1%2BBZ%2BWUcaNesmQMJhmVVZxrXV0%2FwWuNSjvuUlRxS%2B%2FymGwp41vBXJC1XiG0%2FxXTVkSqEWJAijnlyQdg%3D%3D",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 4197,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|800667381479|0",
-    "name": "TEAMGROUP T-Force Delta RGB DDR5 16GB (2x8GB) 6000MHz 288-Pin DIMM CL38",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/nqMAAeSwVXhqqa4F/s-l225.jpg",
-    "description": "TEAMGROUP T-Force Delta RGB DDR5 16GB (2x8GB) 6000MHz 288-Pin DIMM CL38",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 2333,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/800667381479?_skw=DDR5+16GB&hash=itemba6b7eaee7:g:nqMAAeSwVXhqqa4F",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 2333,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|318875596831|0",
-    "name": "Corsair Vengeance 16GB 1x16GB DDR5-5600 SO-DIMM 262-Pin Non-ECC RAM",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/luEAAeSwjBpqqbDZ/s-l225.jpg",
-    "description": "Corsair Vengeance 16GB 1x16GB DDR5-5600 SO-DIMM 262-Pin Non-ECC RAM",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 1857,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/318875596831?_skw=DDR5+16GB&hash=item4a3e77781f:g:luEAAeSwjBpqqbDZ",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 1857,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|358856550153|0",
-    "name": "Open Box - XPG 16GB (1x16GB) RAM DDR5 6000MHz CL48-48-48 AX5U6000C4816G-BLABRBK",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/wGkAAeSwTGBpwgrW/s-l225.jpg",
-    "description": "Open Box - XPG 16GB (1x16GB) RAM DDR5 6000MHz CL48-48-48 AX5U6000C4816G-BLABRBK",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 2053,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/358856550153?_skw=DDR5+16GB&hash=item538d846709:g:wGkAAeSwTGBpwgrW",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 2053,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|820131534166|0",
-    "name": "TeamGroup T-Force Vulcan 16GB (1x16GB) RAM DDR5 6000MHz FLBD516G6000HC38GBKT",
-    "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/owkAAeSwBa1qqbAR/s-l225.jpg",
-    "description": "TeamGroup T-Force Vulcan 16GB (1x16GB) RAM DDR5 6000MHz FLBD516G6000HC38GBKT",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 1586,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/820131534166?_skw=DDR5+16GB&hash=itembef3a61556:g:owkAAeSwBa1qqbAR",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 1586,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|168688244592|0",
@@ -3889,74 +3473,490 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 4102,
+        "price": 4104,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/168688244592?_skw=DDR5+16GB&hash=item27469a5770:g:ujYAAeSwLgNqqKju&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZIQQ%2F5x%2FE5Y8lUvsFoymS7YGlsrBiJn9RcwNLZD%2BEz9cnVgpOrBlqxF0BaP4irGkKXluaOWm7Y5Z0%2FgQHW%2BFe%2By8XK1OsyTpSxCA%2FXPJCyl7NmzEYuRwXUdW2w83wqKFYlFkRxeblDr6g39InEc%2BTS9cw%2F9JBJ1bvv%2FEWtWbk1myvu8Q2LL%2BzxJgZ%2FjpacP2NPwQl83osPb%2F0A3JltzNel%2BYqEhH4sjkfNVO8SjKN4n9508lzsbVCA1g6Bgkm9pKAsEUO%2FtoGn%2FKBFgIwPGrNuQy2N2l9P1xl7uYyC%2F%2BgzpQ%3D%3D",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/168688244592?_skw=DDR5+32GB&hash=item27469a5770:g:ujYAAeSwLgNqqKju&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZIQQ%2F5x%2FE5Y8lUvsFoymS7YGlsrBiJn9RcwNLZD%2BEz9cnVgpOrBlqxF0BaP4irGkKXluaOWm7Y5Z0%2FgQHW%2BFe%2By8XK1OsyTpSxCA%2FXPJCyl7NmzEYuRwXUdW2w83wqKFakEjCp%2B0hSug9Ev6cqXMefactf5fCuVwTf1ufYRtkK20UzLP1pyBkejAwPw1YygRC0hFT2dyCBzeTkLZjXmxG8AUDBJTfHJC0qyt%2BLeZsqNIjKC%2B1WrMwKX%2F6zg%2BQk3kK0pLfs%2FMaXMJP99jt0DPD4eJyOOAS0nFWWkPpPkyiIvA%3D%3D",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 4102,
+    "lowestPrice": 4104,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|377484963398|0",
-    "name": "G.SKILL - TRIDENT Z5 NEO RGB 16GB DDR5 6000MHZ RAM (PC5-48000) -  BLACK",
+    "id": "v1|287582364938|0",
+    "name": "G.SKILL Ripjaws S5 32GB 1x32GB DDR5 6000 CL36 XMP EXPO Intel AMD",
     "category": "RAM",
-    "image": "https://i.ebayimg.com/images/g/QmwAAeSw73xqoz1Q/s-l225.jpg",
-    "description": "G.SKILL - TRIDENT Z5 NEO RGB 16GB DDR5 6000MHZ RAM (PC5-48000) -  BLACK",
+    "image": "https://i.ebayimg.com/images/g/7GQAAeSwcXdqbrGy/s-l225.jpg",
+    "description": "G.SKILL Ripjaws S5 32GB 1x32GB DDR5 6000 CL36 XMP EXPO Intel AMD",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 2993,
+        "price": 3445,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/377484963398?_skw=DDR5+16GB&hash=item57e3db6e46:g:QmwAAeSw73xqoz1Q&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZuvtQEWiv%2FCxYx%2F2jLZCLC%2FDT7LT3GCgxrvFiocHmT8hofrUo1vSwtIJZ22wt19shBEYKsK%2F1BFS9iWgfgWbwkL5K6E9nKMX4AXJhiVJHLqUokeiK%2BfjG00wJPHWVes%2B9J0Fd5FgA8Wls6Ua%2ByXKT5eePnUpn7pLuoIt1DWh3PZNSMswsV%2B72C1rFR63rAbCHO3ajaZl5FamAT6LBn1CUQlItfVVUDGlw1PFpk3ivuh%2FqKfBaXhdIK0cWLFxfGjyitIcf1%2B%2BJmTawIEFH89hqFNJ836Ti2%2BsqQKGvVLQYaGQ%3D%3D",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/287582364938?_skw=DDR5+32GB&hash=item42f53ea50a:g:7GQAAeSwcXdqbrGy&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGaLA4YB9lyagdIWSb%2BuT%2B94%2BnCJuE%2Bj8F5r4%2F%2B1aQAW7U8pmPij%2FPR0i8CE1L9CkrJIfJSL2sIc0zwmysBercaw1F3X2TNKiYdxurSk2HZj9LOBfo7IlRAAzAUkxMczxhqCV%2Bh5ytfXwsd%2B1%2Fp9cH5RwWLblwKnlRizjk%2Bsf6CdXOjNOcVmuhNPBFzJEFYwiEqjMDS%2FAa7Lzu9P0tzQl%2FNK1zHbpaMKXLVJr6eCrfhaVEMycSu5erDmA6gas7dR8dsheSS7fpHkxMXBvdOzRqYk",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 2993,
+    "lowestPrice": 3445,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|267647503237|0",
-    "name": "Acer Nitro V 15 15.6\" 165Hz FHD Core 5 210H 16GB RAM 512GB SSD RTX 4050 Refurb",
+    "id": "v1|257744890705|0",
+    "name": "Corsair Vengeance RGB DDR5 32GB (2x16GB) 5200MHz DIMM Intel XMP MPN",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/3MsAAeSwfHtqqaur/s-l225.jpg",
+    "description": "Corsair Vengeance RGB DDR5 32GB (2x16GB) 5200MHz DIMM Intel XMP MPN",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 3501,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/257744890705?_skw=DDR5+32GB&hash=item3c02caeb51:g:3MsAAeSwfHtqqaur",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 3501,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|188935375427|0",
+    "name": "Crucial Pro OC 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 RAM Memory Kit - WHITE",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/zW8AAeSwhDNqnMwj/s-l225.jpg",
+    "description": "Crucial Pro OC 32GB (2 x 16GB) DDR5-6400 PC5-51200 CL32 RAM Memory Kit - WHITE",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 4201,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/188935375427?_skw=DDR5+32GB&hash=item2bfd6d0a43:g:zW8AAeSwhDNqnMwj",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 4201,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|227522305283|0",
+    "name": "G.Skill Ripjaws S5 32GB (2x16GB) RAM DDR5 5600MHz F5-5600J3636C16GX2-RS5W",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/fHAAAeSwDG9qqPLQ/s-l225.jpg",
+    "description": "G.Skill Ripjaws S5 32GB (2x16GB) RAM DDR5 5600MHz F5-5600J3636C16GX2-RS5W",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 3361,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/227522305283?_skw=DDR5+32GB&hash=item34f962dd03:g:fHAAAeSwDG9qqPLQ",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 3361,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|206547757751|0",
+    "name": "Crucial Pro 32GB 2x16GB DDR5 6400MHz CL38 Desktop RAM - White",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/DEAAAeSwFd9qolHF/s-l225.jpg",
+    "description": "Crucial Pro 32GB 2x16GB DDR5 6400MHz CL38 Desktop RAM - White",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 3542,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/206547757751?_skw=DDR5+32GB&hash=item301734aab7:g:DEAAAeSwFd9qolHF",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 3542,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|287582492557|0",
+    "name": "G.Skill Ripjaws S5 32GB 1x32GB DDR5 6000 CL30 XMP 3.0 Intel AMD",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/HBQAAeSw8SBqpYXD/s-l225.jpg",
+    "description": "G.Skill Ripjaws S5 32GB 1x32GB DDR5 6000 CL30 XMP 3.0 Intel AMD",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 4005,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/287582492557?_skw=DDR5+32GB&hash=item42f540978d:g:HBQAAeSw8SBqpYXD&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGZgNxRT4QwI96JoWzpOaFylK1oy2tUdjSjLX1CT0puRKzd7UHO2uDSzZRZKBYDaxC%2BPCwQKCupzURqEV5KRly9DO5%2B8nTaUBE1d2bRIB%2Fo9zzATEhRCtP7xXdWgOTdlM4wu6ZiH2jcouznWcKY7kVWAP2NH00SebmWGjwW2uMaI4j6KqrG0ZTj2zwGLytZZ6x99VA9VdNUWOggs7IBAsB34xWxEYOoeXKscICeYRnPrIrCkTBg%2BNF6L6BFjl46x0GXf45AlkH6uXQSPWvMI3rMF",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 4005,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|287582430260|0",
+    "name": "Corsair Vengeance 32GB 2x16GB DDR5 6000 CL30 XMP 3.0 Black Desktop Memory",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/DK8AAeSwwRFqCLUk/s-l225.jpg",
+    "description": "Corsair Vengeance 32GB 2x16GB DDR5 6000 CL30 XMP 3.0 Black Desktop Memory",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 4285,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/287582430260?_skw=DDR5+32GB&hash=item42f53fa434:g:DK8AAeSwwRFqCLUk&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGYYHfaeoOFmkkttk2jv%2BbLee%2BikGw2pKSvMSAd2jFqQ4If%2FMfKa5ZUxJCbLAfFv9L6iQW2NXbvMykbJIFFjORKzM4jFppoBu9TuknkmLOpenZQ0SE0j6KLOXEIG0TOb2lK3zZ0MlfOQR%2BN6U4c%2FGy9mX55wxzlQG2Bc2V4dI10oHiw7OfFl25May5RdvA4JOwqepjI5WQjEDtDxVNFyVtP9qP4eQKNRB3A0CKTWf5xSFnGOUe5m0ues%2BBa3FrccyOFLK9xkHX7n7267YlWJ70Cm",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 4285,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|398398480459|0",
+    "name": "Patriot 16GB 6000MHz DDR5 CL36 (1x16GB) Desktop Memory RAM - Used",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/17wAAeSwMYBqqcOi/s-l225.jpg",
+    "description": "Patriot 16GB 6000MHz DDR5 CL36 (1x16GB) Desktop Memory RAM - Used",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 1680,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/398398480459?_skw=DDR5+16GB&hash=item5cc266604b:g:17wAAeSwMYBqqcOi",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 1680,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|336748623109|0",
+    "name": "G.SKILL Flare X5 16GB 288-Pin PC RAM DDR5 6000",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/tMEAAeSwFJZqhDM1/s-l225.jpg",
+    "description": "G.SKILL Flare X5 16GB 288-Pin PC RAM DDR5 6000",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 2231,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/336748623109?_skw=DDR5+16GB&hash=item4e67c83505:g:tMEAAeSwFJZqhDM1&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGY93gdDPYnsaQTVVv1gtngc769qspOllT3NEtS%2BWXSebJQzpP5SNkNDioVi1Q4wGpBrZiPLpv9CT6%2BYug9DzYeji%2BR7%2B9pcEfot6eIrFrRxV%2BGptbdxAaJH7xXl539fSapuMZFAyC0BYd5oK%2BG%2B6%2BUOocJb1nMJu8kG8uLY4J83z6D0waEqn10DoPtYp0Xvmg8%2By6diCK1288Dnnr5VWXc7eU4U4aUxYp%2FNqmE68XWDUClpJon07HwjcOxl6qqCMTG24VLTL0J2e6DeA%2BZeOsgAriBLZM6GJEO7AzB2Jykszg%3D%3D",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 2231,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|298674948405|0",
+    "name": "Kingston FURY Beast DDR5 SDRAM DIMM 288-Pin Desktop RAM 2-Module 16gb 5200mhz",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/dLQAAeSw3HxqpwZ~/s-l225.jpg",
+    "description": "Kingston FURY Beast DDR5 SDRAM DIMM 288-Pin Desktop RAM 2-Module 16gb 5200mhz",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 2334,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/298674948405?_skw=DDR5+16GB&hash=item458a6a0935:g:dLQAAeSw3HxqpwZ~&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZ4j56Vr46dQrTLaxibro8jICVeKofYiy3YlPobJYMDYGmGaPZ4sA475eAme1cF96AYVpG9rwS0EPKmEAYkMtARMW5ljsFSpmYh1Fgxrf75RxriK8Pv%2B49UT1lQGhjA8Voe01ECvQCrCKc0GIvRnipcYJMeS%2FAT6rQ7zN3VFeL4JP1N5m44ZBnYv%2B3fxBrb6ibN9vzbax16RnjY4vA6AlDjiJ9UOhnepJ3TTNsnmibUiv7B2EWrF5taiHSHhwC1sI54Wex%2F136H6n0lkcXFkAVs%2FNEfyca5sIlIFFS3IyVUsQ%3D%3D",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 2334,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|168643541417|0",
+    "name": "Team Group 16GB (2 x 8GB) 288-Pin PC RAM DDR5 6000 (PC5 48000) Memory Model",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/zMgAAeSwuqxqqgsd/s-l225.jpg",
+    "description": "Team Group 16GB (2 x 8GB) 288-Pin PC RAM DDR5 6000 (PC5 48000) Memory Model",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 4199,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/168643541417?_skw=DDR5+16GB&hash=item2743f039a9:g:zMgAAeSwuqxqqgsd&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaWSw2oQ30lff9pz3B2GX2ZhNHGtrq%2FtvrFXWsKoHdcwSQMJPTM8B8xJZRc34YoVHaLzxYRV8YDGkWCAvZU8lhqY3AMHFw08yZOH5qBiBZ2It69EwowV4RIIHNI3pb2%2FwVBJOcSe2SiGeM4xjkl1l6nAfIPABfSLvTHICyIEjbmQkMg75cxRkzmdl%2BSS758d8VGxalQd8kc3aZ%2Bq8QrHxT3s9CX3jREa4Fqr1rSuv1TyOfR8uAPB87%2FfqVOnv4%2BcLV1KiiR%2Bfkl%2BouuxEBtqd6Fo%2FxM2O8oQz2VBrI2ryQFyQ%3D%3D",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 4199,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|358856550153|0",
+    "name": "Open Box - XPG 16GB (1x16GB) RAM DDR5 6000MHz CL48-48-48 AX5U6000C4816G-BLABRBK",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/wGkAAeSwTGBpwgrW/s-l225.jpg",
+    "description": "Open Box - XPG 16GB (1x16GB) RAM DDR5 6000MHz CL48-48-48 AX5U6000C4816G-BLABRBK",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 2054,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/358856550153?_skw=DDR5+16GB&hash=item538d846709:g:wGkAAeSwTGBpwgrW",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 2054,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|318875793183|0",
+    "name": "CORSAIR Vengeance DDR5 RAM 16GB (1x16GB) 6000MT/s White RGB",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/KVIAAeSwErFqqcCr/s-l225.jpg",
+    "description": "CORSAIR Vengeance DDR5 RAM 16GB (1x16GB) 6000MT/s White RGB",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 1867,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/318875793183?_skw=DDR5+16GB&hash=item4a3e7a771f:g:KVIAAeSwErFqqcCr",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 1867,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|358253054671|0",
+    "name": "RAM DDR5 16GB 6000MHz ADATA XPG Lancer Blade RGB AX5U6000C4816G-BLABRBK",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/1GQAAeSw-KFpnVG~/s-l225.jpg",
+    "description": "RAM DDR5 16GB 6000MHz ADATA XPG Lancer Blade RGB AX5U6000C4816G-BLABRBK",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 1923,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/358253054671?_skw=DDR5+16GB&hash=item53698bcacf:g:1GQAAeSw-KFpnVG~",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 1923,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|257745571953|0",
+    "name": "TeamGroup T-Force Delta RGB White 16GB DDR5 5200MHz RAM FF4D516G5200HC40CBK",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/pSsAAeSwqR1qqh9Q/s-l225.jpg",
+    "description": "TeamGroup T-Force Delta RGB White 16GB DDR5 5200MHz RAM FF4D516G5200HC40CBK",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 1540,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/257745571953?_skw=DDR5+16GB&hash=item3c02d55071:g:pSsAAeSwqR1qqh9Q",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 1540,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|188847010172|0",
+    "name": "Samsung DDR5-4800MHz 16GB (1x16GB) RAM x8 PC5-38400R Memory OEM",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/TOMAAeSw5B5qj8L9/s-l225.jpg",
+    "description": "Samsung DDR5-4800MHz 16GB (1x16GB) RAM x8 PC5-38400R Memory OEM",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 2054,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/188847010172?_skw=DDR5+16GB&hash=item2bf828b17c:g:TOMAAeSw5B5qj8L9&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGa1mOa%2FVEM25Eg5EhAmSuP9XHAoD9aDKu50Xx0UoFbodyOIgOSVXGKkjeUI1fXmaf9SsUUPfcugRnRqB7LUlqA99kOV0%2Fal2xwz3LcKseZWqIExeavuubKE523uFGoig0gvIEnFPOgj5rtSACc1wUT2Fn0mjVuJR%2BBnje%2FhE9zzmTT%2BFN%2FZrlLtruG0TUPQyd0O0VsOT3LC7cXTLMpsW5C5mm6kgukHWgLOodx5VIcgViYyHUBAVUBpN9SVpUkjSTNHs5eDuWLFxEscDo8IByDB6Oy062ZWk5VIpFrvfYrsDA%3D%3D",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 2054,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|168323710054|0",
+    "name": "G.SKILL Trident Z5 Neo RGB Series AMD EXPO 16GB 288-Pin PC RAM DDR5 6000 (PC5",
+    "category": "RAM",
+    "image": "/images/placeholder.jpg",
+    "description": "G.SKILL Trident Z5 Neo RGB Series AMD EXPO 16GB 288-Pin PC RAM DDR5 6000 (PC5",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 4409,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/168323710054?_skw=DDR5+16GB&hash=item2730dffc66:i:168323710054&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGb8fT%2BecOF4m1KVsD2XPQyf1eM70FGY1EiIv6kUs6t7%2Bb%2FBi751%2BtQZpEAKRKaUFyTBwiMpzwZWIU%2Fje0SDOO6u7okCfwbwA4F0KEDG24urtuq7UdjzdpVR6K7LVbGRPwbZdcDZ%2BeWRm%2FaGmZYy1S%2Bep5kL9mcHm1oLaUs8AaANwvUVX2p0hR1nVXOZMnMNKYOjRluWMWkeik19utroFZVhvI9x1QzNCUrj2Jcjn7dSCztxc0cEBverBxmsllBPHYX4Nct%2F37xx5xcxf8BGmTY8yXnbR8TWJu7%2FYGX%2B2hGUvA%3D%3D",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 4409,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|800667178529|0",
+    "name": "Acer Nitro 5 15\" 16\" 16GB 512GB, Shale Black",
     "category": "Laptop",
-    "image": "https://i.ebayimg.com/images/g/IlIAAeSw5M9p6PKs/s-l225.jpg",
-    "description": "Acer Nitro V 15 15.6\" 165Hz FHD Core 5 210H 16GB RAM 512GB SSD RTX 4050 Refurb",
+    "image": "https://i.ebayimg.com/images/g/F~kAAeSwnkFqqZ9d/s-l225.jpg",
+    "description": "Acer Nitro 5 15\" 16\" 16GB 512GB, Shale Black",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 6576,
+        "price": 4774,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/267647503237?_skw=gaming+laptop&hash=item3e5108cb85:g:IlIAAeSw5M9p6PKs",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/800667178529?_skw=gaming+laptop&hash=itemba6b7b9621:g:F~kAAeSwnkFqqZ9d",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 6576,
+    "lowestPrice": 4774,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|335333243508|544912345099",
+    "id": "v1|335333243508|545975801835",
     "name": "Dell Latitude 15.6\" FHD Light Gaming Business Laptop Up to 64GB RAM 4TB SSD W11P",
     "category": "Laptop",
     "image": "https://i.ebayimg.com/images/g/gsIAAeSwzqlpXDyH/s-l225.jpg",
@@ -3967,175 +3967,19 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 4134,
+        "price": 3622,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/335333243508?_skw=gaming+laptop&hash=item4e136b3a74:g:gsIAAeSwzqlpXDyH&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaZWLepZGWvgtaQ1zc1Eq0UR6%2BOnU6PVle6CwI23hllW3lfX2pUHUcTh1%2BRPFlncUEBpjE2iMKgdC79%2BXgCKKjLc18PoCEinYiWwgALnC8POHG0c8cKP0YkCXfGFsMpyhWqIsbu8PHHieNyuJgFyBRfd%2FZCD1Zwzo63PdWuNeNT%2BMWRwK5V%2B0YDLkDhJ92TfNfTkf%2BbahKv7Epd0DNY1H18gFl01eq5y397CKZWVp7Ro9vCjWbrsO%2B7pqgW%2BJgbA8lSiHfyiON%2B6huFhpPmGbM4gUzg0jBcsy9p9GFXqqaO7g%3D%3D",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/335333243508?_skw=gaming+laptop&hash=item4e136b3a74:g:gsIAAeSwzqlpXDyH&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGaZWLepZGWvgtaQ1zc1Eq0UR6%2BOnU6PVle6CwI23hllW3lfX2pUHUcTh1%2BRPFlncUEBpjE2iMKgdC79%2BXgCKKjLc18PoCEinYiWwgALnC8POHG0c8cKP0YkCXfGFsMpyhXGw00E2sYjCRYKNBIf8KS9kleNoIrTpSIHwApJI9UIqn8P8bSoVGXuiKvSd9hjKEfN7RMEHVySdk4kH66eEFI%2BeG42jHB03uqslHUzSOQYNXI%2F%2BRPDBk3ZnYvvS%2BdvQePyjZ4HN8Oomu4QNaV9gBbviUDvavY0y4HSA%2FXKpp2xig%3D%3D",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 4134,
+    "lowestPrice": 3622,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|407214121759|0",
-    "name": "Dell Alienware m15 R7 AMD Ryzen 7 6800H 16GB DDR5 1TB SSD RTX 3070 Ti WIN 11 PRO",
-    "category": "Laptop",
-    "image": "https://i.ebayimg.com/images/g/0bsAAeSwYWxqpt1G/s-l225.jpg",
-    "description": "Dell Alienware m15 R7 AMD Ryzen 7 6800H 16GB DDR5 1TB SSD RTX 3070 Ti WIN 11 PRO",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 8584,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/407214121759?_skw=gaming+laptop&hash=item5ecfda631f:g:0bsAAeSwYWxqpt1G&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZzr9ktVmG%2F79OFLn%2Bi9pALxkyj383Rb%2BaYXKgNG%2Fk6QAPurBiWtX1%2Bl1J%2FH4HkROnYUvcIKF5ZSE5qQNFdqqqblpIF7J4Cy4sscyeznmRO9ZLBDkb3So7VoMjgv3EumZiRjvH%2Fff6OUyXqLrRPYSFGCt9DoOEHz0LyNdphNaZ0mUYGq1T6%2BmDkG%2Bn7DBq3eGeitqbcdGf9YgpgcjAYcwA6KQgxWg7gpD0g%2FTfsLCgEX4rf0MTgoKZ8Apeyxj5DPy%2B5KVW18tkSuQrtaz06lhyAG17QeUAaIKNbUV4Y3LwxCg%3D%3D",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 8584,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|335762770305|545286436009",
-    "name": "Dell Latitude 14\" FHD Light Gaming Business Laptop Up to 64GB RAM 4TB SSD Win11P",
-    "category": "Laptop",
-    "image": "https://i.ebayimg.com/images/g/LbUAAeSw3NlpXDwB/s-l225.jpg",
-    "description": "Dell Latitude 14\" FHD Light Gaming Business Laptop Up to 64GB RAM 4TB SSD Win11P",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 4217,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/335762770305?_skw=gaming+laptop&hash=item4e2d054981:g:LbUAAeSw3NlpXDwB&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGb%2FiStSOOS5S1ro3atFb8%2BK7XTOk6EHS1W8DcYDWRbwyyHQundchclpzzSp87BVfvXYEvr6GpJLBoaUHrn9P%2BMEFabCEqUjUn4eu1%2BS79jYi6A3sKt0w6oKv88mMdFeKPb0v1IhGg%2BxvtILCRjJbBmftyNm56%2FhR9msXWry6MocL4ygXeLMnqkTOJ%2BpnnYfvi6esMu9QgTdDNdCIVSRC5BEPOfyOPcNq69qo2pUiInavtvKx0BpgThmz4gW49RNxTYNkUbF2FEIGO7C%2BXUyBYKm",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 4217,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|286923469872|0",
-    "name": "Dell Precision 15.6” FHD Light Gaming Laptop Core i7 32GB RAM 1TB SSD Win 11 Pro",
-    "category": "Laptop",
-    "image": "https://i.ebayimg.com/images/g/xXUAAeSwhthqliHj/s-l225.jpg",
-    "description": "Dell Precision 15.6” FHD Light Gaming Laptop Core i7 32GB RAM 1TB SSD Win 11 Pro",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 5637,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/286923469872?_skw=gaming+laptop&hash=item42cdf8b430:g:xXUAAeSwhthqliHj",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 5637,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|277352801036|0",
-    "name": "Acer Predator Helios Neo 16S AI 16\" i9 275HX 2S RTX 5070 Ti 32GB 1TB SSD Refurb",
-    "category": "Laptop",
-    "image": "https://i.ebayimg.com/images/g/lhcAAeSw4TBp0-D3/s-l225.jpg",
-    "description": "Acer Predator Helios Neo 16S AI 16\" i9 275HX 2S RTX 5070 Ti 32GB 1TB SSD Refurb",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 16740,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/277352801036?_skw=gaming+laptop&hash=item409383e30c:g:lhcAAeSw4TBp0-D3",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 16740,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|168691204680|0",
-    "name": "WORKING Dell G15 5515 Gaming Laptop Ryzen 5 5600H RTX 3050 8GB 512GB SSD",
-    "category": "Laptop",
-    "image": "https://i.ebayimg.com/images/g/Q7gAAeSwn35qqY~L/s-l225.jpg",
-    "description": "WORKING Dell G15 5515 Gaming Laptop Ryzen 5 5600H RTX 3050 8GB 512GB SSD",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 3266,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/168691204680?_skw=gaming+laptop&hash=item2746c78248:g:Q7gAAeSwn35qqY~L",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 3266,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|326796274533|0",
-    "name": "ASUS - ROG Strix G18 18\" 2.5K 240Hz Gaming Laptop - Intel Core Ultra 9 HX - 3...",
-    "category": "Laptop",
-    "image": "https://i.ebayimg.com/images/g/lZ4AAeSwvKVqnxGZ/s-l225.jpg",
-    "description": "ASUS - ROG Strix G18 18\" 2.5K 240Hz Gaming Laptop - Intel Core Ultra 9 HX - 3...",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 25193,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/326796274533?_skw=gaming+laptop&hash=item4c16936b65:g:lZ4AAeSwvKVqnxGZ",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 25193,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|264714553889|0",
@@ -4149,123 +3993,409 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 2799,
+        "price": 2801,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/264714553889?_skw=gaming+laptop&hash=item3da2378a21:g:l2YAAeSw7cVqoLS3&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZSk%2BAv02M3iagPPnRz40vdqOcS1i6OnAVaQGl5pQUPQQyWdo%2FmONZ3VX6H5QwwS4ooK%2B6Q0xGg8PhhIXXHXs704kwlNUeHOsclx8EVsC9m23Qqfze1yT1rrtJsq%2BMdlbp2zCIPCMJitGfipj3eIJwxLlvtkcjl8%2FCujAPaSQZssqzSMwzlB8zr9U7YILWcPbTBGAs47dz6y0DZMuF39%2Bd8Loq53JTK5sZ8X2qU5n1Ww5qd3WqSy7vAlQWFF9XJwF4ig8%2BwFstK5oqaZ7Qqp3%2FnUedMupuwHSWT5RhctUIgng%3D%3D",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/264714553889?_skw=gaming+laptop&hash=item3da2378a21:g:l2YAAeSw7cVqoLS3&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZSk%2BAv02M3iagPPnRz40vdqOcS1i6OnAVaQGl5pQUPQQyWdo%2FmONZ3VX6H5QwwS4ooK%2B6Q0xGg8PhhIXXHXs704kwlNUeHOsclx8EVsC9m23Qqfze1yT1rrtJsq%2BMdlbonR454iE2SlFeoSvAFgWv6hWNU%2BNFbo8jPnn06NNMJl4LD4DJv432yKEJaNnyfVFiCOiK3297DvLkG5NIk4oWEmBpgURUUrNPhbBmMpcZ%2FWIoFfQCX9TvWP3P5ZuI9hGCWgVOis05hsiac%2FL4Dbss5UDyQyY%2FuODWoCnVEzeJbJw%3D%3D",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 2799,
+    "lowestPrice": 2801,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|318875321298|0",
-    "name": "HP Zbook 15 G4 1080p 15in. (Intel Xeon 3.10 GHz, 48 GB RAM, 1TB NVME SSD)",
+    "id": "v1|117414667828|0",
+    "name": "KAIGERR Light Gaming Laptop, ΑΜD Ryzen 7430U (Up to 4.3GHz), 16GB RAM 512 GB SSD",
     "category": "Laptop",
-    "image": "https://i.ebayimg.com/images/g/Ly4AAeSwfHtqqZrI/s-l225.jpg",
-    "description": "HP Zbook 15 G4 1080p 15in. (Intel Xeon 3.10 GHz, 48 GB RAM, 1TB NVME SSD)",
+    "image": "https://i.ebayimg.com/images/g/DYwAAeSwXFlqqhEn/s-l225.jpg",
+    "description": "KAIGERR Light Gaming Laptop, ΑΜD Ryzen 7430U (Up to 4.3GHz), 16GB RAM 512 GB SSD",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 2566,
+        "price": 2334,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/318875321298?_skw=gaming+laptop&hash=item4a3e7343d2:g:Ly4AAeSwfHtqqZrI&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGYv2B4tjg1uzdsU4mv%2FwBTx1NeNfEImYL9ktQXtGBZsKyjao2810C1VQ%2FaLzy5xGsfZOvTaGPxEpx9rgAKrHa0Op3rNhxZp3oJyE%2FmEs%2BKoNPlu8SEzo%2BQrSEp52qXRRDzrHoyNqOpKu6BOxagrdRqjBaHO32yEwVUna8Gl6d8kFT8GaGNHHD7amcOnMxdQvBs7JI%2Fpi4jrY3MATtFUpcpjuS1VoM8T73VlaG4%2FYPpg4lG9fxu6uRQzFmCdl7La48bTgh3UpQEXHzmBwvarF%2BdV",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/117414667828?_skw=gaming+laptop&hash=item1b5675a634:g:DYwAAeSwXFlqqhEn&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGa5d3oYAT%2FBYbNpAxnQWH0%2Brq1ACyp3dpgAOLTjwE1K7jVlo6w0WwVSS9rlkKPID5gZ4UDTxDYQbPvlz9o43htL6cQkpwDaDM6RpnReMoS%2B26RkjLxgyVooMCxxSotj6xwMMvL6dFEIeimB%2Bnmb3g%2BQ4OJUfZ4zqbPgbFHUEBOjIg2%2BWlh7nITYyIMIFF4mvJ7ykesgyqW8dM8BUuz0r4%2BWn9GTRiVRudnFHWqLyqWxzkYCiwNeexAgRpHr6r0LiJtjJk7viffHcr1E8mJiD%2F5dLwZFBXN5ly%2BygJnaDcdpuA%3D%3D",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 2566,
+    "lowestPrice": 2334,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|127843150965|429203376996",
-    "name": "ARGB Gaming Desktop i7 PC Up to 64GB RAM 1TB SSD RTX 5060 Win11 Wifi",
-    "category": "Gaming PC",
-    "image": "https://i.ebayimg.com/images/g/~XUAAeSwFbNp9reT/s-l225.jpg",
-    "description": "ARGB Gaming Desktop i7 PC Up to 64GB RAM 1TB SSD RTX 5060 Win11 Wifi",
+    "id": "v1|286923469872|0",
+    "name": "Dell Precision 15.6” FHD Light Gaming Laptop Core i7 32GB RAM 1TB SSD Win 11 Pro",
+    "category": "Laptop",
+    "image": "https://i.ebayimg.com/images/g/xXUAAeSwhthqliHj/s-l225.jpg",
+    "description": "Dell Precision 15.6” FHD Light Gaming Laptop Core i7 32GB RAM 1TB SSD Win 11 Pro",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 8211,
+        "price": 5640,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/127843150965?_skw=gaming+pc&hash=item1dc40bac75:g:~XUAAeSwFbNp9reT",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/286923469872?_skw=gaming+laptop&hash=item42cdf8b430:g:xXUAAeSwhthqliHj",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 8211,
+    "lowestPrice": 5640,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|178500038434|0",
-    "name": "Gaming PC GT 730 RGB Computer Intel Core i5 16GB RAM 720GB SSD WiFi Windows 11",
-    "category": "Gaming PC",
-    "image": "https://i.ebayimg.com/images/g/zy8AAeSw4FBqqatc/s-l225.jpg",
-    "description": "Gaming PC GT 730 RGB Computer Intel Core i5 16GB RAM 720GB SSD WiFi Windows 11",
+    "id": "v1|326796274533|0",
+    "name": "ASUS - ROG Strix G18 18\" 2.5K 240Hz Gaming Laptop - Intel Core Ultra 9 HX - 3...",
+    "category": "Laptop",
+    "image": "https://i.ebayimg.com/images/g/lZ4AAeSwvKVqnxGZ/s-l225.jpg",
+    "description": "ASUS - ROG Strix G18 18\" 2.5K 240Hz Gaming Laptop - Intel Core Ultra 9 HX - 3...",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 3555,
+        "price": 25205,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/178500038434?_skw=gaming+pc&hash=item298f6e6f22:g:zy8AAeSw4FBqqatc&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGa1Fpa09oGx2gMjeRT43t3zdWgY3Y3cIcTHTMhW%2BCsLOakve11rfm3OPpSBnxJkNKwggQBB7Oiu1c%2BOvB88TIDXACcwG%2FlKz19uMrRLKWiGygrdDjAmo0zTK3sEJ3gvjesSLdnHXY1EPsRRMtAOwBkOctWWRktduds69I8wFnQiKL3sjr4Ag8p8Hl1v0C8mQV6HO5hZeFLIHk1kK1J%2FBbyWfawgRpuBAI5CvLJa9NpJRThVfkQyUQ4EQ%2BH6RDhSwLoPNShw1gvmce6lL76L6Ddb",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/326796274533?_skw=gaming+laptop&hash=item4c16936b65:g:lZ4AAeSwvKVqnxGZ",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 3555,
+    "lowestPrice": 25205,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|127742871806|0",
-    "name": "Gaming Desktop PC Black RGB i7 4.2Ghz 16GB 500GB SSD GTX1060 6GB WiFi Win 11",
-    "category": "Gaming PC",
-    "image": "https://i.ebayimg.com/images/g/l~MAAeSwNw1p8qT1/s-l225.jpg",
-    "description": "Gaming Desktop PC Black RGB i7 4.2Ghz 16GB 500GB SSD GTX1060 6GB WiFi Win 11",
+    "id": "v1|198487876698|0",
+    "name": "Lenovo - LOQ 15.6\" 2K Gaming Laptop - AMD Ryzen 7 170 2025 - 16GB Memory - NV...",
+    "category": "Laptop",
+    "image": "https://i.ebayimg.com/images/g/2HsAAeSwo-5qnvLk/s-l225.jpg",
+    "description": "Lenovo - LOQ 15.6\" 2K Gaming Laptop - AMD Ryzen 7 170 2025 - 16GB Memory - NV...",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 4665,
+        "price": 14003,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/127742871806?_skw=gaming+pc&hash=item1dbe1188fe:g:l~MAAeSwNw1p8qT1&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGZaEO4tF5CNO2ras2sXHn%2BGQ4kK60TMJejQmS%2F1A2J3BdXcD%2BszPE%2BbRxWVNgoNZxbQebm%2B1bfW%2FQsF7pQpSY4vjeBY1OeIWVikZDg2V6pxvQ1%2FzQ0bg2f9gFOH65BLxyTOjQTxkaC70wSv0Ij%2BCjf8lIMmhwm6UgLqCvGOTyMvroMZFtHd4tYdPWrtND7OnK5H5u71rieVoG0eS6hdQ72DuvOexakopigDX3taqM80%2BqsCXyf38BfeiSi0BnULtizndLIJgFMJiH6ixUXHSNJ3",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/198487876698?_skw=gaming+laptop&hash=item2e36cca45a:g:2HsAAeSwo-5qnvLk",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 4665,
+    "lowestPrice": 14003,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|117017547855|417096168002",
+    "name": "2026 HP Victus Gaming Laptop 15.6\" 144Hz Intel i5 RTX 3050 Upto 64GB RAM 2TB SSD",
+    "category": "Laptop",
+    "image": "https://i.ebayimg.com/images/g/0a0AAeSwD7lpG4AM/s-l225.jpg",
+    "description": "2026 HP Victus Gaming Laptop 15.6\" 144Hz Intel i5 RTX 3050 Upto 64GB RAM 2TB SSD",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 12967,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/117017547855?_skw=gaming+laptop&hash=item1b3eca144f:g:0a0AAeSwD7lpG4AM",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 12967,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|188743672190|0",
+    "name": "NIMO 17.3\" Light Gaming Laptop AMD Ryzen 7 7735HS 16GB DDR5 256GB SSD Backlit KB",
+    "category": "Laptop",
+    "image": "https://i.ebayimg.com/images/g/X54AAeSwwvJqcjyp/s-l225.jpg",
+    "description": "NIMO 17.3\" Light Gaming Laptop AMD Ryzen 7 7735HS 16GB DDR5 256GB SSD Backlit KB",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 4574,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/188743672190?_skw=gaming+laptop&hash=item2bf1ffe17e:g:X54AAeSwwvJqcjyp&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYdBy1h5a0nzfvfbEE6yG%2BxcSCucPUIaYKm8pjg%2FKLFM3SuLY%2F6Dtm75F38CnRPYwE3QrpfFxE7USxIlNeQPjBzMBO5zfHrCjX8rrn3MBxqoU3x94fc4%2BcetShObI%2FePWmAQweBPJcJODpeUtX2deJ202hFBhIkt04v1FRvmzcfNnmHPdjaHa827%2F5dYtk4ivGuYt0RDH6tqXCLKWINV%2F%2BS5jwsvKnrNbFQq%2BvUijqvh12VFqnRIKdELu9pRKTEeb3UKfDlIvKBRc48DLzm5CyBYX1VlPjDMSw2GNDXDnn9wA%3D%3D",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 4574,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|237017296413|0",
+    "name": "NIMO 15.6\" AI Ready Gaming Laptop Edition AMD Ryzen 5 6600H 16GB DDR5 RAM 512GB",
+    "category": "Laptop",
+    "image": "https://i.ebayimg.com/images/g/YBsAAeSwtD9qWmNw/s-l225.jpg",
+    "description": "NIMO 15.6\" AI Ready Gaming Laptop Edition AMD Ryzen 5 6600H 16GB DDR5 RAM 512GB",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 3734,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/237017296413?_skw=gaming+laptop&hash=item372f54ee1d:g:YBsAAeSwtD9qWmNw&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGZVkV5xfebF0HOWSCjjnrbfB469B27YVB8l1wjczAbMqbCQSkKrPqTmus7JL9mKqY2Us%2BYWGi99L%2BhSCNYssuRcxIfiAuuyqr80p2pBD42vqk%2BVdxP0nbEwxO70rQw22KG63tPgqi0py443zlj0IxIAmwvMaPX1e6AP156PHhaelo5hxcvCghfPtGP%2BLRwH4wSpeSWcimwwpjdfml0pwRliYBP%2BgFdvyWQtkVMAFJtm%2FJvWJUs0eSRosiykCTWz8qV%2BtD%2BiPlPA2QwcrgMNDsPXsf%2FU35iKIuStMdEj%2FSoSXA%3D%3D",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 3734,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|396109494973|664856053135",
+    "name": "Dell Gaming PC Desktop Computer, Up to 64GB RAM, 17TB SSD, Windows 11/10",
+    "category": "Gaming PC",
+    "image": "https://i.ebayimg.com/images/g/iGwAAeSw26pp1T59/s-l225.jpg",
+    "description": "Dell Gaming PC Desktop Computer, Up to 64GB RAM, 17TB SSD, Windows 11/10",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 2978,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/396109494973?_skw=gaming+pc&hash=item5c39f73abd:g:iGwAAeSw26pp1T59",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 2978,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|227491490869|0",
+    "name": "Corsair HX1500i 1500W 80+ Platinum Fully Modular ATX 3.1 PSU Certified Refurb",
+    "category": "Gaming PC",
+    "image": "https://i.ebayimg.com/images/g/PPkAAeSwGatqjgd7/s-l225.jpg",
+    "description": "Corsair HX1500i 1500W 80+ Platinum Fully Modular ATX 3.1 PSU Certified Refurb",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 1942,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/227491490869?_skw=gaming+pc&hash=item34f78cac35:g:PPkAAeSwGatqjgd7&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGYjXnU4MW93sY1MUmWPVH%2Bin4LvjsRjeiwdd9WLmgupQ%2FyIAf2I%2FgBVXuCPxhXzd5pf0vPI6Wp1hPUNDJFPjrqajSU%2FLDTEUqqqO3kvg8LSDJdST7DRlCtjbJJTPK47SVZ8WY0ykiLiQbZpGa0%2F%2BRaj7jwgmjatvmxkS6DHJvB4%2F72z4QpExzo0XtF0c2QNGYBa43pqL9usTfa9ZForP5gu9qbJ%2FHuGzoumROlqqGVMiLFWZZfY5Z2HRVZxGOm%2BUU%2BYViHko7BvYqTcZgLLa2o76HecN6%2FMtKppKC9GETz6kQ%3D%3D",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 1942,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|237067967021|537469537658",
+    "name": "Dell RGB Gaming PC i5-7th 32GB RAM 1TB SSD 1TB HDD AMD RX-550 24” LED RGBK&M W11",
+    "category": "Gaming PC",
+    "image": "https://i.ebayimg.com/images/g/7NoAAeSwgkJqqByK/s-l225.jpg",
+    "description": "Dell RGB Gaming PC i5-7th 32GB RAM 1TB SSD 1TB HDD AMD RX-550 24” LED RGBK&M W11",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 4014,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/237067967021?_skw=gaming+pc&hash=item37325a1a2d:g:7NoAAeSwgkJqqByK&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGYoKGYQ5Lot5hMmcPslHUMNEEpbB4jf545--YzNwMnoSZ24b%2BgPcCC9J3THB8BqEsVzDOKuVleOpYmHh9oXmPUg8Evd4LrMyTeDv1hTuLKyQ7odtH2AdQlgaDgzd3W4j8BKXHsuJo55LOdg5lGDnLlDCWfme9R3HqMtealQlW8HTGK%2FoyK5U6jsHR%2FTq5y%2FYV%2FRi2QBGBR7ZYmr4d9rlvDGJe8qKy2GAEAt1mGPnCkOUa16XFUPq0IZk%2FCa1zhrqbWDXd%2FMqXzRrJiIHqEee3nk",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 4014,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|137430181731|435639517903",
+    "name": "SKYTECH Gaming PC AMD Ryzen5 2400GE 32GB RAM 1TB SSD Vega 11 Win11 Office Wifi",
+    "category": "Gaming PC",
+    "image": "https://i.ebayimg.com/images/g/vekAAeSwf-hqNDdQ/s-l225.jpg",
+    "description": "SKYTECH Gaming PC AMD Ryzen5 2400GE 32GB RAM 1TB SSD Vega 11 Win11 Office Wifi",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 5974,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/137430181731?_skw=gaming+pc&hash=item1fff7a2763:g:vekAAeSwf-hqNDdQ&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGYld0a7tZOjCEYWGOz4BzO%2Bxa%2B%2Fa%2F7UsQF8BLMG5xKJUeY1d56Q2g4kvN4m8krr96rwM6kFpZN1Lh9pW1FR5eAI4wJaR6INCrlquMq2mFUisq4Z8Sr6aDGgAm5wOSzDrJ5wuXD36zd8LsMq8mlQl0Iq2vSIT0ZcyI%2FWf3TeW%2Fy7uJggQHwK9wcdd6WzPT1T5816fkpDdGwhKoPN8SAAyaiTpLOGLxakImhqgL9DjI03ICAMxSWdkYfgzJYWbZ%2ByXutzkVvVHppritqHHV9xXlDc",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 5974,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|304762827171|606858647919",
+    "name": "Dell Windows 11 Desktop PC up to i7, 32GB RAM, 2TB NVMe SSD, Built-In WiFi",
+    "category": "Gaming PC",
+    "image": "https://i.ebayimg.com/images/g/-zgAAeSwislql8CL/s-l225.jpg",
+    "description": "Dell Windows 11 Desktop PC up to i7, 32GB RAM, 2TB NVMe SSD, Built-In WiFi",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 3193,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/304762827171?_skw=gaming+pc&hash=item46f547b1a3:g:-zgAAeSwislql8CL",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 3193,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|136935928205|435416980264",
+    "name": "Skytech ARGB Gaming Desktop Inter 9th Gen PC 32GB RAM 1TB SSD RTX 4060 Win11",
+    "category": "Gaming PC",
+    "image": "https://i.ebayimg.com/images/g/xOUAAeSwCDtpj64e/s-l225.jpg",
+    "description": "Skytech ARGB Gaming Desktop Inter 9th Gen PC 32GB RAM 1TB SSD RTX 4060 Win11",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 4668,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/136935928205?_skw=gaming+pc&hash=item1fe204718d:g:xOUAAeSwCDtpj64e",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 4668,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|358918377936|626872422517",
+    "name": "RGB Gaming PC Desktop inter 8th Gen Compute 32GB RAM 1TB SSD GTX 1060 Win11 Wifi",
+    "category": "Gaming PC",
+    "image": "https://i.ebayimg.com/images/g/whsAAeSwiuJqfKqd/s-l225.jpg",
+    "description": "RGB Gaming PC Desktop inter 8th Gen Compute 32GB RAM 1TB SSD GTX 1060 Win11 Wifi",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 3734,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/358918377936?_skw=gaming+pc&hash=item539133d1d0:g:whsAAeSwiuJqfKqd",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 3734,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
+  },
+  {
+    "id": "v1|304041042675|606844244216",
+    "name": "Dell Windows 11 Desktop PC up to i7 8th Gen, 32GB RAM, 4TB SSD, Built-In WiFi",
+    "category": "Gaming PC",
+    "image": "https://i.ebayimg.com/images/g/LJoAAeSwlC5qeWuw/s-l225.jpg",
+    "description": "Dell Windows 11 Desktop PC up to i7 8th Gen, 32GB RAM, 4TB SSD, Built-In WiFi",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "country": "NO",
+        "condition": "New",
+        "price": 4182,
+        "currency": "NOK",
+        "shipping": null,
+        "inStock": true,
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/304041042675?_skw=gaming+pc&hash=item46ca4222f3:g:LJoAAeSwlC5qeWuw",
+        "updatedAt": "2026-09-16"
+      }
+    ],
+    "lowestPrice": 4182,
+    "lowestStore": "eBay",
+    "updatedAt": "2026-09-16"
   },
   {
     "id": "v1|206317540593|0",
@@ -4279,174 +4409,44 @@
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 2799,
+        "price": 2801,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/206317540593?_skw=gaming+pc&hash=item30097bd4f1:g:yxsAAeSww~FqH03G&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGabi%2FDm2oD6LNJSa%2BVXooStN6sWRJr6S%2Fi9A5hm%2FOMHMuDX7k1VlPxmRf%2BIFP7YJ9yyhLi9Gd6m2QvAh%2FQOIqTh3Zahig4HKALzWajJfTTESAU0yu8Fd0vMUdmyyJhISWQKW839xtCtkN9qZ6FGGtVx73%2BvShirvo7ryIAaE0KFo5DrS57XGsggd6uriHWcv3LQRAPi5NypGG9zoB%2BMruFuLdKLXRt8dK6w3nBv7W%2BKa%2BaUha1Tze0twIsBCGJJ31%2B0WoHWfZDF38Z4b%2F1MnECN6j1kWiZD0rS%2Fso7sAuluvw%3D%3D",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/206317540593?_skw=gaming+pc&hash=item30097bd4f1:g:yxsAAeSww~FqH03G&amdata=enc%3AAQALAAAA8ACCtXRWQnOEpyOqnQQ8KGabi%2FDm2oD6LNJSa%2BVXooStN6sWRJr6S%2Fi9A5hm%2FOMHMuDX7k1VlPxmRf%2BIFP7YJ9yyhLi9Gd6m2QvAh%2FQOIqTh3Zahig4HKALzWajJfTTESAU0yu8Fd0vMUdmyyJhISWSZsV%2FZuBX7FIMY%2FhAio6wzczbUqy%2FgXh34ZZTs5yhs6zPdL9flQQRlxArivOATplJ6FIj1dyUG5SYY49qDGsxeTX27aeMd0ySs9U5GvnqF0gYfz7UJtjpE2WbSEo0rbpUbAxcVqdwbjf%2B9dk3clhank08PCiVNApzNUoPk%2BiYrrA%3D%3D",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 2799,
+    "lowestPrice": 2801,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   },
   {
-    "id": "v1|396109494973|664794791778",
-    "name": "Dell Gaming PC Desktop Computer, Up to 64GB RAM, 17TB SSD, Windows 11/10",
+    "id": "v1|236803007919|537273040681",
+    "name": "Custom Gaming PC RGB Desktop Intel i7 PC 32GB 1TB SSD Nvidia GTX 1660 Super",
     "category": "Gaming PC",
-    "image": "https://i.ebayimg.com/images/g/iGwAAeSw26pp1T59/s-l225.jpg",
-    "description": "Dell Gaming PC Desktop Computer, Up to 64GB RAM, 17TB SSD, Windows 11/10",
+    "image": "https://i.ebayimg.com/images/g/yacAAeSw0RtpEsWX/s-l225.jpg",
+    "description": "Custom Gaming PC RGB Desktop Intel i7 PC 32GB 1TB SSD Nvidia GTX 1660 Super",
     "specifications": {},
     "offers": [
       {
         "store": "eBay",
         "country": "NO",
         "condition": "New",
-        "price": 3443,
+        "price": 3239,
         "currency": "NOK",
         "shipping": null,
         "inStock": true,
         "affiliate": true,
         "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/396109494973?_skw=gaming+pc&hash=item5c39f73abd:g:iGwAAeSw26pp1T59",
-        "updatedAt": "2026-09-15"
+        "url": "https://www.ebay.com/itm/236803007919?_skw=gaming+pc&hash=item37228f25af:g:yacAAeSw0RtpEsWX&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGZwAgf2pui6jmitXNytxwR8HQtlTlWW50f%2FmfbxyDnc3%2Bs3eyz9s0FhCsR5UKkus0SPjyB2wPxF%2BO2ADoHBoQ0Vyel8Zfsk00WXpIplvVV97St5JybcCbzWzqsbrc387Hnu0hY3fMPjvGS9eAmJFvb460q29Jpn%2BuSi9hXFkeArurDlS8in2%2BGNx%2FWUeIV6S0GUo3cJEdyWGE7LAsSs4i4Pdv3Q8oGob2AwEvpmqNNL17DrtXCvNNk40lEfMrfIPivU40IfGFSYK7pJAcDVu4Ne",
+        "updatedAt": "2026-09-16"
       }
     ],
-    "lowestPrice": 3443,
+    "lowestPrice": 3239,
     "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|304762827171|606858647966",
-    "name": "Dell Windows 11 Desktop PC up to i7, 32GB RAM, 2TB NVMe SSD, Built-In WiFi",
-    "category": "Gaming PC",
-    "image": "https://i.ebayimg.com/images/g/-zgAAeSwislql8CL/s-l225.jpg",
-    "description": "Dell Windows 11 Desktop PC up to i7, 32GB RAM, 2TB NVMe SSD, Built-In WiFi",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 3210,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/304762827171?_skw=gaming+pc&hash=item46f547b1a3:g:-zgAAeSwislql8CL",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 3210,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|358918377936|626872422529",
-    "name": "RGB Gaming PC Desktop inter 8th Gen Compute 32GB RAM 1TB SSD GTX 1060 Win11 Wifi",
-    "category": "Gaming PC",
-    "image": "https://i.ebayimg.com/images/g/whsAAeSwiuJqfKqd/s-l225.jpg",
-    "description": "RGB Gaming PC Desktop inter 8th Gen Compute 32GB RAM 1TB SSD GTX 1060 Win11 Wifi",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 4665,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/358918377936?_skw=gaming+pc&hash=item539133d1d0:g:whsAAeSwiuJqfKqd",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 4665,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|366671264896|0",
-    "name": "Gaming Desktop PC Ryzen 7 5700 RTX 3060 Ti 16GB RAM 1TB NVMe Windows 11",
-    "category": "Gaming PC",
-    "image": "https://i.ebayimg.com/images/g/0z4AAeSw3c5qqbFJ/s-l225.jpg",
-    "description": "Gaming Desktop PC Ryzen 7 5700 RTX 3060 Ti 16GB RAM 1TB NVMe Windows 11",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 6718,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/366671264896?_skw=gaming+pc&hash=item555f4f7c80:g:0z4AAeSw3c5qqbFJ",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 6718,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|236975778841|537389699851",
-    "name": "Fast Dell i7 Desktop Computer PC | up to 32GB RAM 2TB SSD | Windows 11 Pro WiFi",
-    "category": "Gaming PC",
-    "image": "https://i.ebayimg.com/images/g/194AAeSw0sdqbRfq/s-l225.jpg",
-    "description": "Fast Dell i7 Desktop Computer PC | up to 32GB RAM 2TB SSD | Windows 11 Pro WiFi",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 2333,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/236975778841?_skw=gaming+pc&hash=item372cdb6c19:g:194AAeSw0sdqbRfq&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGaqKHImq8xZXsDfks%2BL6IxLggVu%2FNSI5T1wEO0nSocqcYlEYXffUzZVNzgF5aC9DXrViphekdEXPOfJk7z1v8m8iFiOAfQXZHj0XMb6cFAHFhSn6Df2XtIKci04VYEuHIP1jY%2BedpG8i2YE6tHyTq6Zo4YvcgewHY2WmzznP51HR1z4aajFDNWgQBPpGXWxgJSCiUfj7fOr7lzCA59c61Fx5V6TMQe1sIYHjvgbYq3h4Ljxsi3LaZADk%2BmGk%2BwzTCrjE%2BbtcitU2pB9PQTwMLjG",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 2333,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
-  },
-  {
-    "id": "v1|178499911196|0",
-    "name": "Gaming Desktop CustomBuild ABS Ultra7-265KF 3.9GHz 2TB Nvme 16GB DDR5 RTX5060 B-",
-    "category": "Gaming PC",
-    "image": "https://i.ebayimg.com/images/g/hqQAAeSwiOxqhGTy/s-l225.jpg",
-    "description": "Gaming Desktop CustomBuild ABS Ultra7-265KF 3.9GHz 2TB Nvme 16GB DDR5 RTX5060 B-",
-    "specifications": {},
-    "offers": [
-      {
-        "store": "eBay",
-        "country": "NO",
-        "condition": "New",
-        "price": 10628,
-        "currency": "NOK",
-        "shipping": null,
-        "inStock": true,
-        "affiliate": true,
-        "affiliateNetwork": "eBay Partner Network",
-        "url": "https://www.ebay.com/itm/178499911196?_skw=gaming+pc&hash=item298f6c7e1c:g:hqQAAeSwiOxqhGTy&amdata=enc%3AAQALAAAA4ACCtXRWQnOEpyOqnQQ8KGb%2B%2BTiDUMkttQ6p4WkPJoDDwX2ND585NzKMSJmDXWW2pjDQQFvd226XBJnKn34k7R2QAHwZcDdO2sKYp9RcPQgbVN%2FSBay9qM3JSoBXF6EX4oT%2BvYk4P%2BLvaR1J86A58nnGKDZqrbpcBdKoQkJ1g6epUtZEWRy0QlNlMGbSbdIoFWWWx93EIQ4uTb25TXTN8HCDCdReB029PL6oOP1pdbN95viGXeWC5mmEPWCtyT%2FuEYdBoj%2FvvxORR3D4ktGbPQJ8PaXQg4ruav%2FPFEzDI1fe",
-        "updatedAt": "2026-09-15"
-      }
-    ],
-    "lowestPrice": 10628,
-    "lowestStore": "eBay",
-    "updatedAt": "2026-09-15"
+    "updatedAt": "2026-09-16"
   }
 ]
