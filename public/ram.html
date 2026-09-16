@@ -117,7 +117,7 @@ return `
 ${ram}<br>
 ${type} · ${speed} · ${latency}
 </div>
-<div class="price">${price(p).toLocaleString("nb-NO")} kr</div>
+<div class="price">${store.toLowerCase().includes("ebay") ? `${Math.round(price(p) / 9.3)} USD ≈ ${price(p).toLocaleString("nb-NO")} NOK` : `${price(p).toLocaleString("nb-NO")} kr`}</div>
 <div class="store">${store}</div>
 <a class="button" href="${link}" target="_blank" rel="noopener">Se tilbud</a>
 </article>
