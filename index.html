@@ -420,6 +420,20 @@ async function searchProducts() {
 
         status.textContent =
             "Showing eBay results for: " + q;
+        let usdToNokRate = 9.3;
+
+        try {
+            const fxResponse = await fetch(
+                "https://api.frankfurter.app/latest?from=USD&to=NOK"
+            );
+            const fxData = await fxResponse.json();
+
+            if (fxData?.rates?.NOK) {
+                usdToNokRate = Number(fxData.rates.NOK);
+            }
+        } catch (e) {
+            console.warn("USD/NOK rate unavailable:", e);
+        }
 
         container.innerHTML = data.itemSummaries.map(function(item) {
 
@@ -431,20 +445,7 @@ async function searchProducts() {
 
             const title =
                 item.title || "eBay Product";
-            let usdToNokRate = 9.3;
-
-            try {
-                const fxResponse = await fetch(
-                    "https://api.frankfurter.app/latest?from=USD&to=NOK"
-                );
-                const fxData = await fxResponse.json();
-
-                if (fxData?.rates?.NOK) {
-                    usdToNokRate = Number(fxData.rates.NOK);
-                }
-            } catch (e) {
-                console.warn("USD/NOK rate unavailable:", e);
-            }
+           
 
             const price =
                 item.price &&
