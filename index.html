@@ -431,6 +431,20 @@ async function searchProducts() {
 
             const title =
                 item.title || "eBay Product";
+            let usdToNokRate = 9.3;
+
+            try {
+                const fxResponse = await fetch(
+                    "https://api.frankfurter.app/latest?from=USD&to=NOK"
+                );
+                const fxData = await fxResponse.json();
+
+                if (fxData?.rates?.NOK) {
+                    usdToNokRate = Number(fxData.rates.NOK);
+                }
+            } catch (e) {
+                console.warn("USD/NOK rate unavailable:", e);
+            }
 
             const price =
                 item.price &&
@@ -480,10 +494,12 @@ async function searchProducts() {
                         ${escapeHtml(condition)}
                     </div>
 
-                    <div class="price ebay-price">
-                        ${escapeHtml(price)}
-                        ${escapeHtml(currency)}
-                    </div>
+                   <div class="price ebay-price">
+                       ${currency === "USD"
+                           ? `$${Number(price).toFixed(2)} USD ≈ ${Math.round(Number(price) * usdToNokRate).toLocaleString("nb-NO")} NOK`
+                           : `${escapeHtml(price)} ${escapeHtml(currency)}`
+                       }
+                   </div>
 
                     <div class="ebay-shipping">
                         ${escapeHtml(shipping)}
