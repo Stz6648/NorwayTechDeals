@@ -287,8 +287,10 @@ async function fetchAcerProducts() {
 
       const price =
         parsePrice(row.sale_price) ||
-        parsePrice(row.price) ||
-        parsePrice(row.search_price);
+        parsePrice(row.display_price) ||
+        parsePrice(row.store_price) ||
+        parsePrice(row.search_price) ||
+        parsePrice(row.price);
 
       if (!id || !title || !link || price <= 0) {
         continue;
