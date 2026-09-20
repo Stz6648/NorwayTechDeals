@@ -280,7 +280,9 @@ async function fetchAcerProducts() {
       return [];
     }
 
-    const feedInfo = await infoResponse.json();
+    const metadataText = await infoResponse.text();
+    const metadataRows = parseCSV(metadataText);
+    const feedInfo = metadataRows[0] || {};
 
     console.log("Awin feed info:", JSON.stringify(feedInfo));
 
