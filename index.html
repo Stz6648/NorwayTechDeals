@@ -596,22 +596,36 @@ async function loadProducts() {
 
             card.className = "card";
 
-            const offers =
-                Array.isArray(product.offers)
-                    ? product.offers
-                        .filter(function(offer) {
-                            return (
-                                offer &&
-                                Number(offer.price) > 0
-                            );
-                        })
-                        .sort(function(a, b) {
-                            return (
-                                Number(a.price) -
-                                Number(b.price)
-                            );
-                        })
-                    : [];
+            let offers =
+              Array.isArray(product.offers)
+                ? product.offers
+                    .filter(function (offer) {
+                      return (
+                        offer &&
+                        Number(offer.price) > 0
+                      );
+                    })
+                    .sort(function (a, b) {
+                      return (
+                        Number(a.price) -
+                        Number(b.price)
+                      );
+                     })
+                 : [];
+
+            if (
+              offers.length === 0 &&
+              Number(product.price) > 0
+            ) {
+              offers = [
+                {
+                  price: Number(product.price),
+                  store: product.store || "Acer",
+                  currency: product.currency || "NOK",
+                  url: product.url || ""
+                 }
+               ];
+            }
 
             const lowestOffer =
                 offers.length > 0
