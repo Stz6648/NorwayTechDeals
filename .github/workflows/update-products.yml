@@ -11,6 +11,8 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    env:
+      AWIN_ACER_FEED_URL: ${{ secrets.AWIN_ACER_FEED_URL }}
 
     steps:
       - name: Checkout
