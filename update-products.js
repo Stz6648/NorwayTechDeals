@@ -38,6 +38,16 @@ async function searchEbay(query) {
 }
 
 function parseCSV(text) {
+  const firstLine = text.split(/\r?\n/)[0] || "";
+
+  const delimiters = [",", ";", "|", "\t"];
+
+  const delimiter = delimiters.reduce((best, current) => {
+    const bestCount = firstLine.split(best).length;
+    const currentCount = firstLine.split(current).length;
+    return currentCount > bestCount ? current : best;
+  }, ",");
+
   const rows = [];
   let row = [];
   let value = "";
@@ -52,11 +62,13 @@ function parseCSV(text) {
       i++;
     } else if (char === '"') {
       insideQuotes = !insideQuotes;
-    } else if (char === "," && !insideQuotes) {
+    } else if (char === delimiter && !insideQuotes) {
       row.push(value);
       value = "";
     } else if ((char === "\n" || char === "\r") && !insideQuotes) {
-      if (char === "\r" && next === "\n") i++;
+      if (char === "\r" && next === "\n") {
+        i++;
+      }
 
       row.push(value);
       value = "";
@@ -65,6 +77,41 @@ function parseCSV(text) {
         rows.push(row);
       }
 
+      row = [];
+    } else {
+      value += char;
+    }
+  }
+
+  if (value !== "" || row.length > 0) {
+    row.push(value);
+
+    if (row.some(cell => cell.trim() !== "")) {
+      rows.push(row);
+    }
+  }
+
+  if (!rows.length) {
+    return [];
+  }
+
+  const headers = rows[0].map(header =>
+    header
+      .replace(/^\uFEFF/, "")
+      .trim()
+      .toLowerCase()
+  );
+
+  return rows.slice(1).map(values => {
+    const obj = {};
+
+    headers.forEach((header, index) => {
+      obj[header] = (values[index] || "").trim();
+    });
+
+    return obj;
+  });
+}
       row = [];
     } else {
       value += char;
