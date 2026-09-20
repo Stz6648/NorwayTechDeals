@@ -304,7 +304,7 @@ async function fetchAcerProducts() {
     const rows = parseCSV(text);
 
     console.log(`Acer feed rows: ${rows.length}`);
-
+    console.log("Acer first row:", JSON.stringify(rows[0]));
     const acerProducts = [];
 
     for (const row of rows) {
