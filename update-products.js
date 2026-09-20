@@ -1,52 +1,110 @@
 const fs = require("fs");
 const zlib = require("zlib");
 
-const EBAY_API = "https://techkjop.no/api/ebay-search";
-const FX_API = "https://api.frankfurter.dev/v2/rate/usd/nok";
-
+const EBAY_API = "https://api.ebay.com/buy/browse/v1/item_summary/search";
+const FX_API = "https://open.er-api.com/v6/latest/USD";
 const AWIN_ACER_FEED_URL = process.env.AWIN_ACER_FEED_URL || "";
 
 const products = [
+  "RTX 5070",
+  "RTX 5060",
   "RTX 5090",
   "RTX 5080",
-  "RTX 5070 Ti",
-  "RTX 5070",
-  "RTX 5060 Ti",
-  "RTX 5060",
-  "RX 9070",
-  "DDR5 32GB",
-  "DDR5 16GB",
   "gaming laptop",
-  "gaming pc"
+  "gaming pc",
+  "laptop",
+  "mini pc",
+  "desktop pc",
+  "RAM DDR5",
+  "SSD 1TB"
 ];
 
-async function searchEbay(query) {
+async function searchEbay(query, accessToken, usdToNok) {
   try {
-    const response = await fetch(
-      `${EBAY_API}?q=${encodeURIComponent(query)}`
-    );
+    const url =
+      `${EBAY_API}?q=${encodeURIComponent(query)}` +
+      `&limit=10&filter=buyingOptions%3D%7BFIXED_PRICE%7D`;
 
-    if (!response.ok) return [];
+    const response = await fetch(url, {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        "Content-Type": "application/json"
+      }
+    });
+
+    if (!response.ok) {
+      console.log(`eBay search failed for ${query}: ${response.status}`);
+      return [];
+    }
 
     const data = await response.json();
 
-    return Array.isArray(data) ? data : data.itemSummaries || [];
+    return (data.itemSummaries || []).map(item => {
+      const usd = Number(item.price?.value || 0);
+
+      return {
+        id: `ebay-${item.itemId}`,
+        name: item.title || query,
+        price: usd,
+        currency: "USD",
+        priceNOK: usdToNok
+          ? Math.round(usd * usdToNok)
+          : null,
+        image:
+          item.image?.imageUrl ||
+          item.thumbnailImages?.[0]?.imageUrl ||
+          "",
+        url: item.itemWebUrl || "",
+        store: "eBay",
+        affiliateNetwork: "eBay Partner Network",
+        condition: item.condition || "New",
+        category: query,
+        country: "US",
+        updatedAt: new Date().toISOString()
+      };
+    });
   } catch (error) {
-    console.error("eBay error:", query, error.message);
+    console.log(`eBay error for ${query}:`, error.message);
     return [];
   }
 }
 
-function parseCSV(text) {
+function detectDelimiter(text) {
   const firstLine = text.split(/\r?\n/)[0] || "";
+  const candidates = [",", ";", "|", "\t"];
 
-  const delimiters = [",", ";", "|", "\t"];
+  let bestDelimiter = ",";
+  let bestCount = -1;
 
-  const delimiter = delimiters.reduce((best, current) => {
-    const bestCount = firstLine.split(best).length;
-    const currentCount = firstLine.split(current).length;
-    return currentCount > bestCount ? current : best;
-  }, ",");
+  for (const delimiter of candidates) {
+    let count = 0;
+    let insideQuotes = false;
+
+    for (let i = 0; i < firstLine.length; i++) {
+      const char = firstLine[i];
+
+      if (char === '"') {
+        if (insideQuotes && firstLine[i + 1] === '"') {
+          i++;
+        } else {
+          insideQuotes = !insideQuotes;
+        }
+      } else if (char === delimiter && !insideQuotes) {
+        count++;
+      }
+    }
+
+    if (count > bestCount) {
+      bestCount = count;
+      bestDelimiter = delimiter;
+    }
+  }
+
+  return bestDelimiter;
+}
+
+function parseCSV(text) {
+  const delimiter = detectDelimiter(text);
 
   const rows = [];
   let row = [];
@@ -65,7 +123,10 @@ function parseCSV(text) {
     } else if (char === delimiter && !insideQuotes) {
       row.push(value);
       value = "";
-    } else if ((char === "\n" || char === "\r") && !insideQuotes) {
+    } else if (
+      (char === "\n" || char === "\r") &&
+      !insideQuotes
+    ) {
       if (char === "\r" && next === "\n") {
         i++;
       }
@@ -112,79 +173,69 @@ function parseCSV(text) {
     return obj;
   });
 }
-      row = [];
-    } else {
-      value += char;
-    }
-  }
-
-  if (value !== "" || row.length > 0) {
-    row.push(value);
-
-    if (row.some(cell => cell.trim() !== "")) {
-      rows.push(row);
-    }
-  }
-
-  if (!rows.length) return [];
-
-  const headers = rows[0].map(h =>
-    h.replace(/^\uFEFF/, "").trim().toLowerCase()
-  );
-
-  return rows.slice(1).map(values => {
-    const obj = {};
-
-    headers.forEach((header, index) => {
-      obj[header] = (values[index] || "").trim();
-    });
-
-    return obj;
-  });
-}
-
-function getField(row, fields) {
-  for (const field of fields) {
-    if (row[field] !== undefined && row[field] !== "") {
-      return row[field];
-    }
-  }
-
-  return "";
-}
 
 function parsePrice(value) {
-  if (!value) return 0;
+  if (!value) {
+    return 0;
+  }
 
-  const cleaned = String(value)
+  let text = String(value)
+    .trim()
     .replace(/\s/g, "")
-    .replace(/[^\d,.-]/g, "")
-    .replace(",", ".");
+    .replace(/[^\d,.-]/g, "");
 
-  const number = Number(cleaned);
+  if (!text) {
+    return 0;
+  }
+
+  if (text.includes(",") && text.includes(".")) {
+    if (text.lastIndexOf(",") > text.lastIndexOf(".")) {
+      text = text.replace(/\./g, "").replace(",", ".");
+    } else {
+      text = text.replace(/,/g, "");
+    }
+  } else if (text.includes(",")) {
+    const parts = text.split(",");
+    const lastPart = parts[parts.length - 1];
+
+    if (lastPart.length === 2) {
+      text = text.replace(/\./g, "").replace(",", ".");
+    } else {
+      text = text.replace(/,/g, "");
+    }
+  }
+
+  const number = Number(text);
 
   return Number.isFinite(number) ? number : 0;
 }
 
 function parseStock(value) {
-  const v = String(value || "").toLowerCase().trim();
+  if (value === undefined || value === null || value === "") {
+    return true;
+  }
 
-  if (!v) return true;
+  const text = String(value).trim().toLowerCase();
 
-  return [
-    "1",
-    "true",
-    "yes",
-    "y",
-    "in stock",
-    "instock",
-    "available",
-    "på lager"
-  ].includes(v);
+  if (
+    [
+      "0",
+      "false",
+      "no",
+      "out of stock",
+      "outofstock",
+      "ikke på lager"
+    ].includes(text)
+  ) {
+    return false;
+  }
+
+  return true;
 }
 
-function acerCategory(name, category) {
-  const text = `${name} ${category}`.toLowerCase();
+function getCategory(name, category) {
+  const text =
+    `${name || ""} ${category || ""}`.toLowerCase();
 
   if (
     text.includes("laptop") ||
@@ -215,7 +266,7 @@ function acerCategory(name, category) {
 
 async function fetchAcerProducts() {
   if (!AWIN_ACER_FEED_URL) {
-    console.log("Acer Awin feed not configured. Skipping Acer.");
+    console.log("AWIN_ACER_FEED_URL is not set.");
     return [];
   }
 
@@ -225,281 +276,323 @@ async function fetchAcerProducts() {
     const response = await fetch(AWIN_ACER_FEED_URL);
 
     if (!response.ok) {
-      throw new Error(`Awin HTTP ${response.status}`);
+      console.log(
+        `Acer feed download failed: ${response.status}`
+      );
+      return [];
     }
+
+    const contentEncoding =
+      response.headers.get("content-encoding") || "";
 
     const buffer = Buffer.from(await response.arrayBuffer());
 
-    let dataBuffer = buffer;
+    let text;
 
     if (
-      buffer.length >= 2 &&
-      buffer[0] === 0x1f &&
-      buffer[1] === 0x8b
+      contentEncoding.includes("gzip") ||
+      buffer[0] === 0x1f && buffer[1] === 0x8b
     ) {
-      dataBuffer = zlib.gunzipSync(buffer);
+      text = zlib.gunzipSync(buffer).toString("utf8");
+    } else {
+      text = buffer.toString("utf8");
     }
 
-    const csvText = dataBuffer.toString("utf8");
-
-    const rows = parseCSV(csvText);
+    const rows = parseCSV(text);
 
     console.log(`Acer feed rows: ${rows.length}`);
 
-    const result = [];
+    const acerProducts = [];
 
     for (const row of rows) {
-      const id = getField(row, [
-        "aw_product_id",
-        "merchant_product_id",
-        "product_id"
-      ]);
+      const id =
+        row.aw_product_id ||
+        row.merchant_product_id ||
+        row.product_id ||
+        "";
 
-      const name = getField(row, [
-        "product_name",
-        "name",
-        "title"
-      ]);
+      const name =
+        row.product_name ||
+        row.name ||
+        row.title ||
+        "";
 
       const price = parsePrice(
-        getField(row, [
-          "search_price",
-          "price",
-          "store_price"
-        ])
+        row.search_price ||
+        row.price ||
+        row.product_price ||
+        ""
       );
 
-      const currency =
-        getField(row, ["currency"]) || "NOK";
-
-      const image = getField(row, [
-        "merchant_image_url",
-        "aw_image_url",
-        "large_image",
-        "image_url"
-      ]);
-
-      const url = getField(row, [
-        "aw_deep_link",
-        "deep_link",
-        "merchant_deep_link",
-        "purl"
-      ]);
-
-      const brand =
-        getField(row, ["brand_name", "brand"]) || "Acer";
-
-      const condition =
-        getField(row, ["condition"]) || "New";
-
-      const category = getField(row, [
-        "category_name",
-        "merchant_category",
-        "category"
-      ]);
-
-      const model = getField(row, [
-        "model_number",
-        "product_model",
-        "mpn"
-      ]);
-
-      const description =
-        getField(row, [
-          "description",
-          "product_short_description"
-        ]) || name;
-
-      const shipping = parsePrice(
-        getField(row, [
-          "delivery_cost",
-          "delcost"
-        ])
-      );
-
-      const inStock = parseStock(
-        getField(row, [
-          "in_stock",
-          "instock",
-          "stock_status"
-        ])
-      );
+      const currency = (
+        row.currency ||
+        "NOK"
+      ).toUpperCase();
 
       if (!id || !name || price <= 0) {
         continue;
       }
 
-      result.push({
+      if (currency !== "NOK") {
+        continue;
+      }
+
+      const image =
+        row.merchant_image_url ||
+        row.image_url ||
+        row.image ||
+        "";
+
+      const url =
+        row.aw_deep_link ||
+        row.deep_link ||
+        row.product_url ||
+        row.url ||
+        "";
+
+      const description =
+        row.description ||
+        "";
+
+      const merchantCategory =
+        row.merchant_category ||
+        row.category_name ||
+        "";
+
+      const condition =
+        row.condition ||
+        "New";
+
+      const brand =
+        row.brand_name ||
+        "Acer";
+
+      const inStock = parseStock(
+        row.in_stock ||
+        row.stock ||
+        row.availability ||
+        ""
+      );
+
+      acerProducts.push({
         id: `acer-${id}`,
-        brand: brand,
-        name: name,
-        model: model,
-        category: acerCategory(name, category),
-        subcategory: category || "Acer",
-        condition: condition,
-        image: image || "/images/placeholder.jpg",
-        description: description,
-        specifications: {},
-        offers: [
-          {
-            store: "Acer",
-            country: "NO",
-            condition: condition,
-            price: price,
-            currency: currency,
-            shipping: shipping,
-            inStock: inStock,
-            affiliate: true,
-            affiliateNetwork: "Awin",
-            url: url,
-            updatedAt: new Date().toISOString().slice(0, 10)
-          }
-        ],
-        lowestPrice: price,
-        lowestStore: "Acer",
-        updatedAt: new Date().toISOString().slice(0, 10)
+        name,
+        description,
+        brand,
+        price,
+        currency: "NOK",
+        priceNOK: Math.round(price),
+        image,
+        url,
+        store: "Acer",
+        affiliateNetwork: "Awin",
+        category: getCategory(name, merchantCategory),
+        merchantCategory,
+        condition,
+        country: "NO",
+        inStock,
+        updatedAt: new Date().toISOString()
       });
     }
 
-    console.log(`Acer products imported: ${result.length}`);
+    console.log(
+      `Acer products imported: ${acerProducts.length}`
+    );
 
-    return result;
+    return acerProducts;
   } catch (error) {
-    console.error("Acer Awin feed error:", error.message);
+    console.log(
+      "Acer feed error:",
+      error.message
+    );
+
     return [];
   }
 }
 
-async function main() {
-  const allProducts = [];
+async function getEbayAccessToken() {
+  if (!process.env.EBAY_CLIENT_ID || !process.env.EBAY_CLIENT_SECRET) {
+    console.log("eBay credentials are missing.");
+    return "";
+  }
 
-  /*
-   * =========================
-   * eBay
-   * =========================
-   */
+  try {
+    const credentials = Buffer.from(
+      `${process.env.EBAY_CLIENT_ID}:${process.env.EBAY_CLIENT_SECRET}`
+    ).toString("base64");
 
-  const fxResponse = await fetch(FX_API);
-  const fxData = await fxResponse.json();
-  const usdToNok = Number(fxData.rate || 0);
+    const response = await fetch(
+      "https://api.ebay.com/identity/v1/oauth2/token",
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Basic ${credentials}`,
+          "Content-Type":
+            "application/x-www-form-urlencoded"
+        },
+        body:
+          "grant_type=client_credentials" +
+          "&scope=https://api.ebay.com/oauth/api_scope"
+      }
+    );
 
-  for (const query of products) {
-    console.log("Searching:", query);
-
-    const items = await searchEbay(query);
-
-    for (const item of items.slice(0, 10)) {
-      const priceNok = Math.round(
-        Number(item.price?.value || 0) * usdToNok
+    if (!response.ok) {
+      console.log(
+        `eBay token failed: ${response.status}`
       );
+      return "";
+    }
 
-      allProducts.push({
-        id:
-          item.itemId ||
-          item.id ||
-          `${query}-${allProducts.length}`,
+    const data = await response.json();
 
-        name: item.title || query,
+    return data.access_token || "";
+  } catch (error) {
+    console.log(
+      "eBay token error:",
+      error.message
+    );
 
-        category: query.toLowerCase().includes("laptop")
-          ? "Laptop"
-          : query.toLowerCase().includes("pc")
-          ? "Gaming PC"
-          : query.toLowerCase().includes("ddr")
-          ? "RAM"
-          : "Graphics Card",
+    return "";
+  }
+}
 
-        image:
-          item.image?.imageUrl ||
-          "/images/placeholder.jpg",
+async function getUsdToNok() {
+  try {
+    const response = await fetch(FX_API);
 
-        description: item.title || query,
+    if (!response.ok) {
+      return 9.3;
+    }
 
-        specifications: {},
+    const data = await response.json();
 
-        offers: [
-          {
-            store: "eBay",
-            country: "NO",
-            condition: "New",
-            price: priceNok,
-            currency: "NOK",
-            shipping: null,
-            inStock: true,
-            affiliate: true,
-            affiliateNetwork: "eBay Partner Network",
-            url: item.itemWebUrl || "",
-            updatedAt: new Date().toISOString().slice(0, 10)
-          }
-        ],
+    const rate = Number(
+      data?.rates?.NOK
+    );
 
-        lowestPrice: priceNok,
-        lowestStore: "eBay",
-        updatedAt: new Date().toISOString().slice(0, 10)
-      });
+    if (Number.isFinite(rate) && rate > 0) {
+      return rate;
+    }
+
+    return 9.3;
+  } catch (error) {
+    console.log(
+      "FX error:",
+      error.message
+    );
+
+    return 9.3;
+  }
+}
+
+async function main() {
+  let existingProducts = [];
+
+  if (fs.existsSync("products.json")) {
+    try {
+      existingProducts = JSON.parse(
+        fs.readFileSync(
+          "products.json",
+          "utf8"
+        )
+      );
+    } catch (error) {
+      console.log(
+        "Could not read existing products.json:",
+        error.message
+      );
+      existingProducts = [];
     }
   }
 
-  /*
-   * =========================
-   * Acer / Awin
-   * =========================
-   */
+  const accessToken =
+    await getEbayAccessToken();
 
-  const acerProducts = await fetchAcerProducts();
+  const usdToNok =
+    await getUsdToNok();
 
-  /*
-   * =========================
-   * Existing products
-   * =========================
-   */
+  let ebayProducts = [];
 
-  const existing = JSON.parse(
-    fs.readFileSync("products.json", "utf8")
-  );
+  if (accessToken) {
+    for (const query of products) {
+      console.log(`Searching eBay: ${query}`);
 
-  /*
-   * Remove only old standalone eBay products
-   * and old Acer products.
-   *
-   * Other existing merchants are preserved.
-   */
+      const results =
+        await searchEbay(
+          query,
+          accessToken,
+          usdToNok
+        );
 
-  const preserved = existing.filter(product => {
-    const offers = product.offers || [];
+      ebayProducts.push(...results);
+    }
+  }
 
-    const isOldEbay =
-      offers.length > 0 &&
-      offers.every(offer => offer.store === "eBay");
+  const acerProducts =
+    await fetchAcerProducts();
 
-    const isOldAcer =
-      product.id?.startsWith("acer-") ||
-      (
-        offers.length > 0 &&
-        offers.every(offer => offer.store === "Acer")
+  const preservedProducts =
+    existingProducts.filter(product => {
+      const id = String(
+        product.id || ""
       );
 
-    return !isOldEbay && !isOldAcer;
-  });
+      const offers =
+        Array.isArray(product.offers)
+          ? product.offers
+          : [];
 
-  const merged = [
-    ...preserved,
-    ...allProducts,
+      const isOldEbay =
+        offers.length > 0 &&
+        offers.every(
+          offer =>
+            offer.store === "eBay"
+        );
+
+      const isOldAcer =
+        id.startsWith("acer-") ||
+        (
+          offers.length > 0 &&
+          offers.every(
+            offer =>
+              offer.store === "Acer"
+          )
+        );
+
+      return !isOldEbay && !isOldAcer;
+    });
+
+  const allProducts = [
+    ...preservedProducts,
+    ...ebayProducts,
     ...acerProducts
   ];
 
   fs.writeFileSync(
     "products.json",
-    JSON.stringify(merged, null, 2)
+    JSON.stringify(
+      allProducts,
+      null,
+      2
+    )
+  );
+
+  fs.mkdirSync(
+    "public",
+    { recursive: true }
   );
 
   fs.writeFileSync(
     "public/products.json",
-    JSON.stringify(merged, null, 2)
+    JSON.stringify(
+      allProducts,
+      null,
+      2
+    )
   );
 
   console.log(
-    `Saved ${allProducts.length} eBay products + ${acerProducts.length} Acer products.`
+    `Saved ${ebayProducts.length} eBay products + ${acerProducts.length} Acer products.`
   );
 }
 
