@@ -282,17 +282,20 @@ async function fetchAcerProducts() {
       return [];
     }
 
-    const contentEncoding =
-      response.headers.get("content-encoding") || "";
-
-    const buffer = Buffer.from(await response.arrayBuffer());
+    const buffer = Buffer.from(
+      await response.arrayBuffer()
+    );
 
     let text;
 
+    // Node fetch may already decompress HTTP gzip.
+    // Only manually decompress if the actual data is still gzip.
     if (
-      contentEncoding.includes("gzip") ||
-      buffer[0] === 0x1f && buffer[1] === 0x8b
+      buffer.length >= 2 &&
+      buffer[0] === 0x1f &&
+      buffer[1] === 0x8b
     ) {
+      console.log("Acer feed detected as gzip.");
       text = zlib.gunzipSync(buffer).toString("utf8");
     } else {
       text = buffer.toString("utf8");
@@ -386,7 +389,10 @@ async function fetchAcerProducts() {
         url,
         store: "Acer",
         affiliateNetwork: "Awin",
-        category: getCategory(name, merchantCategory),
+        category: getCategory(
+          name,
+          merchantCategory
+        ),
         merchantCategory,
         condition,
         country: "NO",
@@ -400,6 +406,7 @@ async function fetchAcerProducts() {
     );
 
     return acerProducts;
+
   } catch (error) {
     console.log(
       "Acer feed error:",
