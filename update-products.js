@@ -273,12 +273,30 @@ async function fetchAcerProducts() {
   try {
     console.log("Downloading Acer Awin product feed...");
 
-    const response = await fetch(AWIN_ACER_FEED_URL);
+    const infoResponse = await fetch(AWIN_ACER_FEED_URL);
+
+    if (!infoResponse.ok) {
+      console.log(`Acer feed info failed: ${infoResponse.status}`);
+      return [];
+    }
+
+    const feedInfo = await infoResponse.json();
+
+    console.log("Awin feed info:", JSON.stringify(feedInfo));
+
+    const feedUrl = feedInfo.url;
+
+    if (!feedUrl) {
+      console.log("Acer feed URL not found.");
+      return [];
+    }
+
+    console.log("Downloading actual Acer product file...");
+
+    const response = await fetch(feedUrl);
 
     if (!response.ok) {
-      console.log(
-        `Acer feed download failed: ${response.status}`
-      );
+      console.log(`Acer product file failed: ${response.status}`);
       return [];
     }
 
@@ -288,14 +306,11 @@ async function fetchAcerProducts() {
 
     let text;
 
-    // Node fetch may already decompress HTTP gzip.
-    // Only manually decompress if the actual data is still gzip.
     if (
       buffer.length >= 2 &&
       buffer[0] === 0x1f &&
       buffer[1] === 0x8b
     ) {
-      console.log("Acer feed detected as gzip.");
       text = zlib.gunzipSync(buffer).toString("utf8");
     } else {
       text = buffer.toString("utf8");
@@ -303,8 +318,8 @@ async function fetchAcerProducts() {
 
     const rows = parseCSV(text);
 
-    console.log(`Acer feed rows: ${rows.length}`);
-    console.log("Acer first row:", JSON.stringify(rows[0]));
+    console.log(`Acer product rows: ${rows.length}`);
+
     const acerProducts = [];
 
     for (const row of rows) {
@@ -327,76 +342,53 @@ async function fetchAcerProducts() {
         ""
       );
 
-      const currency = (
-        row.currency ||
-        "NOK"
-      ).toUpperCase();
-
       if (!id || !name || price <= 0) {
         continue;
       }
+
+      const currency = (
+        row.currency || "NOK"
+      ).toUpperCase();
 
       if (currency !== "NOK") {
         continue;
       }
 
-      const image =
-        row.merchant_image_url ||
-        row.image_url ||
-        row.image ||
-        "";
-
-      const url =
-        row.aw_deep_link ||
-        row.deep_link ||
-        row.product_url ||
-        row.url ||
-        "";
-
-      const description =
-        row.description ||
-        "";
-
-      const merchantCategory =
-        row.merchant_category ||
-        row.category_name ||
-        "";
-
-      const condition =
-        row.condition ||
-        "New";
-
-      const brand =
-        row.brand_name ||
-        "Acer";
-
-      const inStock = parseStock(
-        row.in_stock ||
-        row.stock ||
-        row.availability ||
-        ""
-      );
-
       acerProducts.push({
         id: `acer-${id}`,
         name,
-        description,
-        brand,
+        description: row.description || "",
+        brand: row.brand_name || "Acer",
         price,
         currency: "NOK",
         priceNOK: Math.round(price),
-        image,
-        url,
+        image:
+          row.merchant_image_url ||
+          row.image_url ||
+          row.image ||
+          "",
+        url:
+          row.aw_deep_link ||
+          row.deep_link ||
+          row.product_url ||
+          row.url ||
+          "",
         store: "Acer",
         affiliateNetwork: "Awin",
         category: getCategory(
           name,
-          merchantCategory
+          row.merchant_category ||
+          row.category_name ||
+          ""
         ),
-        merchantCategory,
-        condition,
+        condition: row.condition || "New",
         country: "NO",
-        inStock,
+        inStock: parseStock(
+          row.in_stock ||
+          row.stock ||
+          row.availability ||
+          ""
+        ),
         updatedAt: new Date().toISOString()
       });
     }
@@ -416,7 +408,6 @@ async function fetchAcerProducts() {
     return [];
   }
 }
-
 async function getEbayAccessToken() {
   if (!process.env.EBAY_CLIENT_ID || !process.env.EBAY_CLIENT_SECRET) {
     console.log("eBay credentials are missing.");
