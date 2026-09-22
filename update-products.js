@@ -599,6 +599,7 @@ async function main() {
       );
 
     return !isAcer && !isEbay;
+  });
     
 
   const finalProducts = preserved.concat(
