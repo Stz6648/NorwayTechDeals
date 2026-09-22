@@ -1,6 +1,157 @@
 const fs = require("fs");
 const zlib = require("zlib");
+const EBAY_CLIENT_ID = process.env.EBAY_CLIENT_ID || "";
+const EBAY_CLIENT_SECRET = process.env.EBAY_CLIENT_SECRET || "";
+const EBAY_CAMPAIGN_ID = process.env.EBAY_CAMPAIGN_ID || "5339206505";
 
+async function fetchEbayProducts() {
+  if (!EBAY_CLIENT_ID || !EBAY_CLIENT_SECRET) {
+    console.log("eBay credentials missing - skip eBay update");
+    return [];
+  }
+
+  const credentials = Buffer.from(
+    `${EBAY_CLIENT_ID}:${EBAY_CLIENT_SECRET}`
+  ).toString("base64");
+
+  const tokenResponse = await fetch(
+    "https://api.ebay.com/identity/v1/oauth2/token",
+    {
+      method: "POST",
+      headers: {
+        Authorization: `Basic ${credentials}`,
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body:
+        "grant_type=client_credentials&scope=https%3A%2F%2Fapi.ebay.com%2Foauth%2Fapi_scope"
+    }
+  );
+
+  const tokenData = await tokenResponse.json();
+
+  if (!tokenResponse.ok) {
+    throw new Error(
+      `eBay OAuth failed: ${JSON.stringify(tokenData)}`
+    );
+  }
+
+  const queries = [
+    "RTX 5090",
+    "RTX 5080",
+    "RTX 5070 Ti",
+    "RTX 5070",
+    "Gaming PC",
+    "Gaming Laptop",
+    "Laptop",
+    "Intel Core i7",
+    "AMD Ryzen 7",
+    "DDR5 RAM",
+    "NVMe SSD",
+    "Gaming Monitor"
+  ];
+
+  const allProducts = [];
+
+  for (const q of queries) {
+    try {
+      const url =
+        "https://api.ebay.com/buy/browse/v1/item_summary/search?" +
+        new URLSearchParams({
+          q,
+          limit: "50"
+        });
+
+      const response = await fetch(url, {
+        headers: {
+          Authorization: `Bearer ${tokenData.access_token}`,
+          "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
+          "X-EBAY-C-ENDUSERCTX":
+            `affiliateCampaignId=${EBAY_CAMPAIGN_ID}`,
+          "Accept-Language": "en-US"
+        }
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        console.log(`eBay search failed: ${q}`);
+        continue;
+      }
+
+      for (const item of data.itemSummaries || []) {
+        if (!item.itemId || !item.title) continue;
+
+        const price = Number(item.price?.value || 0);
+
+        if (price <= 0) continue;
+
+        allProducts.push({
+          id: item.itemId,
+          name: item.title,
+          category: "eBay",
+          image:
+            item.image?.imageUrl ||
+            "",
+          description:
+            item.shortDescription ||
+            item.title,
+          specifications: {},
+          offers: [
+            {
+              store: "eBay",
+              country: "NO",
+              condition:
+                item.condition || "New",
+              price,
+              currency:
+                item.price?.currency ||
+                "USD",
+              shipping:
+                item.shippingOptions?.[0]
+                  ?.shippingCost?.value || null,
+              inStock: true,
+              affiliate: true,
+              affiliateNetwork:
+                "eBay Partner Network",
+              url:
+                item.itemWebUrl ||
+                `https://www.ebay.com/itm/${item.itemId}`,
+              updatedAt:
+                new Date().toISOString().slice(0, 10)
+            }
+          ],
+          lowestPrice: price,
+          lowestStore: "eBay",
+          updatedAt:
+            new Date().toISOString().slice(0, 10)
+        });
+      }
+
+      console.log(
+        `eBay "${q}": ${data.itemSummaries?.length || 0} products`
+      );
+    } catch (error) {
+      console.log(
+        `eBay query error "${q}": ${error.message}`
+      );
+    }
+  }
+
+  const unique = Array.from(
+    new Map(
+      allProducts.map(product => [
+        product.id,
+        product
+      ])
+    ).values()
+  );
+
+  console.log(
+    `eBay products fetched: ${unique.length}`
+  );
+
+  return unique;
+}
 const AWIN_ACER_FEED_URL = process.env.AWIN_ACER_FEED_URL || "";
 
 function parseCSV(text) {
@@ -391,8 +542,8 @@ async function main() {
     existing = [];
   }
 
-  const acerProducts =
-    await fetchAcerProducts();
+ const acerProducts = await fetchAcerProducts();
+ const ebayProducts = await fetchEbayProducts();
 
   /*
    * 保留所有现有产品。
@@ -428,7 +579,23 @@ async function main() {
     ...preserved,
     ...acerProducts
   ];
+  const ebayFile = "ebay-products.json";
 
+  if (ebayProducts.length > 0) {
+    fs.writeFileSync(
+      ebayFile,
+      JSON.stringify(ebayProducts, null, 2),
+      "utf8"
+  );
+
+  console.log(
+    `eBay products saved: ${ebayProducts.length}`
+  );
+} else {
+  console.log(
+    "No new eBay products - existing ebay-products.json preserved"
+  );
+}
   fs.writeFileSync(
     "products.json",
     JSON.stringify(
