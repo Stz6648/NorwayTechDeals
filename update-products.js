@@ -601,11 +601,10 @@ async function main() {
     return !isAcer && !isEbay;
     
 
-  const finalProducts = [
-    ...preserved,
-    ...acerProducts
-    ...ebayProducts
-  ];
+  const finalProducts = preserved.concat(
+    acerProducts,
+    ebayProducts
+  );
   const ebayFile = "ebay-products.json";
 
   if (ebayProducts.length > 0) {
