@@ -52,7 +52,23 @@ async function fetchEbayProducts() {
 
   const allProducts = [];
 
+  const ebayCategoryMap = {
+    "RTX 5090": "Graphics Card",
+    "RTX 5080": "Graphics Card",
+    "RTX 5070 Ti": "Graphics Card",
+    "RTX 5070": "Graphics Card",
+    "Gaming PC": "Gaming PC",
+    "Gaming Laptop": "Gaming Laptop",
+    "Laptop": "Laptop",
+    "Intel Core i7": "CPU",
+    "AMD Ryzen 7": "CPU",
+    "DDR5 RAM": "RAM",
+    "NVMe SSD": "SSD",
+    "Gaming Monitor": "Monitor"
+  };
+
   for (const q of queries) {
+
     try {
       const url =
         "https://api.ebay.com/buy/browse/v1/item_summary/search?" +
@@ -88,7 +104,7 @@ async function fetchEbayProducts() {
         allProducts.push({
           id: item.itemId,
           name: item.title,
-          category: "eBay",
+          category: ebayCategoryMap[q] || "eBay",
           image:
             item.image?.imageUrl ||
             "",
@@ -571,13 +587,24 @@ async function main() {
             offer.store || ""
           ).toLowerCase() === "acer"
       );
+    
 
-    return !isAcer;
-  });
+    const isEbay =
+      store === "ebay" ||
+      offers.some(
+        offer =>
+          String(
+            offer.store || ""
+          ).toLowerCase() === "ebay"
+      );
+
+    return !isAcer && !isEbay;
+    
 
   const finalProducts = [
     ...preserved,
     ...acerProducts
+    ...ebayProducts
   ];
   const ebayFile = "ebay-products.json";
 
