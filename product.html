@@ -1,154 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product - TechKjop</title>
-  <meta name="description" content="Compare product prices and offers at TechKjop.">
-  <style>
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #222;
-    }
-
-    header {
-      background: #111;
-      color: white;
-      padding: 18px 24px;
-    }
-
-    header a {
-      color: white;
-      text-decoration: none;
-      font-size: 24px;
-      font-weight: 700;
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 0 20px;
-    }
-
-    .product {
-      background: white;
-      border-radius: 14px;
-      padding: 25px;
-      margin-bottom: 25px;
-    }
-
-    .product-top {
-      display: grid;
-      grid-template-columns: 380px 1fr;
-      gap: 35px;
-    }
-
-    .product-image {
-      width: 100%;
-      height: 320px;
-      object-fit: contain;
-      background: #fafafa;
-      border-radius: 12px;
-    }
-
-    h1 {
-      margin-top: 0;
-      font-size: 32px;
-    }
-
-    .brand {
-      color: #666;
-      margin-bottom: 10px;
-    }
-
-    .price {
-      font-size: 30px;
-      font-weight: 700;
-      margin: 20px 0;
-    }
-
-    .specs {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
-
-    .spec {
-      background: #f5f5f5;
-      padding: 12px;
-      border-radius: 8px;
-    }
-
-    .offers h2 {
-      margin-top: 0;
-    }
-
-    .offer {
-      display: grid;
-      grid-template-columns: 1fr 150px 130px;
-      align-items: center;
-      gap: 15px;
-      border-top: 1px solid #eee;
-      padding: 18px 0;
-    }
-
-    .store {
-      font-weight: 700;
-    }
-
-    .offer-price {
-      font-size: 20px;
-      font-weight: 700;
-    }
-
-    .deal-button {
-      background: #2563eb;
-      color: white;
-      padding: 10px 16px;
-      border-radius: 8px;
-      text-decoration: none;
-      text-align: center;
-    }
-
-    .empty {
-      padding: 25px 0;
-      color: #666;
-    }
-
-    @media (max-width: 700px) {
-      .product-top {
-        grid-template-columns: 1fr;
-      }
-
-      .product-image {
-        height: 250px;
-      }
-
-      .specs {
-        grid-template-columns: 1fr;
-      }
-
-      .offer {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <a href="/">TechKjop</a>
-</header>
-
-<main>
-  <div id="product"></div>
-</main>
-
 <script>
 async function loadProduct() {
   const params = new URLSearchParams(window.location.search);
@@ -157,52 +6,125 @@ async function loadProduct() {
   const container = document.getElementById("product");
 
   if (!id) {
-    container.innerHTML = "<div class='product'><h1>Product not found</h1></div>";
+    container.innerHTML =
+      "<div class='product'><h1>Product not found</h1></div>";
     return;
   }
 
   try {
-    const response = await fetch("/products.json");
+    const response = await fetch("/products.json?" + Date.now());
     const products = await response.json();
 
-    const product = products.find(p => p.id === id);
+    const product = products.find(p => String(p.id) === String(id));
 
     if (!product) {
-      container.innerHTML = "<div class='product'><h1>Product not found</h1></div>";
+      container.innerHTML =
+        "<div class='product'><h1>Product not found</h1></div>";
       return;
     }
 
     document.title = product.name + " - TechKjop";
 
     const specs = product.specifications || {};
-    const offers = product.offers || [];
 
-    const validOffers = offers.filter(o =>
-      o && typeof o.price === "number"
+    const offers = Array.isArray(product.offers)
+      ? product.offers
+      : [];
+
+    /* USD → NOK */
+    let usdToNok = 9.44;
+
+    try {
+      const usdRateResponse = await fetch(
+        "https://open.er-api.com/v6/latest/USD"
+      );
+
+      const usdRateData =
+        await usdRateResponse.json();
+
+      if (
+        usdRateData &&
+        usdRateData.rates &&
+        Number(usdRateData.rates.NOK) > 0
+      ) {
+        usdToNok = Number(
+          usdRateData.rates.NOK
+        );
+      }
+    } catch (e) {
+      console.log(
+        "USD rate failed, using 9.44"
+      );
+    }
+
+    /* Convert one offer to NOK */
+    function getOfferNok(offer) {
+      const price = Number(offer?.price || 0);
+
+      if (!price) return 0;
+
+      const currency =
+        String(
+          offer?.currency || ""
+        ).toUpperCase();
+
+      if (currency === "USD") {
+        return price * usdToNok;
+      }
+
+      return price;
+    }
+
+    /* Valid offers */
+    const validOffers = offers.filter(
+      offer =>
+        offer &&
+        Number.isFinite(
+          Number(offer.price)
+        ) &&
+        Number(offer.price) > 0
     );
 
-  
-    const usdRateResponse = await fetch(
-      "https://open.er-api.com/v6/latest/USD"
-    );
-    const usdRateData = await usdRateResponse.json();
-    const usdToNok = Number(usdRateData.rates?.NOK || 9.44);
+    /*
+      Calculate top price in NOK
+    */
+    let lowestPrice = 0;
 
-    const lowestPrice = validOffers.length
-      ? Math.min(
-          ...validOffers.map(o => {
-            const isEbay =
-              String(o.store || "").toLowerCase() === "ebay";
-
-            const isUSD =
-              String(o.currency || "").toUpperCase() === "USD";
-
-            return (isEbay || isUSD)
-              ? Number(o.price) * usdToNok
-              : Number(o.price);
-          })
+    if (validOffers.length > 0) {
+      lowestPrice = Math.min(
+        ...validOffers.map(
+          getOfferNok
         )
-      : Number(product.lowestPrice || 0);
+      );
+    } else {
+      /*
+        If offers are missing, use
+        product.lowestPrice.
+
+        eBay lowestPrice is stored
+        as USD, so convert it.
+      */
+      const rawLowest =
+        Number(
+          product.lowestPrice || 0
+        );
+
+      const lowestStore =
+        String(
+          product.lowestStore || ""
+        ).toLowerCase();
+
+      if (
+        lowestStore === "ebay"
+      ) {
+        lowestPrice =
+          rawLowest * usdToNok;
+      } else {
+        lowestPrice =
+          rawLowest;
+      }
+    }
+
     container.innerHTML = `
       <section class="product">
         <div class="product-top">
@@ -210,29 +132,116 @@ async function loadProduct() {
           <div>
             <img
               class="product-image"
-              src="${product.image || '/images/techkjop-placeholder.jpg'}"
+              src="${
+                product.image ||
+                "/images/techkjop-placeholder.jpg"
+              }"
               alt="${product.name}"
             >
           </div>
 
           <div>
-            <div class="brand">${product.brand || ""}</div>
-            <h1>${product.name}</h1>
-            <p>${product.description || ""}</p>
+            <div class="brand">
+              ${product.brand || ""}
+            </div>
+
+            <h1>
+              ${product.name}
+            </h1>
+
+            <p>
+              ${product.description || ""}
+            </p>
 
             ${
-              lowestPrice
-                ? `<div class="price">From ${lowestPrice.toLocaleString('no-NO')} kr</div>`
-                : `<div class="price">Price not available</div>`
+              lowestPrice > 0
+                ? `
+                  <div class="price">
+                    From
+                    ${lowestPrice.toLocaleString(
+                      "no-NO",
+                      {
+                        maximumFractionDigits: 0
+                      }
+                    )}
+                    kr
+                  </div>
+                `
+                : `
+                  <div class="price">
+                    Price not available
+                  </div>
+                `
             }
 
             <div class="specs">
-              ${specs.cpu ? `<div class="spec"><strong>CPU</strong><br>${specs.cpu}</div>` : ""}
-              ${specs.gpu ? `<div class="spec"><strong>GPU</strong><br>${specs.gpu}</div>` : ""}
-              ${specs.ram ? `<div class="spec"><strong>RAM</strong><br>${specs.ram}</div>` : ""}
-              ${specs.storage ? `<div class="spec"><strong>Storage</strong><br>${specs.storage}</div>` : ""}
-              ${specs.screen ? `<div class="spec"><strong>Screen</strong><br>${specs.screen}</div>` : ""}
-              ${specs.vram ? `<div class="spec"><strong>VRAM</strong><br>${specs.vram}</div>` : ""}
+
+              ${
+                specs.cpu
+                  ? `
+                    <div class="spec">
+                      <strong>CPU</strong><br>
+                      ${specs.cpu}
+                    </div>
+                  `
+                  : ""
+              }
+
+              ${
+                specs.gpu
+                  ? `
+                    <div class="spec">
+                      <strong>GPU</strong><br>
+                      ${specs.gpu}
+                    </div>
+                  `
+                  : ""
+              }
+
+              ${
+                specs.ram
+                  ? `
+                    <div class="spec">
+                      <strong>RAM</strong><br>
+                      ${specs.ram}
+                    </div>
+                  `
+                  : ""
+              }
+
+              ${
+                specs.storage
+                  ? `
+                    <div class="spec">
+                      <strong>Storage</strong><br>
+                      ${specs.storage}
+                    </div>
+                  `
+                  : ""
+              }
+
+              ${
+                specs.screen
+                  ? `
+                    <div class="spec">
+                      <strong>Screen</strong><br>
+                      ${specs.screen}
+                    </div>
+                  `
+                  : ""
+              }
+
+              ${
+                specs.vram
+                  ? `
+                    <div class="spec">
+                      <strong>VRAM</strong><br>
+                      ${specs.vram}
+                    </div>
+                  `
+                  : ""
+              }
+
             </div>
           </div>
 
@@ -240,36 +249,123 @@ async function loadProduct() {
       </section>
 
       <section class="product offers">
+
         <h2>Compare prices</h2>
 
         ${
           offers.length
-          ? offers.map(o => `
-              <div class="offer">
-                <div>
-                  <div class="store">${o.store || "Store"}</div>
-                  <div>${o.condition || "New"} · ${o.country || ""}</div>
-                </div>
+            ? offers
+                .map(o => {
 
-                <div class="offer-price">
-                  ${typeof o.price === "number"
-                    ? o.price.toLocaleString('no-NO') + " kr"
-                    : "See price"}
-                </div>
+                  const rawPrice =
+                    Number(
+                      o.price || 0
+                    );
 
-                ${
-                  o.url
-                  ? `<a class="deal-button" href="${o.url}" target="_blank" rel="noopener">View deal</a>`
-                  : ""
-                }
+                  const currency =
+                    String(
+                      o.currency || ""
+                    ).toUpperCase();
+
+                  const isUSD =
+                    currency === "USD";
+
+                  const nokPrice =
+                    getOfferNok(o);
+
+                  let priceHTML = "";
+
+                  if (isUSD) {
+                    priceHTML = `
+                      ${rawPrice.toLocaleString(
+                        "en-US",
+                        {
+                          minimumFractionDigits:
+                            rawPrice % 1 === 0
+                              ? 0
+                              : 2,
+                          maximumFractionDigits: 2
+                        }
+                      )}
+                      USD
+                      ≈
+                      ${nokPrice.toLocaleString(
+                        "no-NO",
+                        {
+                          maximumFractionDigits: 0
+                        }
+                      )}
+                      NOK
+                    `;
+                  } else {
+                    priceHTML = `
+                      ${nokPrice.toLocaleString(
+                        "no-NO",
+                        {
+                          maximumFractionDigits: 0
+                        }
+                      )}
+                      NOK
+                    `;
+                  }
+
+                  return `
+                    <div class="offer">
+
+                      <div>
+                        <div class="store">
+                          ${o.store || "Store"}
+                        </div>
+
+                        <div>
+                          ${
+                            o.condition ||
+                            "New"
+                          }
+                          ·
+                          ${
+                            o.country || ""
+                          }
+                        </div>
+                      </div>
+
+                      <div class="offer-price">
+                        ${priceHTML}
+                      </div>
+
+                      ${
+                        o.url
+                          ? `
+                            <a
+                              class="deal-button"
+                              href="${o.url}"
+                              target="_blank"
+                              rel="noopener"
+                            >
+                              View deal
+                            </a>
+                          `
+                          : ""
+                      }
+
+                    </div>
+                  `;
+                })
+                .join("")
+            : `
+              <div class="empty">
+                No prices available yet.
               </div>
-            `).join("")
-          : `<div class="empty">No prices available yet.</div>`
+            `
         }
+
       </section>
     `;
+
   } catch (error) {
+
     console.error(error);
+
     container.innerHTML =
       "<div class='product'><h1>Unable to load product</h1></div>";
   }
@@ -277,6 +373,3 @@ async function loadProduct() {
 
 loadProduct();
 </script>
-
-</body>
-</html>
