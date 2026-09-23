@@ -190,13 +190,19 @@ async function loadProduct() {
 
     const lowestPrice = validOffers.length
       ? Math.min(
-          ...validOffers.map(o =>
-            String(o.currency || "").toUpperCase() === "USD"
+          ...validOffers.map(o => {
+            const isEbay =
+              String(o.store || "").toLowerCase() === "ebay";
+
+            const isUSD =
+              String(o.currency || "").toUpperCase() === "USD";
+
+            return (isEbay || isUSD)
               ? Number(o.price) * usdToNok
-              : Number(o.price)
-          )
+              : Number(o.price);
+          })
         )
-       : Number(product.lowestPrice || 0);
+      : Number(product.lowestPrice || 0);
     container.innerHTML = `
       <section class="product">
         <div class="product-top">
