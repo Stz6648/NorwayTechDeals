@@ -181,10 +181,22 @@ async function loadProduct() {
       o && typeof o.price === "number"
     );
 
-    const lowestPrice = validOffers.length
-      ? Math.min(...validOffers.map(o => o.price))
-      : product.lowestPrice;
+  
+    const usdRateResponse = await fetch(
+      "https://open.er-api.com/v6/latest/USD"
+    );
+    const usdRateData = await usdRateResponse.json();
+    const usdToNok = Number(usdRateData.rates?.NOK || 9.44);
 
+    const lowestPrice = validOffers.length
+      ? Math.min(
+          ...validOffers.map(o =>
+            String(o.currency || "").toUpperCase() === "USD"
+              ? Number(o.price) * usdToNok
+              : Number(o.price)
+          )
+        )
+       : Number(product.lowestPrice || 0);
     container.innerHTML = `
       <section class="product">
         <div class="product-top">
