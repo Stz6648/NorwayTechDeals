@@ -15,7 +15,9 @@ async function loadProduct() {
     const response = await fetch("/products.json?" + Date.now());
     const products = await response.json();
 
-    const product = products.find(p => String(p.id) === String(id));
+    const product = products.find(
+      p => String(p.id) === String(id)
+    );
 
     if (!product) {
       container.innerHTML =
@@ -23,87 +25,112 @@ async function loadProduct() {
       return;
     }
 
-    document.title = product.name + " - TechKjop";
+    document.title =
+      product.name + " - TechKjop";
 
-    const specs = product.specifications || {};
+    const specs =
+      product.specifications || {};
 
-    const offers = Array.isArray(product.offers)
-      ? product.offers
-      : [];
+    const offers =
+      Array.isArray(product.offers)
+        ? product.offers
+        : [];
 
     /* USD → NOK */
     let usdToNok = 9.44;
 
     try {
-      const usdRateResponse = await fetch(
-        "https://open.er-api.com/v6/latest/USD"
-      );
+      const usdRateResponse =
+        await fetch(
+          "https://open.er-api.com/v6/latest/USD"
+        );
 
       const usdRateData =
         await usdRateResponse.json();
 
-      if (
-        usdRateData &&
-        usdRateData.rates &&
-        Number(usdRateData.rates.NOK) > 0
-      ) {
-        usdToNok = Number(
-          usdRateData.rates.NOK
+      const liveRate =
+        Number(
+          usdRateData?.rates?.NOK
         );
+
+      if (liveRate > 0) {
+        usdToNok = liveRate;
       }
+
     } catch (e) {
       console.log(
         "USD rate failed, using 9.44"
       );
     }
 
-    /* Convert one offer to NOK */
+    /*
+      Convert offer price to NOK.
+      eBay is always treated as USD.
+    */
     function getOfferNok(offer) {
-      const price = Number(offer?.price || 0);
 
-      if (!price) return 0;
+      const price =
+        Number(offer?.price || 0);
+
+      if (
+        !Number.isFinite(price) ||
+        price <= 0
+      ) {
+        return 0;
+      }
+
+      const store =
+        String(
+          offer?.store || ""
+        ).toLowerCase();
 
       const currency =
         String(
           offer?.currency || ""
         ).toUpperCase();
 
-      if (currency === "USD") {
+      const isEbay =
+        store.includes("ebay");
+
+      const isUSD =
+        currency === "USD";
+
+      if (isEbay || isUSD) {
         return price * usdToNok;
       }
 
       return price;
     }
 
-    /* Valid offers */
-    const validOffers = offers.filter(
-      offer =>
+    /*
+      Valid offers
+    */
+    const validOffers =
+      offers.filter(offer =>
         offer &&
         Number.isFinite(
           Number(offer.price)
         ) &&
         Number(offer.price) > 0
-    );
+      );
 
     /*
-      Calculate top price in NOK
+      Calculate TOP price
     */
     let lowestPrice = 0;
 
     if (validOffers.length > 0) {
-      lowestPrice = Math.min(
-        ...validOffers.map(
-          getOfferNok
-        )
-      );
-    } else {
-      /*
-        If offers are missing, use
-        product.lowestPrice.
 
-        eBay lowestPrice is stored
-        as USD, so convert it.
-      */
+      lowestPrice =
+        Math.min(
+          ...validOffers.map(
+            offer =>
+              getOfferNok(offer)
+          )
+        );
+
+    } else {
+
       const rawLowest =
         Number(
           product.lowestPrice || 0
@@ -114,8 +141,14 @@ async function loadProduct() {
           product.lowestStore || ""
         ).toLowerCase();
 
+      const lowestCurrency =
+        String(
+          product.currency || ""
+        ).toUpperCase();
+
       if (
-        lowestStore === "ebay"
+        lowestStore.includes("ebay") ||
+        lowestCurrency === "USD"
       ) {
         lowestPrice =
           rawLowest * usdToNok;
@@ -127,6 +160,7 @@ async function loadProduct() {
 
     container.innerHTML = `
       <section class="product">
+
         <div class="product-top">
 
           <div>
@@ -141,6 +175,7 @@ async function loadProduct() {
           </div>
 
           <div>
+
             <div class="brand">
               ${product.brand || ""}
             </div>
@@ -243,9 +278,11 @@ async function loadProduct() {
               }
 
             </div>
+
           </div>
 
         </div>
+
       </section>
 
       <section class="product offers">
@@ -254,104 +291,115 @@ async function loadProduct() {
 
         ${
           offers.length
-            ? offers
-                .map(o => {
 
-                  const rawPrice =
-                    Number(
-                      o.price || 0
-                    );
+            ? offers.map(o => {
 
-                  const currency =
-                    String(
-                      o.currency || ""
-                    ).toUpperCase();
+                const rawPrice =
+                  Number(o.price || 0);
 
-                  const isUSD =
-                    currency === "USD";
+                const store =
+                  String(
+                    o.store || ""
+                  ).toLowerCase();
 
-                  const nokPrice =
-                    getOfferNok(o);
+                const currency =
+                  String(
+                    o.currency || ""
+                  ).toUpperCase();
 
-                  let priceHTML = "";
+                const isEbay =
+                  store.includes("ebay");
 
-                  if (isUSD) {
-                    priceHTML = `
-                      ${rawPrice.toLocaleString(
-                        "en-US",
-                        {
-                          minimumFractionDigits:
-                            rawPrice % 1 === 0
-                              ? 0
-                              : 2,
-                          maximumFractionDigits: 2
-                        }
-                      )}
-                      USD
-                      ≈
-                      ${nokPrice.toLocaleString(
-                        "no-NO",
-                        {
-                          maximumFractionDigits: 0
-                        }
-                      )}
-                      NOK
-                    `;
-                  } else {
-                    priceHTML = `
-                      ${nokPrice.toLocaleString(
-                        "no-NO",
-                        {
-                          maximumFractionDigits: 0
-                        }
-                      )}
-                      NOK
-                    `;
-                  }
+                const isUSD =
+                  currency === "USD";
 
-                  return `
-                    <div class="offer">
+                const nokPrice =
+                  getOfferNok(o);
+
+                let priceHTML = "";
+
+                if (
+                  isEbay ||
+                  isUSD
+                ) {
+
+                  priceHTML = `
+                    ${rawPrice.toLocaleString(
+                      "en-US",
+                      {
+                        maximumFractionDigits: 2
+                      }
+                    )}
+                    USD
+                    ≈
+                    ${nokPrice.toLocaleString(
+                      "no-NO",
+                      {
+                        maximumFractionDigits: 0
+                      }
+                    )}
+                    NOK
+                  `;
+
+                } else {
+
+                  priceHTML = `
+                    ${nokPrice.toLocaleString(
+                      "no-NO",
+                      {
+                        maximumFractionDigits: 0
+                      }
+                    )}
+                    NOK
+                  `;
+                }
+
+                return `
+                  <div class="offer">
+
+                    <div>
+
+                      <div class="store">
+                        ${o.store || "Store"}
+                      </div>
 
                       <div>
-                        <div class="store">
-                          ${o.store || "Store"}
-                        </div>
-
-                        <div>
-                          ${
-                            o.condition ||
-                            "New"
-                          }
-                          ·
-                          ${
-                            o.country || ""
-                          }
-                        </div>
+                        ${
+                          o.condition ||
+                          "New"
+                        }
+                        ·
+                        ${
+                          o.country || ""
+                        }
                       </div>
-
-                      <div class="offer-price">
-                        ${priceHTML}
-                      </div>
-
-                      ${
-                        o.url
-                          ? `
-                            <a
-                              class="deal-button"
-                              href="${o.url}"
-                              target="_blank"
-                              rel="noopener"
-                            >
-                              View deal
-                            </a>
-                          `
-                          : ""
-                      }
 
                     </div>
-                  `;
-                })
-                .join("")
+
+                    <div class="offer-price">
+                      ${priceHTML}
+                    </div>
+
+                    ${
+                      o.url
+                        ? `
+                          <a
+                            class="deal-button"
+                            href="${o.url}"
+                            target="_blank"
+                            rel="noopener"
+                          >
+                            View deal
+                          </a>
+                        `
+                        : ""
+                    }
+
+                  </div>
+                `;
+
+              }).join("")
+
             : `
               <div class="empty">
                 No prices available yet.
