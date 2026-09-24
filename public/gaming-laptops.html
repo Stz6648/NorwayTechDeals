@@ -275,7 +275,16 @@ footer{
 
 <script>
 let products = [];
+let usdToNok = 9.44;
 
+fetch("https://open.er-api.com/v6/latest/USD")
+  .then(r => r.json())
+  .then(data => {
+    if (data?.rates?.NOK > 0) {
+      usdToNok = data.rates.NOK;
+    }
+  })
+  .catch(() => {});
 const imageMap = {
   "lenovo-loq-15": "/images/lenovo-loq.jpg",
   "asus-rog-strix-g16": "/images/asus-rog-g16.jpg",
@@ -431,16 +440,40 @@ function render(){
               const offerStore = o.store || o.merchant || "Nettbutikk";
               const offerUrl = o.url || o.link || o.affiliateUrl || "#";
 
-              return `
-                <div class="offer">
-                  <div>
-                    <div class="offer-name">${offerStore}</div>
-                    ${
-                      Number.isFinite(offerPrice)
-                      ? `<div class="offer-price">${formatPrice(offerPrice)}</div>`
-                      : ""
-                    }
-                  </div>
+const offerCurrency =
+  String(o.currency || "").toUpperCase();
+
+const isEbay =
+  String(offerStore).toLowerCase().includes("ebay") ||
+  offerCurrency === "USD";
+
+const nokPrice =
+  isEbay && Number.isFinite(offerPrice)
+    ? offerPrice * usdToNok
+    : offerPrice;
+
+const priceHTML =
+  isEbay && Number.isFinite(offerPrice)
+    ? `${offerPrice.toLocaleString("en-US", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      })} USD ≈ ${nokPrice.toLocaleString("nb-NO", {
+        maximumFractionDigits: 0
+      })} NOK`
+    : Number.isFinite(offerPrice)
+      ? formatPrice(offerPrice)
+      : "";
+
+return `
+  <div class="offer">
+    <div>
+      <div class="offer-name">${offerStore}</div>
+      ${
+        priceHTML
+          ? `<div class="offer-price">${priceHTML}</div>`
+          : ""
+      }
+    </div>
 
                   ${
                     offerUrl !== "#"
