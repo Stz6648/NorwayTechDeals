@@ -98,11 +98,35 @@ fetch("https://open.er-api.com/v6/latest/USD")
   })
   .catch(() => {});
 function price(p){
-if(typeof p.lowestPrice==="number")return p.lowestPrice;
-if(typeof p.price==="number")return p.price;
-const x=(p.offers||[]).map(o=>Number(o.price)).filter(x=>x>0);
-return x.length?Math.min(...x):0;
-}
+  const offers = Array.isArray(p.offers) ? p.offers : [];
+
+  const prices = offers
+    .map(o => {
+      const value = Number(o.price);
+      if(!Number.isFinite(value) || value <= 0) return 0;
+
+      const isUSD =
+        String(o.store || o.merchant || "").toLowerCase().includes("ebay") ||
+        String(o.currency || "").toUpperCase() === "USD";
+
+      return isUSD ? value * usdToNok : value;
+    })
+    .filter(x => x > 0);
+
+  if(prices.length) return Math.min(...prices);
+
+  if(typeof p.lowestPrice === "number"){
+    const isUSD =
+      String(p.lowestStore || "").toLowerCase().includes("ebay") ||
+      String(p.currency || "").toUpperCase() === "USD";
+
+    return isUSD ? p.lowestPrice * usdToNok : p.lowestPrice;
+  }
+
+  if(typeof p.price === "number") return p.price;
+
+  return 0;
+}}
 
 function image(p){
 return p.image||p.imageUrl||"/images/lenovo-legion-t5.jpg";
