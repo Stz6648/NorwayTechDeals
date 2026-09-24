@@ -338,7 +338,7 @@ function formatPrice(price, currency="NOK"){
   if(!Number.isFinite(Number(price))) return "";
   return new Intl.NumberFormat("nb-NO",{
     minimumFractionDigits:0,
-    maximumFractionDigits:2
+    maximumFractionDigits:0
   }).format(Number(price)) + " " + currency;
 }
 
