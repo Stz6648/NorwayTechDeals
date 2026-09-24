@@ -113,7 +113,9 @@ function price(p){
     })
     .filter(x => x > 0);
 
-  if(prices.length) return Math.min(...prices);
+  if(prices.length){
+    return Math.min(...prices);
+  }
 
   if(typeof p.lowestPrice === "number"){
     const isUSD =
@@ -123,10 +125,12 @@ function price(p){
     return isUSD ? p.lowestPrice * usdToNok : p.lowestPrice;
   }
 
-  if(typeof p.price === "number") return p.price;
+  if(typeof p.price === "number"){
+    return p.price;
+  }
 
   return 0;
-}}
+}
 
 function image(p){
 return p.image||p.imageUrl||"/images/lenovo-legion-t5.jpg";
