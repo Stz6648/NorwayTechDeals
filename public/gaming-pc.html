@@ -148,7 +148,9 @@ return a.slice(0,5);
 }
 
 function money(n,c="NOK"){
-return new Intl.NumberFormat("nb-NO").format(Number(n))+" "+c;
+  return new Intl.NumberFormat("nb-NO", {
+    maximumFractionDigits: 0
+  }).format(Number(n))+" "+c;
 }
 
 function render(){
