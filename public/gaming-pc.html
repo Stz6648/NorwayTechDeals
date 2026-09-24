@@ -87,7 +87,16 @@ footer{background:#111827;color:#aaa;text-align:center;padding:30px}
 
 <script>
 let products=[];
+let usdToNok = 9.44;
 
+fetch("https://open.er-api.com/v6/latest/USD")
+  .then(r => r.json())
+  .then(data => {
+    if (data?.rates?.NOK > 0) {
+      usdToNok = data.rates.NOK;
+    }
+  })
+  .catch(() => {});
 function price(p){
 if(typeof p.lowestPrice==="number")return p.lowestPrice;
 if(typeof p.price==="number")return p.price;
@@ -171,7 +180,19 @@ ${p.lowestStore?`<div class="store">Beste pris hos ${p.lowestStore}</div>`:""}
 ${offers.length?offers.map(o=>`
 <div class="offer">
 <div class="offer-name">${o.store||o.merchant||"Nettbutikk"}</div>
-${o.price?`<div class="offer-price">${money(o.price)}</div>`:""}
+${o.price ? `<div class="offer-price">${
+  (
+    String(o.store || o.merchant || "").toLowerCase().includes("ebay") ||
+    String(o.currency || "").toUpperCase() === "USD"
+  )
+    ? `${Number(o.price).toLocaleString("en-US", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      })} USD ≈ ${(Number(o.price) * usdToNok).toLocaleString("nb-NO", {
+        maximumFractionDigits: 0
+      })} NOK`
+    : money(o.price)
+}</div>` : ""}
 ${o.url||o.link||o.affiliateUrl?
 `<a href="${o.url||o.link||o.affiliateUrl}" target="_blank" rel="nofollow sponsored">Se tilbud</a>`:""}
 </div>
