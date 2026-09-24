@@ -260,7 +260,7 @@ const title=x.title||"eBay Gaming PC";
 const value=x.price?.value??x.price??"";
 const currency=x.price?.currency||"USD";
 const usdPrice=Number(value);
-const nokPrice=Math.round(usdPrice*9.34);
+const nokPrice=Math.round(usdPrice*usdToNok);
 const url=x.itemAffiliateWebUrl||x.itemWebUrl||x.url||"#";
 
 return `
