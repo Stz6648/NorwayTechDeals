@@ -1404,7 +1404,7 @@ async function main() {
 
         return (
           !isAcer &&
-          !isEbay
+          !isEbay &&
           !isProshop
         );
       }
