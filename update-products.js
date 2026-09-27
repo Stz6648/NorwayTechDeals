@@ -426,7 +426,7 @@ async function fetchEbayProducts() {
 
 const AWIN_ACER_FEED_URL =
   process.env.AWIN_ACER_FEED_URL || "";
-
+const PROSHOP_FEED_URL = process.env.PROSHOP_FEED_URL || "";
 
 function parseCSV(text) {
 
@@ -843,7 +843,7 @@ function getAvailability(value) {
 }
 
 
-async function fetchAcerProducts() {
+async function fetchAcerProducts() { 
 
   if (!AWIN_ACER_FEED_URL) {
 
@@ -1106,6 +1106,185 @@ async function fetchAcerProducts() {
 /* =========================================================
    Main
    ========================================================= */
+async function fetchProshopProducts() {
+  if (!PROSHOP_FEED_URL) {
+    console.log("PROSHOP_FEED_URL is not set.");
+    return [];
+  }
+
+  try {
+    console.log("Downloading Proshop Partner-Ads product feed...");
+
+    const response = await fetch(PROSHOP_FEED_URL);
+
+    if (!response.ok) {
+      console.log(
+        `Proshop feed download failed: ${response.status} ${response.statusText}`
+      );
+      return [];
+    }
+
+    const text = await response.text();
+
+    console.log(`Proshop feed size: ${text.length} characters`);
+
+    const products = [];
+    const productMatches = text.match(/<produkt>[\s\S]*?<\/produkt>/g) || [];
+
+    console.log(`Proshop feed products found: ${productMatches.length}`);
+
+    const decodeXml = (value) =>
+      String(value || "")
+        .replace(/&amp;/g, "&")
+        .replace(/&quot;/g, '"')
+        .replace(/&apos;/g, "'")
+        .replace(/&lt;/g, "<")
+        .replace(/&gt;/g, ">");
+
+    const getField = (block, field) => {
+      const match = block.match(
+        new RegExp(`<${field}>([\\s\\S]*?)<\\/${field}>`)
+      );
+
+      return match ? decodeXml(match[1].trim()) : "";
+    };
+
+    const getCategory = (category, name) => {
+      const text = `${category} ${name}`.toLowerCase();
+
+      if (
+        text.includes("grafikkort") ||
+        text.includes("graphics card") ||
+        text.includes("gpu")
+      ) {
+        return "Graphics Card";
+      }
+
+      if (
+        text.includes("gaming pc") ||
+        text.includes("gamingpc")
+      ) {
+        return "Gaming PC";
+      }
+
+      if (
+        text.includes("gaming laptop") ||
+        text.includes("gaming-laptop")
+      ) {
+        return "Gaming Laptop";
+      }
+
+      if (
+        text.includes("bærbar") ||
+        text.includes("laptop") ||
+        text.includes("notebook")
+      ) {
+        return "Laptop";
+      }
+
+      if (
+        text.includes("prosessor") ||
+        text.includes("cpu") ||
+        text.includes("processor")
+      ) {
+        return "CPU";
+      }
+
+      if (
+        text.includes("ram") ||
+        text.includes("minne")
+      ) {
+        return "RAM";
+      }
+
+      if (
+        text.includes("ssd") ||
+        text.includes("harddisk") ||
+        text.includes("hard drive") ||
+        text.includes("lagring")
+      ) {
+        return "SSD";
+      }
+
+      if (
+        text.includes("skjerm") ||
+        text.includes("monitor")
+      ) {
+        return "Monitors";
+      }
+
+      if (
+        text.includes("hovedkort") ||
+        text.includes("motherboard")
+      ) {
+        return "Motherboards";
+      }
+
+      if (
+        text.includes("strømforsyning") ||
+        text.includes("psu")
+      ) {
+        return "PC Components";
+      }
+
+      if (
+        text.includes("pc komponent") ||
+        text.includes("pc components") ||
+        text.includes("pc-komponent")
+      ) {
+        return "PC Components";
+      }
+
+      return null;
+    };
+
+    for (const block of productMatches) {
+      const categoryName = getField(block, "kategorinavn");
+      const name = getField(block, "produktnavn");
+      const productId = getField(block, "produktid");
+      const price = Number(getField(block, "nypris"));
+      const image = getField(block, "billedurl");
+      const url = getField(block, "vareurl");
+      const brand = getField(block, "brand");
+      const description = getField(block, "beskrivelse");
+      const ean = getField(block, "ean");
+      const stock = Number(getField(block, "lagerantall"));
+
+      const category = getCategory(categoryName, name);
+
+      if (!productId || !name || !url || !price || !category) {
+        continue;
+      }
+
+      products.push({
+        id: `proshop-${productId}`,
+        name,
+        description,
+        category,
+        brand: brand || "",
+        image: image || "",
+        price,
+        currency: "NOK",
+        url,
+        store: "Proshop",
+        affiliateNetwork: "Partner-Ads",
+        country: "NO",
+        condition: "new",
+        inStock: stock > 0,
+        gtin: ean || "",
+        mpn: productId,
+        updatedAt: new Date().toISOString()
+      });
+    }
+
+    console.log(`Proshop IT products selected: ${products.length}`);
+
+    return products;
+  } catch (error) {
+    console.error("Proshop feed error:", error);
+    return [];
+  }
+}
 
 async function main() {
 
@@ -1153,11 +1332,11 @@ async function main() {
 
   const ebayProducts =
     await fetchEbayProducts();
-
+  const proshopProducts = await fetchProshopProducts();
 
   /*
    * 保留现有产品。
-   * 删除旧 Acer 和旧 eBay，
+   * 删除旧 Acer、eBay 和 Proshop，
    * 然后加入最新数据。
    */
 
@@ -1213,11 +1392,20 @@ async function main() {
               ).toLowerCase() ===
               "ebay"
           );
-
+        const isProshop =
+          store === "proshop" ||
+          store === "Proshop" ||
+          offers.some(
+            offer =>
+              String(
+                offer.store || ""
+              ).toLowerCase() === "proshop"
+          );
 
         return (
           !isAcer &&
           !isEbay
+          !isProshop
         );
       }
     );
@@ -1226,7 +1414,8 @@ async function main() {
   const finalProducts =
     preserved.concat(
       acerProducts,
-      ebayProducts
+      ebayProducts,
+      proshopProducts,
     );
 
 
