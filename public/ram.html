@@ -130,7 +130,7 @@ sort.addEventListener("change",render);
 render();
 
 }catch(e){
-container.innerHTML="<p>Kunne ikke laste RAM.</p>";
+container.innerHTML='<p>Kunne ikke laste RAM: '+e.message+'</p>';
 }
 }
 
