@@ -15,6 +15,7 @@ jobs:
       AWIN_ACER_FEED_URL: ${{ secrets.AWIN_ACER_FEED_URL }}
       EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
       EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+      PROSHOP_FEED_URL: ${{ secrets.PROSHOP_FEED_URL }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
