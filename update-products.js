@@ -1434,6 +1434,15 @@ async function main() {
 const filteredProducts = finalProducts.filter(product =>
   allowedCategories.has(String(product.category || "").trim())
 );
+  const normalizedProducts = filteredProducts.map(product => ({
+  ...product,
+  price:
+    product.price !== null &&
+    product.price !== undefined &&
+    Number.isFinite(Number(product.price))
+      ? Math.round(Number(product.price))
+      : product.price
+}));
 
 
   const ebayFile =
@@ -1473,7 +1482,7 @@ const filteredProducts = finalProducts.filter(product =>
     "products.json",
 
     JSON.stringify(
-      filteredProducts,
+      normalizedProducts,
       null,
       2
     ),
@@ -1486,7 +1495,7 @@ const filteredProducts = finalProducts.filter(product =>
     "public/products.json",
 
     JSON.stringify(
-      filteredProducts,
+      normalizedProducts,
       null,
       2
     ),
