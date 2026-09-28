@@ -1417,6 +1417,23 @@ async function main() {
       ebayProducts,
       proshopProducts,
     );
+  const allowedCategories = new Set([
+  "Graphics Card",
+  "CPU",
+  "RAM",
+  "SSD",
+  "Gaming Laptop",
+  "Laptop",
+  "Gaming PC",
+  "Monitor",
+  "Monitors",
+  "Motherboard",
+  "Motherboards"
+]);
+
+const filteredProducts = finalProducts.filter(product =>
+  allowedCategories.has(String(product.category || "").trim())
+);
 
 
   const ebayFile =
@@ -1456,7 +1473,7 @@ async function main() {
     "products.json",
 
     JSON.stringify(
-      finalProducts,
+      filteredProducts,
       null,
       2
     ),
@@ -1469,7 +1486,7 @@ async function main() {
     "public/products.json",
 
     JSON.stringify(
-      finalProducts,
+      filteredProducts,
       null,
       2
     ),
