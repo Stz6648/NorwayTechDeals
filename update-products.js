@@ -1443,6 +1443,37 @@ const filteredProducts = finalProducts.filter(product =>
       ? Math.round(Number(product.price))
       : product.price
 }));
+  // Keep only the most useful product groups
+const productGroups = new Map();
+
+for (const product of normalizedProducts) {
+  const key =
+    product.gtin ||
+    `${product.brand || ""}-${product.mpn || ""}` ||
+    `${product.brand || ""}-${product.name || ""}`;
+
+  if (!productGroups.has(key)) {
+    productGroups.set(key, []);
+  }
+
+  productGroups.get(key).push(product);
+}
+
+const selectedGroups = [...productGroups.values()]
+  .sort((a, b) => {
+    const storesA = new Set(a.map(p => p.store)).size;
+    const storesB = new Set(b.map(p => p.store)).size;
+
+    if (storesB !== storesA) return storesB - storesA;
+
+    const stockA = a.filter(p => p.inStock).length;
+    const stockB = b.filter(p => p.inStock).length;
+
+    return stockB - stockA;
+  })
+  .slice(0, 400);
+
+const compactProducts = selectedGroups.flat();
 
 
   const ebayFile =
@@ -1482,7 +1513,7 @@ const filteredProducts = finalProducts.filter(product =>
     "products.json",
 
     JSON.stringify(
-      normalizedProducts,
+      compactProducts,
       null,
       2
     ),
@@ -1495,7 +1526,7 @@ const filteredProducts = finalProducts.filter(product =>
     "public/products.json",
 
     JSON.stringify(
-      normalizedProducts,
+      compactProducts,
       null,
       2
     ),
