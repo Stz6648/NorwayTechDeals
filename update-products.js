@@ -1456,7 +1456,7 @@ const excludedKeywords = [
   "power adapter",
   "printer",
   "toner",
-  "ink cartridge"
+  "ink cartridge",
   "stand",
 "holder",
 "desk",
