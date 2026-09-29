@@ -1431,9 +1431,54 @@ async function main() {
   "Motherboards"
 ]);
 
-const filteredProducts = finalProducts.filter(product =>
-  allowedCategories.has(String(product.category || "").trim())
-);
+const excludedKeywords = [
+  "case",
+  "bag",
+  "backpack",
+  "sleeve",
+  "cover",
+  "license",
+  "software",
+  "operating system",
+  "windows",
+  "server",
+  "keyboard",
+  "mouse",
+  "headset",
+  "headphone",
+  "webcam",
+  "cable",
+  "adapter",
+  "hub",
+  "docking station",
+  "dock",
+  "charger",
+  "power adapter",
+  "printer",
+  "toner",
+  "ink cartridge"
+];
+
+const filteredProducts = finalProducts.filter(product => {
+  const category = String(product.category || "").trim();
+
+  if (!allowedCategories.has(category)) {
+    return false;
+  }
+
+  const text = [
+    product.name,
+    product.description,
+    product.brand
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+
+  return !excludedKeywords.some(keyword =>
+    text.includes(keyword)
+  );
+});
   const normalizedProducts = filteredProducts.map(product => ({
   ...product,
   price:
