@@ -1457,6 +1457,13 @@ const excludedKeywords = [
   "printer",
   "toner",
   "ink cartridge"
+  "stand",
+"holder",
+"desk",
+"workstation",
+"laptopboard",
+"table",
+"support"
 ];
 
 const filteredProducts = finalProducts.filter(product => {
