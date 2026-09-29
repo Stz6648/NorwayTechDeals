@@ -1511,19 +1511,47 @@ for (const product of normalizedProducts) {
   productGroups.get(key).push(product);
 }
 
-const selectedGroups = [...productGroups.values()]
-  .sort((a, b) => {
-    const storesA = new Set(a.map(p => p.store)).size;
-    const storesB = new Set(b.map(p => p.store)).size;
+const categoryLimits = {
+  "Graphics Card": 40,
+  "CPU": 40,
+  "RAM": 40,
+  "SSD": 40,
+  "Gaming Laptop": 40,
+  "Laptop": 40,
+  "Gaming PC": 40,
+  "Monitor": 40,
+  "Monitors": 40,
+  "Motherboard": 40,
+  "Motherboards": 40
+};
 
-    if (storesB !== storesA) return storesB - storesA;
+const selectedGroups = [];
 
-    const stockA = a.filter(p => p.inStock).length;
-    const stockB = b.filter(p => p.inStock).length;
+for (const category of Object.keys(categoryLimits)) {
+  const groups = [...productGroups.values()]
+    .filter(group =>
+      group.some(
+        product =>
+          String(product.category || "").trim() === category
+      )
+    )
+    .sort((a, b) => {
+      const storesA = new Set(a.map(p => p.store)).size;
+      const storesB = new Set(b.map(p => p.store)).size;
 
-    return stockB - stockA;
-  })
-  .slice(0, 400);
+      if (storesB !== storesA) {
+        return storesB - storesA;
+      }
+
+      const stockA = a.filter(p => p.inStock).length;
+      const stockB = b.filter(p => p.inStock).length;
+
+      return stockB - stockA;
+    })
+    .slice(0, categoryLimits[category]);
+
+  selectedGroups.push(...groups);
+}
 
 const compactProducts = selectedGroups.flat();
 
