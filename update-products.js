@@ -1124,7 +1124,8 @@ async function fetchProshopProducts() {
       return [];
     }
 
-    const text = await response.text();
+    const buffer = await response.arrayBuffer();
+    const text = new TextDecoder("iso-8859-1").decode(buffer);
 
     console.log(`Proshop feed size: ${text.length} characters`);
 
