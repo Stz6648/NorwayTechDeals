@@ -292,7 +292,7 @@ async function loadProduct() {
         ${
           offers.length
 
-            ? offers.map(o => {
+            ? sortedOffers.map(o => {
 
                 const rawPrice =
                   Number(o.price || 0);
