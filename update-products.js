@@ -254,6 +254,35 @@ async function fetchEbayProducts() {
          */
         const offerPrice =
           price;
+        const detailResponse = await fetch(
+  `https://api.ebay.com/buy/browse/v1/item/${encodeURIComponent(item.itemId)}`,
+  {
+    headers: {
+      Authorization:
+        `Bearer ${tokenData.access_token}`,
+      "X-EBAY-C-MARKETPLACE-ID":
+        "EBAY_US",
+      "X-EBAY-C-ENDUSERCTX":
+        `affiliateCampaignId=${EBAY_CAMPAIGN_ID}`,
+      "Accept-Language":
+        "en-US"
+    }
+  }
+);
+
+const detail =
+  detailResponse.ok
+    ? await detailResponse.json()
+    : {};
+
+const ebayBrand =
+  detail.brand || "";
+
+const ebayGtin =
+  detail.gtin || "";
+
+const ebayMpn =
+  detail.mpn || "";
 
 
         /*
