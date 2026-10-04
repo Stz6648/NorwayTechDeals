@@ -304,6 +304,14 @@ const ebayMpn =
 
           name:
             item.title,
+          brand:
+  ebayBrand,
+
+gtin:
+  ebayGtin,
+
+mpn:
+  ebayMpn,
 
           category:
             ebayCategoryMap[q] ||
