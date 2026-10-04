@@ -1496,20 +1496,160 @@ const filteredProducts = finalProducts.filter(product => {
       ? Math.round(Number(product.price))
       : product.price
 }));
-  // Keep only the most useful product groups
+
+const allowedStores = new Set([
+  "proshop",
+  "ebay",
+  "acer"
+]);
+
+function normalizeText(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/\b(new|used|refurbished|refurb|open box)\b/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function getProductKeys(product) {
+  const keys = [];
+
+  const gtin = String(product.gtin || "").replace(/\D/g, "");
+  const mpn = normalizeText(product.mpn);
+  const brand = normalizeText(product.brand);
+  const name = normalizeText(product.name);
+
+  if (gtin.length >= 8) {
+    keys.push(`gtin:${gtin}`);
+  }
+
+  if (mpn.length >= 4) {
+    keys.push(`mpn:${brand}:${mpn}`);
+  }
+
+  if (brand && name) {
+    keys.push(`name:${brand}:${name}`);
+  }
+
+  return keys;
+}
+
+function createOffer(product) {
+  return {
+    store: product.store || "",
+    country: product.country || "NO",
+    condition: product.condition || "new",
+    price:
+      Number.isFinite(Number(product.price))
+        ? Math.round(Number(product.price))
+        : product.price,
+    currency: product.currency || "NOK",
+    inStock: product.inStock !== false,
+    affiliate: Boolean(product.affiliate),
+    affiliateNetwork: product.affiliateNetwork || "",
+    url: product.url || "",
+    updatedAt: product.updatedAt || ""
+  };
+}
+
 const productGroups = new Map();
 
 for (const product of normalizedProducts) {
-  const key =
-    product.gtin ||
-    `${product.brand || ""}-${product.mpn || ""}` ||
-    `${product.brand || ""}-${product.name || ""}`;
+  const store = String(product.store || "").toLowerCase();
 
-  if (!productGroups.has(key)) {
-    productGroups.set(key, []);
+  if (!allowedStores.has(store)) {
+    continue;
   }
 
-  productGroups.get(key).push(product);
+  const keys = getProductKeys(product);
+
+  let group = null;
+
+  for (const key of keys) {
+    if (productGroups.has(key)) {
+      group = productGroups.get(key);
+      break;
+    }
+  }
+
+  if (!group) {
+    group = [];
+  }
+
+  group.push(product);
+
+  for (const key of keys) {
+    productGroups.set(key, group);
+  }
+}
+
+const mergedProducts = [];
+const processedGroups = new Set();
+
+for (const group of productGroups.values()) {
+  if (processedGroups.has(group)) {
+    continue;
+  }
+
+  processedGroups.add(group);
+
+  const storeProducts = new Map();
+
+  for (const product of group) {
+    const store = String(product.store || "").toLowerCase();
+
+    if (!allowedStores.has(store)) {
+      continue;
+    }
+
+    if (!storeProducts.has(store)) {
+      storeProducts.set(store, product);
+    }
+  }
+
+  // 至少 3 家商家才保留
+  if (storeProducts.size < 3) {
+    continue;
+  }
+
+  const products = [...storeProducts.values()];
+
+  const base =
+    products.find(
+      product =>
+        String(product.store || "").toLowerCase() === "proshop"
+    ) || products[0];
+
+  const offers = products.map(createOffer);
+
+  offers.sort((a, b) => {
+    const priceA = Number(a.price);
+    const priceB = Number(b.price);
+
+    if (!Number.isFinite(priceA)) return 1;
+    if (!Number.isFinite(priceB)) return -1;
+
+    return priceA - priceB;
+  });
+
+  const cheapest = offers[0];
+
+  mergedProducts.push({
+    ...base,
+    price:
+      Number.isFinite(Number(cheapest.price))
+        ? Math.round(Number(cheapest.price))
+        : cheapest.price,
+    store: cheapest.store,
+    offers,
+    lowestStore: cheapest.store,
+    lowestPrice:
+      Number.isFinite(Number(cheapest.price))
+        ? Math.round(Number(cheapest.price))
+        : cheapest.price,
+    lowestCurrency: cheapest.currency || "NOK"
+  });
 }
 
 const categoryLimits = {
@@ -1526,35 +1666,25 @@ const categoryLimits = {
   "Motherboards": 40
 };
 
-const selectedGroups = [];
+const selectedProducts = [];
 
 for (const category of Object.keys(categoryLimits)) {
-  const groups = [...productGroups.values()]
-    .filter(group =>
-      group.some(
-        product =>
-          String(product.category || "").trim() === category
-      )
+  const products = mergedProducts
+    .filter(
+      product =>
+        String(product.category || "").trim() === category
     )
-    .sort((a, b) => {
-      const storesA = new Set(a.map(p => p.store)).size;
-      const storesB = new Set(b.map(p => p.store)).size;
-
-      if (storesB !== storesA) {
-        return storesB - storesA;
-      }
-
-      const stockA = a.filter(p => p.inStock).length;
-      const stockB = b.filter(p => p.inStock).length;
-
-      return stockB - stockA;
-    })
+    .sort(
+      (a, b) =>
+        (b.offers?.length || 0) -
+        (a.offers?.length || 0)
+    )
     .slice(0, categoryLimits[category]);
 
-  selectedGroups.push(...groups);
+  selectedProducts.push(...products);
 }
 
-const compactProducts = selectedGroups.flat();
+const compactProducts = selectedProducts;
 
 
   const ebayFile =
