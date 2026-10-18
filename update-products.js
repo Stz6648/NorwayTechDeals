@@ -1523,47 +1523,70 @@ function normalizeText(value) {
     .trim();
 }
 
+
 function getProductKeys(product) {
   const keys = [];
 
-  const gtin = String(product.gtin || "").replace(/\D/g, "");
-  const mpn = normalizeText(product.mpn);
-  const brand = normalizeText(product.brand);
-  const name = normalizeText(product.name);
+  const gtin = String(
+    product.gtin || product.ean || ""
+  ).replace(/\D/g, "");
 
+  const brand = normalizeText(product.brand);
+
+  const mpn = normalizeText(
+    product.mpn ||
+    product.model_number ||
+    product.model
+  );
+
+  const name = normalizeText(
+    product.name || product.title
+  );
+
+  // 1. 商品条码：优先匹配
   if (gtin.length >= 8) {
     keys.push(`gtin:${gtin}`);
   }
 
+  // 2. 厂商型号：不要求品牌字段完全一致
   if (mpn.length >= 4) {
-    keys.push(`mpn:${brand}:${mpn}`);
+    keys.push(`mpn:${mpn}`);
   }
 
-  if (brand && name) {
+  if (brand && mpn.length >= 4) {
+    keys.push(`mpn-brand:${brand}:${mpn}`);
+  }
+
+  // 3. 从标题提取具体型号编码
+  const rawName = String(
+    product.name || product.title || ""
+  );
+
+  const pattern =
+    /\b[a-z0-9]+(?:-[a-z0-9]+)+\b/gi;
+
+  for (const match of rawName.matchAll(pattern)) {
+    const token = normalizeText(match[0])
+      .replace(/\s+/g, "");
+
+    if (token.length >= 5) {
+      keys.push(`title-model:${token}`);
+
+      if (brand) {
+        keys.push(
+          `title-model-brand:${brand}:${token}`
+        );
+      }
+    }
+  }
+
+  // 4. 完整品牌名称作为后备匹配
+  if (brand && name.length >= 8) {
     keys.push(`name:${brand}:${name}`);
   }
 
-  return keys;
+  return [...new Set(keys)];
 }
-
-function createOffer(product) {
-  return {
-    store: product.store || "",
-    country: product.country || "NO",
-    condition: product.condition || "new",
-    price:
-      Number.isFinite(Number(product.price))
-        ? Math.round(Number(product.price))
-        : product.price,
-    currency: product.currency || "NOK",
-    inStock: product.inStock !== false,
-    affiliate: Boolean(product.affiliate),
-    affiliateNetwork: product.affiliateNetwork || "",
-    url: product.url || "",
-    updatedAt: product.updatedAt || ""
-  };
-}
-
 const productGroups = new Map();
 
 for (const product of normalizedProducts) {
