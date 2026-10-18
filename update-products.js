@@ -301,6 +301,7 @@ const ebayMpn =
 
           id:
             item.itemId,
+          store: "eBay",
 
           name:
             item.title,
@@ -1646,7 +1647,7 @@ for (const group of productGroups.values()) {
   }
 
   // 至少 3 家商家才保留
-  if (storeProducts.size < 2) {
+  if (storeProducts.size < 3) {
     continue;
   }
 
