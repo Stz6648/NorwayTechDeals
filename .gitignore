@@ -26,6 +26,7 @@ acceptance-*.png
 !TECHKJOP-FINAL-REMOTE-INTEGRATION-REPORT.md
 !TECHKJOP-FINAL-LAUNCH-REPORT.md
 !test/
+test/*
 !test/refresh-safety.test.js
 runtime-server.log
 runtime-status.json

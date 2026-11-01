@@ -1,6 +1,6 @@
 # TechKjøp — Final Launch Report
 
-**Date:** 2026-11-01 (Europe/Oslo)  
+**Date:** 2026-11-01 (Europe/Oslo)
 **Result:** **BLOCKED**
 
 ## 1. Product catalog
