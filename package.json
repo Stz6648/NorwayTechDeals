@@ -4,7 +4,8 @@
   "description": "Norway Tech Deals",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node --test current-main.test.js"
   },
   "keywords": [],
   "author": "",

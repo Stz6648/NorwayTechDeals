@@ -5,41 +5,71 @@ const path = require("path");
 const app = express();
 const PORT = 3000;
 
-const productsFile = path.join(__dirname, "products.json");
+// Vercel's deployment environment is authoritative: a Preview deployment must
+// remain read-only even when READONLY_PREVIEW was not set in its environment.
+const READONLY_PREVIEW = process.env.VERCEL_ENV === "preview"
+  || process.env.READONLY_PREVIEW === "1";
+const productsFile = READONLY_PREVIEW
+  ? path.join(__dirname, "public", "products.json")
+  : path.join(__dirname, "products.json");
 
 app.use(express.json());
-app.use(express.static(__dirname + "/public"));
-app.use(express.static(__dirname));
+
+if (READONLY_PREVIEW) {
+  // Only safe read methods are accepted in Preview. There are no refresh,
+  // publish, or mutation routes in this entry point.
+  app.use((req, res, next) => {
+    if (req.method !== "GET" && req.method !== "HEAD") {
+      return res.sendStatus(405);
+    }
+    next();
+  });
+
+  app.use(express.static(path.join(__dirname, "public")));
+  // The site entry point is at the repository root. Explicitly pin the JSON
+  // URL to the public catalogue before serving other root assets, so the root
+  // production catalogue can never become a Preview fallback.
+  app.get("/products.json", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "products.json"));
+  });
+  app.use(express.static(__dirname));
+} else {
+  // Keep the existing Production and local development file behavior.
+  app.use(express.static(path.join(__dirname, "public")));
+  app.use(express.static(__dirname));
+}
 
 function loadProducts() {
-    try {
-        const data = fs.readFileSync(productsFile, "utf8");
-        const products = JSON.parse(data);
+  try {
+    const data = fs.readFileSync(productsFile, "utf8");
+    const products = JSON.parse(data);
 
-        console.log("Products loaded:", products.length);
-
-        return products;
-    } catch (error) {
-        console.error("ERROR reading products.json:");
-        console.error(error.message);
-        return [];
-    }
+    console.log("Products loaded:", products.length);
+    return products;
+  } catch (error) {
+    console.error("ERROR reading products.json:");
+    console.error(error.message);
+    return [];
+  }
 }
 
 app.get("/api/products", (req, res) => {
-    const products = loadProducts();
-    res.json(products);
+  res.json(loadProducts());
 });
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.listen(PORT, () => {
+if (require.main === module) {
+  app.listen(PORT, () => {
     console.log("================================");
     console.log("NorwayTechDeals running!");
     console.log("http://localhost:" + PORT);
     console.log("Products file:");
     console.log(productsFile);
     console.log("================================");
-});
+  });
+}
+
+module.exports = { app, loadProducts, productsFile, READONLY_PREVIEW };
