@@ -3,6 +3,7 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
 const safety = require("../refresh-safety");
+const ebayUpdater = require("../update-products");
 
 function product(id = "p1", overrides = {}) {
   return { id, name: "Sample product", category: "Graphics Card", offers: [{ store: "Shop", price: 100, currency: "NOK", updatedAt: "2026-11-01", url: "https://example.no/item/1" }], ...overrides };
@@ -117,4 +118,12 @@ test("updater has no multi-merchant publication threshold", () => {
   const source = fs.readFileSync(path.join(__dirname, "..", "update-products.js"), "utf8");
   assert.doesNotMatch(source, /storeProducts\.size\s*<\s*3/);
   assert.match(source, /storeProducts\.size === 0/);
+});
+
+test("eBay candidates are categorized from item category and parts listings are excluded", () => {
+  assert.equal(ebayUpdater.mapEbayCategory({ categories: [{ categoryName: "Graphics/Video Cards" }] }), "Graphics Card");
+  assert.equal(ebayUpdater.mapEbayCategory({ categories: [{ categoryName: "PLC Processors" }] }), null);
+  assert.equal(ebayUpdater.mapEbayCategory({ categories: [{ categoryName: "PC Laptops & Netbooks" }] }), "Gaming Laptop");
+  assert.equal(ebayUpdater.rejectEbayListing({ title: "GPU For Parts or Not Working" }), true);
+  assert.equal(ebayUpdater.rejectEbayListing({ title: "New Gaming GPU", condition: "New" }), false);
 });

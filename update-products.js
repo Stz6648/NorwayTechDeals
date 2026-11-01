@@ -29,6 +29,24 @@ const EBAY_CLIENT_SECRET =
 const EBAY_CAMPAIGN_ID =
   process.env.EBAY_CAMPAIGN_ID || "5339206505";
 
+function mapEbayCategory(item) {
+  const categories = (item?.categories || []).map(c => String(c.categoryName || "").trim().toLowerCase());
+  if (categories.some(name => /^(graphics\/video cards|graphics cards|video cards)$/.test(name))) return "Graphics Card";
+  if (categories.some(name => /^(pc laptops?\s*&\s*netbooks|laptops?\s*&\s*netbooks|laptop computers)$/.test(name))) return "Gaming Laptop";
+  if (categories.some(name => /^(pc desktops|desktops\s*&\s*all-in-ones|desktop computers)$/.test(name))) return "Gaming PC";
+  if (categories.some(name => /^(cpus|computer cpus|computer processors|processors)$/.test(name))) return "CPU";
+  if (categories.some(name => /^(computer memory|ram modules|memory \(ram\))$/.test(name))) return "RAM";
+  if (categories.some(name => /^(solid state drives|hard drives|storage devices)$/.test(name))) return "SSD";
+  if (categories.some(name => /^(monitors|computer monitors|displays)$/.test(name))) return "Monitor";
+  return null;
+}
+
+function rejectEbayListing(item) {
+  const title = String(item?.title || "").toLowerCase();
+  const condition = String(item?.condition || "").toLowerCase();
+  return /for parts|parts only|not working|broken|faulty|damaged|repair only/.test(`${title} ${condition}`);
+}
+
 
 /* =========================================================
    eBay Products
@@ -103,46 +121,6 @@ async function fetchEbayProducts() {
   const allProducts = [];
 
 
-  const ebayCategoryMap = {
-
-    "RTX 5090":
-      "Graphics Card",
-
-    "RTX 5080":
-      "Graphics Card",
-
-    "RTX 5070 Ti":
-      "Graphics Card",
-
-    "RTX 5070":
-      "Graphics Card",
-
-    "Gaming PC":
-      "Gaming PC",
-
-    "Gaming Laptop":
-      "Gaming Laptop",
-
-    "Laptop":
-      "Laptop",
-
-    "Intel Core i7":
-      "CPU",
-
-    "AMD Ryzen 7":
-      "CPU",
-
-    "DDR5 RAM":
-      "RAM",
-
-    "NVMe SSD":
-      "SSD",
-
-    "Gaming Monitor":
-      "Monitor"
-  };
-
-
   for (const q of queries) {
 
     try {
@@ -198,10 +176,14 @@ async function fetchEbayProducts() {
 
         if (
           !item.itemId ||
-          !item.title
+          !item.title ||
+          rejectEbayListing(item)
         ) {
           continue;
         }
+
+        const productCategory = mapEbayCategory(item);
+        if (!productCategory) continue;
 
 
         const price =
@@ -252,9 +234,7 @@ gtin:
 mpn:
   ebayMpn,
 
-          category:
-            ebayCategoryMap[q] ||
-            "eBay",
+          category: productCategory,
 
           image:
             item.image?.imageUrl ||
@@ -1713,11 +1693,11 @@ async function main() {
 }
 
 
-main().catch(
-  error => {
+module.exports = { mapEbayCategory, rejectEbayListing };
 
+if (require.main === module) {
+  main().catch(error => {
     console.error(error);
-
     process.exit(1);
-  }
-);
+  });
+}
