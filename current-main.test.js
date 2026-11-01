@@ -6,6 +6,32 @@ const path = require("node:path");
 process.env.VERCEL_ENV = "preview";
 delete process.env.READONLY_PREVIEW;
 const { app, loadProducts, productsFile, READONLY_PREVIEW } = require("./index");
+const vercelEntry = require("./index");
+
+test("Vercel CommonJS entry exports the callable Express handler", () => {
+  assert.equal(require("./package.json").type, "commonjs");
+  assert.equal(typeof vercelEntry, "function");
+  assert.equal(vercelEntry, app);
+  assert.equal(vercelEntry.app, app);
+  assert.equal(vercelEntry.loadProducts, loadProducts);
+  assert.equal(vercelEntry.productsFile, productsFile);
+});
+
+test("Express entry serves the homepage and products API without a runtime error", async () => {
+  const server = app.listen(0);
+  try {
+    const { port } = server.address();
+    const home = await fetch(`http://127.0.0.1:${port}/`);
+    assert.equal(home.status, 200);
+    assert.match(await home.text(), /View Deal|TechKjop/i);
+
+    const products = await fetch(`http://127.0.0.1:${port}/api/products`);
+    assert.equal(products.status, 200);
+    assert.deepEqual(await products.json(), JSON.parse(fs.readFileSync(productsFile, "utf8")));
+  } finally {
+    await new Promise((resolve, reject) => server.close(error => error ? reject(error) : resolve()));
+  }
+});
 
 test("Preview is read-only and loads the public catalogue", async () => {
   assert.equal(READONLY_PREVIEW, true);
