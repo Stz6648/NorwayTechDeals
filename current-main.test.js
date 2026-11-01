@@ -11,14 +11,13 @@ const vercelEntry = require("./index");
 test("Vercel CommonJS entry exports the callable Express handler", () => {
   assert.equal(require("./package.json").type, "commonjs");
   assert.equal(typeof vercelEntry, "function");
-  assert.equal(vercelEntry, app);
   assert.equal(vercelEntry.app, app);
   assert.equal(vercelEntry.loadProducts, loadProducts);
   assert.equal(vercelEntry.productsFile, productsFile);
 });
 
 test("Express entry serves the homepage and products API without a runtime error", async () => {
-  const server = app.listen(0);
+  const server = require("node:http").createServer(vercelEntry).listen(0);
   try {
     const { port } = server.address();
     const home = await fetch(`http://127.0.0.1:${port}/`);
@@ -31,6 +30,26 @@ test("Express entry serves the homepage and products API without a runtime error
   } finally {
     await new Promise((resolve, reject) => server.close(error => error ? reject(error) : resolve()));
   }
+});
+
+test("Preview eBay Function is a CommonJS handler and remains disabled", async () => {
+  const ebayHandler = require("./api/ebay-search");
+  assert.equal(typeof ebayHandler, "function");
+  const originalEnvironment = process.env.VERCEL_ENV;
+  process.env.VERCEL_ENV = "preview";
+  let statusCode;
+  let payload;
+  try {
+    await ebayHandler({ query: {} }, {
+      status(code) { statusCode = code; return this; },
+      json(value) { payload = value; return this; }
+    });
+  } finally {
+    if (originalEnvironment === undefined) delete process.env.VERCEL_ENV;
+    else process.env.VERCEL_ENV = originalEnvironment;
+  }
+  assert.equal(statusCode, 404);
+  assert.deepEqual(payload, { error: "Not found" });
 });
 
 test("Preview is read-only and loads the public catalogue", async () => {

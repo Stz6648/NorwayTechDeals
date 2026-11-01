@@ -1,4 +1,4 @@
-export default async function handler(req, res) {
+async function handler(req, res) {
   // Never expose production eBay credentials or perform live searches on a
   // Preview deployment. This check must run before reading credentials.
   if (process.env.VERCEL_ENV === "preview") {
@@ -64,3 +64,5 @@ export default async function handler(req, res) {
     });
   }
 }
+
+module.exports = handler;

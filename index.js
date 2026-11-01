@@ -78,8 +78,12 @@ if (require.main === module) {
   });
 }
 
-// Vercel detects this root Express entry and invokes its CommonJS export as
-// the serverless request handler. Keep the existing test/local helpers on the
-// callable Express app while exporting the app itself to the runtime.
-Object.assign(app, { app, loadProducts, productsFile, READONLY_PREVIEW });
-module.exports = app;
+// Vercel detects this root entry as a Node.js Function. Export an explicit
+// CommonJS (req, res) handler and delegate every request to the existing
+// Express app, while keeping helpers available to local tests.
+function vercelHandler(req, res) {
+  return app(req, res);
+}
+
+Object.assign(vercelHandler, { app, loadProducts, productsFile, READONLY_PREVIEW });
+module.exports = vercelHandler;
