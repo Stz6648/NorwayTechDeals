@@ -7,6 +7,11 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
+
+concurrency:
+  group: product-catalog-update
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -20,13 +25,25 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run safety tests
+        run: npm test
+
       - name: Run product update
         run: node update-products.js
 
-      - name: Save changes
-        run: |
-          git config user.name "TechKjop Bot"
-          git config user.email "actions@github.com"
-          git add products.json public/products.json ebay-products.json
-          git diff --cached --quiet || git commit -m "Automatic product update"
-          git push
+      - name: Open catalog update pull request
+        if: ${{ success() }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: codex/catalog-refresh
+          base: main
+          add-paths: |
+            products.json
+            public/products.json
+            ebay-products.json
+          title: "Review refreshed product catalog"
+          body: "Automated catalog update. Safety tests and catalog validation passed; review the generated catalog diff before merging."

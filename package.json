@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node --test current-main.test.js"
+    "test": "node --test current-main.test.js test/refresh-safety.test.js"
   },
   "keywords": [],
   "author": "",

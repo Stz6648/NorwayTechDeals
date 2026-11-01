@@ -1,4 +1,14 @@
 export default async function handler(req, res) {
+  // Never expose production eBay credentials or perform live searches on a
+  // Preview deployment. This check must run before reading credentials.
+  if (process.env.VERCEL_ENV === "preview") {
+    return res.status(404).json({ error: "Not found" });
+  }
+
+  if (!process.env.EBAY_CLIENT_ID || !process.env.EBAY_CLIENT_SECRET) {
+    return res.status(503).json({ error: "eBay search is not configured" });
+  }
+
   try {
     const q = req.query.q || "RTX 5070 Ti";
 

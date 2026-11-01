@@ -24,6 +24,9 @@ acceptance-*.png
 *REPORT*.md
 *AUDIT*.md
 !TECHKJOP-FINAL-REMOTE-INTEGRATION-REPORT.md
+!TECHKJOP-FINAL-LAUNCH-REPORT.md
+!test/
+!test/refresh-safety.test.js
 runtime-server.log
 runtime-status.json
 runtime-status.json.tmp

@@ -1,5 +1,21 @@
 const fs = require("fs");
 const zlib = require("zlib");
+const safety = require("./refresh-safety");
+
+function createOffer(product) {
+  const offer = {
+    store: product.store,
+    price: product.price,
+    currency: product.currency,
+    url: product.url,
+    country: product.country,
+    condition: product.condition || "new",
+    inStock: product.inStock
+  };
+  if (product.affiliateNetwork) offer.affiliateNetwork = product.affiliateNetwork;
+  if (product.shippingVerified === true) offer.shippingVerified = true;
+  return offer;
+}
 
 const EBAY_CLIENT_ID =
   process.env.EBAY_CLIENT_ID || "";
@@ -1222,7 +1238,7 @@ async function fetchProshopProducts() {
         text.includes("skjerm") ||
         text.includes("monitor")
       ) {
-        return "Monitors";
+        return "Monitor";
       }
 
       if (
@@ -1298,7 +1314,7 @@ async function fetchProshopProducts() {
   }
 }
 
-async function main() {
+async function runUpdate() {
 
   const files = [
     "products.json",
@@ -1435,12 +1451,8 @@ async function main() {
   "RAM",
   "SSD",
   "Gaming Laptop",
-  "Laptop",
   "Gaming PC",
-  "Monitor",
-  "Monitors",
-  "Motherboard",
-  "Motherboards"
+  "Monitor"
 ]);
 
 const excludedKeywords = [
@@ -1595,6 +1607,9 @@ for (const product of normalizedProducts) {
   if (!allowedStores.has(store)) {
     continue;
   }
+  if (product.inStock === false) {
+    continue;
+  }
 
   const keys = getProductKeys(product);
 
@@ -1692,7 +1707,6 @@ const categoryLimits = {
   "RAM": 40,
   "SSD": 40,
   "Gaming Laptop": 40,
-  "Laptop": 40,
   "Gaming PC": 40,
   "Monitor": 40,
   "Monitors": 40,
@@ -1721,63 +1735,34 @@ for (const category of Object.keys(categoryLimits)) {
 const compactProducts = selectedProducts;
 
 
-  const ebayFile =
-    "ebay-products.json";
+  const publicProducts = safety.filterProtectedListings(compactProducts);
+  safety.validateCatalog(publicProducts, { minimum: safety.MINIMUM_PUBLIC_PRODUCTS });
 
-
-  if (
-    ebayProducts.length > 0
-  ) {
-
-    fs.writeFileSync(
-      ebayFile,
-
-      JSON.stringify(
-        ebayProducts,
-        null,
-        2
-      ),
-
-      "utf8"
-    );
-
-
-    console.log(
-      `eBay products saved: ${ebayProducts.length}`
-    );
-
-  } else {
-
-    console.log(
-      "No new eBay products - existing ebay-products.json preserved"
-    );
+  const oldPublic = JSON.parse(fs.readFileSync("public/products.json", "utf8"));
+  const diff = safety.diffCatalog(oldPublic, publicProducts);
+  const previousCount = oldPublic.length;
+  if (previousCount > 0 && publicProducts.length < previousCount * 0.5) {
+    throw new Error(`Refusing catalog drop from ${previousCount} to ${publicProducts.length}`);
   }
 
+  const report = {
+    generatedAt: new Date().toISOString(),
+    ...diff,
+    categories: Object.fromEntries(safety.CATEGORIES.map(category => [category, publicProducts.filter(product => product.category === category).length]))
+  };
+  fs.mkdirSync("reports", { recursive: true });
+  safety.atomicWriteJSON("reports/catalog-update-diff.json", report);
 
-  fs.writeFileSync(
-    "products.json",
+  // Validate the complete public output before replacing either published file.
+  safety.atomicWriteJSON("products.json", publicProducts);
+  safety.atomicWriteJSON("public/products.json", publicProducts);
 
-    JSON.stringify(
-      compactProducts,
-      null,
-      2
-    ),
-
-    "utf8"
-  );
-
-
-  fs.writeFileSync(
-    "public/products.json",
-
-    JSON.stringify(
-      compactProducts,
-      null,
-      2
-    ),
-
-    "utf8"
-  );
+  if (ebayProducts.length > 0) {
+    safety.atomicWriteJSON("ebay-products.json", ebayProducts);
+    console.log(`eBay products saved: ${ebayProducts.length}`);
+  } else {
+    console.log("No new eBay products - existing ebay-products.json preserved");
+  }
 
 
   console.log(
@@ -1796,8 +1781,17 @@ const compactProducts = selectedProducts;
 
 
   console.log(
-    `Total products saved: ${finalProducts.length}`
+      `Total products saved: ${publicProducts.length}`
   );
+}
+
+async function main() {
+  const release = safety.acquireLock(".refresh-store/update-products.lock");
+  try {
+    await runUpdate();
+  } finally {
+    release();
+  }
 }
 
 
