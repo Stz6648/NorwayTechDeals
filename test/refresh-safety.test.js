@@ -5,12 +5,13 @@ const path = require("node:path");
 const safety = require("../refresh-safety");
 
 function product(id = "p1", overrides = {}) {
-  return { id, name: "Sample product", category: "Graphics Card", offers: [{ store: "Shop", price: 100, currency: "NOK", url: "https://example.no/item/1" }], ...overrides };
+  return { id, name: "Sample product", category: "Graphics Card", offers: [{ store: "Shop", price: 100, currency: "NOK", updatedAt: "2026-11-01", url: "https://example.no/item/1" }], ...overrides };
 }
 
-test("empty and below-minimum catalogs are rejected", () => {
-  assert.throws(() => safety.validateCatalog([]), /empty/);
+test("a single real merchant offer is sufficient and below-minimum catalogs are rejected", () => {
+  assert.throws(() => safety.validateCatalog([]), /minimum/);
   assert.throws(() => safety.validateCatalog([product()], { minimum: 2 }), /minimum/);
+  assert.equal(safety.validateCatalog([product()], { minimum: 1 }), true);
 });
 
 test("invalid prices and currencies are rejected", () => {
@@ -18,9 +19,14 @@ test("invalid prices and currencies are rejected", () => {
   assert.throws(() => safety.validateCatalog([product("p", { offers: [{ store: "Shop", price: 10, currency: "XXX", url: "https://x" }] })], { minimum: 1 }), /currency/);
 });
 
+test("a listing may omit price but cannot claim stale or undated pricing", () => {
+  assert.equal(safety.validateCatalog([product("no-price", { offers: [{ store: "Shop", url: "https://example.no/item/1" }] })], { minimum: 1 }), true);
+  assert.throws(() => safety.validateCatalog([product("undated", { offers: [{ store: "Shop", price: 9, currency: "USD", url: "https://example.no/item/1" }] })], { minimum: 1 }), /update time/);
+});
+
 test("duplicate ids and malformed merchant/link fields are rejected", () => {
   assert.throws(() => safety.validateCatalog([product(), product()], { minimum: 1 }), /Duplicate/);
-  assert.throws(() => safety.validateCatalog([product("x", { offers: [{ price: 1, currency: "NOK", store: "Shop", url: "javascript:bad" }] })], { minimum: 1 }), /URL/);
+  assert.throws(() => safety.validateCatalog([product("x", { offers: [{ price: 1, currency: "NOK", updatedAt: "2026-11-01", store: "Shop", url: "javascript:bad" }] })], { minimum: 1 }), /URL/);
 });
 
 test("hidden listing ids are removed and price protected ids are redacted", () => {
@@ -87,7 +93,7 @@ test("Actions updates are serialized and create a pull request against main", ()
   assert.doesNotMatch(workflow, /git push/);
 });
 
-test("current raw candidate and publication catalogs validate structurally", () => {
+test("current raw candidate and publication catalogs have valid JSON and matching copies", () => {
   const root = path.join(__dirname, "..");
   const raw = JSON.parse(fs.readFileSync(path.join(root, "ebay-products.json"), "utf8"));
   const production = JSON.parse(fs.readFileSync(path.join(root, "products.json"), "utf8"));
@@ -105,5 +111,10 @@ test("current raw candidate and publication catalogs validate structurally", () 
     assert.ok(offer.store && /^https?:\/\//i.test(offer.url));
   }
   assert.deepEqual(production, preview);
-  assert.equal(production.length, 0, "current source does not meet public merchant and verification rules");
+});
+
+test("updater has no multi-merchant publication threshold", () => {
+  const source = fs.readFileSync(path.join(__dirname, "..", "update-products.js"), "utf8");
+  assert.doesNotMatch(source, /storeProducts\.size\s*<\s*3/);
+  assert.match(source, /storeProducts\.size === 0/);
 });

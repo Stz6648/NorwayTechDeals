@@ -12,6 +12,7 @@
 !public/products.json
 !public/sitemap.xml
 !public/robots.txt
+!public/category.css
 !public/googlea9562297fa6e53f6.html
 !public/images/
 !public/images/*.jpg
@@ -28,6 +29,13 @@ node_modules/
 .refresh-store/
 backups/
 reports/
+index-backup.html
+graphics-cards.html
+ram.html
+gaming-laptops.html
+gaming-pc.html
+laptop-tilbud.html
+product.html
 test/
 *.log
 *.tmp

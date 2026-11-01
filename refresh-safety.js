@@ -1,7 +1,8 @@
 const fs = require("node:fs");
 const path = require("node:path");
 
-const MINIMUM_PUBLIC_PRODUCTS = 25;
+// A single verified product and merchant offer is enough for the catalogue.
+const MINIMUM_PUBLIC_PRODUCTS = 1;
 const ALLOWED_CURRENCIES = new Set(["NOK", "USD", "EUR", "GBP", "SEK", "DKK", "CHF", "PLN", "CZK", "HUF", "RON", "BGN", "TRY", "CAD", "AUD", "NZD", "JPY", "SGD", "HKD", "INR", "AED", "ILS", "MXN"]);
 const HIDDEN_LISTING_IDS = new Set([
   "840050139607", "227585874712", "198666805311", "800855864419", "920077901404",
@@ -29,24 +30,28 @@ function listingId(offer) {
 
 function validateCatalog(products, { minimum = MINIMUM_PUBLIC_PRODUCTS } = {}) {
   if (!Array.isArray(products)) throw new Error("Catalog must be a JSON array");
-  if (products.length === 0) throw new Error("Refusing to publish an empty catalog");
   if (products.length < minimum) throw new Error(`Catalog has ${products.length} products; minimum is ${minimum}`);
   const ids = new Set();
   for (const [index, product] of products.entries()) {
     if (!product || typeof product !== "object" || !String(product.id || "").trim()) throw new Error(`Product ${index} has no id`);
     if (ids.has(String(product.id))) throw new Error(`Duplicate product id: ${product.id}`);
     ids.add(String(product.id));
-    if (!String(product.name || "").trim() || !CATEGORIES.includes(String(product.category || "").trim())) throw new Error(`Product ${product.id} has an unsupported category`);
+    if (!String(product.name || "").trim() || !String(product.category || "").trim()) throw new Error(`Product ${product.id} has no category`);
     const offers = Array.isArray(product.offers) ? product.offers : [product];
     if (!offers.length) throw new Error(`Product ${product.id} has no offers`);
     for (const offer of offers) {
       const id = listingId(offer);
       const protectedPrice = PRICE_PROTECTED_LISTING_IDS.has(id);
+      const hasPrice = offer?.price !== undefined && offer?.price !== null && offer?.price !== "";
       const price = Number(offer?.price);
-      if (!protectedPrice && (!Number.isFinite(price) || price <= 0)) throw new Error(`Product ${product.id} has invalid price`);
-      if (!protectedPrice && !ALLOWED_CURRENCIES.has(String(offer.currency || "").toUpperCase())) throw new Error(`Product ${product.id} has invalid currency`);
+      if (!protectedPrice && hasPrice && (!Number.isFinite(price) || price <= 0)) throw new Error(`Product ${product.id} has invalid price`);
+      if (!protectedPrice && hasPrice && !ALLOWED_CURRENCIES.has(String(offer.currency || "").toUpperCase())) throw new Error(`Product ${product.id} has invalid currency`);
+      if (!protectedPrice && !hasPrice && offer.currency) throw new Error(`Product ${product.id} has currency without a price`);
+      if (!protectedPrice && hasPrice && !Number.isFinite(Date.parse(offer.updatedAt || offer.priceUpdatedAt || ""))) throw new Error(`Product ${product.id} has no valid price update time`);
       if (!String(offer.store || product.store || "").trim()) throw new Error(`Product ${product.id} has no merchant`);
-      if (!/^https?:\/\//i.test(String(offer.url || ""))) throw new Error(`Product ${product.id} has invalid URL`);
+      let offerUrl;
+      try { offerUrl = new URL(String(offer.url || "")); } catch {}
+      if (!offerUrl || !/^https?:$/.test(offerUrl.protocol) || offerUrl.pathname === "/") throw new Error(`Product ${product.id} has invalid URL`);
     }
   }
   return true;

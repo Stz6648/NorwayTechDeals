@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product - TechKjop</title>
-  <meta name="description" content="Compare product prices and offers at TechKjop.">
+  <meta name="description" content="Product information and merchant purchase link at TechKjop.">
+  <meta name="robots" content="noindex, follow">
   <style>
     * { box-sizing: border-box; }
 
@@ -177,14 +178,7 @@ async function loadProduct() {
     const specs = product.specifications || {};
     const offers = product.offers || [];
 
-    const validOffers = offers.filter(o =>
-      o && typeof o.price === "number"
-    );
-
-    const lowestPrice = validOffers.length
-      
-      ? Math.min(...validOffers.map(o => o.price))
-      : product.lowestPrice;
+    const validOffers = offers.filter(o => o && Number(o.price) > 0 && /^[A-Z]{3}$/.test(String(o.currency || "")) && /^https?:\/\//i.test(o.url || ""));
     const schema = {
   "@context": "https://schema.org",
   "@type": "Product",
@@ -197,12 +191,7 @@ async function loadProduct() {
         "name": product.brand
       }
     : undefined,
-  "offers": {
-    "@type": "AggregateOffer",
-    "priceCurrency": "NOK",
-    "lowPrice": String(lowestPrice || 0),
-    "offerCount": validOffers.length
-  }
+  "offers": validOffers.map(o => ({"@type":"Offer","url":o.url,"price":String(o.price),"priceCurrency":o.currency}))
 };
 
 const schemaScript = document.createElement("script");
@@ -217,8 +206,9 @@ document.head.appendChild(schemaScript);
           <div>
             <img
               class="product-image"
-              src="${product.image || '/images/techkjop-placeholder.jpg'}"
+              src="${product.image || '/images/techkjop-placeholder.svg'}"
               alt="${product.name}"
+              onerror="this.onerror=null;this.src='/images/techkjop-placeholder.svg'"
             >
           </div>
 
@@ -227,11 +217,7 @@ document.head.appendChild(schemaScript);
             <h1>${product.name}</h1>
             <p>${product.description || ""}</p>
 
-            ${
-              lowestPrice
-                ? `<div class="price">From ${lowestPrice.toLocaleString('no-NO')} kr</div>`
-                : `<div class="price">Price not available</div>`
-            }
+            <div class="price">Check price and availability with the merchant</div>
 
             <div class="specs">
               ${specs.cpu ? `<div class="spec"><strong>CPU</strong><br>${specs.cpu}</div>` : ""}
@@ -247,7 +233,7 @@ document.head.appendChild(schemaScript);
       </section>
 
       <section class="product offers">
-        <h2>Compare prices</h2>
+        <h2>Merchant offers</h2>
 
         ${
           offers.length
@@ -259,14 +245,14 @@ document.head.appendChild(schemaScript);
                 </div>
 
                 <div class="offer-price">
-                  ${typeof o.price === "number"
-                    ? o.price.toLocaleString('no-NO') + " kr"
-                    : "See price"}
+                  ${Number(o.price) > 0 && o.currency
+                    ? `${o.price} ${o.currency}`
+                    : "See price at merchant"}
                 </div>
 
                 ${
                   o.url
-                  ? `<a class="deal-button" href="${o.url}" target="_blank" rel="noopener">View deal</a>`
+                  ? `<a class="deal-button" href="${o.url}" target="_blank" rel="${o.affiliate === true ? 'nofollow sponsored noopener' : 'nofollow noopener'}">View Deal</a>`
                   : ""
                 }
               </div>

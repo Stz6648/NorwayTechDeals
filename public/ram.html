@@ -4,8 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RAM tilbud i Norge | Techkjop</title>
-<meta name="description" content="Sammenlign RAM og DDR5 RAM priser i Norge.">
+<title>eBay RAM recommendations | TechKjop</title>
+<meta name="description" content="Browse RAM products and current merchant offers at TechKjop.">
+<link rel="canonical" href="https://www.norwaytechdeals.no/ram.html">
+<meta property="og:title" content="RAM offers | TechKjop">
+<meta property="og:description" content="Browse RAM products and merchant offers at TechKjop.">
 
 <style>
 body{margin:0;font-family:Arial,sans-serif;background:#f5f5f5;color:#222}
@@ -30,15 +33,15 @@ main{max-width:1200px;margin:30px auto;padding:0 20px}
 <body>
 
 <header>
-<h1>RAM tilbud i Norge</h1>
-<p>Sammenlign RAM-priser og DDR5 RAM.</p>
+<h1>eBay RAM recommendations</h1>
+<p>Browse RAM and DDR5 listings on eBay.</p>
 </header>
 
 <main>
 
 <div class="intro">
 <h2>RAM Deals</h2>
-<p>Finn RAM til gaming-PC og andre PC-er. Sammenlign kapasitet, hastighet og pris.</p>
+<p>Explore memory capacity, speed and eBay listings.</p>
 </div>
 
 <div class="deals-head">
@@ -47,8 +50,7 @@ main{max-width:1200px;margin:30px auto;padding:0 20px}
 <input id="dealSearch" placeholder="Søk RAM...">
 <select id="dealSort">
 <option value="recommended">Anbefalt</option>
-<option value="price-low">Laveste pris</option>
-<option value="price-high">Høyeste pris</option>
+<option value="name">Name A–Z</option>
 </select>
 </div>
 </div>
@@ -79,7 +81,7 @@ const search=document.getElementById("dealSearch");
 const sort=document.getElementById("dealSort");
 
 function price(p){
-return Number(p.lowestPrice??p.price??p.offers?.[0]?.price??999999);
+return Number(p.offers?.[0]?.price??p.price??999999);
 }
 
 function render(){
@@ -90,8 +92,7 @@ if(q){
 list=list.filter(p=>JSON.stringify(p).toLowerCase().includes(q));
 }
 
-if(sort.value==="price-low") list.sort((a,b)=>price(a)-price(b));
-if(sort.value==="price-high") list.sort((a,b)=>price(b)-price(a));
+if(sort.value==="name") list.sort((a,b)=>(a.name||"").localeCompare(b.name||""));
 
 if(!list.length){
 container.innerHTML="<p>Ingen RAM funnet.</p>";
@@ -100,26 +101,26 @@ return;
 
 container.innerHTML=list.map(p=>{
 const name=p.name||"RAM";
-const image=p.image||"/images/ram.jpg";
+const image=p.image||"/images/techkjop-placeholder.svg";
 const specs=p.specifications||{};
 const ram=specs.ram||"";
 const type=specs.type||"";
 const speed=specs.speed||"";
 const latency=specs.latency||"";
-const store=p.lowestStore||p.offers?.[0]?.store||"Proshop";
+const store=p.lowestStore||p.offers?.[0]?.store||p.store||"Merchant";
 const link=p.offers?.[0]?.url||p.url||"#";
 
 return `
 <article class="deal-card">
-<img src="${image}" alt="${name}" loading="lazy">
+<img src="${image}" alt="${name}" loading="lazy" onerror="this.onerror=null;this.src='/images/techkjop-placeholder.svg'">
 <h3>${name}</h3>
 <div class="specs">
 ${ram}<br>
 ${type} · ${speed} · ${latency}
 </div>
-<div class="price">${store.toLowerCase().includes("ebay") ? `${Math.round(price(p) / 9.3)} USD ≈ ${price(p).toLocaleString("nb-NO")} NOK` : `${price(p).toLocaleString("nb-NO")} kr`}</div>
+<div class="price">${p.offers?.[0]?.currency ? `${price(p).toLocaleString("en-US")} ${p.offers[0].currency}` : "See price at merchant"}</div>
 <div class="store">${store}</div>
-<a class="button" href="${link}" target="_blank" rel="noopener">Se tilbud</a>
+<a class="button" href="${link}" target="_blank" rel="${p.offers?.[0]?.affiliate === true ? 'nofollow sponsored noopener' : 'nofollow noopener'}">View Deal</a>
 </article>
 `;
 }).join("");

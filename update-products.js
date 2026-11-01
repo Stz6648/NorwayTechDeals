@@ -10,8 +10,11 @@ function createOffer(product) {
     url: product.url,
     country: product.country,
     condition: product.condition || "new",
-    inStock: product.inStock
+    inStock: product.inStock,
+    updatedAt: product.updatedAt || product.priceUpdatedAt
   };
+  if (product.affiliate === true) offer.affiliate = true;
+  if (product.affiliate === true || product.affiliateNetwork) offer.affiliate = true;
   if (product.affiliateNetwork) offer.affiliateNetwork = product.affiliateNetwork;
   if (product.shippingVerified === true) offer.shippingVerified = true;
   return offer;
@@ -140,49 +143,6 @@ async function fetchEbayProducts() {
   };
 
 
-  /*
-   * USD → NOK
-   *
-   * This is only used for the
-   * product-level lowestPrice.
-   *
-   * The original eBay offer price
-   * remains USD.
-   */
-  let usdToNok = 9.44;
-
-
-  try {
-
-    const rateResponse =
-      await fetch(
-        "https://open.er-api.com/v6/latest/USD"
-      );
-
-    const rateData =
-      await rateResponse.json();
-
-    const liveRate =
-      Number(
-        rateData?.rates?.NOK
-      );
-
-    if (liveRate > 0) {
-      usdToNok = liveRate;
-    }
-
-    console.log(
-      `USD → NOK rate: ${usdToNok}`
-    );
-
-  } catch (error) {
-
-    console.log(
-      `USD rate failed - using ${usdToNok}`
-    );
-  }
-
-
   for (const q of queries) {
 
     try {
@@ -274,17 +234,6 @@ async function fetchEbayProducts() {
        const ebayGtin = item.gtin || "";
        const ebayMpn = item.mpn || "";
 
-        /*
-         * Product-level lowest price.
-         *
-         * IMPORTANT:
-         * lowestPrice is now ALWAYS NOK.
-         */
-        const lowestPriceNok =
-          currency === "USD"
-            ? price * usdToNok
-            : price;
-
 
         allProducts.push({
 
@@ -326,9 +275,6 @@ mpn:
               store:
                 "eBay",
 
-              country:
-                "NO",
-
               condition:
                 item.condition ||
                 "New",
@@ -344,22 +290,13 @@ mpn:
               currency:
                 currency,
 
-              shipping:
-                item.shippingOptions?.[0]
-                  ?.shippingCost?.value ||
-                null,
-
-              inStock:
-                true,
-
               affiliate:
-                true,
+                Boolean(item.itemAffiliateWebUrl),
 
-              affiliateNetwork:
-                "eBay Partner Network",
+              ...(item.itemAffiliateWebUrl ? { affiliateNetwork: "eBay Partner Network" } : {}),
 
               url:
-                item.itemWebUrl ||
+                item.itemAffiliateWebUrl || item.itemWebUrl ||
                 `https://www.ebay.com/itm/${item.itemId}`,
 
               updatedAt:
@@ -370,36 +307,6 @@ mpn:
 
           ],
 
-
-          /*
-           * IMPORTANT:
-           * This is now NOK.
-           *
-           * Example:
-           * 257 USD
-           * → approximately 2426 NOK
-           */
-          lowestPrice:
-            lowestPriceNok,
-
-          lowestStore:
-            "eBay",
-
-          /*
-           * Explicitly tell the frontend
-           * what currency lowestPrice uses.
-           */
-          lowestCurrency:
-            "NOK",
-
-          /*
-           * Keep original USD price too.
-           */
-          originalPrice:
-            offerPrice,
-
-          originalCurrency:
-            currency,
 
           updatedAt:
             new Date()
@@ -1354,13 +1261,22 @@ async function runUpdate() {
   }
 
 
-  const acerProducts =
-    await fetchAcerProducts();
+  async function fetchSource(name, fetchProducts) {
+    try {
+      const products = await fetchProducts();
+      console.log(`${name} source returned ${products.length} candidate products`);
+      return products;
+    } catch (error) {
+      console.error(`${name} source failed; keeping its previous listings:`, error.message);
+      return [];
+    }
+  }
 
-
-  const ebayProducts =
-    await fetchEbayProducts();
-  const proshopProducts = await fetchProshopProducts();
+  const [acerProducts, ebayProducts, proshopProducts] = await Promise.all([
+    fetchSource("Acer/Awin", fetchAcerProducts),
+    fetchSource("eBay", fetchEbayProducts),
+    fetchSource("Proshop", fetchProshopProducts)
+  ]);
 
   /*
    * 保留现有产品。
@@ -1430,11 +1346,13 @@ async function runUpdate() {
               ).toLowerCase() === "proshop"
           );
 
-        return (
-          !isAcer &&
-          !isEbay &&
-          !isProshop
-        );
+        // Keep a source's last good listings when that source returned no
+        // validated replacements during this run.
+        const sourceUpdated =
+          (isAcer && acerProducts.length > 0) ||
+          (isEbay && ebayProducts.length > 0) ||
+          (isProshop && proshopProducts.length > 0);
+        return !sourceUpdated;
       }
     );
 
@@ -1452,6 +1370,7 @@ async function runUpdate() {
   "SSD",
   "Gaming Laptop",
   "Gaming PC",
+  "Laptop",
   "Monitor"
 ]);
 
@@ -1657,10 +1576,8 @@ for (const group of productGroups.values()) {
     }
   }
 
-  // 至少 3 家商家才保留
-  if (storeProducts.size < 3) {
-    continue;
-  }
+  // One valid merchant offer is sufficient for this product discovery site.
+  if (storeProducts.size === 0) continue;
 
   const products = [...storeProducts.values()];
 
@@ -1707,6 +1624,7 @@ const categoryLimits = {
   "RAM": 40,
   "SSD": 40,
   "Gaming Laptop": 40,
+  "Laptop": 40,
   "Gaming PC": 40,
   "Monitor": 40,
   "Monitors": 40,

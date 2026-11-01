@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gaming PC tilbud i Norge | TechKjop</title>
+<title>eBay gaming PC recommendations | TechKjop</title>
+<meta name="description" content="Browse gaming PCs and current merchant offers at TechKjop.">
+<link rel="canonical" href="https://www.norwaytechdeals.no/gaming-pc.html">
+<meta property="og:title" content="Gaming PCs | TechKjop">
+<meta property="og:description" content="Explore gaming PCs and merchant offers.">
 
 <style>
 *{box-sizing:border-box}
@@ -66,8 +70,8 @@ footer{background:#111827;color:#aaa;text-align:center;padding:30px}
 
 <section class="hero">
 <div class="hero-inner">
-<h1>Gaming PC tilbud i Norge</h1>
-<p>Sammenlign Gaming PC priser, spesifikasjoner og butikker.</p>
+<h1>eBay gaming PC recommendations</h1>
+<p>Browse gaming PCs and merchant offers.</p>
 </div>
 </section>
 
@@ -75,8 +79,7 @@ footer{background:#111827;color:#aaa;text-align:center;padding:30px}
 <input id="search" class="search" placeholder="Søk etter Gaming PC...">
 <select id="sort" class="sort">
 <option value="recommended">Anbefalt</option>
-<option value="price-low">Laveste pris</option>
-<option value="price-high">Høyeste pris</option>
+<option value="name">Name A–Z</option>
 </select>
 </div>
 
@@ -87,49 +90,9 @@ footer{background:#111827;color:#aaa;text-align:center;padding:30px}
 
 <script>
 let products=[];
-let usdToNok = 9.44;
-
-fetch("https://open.er-api.com/v6/latest/USD")
-  .then(r => r.json())
-  .then(data => {
-    if (data?.rates?.NOK > 0) {
-      usdToNok = data.rates.NOK;
-    }
-  })
-  .catch(() => {});
 function price(p){
-  const offers = Array.isArray(p.offers) ? p.offers : [];
-
-  const prices = offers
-    .map(o => {
-      const value = Number(o.price);
-      if(!Number.isFinite(value) || value <= 0) return 0;
-
-      const isUSD =
-        String(o.store || o.merchant || "").toLowerCase().includes("ebay") ||
-        String(o.currency || "").toUpperCase() === "USD";
-
-      return isUSD ? value * usdToNok : value;
-    })
-    .filter(x => x > 0);
-
-  if(prices.length){
-    return Math.min(...prices);
-  }
-
-  if(typeof p.lowestPrice === "number"){
-    const isUSD =
-      String(p.lowestStore || "").toLowerCase().includes("ebay") ||
-      String(p.currency || "").toUpperCase() === "USD";
-
-    return isUSD ? p.lowestPrice * usdToNok : p.lowestPrice;
-  }
-
-  if(typeof p.price === "number"){
-    return p.price;
-  }
-
-  return 0;
+  const offer=(p.offers||[]).find(o=>Number(o.price)>0);
+  return offer?Number(offer.price):(Number(p.price)>0?Number(p.price):0);
 }
 
 function image(p){
@@ -168,8 +131,7 @@ c.includes("gaming desktop");
 return isPC&&(!q||JSON.stringify(p).toLowerCase().includes(q));
 });
 
-if(sort==="price-low")list.sort((a,b)=>price(a)-price(b));
-if(sort==="price-high")list.sort((a,b)=>price(b)-price(a));
+if(sort==="name")list.sort((a,b)=>(a.name||"").localeCompare(b.name||""));
 
 grid.innerHTML="";
 
@@ -201,30 +163,18 @@ onerror="this.onerror=null;this.src='/images/lenovo-legion-t5.jpg';">
 ${specs(p).map(x=>`<div>${x}</div>`).join("")}
 </div>
 
-${price(p)?`<div class="price">${money(price(p))}</div>`:""}
+${price(p)?`<div class="price">${money(price(p),p.offers?.[0]?.currency||p.currency||"")}</div>`:""}
 
-${p.lowestStore?`<div class="store">Beste pris hos ${p.lowestStore}</div>`:""}
+${p.lowestStore?`<div class="store">eBay listing · ${p.lowestStore}</div>`:""}
 
-<div class="offer-title">Norske butikker</div>
+<div class="offer-title">Merchant offers</div>
 
 ${offers.length?offers.map(o=>`
 <div class="offer">
 <div class="offer-name">${o.store||o.merchant||"Nettbutikk"}</div>
-${o.price ? `<div class="offer-price">${
-  (
-    String(o.store || o.merchant || "").toLowerCase().includes("ebay") ||
-    String(o.currency || "").toUpperCase() === "USD"
-  )
-    ? `${Number(o.price).toLocaleString("en-US", {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      })} USD ≈ ${(Number(o.price) * usdToNok).toLocaleString("nb-NO", {
-        maximumFractionDigits: 0
-      })} NOK`
-    : money(o.price)
-}</div>` : ""}
+${o.price ? `<div class="offer-price">${Number(o.price).toLocaleString("en-US")} ${o.currency||""}</div>` : ""}
 ${o.url||o.link||o.affiliateUrl?
-`<a href="${o.url||o.link||o.affiliateUrl}" target="_blank" rel="nofollow sponsored">Se tilbud</a>`:""}
+`<a href="${o.url||o.link||o.affiliateUrl}" target="_blank" rel="${o.affiliate === true ? 'nofollow sponsored noopener' : 'nofollow noopener'}">View Deal</a>`:""}
 </div>
 `).join(""):"<div class='loading'>Ingen norske tilbud registrert.</div>"}
 ${p.id ? `
@@ -266,15 +216,14 @@ const title=x.title||"eBay Gaming PC";
 const value=x.price?.value??x.price??"";
 const currency=x.price?.currency||"USD";
 const usdPrice=Number(value);
-const nokPrice=Math.round(usdPrice*usdToNok);
 const url=x.itemAffiliateWebUrl||x.itemWebUrl||x.url||"#";
 
 return `
 <div class="offer">
 <div class="offer-name">${title}</div>
-${value!==""?`<div class="offer-price">${money(usdPrice,"USD")} ≈ ${money(nokPrice,"NOK")}</div>`:""}
+${value!==""?`<div class="offer-price">${money(usdPrice,currency)}</div>`:""}
 ${url!=="#"?
-`<a href="${url}" target="_blank" rel="nofollow sponsored">Se på eBay</a>`:""}
+`<a href="${url}" target="_blank" rel="${x.itemAffiliateWebUrl ? 'nofollow sponsored noopener' : 'nofollow noopener'}">View on eBay</a>`:""}
 </div>`;
 }).join("");
 

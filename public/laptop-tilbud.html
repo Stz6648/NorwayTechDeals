@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Laptop tilbud i Norge | TechKjop</title>
-<meta name="description" content="Finn gode laptop tilbud i Norge. Sammenlign priser, spesifikasjoner og tilbud fra flere butikker.">
+<meta name="description" content="Discover recommended laptop listings and technology offers on eBay with TechKjop.">
+<link rel="canonical" href="https://www.norwaytechdeals.no/laptop-tilbud.html">
+<meta property="og:title" content="Laptop offers | TechKjop">
+<meta property="og:description" content="Browse laptop products and merchant offers at TechKjop.">
 
 <style>
 *{box-sizing:border-box}
@@ -56,7 +59,7 @@ input{flex:1}
 <h1>Laptop tilbud i Norge</h1>
 
 <p class="intro">
-Finn interessante laptop-tilbud og sammenlign priser og spesifikasjoner før du kjøper.
+Discover gaming and everyday laptop listings on eBay. Check each listing for current pricing and delivery details.
 </p>
 
 <div class="tools">
@@ -100,21 +103,13 @@ async function loadProducts(){
 }
 
 function getPrice(p){
-  return Number(
-    p.lowestPrice ??
-    p.lowest_price ??
-    p.price ??
-    p.bestPrice ??
-    p.best_price ??
-    p.offers?.[0]?.price ??
-    999999
-  );
+  return Number(p.offers?.[0]?.price ?? p.price ?? 999999);
 }
 
 function getImage(p){
   return p.image ||
          p.images?.[0] ||
-         "/images/laptop.jpg";
+         "/images/techkjop-placeholder.svg";
 }
 
 function getSpecs(p){
@@ -187,7 +182,7 @@ function render(){
       <img
         src="${getImage(p)}"
         alt="${escapeHtml(p.name||"Laptop")}"
-        onerror="this.src='/images/laptop.jpg'"
+        onerror="this.onerror=null;this.src='/images/techkjop-placeholder.svg'"
       >
 
       <div class="content">
@@ -201,7 +196,7 @@ function render(){
         </div>
 
         <div class="price">
-          ${price.toLocaleString("no-NO")} kr
+          ${price < 999999 && p.offers?.[0]?.currency ? `${price.toLocaleString("en-US")} ${p.offers[0].currency}` : "See price at merchant"}
         </div>
 
         <div class="store">
@@ -211,7 +206,7 @@ function render(){
         <a class="btn"
            href="${url}"
            target="_blank"
-           rel="nofollow sponsored noopener">
+           rel="${p.offers?.[0]?.affiliate === true ? 'nofollow sponsored noopener' : 'nofollow noopener'}">
            Se tilbud
         </a>
 
@@ -268,10 +263,10 @@ async function loadEbay(){
            <a
              href="${item.itemAffiliateWebUrl || item.itemWebUrl || "#"}"
              target="_blank"
-             rel="nofollow sponsored noopener">
+             rel="${item.itemAffiliateWebUrl ? 'nofollow sponsored noopener' : 'nofollow noopener'}">
 
              ${item.price?.value
-               ? `$${Number(item.price.value).toFixed(2)} USD ≈ ${Math.round(Number(item.price.value) * 9.3).toLocaleString("no-NO")} NOK`
+               ? `${Number(item.price.value).toFixed(2)} ${item.price.currency || ""}`
                : "Se"}
 
           </a>

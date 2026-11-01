@@ -6,7 +6,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Techkjop - Best Tech Deals in Norway</title>
-<meta name="description" content="Compare the best laptop, PC, gaming, GPU and RAM deals in Norway. Find the best prices and tech deals at TechKjop.">
+<meta name="description" content="Discover recommended laptops, gaming PCs, graphics cards and other tech products. Browse current offers from merchants at TechKjop.">
+<link rel="canonical" href="https://www.norwaytechdeals.no/">
+<meta property="og:title" content="TechKjop — Recommended Tech Deals">
+<meta property="og:description" content="Discover recommended technology products and offers at TechKjop.">
+<meta property="og:url" content="https://www.norwaytechdeals.no/">
+<meta property="og:type" content="website">
 
 <style>
 * {
@@ -336,7 +341,7 @@ body {
 
 <div class="header">
     <h1>TechKjop</h1>
-    <p>Compare prices from Norwegian stores</p>
+    <p>Discover recommended technology and current offers</p>
 </div>
 
 <div class="search-box">
@@ -370,166 +375,44 @@ body {
 <script>
 
 async function searchProducts() {
-
     const q = document.getElementById("searchInput").value.trim();
-
-    if (!q) {
-        return;
-    }
-
     const container = document.getElementById("products");
     const status = document.getElementById("searchStatus");
-    const title = document.getElementById("sectionTitle");
-
-    title.textContent = "🔎 eBay Results";
-
-    status.textContent = "Searching eBay for: " + q;
-
-    container.innerHTML = "<p>Searching eBay...</p>";
-
+    if (!q) { status.textContent = "Enter a product name to search."; return; }
+    status.textContent = "Searching products…";
     try {
-
-        const response = await fetch(
-            "/api/ebay-search?q=" + encodeURIComponent(q)
-        );
-
-        const data = await response.json();
-
-        if (!response.ok) {
-            throw new Error(
-                data.error_description ||
-                data.message ||
-                "eBay search failed"
-            );
+        const response = await fetch("/products.json", { cache: "no-store" });
+        if (!response.ok) throw new Error("Could not load products");
+        const products = await response.json();
+        const matches = products.filter(p => JSON.stringify(p).toLowerCase().includes(q.toLowerCase()));
+        if (!matches.length) {
+          const searchResponse = await fetch("/api/ebay-search?q=" + encodeURIComponent(q));
+          const searchData = await searchResponse.json();
+          if (!searchResponse.ok) throw new Error(searchData.error || "eBay search is unavailable");
+          const items = Array.isArray(searchData.itemSummaries) ? searchData.itemSummaries : [];
+          if (!items.length) { status.textContent = `No eBay products found for “${q}”.`; container.innerHTML = ""; return; }
+          status.textContent = `eBay results for “${q}”`;
+          container.innerHTML = items.map(item => {
+            const name = item.title || "eBay product";
+            const amount = item.price?.value;
+            const currency = item.price?.currency || "";
+            const url = item.itemAffiliateWebUrl || item.itemWebUrl || "";
+            const image = item.image?.imageUrl || "/images/techkjop-placeholder.svg";
+            const price = amount && currency ? `${escapeHtml(amount)} ${escapeHtml(currency)}` : "Check current price on eBay";
+            return `<article class="card"><img src="${escapeHtml(image)}" alt="${escapeHtml(name)}" onerror="this.onerror=null;this.src='/images/techkjop-placeholder.svg'"><h2>${escapeHtml(name)}</h2><p>${price}</p><p>${escapeHtml(item.condition || "")}</p><p>Confirm delivery and availability on eBay.</p>${url ? `<a class="button" href="${escapeHtml(url)}" target="_blank" rel="${item.itemAffiliateWebUrl ? 'nofollow sponsored noopener' : 'nofollow noopener'}">View on eBay</a>` : ""}</article>`;
+          }).join("");
+          return;
         }
-
-        if (
-            !data.itemSummaries ||
-            data.itemSummaries.length === 0
-        ) {
-
-            container.innerHTML =
-                "<p>No eBay results found.</p>";
-
-            status.textContent =
-                "No results found for: " + q;
-
-            return;
-        }
-
-        status.textContent =
-            "Showing eBay results for: " + q;
-        let usdToNokRate = 9.3;
-
-        try {
-            const fxResponse = await fetch(
-                "https://api.frankfurter.app/latest?from=USD&to=NOK"
-            );
-            const fxData = await fxResponse.json();
-
-            if (fxData?.rates?.NOK) {
-                usdToNokRate = Number(fxData.rates.NOK);
-            }
-        } catch (e) {
-            console.warn("USD/NOK rate unavailable:", e);
-        }
-
-        container.innerHTML = data.itemSummaries.map(function(item) {
-
-            const image =
-                item.image &&
-                item.image.imageUrl
-                    ? item.image.imageUrl
-                    : "https://via.placeholder.com/600x400?text=eBay";
-
-            const title =
-                item.title || "eBay Product";
-           
-
-            const price =
-                item.price &&
-                item.price.value
-                    ? item.price.value
-                    : "";
-
-            const currency =
-                item.price &&
-                item.price.currency
-                    ? item.price.currency
-                    : "";
-
-            const condition =
-                item.condition || "";
-
-            const shipping =
-                item.shippingOptions &&
-                item.shippingOptions[0] &&
-                item.shippingOptions[0].shippingCost &&
-                item.shippingOptions[0].shippingCost.value
-                    ? "Shipping: " +
-                      item.shippingOptions[0].shippingCost.value +
-                      " " +
-                      item.shippingOptions[0].shippingCost.currency
-                    : "";
-
-            const affiliateUrl =
-                item.itemAffiliateWebUrl ||
-                item.itemWebUrl ||
-                "#";
-
-            return `
-                <div class="card ebay-result">
-
-                    <img
-                        src="${image}"
-                        alt="${escapeHtml(title)}"
-                        onerror="this.style.display='none'"
-                    >
-
-                    <span class="badge">eBay</span>
-
-                    <h2>${escapeHtml(title)}</h2>
-
-                    <div class="ebay-condition">
-                        ${escapeHtml(condition)}
-                    </div>
-
-                   <div class="price ebay-price">
-                       ${currency === "USD"
-                           ? `$${Number(price).toFixed(2)} USD ≈ ${Math.round(Number(price) * usdToNokRate).toLocaleString("nb-NO")} NOK`
-                           : `${escapeHtml(price)} ${escapeHtml(currency)}`
-                       }
-                   </div>
-
-                    <div class="ebay-shipping">
-                        ${escapeHtml(shipping)}
-                    </div>
-
-                    <a
-                        class="button"
-                        href="${affiliateUrl}"
-                        target="_blank"
-                        rel="nofollow sponsored noopener"
-                    >
-                        View on eBay
-                    </a>
-
-                </div>
-            `;
-
+        status.textContent = matches.length ? `${matches.length} product${matches.length === 1 ? "" : "s"} found.` : `No products found for “${q}”.`;
+            container.innerHTML = matches.map(p => {
+          const offer = (p.offers || []).find(o => o && /^https?:\/\//i.test(o.url || ""));
+          const price = offer && Number(offer.price) > 0 && offer.currency
+            ? `${escapeHtml(offer.price)} ${escapeHtml(offer.currency)}` : "Check price with merchant";
+          return `<article class="card"><img src="${escapeHtml(p.image || "/images/techkjop-placeholder.svg")}" alt="${escapeHtml(p.name)}" onerror="this.onerror=null;this.src='/images/techkjop-placeholder.svg'"><h2>${escapeHtml(p.name)}</h2><p>${price}</p><p>${escapeHtml(offer?.store || p.store || "")}</p>${offer ? `<a class="button" href="${escapeHtml(offer.url)}" target="_blank" rel="${offer.affiliate === true ? 'nofollow sponsored noopener' : 'nofollow noopener'}">View Deal</a>` : ""}</article>`;
         }).join("");
-
     } catch (error) {
-
-        console.error("eBay search error:", error);
-
-        status.textContent = "";
-
-        container.innerHTML =
-            '<div class="error">' +
-            "<strong>eBay search failed.</strong><br><br>" +
-            escapeHtml(error.message) +
-            "</div>";
+        status.textContent = "Unable to search products right now.";
+        container.innerHTML = "";
     }
 }
 
@@ -598,12 +481,7 @@ async function loadProducts() {
             let offers =
               Array.isArray(product.offers)
                 ? product.offers
-                    .filter(function (offer) {
-                      return (
-                        offer &&
-                        Number(offer.price) > 0
-                      );
-                    })
+                    .filter(function (offer) { return offer && /^https?:\/\//i.test(offer.url || "") && (offer.store || offer.merchant); })
                     .sort(function (a, b) {
                       return (
                         Number(a.price) -
@@ -614,13 +492,13 @@ async function loadProducts() {
 
             if (
               offers.length === 0 &&
-              Number(product.price) > 0
+              Number(product.price) > 0 && product.currency
             ) {
               offers = [
                 {
                   price: Number(product.price),
-                  store: product.store || "Acer",
-                  currency: product.currency || "NOK",
+                  store: product.store || "",
+                  currency: product.currency || "",
                   url: product.url || ""
                  }
                ];
@@ -636,25 +514,9 @@ async function loadProducts() {
                     ? Number(lowestOffer.price)
                     : null;
 
-            const highestPrice =
-                offers.length > 0
-                    ? Math.max.apply(
-                        null,
-                        offers.map(function(offer) {
-                            return Number(offer.price);
-                        })
-                    )
-                    : null;
-
-            const savings =
-                lowestPrice !== null &&
-                highestPrice !== null
-                    ? highestPrice - lowestPrice
-                    : 0;
-
             const image =
                 product.image ||
-                "https://via.placeholder.com/600x400?text=TechKjop";
+                "/images/techkjop-placeholder.svg";
 
             let offersHTML = "";
 
@@ -671,10 +533,10 @@ async function loadProducts() {
                     const storeName =
                         offer.store || "Store";
 
-                    const price =
-                        Number(
-                            offer.price
-                        ).toLocaleString("nb-NO");
+                    const amount = Number(offer.price);
+                    const price = Number.isFinite(amount) && amount > 0 && offer.currency
+                      ? new Intl.NumberFormat("en", { style: "currency", currency: offer.currency }).format(amount)
+                      : "See price at merchant";
 
                     const url =
                         offer.url || "#";
@@ -690,15 +552,14 @@ async function loadProducts() {
 
                         '<a class="offer-link" href="' +
                         url +
-                        '" target="_blank" rel="noopener noreferrer">' +
+                        '" target="_blank" rel="' + (offer.affiliate === true ? 'nofollow sponsored noopener' : 'nofollow noopener') + '">' +
 
                         '<span class="offer-store">' +
                         storeName +
                         "</span>" +
 
                         '<span class="offer-price">' +
-                        price +
-                        " NOK</span>" +
+                        price + " " + escapeHtml(offer.currency || "") + "</span>" +
 
                         "</a>" +
 
@@ -763,12 +624,10 @@ async function loadProducts() {
 
             if (lowestPrice !== null) {
 
-                priceHTML =
-                    "From " +
-                    lowestPrice.toLocaleString(
-                        "nb-NO"
-                    ) +
-                    " NOK";
+                const currency = lowestOffer.currency || product.currency;
+                priceHTML = currency
+                    ? new Intl.NumberFormat("en", { style: "currency", currency }).format(lowestPrice) + " " + currency
+                    : "See price at merchant";
             }
 
             let bestStoreHTML = "";
@@ -777,27 +636,13 @@ async function loadProducts() {
 
                 bestStoreHTML =
                     '<div class="best-store">' +
-                    "Best price: " +
+                    "Available from: " +
                     "<strong>" +
                     (
                         lowestOffer.store ||
                         "Store"
                     ) +
                     "</strong>" +
-                    "</div>";
-            }
-
-            let savingsHTML = "";
-
-            if (savings > 0) {
-
-                savingsHTML =
-                    '<div class="savings">' +
-                    "Save up to " +
-                    savings.toLocaleString(
-                        "nb-NO"
-                    ) +
-                    " NOK" +
                     "</div>";
             }
 
@@ -815,7 +660,6 @@ async function loadProducts() {
                 escapeHtml(productName) +
                 '" onerror="this.style.display=\'none\'">' +
 
-                '<span class="badge">DEAL</span>' +
 
                 "<h2>" +
                 escapeHtml(productName) +
@@ -835,18 +679,17 @@ async function loadProducts() {
 
                 bestStoreHTML +
 
-                savingsHTML +
-
                 offersHTML +
 
                 '<div class="price-note">' +
-                "We compare Norwegian retailers to find the best price." +
+                (lowestOffer?.updatedAt ? "Price last checked: " + escapeHtml(lowestOffer.updatedAt) + ". " : "") +
+                "Check current price and availability with the merchant." +
                 "</div>" +
 
                 '<a class="button" href="' +
                 bestUrl +
-                '" target="_blank" rel="noopener noreferrer">' +
-                "View Best Deal" +
+                '" target="_blank" rel="nofollow ' + (lowestOffer && lowestOffer.affiliate === true ? 'sponsored ' : '') + 'noopener noreferrer">' +
+                "View Deal" +
                 "</a>";
 
             container.appendChild(card);
@@ -874,6 +717,7 @@ async function loadProducts() {
 </script>
 
 <footer style="text-align:center;padding:30px;color:#777">
+  <p>As an affiliate, we may earn a commission from qualifying purchases.</p>
   <a href="/about.html">Om oss</a> |
   <a href="/contact.html">Kontakt</a> |
   <a href="/privacy.html">Personvern</a> |

@@ -1,3 +1,15 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    { "source": "/beste-gaming-laptop.html", "destination": "/gaming-laptops.html", "permanent": true },
+    { "source": "/beste-billige-gaming-laptop.html", "destination": "/gaming-laptops.html", "permanent": true },
+    { "source": "/beste-gaming-pc.html", "destination": "/gaming-pc.html", "permanent": true },
+    { "source": "/index-backup.html", "destination": "/", "permanent": true },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "norwaytechdeals.no" }],
+      "destination": "https://www.norwaytechdeals.no/:path*",
+      "permanent": true
+    }
+  ]
 }

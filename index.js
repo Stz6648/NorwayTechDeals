@@ -15,6 +15,12 @@ const productsFile = READONLY_PREVIEW
 
 app.use(express.json());
 
+// Retire legacy pages built around local-store price comparisons.
+app.get("/beste-gaming-laptop.html", (req, res) => res.redirect(301, "/gaming-laptops.html"));
+app.get("/beste-billige-gaming-laptop.html", (req, res) => res.redirect(301, "/gaming-laptops.html"));
+app.get("/beste-gaming-pc.html", (req, res) => res.redirect(301, "/gaming-pc.html"));
+app.get("/index-backup.html", (req, res) => res.redirect(301, "/"));
+
 if (READONLY_PREVIEW) {
   // Only safe read methods are accepted in Preview. There are no refresh,
   // publish, or mutation routes in this entry point.

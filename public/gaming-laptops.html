@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gaming Laptop tilbud i Norge | TechKjop</title>
+<title>eBay gaming laptop recommendations | TechKjop</title>
+<meta name="description" content="Browse recommended gaming laptops and merchant offers at TechKjop.">
+<link rel="canonical" href="https://www.norwaytechdeals.no/gaming-laptops.html">
+<meta property="og:title" content="Gaming laptops | TechKjop">
+<meta property="og:description" content="Explore gaming laptops and current merchant offers.">
 
 <style>
 *{box-sizing:border-box}
@@ -245,8 +249,8 @@ footer{
 
 <section class="hero">
   <div class="hero-inner">
-    <h1>Gaming Laptop tilbud i Norge</h1>
-    <p>Sammenlign gaming-laptop, priser og spesifikasjoner.</p>
+    <h1>eBay gaming laptop recommendations</h1>
+    <p>Browse gaming laptops and merchant offers.</p>
   </div>
 </section>
 
@@ -260,8 +264,7 @@ footer{
 
   <select id="sort" class="sort">
     <option value="recommended">Anbefalt</option>
-    <option value="price-low">Laveste pris</option>
-    <option value="price-high">Høyeste pris</option>
+    <option value="name">Name A–Z</option>
   </select>
 </div>
 
@@ -275,16 +278,6 @@ footer{
 
 <script>
 let products = [];
-let usdToNok = 9.44;
-
-fetch("https://open.er-api.com/v6/latest/USD")
-  .then(r => r.json())
-  .then(data => {
-    if (data?.rates?.NOK > 0) {
-      usdToNok = data.rates.NOK;
-    }
-  })
-  .catch(() => {});
 const imageMap = {
   "lenovo-loq-15": "/images/lenovo-loq.jpg",
   "asus-rog-strix-g16": "/images/asus-rog-g16.jpg",
@@ -296,14 +289,8 @@ function getImage(product){
 }
 
 function getPrice(product){
-  if(typeof product.lowestPrice === "number") return product.lowestPrice;
-  if(typeof product.price === "number") return product.price;
-
-  const prices = (product.offers || [])
-    .map(o => Number(o.price))
-    .filter(p => Number.isFinite(p) && p > 0);
-
-  return prices.length ? Math.min(...prices) : 0;
+  const offer = (product.offers || []).find(o => Number(o.price) > 0);
+  return offer ? Number(offer.price) : (Number(product.price) > 0 ? Number(product.price) : 0);
 }
 
 function getStore(product){
@@ -367,13 +354,7 @@ function render(){
     return isLaptop && (!query || text.includes(query));
   });
 
-  if(sort === "price-low"){
-    list.sort((a,b) => getPrice(a) - getPrice(b));
-  }
-
-  if(sort === "price-high"){
-    list.sort((a,b) => getPrice(b) - getPrice(a));
-  }
+  if(sort === "name") list.sort((a,b) => (a.name||"").localeCompare(b.name||""));
 
   grid.innerHTML = "";
 
@@ -400,7 +381,7 @@ function render(){
         <img
           src="${getImage(product)}"
           alt="${product.name || "Gaming Laptop"}"
-          onerror="this.onerror=null;this.src='/images/lenovo-loq.jpg';"
+          onerror="this.onerror=null;this.src='/images/techkjop-placeholder.svg';"
         >
       </div>
 
@@ -419,20 +400,20 @@ function render(){
 
         ${
           price
-          ? `<div class="price">${formatPrice(price)}</div>`
+          ? `<div class="price">${formatPrice(price, offers[0]?.currency || product.currency || "")}</div>`
           : ""
         }
 
         ${
           store
-          ? `<div class="store">Beste pris hos ${store}</div>`
+          ? `<div class="store">Merchant · ${store}</div>`
           : ""
         }
 
         ${
           offers.length
           ? `
-            <div class="offer-title">Norske butikker</div>
+            <div class="offer-title">Merchant offers</div>
 
             ${offers.map(o => {
 
@@ -443,25 +424,11 @@ function render(){
 const offerCurrency =
   String(o.currency || "").toUpperCase();
 
-const isEbay =
-  String(offerStore).toLowerCase().includes("ebay") ||
-  offerCurrency === "USD";
-
-const nokPrice =
-  isEbay && Number.isFinite(offerPrice)
-    ? offerPrice * usdToNok
-    : offerPrice;
-
 const priceHTML =
-  isEbay && Number.isFinite(offerPrice)
-    ? `${offerPrice.toLocaleString("en-US", {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2
-      })} USD ≈ ${nokPrice.toLocaleString("nb-NO", {
-        maximumFractionDigits: 0
-      })} NOK`
+  Number.isFinite(offerPrice) && offerCurrency
+    ? `${offerPrice.toLocaleString("en-US")} ${offerCurrency}`
     : Number.isFinite(offerPrice)
-      ? formatPrice(offerPrice)
+      ? "See price at merchant"
       : "";
 
 return `
@@ -477,7 +444,7 @@ return `
 
                   ${
                     offerUrl !== "#"
-                    ? `<a href="${offerUrl}" target="_blank" rel="nofollow sponsored">Se tilbud</a>`
+                    ? `<a href="${offerUrl}" target="_blank" rel="${o.affiliate === true ? 'nofollow sponsored noopener' : 'nofollow noopener'}">View Deal</a>`
                     
                     : ""
                   }
@@ -555,11 +522,10 @@ async function loadEbay(product,index){
 
       const currency = item.price?.currency ?? "USD";
       const usdPrice = Number(price);
-      const nokPrice = Math.round(usdPrice * 9.3);
 
       const url =
-        item.itemWebUrl ||
         item.itemAffiliateWebUrl ||
+        item.itemWebUrl ||
         item.url ||
         "#";
 
@@ -573,7 +539,7 @@ async function loadEbay(product,index){
           ${
             price !== ""
             ? `<div class="offer-price">
-                ${formatPrice(usdPrice, "USD")} ≈ ${formatPrice(nokPrice, "NOK")}
+                ${formatPrice(usdPrice, currency)}
               </div>`
             : ""
           }
@@ -583,7 +549,7 @@ async function loadEbay(product,index){
             ? `<a
                 href="${url}"
                 target="_blank"
-                rel="nofollow sponsored"
+                rel="${item.itemAffiliateWebUrl ? 'nofollow sponsored noopener' : 'nofollow noopener'}"
               >
                 Se på eBay
               </a>`
