@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "id": "v1|307231054524|0",
+    "name": "Lenovo Legion Pro 7 Gaming 16 WQXGA 240Hz Ryzen 9 9955HX3D 32GB 1TB SSD RTX 5080",
+    "category": "Gaming Laptop",
+    "image": "https://i.ebayimg.com/images/g/OiUAAeSwtxpqz4lZ/s-l225.jpg",
+    "description": "Lenovo Legion Pro 7 Gaming 16 WQXGA 240Hz Ryzen 9 9955HX3D 32GB 1TB SSD RTX 5080",
+    "updatedAt": "2026-11-01",
+    "offers": [
+      {
+        "store": "eBay",
+        "condition": "Certified - Refurbished",
+        "price": 2589,
+        "currency": "USD",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/307231054524?_skw=RTX+5080&hash=item478865dabc%3Ag%3AOiUAAeSwtxpqz4lZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "updatedAt": "2026-11-01"
+      }
+    ]
+  }
+]

@@ -1366,8 +1366,9 @@
         "condition": "Certified - Refurbished",
         "price": 2589,
         "currency": "USD",
-        "affiliate": false,
-        "url": "https://www.ebay.com/itm/307231054524?_skw=Gaming+Laptop&hash=item478865dabc:g:OiUAAeSwtxpqz4lZ",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network",
+        "url": "https://www.ebay.com/itm/307231054524?_skw=RTX+5080&hash=item478865dabc%3Ag%3AOiUAAeSwtxpqz4lZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
         "updatedAt": "2026-11-01"
       }
     ],
