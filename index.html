@@ -49,15 +49,7 @@ footer{border-top:1px solid #ffffff12;background:#080c14;padding:35px 0;color:#8
 <footer><div class="shell"><div class="footgrid"><div><div class="footbrand">TechKjop</div><p>Discover technology listings and make informed buying decisions. Built for curious tech shoppers in Norway.</p></div><nav class="footlinks"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a><a href="/affiliate.html">Affiliate disclosure</a><a href="/terms.html">Terms</a></nav></div><p>© 2026 TechKjop. Product information is supplied by third-party marketplace sellers.</p></div></footer>
 <script>
 let allProducts=[],activeCategory="All",usdNok=null;
-const categoryOf=p=>{const n=(p.name||"").toLowerCase();
-if(/\b(laptop|notebook|macbook|chromebook)\b/.test(n))return "Laptops";
-if(/\b(gaming pc|desktop pc|desktop computer|tower pc|gaming computer)\b/.test(n))return "Gaming PCs";
-if(/\b(monitor|display|ultrawide)\b/.test(n))return "Monitors";
-if(/\b(ram|memory|ddr[345])\b/.test(n))return "Memory";
-if(/\b(ssd|nvme|hard drive|hdd)\b/.test(n))return "Storage";
-if(/\b(cpu|processor|ryzen|threadripper|core i[3579])\b/.test(n))return "Processors";
-if(/\b(graphics card|geforce|radeon|rtx\s?\d|rx\s?\d)\b/.test(n))return "Graphics Cards";
-return "Other"};
+const categoryOf=p=>p.category||"Other";
 const escapeHtml=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function offer(p){return (p.offers||[]).find(o=>o.affiliate===true&&o.url&&o.url.includes("campid=")&&Number(o.price)>0)}
 function draw(){const q=document.getElementById("search").value.trim().toLowerCase(),sort=document.getElementById("sort").value;
