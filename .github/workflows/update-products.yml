@@ -1,6 +1,9 @@
 name: Update Products
 
 on:
+  push:
+    branches:
+      - codex/final-remote-main-integration
   schedule:
     - cron: "0 3 * * *"
   workflow_dispatch:
@@ -20,6 +23,7 @@ jobs:
       AWIN_ACER_FEED_URL: ${{ secrets.AWIN_ACER_FEED_URL }}
       EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
       EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+      EBAY_CAMPAIGN_ID: ${{ secrets.EBAY_CAMPAIGN_ID || '5339206505' }}
       PROSHOP_FEED_URL: ${{ secrets.PROSHOP_FEED_URL }}
     steps:
       - name: Checkout
