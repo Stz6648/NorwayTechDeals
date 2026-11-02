@@ -131,7 +131,8 @@ async function fetchEbayProducts() {
         "https://api.ebay.com/buy/browse/v1/item_summary/search?" +
         new URLSearchParams({
           q,
-          limit: "50"
+          limit: "50",
+          filter: "deliveryCountry:NO"
         });
 
 
@@ -148,7 +149,7 @@ async function fetchEbayProducts() {
                 "EBAY_US",
 
               "X-EBAY-C-ENDUSERCTX":
-                `affiliateCampaignId=${EBAY_CAMPAIGN_ID}`,
+                `affiliateCampaignId=${EBAY_CAMPAIGN_ID},contextualLocation=country=NO`,
 
               "Accept-Language":
                 "en-US"
@@ -180,6 +181,8 @@ async function fetchEbayProducts() {
           !item.itemId ||
           !item.title ||
           !item.itemAffiliateWebUrl ||
+          !item.image?.imageUrl ||
+          /read desc|read description|box only|empty box|dummy|replica|for parts|parts only|not working|broken|faulty|repair only|fan only|cooler only|waterblock only|backplate only|shroud only/i.test(String(item.title || "")) ||
           rejectEbayListing(item)
         ) {
           continue;
