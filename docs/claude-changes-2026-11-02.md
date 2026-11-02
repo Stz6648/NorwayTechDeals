@@ -28,3 +28,11 @@ Backup: local tag `backup-main-2026-11-02` marks main before these changes. Prod
 
 ## Round 3 — US site draft (branch claude/us-site)
 See `us/README.md`. Two English guides (used vs new GPU price gap; refurbished gaming laptops), generated from `products.json`, draft/noindex. Brand "Used Tech Radar" is a working name.
+
+## Round 4 — automatic eBay data refresh (branch claude/us-site)
+- `scripts/refresh-ebay.js` + `data/ebay-queries.json`: pulls listings per condition (new, open box, used, refurbished) from the eBay Browse API (fixed-price only, USD, campaign id required), validates, then replaces `products.json` and `public/products.json` atomically. On any failure the existing catalogue is left untouched.
+- `.github/workflows/refresh-ebay.yml`: daily 03:17 UTC and manual. Validates, records price history, rebuilds generated pages, opens ONE PR on `data/ebay-refresh`. Never pushes to main.
+- Tested offline against a fixture built from the current catalogue (write path, validator, price-history recorder, failure path). NOT yet tested against the live eBay API: the first run should be a manual run, reviewed in the PR before merging.
+- Guide/US builders now show the real fetch date (newest offer `updatedAt`) instead of the git commit date.
+- Setup needed: repo secrets EBAY_CLIENT_ID and EBAY_CLIENT_SECRET; Settings > Actions > General > allow Actions to create pull requests.
+- Side effect to expect: the filters are stricter than the old catalogue (e.g. gaming laptops with RTX/GTX only), so the product count will differ; the Norwegian home page lists whatever is in products.json.

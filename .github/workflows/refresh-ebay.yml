@@ -1,0 +1,58 @@
+name: Refresh eBay catalogue (opens a pull request)
+
+# Pulls fresh listings from the eBay Browse API, validates them, rebuilds the generated guide pages
+# and opens ONE pull request on branch data/ebay-refresh. It never pushes to main.
+# Needs repository secrets EBAY_CLIENT_ID and EBAY_CLIENT_SECRET, and the setting
+# Settings > Actions > General > "Allow GitHub Actions to create and approve pull requests".
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh-ebay
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Refresh catalogue from eBay
+        env:
+          EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+          EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+        run: node scripts/refresh-ebay.js
+      - name: Validate catalogue
+        run: node scripts/validate-catalogue.js
+      - name: Record price history
+        run: node scripts/record-price-history.js
+      - name: Rebuild generated pages
+        run: |
+          if [ -f scripts/build-guides.js ]; then node scripts/build-guides.js; fi
+          if [ -f us/build.js ]; then node us/build.js; fi
+      - name: Open or update pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then echo "No changes."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B data/ebay-refresh
+          git add -A
+          git commit -m "Refresh eBay catalogue $(date -u +%F)"
+          git push --force origin data/ebay-refresh
+          if [ "$(gh pr list --head data/ebay-refresh --state open --json number --jq length)" = "0" ]; then
+            gh pr create --base "${{ github.event.repository.default_branch }}" --head data/ebay-refresh \
+              --title "Refresh eBay catalogue" \
+              --body "Automated refresh. Check the Vercel preview and data/ebay-refresh-report.json before merging."
+          fi

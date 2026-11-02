@@ -23,6 +23,8 @@ const ROBOTS = cfg.publish ? "index,follow" : "noindex,nofollow";
 
 let snapDate = new Date().toISOString().slice(0, 10);
 try { snapDate = execFileSync("git", ["log", "-1", "--format=%cs", "--", "products.json"], { cwd: root, encoding: "utf8" }).trim() || snapDate; } catch (_) {}
+const __stamps = products.flatMap(p => (p.offers || []).map(o => Date.parse(o.updatedAt || ""))).filter(Number.isFinite);
+if (__stamps.length) snapDate = new Date(Math.max(...__stamps)).toISOString().slice(0, 10); // real fetch date once refresh-ebay has run
 const dateEn = new Date(snapDate + "T12:00:00Z").toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 
 const esc = v => String(v ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
