@@ -5,8 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Techkjop - Best Tech Deals in Norway</title>
-<meta name="description" content="Compare the best laptop, PC, gaming, GPU and RAM deals in Norway. Find the best prices and tech deals at TechKjop.">
+<title>TechKjop - eBay Tech Deals</title>
+<meta name="description" content="Discover eBay tech deals on graphics cards, gaming PCs, laptops, RAM, SSDs and monitors at TechKjop. Check live listings and delivery to Norway.">
 
 <style>
 * {
@@ -715,6 +715,8 @@ async function loadProducts() {
 
             const description =
                 product.description || "";
+            const condition =
+                (offers[0] && offers[0].condition) ? offers[0].condition : "";
 
             const cpu =
                 product.cpu || "";
@@ -824,6 +826,7 @@ async function loadProducts() {
                 '<div class="description">' +
                 escapeHtml(description) +
                 "</div>" +
+                (condition ? '<div class="ebay-condition">' + escapeHtml(condition) + "</div>" : "") +
 
                 '<div class="specs">' +
                 specsHTML +
@@ -840,7 +843,7 @@ async function loadProducts() {
                 offersHTML +
 
                 '<div class="price-note">' +
-                "We compare Norwegian retailers to find the best price." +
+                "Prices and availability can change. Check delivery to Norway and the final price on eBay." +
                 "</div>" +
 
                 '<a class="button" href="' +
