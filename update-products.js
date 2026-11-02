@@ -437,7 +437,7 @@ mpn:
 
 const AWIN_ACER_FEED_URL =
   process.env.AWIN_ACER_FEED_URL || "";
-const PROSHOP_FEED_URL = process.env.PROSHOP_FEED_URL || "";
+const ADTRACTION_API_TOKEN = process.env.ADTRACTION_API_TOKEN || "";\nconst ADTRACTION_CHANNEL_ID = process.env.ADTRACTION_CHANNEL_ID || "";\nconst ADTRACTION_PROSHOP_PROGRAM_ID = process.env.ADTRACTION_PROSHOP_PROGRAM_ID || "1870470286";
 
 function parseCSV(text) {
 
@@ -1118,186 +1118,29 @@ async function fetchAcerProducts() {
    Main
    ========================================================= */
 async function fetchProshopProducts() {
-  if (!PROSHOP_FEED_URL) {
-    console.log("PROSHOP_FEED_URL is not set.");
-    return [];
+  if (!ADTRACTION_API_TOKEN || !ADTRACTION_CHANNEL_ID) { console.log("Adtraction Proshop feed skipped: API token or channel ID missing."); return []; }
+  const response = await fetch("https://api.adtraction.net/v3/partner/products/feed/", { method: "POST", headers: { "X-Token": ADTRACTION_API_TOKEN, "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify({ programId: Number(ADTRACTION_PROSHOP_PROGRAM_ID), channelId: Number(ADTRACTION_CHANNEL_ID) }) });
+  if (!response.ok) throw new Error("Adtraction Proshop feed failed: " + response.status + " " + response.statusText);
+  const payload = await response.json();
+  const rows = Array.isArray(payload) ? payload : (Array.isArray(payload.products) ? payload.products : []);
+  if (!rows.length) throw new Error("Adtraction returned an empty Proshop feed; catalogue write is blocked.");
+  const products = [];
+  for (const row of rows) {
+    const market = String(row.market || "").toUpperCase(); const currency = String(row.currency || "").toUpperCase();
+    const trackingUrl = String(row.trackingUrl || ""); const productUrl = String(row.productUrl || "");
+    const price = parsePrice(row.productPrice); const image = String(row.imageUrl || "");
+    const sku = String(row.sku || row.ean || ""); const name = String(row.productName || "").trim();
+    let tracked = false; try { const host = new URL(trackingUrl).hostname.toLowerCase(); tracked = trackingUrl.startsWith("https://") && (host === "adtraction.com" || host.endsWith(".adtraction.com") || host === "adtr.co" || host.endsWith(".adtr.co")); } catch (_) {}
+    if (market !== "NO" || currency !== "NOK" || Number(row.approvalStatus) !== 1 || !sku || !name || !image || !productUrl || !tracked || price <= 0 || row.inStock === false) continue;
+    const t = (String(row.productCategory || "") + " " + name).toLowerCase(); let category = null;
+    if (/grafikkort|graphics card|gpu|geforce|radeon/.test(t)) category = "Graphics Card"; else if (/gaming.?pc|stasjonær|desktop pc/.test(t)) category = "Gaming PC"; else if (/bærbar|laptop|notebook|chromebook/.test(t)) category = "Laptop"; else if (/prosessor|processor|cpu|ryzen|intel core/.test(t)) category = "CPU"; else if (/ram|minne|ddr[45]/.test(t)) category = "RAM"; else if (/ssd|nvme|harddisk|lagring/.test(t)) category = "SSD"; else if (/skjerm|monitor|display/.test(t)) category = "Monitor"; else if (/hovedkort|motherboard/.test(t)) category = "Motherboard";
+    if (!category) continue;
+    products.push({ id: "proshop-" + sku, name, description: row.productDescription || "", category, brand: row.manufacturer || "", image, price, currency: "NOK", url: trackingUrl, productUrl, store: "Proshop", affiliateNetwork: "Adtraction", country: "NO", condition: "new", inStock: true, shipping: row.shipping == null ? null : Number(row.shipping), shippingToNorwayVerified: true, shippingCostKnown: row.shipping != null, trackingVerified: true, gtin: row.ean || "", mpn: row.manufacturerArticleNumber || "", updatedAt: new Date().toISOString() });
   }
-
-  try {
-    console.log("Downloading Proshop Partner-Ads product feed...");
-
-    const response = await fetch(PROSHOP_FEED_URL);
-
-    if (!response.ok) {
-      console.log(
-        `Proshop feed download failed: ${response.status} ${response.statusText}`
-      );
-      return [];
-    }
-
-    const buffer = await response.arrayBuffer();
-    const text = new TextDecoder("iso-8859-1").decode(buffer);
-
-    console.log(`Proshop feed size: ${text.length} characters`);
-
-    const products = [];
-    const productMatches = text.match(/<produkt>[\s\S]*?<\/produkt>/g) || [];
-
-    console.log(`Proshop feed products found: ${productMatches.length}`);
-
-    const decodeXml = (value) =>
-      String(value || "")
-        .replace(/&amp;/g, "&")
-        .replace(/&quot;/g, '"')
-        .replace(/&apos;/g, "'")
-        .replace(/&lt;/g, "<")
-        .replace(/&gt;/g, ">");
-
-    const getField = (block, field) => {
-      const match = block.match(
-        new RegExp(`<${field}>([\\s\\S]*?)<\\/${field}>`)
-      );
-
-      return match ? decodeXml(match[1].trim()) : "";
-    };
-
-    const getCategory = (category, name) => {
-      const text = `${category} ${name}`.toLowerCase();
-
-      if (
-        text.includes("grafikkort") ||
-        text.includes("graphics card") ||
-        text.includes("gpu")
-      ) {
-        return "Graphics Card";
-      }
-
-      if (
-        text.includes("gaming pc") ||
-        text.includes("gamingpc")
-      ) {
-        return "Gaming PC";
-      }
-
-      if (
-        text.includes("gaming laptop") ||
-        text.includes("gaming-laptop")
-      ) {
-        return "Gaming Laptop";
-      }
-
-      if (
-        text.includes("bærbar") ||
-        text.includes("laptop") ||
-        text.includes("notebook")
-      ) {
-        return "Laptop";
-      }
-
-      if (
-        text.includes("prosessor") ||
-        text.includes("cpu") ||
-        text.includes("processor")
-      ) {
-        return "CPU";
-      }
-
-      if (
-        text.includes("ram") ||
-        text.includes("minne")
-      ) {
-        return "RAM";
-      }
-
-      if (
-        text.includes("ssd") ||
-        text.includes("harddisk") ||
-        text.includes("hard drive") ||
-        text.includes("lagring")
-      ) {
-        return "SSD";
-      }
-
-      if (
-        text.includes("skjerm") ||
-        text.includes("monitor")
-      ) {
-        return "Monitors";
-      }
-
-      if (
-        text.includes("hovedkort") ||
-        text.includes("motherboard")
-      ) {
-        return "Motherboards";
-      }
-
-      if (
-        text.includes("strømforsyning") ||
-        text.includes("psu")
-      ) {
-        return "PC Components";
-      }
-
-      if (
-        text.includes("pc komponent") ||
-        text.includes("pc components") ||
-        text.includes("pc-komponent")
-      ) {
-        return "PC Components";
-      }
-
-      return null;
-    };
-
-    for (const block of productMatches) {
-      const categoryName = getField(block, "kategorinavn");
-      const name = getField(block, "produktnavn");
-      const productId = getField(block, "produktid");
-      const price = Number(getField(block, "nypris"));
-      const image = getField(block, "billedurl");
-      const url = getField(block, "vareurl");
-      const brand = getField(block, "brand");
-      const description = getField(block, "beskrivelse");
-      const ean = getField(block, "ean");
-      const stock = Number(getField(block, "lagerantall"));
-
-      const category = getCategory(categoryName, name);
-
-      if (!productId || !name || !url || !price || !category) {
-        continue;
-      }
-
-      products.push({
-        id: `proshop-${productId}`,
-        name,
-        description,
-        category,
-        brand: brand || "",
-        image: image || "",
-        price,
-        currency: "NOK",
-        url,
-        store: "Proshop",
-        affiliateNetwork: "Partner-Ads",
-        country: "NO",
-        condition: "new",
-        inStock: stock > 0,
-        gtin: ean || "",
-        mpn: productId,
-        updatedAt: new Date().toISOString()
-      });
-    }
-
-    console.log(`Proshop IT products selected: ${products.length}`);
-
-    return products;
-  } catch (error) {
-    console.error("Proshop feed error:", error);
-    return [];
-  }
+  console.log("Adtraction Proshop NO products accepted: " + products.length + " / " + rows.length);
+  if (!products.length) throw new Error("No valid tracked Proshop NO/NOK products; catalogue write is blocked.");
+  return products;
 }
-
 async function main() {
 
   const files = [
@@ -1518,7 +1361,13 @@ function createOffer(product) {
   const existingOffer = Array.isArray(product.offers)
     ? product.offers.find(o => o && Number(o.price) > 0 && o.url)
     : null;
-  if (existingOffer) return { ...existingOffer };
+    if (existingOffer) {
+    const network = String(existingOffer.affiliateNetwork || "").toLowerCase();
+    const trackedUrl = String(existingOffer.url || "");
+    const tracked = network.includes("ebay") ? trackedUrl.includes("campid=") : network.includes("awin") ? /awin[1-9]\.com/i.test(trackedUrl) : network.includes("adtraction") ? /adtraction\.com|adtr\.co/i.test(trackedUrl) : false;
+    if (!tracked) throw new Error("Unverified affiliate tracking URL for " + (product.name || product.id));
+    return { ...existingOffer, trackingVerified: true };
+  }
 
   const price = Number(product.price);
   const url = String(product.url || "");
@@ -1536,7 +1385,7 @@ function createOffer(product) {
     affiliateNetwork: product.affiliateNetwork || "Unknown affiliate network",
     country: product.country || "NO",
     inStock: product.inStock !== false,
-    shipping: product.shipping ?? null,
+    shipping: product.shipping ?? null,\n    shippingToNorwayVerified: product.shippingToNorwayVerified === true,\n    trackingVerified: true,
     updatedAt: product.updatedAt || new Date().toISOString()
   };
 }
@@ -1777,14 +1626,14 @@ const compactProducts = selectedProducts;
       Number(offer.price) > 0 &&
       offer.currency &&
       offer.url &&
-      offer.affiliate === true
+      offer.affiliate === true && offer.trackingVerified === true
     )
   );
 
   if (
     !Array.isArray(existing) ||
     existing.length === 0 ||
-    compactProducts.length < minimumSafeCount ||
+    compactProducts.length < minimumSafeCount ||\n    compactProducts.some(product => new Set(product.offers.map(offer => String(offer.store || "").toLowerCase())).size < 3) ||
     validProducts.length !== compactProducts.length
   ) {
     throw new Error(
