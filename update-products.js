@@ -234,7 +234,7 @@ async function fetchEbayProducts() {
           );
 
 
-        if (price <= 0) {
+        if (price <= 0 || !item.itemAffiliateWebUrl || !String(item.itemAffiliateWebUrl).includes("campid=")) {
           continue;
         }
 
@@ -311,7 +311,7 @@ mpn:
                 "eBay",
 
               country:
-                "NO",
+                item.itemLocationCountry || "US",
 
               condition:
                 item.condition ||
@@ -343,8 +343,8 @@ mpn:
                 "eBay Partner Network",
 
               url:
-                item.itemWebUrl ||
-                `https://www.ebay.com/itm/${item.itemId}`,
+                item.itemAffiliateWebUrl ||
+                "",
 
               updatedAt:
                 new Date()
@@ -1514,6 +1514,33 @@ const allowedStores = new Set([
   "acer"
 ]);
 
+function createOffer(product) {
+  const existingOffer = Array.isArray(product.offers)
+    ? product.offers.find(o => o && Number(o.price) > 0 && o.url)
+    : null;
+  if (existingOffer) return { ...existingOffer };
+
+  const price = Number(product.price);
+  const url = String(product.url || "");
+  if (!Number.isFinite(price) || price <= 0 || !url) {
+    throw new Error("Cannot create offer from incomplete product source");
+  }
+
+  return {
+    store: product.store || "Unknown",
+    condition: product.condition || "new",
+    price,
+    currency: String(product.currency || "NOK").toUpperCase(),
+    url,
+    affiliate: true,
+    affiliateNetwork: product.affiliateNetwork || "Unknown affiliate network",
+    country: product.country || "NO",
+    inStock: product.inStock !== false,
+    shipping: product.shipping ?? null,
+    updatedAt: product.updatedAt || new Date().toISOString()
+  };
+}
+
 function normalizeText(value) {
   return String(value || "")
     .toLowerCase()
@@ -1669,8 +1696,21 @@ for (const group of productGroups.values()) {
 
   const cheapest = offers[0];
 
+  const categoryMap = {
+    "Graphics Card": "Graphics Cards",
+    "CPU": "Processors",
+    "RAM": "Memory",
+    "SSD": "Storage",
+    "Laptop": "Laptops",
+    "Gaming Laptop": "Laptops",
+    "Gaming PC": "Gaming PCs",
+    "Monitor": "Monitors",
+    "Monitors": "Monitors"
+  };
+
   mergedProducts.push({
     ...base,
+    category: categoryMap[String(base.category || "").trim()] || base.category,
     price:
       Number.isFinite(Number(cheapest.price))
         ? Math.round(Number(cheapest.price))
@@ -1719,6 +1759,38 @@ for (const category of Object.keys(categoryLimits)) {
 }
 
 const compactProducts = selectedProducts;
+
+  const minimumSafeCount = Math.max(
+    Number(process.env.MIN_CATALOGUE_PRODUCTS || 30),
+    Math.ceil(existing.length * 0.25)
+  );
+
+  const validProducts = compactProducts.filter(product =>
+    product &&
+    product.id &&
+    product.name &&
+    product.image &&
+    Array.isArray(product.offers) &&
+    product.offers.length >= 3 &&
+    product.offers.every(offer =>
+      offer &&
+      Number(offer.price) > 0 &&
+      offer.currency &&
+      offer.url &&
+      offer.affiliate === true
+    )
+  );
+
+  if (
+    !Array.isArray(existing) ||
+    existing.length === 0 ||
+    compactProducts.length < minimumSafeCount ||
+    validProducts.length !== compactProducts.length
+  ) {
+    throw new Error(
+      `SAFE MODE: refusing to replace catalogue. Existing=${existing.length}, candidate=${compactProducts.length}, valid=${validProducts.length}, minimum=${minimumSafeCount}. Existing products.json files remain untouched.`
+    );
+  }
 
 
   const ebayFile =
