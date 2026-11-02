@@ -15,7 +15,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": true,
+    "priceReviewReason": "High listing price for this category; compare the exact model and condition before purchase."
   },
   {
     "id": "v1|900052250188|0",
@@ -33,7 +38,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": true,
+    "priceReviewReason": "High listing price for this category; compare the exact model and condition before purchase."
   },
   {
     "id": "v1|960143040714|0",
@@ -51,7 +61,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|880073047202|0",
@@ -69,7 +84,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800857610430|0",
@@ -87,7 +107,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|960141948650|0",
@@ -105,7 +130,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|940059429416|0",
@@ -123,7 +153,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800865504274|0",
@@ -141,7 +176,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327434958437|0",
@@ -159,7 +199,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|237156309114|0",
@@ -177,7 +222,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|900057002066|0",
@@ -195,7 +245,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800864514785|0",
@@ -213,7 +268,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327423228113|0",
@@ -231,7 +291,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|820285470229|0",
@@ -249,7 +314,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|237144270408|0",
@@ -267,7 +337,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800857641237|0",
@@ -285,7 +360,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|377607398114|0",
@@ -303,7 +383,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|900030607391|0",
@@ -321,7 +406,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|128161493594|0",
@@ -339,7 +429,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|960135337429|0",
@@ -357,7 +452,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|227585955315|0",
@@ -375,7 +475,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|206663643958|0",
@@ -393,7 +498,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|940054101883|0",
@@ -411,7 +521,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|206664915029|0",
@@ -429,7 +544,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": true,
+    "priceReviewReason": "High listing price for this category; compare the exact model and condition before purchase."
   },
   {
     "id": "v1|377606352413|0",
@@ -447,7 +567,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|278375059111|0",
@@ -465,7 +590,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|407332158846|0",
@@ -483,7 +613,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800857615852|0",
@@ -501,7 +636,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|168822771044|0",
@@ -519,7 +659,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|168831069789|0",
@@ -537,7 +682,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800818541620|0",
@@ -555,7 +705,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": true,
+    "priceReviewReason": "High listing price for this category; compare the exact model and condition before purchase."
   },
   {
     "id": "v1|358451935815|0",
@@ -573,7 +728,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": true,
+    "priceReviewReason": "High listing price for this category; compare the exact model and condition before purchase."
   },
   {
     "id": "v1|198763681135|0",
@@ -591,7 +751,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|377613919647|0",
@@ -609,7 +774,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|298319235887|0",
@@ -627,7 +797,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|117498620759|0",
@@ -645,7 +820,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|840083503383|0",
@@ -663,7 +843,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|306939698028|0",
@@ -681,7 +866,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|940055318528|0",
@@ -699,7 +889,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|326729739890|0",
@@ -717,7 +912,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|920094818182|0",
@@ -735,7 +935,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|298675742390|0",
@@ -753,7 +958,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|900013573041|0",
@@ -771,7 +981,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|237154535565|0",
@@ -789,7 +1004,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|900042346784|0",
@@ -807,7 +1027,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|257064573347|0",
@@ -825,7 +1050,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|920082845560|0",
@@ -843,7 +1073,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|407332729786|0",
@@ -861,7 +1096,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|298656460698|0",
@@ -879,7 +1119,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|940014253764|0",
@@ -897,7 +1142,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|257348072936|0",
@@ -915,7 +1165,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307139667484|0",
@@ -933,7 +1188,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|287480769638|0",
@@ -951,7 +1211,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|257213818024|0",
@@ -969,7 +1234,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|298697951386|0",
@@ -987,7 +1257,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800479990613|0",
@@ -1005,7 +1280,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|298680339020|0",
@@ -1023,7 +1303,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|168823141369|0",
@@ -1041,7 +1326,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336854473269|0",
@@ -1059,7 +1349,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|900056898065|0",
@@ -1077,7 +1372,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|920068065203|0",
@@ -1095,7 +1395,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|880071795740|0",
@@ -1113,7 +1418,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|278118700670|0",
@@ -1131,7 +1441,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|920095045601|0",
@@ -1149,7 +1464,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|960132853044|0",
@@ -1167,7 +1487,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307240504195|0",
@@ -1185,7 +1510,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|128166759482|0",
@@ -1203,7 +1533,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|377613917451|0",
@@ -1221,7 +1556,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|820280670261|0",
@@ -1239,7 +1579,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|820304330433|0",
@@ -1257,7 +1602,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|880072480388|0",
@@ -1275,7 +1625,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307217542897|0",
@@ -1293,7 +1648,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|820233380105|0",
@@ -1311,7 +1671,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|168786179554|0",
@@ -1329,7 +1694,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|358036635308|0",
@@ -1347,7 +1717,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|287668837248|0",
@@ -1365,7 +1740,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327393840356|0",
@@ -1383,7 +1763,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|168812415859|0",
@@ -1401,7 +1786,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|960090589204|0",
@@ -1419,7 +1809,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336865810275|0",
@@ -1437,7 +1832,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307244255644|0",
@@ -1455,7 +1855,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|860100830948|0",
@@ -1473,7 +1878,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|358371932786|0",
@@ -1491,7 +1901,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|206666084242|0",
@@ -1509,7 +1924,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|278316891175|0",
@@ -1527,7 +1947,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|236730329726|0",
@@ -1545,7 +1970,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|287643893526|0",
@@ -1563,7 +1993,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|940030983620|0",
@@ -1581,7 +2016,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|366685336715|0",
@@ -1599,7 +2039,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|366767606942|0",
@@ -1617,7 +2062,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|227546200882|0",
@@ -1635,7 +2085,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|147659762901|0",
@@ -1653,7 +2108,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|158324451806|0",
@@ -1671,7 +2131,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|377613816476|0",
@@ -1689,7 +2154,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|407322623138|0",
@@ -1707,7 +2177,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Graphics Cards"
+    "category": "Graphics Cards",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|168206169821|0",
@@ -1725,7 +2200,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|236664663968|0",
@@ -1743,7 +2223,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|820239666314|627045697250",
@@ -1761,7 +2246,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|820235711137|627041435273",
@@ -1779,7 +2269,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|236975778841|537389699851",
@@ -1797,7 +2292,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Desktop PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|237050675176|0",
@@ -1815,7 +2315,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|304762827171|606858647868",
@@ -1833,7 +2338,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Desktop PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|237015826724|537424087714",
@@ -1851,7 +2361,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|237088950994|537487521214",
@@ -1869,7 +2384,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|407333602495|0",
@@ -1887,7 +2407,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|293713688571|595334844931",
@@ -1905,7 +2430,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Desktop PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|306437052398|606213226698",
@@ -1923,7 +2453,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|366685602660|636339241340",
@@ -1941,7 +2476,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|318757251788|0",
@@ -1959,7 +2499,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|285569413794|0",
@@ -1977,7 +2522,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|252775396187|0",
@@ -1995,7 +2545,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Desktop PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|306455107076|606476064082",
@@ -2013,7 +2568,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Desktop PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|304029933336|605763802959",
@@ -2031,7 +2591,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Desktop PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|305125610687|606361924101",
@@ -2049,7 +2614,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Desktop PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|236690347491|537189221157",
@@ -2067,7 +2637,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|236682178633|537182155098",
@@ -2085,7 +2660,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|186976421641|695020492579",
@@ -2103,7 +2683,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|297538947853|595230520945",
@@ -2121,7 +2706,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|860105092940|0",
@@ -2139,7 +2729,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|264714553889|0",
@@ -2157,7 +2752,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|237078640398|537478696794",
@@ -2175,7 +2775,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|236756568108|537465215589",
@@ -2193,7 +2798,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|365454704409|635258327514",
@@ -2211,7 +2821,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Desktop PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336740998781|0",
@@ -2229,7 +2844,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Desktop PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|237152625597|0",
@@ -2247,7 +2867,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|267762087083|0",
@@ -2265,7 +2890,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|186722879205|694770643508",
@@ -2283,7 +2913,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Desktop PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|158235578453|0",
@@ -2301,7 +2936,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|304041042675|606844244031",
@@ -2319,7 +2959,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Desktop PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|880069501535|0",
@@ -2337,7 +2982,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|334621644176|546090234898",
@@ -2355,7 +3005,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Desktop PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336432254347|0",
@@ -2373,7 +3028,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307261487198|0",
@@ -2391,7 +3051,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|318677983368|0",
@@ -2409,7 +3074,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|236934291227|537484691442",
@@ -2427,7 +3097,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336528155563|545988299534",
@@ -2445,7 +3120,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|236253602564|536851330786",
@@ -2463,7 +3143,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Gaming PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|358112152494|626472918138",
@@ -2481,7 +3166,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Desktop PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|920044713129|0",
@@ -2499,7 +3189,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336866238735|0",
@@ -2517,7 +3212,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336398414586|0",
@@ -2535,7 +3235,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|198532867475|0",
@@ -2553,7 +3258,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|377611055362|0",
@@ -2571,7 +3281,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|860093897060|0",
@@ -2589,7 +3304,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327192247235|0",
@@ -2607,7 +3327,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|287659052098|0",
@@ -2625,7 +3350,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336857513329|0",
@@ -2643,7 +3373,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|137892910774|0",
@@ -2661,7 +3396,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|398337641359|666599074583",
@@ -2679,7 +3419,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|256879744174|557422176900",
@@ -2697,7 +3442,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|407318652867|0",
@@ -2715,7 +3465,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|840078633126|0",
@@ -2733,7 +3488,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|335729445552|546082887262",
@@ -2751,7 +3511,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336430108178|0",
@@ -2769,7 +3534,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|237017296413|0",
@@ -2787,7 +3557,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336854616939|0",
@@ -2805,7 +3580,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|267814494080|0",
@@ -2823,7 +3603,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|206316072912|0",
@@ -2841,7 +3626,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|267678718715|0",
@@ -2859,7 +3649,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800568801300|0",
@@ -2877,7 +3672,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|198419336765|0",
@@ -2895,7 +3695,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|227499880513|0",
@@ -2913,7 +3718,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|115741659806|0",
@@ -2931,7 +3741,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336866158524|546170144115",
@@ -2949,7 +3764,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|820305415691|0",
@@ -2967,7 +3787,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|335720448847|545975814365",
@@ -2985,7 +3810,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|257809858509|0",
@@ -3003,7 +3833,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|127908374957|0",
@@ -3021,7 +3856,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|298220737822|595235303663",
@@ -3039,7 +3879,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800827626822|0",
@@ -3057,7 +3902,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|206386605350|0",
@@ -3075,7 +3925,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|286601719329|588649223906",
@@ -3093,7 +3948,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327426631312|0",
@@ -3111,7 +3971,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307252353138|0",
@@ -3129,7 +3994,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800468936160|0",
@@ -3147,7 +4017,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|128151429279|0",
@@ -3165,7 +4040,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|295907273733|0",
@@ -3183,7 +4063,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|254648554969|0",
@@ -3201,7 +4086,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|227561657212|0",
@@ -3219,7 +4109,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|406692634547|0",
@@ -3237,7 +4132,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|256520136672|0",
@@ -3255,7 +4155,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|860074368804|0",
@@ -3273,7 +4178,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|158365099786|0",
@@ -3291,7 +4201,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|256724033347|0",
@@ -3309,7 +4224,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|116290340728|0",
@@ -3327,7 +4247,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|286182144256|0",
@@ -3345,7 +4270,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|267147782259|0",
@@ -3363,7 +4293,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|377597579060|645875821928",
@@ -3381,7 +4316,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|940045855452|0",
@@ -3399,7 +4339,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|236204047808|536973851599",
@@ -3417,7 +4362,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|257756323461|0",
@@ -3435,7 +4385,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|286287864775|0",
@@ -3453,7 +4408,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|255080719892|0",
@@ -3471,7 +4431,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327296802944|0",
@@ -3489,7 +4454,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|366777996046|0",
@@ -3507,7 +4477,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327296803592|0",
@@ -3525,7 +4500,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336762943774|546110782392",
@@ -3543,7 +4523,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327040073765|0",
@@ -3561,7 +4546,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|117406211777|0",
@@ -3579,7 +4569,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|226052371811|0",
@@ -3597,7 +4592,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327426615509|0",
@@ -3615,7 +4615,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|115671195335|0",
@@ -3633,7 +4638,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|287699088994|0",
@@ -3651,7 +4661,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|197900805826|0",
@@ -3669,7 +4684,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|227578714481|0",
@@ -3687,7 +4707,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|206670383276|0",
@@ -3705,7 +4730,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|313039547779|0",
@@ -3723,7 +4753,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|174232727553|0",
@@ -3741,7 +4776,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307244364551|0",
@@ -3759,7 +4799,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|880039484315|0",
@@ -3777,7 +4822,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|125538115382|0",
@@ -3795,7 +4845,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|137882354193|0",
@@ -3813,7 +4868,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|334296628470|0",
@@ -3831,7 +4891,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|366074624640|0",
@@ -3849,7 +4914,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|256775759422|0",
@@ -3867,7 +4937,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|128147035408|0",
@@ -3885,7 +4960,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|278428922356|0",
@@ -3903,7 +4983,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336871018059|0",
@@ -3921,7 +5006,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|880039707970|0",
@@ -3939,7 +5029,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800825391666|0",
@@ -3957,7 +5052,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|128011153200|0",
@@ -3975,7 +5075,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|366756248787|0",
@@ -3993,7 +5098,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|377592872191|0",
@@ -4011,7 +5121,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|313039543618|0",
@@ -4029,7 +5144,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|125537846211|0",
@@ -4047,7 +5167,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|900033484413|0",
@@ -4065,7 +5190,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327406425293|0",
@@ -4083,7 +5213,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|234471057904|0",
@@ -4101,7 +5236,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336865838912|0",
@@ -4119,7 +5259,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|198742926021|0",
@@ -4137,7 +5282,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|354230344691|0",
@@ -4155,7 +5305,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336871015108|0",
@@ -4173,7 +5328,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|167589674705|0",
@@ -4191,7 +5351,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|377610979745|0",
@@ -4209,7 +5374,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|298704047814|0",
@@ -4227,7 +5397,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|125534710627|0",
@@ -4245,7 +5420,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|365251013994|0",
@@ -4263,7 +5443,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|353501183165|0",
@@ -4281,7 +5466,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|125534712056|0",
@@ -4299,7 +5489,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|125557841549|0",
@@ -4317,7 +5512,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|267828335788|0",
@@ -4335,7 +5535,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|334540512359|0",
@@ -4353,7 +5558,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|960142335085|0",
@@ -4371,7 +5581,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|237137832782|0",
@@ -4389,7 +5604,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Desktop PCs",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|266370427891|0",
@@ -4407,7 +5627,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|198760790818|0",
@@ -4425,7 +5650,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327432486526|0",
@@ -4443,7 +5673,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800155738638|0",
@@ -4461,7 +5696,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|237140984871|0",
@@ -4479,7 +5719,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|168711825801|0",
@@ -4497,7 +5742,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|205115899627|0",
@@ -4515,7 +5765,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|820204099321|0",
@@ -4533,7 +5788,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|147658508180|0",
@@ -4551,7 +5811,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|820303536072|0",
@@ -4569,7 +5834,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307254601514|0",
@@ -4587,7 +5857,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327425060913|0",
@@ -4605,7 +5880,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|128170348482|0",
@@ -4623,7 +5903,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|820288171091|0",
@@ -4641,7 +5926,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|267828260722|0",
@@ -4659,7 +5949,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336874132135|0",
@@ -4677,7 +5972,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Gaming PCs"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|206668874324|0",
@@ -4695,7 +5995,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|147658076880|0",
@@ -4713,7 +6018,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|198747724905|0",
@@ -4731,7 +6041,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|366777773438|0",
@@ -4749,7 +6064,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|298731520876|0",
@@ -4767,7 +6087,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800861952486|0",
@@ -4785,7 +6110,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|840083585993|0",
@@ -4803,7 +6133,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|147661903624|0",
@@ -4821,7 +6156,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|366629755770|0",
@@ -4839,7 +6179,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|185183671458|0",
@@ -4857,7 +6202,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|178342252987|0",
@@ -4875,7 +6225,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|267830637769|0",
@@ -4893,7 +6248,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|227534487591|0",
@@ -4911,7 +6271,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|920068335444|0",
@@ -4929,7 +6294,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|860051813817|0",
@@ -4947,7 +6317,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|326869818890|0",
@@ -4965,7 +6340,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|128166515107|0",
@@ -4983,7 +6363,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|206386603485|0",
@@ -5001,7 +6386,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|117098815148|0",
@@ -5019,7 +6409,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|128158032579|0",
@@ -5037,7 +6432,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|267830644374|0",
@@ -5055,7 +6455,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|407328134633|0",
@@ -5073,7 +6478,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|820292385336|0",
@@ -5091,7 +6501,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|227591430195|0",
@@ -5109,7 +6524,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327427908919|0",
@@ -5127,7 +6547,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|940034460037|0",
@@ -5145,7 +6570,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Processors"
+    "category": "Processors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|117491210764|0",
@@ -5163,7 +6593,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": true,
+    "priceReviewReason": "High listing price for this category; compare the exact model and condition before purchase."
   },
   {
     "id": "v1|377612340189|0",
@@ -5181,7 +6616,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|377612337829|0",
@@ -5199,7 +6639,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|287685465312|0",
@@ -5217,7 +6662,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|960143419046|0",
@@ -5235,7 +6685,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|397396554978|0",
@@ -5253,7 +6708,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|227593998113|0",
@@ -5271,7 +6731,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|820292464406|0",
@@ -5289,7 +6754,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|267830517057|0",
@@ -5307,7 +6777,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|880068921284|0",
@@ -5325,7 +6800,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|287698746603|0",
@@ -5343,7 +6823,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307210589146|0",
@@ -5361,7 +6846,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": true,
+    "priceReviewReason": "High listing price for this category; compare the exact model and condition before purchase."
   },
   {
     "id": "v1|920092016838|0",
@@ -5379,7 +6869,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|880069671302|0",
@@ -5397,7 +6892,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|176684871531|0",
@@ -5415,7 +6915,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|920096873167|0",
@@ -5433,7 +6938,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|128152820041|0",
@@ -5451,7 +6961,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|287668707627|0",
@@ -5469,7 +6984,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|306723305209|0",
@@ -5487,7 +7007,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|225310017681|0",
@@ -5505,7 +7030,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|297861252761|0",
@@ -5523,7 +7053,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307094090598|0",
@@ -5541,7 +7076,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|206584552143|0",
@@ -5559,7 +7099,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|407330439465|0",
@@ -5577,7 +7122,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307261889360|0",
@@ -5595,7 +7145,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|206596462149|0",
@@ -5613,7 +7168,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|168717422761|0",
@@ -5631,7 +7191,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307011553708|0",
@@ -5649,7 +7214,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|397768113221|0",
@@ -5667,7 +7237,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|298502973602|0",
@@ -5685,7 +7260,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|176503892675|476604292908",
@@ -5703,7 +7283,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|820270212849|0",
@@ -5721,7 +7306,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|116237423865|0",
@@ -5739,7 +7329,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|840078626534|0",
@@ -5757,7 +7352,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|206669742231|0",
@@ -5775,7 +7375,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800842249122|0",
@@ -5793,7 +7398,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|900027884905|0",
@@ -5811,7 +7421,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|227594043390|0",
@@ -5829,7 +7444,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|960108162777|0",
@@ -5847,7 +7467,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|377614856615|0",
@@ -5865,7 +7490,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|168827473169|0",
@@ -5883,7 +7513,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|178431182378|0",
@@ -5901,7 +7536,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|128086104908|0",
@@ -5919,7 +7559,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|168816088408|0",
@@ -5937,7 +7582,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|237146089940|0",
@@ -5955,7 +7605,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Memory",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|366748102042|0",
@@ -5973,7 +7628,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|227534705345|0",
@@ -5991,7 +7651,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|366590005655|0",
@@ -6009,7 +7674,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327432398184|0",
@@ -6027,7 +7697,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|306596332733|0",
@@ -6045,7 +7720,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327092454255|515955242223",
@@ -6063,7 +7743,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|227292382175|526498725881",
@@ -6081,7 +7766,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|314583757070|613125428104",
@@ -6099,7 +7789,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327327773577|0",
@@ -6117,7 +7812,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|185750694137|0",
@@ -6135,7 +7835,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|227402767941|0",
@@ -6153,7 +7858,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|407332084106|0",
@@ -6171,7 +7881,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|128152345051|0",
@@ -6189,7 +7904,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|900049341210|0",
@@ -6207,7 +7927,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336871343902|0",
@@ -6225,7 +7950,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|137889167580|0",
@@ -6243,7 +7973,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Laptops"
+    "category": "Laptops",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|880013100342|0",
@@ -6261,7 +7996,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|315056289068|613535321957",
@@ -6279,7 +8019,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800748245725|0",
@@ -6297,7 +8042,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327038404977|0",
@@ -6315,7 +8065,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307262007068|0",
@@ -6333,7 +8088,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|237148681916|0",
@@ -6351,7 +8111,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": true,
+    "priceReviewReason": "High listing price for this category; compare the exact model and condition before purchase."
   },
   {
     "id": "v1|315173099062|613648313107",
@@ -6369,7 +8134,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|377611136899|0",
@@ -6387,7 +8157,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|277887632984|0",
@@ -6405,7 +8180,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|187629418503|0",
@@ -6423,7 +8203,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|315875623194|614346110408",
@@ -6441,7 +8226,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|366522834888|0",
@@ -6459,7 +8249,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|287687694963|0",
@@ -6477,7 +8272,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|278296976624|0",
@@ -6495,7 +8295,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327095655978|515957329015",
@@ -6513,7 +8318,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|168797549958|0",
@@ -6531,7 +8341,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|278214746458|0",
@@ -6549,7 +8364,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|137891543119|0",
@@ -6567,7 +8387,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307244524574|0",
@@ -6585,7 +8410,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|186430676445|0",
@@ -6603,7 +8433,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Memory"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|178272930676|0",
@@ -6621,7 +8456,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|325104703415|0",
@@ -6639,7 +8479,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|314675451357|0",
@@ -6657,7 +8502,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|315847323717|0",
@@ -6675,7 +8525,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|920061017858|0",
@@ -6693,7 +8548,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|117304135492|417308740703",
@@ -6711,7 +8571,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|364219984988|0",
@@ -6729,7 +8594,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|364812752395|0",
@@ -6747,7 +8617,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|117348328956|0",
@@ -6765,7 +8640,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|366776908922|0",
@@ -6783,7 +8663,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Storage"
+    "category": "Storage",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|386891577141|0",
@@ -6801,7 +8686,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|257230569576|0",
@@ -6819,7 +8709,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|178441785896|0",
@@ -6837,7 +8732,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|365833789297|0",
@@ -6855,7 +8755,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|306707626520|0",
@@ -6873,7 +8778,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|366359151782|0",
@@ -6891,7 +8801,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307088843674|0",
@@ -6909,7 +8824,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|256992973721|0",
@@ -6927,7 +8847,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|257255249841|0",
@@ -6945,7 +8870,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|267509668039|0",
@@ -6963,7 +8893,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|800677526716|0",
@@ -6981,7 +8916,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|176489013476|0",
@@ -6999,7 +8939,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307223209990|0",
@@ -7017,7 +8962,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|178441526693|0",
@@ -7035,7 +8985,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|327335689227|0",
@@ -7053,7 +9008,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307096844067|0",
@@ -7071,7 +9031,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|306978554370|0",
@@ -7089,7 +9054,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|206542998545|0",
@@ -7107,7 +9077,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|267734645056|0",
@@ -7125,7 +9100,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|267305027724|0",
@@ -7143,7 +9123,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|298695602512|0",
@@ -7161,7 +9146,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|145613148025|0",
@@ -7179,7 +9169,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|388983125108|0",
@@ -7197,7 +9192,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|277334856966|0",
@@ -7215,7 +9215,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|267228781392|0",
@@ -7233,7 +9238,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|306980390227|0",
@@ -7251,7 +9261,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|227491491133|0",
@@ -7269,7 +9284,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|176489001293|0",
@@ -7287,7 +9307,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|177111543172|0",
@@ -7305,7 +9330,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307204825386|0",
@@ -7323,7 +9353,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|306615470432|0",
@@ -7341,7 +9376,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|116888601751|0",
@@ -7359,7 +9399,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|306654874769|0",
@@ -7377,7 +9422,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|306607886866|0",
@@ -7395,7 +9445,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|267388822322|0",
@@ -7413,7 +9468,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|287664559681|0",
@@ -7431,7 +9491,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|256853107342|0",
@@ -7449,7 +9514,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|277276147303|0",
@@ -7467,7 +9537,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|336120589366|0",
@@ -7485,7 +9560,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|307261522159|0",
@@ -7503,7 +9583,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|257634834812|0",
@@ -7521,7 +9606,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|306685563989|0",
@@ -7539,7 +9629,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|137773811731|0",
@@ -7557,7 +9652,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|277535310834|0",
@@ -7575,7 +9675,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|306907704160|0",
@@ -7593,7 +9698,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": true,
+    "priceReviewReason": "High listing price for this category; compare the exact model and condition before purchase."
   },
   {
     "id": "v1|315040485740|0",
@@ -7611,7 +9721,12 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   },
   {
     "id": "v1|168308670854|0",
@@ -7629,6 +9744,11 @@
         "affiliateNetwork": "eBay Partner Network"
       }
     ],
-    "category": "Monitors"
+    "category": "Monitors",
+    "marketplace": "eBay US",
+    "sourceMarket": "EBAY_US",
+    "shippingToNorwayVerified": false,
+    "priceReview": false,
+    "priceReviewReason": null
   }
 ]
