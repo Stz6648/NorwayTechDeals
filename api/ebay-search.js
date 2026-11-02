@@ -39,12 +39,18 @@ export default async function handler(req, res) {
         Authorization: `Bearer ${tokenData.access_token}`,
         "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
         "X-EBAY-C-ENDUSERCTX":
-          "affiliateCampaignId=5339206505",
+          `affiliateCampaignId=${process.env.EBAY_CAMPAIGN_ID || "5339206505"}`,
         "Accept-Language": "en-US"
       }
     });
 
     const data = await response.json();
+    if (response.ok && Array.isArray(data.itemSummaries)) {
+      data.itemSummaries = data.itemSummaries.filter(item =>
+        Boolean(item.itemAffiliateWebUrl) &&
+        String(item.itemAffiliateWebUrl).includes("campid=")
+      );
+    }
 
     return res.status(response.status).json(data);
 
