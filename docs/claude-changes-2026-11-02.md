@@ -25,3 +25,6 @@ Backup: local tag `backup-main-2026-11-02` marks main before these changes. Prod
 - Prices are shown as eBay.com USD listing prices with the catalogue date. No NOK conversion, no Norway delivery claim.
 - Build fails if: merchant not approved in `data/merchants.json`, link lacks the eBay campaign id, currency is not USD, page shows NOK/kr amounts, disclosure or `rel="nofollow sponsored"` is missing.
 - Not done: titles that need Norwegian merchant prices (gaming-PC/laptop under X kr) — blocked on affiliate approval and a fresh feed.
+
+## Round 3 — US site draft (branch claude/us-site)
+See `us/README.md`. Two English guides (used vs new GPU price gap; refurbished gaming laptops), generated from `products.json`, draft/noindex. Brand "Used Tech Radar" is a working name.

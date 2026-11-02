@@ -1,0 +1,29 @@
+{
+  "slug": "used-vs-new-gpu-price-gap",
+  "type": "pricegap",
+  "title": "Used vs New GPUs on eBay: How Much Do You Really Save?",
+  "description": "We compared the cheapest new, open-box, used and refurbished listings for popular RTX cards on eBay. See where used actually saves money, and where it doesn't.",
+  "h1": "Used vs New GPUs on eBay: How Much Do You Really Save?",
+  "intro": [
+    "Buying a used graphics card is supposed to save money. In practice, the gap between a used card and a new one on eBay can be tiny, or even backwards. This page compares the cheapest listings by condition for three popular cards, using our catalogue snapshot."
+  ],
+  "tiers": [
+    { "name": "GeForce RTX 5070", "category": "Graphics Cards", "match": "RTX\\s*5070(?!\\s*Ti)", "minPrice": 600 },
+    { "name": "GeForce RTX 5070 Ti", "category": "Graphics Cards", "match": "RTX\\s*5070\\s*Ti", "minPrice": 800 },
+    { "name": "GeForce RTX 5080", "category": "Graphics Cards", "match": "RTX\\s*5080", "exclude": "noctua|proart", "minPrice": 1500 }
+  ],
+  "tableNote": "We skip listings priced far below the model's normal range, since those are often mislabelled, partial or bait listings. The cheapest listing in each condition is shown, which is not the same as the best deal for you.",
+  "sections": [
+    {
+      "h2": "How to buy a used graphics card safely",
+      "list": [
+        "Ask for or look for photos that show the card and its serial number, not stock images.",
+        "Prefer listings that describe how the card was tested, and that accept returns.",
+        "Check the seller's feedback score and recent negative reviews.",
+        "Avoid listings marked for parts, untested, or sold as-is.",
+        "Compare the total price including shipping and sales tax, not just the item price.",
+        "Check that your power supply and case suit the card before you buy."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "_note": "Working name and placeholders. Replace brand/domain/contactEmail, then set publish to true. The build refuses to publish while placeholders remain.",
+  "brand": "Used Tech Radar",
+  "tagline": "What you really save buying used, open-box and refurbished PC hardware on eBay.",
+  "domain": "https://YOUR-DOMAIN.com",
+  "contactEmail": "",
+  "publish": false,
+  "ebayCampId": "5339206505"
+}
