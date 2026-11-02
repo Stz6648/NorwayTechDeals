@@ -1,6 +1,9 @@
 name: Update Products
 
 on:
+  push:
+    branches:
+      - codex/catalog-refresh
   schedule:
     - cron: "0 3 * * *"
   workflow_dispatch:
@@ -12,10 +15,9 @@ jobs:
   update:
     runs-on: ubuntu-latest
     env:
-      AWIN_ACER_FEED_URL: ${{ secrets.AWIN_ACER_FEED_URL }}
       EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
       EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
-      PROSHOP_FEED_URL: ${{ secrets.PROSHOP_FEED_URL }}
+      EBAY_CAMPAIGN_ID: ${{ secrets.EBAY_CAMPAIGN_ID || '5339206505' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
