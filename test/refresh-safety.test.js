@@ -127,3 +127,23 @@ test("eBay candidates are categorized from item category and parts listings are 
   assert.equal(ebayUpdater.rejectEbayListing({ title: "GPU For Parts or Not Working" }), true);
   assert.equal(ebayUpdater.rejectEbayListing({ title: "New Gaming GPU", condition: "New" }), false);
 });
+
+test("eBay nested offers retain their affiliate URL, price and tracking flag", () => {
+  const offer = ebayUpdater.createOffer({
+    id: "ebay-1",
+    store: "eBay",
+    offers: [{
+      store: "eBay",
+      price: 123,
+      currency: "USD",
+      affiliate: true,
+      affiliateNetwork: "eBay Partner Network",
+      url: "https://www.ebay.com/itm/123456789012?mkcid=1&campid=5339206505",
+      updatedAt: "2026-11-02"
+    }]
+  });
+  assert.equal(offer.url, "https://www.ebay.com/itm/123456789012?mkcid=1&campid=5339206505");
+  assert.equal(offer.price, 123);
+  assert.equal(offer.affiliate, true);
+  assert.equal(offer.affiliateNetwork, "eBay Partner Network");
+});
