@@ -1,0 +1,29 @@
+{
+  "input": 10760,
+  "kept": 5177,
+  "rejects": {
+    "legacy nested placeholder entry": 613,
+    "not confirmed in stock": 4519,
+    "price above consumer ceiling": 286,
+    "enterprise/server product": 154,
+    "duplicate": 11
+  },
+  "byCategory": {
+    "Electronics": 183,
+    "SSD": 415,
+    "CPU": 181,
+    "Gaming PC": 11,
+    "Laptop": 607,
+    "Monitor": 1212,
+    "Motherboard": 451,
+    "RAM": 474,
+    "PC Components": 1356,
+    "Graphics Card": 287
+  },
+  "byStore": {
+    "Acer": 183,
+    "Proshop": 4994
+  },
+  "newestFeedTimestamp": "2026-09-27T16:01:54.311581+00:00",
+  "ageDays": 36
+}

@@ -1,1 +1,4 @@
 node_modules/
+
+# generated from feed snapshot; rebuild with: node scripts/build-norway-catalogue.js
+data/norway-catalogue.json
