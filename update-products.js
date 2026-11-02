@@ -3,20 +3,22 @@ const zlib = require("zlib");
 const safety = require("./refresh-safety");
 
 function createOffer(product) {
+  const source = Array.isArray(product.offers) && product.offers.length
+    ? product.offers[0]
+    : product;
   const offer = {
-    store: product.store,
-    price: product.price,
-    currency: product.currency,
-    url: product.url,
-    country: product.country,
-    condition: product.condition || "new",
-    inStock: product.inStock,
-    updatedAt: product.updatedAt || product.priceUpdatedAt
+    store: source.store || product.store,
+    price: source.price ?? product.price,
+    currency: source.currency || product.currency,
+    url: source.url || product.url,
+    country: source.country || product.country,
+    condition: source.condition || product.condition || "new",
+    inStock: source.inStock ?? product.inStock,
+    updatedAt: source.updatedAt || source.priceUpdatedAt || product.updatedAt || product.priceUpdatedAt
   };
-  if (product.affiliate === true) offer.affiliate = true;
-  if (product.affiliate === true || product.affiliateNetwork) offer.affiliate = true;
-  if (product.affiliateNetwork) offer.affiliateNetwork = product.affiliateNetwork;
-  if (product.shippingVerified === true) offer.shippingVerified = true;
+  if (source.affiliate === true || product.affiliate === true) offer.affiliate = true;
+  if (source.affiliateNetwork || product.affiliateNetwork) offer.affiliateNetwork = source.affiliateNetwork || product.affiliateNetwork;
+  if (source.shippingVerified === true || product.shippingVerified === true) offer.shippingVerified = true;
   return offer;
 }
 
@@ -177,6 +179,7 @@ async function fetchEbayProducts() {
         if (
           !item.itemId ||
           !item.title ||
+          !item.itemAffiliateWebUrl ||
           rejectEbayListing(item)
         ) {
           continue;
@@ -276,8 +279,7 @@ mpn:
               ...(item.itemAffiliateWebUrl ? { affiliateNetwork: "eBay Partner Network" } : {}),
 
               url:
-                item.itemAffiliateWebUrl || item.itemWebUrl ||
-                `https://www.ebay.com/itm/${item.itemId}`,
+                item.itemAffiliateWebUrl,
 
               updatedAt:
                 new Date()
@@ -1252,11 +1254,11 @@ async function runUpdate() {
     }
   }
 
-  const [acerProducts, ebayProducts, proshopProducts] = await Promise.all([
-    fetchSource("Acer/Awin", fetchAcerProducts),
-    fetchSource("eBay", fetchEbayProducts),
-    fetchSource("Proshop", fetchProshopProducts)
-  ]);
+  // This storefront is an eBay affiliate recommendation site. Do not mix
+  // unrelated merchant feeds into its public catalogue.
+  const acerProducts = [];
+  const proshopProducts = [];
+  const ebayProducts = await fetchSource("eBay", fetchEbayProducts);
 
   /*
    * 保留现有产品。
@@ -1264,85 +1266,17 @@ async function runUpdate() {
    * 然后加入最新数据。
    */
 
-  const preserved =
-    existing.filter(
-      product => {
+  // Replace the old eBay catalogue with the current live EPN results.
+  // If the live eBay request fails, retain only the last known eBay products.
+  const preserved = ebayProducts.length > 0
+    ? []
+    : existing.filter(product => {
+        const offers = Array.isArray(product?.offers) ? product.offers : [];
+        return String(product?.store || "").toLowerCase() === "ebay"
+          || offers.some(offer => String(offer?.store || "").toLowerCase() === "ebay");
+      });
 
-        if (!product) {
-          return false;
-        }
-
-
-        const id =
-          String(
-            product.id || ""
-          ).toLowerCase();
-
-
-        const store =
-          String(
-            product.store || ""
-          ).toLowerCase();
-
-
-        const offers =
-          Array.isArray(
-            product.offers
-          )
-            ? product.offers
-            : [];
-
-
-        const isAcer =
-          id.startsWith(
-            "acer-"
-          ) ||
-          store === "acer" ||
-          offers.some(
-            offer =>
-              String(
-                offer.store || ""
-              ).toLowerCase() ===
-              "acer"
-          );
-
-
-        const isEbay =
-          store === "ebay" ||
-          offers.some(
-            offer =>
-              String(
-                offer.store || ""
-              ).toLowerCase() ===
-              "ebay"
-          );
-        const isProshop =
-          store === "proshop" ||
-          store === "Proshop" ||
-          offers.some(
-            offer =>
-              String(
-                offer.store || ""
-              ).toLowerCase() === "proshop"
-          );
-
-        // Keep a source's last good listings when that source returned no
-        // validated replacements during this run.
-        const sourceUpdated =
-          (isAcer && acerProducts.length > 0) ||
-          (isEbay && ebayProducts.length > 0) ||
-          (isProshop && proshopProducts.length > 0);
-        return !sourceUpdated;
-      }
-    );
-
-
-  const finalProducts =
-    preserved.concat(
-      acerProducts,
-      ebayProducts,
-      proshopProducts,
-    );
+  const finalProducts = preserved.concat(ebayProducts);
   const allowedCategories = new Set([
   "Graphics Card",
   "CPU",
@@ -1419,11 +1353,7 @@ const filteredProducts = finalProducts.filter(product => {
       : product.price
 }));
 
-const allowedStores = new Set([
-  "proshop",
-  "ebay",
-  "acer"
-]);
+const allowedStores = new Set(["ebay"]);
 
 function normalizeText(value) {
   return String(value || "")
@@ -1693,7 +1623,7 @@ async function main() {
 }
 
 
-module.exports = { mapEbayCategory, rejectEbayListing };
+module.exports = { mapEbayCategory, rejectEbayListing, createOffer };
 
 if (require.main === module) {
   main().catch(error => {
