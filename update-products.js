@@ -437,7 +437,9 @@ mpn:
 
 const AWIN_ACER_FEED_URL =
   process.env.AWIN_ACER_FEED_URL || "";
-const ADTRACTION_API_TOKEN = process.env.ADTRACTION_API_TOKEN || "";\nconst ADTRACTION_CHANNEL_ID = process.env.ADTRACTION_CHANNEL_ID || "";\nconst ADTRACTION_PROSHOP_PROGRAM_ID = process.env.ADTRACTION_PROSHOP_PROGRAM_ID || "1870470286";
+const ADTRACTION_API_TOKEN = process.env.ADTRACTION_API_TOKEN || "";
+const ADTRACTION_CHANNEL_ID = process.env.ADTRACTION_CHANNEL_ID || "";
+const ADTRACTION_PROSHOP_PROGRAM_ID = process.env.ADTRACTION_PROSHOP_PROGRAM_ID || "1870470286";
 
 function parseCSV(text) {
 
@@ -1640,7 +1642,8 @@ const compactProducts = selectedProducts;
   if (
     !Array.isArray(existing) ||
     existing.length === 0 ||
-    compactProducts.length < minimumSafeCount ||\n    compactProducts.some(product => new Set(product.offers.map(offer => String(offer.store || "").toLowerCase())).size < 3) ||
+    compactProducts.length < minimumSafeCount ||
+    compactProducts.some(product => new Set(product.offers.map(offer => String(offer.store || "").toLowerCase())).size < 3) ||
     validProducts.length !== compactProducts.length
   ) {
     throw new Error(
