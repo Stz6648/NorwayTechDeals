@@ -1324,7 +1324,7 @@ async function main() {
     if (!product.name || blocked.test(product.name)) return false;
     if (!product.image || !/^https:\/\/i\.ebayimg\.com\//i.test(product.image)) return false;
     const title = String(product.name).toLowerCase();
-    if (product.category === "Graphics Card" && !/graphics card|gpu|geforce|radeon|\brtx\s*\d|\brx\s*\d/i.test(title)) return false;
+    if (product.category === "Graphics Card" && (/laptop|notebook|desktop|motherboard|mobile gpu|mobile graphics/i.test(title) || !/graphics card|gpu|geforce|radeon|\brtx\s*\d|\brx\s*\d/i.test(title))) return false;
     if (product.category === "CPU" && (/laptop|notebook|thinkpad|chromebook/i.test(title) || !/\b(cpu|processor|core i[3579]|core ultra|ryzen [3579]|xeon)\b/i.test(title))) return false;
     if (product.category === "RAM" && (/no physical memory|light enhancement kit|dummy|memory cooler|ram heatsink/i.test(title) || !/\b(ddr[345]|ram|memory)\b/i.test(title))) return false;
     if (product.category === "SSD" && !/\b(ssd|nvme|solid state drive)\b/i.test(title)) return false;
