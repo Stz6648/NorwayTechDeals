@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+<title id="title">Original 3D gaming PC tower</title><desc id="desc">A futuristic unbranded gaming PC tower with glass side panel and illuminated RGB cooling fans.</desc>
+<defs>
+ <linearGradient id="case" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#26374d"/><stop offset=".45" stop-color="#101b2b"/><stop offset="1" stop-color="#070d17"/></linearGradient>
+ <linearGradient id="front" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#253b53"/><stop offset=".5" stop-color="#101d2d"/><stop offset="1" stop-color="#0b111b"/></linearGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7deaff" stop-opacity=".32"/><stop offset=".45" stop-color="#263c59" stop-opacity=".2"/><stop offset="1" stop-color="#a4ffdb" stop-opacity=".08"/></linearGradient>
+ <linearGradient id="rgb" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#63e7ff"/><stop offset=".38" stop-color="#a77bff"/><stop offset=".72" stop-color="#ff6dc8"/><stop offset="1" stop-color="#c5f36b"/></linearGradient>
+ <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#c5f36b"/><stop offset=".5" stop-color="#65d9e8"/><stop offset="1" stop-color="#a77bff"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#65d9e8" stop-opacity=".32"/><stop offset="1" stop-color="#65d9e8" stop-opacity="0"/></radialGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="24"/></filter>
+ <filter id="shadow"><feGaussianBlur stdDeviation="16"/></filter>
+</defs>
+<ellipse cx="470" cy="570" rx="300" ry="34" fill="#000" opacity=".5" filter="url(#shadow)"/>
+<ellipse cx="470" cy="480" rx="350" ry="180" fill="url(#glow)" filter="url(#blur)"/>
+<!-- top and side silhouette -->
+<path d="M260 106 555 42 760 122 455 198Z" fill="#344b63" stroke="#7d9bb6" stroke-opacity=".42" stroke-width="3"/>
+<path d="M455 198 760 122 760 520 455 602Z" fill="url(#case)" stroke="#66809b" stroke-opacity=".65" stroke-width="4"/>
+<path d="M260 106 455 198 455 602 260 500Z" fill="url(#front)" stroke="#66809b" stroke-opacity=".7" stroke-width="4"/>
+<!-- top ventilation -->
+<path d="M300 113 554 59 702 117 449 177Z" fill="#0a1320" opacity=".8"/>
+<g stroke="#7891a8" stroke-opacity=".45" stroke-width="5"><path d="m337 119 217-47"/><path d="m365 132 217-47"/><path d="m393 145 217-47"/><path d="m421 158 217-47"/></g>
+<!-- front mesh and fans -->
+<path d="M285 148 429 215 429 548 285 474Z" fill="#070d16" stroke="#4b657e" stroke-width="3"/>
+<g opacity=".95">
+ <circle cx="357" cy="283" r="53" fill="#111e30" stroke="url(#rgb)" stroke-width="9"/>
+ <circle cx="357" cy="283" r="38" fill="#09111e" stroke="#83eaff" stroke-opacity=".55" stroke-width="3"/>
+ <circle cx="357" cy="283" r="9" fill="#92e9f4"/>
+ <path d="M357 245q28 2 20 27-12 16-20 11-9-16 0-38M394 283q-2 28-27 20-16-12-11-20 16-9 38 0M357 321q-28-2-20-27 12-16 20-11 9 16 0 38M320 283q2-28 27-20 16 12 11 20-16 9-38 0" fill="#4f7898" opacity=".55"/>
+ <circle cx="357" cy="422" r="53" fill="#111e30" stroke="url(#rgb)" stroke-width="9"/>
+ <circle cx="357" cy="422" r="38" fill="#09111e" stroke="#83eaff" stroke-opacity=".55" stroke-width="3"/>
+ <circle cx="357" cy="422" r="9" fill="#92e9f4"/>
+ <path d="M357 384q28 2 20 27-12 16-20 11-9-16 0-38M394 422q-2 28-27 20-16-12-11-20 16-9 38 0M357 460q-28-2-20-27 12-16 20-11 9 16 0 38M320 422q2-28 27-20 16 12 11 20-16 9-38 0" fill="#4f7898" opacity=".55"/>
+</g>
+<!-- glass side panel -->
+<path d="M476 214 739 148 739 500 476 570Z" fill="url(#glass)" stroke="#9ac9e8" stroke-opacity=".58" stroke-width="3"/>
+<path d="M490 226 727 167" stroke="#d5f8ff" stroke-opacity=".3" stroke-width="4"/>
+<!-- motherboard -->
+<path d="M515 248 698 202 698 450 515 499Z" fill="#0a1724" stroke="#5c7894" stroke-width="3"/>
+<path d="M534 267 681 230 681 424 534 463Z" fill="#112b38" stroke="#65d9e8" stroke-opacity=".35" stroke-width="2"/>
+<!-- motherboard lines -->
+<g fill="none" stroke="#5dd7df" stroke-opacity=".45" stroke-width="3"><path d="m544 284 62 20 0 42 75 22"/><path d="m544 375 45-12 0-42 32-10"/><path d="m620 250 0 44 53 15"/><path d="m610 420 0-34 65-17"/></g>
+<!-- RAM -->
+<g><rect x="627" y="265" width="12" height="100" rx="4" fill="#9df36b"/><rect x="646" y="260" width="12" height="100" rx="4" fill="#65d9e8"/><path d="M627 278h12m7-5h12m-31 14h12m7-5h12" stroke="#fff" stroke-opacity=".7" stroke-width="3"/></g>
+<!-- GPU -->
+<path d="M525 390 684 349 684 406 525 448Z" fill="#25394e" stroke="#b4d0e3" stroke-width="2"/>
+<path d="M537 399 672 365 672 395 537 429Z" fill="#0b1521"/>
+<g fill="#152538" stroke="url(#rgb)" stroke-width="4"><circle cx="573" cy="407" r="18"/><circle cx="625" cy="393" r="18"/><circle cx="573" cy="407" r="6" fill="#90e9ef"/><circle cx="625" cy="393" r="6" fill="#90e9ef"/></g>
+<!-- rear cooling fan -->
+<circle cx="700" cy="292" r="32" fill="#101c2a" stroke="url(#rgb)" stroke-width="6"/>
+<circle cx="700" cy="292" r="8" fill="#9de7ef"/>
+<!-- base and accents -->
+<path d="M260 500 455 602 760 520 760 544 455 628 260 527Z" fill="#070c14" stroke="#526c84" stroke-width="3"/>
+<path d="M276 491 449 580 742 503" fill="none" stroke="url(#edge)" stroke-width="5" opacity=".9"/>
+<path d="M456 199 456 600" stroke="#d9f6ff" stroke-opacity=".2" stroke-width="3"/>
+<rect x="305" y="178" width="7" height="285" rx="3" fill="#65d9e8" opacity=".45"/>
+<circle cx="417" cy="184" r="5" fill="#c5f36b"/>
+</svg>
