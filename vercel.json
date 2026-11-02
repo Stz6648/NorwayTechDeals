@@ -1,3 +1,30 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/gaming-laptops.html",
+      "destination": "/?category=Laptops",
+      "permanent": true
+    },
+    {
+      "source": "/laptop-tilbud.html",
+      "destination": "/?category=Laptops",
+      "permanent": true
+    },
+    {
+      "source": "/gaming-pc.html",
+      "destination": "/?category=Gaming%20PCs",
+      "permanent": true
+    },
+    {
+      "source": "/graphics-cards.html",
+      "destination": "/?category=Graphics%20Cards",
+      "permanent": true
+    },
+    {
+      "source": "/ram.html",
+      "destination": "/?category=Memory",
+      "permanent": true
+    }
+  ]
 }
