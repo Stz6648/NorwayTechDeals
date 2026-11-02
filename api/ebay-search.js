@@ -41,7 +41,8 @@ async function handler(req, res) {
       "https://api.ebay.com/buy/browse/v1/item_summary/search?" +
       new URLSearchParams({
         q,
-        limit: "10"
+        limit: "10",
+        filter: "deliveryCountry:NO"
       });
 
     const response = await fetch(ebayUrl, {
@@ -49,7 +50,7 @@ async function handler(req, res) {
         Authorization: `Bearer ${tokenData.access_token}`,
         "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
         "X-EBAY-C-ENDUSERCTX":
-          `affiliateCampaignId=${process.env.EBAY_CAMPAIGN_ID || "5339206505"}`,
+          `affiliateCampaignId=${process.env.EBAY_CAMPAIGN_ID || "5339206505"},contextualLocation=country=NO`,
         "Accept-Language": "en-US"
       }
     });
