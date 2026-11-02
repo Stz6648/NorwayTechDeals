@@ -28,17 +28,31 @@ for (const [index, product] of primary.entries()) {
   if (!allowedCategories.has(product.category)) errors.push(`${label} has invalid category: ${product.category}.`);
   counts[product.category] = (counts[product.category] || 0) + 1;
   if (!/^https:\/\//.test(product.image || "")) errors.push(`${label} has no valid HTTPS image URL.`);
-  if (product.marketplace !== "eBay US" || product.sourceMarket !== "EBAY_US") errors.push(`${label} is missing explicit source-market metadata.`);
-  if (product.shippingToNorwayVerified !== false) errors.push(`${label} must not claim unverified Norway shipping.`);
+
+  const offers = Array.isArray(product.offers) ? product.offers : [];
+  const validOffers = offers.filter(offer => {
+    if (!offer || offer.affiliate !== true || Number(offer.price) <= 0 || !offer.currency || !offer.url) return false;
+    const network = String(offer.affiliateNetwork || "").toLowerCase();
+    const url = String(offer.url || "");
+    if (network.includes("ebay")) return url.includes("campid=");
+    if (network.includes("awin")) return /awin[1-9]\.com/i.test(url);
+    if (network.includes("adtraction")) return /adtraction\.com|adtr\.co/i.test(url);
+    return false;
+  });
+  if (!validOffers.length) errors.push(`${label} has no valid tracked affiliate offer.`);
+
+  const hasLocalOffer = validOffers.some(offer => String(offer.country || "").toUpperCase() === "NO" && offer.store !== "eBay");
+  if (hasLocalOffer) {
+    const stores = new Set(validOffers.map(offer => String(offer.store || "").toLowerCase()));
+    if (stores.size < 3) errors.push(`${label} contains local merchant offers but fewer than 3 distinct merchants.`);
+    if (!String(product.sourceMarket || "").includes("NO")) errors.push(`${label} has local offers but sourceMarket is not marked NO.`);
+    if (product.shippingToNorwayVerified !== true) errors.push(`${label} has local offers but Norway delivery is not verified.`);
+  } else {
+    if (product.marketplace !== "eBay US" && product.marketplace !== "eBay US marketplace") errors.push(`${label} must identify its eBay US marketplace source.`);
+    if (product.sourceMarket !== "EBAY_US") errors.push(`${label} is missing EBAY_US source-market metadata.`);
+    if (product.shippingToNorwayVerified !== false) errors.push(`${label} must not claim unverified Norway shipping.`);
+  }
   if (typeof product.priceReview !== "boolean") errors.push(`${label} must have a boolean priceReview flag.`);
-  const validOffer = (product.offers || []).some(offer =>
-    offer && offer.affiliate === true &&
-    typeof offer.url === "string" &&
-    offer.url.includes("campid=") &&
-    Number(offer.price) > 0 &&
-    typeof offer.currency === "string"
-  );
-  if (!validOffer) errors.push(`${label} has no valid affiliate offer with a campaign tracking parameter.`);
 }
 if (counts.Other) errors.push("Unclassified products are not allowed.");
 
