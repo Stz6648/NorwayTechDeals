@@ -1158,7 +1158,7 @@ async function fetchProshopProducts() {
 
     const getField = (block, field) => {
       const match = block.match(
-        new RegExp(`<${field}>([\\s\\S]*?)<\\/${field}>`)
+        new RegExp(`<${field}>([\s\\S]*?)<\\/${field}>`)
       );
 
       return match ? decodeXml(match[1].trim()) : "";
@@ -1324,17 +1324,18 @@ async function main() {
     if (!product.name || blocked.test(product.name)) return false;
     if (!product.image || !/^https:\/\/i\.ebayimg\.com\//i.test(product.image)) return false;
     const title = String(product.name).toLowerCase();
-    if (product.category === "Graphics Card" && !/graphics card|gpu|geforce|radeon|\\brtx\\s*\\d|\\brx\\s*\\d/i.test(title)) return false;
-    if (product.category === "CPU" && (/laptop|notebook|thinkpad|chromebook/i.test(title) || !/\\b(cpu|processor|core i[3579]|core ultra|ryzen [3579]|xeon)\\b/i.test(title))) return false;
-    if (product.category === "RAM" && (/no physical memory|light enhancement kit|dummy|memory cooler|ram heatsink/i.test(title) || !/\\b(ddr[345]|ram|memory)\\b/i.test(title))) return false;
-    if (product.category === "SSD" && !/\\b(ssd|nvme|solid state drive)\\b/i.test(title)) return false;
-    if (product.category === "Monitor" && !/monitor|display|\\b\\d{2,3}\\s*(inch|\"|”)/i.test(title)) return false;
+    if (product.category === "Graphics Card" && !/graphics card|gpu|geforce|radeon|\brtx\s*\d|\brx\s*\d/i.test(title)) return false;
+    if (product.category === "CPU" && (/laptop|notebook|thinkpad|chromebook/i.test(title) || !/\b(cpu|processor|core i[3579]|core ultra|ryzen [3579]|xeon)\b/i.test(title))) return false;
+    if (product.category === "RAM" && (/no physical memory|light enhancement kit|dummy|memory cooler|ram heatsink/i.test(title) || !/\b(ddr[345]|ram|memory)\b/i.test(title))) return false;
+    if (product.category === "SSD" && !/\b(ssd|nvme|solid state drive)\b/i.test(title)) return false;
+    if (product.category === "Monitor" && !/monitor|display|\b\d{2,3}\s*(inch|\"|”)/i.test(title)) return false;
     if (product.category === "Gaming Laptop" && !/laptop|notebook/i.test(title)) return false;
     if (product.category === "Gaming PC" && (/laptop|notebook/i.test(title) || !/desktop|gaming pc|computer|tower/i.test(title))) return false;
     if (product.category === "Laptop" && !/laptop|notebook|chromebook/i.test(title)) return false;
     const offers = Array.isArray(product.offers) ? product.offers : [];
     return offers.some(offer =>
       offer &&
+      !/for parts|not working/i.test(String(offer.condition || "")) &&
       offer.affiliate === true &&
       /^https:\/\/www\.ebay\.[^/]+\//i.test(offer.url || "") &&
       String(offer.url).includes("campid=") &&
@@ -1344,6 +1345,7 @@ async function main() {
     ...product,
     offers: product.offers.filter(offer =>
       offer &&
+      !/for parts|not working/i.test(String(offer.condition || "")) &&
       offer.affiliate === true &&
       /^https:\/\/www\.ebay\.[^/]+\//i.test(offer.url || "") &&
       String(offer.url).includes("campid=") &&
