@@ -1,0 +1,29 @@
+name: Validate product catalogue
+
+on:
+  push:
+    paths:
+      - "products.json"
+      - "public/products.json"
+      - "scripts/**"
+      - ".github/workflows/validate-catalogue.yml"
+  pull_request:
+    paths:
+      - "products.json"
+      - "public/products.json"
+      - "scripts/**"
+      - ".github/workflows/validate-catalogue.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validate catalogue
+        run: node scripts/validate-catalogue.js
