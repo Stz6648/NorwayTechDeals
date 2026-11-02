@@ -1,1 +1,1104 @@
-[]
+[
+  {
+    "id": "v1|336798278423|0",
+    "store": "eBay",
+    "name": "NVIDIA RTX 5090 32GB 575W pulled from NEW DELL Alienware Area-51 0 Hours",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/0bEAAeSwdb9qq~oa/s-l225.jpg",
+    "description": "NVIDIA RTX 5090 32GB 575W pulled from NEW DELL Alienware Area-51 0 Hours",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 77260.02,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/336798278423?_skw=RTX+5090&hash=item4e6abde317%3Ag%3A0bEAAeSwdb9qq%7Eoa&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 77260,
+    "lowestStore": "eBay",
+    "lowestPrice": 77260,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|128161479073|0",
+    "store": "eBay",
+    "name": "GIGABYTE RTX 5080 16GB GDDR7 GV-N5080GAMING OC-16GD",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/2dMAAeSwWy9q4lYc/s-l225.jpg",
+    "description": "GIGABYTE RTX 5080 16GB GDDR7 GV-N5080GAMING OC-16GD",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 21626.82,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/128161479073?_skw=RTX+5080&hash=item1dd704f9a1%3Ag%3A2dMAAeSwWy9q4lYc&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 21627,
+    "lowestStore": "eBay",
+    "lowestPrice": 21627,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|376889225374|0",
+    "store": "eBay",
+    "name": "AX Esports Rebel RTX 5080 X3W OC 16GB Graphics Card GDDR7 360W-TDP 316*131*65mm",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/rO0AAeSw06Bpcz~X/s-l225.jpg",
+    "description": "AX Esports Rebel RTX 5080 X3W OC 16GB Graphics Card GDDR7 360W-TDP 316*131*65mm",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 22998.55,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/376889225374?_skw=RTX+5080&hash=item57c059309e%3Ag%3ArO0AAeSw06Bpcz%7EX&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 22999,
+    "lowestStore": "eBay",
+    "lowestPrice": 22999,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|257694985477|0",
+    "store": "eBay",
+    "name": "PNY GeForce RTX 5080 16GB GDDR7 ARGB EPIC-X OC Triple Fan VCG508016TFXXPB1-O ",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/9SkAAeSwhDJqiF4a/s-l225.jpg",
+    "description": "PNY GeForce RTX 5080 16GB GDDR7 ARGB EPIC-X OC Triple Fan VCG508016TFXXPB1-O ",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 21911.66,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/257694985477?_skw=RTX+5080&hash=item3bffd16d05%3Ag%3A9SkAAeSwhDJqiF4a&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 21912,
+    "lowestStore": "eBay",
+    "lowestPrice": 21912,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|336409899819|0",
+    "store": "eBay",
+    "name": "GALAX GeForce RTX 5080 16GB HOF OC LAB PLUS-X GDDR7 Graphics card Full 4K Gaming",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/NXgAAeSwQAVpeaki/s-l225.jpg",
+    "description": "GALAX GeForce RTX 5080 16GB HOF OC LAB PLUS-X GDDR7 Graphics card Full 4K Gaming",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 26679.79,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/336409899819?_skw=RTX+5080&hash=item4e5397b32b%3Ag%3ANXgAAeSwQAVpeaki&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 26680,
+    "lowestStore": "eBay",
+    "lowestPrice": 26680,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|237156699261|0",
+    "store": "eBay",
+    "name": "NEW System Pull ASUS Prime 5070 Ti PRIME-RTX5070TI-16G",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/Ad0AAeSwcVRq5~OV/s-l225.jpg",
+    "description": "NEW System Pull ASUS Prime 5070 Ti PRIME-RTX5070TI-16G",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 11964.03,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/237156699261?_skw=RTX+5070&hash=item3737a40c7d%3Ag%3AAd0AAeSwcVRq5%7EOV&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Open box",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 11964,
+    "lowestStore": "eBay",
+    "lowestPrice": 11964,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|366417708908|0",
+    "store": "eBay",
+    "name": "NVIDIA GeForce RTX 5070 Ti 16GB 2-Slot Blower Cooler OEM",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Graphics Card",
+    "image": "https://i.ebayimg.com/images/g/QrYAAeSwGYJqCvEj/s-l225.jpg",
+    "description": "NVIDIA GeForce RTX 5070 Ti 16GB 2-Slot Blower Cooler OEM",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 18397,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/366417708908?_skw=RTX+5070+Ti&hash=item555032876c%3Ag%3AQrYAAeSwGYJqCvEj&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Open box",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 18397,
+    "lowestStore": "eBay",
+    "lowestPrice": 18397,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|336549743360|0",
+    "store": "eBay",
+    "name": "Kingston FURY Beast RGB 16GB (2 x 8GB) DDR5 - KF552C40BBAK2-16",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/~xoAAeSwDG1pG9jC/s-l225.jpg",
+    "description": "Kingston FURY Beast RGB 16GB (2 x 8GB) DDR5 - KF552C40BBAK2-16",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 2760.84,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/336549743360?_skw=DDR5+RAM&hash=item4e5bed8b00%3Ag%3A%7ExoAAeSwDG1pG9jC&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 2761,
+    "lowestStore": "eBay",
+    "lowestPrice": 2761,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|377424872584|0",
+    "store": "eBay",
+    "name": "Samsung 16GB LPCAMM2 PC5 7500 DDR5 LPDDR5X CAMM2 M561K1LC4DM0-CCTGM RAM Memory",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/ErcAAeSwhKZqgpUM/s-l225.jpg",
+    "description": "Samsung 16GB LPCAMM2 PC5 7500 DDR5 LPDDR5X CAMM2 M561K1LC4DM0-CCTGM RAM Memory",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 1739.39,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/377424872584?_skw=DDR5+RAM&hash=item57e0468488%3Ag%3AErcAAeSwhKZqgpUM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 1739,
+    "lowestStore": "eBay",
+    "lowestPrice": 1739,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|960120660975|0",
+    "store": "eBay",
+    "name": "Samsung DDR5 32GB 4800MHz PC5-38400 2RX8 UDIMM Memory Ram (M323R4GA3BB0-CQK)",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/rpUAAeSwlHlq4BaZ/s-l225.jpg",
+    "description": "Samsung DDR5 32GB 4800MHz PC5-38400 2RX8 UDIMM Memory Ram (M323R4GA3BB0-CQK)",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 3681.24,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/960120660975?_skw=DDR5+RAM&hash=itemdf8ba6a3ef%3Ag%3ArpUAAeSwlHlq4BaZ&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 3681,
+    "lowestStore": "eBay",
+    "lowestPrice": 3681,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|377612348473|0",
+    "store": "eBay",
+    "name": "Samsung 16GB 2x8GB DDR5-5600 SODIMM Laptop RAM PC5-44800 CL46",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/zAgAAeSwXWpqx8HF/s-l225.jpg",
+    "description": "Samsung 16GB 2x8GB DDR5-5600 SODIMM Laptop RAM PC5-44800 CL46",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 1335.19,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/377612348473?_skw=DDR5+RAM&hash=item57eb732c39%3Ag%3AzAgAAeSwXWpqx8HF&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 1335,
+    "lowestStore": "eBay",
+    "lowestPrice": 1335,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|920012810535|0",
+    "store": "eBay",
+    "name": "Micron 8GB 1RX16 PC5-5600B-UC0-1110-XT DDR5 UDIMM",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/D-oAAeSwT55qWQr2/s-l225.jpg",
+    "description": "Micron 8GB 1RX16 PC5-5600B-UC0-1110-XT DDR5 UDIMM",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 989.24,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/920012810535?_skw=DDR5+RAM&hash=itemd635096927%3Ag%3AD-oAAeSwT55qWQr2&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 989,
+    "lowestStore": "eBay",
+    "lowestPrice": 989,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|287650065666|0",
+    "store": "eBay",
+    "name": "Micron 32GB 1x32GB DDR5 5600 PC5-5600 CL46 2Rx8 ECC SODIMM SOEDIMM Memory RAM",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/QwQAAeSwXudq0Oys/s-l225.jpg",
+    "description": "Micron 32GB 1x32GB DDR5 5600 PC5-5600 CL46 2Rx8 ECC SODIMM SOEDIMM Memory RAM",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 3856.1,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/287650065666?_skw=DDR5+RAM&hash=item42f947ad02%3Ag%3AQwQAAeSwXudq0Oys&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Open box",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 3856,
+    "lowestStore": "eBay",
+    "lowestPrice": 3856,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|336458361814|0",
+    "store": "eBay",
+    "name": "Kingston KVR56U46BS6-8 8GB DDR5 5600MHz CL46 1.1V Memory Module",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "RAM",
+    "image": "https://i.ebayimg.com/images/g/X4IAAeSwxRxq0jnb/s-l225.jpg",
+    "description": "Kingston KVR56U46BS6-8 8GB DDR5 5600MHz CL46 1.1V Memory Module",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 2062.05,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/336458361814?_skw=DDR5+RAM&hash=item4e567b2bd6%3Ag%3AX4IAAeSwxRxq0jnb&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 2062,
+    "lowestStore": "eBay",
+    "lowestPrice": 2062,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|327419744564|0",
+    "store": "eBay",
+    "name": "Samsung PM981a 1TB M.2 2280 PCIe Gen3 x4 NVMe SSD MZ-VLB1T0B MZVLB1T0HBLR-00000",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "SSD",
+    "image": "https://i.ebayimg.com/images/g/HAAAAeSwqPNq21-~/s-l225.jpg",
+    "description": "Samsung PM981a 1TB M.2 2280 PCIe Gen3 x4 NVMe SSD MZ-VLB1T0B MZVLB1T0HBLR-00000",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 1617.26,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/327419744564?_skw=NVMe+SSD&hash=item4c3bbcd134%3Ag%3AHAAAAeSwqPNq21-%7E&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 1617,
+    "lowestStore": "eBay",
+    "lowestPrice": 1617,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|287344223669|0",
+    "store": "eBay",
+    "name": "Samsung MZ‑PLL6T4C 0FW2K0 PM1725b 6.4TB HHHL MZPLL6T4HMLA-00AD3 PCIE NVMe SSD",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "SSD",
+    "image": "https://i.ebayimg.com/images/g/hwIAAeSwQMdqDp01/s-l225.jpg",
+    "description": "Samsung MZ‑PLL6T4C 0FW2K0 PM1725b 6.4TB HHHL MZPLL6T4HMLA-00AD3 PCIE NVMe SSD",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 6552.61,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/287344223669?_skw=NVMe+SSD&hash=item42e70ce5b5%3Ag%3AhwIAAeSwQMdqDp01&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 6553,
+    "lowestStore": "eBay",
+    "lowestPrice": 6553,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|227510868050|0",
+    "store": "eBay",
+    "name": "Samsung 990 EVO SSD M2 NVMe PCIe 4.0x4/5.0x2 1TB (MZ-V9E1T0BW)",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "SSD",
+    "image": "https://i.ebayimg.com/images/g/Bn4AAeSwi1JqYKy4/s-l225.jpg",
+    "description": "Samsung 990 EVO SSD M2 NVMe PCIe 4.0x4/5.0x2 1TB (MZ-V9E1T0BW)",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 1656.56,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/227510868050?_skw=NVMe+SSD&hash=item34f8b45852%3Ag%3ABn4AAeSwi1JqYKy4&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 1657,
+    "lowestStore": "eBay",
+    "lowestPrice": 1657,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|800832257393|0",
+    "store": "eBay",
+    "name": "Samsung PM983 960GB M.2 SSD NVMe 22110 PCIe MZ-1LB9600 MZ1LB960HAJQ-00AMV",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "SSD",
+    "image": "https://i.ebayimg.com/images/g/VxkAAeSwWJFq5A1D/s-l225.jpg",
+    "description": "Samsung PM983 960GB M.2 SSD NVMe 22110 PCIe MZ-1LB9600 MZ1LB960HAJQ-00AMV",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 1371.26,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/800832257393?_skw=NVMe+SSD&hash=itemba75527d71%3Ag%3AVxkAAeSwWJFq5A1D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 1371,
+    "lowestStore": "eBay",
+    "lowestPrice": 1371,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|860059284573|0",
+    "store": "eBay",
+    "name": "Samsung SSD 980 1TB V-NAND NVMe M.2 2280 Internal SSD - MZ-V8V1T0",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "SSD",
+    "image": "https://i.ebayimg.com/images/g/XY4AAeSwkx5q1Kcl/s-l225.jpg",
+    "description": "Samsung SSD 980 1TB V-NAND NVMe M.2 2280 Internal SSD - MZ-V8V1T0",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 1155.7,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/860059284573?_skw=NVMe+SSD&hash=itemc83f87345d%3Ag%3AXY4AAeSwkx5q1Kcl&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 1156,
+    "lowestStore": "eBay",
+    "lowestPrice": 1156,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|158132590041|0",
+    "store": "eBay",
+    "name": "SAMSUNG MZQL23T8HCLS-00A07 3.84TB PM9A3 4.0 2.5IN NVMe SSD",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "SSD",
+    "image": "https://i.ebayimg.com/images/g/4qUAAeSwCbtqzTaB/s-l225.jpg",
+    "description": "SAMSUNG MZQL23T8HCLS-00A07 3.84TB PM9A3 4.0 2.5IN NVMe SSD",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 10022.18,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/158132590041?_skw=NVMe+SSD&hash=item24d16fd5d9%3Ag%3A4qUAAeSwCbtqzTaB&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 10022,
+    "lowestStore": "eBay",
+    "lowestPrice": 10022,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|398003774607|0",
+    "store": "eBay",
+    "name": "Samsung PM9A1a 1TB NVMe PCIe Gen4x4 M.2 2280 Internal SSD MZ-VL21T0B New",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "SSD",
+    "image": "https://i.ebayimg.com/images/g/xFkAAeSwpAdqGaRh/s-l225.jpg",
+    "description": "Samsung PM9A1a 1TB NVMe PCIe Gen4x4 M.2 2280 Internal SSD MZ-VL21T0B New",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 1321.57,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/398003774607?_skw=NVMe+SSD&hash=item5caadfa48f%3Ag%3AxFkAAeSwpAdqGaRh&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 1322,
+    "lowestStore": "eBay",
+    "lowestPrice": 1322,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|880018648538|0",
+    "store": "eBay",
+    "name": "MICRON MTFDKBA480TFR-1BC15ABYY 480GB NVME GEN4 M.2 7450 PRO 2280 SSD",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "SSD",
+    "image": "https://i.ebayimg.com/images/g/4HIAAeSwi6xq0Ld0/s-l225.jpg",
+    "description": "MICRON MTFDKBA480TFR-1BC15ABYY 480GB NVME GEN4 M.2 7450 PRO 2280 SSD",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 2751.73,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/880018648538?_skw=NVMe+SSD&hash=itemcce532edda%3Ag%3A4HIAAeSwi6xq0Ld0&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 2752,
+    "lowestStore": "eBay",
+    "lowestPrice": 2752,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|357587127122|0",
+    "store": "eBay",
+    "name": "ASUS ROG Strix Scar 16 G635LX-RW047W / Win11 16\" RTX5090 Ultra9 32GB/2TB",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Gaming Laptop",
+    "image": "https://i.ebayimg.com/images/g/PkMAAeSw-hpovmKF/s-l225.jpg",
+    "description": "ASUS ROG Strix Scar 16 G635LX-RW047W / Win11 16\" RTX5090 Ultra9 32GB/2TB",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 51054.57,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/357587127122?_skw=RTX+5090&hash=item5341da8b52%3Ag%3APkMAAeSw-hpovmKF&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 51055,
+    "lowestStore": "eBay",
+    "lowestPrice": 51055,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|357561401647|0",
+    "store": "eBay",
+    "name": "ASUS ROG Zephyrus G14 GA403WR-QS127W Win11 14\" RTX5070 Ti AMD AI 9HX 370 64G/1TB",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Gaming Laptop",
+    "image": "https://i.ebayimg.com/images/g/LjkAAeSw9R9ot9jW/s-l225.jpg",
+    "description": "ASUS ROG Zephyrus G14 GA403WR-QS127W Win11 14\" RTX5070 Ti AMD AI 9HX 370 64G/1TB",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 32002.68,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/357561401647?_skw=RTX+5070+Ti&hash=item534052012f%3Ag%3ALjkAAeSw9R9ot9jW&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 32003,
+    "lowestStore": "eBay",
+    "lowestPrice": 32003,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|800819995351|0",
+    "store": "eBay",
+    "name": "HP OMEN MAX 16-ah0760ng 16\" Intel Ultra 7 255HX RAM 32GB SSD 2TB RTX 5070 Ti -DE",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Gaming Laptop",
+    "image": "https://i.ebayimg.com/images/g/bUYAAeSwxE9qx4YT/s-l225.jpg",
+    "description": "HP OMEN MAX 16-ah0760ng 16\" Intel Ultra 7 255HX RAM 32GB SSD 2TB RTX 5070 Ti -DE",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 24019.22,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/800819995351?_skw=RTX+5070+Ti&hash=itemba749762d7%3Ag%3AbUYAAeSwxE9qx4YT&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Opened – never used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 24019,
+    "lowestStore": "eBay",
+    "lowestPrice": 24019,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|117498906204|417310791989",
+    "store": "eBay",
+    "name": "Ultra Slim Intel Core I7 8650U 15.6' 16-32GB RAM upto 2TB SSD Gaming PC Laptop",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Gaming Laptop",
+    "image": "https://i.ebayimg.com/images/g/pycAAeSwVYlq57lY/s-l225.jpg",
+    "description": "Ultra Slim Intel Core I7 8650U 15.6' 16-32GB RAM upto 2TB SSD Gaming PC Laptop",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 5183.08,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/117498906204?_skw=Gaming+Laptop&hash=item1b5b7b065c%3Ag%3ApycAAeSwVYlq57lY&amdata=enc%3AAQALAAAA8Of5zIIojhOf%2BkQK%2Bxzjn7kkB%2BzeYhuRmbgMBbj%2FCR9PW9cR51oGpXSklVhjtmgiKFeIDx4OitaoMb2A3DkVaTsQrOpfY%2FfqKLxFUTM0VU%2FfZP%2F5RAoUSWsey7kDDJOdAYI%2Fi3lc8ZlIE3BecrHmsVN%2Ffm5DYeEnUs2CgejbjxC1Mgx3YXuVI7ZV46iETgYb7mQXbVnk4pPH7er5lq8Z8FcSpSy%2FN5Zkc1tbWK1Msk6M4rCxWbDeKyiSW0lK4nmWfCsKh%2BDVsJU5uUceX%2Bg4T%2FbPMkwQha8vUifKebu9Lxcf%2BifZB8tXsqWVUouVooFAiw%3D%3D&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 5183,
+    "lowestStore": "eBay",
+    "lowestPrice": 5183,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|900047198703|595453129141",
+    "store": "eBay",
+    "name": "14.1\" Intel Core I9-10980HK 16/32 GB RAM upto 2TB SSD 1920*1080HD Gaming Laptop",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Gaming Laptop",
+    "image": "https://i.ebayimg.com/images/g/npQAAeSw6Ltq4hRU/s-l225.jpg",
+    "description": "14.1\" Intel Core I9-10980HK 16/32 GB RAM upto 2TB SSD 1920*1080HD Gaming Laptop",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 3648.57,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/900047198703?_skw=Gaming+Laptop&hash=itemd18efe59ef%3Ag%3AnpQAAeSw6Ltq4hRU&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 3649,
+    "lowestStore": "eBay",
+    "lowestPrice": 3649,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|377612934930|0",
+    "store": "eBay",
+    "name": "Dell G15 5511 15.6''i7-11800H 16GB 512GB SSD GeForce RTX 3050",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Gaming Laptop",
+    "image": "https://i.ebayimg.com/images/g/pSsAAeSwqPNq51RM/s-l225.jpg",
+    "description": "Dell G15 5511 15.6''i7-11800H 16GB 512GB SSD GeForce RTX 3050",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 6432.97,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/377612934930?_skw=Gaming+Laptop&hash=item57eb7c1f12%3Ag%3ApSsAAeSwqPNq51RM&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 6433,
+    "lowestStore": "eBay",
+    "lowestPrice": 6433,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|327350792813|0",
+    "store": "eBay",
+    "name": "HP Victus 15.6\" i5-13420H 16GB 512GB RTX 4050 6GB 144Hz Gaming Laptop",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Gaming Laptop",
+    "image": "https://i.ebayimg.com/images/g/Kd8AAeSwPEtqoesD/s-l225.jpg",
+    "description": "HP Victus 15.6\" i5-13420H 16GB 512GB RTX 4050 6GB 144Hz Gaming Laptop",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 6442.08,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/327350792813?_skw=Gaming+Laptop&hash=item4c37a0b26d%3Ag%3AKd8AAeSwPEtqoesD&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 6442,
+    "lowestStore": "eBay",
+    "lowestPrice": 6442,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|820299686351|0",
+    "store": "eBay",
+    "name": "Acer V3-771G Gaming Laptop - i7-3630QM - 16GB - 360 GB SSD - GT 710M - Blu-Ray",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Gaming Laptop",
+    "image": "https://i.ebayimg.com/images/g/zfUAAeSwfvxq5dD3/s-l225.jpg",
+    "description": "Acer V3-771G Gaming Laptop - i7-3630QM - 16GB - 360 GB SSD - GT 710M - Blu-Ray",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 1589.78,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/820299686351?_skw=Gaming+Laptop&hash=itembefdabe1cf%3Ag%3AzfUAAeSwfvxq5dD3&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 1590,
+    "lowestStore": "eBay",
+    "lowestPrice": 1590,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|227499880513|0",
+    "store": "eBay",
+    "name": "MSI Katana 15 HX B14WEK-002US 15.6\" Gaming Laptop i7-14650HX 5050 16GB 512GB",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Gaming Laptop",
+    "image": "https://i.ebayimg.com/images/g/YpwAAeSwxZRqlgzT/s-l225.jpg",
+    "description": "MSI Katana 15 HX B14WEK-002US 15.6\" Gaming Laptop i7-14650HX 5050 16GB 512GB",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 7638.48,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/227499880513?_skw=Gaming+Laptop&hash=item34f80cb041%3Ag%3AYpwAAeSwxZRqlgzT&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 7638,
+    "lowestStore": "eBay",
+    "lowestPrice": 7638,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|236885686663|0",
+    "store": "eBay",
+    "name": "MSI GE62 6QC MS-16J5  15.6”i7-6700HQ 8GB RAM 128GB SSD GTX 960M",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Gaming Laptop",
+    "image": "https://i.ebayimg.com/images/g/rRMAAeSwVW1qNM~7/s-l225.jpg",
+    "description": "MSI GE62 6QC MS-16J5  15.6”i7-6700HQ 8GB RAM 128GB SSD GTX 960M",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 2300.78,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/236885686663?_skw=Gaming+Laptop&hash=item37277cb987%3Ag%3ArRMAAeSwVW1qNM%7E7&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 2301,
+    "lowestStore": "eBay",
+    "lowestPrice": 2301,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|358519502389|0",
+    "store": "eBay",
+    "name": "Panasonic Let's Note CF-SX2 Intel Core i5 SSD 128GB GB 8GB Used w/AC From JP",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Gaming Laptop",
+    "image": "https://i.ebayimg.com/images/g/Ls8AAeSwbyJqKzvm/s-l225.jpg",
+    "description": "Panasonic Let's Note CF-SX2 Intel Core i5 SSD 128GB GB 8GB Used w/AC From JP",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 1095.17,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/358519502389?_skw=Laptop&hash=item53796d7635%3Ag%3ALs8AAeSwbyJqKzvm&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 1095,
+    "lowestStore": "eBay",
+    "lowestPrice": 1095,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|128170084862|0",
+    "store": "eBay",
+    "name": "Panasonic Let's note CF-LX3 Core i5 4th 8GB SSD 128GB win 11 pro DVD 14 in JP",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Gaming Laptop",
+    "image": "https://i.ebayimg.com/images/g/R84AAeSw495q6FjI/s-l225.jpg",
+    "description": "Panasonic Let's note CF-LX3 Core i5 4th 8GB SSD 128GB win 11 pro DVD 14 in JP",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 1251.62,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/128170084862?_skw=Laptop&hash=item1dd78849fe%3Ag%3AR84AAeSw495q6FjI&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Used",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 1252,
+    "lowestStore": "eBay",
+    "lowestPrice": 1252,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|386891577141|0",
+    "store": "eBay",
+    "name": "MSI 27\" Gaming Monitor 1ms 170Hz (2560x1440) QHD Rapid IPS G-Sync HDR",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Monitor",
+    "image": "https://i.ebayimg.com/images/g/oRoAAOSwcEFmBcFy/s-l225.jpg",
+    "description": "MSI 27\" Gaming Monitor 1ms 170Hz (2560x1440) QHD Rapid IPS G-Sync HDR",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 1035.26,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/386891577141?_skw=Gaming+Monitor&hash=item5a1488f735%3Ag%3AoRoAAOSwcEFmBcFy&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "Excellent - Refurbished",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 1035,
+    "lowestStore": "eBay",
+    "lowestPrice": 1035,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|137773919818|0",
+    "store": "eBay",
+    "name": "Samsung G50SF 27\" Gaming Monitor OLED 180Hz Odyssey G5 S27FG500SN QD-OLED NEW!",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Monitor",
+    "image": "https://i.ebayimg.com/images/g/kpQAAeSw2DJqpval/s-l225.jpg",
+    "description": "Samsung G50SF 27\" Gaming Monitor OLED 180Hz Odyssey G5 S27FG500SN QD-OLED NEW!",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 2760.84,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/137773919818?_skw=Gaming+Monitor&hash=item2013f72e4a%3Ag%3AkpQAAeSw2DJqpval&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 2761,
+    "lowestStore": "eBay",
+    "lowestPrice": 2761,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|178536284889|0",
+    "store": "eBay",
+    "name": "Sony PlayStation CFI-ZDM1J 27\" QHD IPS 240Hz Gaming Monitor AC 100–240V, 50/60Hz",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Monitor",
+    "image": "https://i.ebayimg.com/images/g/K8kAAeSw5ahqunLu/s-l225.jpg",
+    "description": "Sony PlayStation CFI-ZDM1J 27\" QHD IPS 240Hz Gaming Monitor AC 100–240V, 50/60Hz",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 4472.06,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/178536284889?_skw=Gaming+Monitor&hash=item29919782d9%3Ag%3AK8kAAeSw5ahqunLu&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 4472,
+    "lowestStore": "eBay",
+    "lowestPrice": 4472,
+    "lowestCurrency": "NOK"
+  },
+  {
+    "id": "v1|298421218678|0",
+    "store": "eBay",
+    "name": "electriQ 24'' Fast IPS Full HD 240Hz Gaming Monitor eiq-24FHD240IPS",
+    "brand": "",
+    "gtin": "",
+    "mpn": "",
+    "category": "Monitor",
+    "image": "https://i.ebayimg.com/images/g/Z7MAAeSwAz9q0e-h/s-l225.jpg",
+    "description": "electriQ 24'' Fast IPS Full HD 240Hz Gaming Monitor eiq-24FHD240IPS",
+    "specifications": {},
+    "offers": [
+      {
+        "store": "eBay",
+        "price": 948.57,
+        "currency": "NOK",
+        "url": "https://www.ebay.com/itm/298421218678?_skw=Gaming+Monitor&hash=item457b4a6d76%3Ag%3AZ7MAAeSwAz9q0e-h&mkevt=1&mkcid=1&mkrid=711-53200-19255-0&campid=5339206505&customid=&toolid=10049",
+        "condition": "New",
+        "updatedAt": "2026-11-02",
+        "affiliate": true,
+        "affiliateNetwork": "eBay Partner Network"
+      }
+    ],
+    "updatedAt": "2026-11-02",
+    "price": 949,
+    "lowestStore": "eBay",
+    "lowestPrice": 949,
+    "lowestCurrency": "NOK"
+  }
+]
