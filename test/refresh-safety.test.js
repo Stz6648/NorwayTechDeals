@@ -147,3 +147,10 @@ test("eBay nested offers retain their affiliate URL, price and tracking flag", (
   assert.equal(offer.affiliate, true);
   assert.equal(offer.affiliateNetwork, "eBay Partner Network");
 });
+
+test("eBay listings without tracked links or images are excluded from the refresh", () => {
+  const source = fs.readFileSync(path.join(__dirname, "..", "update-products.js"), "utf8");
+  assert.match(source, /filter: "deliveryCountry:NO"/);
+  assert.match(source, /!item\.itemAffiliateWebUrl/);
+  assert.match(source, /!item\.image\?\.imageUrl/);
+});
