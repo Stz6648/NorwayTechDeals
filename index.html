@@ -473,9 +473,9 @@ async function searchProducts() {
                     : "";
 
             const affiliateUrl =
-                item.itemAffiliateWebUrl ||
-                item.itemWebUrl ||
-                "#";
+                item.itemAffiliateWebUrl || "";
+
+            if (!affiliateUrl || !affiliateUrl.includes("campid=")) return "";
 
             return `
                 <div class="card ebay-result">
@@ -632,19 +632,20 @@ async function loadProducts() {
                     : null;
 
             const lowestPrice =
-                lowestOffer
-                    ? Number(lowestOffer.price)
-                    : null;
+                Number.isFinite(Number(product.lowestPrice)) &&
+                String(product.lowestCurrency || "").toUpperCase() === "NOK"
+                    ? Number(product.lowestPrice)
+                    : (lowestOffer ? Number(lowestOffer.price) : null);
 
             const highestPrice =
-                offers.length > 0
-                    ? Math.max.apply(
-                        null,
-                        offers.map(function(offer) {
-                            return Number(offer.price);
-                        })
-                    )
-                    : null;
+                offers.length > 0 &&
+                offers.every(function(offer) {
+                    return String(offer.currency || "NOK").toUpperCase() === "NOK";
+                })
+                    ? Math.max.apply(null, offers.map(function(offer) {
+                        return Number(offer.price);
+                    }))
+                    : lowestPrice;
 
             const savings =
                 lowestPrice !== null &&
@@ -698,7 +699,7 @@ async function loadProducts() {
 
                         '<span class="offer-price">' +
                         price +
-                        " NOK</span>" +
+                        " " + escapeHtml(offer.currency || "NOK") + "</span>" +
 
                         "</a>" +
 
@@ -870,6 +871,8 @@ async function loadProducts() {
 
 
 
+
+loadProducts();
 
 </script>
 
