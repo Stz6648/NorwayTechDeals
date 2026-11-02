@@ -1,30 +1,14 @@
-name: Update Products
+name: Product update (temporarily disabled)
 
 on:
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
-  update:
+  disabled:
     runs-on: ubuntu-latest
-    env:
-      AWIN_ACER_FEED_URL: ${{ secrets.AWIN_ACER_FEED_URL }}
-      EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
-      EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
-      PROSHOP_FEED_URL: ${{ secrets.PROSHOP_FEED_URL }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Run product update
-        run: node update-products.js
-
-      - name: Save changes
+      - name: Explain safe mode
         run: |
-          git config user.name "TechKjop Bot"
-          git config user.email "actions@github.com"
-          git add products.json public/products.json ebay-products.json
-          git diff --cached --quiet || git commit -m "Automatic product update"
-          git push
+          echo "Automated product writes are paused."
+          echo "The current updater can replace the curated catalogue with mixed-format data."
+          echo "Re-enable only after the updater is rebuilt and validated against the production schema."
