@@ -222,8 +222,15 @@ async function fetchEbayProducts() {
 
         if (
           !item.itemId ||
-          !item.title
+          !item.title ||
+          !item.itemAffiliateWebUrl ||
+          !String(item.itemAffiliateWebUrl).includes("campid=")
         ) {
+          continue;
+        }
+
+        const listingText = String(item.title || "").toLowerCase();
+        if (/for parts|not working|broken|damaged|faulty|read description|read desc|untested|no returns|repair only/.test(listingText)) {
           continue;
         }
 
@@ -310,9 +317,6 @@ mpn:
               store:
                 "eBay",
 
-              country:
-                "NO",
-
               condition:
                 item.condition ||
                 "New",
@@ -343,8 +347,7 @@ mpn:
                 "eBay Partner Network",
 
               url:
-                item.itemWebUrl ||
-                `https://www.ebay.com/itm/${item.itemId}`,
+                item.itemAffiliateWebUrl,
 
               updatedAt:
                 new Date()
@@ -1299,507 +1302,66 @@ async function fetchProshopProducts() {
 }
 
 async function main() {
-
-  const files = [
-    "products.json",
-    "public/products.json"
-  ];
-
-
   let existing = [];
-
-
   try {
-
-    existing =
-      JSON.parse(
-        fs.readFileSync(
-          "products.json",
-          "utf8"
-        )
-      );
-
-  } catch (error) {
-
-    console.log(
-      "Could not read products.json:",
-      error.message
-    );
-
+    existing = JSON.parse(fs.readFileSync("products.json", "utf8"));
+    if (!Array.isArray(existing)) existing = [];
+  } catch {
     existing = [];
   }
 
+  const fetched = await fetchEbayProducts();
+  const source = fetched.length > 0 ? fetched : existing;
+  const blocked = /for parts|not working|broken|damaged|faulty|read description|read desc|untested|no returns|repair only/i;
+  const allowed = new Set([
+    "Graphics Card", "CPU", "RAM", "SSD", "Gaming Laptop",
+    "Laptop", "Gaming PC", "Monitor"
+  ]);
 
-  if (
-    !Array.isArray(existing)
-  ) {
-
-    existing = [];
-  }
-
-
-  const acerProducts =
-    await fetchAcerProducts();
-
-
-  const ebayProducts =
-    await fetchEbayProducts();
-  const proshopProducts = await fetchProshopProducts();
-
-  /*
-   * 保留现有产品。
-   * 删除旧 Acer、eBay 和 Proshop，
-   * 然后加入最新数据。
-   */
-
-  const preserved =
-    existing.filter(
-      product => {
-
-        if (!product) {
-          return false;
-        }
-
-
-        const id =
-          String(
-            product.id || ""
-          ).toLowerCase();
-
-
-        const store =
-          String(
-            product.store || ""
-          ).toLowerCase();
-
-
-        const offers =
-          Array.isArray(
-            product.offers
-          )
-            ? product.offers
-            : [];
-
-
-        const isAcer =
-          id.startsWith(
-            "acer-"
-          ) ||
-          store === "acer" ||
-          offers.some(
-            offer =>
-              String(
-                offer.store || ""
-              ).toLowerCase() ===
-              "acer"
-          );
-
-
-        const isEbay =
-          store === "ebay" ||
-          offers.some(
-            offer =>
-              String(
-                offer.store || ""
-              ).toLowerCase() ===
-              "ebay"
-          );
-        const isProshop =
-          store === "proshop" ||
-          store === "Proshop" ||
-          offers.some(
-            offer =>
-              String(
-                offer.store || ""
-              ).toLowerCase() === "proshop"
-          );
-
-        return (
-          !isAcer &&
-          !isEbay &&
-          !isProshop
-        );
-      }
+  const clean = source.filter(product => {
+    if (!product || String(product.store || "").toLowerCase() !== "ebay") return false;
+    if (!allowed.has(String(product.category || "").trim())) return false;
+    if (!product.name || blocked.test(product.name)) return false;
+    if (!product.image || !/^https:\/\/i\.ebayimg\.com\//i.test(product.image)) return false;
+    const offers = Array.isArray(product.offers) ? product.offers : [];
+    return offers.some(offer =>
+      offer &&
+      offer.affiliate === true &&
+      /^https:\/\/www\.ebay\.[^/]+\//i.test(offer.url || "") &&
+      String(offer.url).includes("campid=") &&
+      Number(offer.price) > 0
     );
+  }).map(product => ({
+    ...product,
+    offers: product.offers.filter(offer =>
+      offer &&
+      offer.affiliate === true &&
+      /^https:\/\/www\.ebay\.[^/]+\//i.test(offer.url || "") &&
+      String(offer.url).includes("campid=") &&
+      Number(offer.price) > 0
+    )
+  }));
 
-
-  const finalProducts =
-    preserved.concat(
-      acerProducts,
-      ebayProducts,
-      proshopProducts,
-    );
-  const allowedCategories = new Set([
-  "Graphics Card",
-  "CPU",
-  "RAM",
-  "SSD",
-  "Gaming Laptop",
-  "Laptop",
-  "Gaming PC",
-  "Monitor",
-  "Monitors",
-  "Motherboard",
-  "Motherboards"
-]);
-
-const excludedKeywords = [
-  "case",
-  "bag",
-  "backpack",
-  "sleeve",
-  "cover",
-  "license",
-  "software",
-  "operating system",
-  "windows",
-  "server",
-  "keyboard",
-  "mouse",
-  "headset",
-  "headphone",
-  "webcam",
-  "cable",
-  "adapter",
-  "hub",
-  "docking station",
-  "dock",
-  "charger",
-  "power adapter",
-  "printer",
-  "toner",
-  "ink cartridge",
-  "stand",
-"holder",
-"desk",
-"workstation",
-"laptopboard",
-"table",
-"support"
-];
-
-const filteredProducts = finalProducts.filter(product => {
-  const category = String(product.category || "").trim();
-
-  if (!allowedCategories.has(category)) {
-    return false;
-  }
-
-  const text = [
-    product.name,
-    product.description,
-    product.brand
-  ]
-    .filter(Boolean)
-    .join(" ")
-    .toLowerCase();
-
-  return !excludedKeywords.some(keyword =>
-    text.includes(keyword)
-  );
-});
-  const normalizedProducts = filteredProducts.map(product => ({
-  ...product,
-  price:
-    product.price !== null &&
-    product.price !== undefined &&
-    Number.isFinite(Number(product.price))
-      ? Math.round(Number(product.price))
-      : product.price
-}));
-
-const allowedStores = new Set([
-  "proshop",
-  "ebay",
-  "acer"
-]);
-
-function normalizeText(value) {
-  return String(value || "")
-    .toLowerCase()
-    .replace(/\b(new|used|refurbished|refurb|open box)\b/g, "")
-    .replace(/[^a-z0-9]+/g, " ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-
-function getProductKeys(product) {
-  const keys = [];
-
-  const gtin = String(
-    product.gtin || product.ean || ""
-  ).replace(/\D/g, "");
-
-  const brand = normalizeText(product.brand);
-
-  const mpn = normalizeText(
-    product.mpn ||
-    product.model_number ||
-    product.model
-  );
-
-  const name = normalizeText(
-    product.name || product.title
-  );
-
-  // 1. 商品条码：优先匹配
-  if (gtin.length >= 8) {
-    keys.push(`gtin:${gtin}`);
-  }
-
-  // 2. 厂商型号：不要求品牌字段完全一致
-  if (mpn.length >= 4) {
-    keys.push(`mpn:${mpn}`);
-  }
-
-  if (brand && mpn.length >= 4) {
-    keys.push(`mpn-brand:${brand}:${mpn}`);
-  }
-
-  // 3. 从标题提取具体型号编码
-  const rawName = String(
-    product.name || product.title || ""
-  );
-
-  const pattern =
-    /\b[a-z0-9]+(?:-[a-z0-9]+)+\b/gi;
-
-  for (const match of rawName.matchAll(pattern)) {
-    const token = normalizeText(match[0])
-      .replace(/\s+/g, "");
-
-    if (token.length >= 5) {
-      keys.push(`title-model:${token}`);
-
-      if (brand) {
-        keys.push(
-          `title-model-brand:${brand}:${token}`
-        );
-      }
-    }
-  }
-
-  // 4. 完整品牌名称作为后备匹配
-  if (brand && name.length >= 8) {
-    keys.push(`name:${brand}:${name}`);
-  }
-
-  return [...new Set(keys)];
-}
-const productGroups = new Map();
-
-for (const product of normalizedProducts) {
-  const store = String(product.store || "").toLowerCase();
-
-  if (!allowedStores.has(store)) {
-    continue;
-  }
-
-  const keys = getProductKeys(product);
-
-  let group = null;
-
-  for (const key of keys) {
-    if (productGroups.has(key)) {
-      group = productGroups.get(key);
-      break;
-    }
-  }
-
-  if (!group) {
-    group = [];
-  }
-
-  group.push(product);
-
-  for (const key of keys) {
-    productGroups.set(key, group);
-  }
-}
-
-const mergedProducts = [];
-const processedGroups = new Set();
-
-for (const group of productGroups.values()) {
-  if (processedGroups.has(group)) {
-    continue;
-  }
-
-  processedGroups.add(group);
-
-  const storeProducts = new Map();
-
-  for (const product of group) {
-    const store = String(product.store || "").toLowerCase();
-
-    if (!allowedStores.has(store)) {
-      continue;
-    }
-
-    if (!storeProducts.has(store)) {
-      storeProducts.set(store, product);
-    }
-  }
-
-  // 至少 3 家商家才保留
-  if (storeProducts.size < 3) {
-    continue;
-  }
-
-  const products = [...storeProducts.values()];
-
-  const base =
-    products.find(
-      product =>
-        String(product.store || "").toLowerCase() === "proshop"
-    ) || products[0];
-
-  const offers = products.map(createOffer);
-
-  offers.sort((a, b) => {
-    const priceA = Number(a.price);
-    const priceB = Number(b.price);
-
-    if (!Number.isFinite(priceA)) return 1;
-    if (!Number.isFinite(priceB)) return -1;
-
-    return priceA - priceB;
+  const seen = new Set();
+  const unique = clean.filter(product => {
+    const id = String(product.id || "");
+    if (!id || seen.has(id)) return false;
+    seen.add(id);
+    return true;
   });
 
-  const cheapest = offers[0];
-
-  mergedProducts.push({
-    ...base,
-    price:
-      Number.isFinite(Number(cheapest.price))
-        ? Math.round(Number(cheapest.price))
-        : cheapest.price,
-    store: cheapest.store,
-    offers,
-    lowestStore: cheapest.store,
-    lowestPrice:
-      Number.isFinite(Number(cheapest.price))
-        ? Math.round(Number(cheapest.price))
-        : cheapest.price,
-    lowestCurrency: cheapest.currency || "NOK"
-  });
-}
-
-const categoryLimits = {
-  "Graphics Card": 40,
-  "CPU": 40,
-  "RAM": 40,
-  "SSD": 40,
-  "Gaming Laptop": 40,
-  "Laptop": 40,
-  "Gaming PC": 40,
-  "Monitor": 40,
-  "Monitors": 40,
-  "Motherboard": 40,
-  "Motherboards": 40
-};
-
-const selectedProducts = [];
-
-for (const category of Object.keys(categoryLimits)) {
-  const products = mergedProducts
-    .filter(
-      product =>
-        String(product.category || "").trim() === category
-    )
-    .sort(
-      (a, b) =>
-        (b.offers?.length || 0) -
-        (a.offers?.length || 0)
-    )
-    .slice(0, categoryLimits[category]);
-
-  selectedProducts.push(...products);
-}
-
-const compactProducts = selectedProducts;
-
-
-  const ebayFile =
-    "ebay-products.json";
-
-
-  if (
-    ebayProducts.length > 0
-  ) {
-
-    fs.writeFileSync(
-      ebayFile,
-
-      JSON.stringify(
-        ebayProducts,
-        null,
-        2
-      ),
-
-      "utf8"
-    );
-
-
-    console.log(
-      `eBay products saved: ${ebayProducts.length}`
-    );
-
-  } else {
-
-    console.log(
-      "No new eBay products - existing ebay-products.json preserved"
-    );
+  if (unique.length === 0) {
+    throw new Error("No verified eBay Partner Network listings found; existing catalogue was not overwritten.");
   }
 
+  fs.writeFileSync("products.json", JSON.stringify(unique, null, 2) + "\n", "utf8");
+  fs.writeFileSync("public/products.json", JSON.stringify(unique, null, 2) + "\n", "utf8");
+  if (fetched.length > 0) {
+    fs.writeFileSync("ebay-products.json", JSON.stringify(fetched, null, 2) + "\n", "utf8");
+  }
 
-  fs.writeFileSync(
-    "products.json",
-
-    JSON.stringify(
-      compactProducts,
-      null,
-      2
-    ),
-
-    "utf8"
-  );
-
-
-  fs.writeFileSync(
-    "public/products.json",
-
-    JSON.stringify(
-      compactProducts,
-      null,
-      2
-    ),
-
-    "utf8"
-  );
-
-
-  console.log(
-    `Existing products preserved: ${preserved.length}`
-  );
-
-
-  console.log(
-    `Acer products added: ${acerProducts.length}`
-  );
-
-
-  console.log(
-    `eBay products added: ${ebayProducts.length}`
-  );
-
-
-  console.log(
-    `Total products saved: ${finalProducts.length}`
-  );
+  console.log(`Published ${unique.length} eBay listings with tracked affiliate URLs.`);
 }
-
 
 main().catch(
   error => {
