@@ -802,14 +802,8 @@ function getCategory(row) {
   }
 
 
-  if (
-    text.includes("desktop") ||
-    text.includes("gaming pc") ||
-    text.includes("stationary")
-  ) {
-
-    return "Gaming PC";
-  }
+  if (text.includes("gaming pc") || text.includes("gamingpc")) return "Gaming PC";
+  if (text.includes("desktop pc") || text.includes("desktop computer") || text.includes("stationary pc")) return "Desktop PC";
 
 
   if (
@@ -971,10 +965,7 @@ async function fetchAcerProducts() {
         row.name;
 
 
-      const link =
-        row.aw_deep_link ||
-        row.link ||
-        row.url;
+      const link = row.aw_deep_link || "";
 
 
       const image =
@@ -1005,6 +996,8 @@ async function fetchAcerProducts() {
         !id ||
         !title ||
         !link ||
+        !/^https:\/\//i.test(link) ||
+        !/awin[1-9]\.com/i.test(link) ||
         price <= 0
       ) {
 
@@ -1068,6 +1061,15 @@ async function fetchAcerProducts() {
 
         country:
           "NO",
+
+        shippingToNorwayVerified:
+          true,
+
+        shipping:
+          0,
+
+        shippingCostKnown:
+          true,
 
         condition:
           row.condition ||
@@ -1280,6 +1282,7 @@ async function main() {
   "Gaming Laptop",
   "Laptop",
   "Gaming PC",
+  "Desktop PC",
   "Monitor",
   "Monitors",
   "Motherboard",
@@ -1371,7 +1374,9 @@ function createOffer(product) {
 
   const price = Number(product.price);
   const url = String(product.url || "");
-  if (!Number.isFinite(price) || price <= 0 || !url) {
+  const network = String(product.affiliateNetwork || "").toLowerCase();
+  const tracked = network.includes("ebay") ? url.includes("campid=") : network.includes("awin") ? /awin[1-9]\.com/i.test(url) : network.includes("adtraction") ? /adtraction\.com|adtr\.co/i.test(url) : false;
+  if (!Number.isFinite(price) || price <= 0 || !url || !tracked) {
     throw new Error("Cannot create offer from incomplete product source");
   }
 
@@ -1553,6 +1558,7 @@ for (const group of productGroups.values()) {
     "Laptop": "Laptops",
     "Gaming Laptop": "Laptops",
     "Gaming PC": "Gaming PCs",
+    "Desktop PC": "Desktop PCs",
     "Monitor": "Monitors",
     "Monitors": "Monitors"
   };
@@ -1583,6 +1589,7 @@ const categoryLimits = {
   "Gaming Laptop": 40,
   "Laptop": 40,
   "Gaming PC": 40,
+  "Desktop PC": 40,
   "Monitor": 40,
   "Monitors": 40,
   "Motherboard": 40,
