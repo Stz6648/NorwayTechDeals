@@ -1193,6 +1193,20 @@ async function main() {
     await fetchEbayProducts();
   const proshopProducts = await fetchProshopProducts();
 
+  let usdNokRate = null;
+  try {
+    const fxResponse = await fetch("https://open.er-api.com/v6/latest/USD");
+    const fxData = await fxResponse.json();
+    if (fxData.result === "success" && Number(fxData.rates && fxData.rates.NOK) > 0) {
+      usdNokRate = Number(fxData.rates.NOK);
+    }
+  } catch (error) {
+    console.error("Live USD/NOK rate unavailable:", error.message);
+  }
+  if (!usdNokRate) {
+    throw new Error("SAFE MODE: cannot compare USD and NOK offers without a live exchange rate.");
+  }
+
   /*
    * 保留现有产品。
    * 删除旧 Acer、eBay 和 Proshop，
@@ -1538,20 +1552,6 @@ for (const group of productGroups.values()) {
         String(product.store || "").toLowerCase() === "proshop"
     ) || products[0];
 
-  const offers = products.map(createOffer);
-
-  offers.sort((a, b) => {
-    const priceA = Number(a.price);
-    const priceB = Number(b.price);
-
-    if (!Number.isFinite(priceA)) return 1;
-    if (!Number.isFinite(priceB)) return -1;
-
-    return priceA - priceB;
-  });
-
-  const cheapest = offers[0];
-
   const categoryMap = {
     "Graphics Card": "Graphics Cards",
     "CPU": "Processors",
@@ -1564,22 +1564,46 @@ for (const group of productGroups.values()) {
     "Monitor": "Monitors",
     "Monitors": "Monitors"
   };
+  const finalCategory = categoryMap[String(base.category || "").trim()] || base.category;
+
+  const offers = products.map(createOffer).map(offer => {
+    const currency = String(offer.currency || "").toUpperCase();
+    const price = Number(offer.price);
+    const priceNok = currency === "NOK" ? price : currency === "USD" ? price * usdNokRate : null;
+    if (!Number.isFinite(priceNok) || priceNok <= 0) {
+      throw new Error("Cannot compare offer without a verified NOK conversion rate: " + (base.name || base.id));
+    }
+    return { ...offer, priceNok: Math.round(priceNok * 100) / 100 };
+  });
+
+  offers.sort((a, b) => a.priceNok - b.priceNok);
+  const cheapest = offers[0];
+  const limitUsd = {
+    "Graphics Cards": 2200, "Gaming PCs": 10000, "Desktop PCs": 10000,
+    "Laptops": 8000, "Processors": 2500, "Memory": 2000,
+    "Storage": 2500, "Monitors": 3000, "Motherboards": 1500
+  };
+  const priceLimitNok = (limitUsd[finalCategory] || 5000) * usdNokRate;
+  const priceReview = cheapest.priceNok > priceLimitNok;
+  const localOffer = offers.some(offer => String(offer.country || "").toUpperCase() === "NO" && offer.shippingToNorwayVerified === true);
+  const allLocal = offers.every(offer => String(offer.country || "").toUpperCase() === "NO");
 
   mergedProducts.push({
     ...base,
-    category: categoryMap[String(base.category || "").trim()] || base.category,
-    price:
-      Number.isFinite(Number(cheapest.price))
-        ? Math.round(Number(cheapest.price))
-        : cheapest.price,
+    category: finalCategory,
+    marketplace: localOffer ? "Norwegian retailer comparison" : "eBay US marketplace",
+    sourceMarket: allLocal ? "NO" : localOffer ? "NO+US" : "EBAY_US",
+    shippingToNorwayVerified: localOffer,
+    priceReview,
+    priceReviewReason: priceReview ? "High listing price compared with the category review threshold; verify the exact model and condition." : "",
+    price: cheapest.price,
+    currency: cheapest.currency,
     store: cheapest.store,
     offers,
     lowestStore: cheapest.store,
-    lowestPrice:
-      Number.isFinite(Number(cheapest.price))
-        ? Math.round(Number(cheapest.price))
-        : cheapest.price,
-    lowestCurrency: cheapest.currency || "NOK"
+    lowestPrice: cheapest.priceNok,
+    lowestCurrency: "NOK",
+    updatedAt: new Date().toISOString()
   });
 }
 
