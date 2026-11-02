@@ -396,7 +396,7 @@ async function searchProducts() {
             const name = item.title || "eBay product";
             const amount = item.price?.value;
             const currency = item.price?.currency || "";
-            const url = item.itemAffiliateWebUrl || item.itemWebUrl || "";
+            const url = item.itemAffiliateWebUrl || "";
             const image = item.image?.imageUrl || "/images/techkjop-placeholder.svg";
             const price = amount && currency ? `${escapeHtml(amount)} ${escapeHtml(currency)}` : "Check current price on eBay";
             return `<article class="card"><img src="${escapeHtml(image)}" alt="${escapeHtml(name)}" onerror="this.onerror=null;this.src='/images/techkjop-placeholder.svg'"><h2>${escapeHtml(name)}</h2><p>${price}</p><p>${escapeHtml(item.condition || "")}</p><p>Confirm delivery and availability on eBay.</p>${url ? `<a class="button" href="${escapeHtml(url)}" target="_blank" rel="${item.itemAffiliateWebUrl ? 'nofollow sponsored noopener' : 'nofollow noopener'}">View on eBay</a>` : ""}</article>`;
