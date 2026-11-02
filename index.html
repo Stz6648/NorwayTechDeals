@@ -380,8 +380,7 @@ async function searchProducts() {
     const container = document.getElementById("products");
     const status = document.getElementById("searchStatus");
     const title = document.getElementById("sectionTitle");
-
-    title.textContent = "🔎 eBay Results";
+    if (title) title.textContent = "🔎 eBay Results";
 
     status.textContent = "Searching eBay for: " + q;
 
