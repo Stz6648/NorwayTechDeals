@@ -1,0 +1,91 @@
+{
+  "slug": "beste-grafikkort-1440p",
+  "publish": false,
+  "title": "Beste grafikkort for 1440p-gaming på eBay (2026)",
+  "description": "Hvilke grafikkort passer for 1440p, og hva koster de på eBay.com? Utvalgte annonser med pris i USD, stand og ærlig info om frakt, MVA og toll til Norge.",
+  "h1": "Beste grafikkort for 1440p-gaming på eBay (2026)",
+  "intro": [
+    "Skal du spille i 1440p, er grafikkortet den delen som betyr mest for bildefrekvensen. Her har vi plukket ut annonser på eBay.com for tre kort i ulike prisklasser, og forklart hva du bør tenke på før du kjøper fra utlandet."
+  ],
+  "sections": [
+    {
+      "h2": "Hva trenger du for 1440p?",
+      "paragraphs": [
+        "Kortets ytelsesklasse avgjør hvor høye innstillinger og hvor høy bildefrekvens du kan kjøre. VRAM (skjermminne) er også viktig: 12 GB er et fornuftig minimum for 1440p i dag, mens 16 GB gir mer margin i krevende spill med høy teksturkvalitet.",
+        "Sjekk også at strømforsyningen er kraftig nok og at kortet får plass i kabinettet. Oppgitt anbefalt strømforsyning og kortlengde står på produsentens side for den aktuelle modellen."
+      ]
+    }
+  ],
+  "picksHeading": "Utvalgte annonser",
+  "picks": [
+    {
+      "label": "Billigste nye eller åpnet RTX 5070",
+      "category": "Graphics Cards",
+      "match": "RTX\\s*5070(?!\\s*Ti)",
+      "conditions": [
+        "new",
+        "open box"
+      ],
+      "minPrice": 600,
+      "pros": [
+        "Passer for 1440p med høye innstillinger i mange spill",
+        "GDDR7-minne og støtte for DLSS 4"
+      ],
+      "cons": [
+        "12 GB VRAM kan bli en begrensning i de mest krevende spillene med maks teksturer og ray tracing"
+      ]
+    },
+    {
+      "label": "Billigste brukte RTX 5070",
+      "category": "Graphics Cards",
+      "match": "RTX\\s*5070(?!\\s*Ti)",
+      "conditions": [
+        "used"
+      ],
+      "minPrice": 600,
+      "pros": [
+        "Kan gi lavere pris enn nytt"
+      ],
+      "cons": [
+        "Garantien er ofte uklar eller mangler",
+        "Be om bilde av serienummer og les selgerens vurderinger før du kjøper"
+      ]
+    },
+    {
+      "label": "Billigste nye eller åpnet RTX 5070 Ti",
+      "category": "Graphics Cards",
+      "match": "RTX\\s*5070\\s*Ti",
+      "conditions": [
+        "new",
+        "open box"
+      ],
+      "minPrice": 800,
+      "pros": [
+        "16 GB VRAM gir mer margin for fremtidige spill",
+        "Godt valg for 1440p med høy bildefrekvens"
+      ],
+      "cons": [
+        "Betydelig dyrere enn RTX 5070",
+        "Krever kraftig strømforsyning og plass i kabinettet"
+      ]
+    },
+    {
+      "label": "Billigste nye RTX 5080",
+      "category": "Graphics Cards",
+      "match": "RTX\\s*5080",
+      "exclude": "noctua|proart",
+      "conditions": [
+        "new"
+      ],
+      "minPrice": 1500,
+      "pros": [
+        "Topp ytelse for 1440p med høy oppdateringsfrekvens, og for 4K"
+      ],
+      "cons": [
+        "Overkill for mange 1440p-skjermer på 60-144 Hz",
+        "Svært høy pris, og MVA gjør at totalsummen blir enda høyere"
+      ]
+    }
+  ],
+  "howWeChoose": "Utvalget er laget fra annonsene i vår katalog. For hver modell viser vi den billigste annonsen i oppgitt stand. Vi hopper over annonser som ser ut som deler, bunter eller uvanlig billige for modellen. Vi har ikke testet kortene selv, og priser og tilgjengelighet endres hele tiden."
+}

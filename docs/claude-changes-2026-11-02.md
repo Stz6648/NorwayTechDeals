@@ -16,3 +16,12 @@ Backup: local tag `backup-main-2026-11-02` marks main before these changes. Prod
 3. contact@techkjop.no addresses left unchanged (mailbox domain not verified).
 4. Confirm merchant approvals, then update `data/merchants.json`.
 5. Re-download a fresh feed (snapshot is dated 2026-09-27) before any price is published.
+
+## Round 2 — eBay-only guide pages (drafts)
+- `scripts/build-guides.js` + `content/guides/*.json` generate Norwegian guide pages from `products.json`.
+- Two drafts, both `noindex` and left out of the sitemap until `"publish": true` is set in the JSON and the script is re-run:
+  - `/beste-grafikkort-1440p.html`
+  - `/beste-pc-oppgraderinger.html`
+- Prices are shown as eBay.com USD listing prices with the catalogue date. No NOK conversion, no Norway delivery claim.
+- Build fails if: merchant not approved in `data/merchants.json`, link lacks the eBay campaign id, currency is not USD, page shows NOK/kr amounts, disclosure or `rel="nofollow sponsored"` is missing.
+- Not done: titles that need Norwegian merchant prices (gaming-PC/laptop under X kr) — blocked on affiliate approval and a fresh feed.
