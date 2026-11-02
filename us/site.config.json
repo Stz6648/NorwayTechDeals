@@ -1,9 +1,9 @@
 {
   "_note": "Set publish to true only after: domain is registered and attached in Vercel, contact@ mail forwarding works, data is refreshed. The build refuses to publish while domain/contactEmail are placeholders.",
-  "brand": "Refurb Radar",
+  "brand": "Used Tech Radar",
   "tagline": "What you really save buying used, open-box and refurbished PC hardware on eBay.",
-  "domain": "https://refurbradar.com",
-  "contactEmail": "contact@refurbradar.com",
+  "domain": "https://usedtechradar.com",
+  "contactEmail": "contact@usedtechradar.com",
   "publish": false,
   "ebayCampId": "5339206505"
 }
