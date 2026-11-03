@@ -7,7 +7,7 @@ const path = require("node:path");
 const { execFileSync } = require("node:child_process");
 
 const root = path.resolve(__dirname, "..");
-const SITE = "https://norwaytechdeals.no";
+const SITE = "https://techkjop.no";
 const CAMPID = "5339206505";
 const products = JSON.parse(fs.readFileSync(path.join(root, "products.json"), "utf8"));
 const merchants = JSON.parse(fs.readFileSync(path.join(root, "data", "merchants.json"), "utf8"));
