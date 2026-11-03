@@ -4,6 +4,6 @@
   "tagline": "What you really save buying used, open-box and refurbished PC hardware on eBay.",
   "domain": "https://usedtechradar.com",
   "contactEmail": "contact@usedtechradar.com",
-  "publish": false,
+  "publish": true,
   "ebayCampId": "5339206505"
 }
