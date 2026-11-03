@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+<title id="title">Original gaming laptop illustration</title><desc id="desc">An unbranded gaming laptop with a glowing screen and RGB keyboard backlight.</desc>
+<defs>
+ <linearGradient id="lid" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3b536a"/><stop offset=".5" stop-color="#17283a"/><stop offset="1" stop-color="#08111d"/></linearGradient>
+ <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1d4a78"/><stop offset=".55" stop-color="#5b3bb0"/><stop offset="1" stop-color="#c5f36b"/></linearGradient>
+ <linearGradient id="base" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#33495f"/><stop offset="1" stop-color="#0b1521"/></linearGradient>
+ <linearGradient id="rgb" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#7eeaff"/><stop offset=".5" stop-color="#a77bff"/><stop offset="1" stop-color="#c5f36b"/></linearGradient>
+ <filter id="shadow"><feGaussianBlur stdDeviation="16"/></filter>
+</defs>
+<ellipse cx="450" cy="448" rx="360" ry="26" fill="#000" opacity=".5" filter="url(#shadow)"/>
+<path d="M215 60 685 60 710 340 190 340Z" fill="url(#lid)" stroke="#7894ad" stroke-width="4" stroke-linejoin="round"/>
+<path d="M240 82 662 82 683 318 217 318Z" fill="url(#screen)"/>
+<path d="M240 82 662 82 640 210 262 210Z" fill="#fff" opacity=".12"/>
+<g fill="#fff" opacity=".85"><rect x="290" y="130" width="150" height="14" rx="7"/><rect x="290" y="158" width="230" height="10" rx="5" opacity=".6"/><rect x="290" y="180" width="190" height="10" rx="5" opacity=".6"/><rect x="290" y="236" width="90" height="34" rx="9" fill="#c5f36b" opacity="1"/></g>
+<path d="M150 340 750 340 820 410 80 410Z" fill="url(#base)" stroke="#7894ad" stroke-width="4" stroke-linejoin="round"/>
+<path d="M80 410 820 410 806 428 94 428Z" fill="#0a131e" stroke="#4d6780" stroke-width="3"/>
+<path d="M190 358 710 358 750 392 150 392Z" fill="#0c1725"/>
+<g stroke="url(#rgb)" stroke-width="5" stroke-linecap="round" opacity=".95"><path d="M215 366 685 366"/><path d="M200 378 700 378"/><path d="M186 389 714 389"/></g>
+<path d="M395 398 505 398 515 408 385 408Z" fill="#1c2c3e" stroke="#4d6780" stroke-width="2"/>
+</svg>
