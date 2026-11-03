@@ -1,6 +1,6 @@
 {
   "_note": "Models for us/build.js model pages. A page is only generated and listed when the catalogue has enough qualifying listings.",
-  "minListings": 6,
+  "minListings": 8,
   "models": [
     {
       "slug": "rtx-5090",
@@ -209,6 +209,86 @@
       "match": "13700K",
       "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b",
       "minPrice": 150
+    },
+    {
+      "slug": "rtx-4070-ti",
+      "name": "RTX 4070 Ti",
+      "category": "Graphics Cards",
+      "match": "RTX\\s*4070\\s*Ti(?!\\s*Super)",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "minPrice": 400
+    },
+    {
+      "slug": "rx-7600",
+      "name": "RX 7600",
+      "category": "Graphics Cards",
+      "match": "RX\\s*7600",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "minPrice": 120
+    },
+    {
+      "slug": "rx-6800-xt",
+      "name": "RX 6800 XT",
+      "category": "Graphics Cards",
+      "match": "RX\\s*6800\\s*XT",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "minPrice": 200
+    },
+    {
+      "slug": "rx-6700-xt",
+      "name": "RX 6700 XT",
+      "category": "Graphics Cards",
+      "match": "RX\\s*6700\\s*XT",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "minPrice": 120
+    },
+    {
+      "slug": "ryzen-7-9700x",
+      "name": "Ryzen 7 9700X",
+      "category": "Processors",
+      "match": "9700X",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b",
+      "minPrice": 150
+    },
+    {
+      "slug": "ryzen-7-7700x",
+      "name": "Ryzen 7 7700X",
+      "category": "Processors",
+      "match": "7700X",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b",
+      "minPrice": 100
+    },
+    {
+      "slug": "ryzen-5-7600x",
+      "name": "Ryzen 5 7600X",
+      "category": "Processors",
+      "match": "7600X",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b",
+      "minPrice": 80
+    },
+    {
+      "slug": "core-i7-12700k",
+      "name": "Core i7-12700K",
+      "category": "Processors",
+      "match": "12700K",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b",
+      "minPrice": 80
+    },
+    {
+      "slug": "core-ultra-9-285k",
+      "name": "Core Ultra 9 285K",
+      "category": "Processors",
+      "match": "285K",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b",
+      "minPrice": 250
+    },
+    {
+      "slug": "core-ultra-7-265k",
+      "name": "Core Ultra 7 265K",
+      "category": "Processors",
+      "match": "265K",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b",
+      "minPrice": 200
     }
   ]
 }
