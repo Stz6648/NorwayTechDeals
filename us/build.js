@@ -131,13 +131,65 @@ function buildGuide(g) {
   write(g.slug, html);
 }
 
+
+// ---- Per-model price pages: data driven, generated only when the catalogue has enough real listings ----
+const modelCfg = JSON.parse(fs.readFileSync(path.join(here, "content", "models.json"), "utf8"));
+const median = a => { const s2 = [...a].sort((x, y) => x - y), m = Math.floor(s2.length / 2); return s2.length % 2 ? s2[m] : (s2[m - 1] + s2[m]) / 2; };
+const GROUP_ORDER = ["New", "Open box", "Used", "Refurbished"];
+const TIPS = {
+  "New": "Check that the seller is an established retailer with the original manufacturer warranty, and that the listing is not a gray-market import.",
+  "Open box": "Open box means returned or opened, usually in working order. Ask whether the original box, accessories and warranty are included.",
+  "Used": "Prefer sellers with high feedback and a clear return policy. Ask for photos of the actual card and, for GPUs, whether it was used for mining.",
+  "Refurbished": "Look at who refurbished it: manufacturer or eBay-certified programs carry a warranty, seller-refurbished items often do not."
+};
+const modelPages = [];
+function buildModel(m) {
+  const hits = [];
+  const re = new RegExp(m.match, "i"), ex = m.exclude ? new RegExp(m.exclude, "i") : null;
+  for (const p of products) {
+    if (p.category !== m.category) continue;
+    const o = (p.offers || [])[0];
+    if (!o || o.affiliate !== true || !(Number(o.price) > 0)) continue;
+    if (!re.test(p.name) || (ex && ex.test(p.name)) || BAD.test(p.name)) continue;
+    if (m.minPrice && Number(o.price) < m.minPrice) continue;
+    const g = groupOf(o.condition);
+    if (!GROUP_ORDER.includes(g)) continue;
+    if ((g === "New" || g === "Open box" || g === "Refurbished") && /\b(used|pre-?owned)\b/i.test(p.name)) continue;
+    if (g === "Used" && /\b(brand new|new sealed|sealed|new in box)\b/i.test(p.name)) continue;
+    hits.push({ p, o, g });
+  }
+  if (hits.length < modelCfg.minListings || new Set(hits.map(h => h.g)).size < 2) return;
+  for (const h of hits) check("model-" + m.slug, h);
+  const by = Object.fromEntries(GROUP_ORDER.map(g => [g, hits.filter(h => h.g === g).sort((a, b) => Number(a.o.price) - Number(b.o.price))]));
+  const newLow = by["New"].length ? Number(by["New"][0].o.price) : null;
+  const rows = GROUP_ORDER.filter(g => by[g].length).map(g => {
+    const prices = by[g].map(h => Number(h.o.price)), low = Math.min(...prices);
+    const diff = g === "New" || newLow == null ? "" : (low < newLow ? `${Math.round((1 - low / newLow) * 100)}% below` : `${Math.round((low / newLow - 1) * 100)}% above`);
+    return `<tr><td>${g}</td><td>${prices.length}</td><td>${usd(low)}</td><td>${usd(median(prices))}</td><td>${esc(diff)}</td></tr>`;
+  }).join("");
+  const lists = GROUP_ORDER.filter(g => by[g].length).map(g => `<h2>${g} ${esc(m.name)} on eBay</h2><p class="muted">${esc(TIPS[g])}</p><div class="tw"><table><thead><tr><th>Price</th><th>Listing</th><th>Condition</th></tr></thead><tbody>${by[g].slice(0, 5).map(h => `<tr><td>${usd(h.o.price)}</td><td><a href="${esc(h.o.url)}" target="_blank" rel="nofollow sponsored noopener">${esc(h.p.name.slice(0, 80))}${h.p.name.length > 80 ? "…" : ""} ↗</a></td><td>${esc(h.o.condition)}</td></tr>`).join("")}</tbody></table></div>`).join("");
+  const cheapestAll = hits.reduce((a, b) => Number(b.o.price) < Number(a.o.price) ? b : a);
+  const lead = `On ${esc(dateEn)} we found ${hits.length} qualifying eBay listings for the ${esc(m.name)}. ` + (newLow != null ? `The cheapest new one costs ${usd(newLow)}. ` : "") + `The lowest price in any condition is ${usd(cheapestAll.o.price)} (${esc(cheapestAll.g.toLowerCase())}).`;
+  const slug = "price-" + m.slug;
+  const body = `<h1>${esc(m.name)} price on eBay: new vs used vs refurbished</h1><p class="muted">Catalogue snapshot: ${esc(dateEn)}</p><p>${lead}</p>${PRICE_NOTICE}<h2>Price by condition</h2><div class="tw"><table><thead><tr><th>Condition</th><th>Listings</th><th>Lowest</th><th>Median</th><th>Lowest vs cheapest new</th></tr></thead><tbody>${rows}</tbody></table></div><p class="muted">Median and lowest are calculated from the listings in our catalogue snapshot, not from every eBay listing.</p>${lists}<h2>Before you buy</h2><p>Always compare the exact variant, check the seller's feedback and return policy, and read the full listing. A low price is only a good deal if the item is what it says it is.</p>${DISCLOSURE}`;
+  const html = page({ slug, title: `${m.name} price on eBay: new, used and refurbished`, desc: `Current eBay prices for the ${m.name}: new, open box, used and refurbished, with lowest and median price by condition.`, body, type: "article" });
+  if (/\bNOK\b|\bkr\b/.test(html)) errors.push(`${slug}: contains NOK/kr`);
+  if (!html.includes("eBay Partner Network")) errors.push(`${slug}: missing disclosure`);
+  if (/<a [^>]*href="https?:[^"]*ebay[^"]*"(?![^>]*sponsored)/.test(html)) errors.push(`${slug}: eBay link without sponsored rel`);
+  write(slug, html);
+  modelPages.push({ slug, name: m.name, category: m.category, count: hits.length, low: Number(cheapestAll.o.price) });
+}
+
 fs.mkdirSync(outDir, { recursive: true });
+for (const f of fs.readdirSync(outDir)) if (/^price-.*\.html$/.test(f)) fs.unlinkSync(path.join(outDir, f));
 for (const g of guides) buildGuide(g);
+for (const m of modelCfg.models) buildModel(m);
 
 write("index", page({
   slug: "", title: cfg.tagline, desc: "Honest price comparisons of new, open-box, used and refurbished PC hardware on eBay, with the risks spelled out.",
   body: `<h1>${esc(cfg.tagline)}</h1><p>We compare what the same hardware costs new, open-box, used and refurbished on eBay, and explain how to buy safely.</p>${PRICE_NOTICE}<h2>Guides</h2>` +
-    guides.map(g => `<a class="card" href="/${g.slug}.html"><b>${esc(g.h1)}</b><span>${esc(g.description)}</span></a>`).join("") + DISCLOSURE
+    guides.map(g => `<a class="card" href="/${g.slug}.html"><b>${esc(g.h1)}</b><span>${esc(g.description)}</span></a>`).join("") +
+    (modelPages.length ? `<h2>Price check by model</h2>` + ["Graphics Cards", "Processors"].map(c => modelPages.filter(x => x.category === c).length ? `<h3>${c}</h3>` + modelPages.filter(x => x.category === c).map(x => `<a class="card" href="/${x.slug}.html"><b>${esc(x.name)}</b><span>${x.count} listings, from ${usd(x.low)}</span></a>`).join("") : "").join("") : "") + DISCLOSURE
 }));
 write("about", page({ slug: "about", title: "About", desc: `About ${cfg.brand}.`, body: `<h1>About ${esc(cfg.brand)}</h1><p>${esc(cfg.brand)} is an independent site that compares prices for new, open-box, used and refurbished PC hardware on eBay. We earn a commission when you buy through our links, which is how the site is funded.</p><p>We do not sell anything ourselves and we have not tested the products listed. Our prices come from a catalogue snapshot and can be out of date by the time you read them.</p>${cfg.contactEmail ? `<p>Contact: <a href="mailto:${esc(cfg.contactEmail)}">${esc(cfg.contactEmail)}</a></p>` : ""}${DISCLOSURE}` }));
 write("affiliate-disclosure", page({ slug: "affiliate-disclosure", title: "Affiliate disclosure", desc: "How this site earns money from eBay links.", body: `<h1>Affiliate disclosure</h1><p>${esc(cfg.brand)} is a participant in the eBay Partner Network, an affiliate program. When you click a link to eBay on this site and make a qualifying purchase, we may earn a commission. It does not change the price you pay.</p><p>Commissions do not decide which listings appear. We list the cheapest qualifying listing in our catalogue for each category we compare. That is not the same as a recommendation of a particular seller. Always check the seller's feedback, the return policy and the exact condition before you buy.</p>` }));
@@ -145,9 +197,9 @@ write("privacy", page({ slug: "privacy", title: "Privacy", desc: "Privacy inform
 
 fs.writeFileSync(path.join(outDir, "robots.txt"), cfg.publish ? `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n` : "User-agent: *\nDisallow: /\n");
 if (cfg.publish) {
-  const urls = ["", ...guides.map(g => g.slug + ".html"), "about.html", "affiliate-disclosure.html"];
+  const urls = ["", ...guides.map(g => g.slug + ".html"), ...modelPages.map(x => x.slug + ".html"), "about.html", "affiliate-disclosure.html"];
   fs.writeFileSync(path.join(outDir, "sitemap.xml"), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls.map(u => `  <url><loc>${SITE}/${u}</loc><lastmod>${snapDate}</lastmod></url>`).join("\n") + "\n</urlset>\n");
 } else if (fs.existsSync(path.join(outDir, "sitemap.xml"))) fs.unlinkSync(path.join(outDir, "sitemap.xml"));
 
 if (errors.length) { console.error("US build failed:\n - " + errors.join("\n - ")); process.exit(1); }
-console.log(`US site built: ${guides.length} guides, ${cfg.publish ? "PUBLISHED" : "draft (noindex, robots disallow all)"}`);
+console.log(`US site built: ${guides.length} guides, ${modelPages.length} model pages, ${cfg.publish ? "PUBLISHED" : "draft (noindex, robots disallow all)"}`);
