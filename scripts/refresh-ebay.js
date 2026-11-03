@@ -40,6 +40,8 @@ async function getToken() {
 }
 
 const fixture = fixturePath ? JSON.parse(fs.readFileSync(fixturePath, "utf8")) : null;
+const NON_EN_CONDITION = /\b(neu|gebraucht|gut|sehr|generalüberholt|verkäufer|ricondizionato|eccellente|usato|nuovo|d'occasion|reconditionné|neuf|usado|nuevo)\b/i;
+
 async function search(q, conditionIds, offset) {
   if (fixture) return { itemSummaries: fixture };
   const url = "https://api.ebay.com/buy/browse/v1/item_summary/search?q=" + encodeURIComponent(q) +
@@ -79,6 +81,7 @@ async function search(q, conditionIds, offset) {
           const image = (it.image && it.image.imageUrl) || (it.thumbnailImages && it.thumbnailImages[0] && it.thumbnailImages[0].imageUrl);
           if (!/^https:\/\//.test(image || "")) continue;
           if (Array.isArray(it.buyingOptions) && !it.buyingOptions.includes("FIXED_PRICE")) continue; // skip auction-only (price = current bid)
+          if (NON_EN_CONDITION.test(String(it.condition || ""))) continue; // non-English labels come from other eBay sites
           if (!must.test(title) || (ex && ex.test(title)) || BAD_TITLE.test(title)) continue;
           if (spec.minPrice && price < spec.minPrice) continue;
           if (spec.maxPrice && price > spec.maxPrice) continue;
