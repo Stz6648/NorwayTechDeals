@@ -68,6 +68,7 @@ function page({ slug, title, desc, body, type = "website" }) {
 <html lang="en-US">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="google-site-verification" content="ziac4kcZYhkGJsz7Xocozv1VZAPNtLwRn6E55eAd3Kw" />
 <title>${esc(title)} | ${esc(cfg.brand)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="${ROBOTS}">
