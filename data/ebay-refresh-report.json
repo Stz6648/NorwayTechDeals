@@ -1,0 +1,38 @@
+{
+  "fetchedAt": "2026-11-03T15:59:32.106Z",
+  "mode": "live",
+  "apiCalls": 60,
+  "rawItems": 2646,
+  "kept": 1436,
+  "previous": 424,
+  "byCategory": {
+    "Graphics Cards": 209,
+    "Gaming PCs": 157,
+    "Desktop PCs": 138,
+    "Laptops": 240,
+    "Processors": 169,
+    "Memory": 177,
+    "Storage": 179,
+    "Monitors": 167
+  },
+  "byCondition": {
+    "New": 367,
+    "Neu": 1,
+    "Open box": 378,
+    "Neu: Sonstige (siehe Artikelbeschreibung)": 2,
+    "New – Open box": 2,
+    "Used": 347,
+    "Gebraucht": 1,
+    "Excellent - Refurbished": 155,
+    "Good - Refurbished": 25,
+    "Certified - Refurbished": 75,
+    "Very Good - Refurbished": 69,
+    "Certified refurbished": 4,
+    "Opened – never used": 1,
+    "Gut - Refurbished": 1,
+    "Vom Verkäufer generalüberholt": 1,
+    "Eccellente - Ricondizionato": 4,
+    "Sehr gut - Refurbished": 3
+  },
+  "failures": []
+}
