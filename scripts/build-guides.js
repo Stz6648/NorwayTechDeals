@@ -17,6 +17,8 @@ let catalogueDate = new Date().toISOString().slice(0, 10);
 try {
   catalogueDate = execFileSync("git", ["log", "-1", "--format=%cs", "--", "products.json"], { cwd: root, encoding: "utf8" }).trim() || catalogueDate;
 } catch (_) { /* keep fallback */ }
+const __stamps = products.flatMap(p => (p.offers || []).map(o => Date.parse(o.updatedAt || ""))).filter(Number.isFinite);
+if (__stamps.length) catalogueDate = new Date(Math.max(...__stamps)).toISOString().slice(0, 10); // real fetch date once refresh-ebay has run
 const dateNb = new Date(catalogueDate + "T12:00:00Z").toLocaleDateString("nb-NO", { day: "numeric", month: "long", year: "numeric" });
 
 const esc = v => String(v ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");

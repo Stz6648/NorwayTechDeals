@@ -1,0 +1,51 @@
+{
+  "slug": "refurbished-gaming-laptops-ebay",
+  "type": "picks",
+  "title": "Refurbished Gaming Laptops on eBay: What to Know Before You Buy",
+  "description": "Refurbished RTX gaming laptops on eBay, what the Certified, Excellent, Very Good and Good grades mean, and how to check a listing before you buy.",
+  "h1": "Refurbished Gaming Laptops on eBay: What to Know Before You Buy",
+  "intro": [
+    "A refurbished gaming laptop can cost noticeably less than a new one, and eBay's refurbished program adds warranty and return protection that ordinary used listings don't have. Below are the cheapest refurbished listings in our catalogue for three RTX laptop tiers, followed by how the condition grades work."
+  ],
+  "picksHeading": "Cheapest refurbished listings by GPU",
+  "picks": [
+    {
+      "label": "Cheapest refurbished RTX 5070 laptop",
+      "category": "Laptops",
+      "match": "RTX\\s*5070(?!\\s*Ti)",
+      "conditions": ["refurbished"],
+      "minPrice": 1000,
+      "pros": ["Refurbished listings can cost less than new", "Graded listings come with the eBay Refurbished program terms, see below"],
+      "cons": ["Check which grade the listing uses, since warranty length depends on it", "Check battery condition and what is included in the box"]
+    },
+    {
+      "label": "Cheapest refurbished RTX 5070 Ti laptop",
+      "category": "Laptops",
+      "match": "RTX\\s*5070\\s*Ti",
+      "conditions": ["refurbished"],
+      "minPrice": 1000,
+      "pros": ["More GPU headroom for high-refresh QHD gaming"],
+      "cons": ["Higher price, and heavier cooling needs", "Confirm the exact CPU, RAM and storage in the listing"]
+    },
+    {
+      "label": "Cheapest refurbished RTX 5090 laptop",
+      "category": "Laptops",
+      "match": "RTX\\s*5090",
+      "conditions": ["refurbished"],
+      "minPrice": 2500,
+      "pros": ["Top-tier laptop GPU"],
+      "cons": ["Very high price even refurbished", "Few listings, so check the seller carefully"]
+    }
+  ],
+  "howWeChoose": "The picks come from the listings in our catalogue. For each GPU tier we show the cheapest listing sold as refurbished and skip anything that looks like parts, a bundle or an unusually low price. This is not a review. We have not tested these laptops, and prices and availability change constantly.",
+  "sections": [
+    {
+      "h2": "What the eBay refurbished grades mean",
+      "paragraphs": [
+        "According to eBay's refurbished program pages, items sold under the program are tested and fully functional. Certified Refurbished items come in like-new condition from the brand or an authorized seller and carry a two-year warranty. Excellent, Very Good and Good items come from vetted sellers, differ in how much cosmetic wear they show, and carry a one-year warranty.",
+        "Seller Refurbished is different. It is a condition an individual seller chooses, it is not part of the official program, and the program's warranty terms are not stated to apply to it. Read that listing carefully.",
+        "eBay also describes a 30-day return window for program items and covers purchases with its Money Back Guarantee. The warranty has exclusions, including purchases made outside the US and accidental or cosmetic damage. Terms can change, so confirm them on the listing and on eBay's program pages before you buy."
+      ]
+    }
+  ]
+}
