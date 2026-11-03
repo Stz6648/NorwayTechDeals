@@ -9,7 +9,7 @@ name: Refresh eBay catalogue (opens a pull request)
 # Settings > Actions > General > "Allow GitHub Actions to create and approve pull requests".
 on:
   schedule:
-    - cron: "17 3 * * *"
+    - cron: "17 */6 * * *"
   workflow_dispatch:
 
 permissions:
