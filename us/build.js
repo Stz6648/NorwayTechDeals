@@ -159,7 +159,7 @@ function buildModel(m) {
     if (g === "Used" && /\b(brand new|new sealed|sealed|new in box)\b/i.test(p.name)) continue;
     hits.push({ p, o, g });
   }
-  if (hits.length < modelCfg.minListings || new Set(hits.map(h => h.g)).size < 2) return;
+  if (hits.length < modelCfg.minListings) return;
   for (const h of hits) check("model-" + m.slug, h);
   const by = Object.fromEntries(GROUP_ORDER.map(g => [g, hits.filter(h => h.g === g).sort((a, b) => Number(a.o.price) - Number(b.o.price))]));
   const newLow = by["New"].length ? Number(by["New"][0].o.price) : null;
@@ -172,8 +172,8 @@ function buildModel(m) {
   const cheapestAll = hits.reduce((a, b) => Number(b.o.price) < Number(a.o.price) ? b : a);
   const lead = `On ${esc(dateEn)} we found ${hits.length} qualifying eBay listings for the ${esc(m.name)}. ` + (newLow != null ? `The cheapest new one costs ${usd(newLow)}. ` : "") + `The lowest price in any condition is ${usd(cheapestAll.o.price)} (${esc(cheapestAll.g.toLowerCase())}).`;
   const slug = "price-" + m.slug;
-  const body = `<h1>${esc(m.name)} price on eBay: new vs used vs refurbished</h1><p class="muted">Catalogue snapshot: ${esc(dateEn)}</p><p>${lead}</p>${PRICE_NOTICE}<h2>Price by condition</h2><div class="tw"><table><thead><tr><th>Condition</th><th>Listings</th><th>Lowest</th><th>Median</th><th>Lowest vs cheapest new</th></tr></thead><tbody>${rows}</tbody></table></div><p class="muted">Median and lowest are calculated from the listings in our catalogue snapshot, not from every eBay listing.</p>${lists}<h2>Before you buy</h2><p>Always compare the exact variant, check the seller's feedback and return policy, and read the full listing. A low price is only a good deal if the item is what it says it is.</p>${DISCLOSURE}`;
-  const html = page({ slug, title: `${m.name} price on eBay: new, used and refurbished`, desc: `Current eBay prices for the ${m.name}: new, open box, used and refurbished, with lowest and median price by condition.`, body, type: "article" });
+  const body = `<h1>${esc(m.name)} price on eBay by condition</h1><p class="muted">Catalogue snapshot: ${esc(dateEn)}</p><p>${lead}</p>${PRICE_NOTICE}<h2>Price by condition</h2><div class="tw"><table><thead><tr><th>Condition</th><th>Listings</th><th>Lowest</th><th>Median</th><th>Lowest vs cheapest new</th></tr></thead><tbody>${rows}</tbody></table></div><p class="muted">Median and lowest are calculated from the listings in our catalogue snapshot, not from every eBay listing.</p>${lists}<h2>Before you buy</h2><p>Always compare the exact variant, check the seller's feedback and return policy, and read the full listing. A low price is only a good deal if the item is what it says it is.</p>${DISCLOSURE}`;
+  const html = page({ slug, title: `${m.name} price on eBay by condition`, desc: `Current eBay prices for the ${m.name}: new, open box, used and refurbished, with lowest and median price by condition.`, body, type: "article" });
   if (/\bNOK\b|\bkr\b/.test(html)) errors.push(`${slug}: contains NOK/kr`);
   if (!html.includes("eBay Partner Network")) errors.push(`${slug}: missing disclosure`);
   if (/<a [^>]*href="https?:[^"]*ebay[^"]*"(?![^>]*sponsored)/.test(html)) errors.push(`${slug}: eBay link without sponsored rel`);
