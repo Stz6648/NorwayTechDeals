@@ -1,7 +1,10 @@
 name: Refresh eBay catalogue (opens a pull request)
 
 # Pulls fresh listings from the eBay Browse API, validates them, rebuilds the generated guide pages
-# and opens ONE pull request on branch data/ebay-refresh. It never pushes to main.
+# and opens ONE pull request on branch data/ebay-refresh, then merges it automatically.
+# It never pushes to main directly. Safety: it only reaches the merge step if the refresh, the
+# catalogue validation and the page builds all succeeded (refresh-ebay.js also refuses a catalogue
+# that shrank below half of the previous one). If the merge fails, the pull request stays open.
 # Needs repository secrets EBAY_CLIENT_ID and EBAY_CLIENT_SECRET, and the setting
 # Settings > Actions > General > "Allow GitHub Actions to create and approve pull requests".
 on:
@@ -54,5 +57,13 @@ jobs:
           if [ "$(gh pr list --head data/ebay-refresh --state open --json number --jq length)" = "0" ]; then
             gh pr create --base "${{ github.event.repository.default_branch }}" --head data/ebay-refresh \
               --title "Refresh eBay catalogue" \
-              --body "Automated refresh. Check the Vercel preview and data/ebay-refresh-report.json before merging."
+              --body "Automated refresh. Merged automatically once validation passed. See data/ebay-refresh-report.json."
           fi
+      - name: Merge the refresh pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          N=$(gh pr list --head data/ebay-refresh --state open --json number --jq '.[0].number // empty')
+          if [ -z "$N" ]; then echo "Nothing to merge."; exit 0; fi
+          gh api -X PUT "repos/${{ github.repository }}/pulls/$N/merge" -f merge_method=merge \
+            || echo "::warning::Automatic merge of PR #$N failed; it stays open for manual review."
