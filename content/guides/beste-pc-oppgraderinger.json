@@ -1,0 +1,61 @@
+{
+  "slug": "beste-pc-oppgraderinger",
+  "publish": false,
+  "title": "Beste PC-oppgraderinger for pengene: RAM og SSD fra eBay",
+  "description": "32 GB DDR5-minne og 1 TB NVMe SSD er to av de enkleste oppgraderingene. Se utvalgte eBay-annonser med pris i USD og sjekkliste for kjøp til Norge.",
+  "h1": "Beste PC-oppgraderinger for pengene: RAM og SSD",
+  "intro": [
+    "Mer minne og en rask SSD er blant de rimeligste måtene å gjøre en PC raskere på. Under har vi plukket ut annonser på eBay.com for 32 GB DDR5-minne og 1 TB NVMe SSD fra kjente merker."
+  ],
+  "sections": [
+    {
+      "h2": "Sjekk dette før du kjøper",
+      "paragraphs": [
+        "DDR5-minne passer bare til hovedkort med DDR5. Har du en eldre PC med DDR4, må du bytte hovedkort og prosessor også. Sjekk hovedkortets spesifikasjoner for støttet hastighet og eventuell liste over godkjente minnemoduler.",
+        "For SSD må hovedkortet ha et ledig M.2-spor, vanligvis i størrelsen 2280. Noen annonser er OEM- eller bulk-pakker, og garantien kan da være kortere enn for butikkpakker."
+      ]
+    }
+  ],
+  "picksHeading": "Utvalgte annonser",
+  "picks": [
+    {
+      "label": "32 GB DDR5-6000 (2 × 16 GB), nytt",
+      "category": "Memory",
+      "match": "32\\s?GB.*DDR5.*6000|DDR5.*6000.*32\\s?GB",
+      "brand": "corsair|g\\.?skill|kingston|crucial|team ?group|t-force|patriot",
+      "exclude": "sodimm|so-dimm|ecc|registered",
+      "conditions": [
+        "new"
+      ],
+      "count": 2,
+      "pros": [
+        "32 GB er et trygt nivå for moderne spill og flere programmer samtidig",
+        "DDR5-6000 er en ofte anbefalt hastighet for nyere AMD- og Intel-plattformer"
+      ],
+      "cons": [
+        "Krever hovedkort med DDR5",
+        "Sjekk at minnets XMP/EXPO-profil fungerer med ditt hovedkort"
+      ]
+    },
+    {
+      "label": "1 TB NVMe SSD fra kjent merke, ny",
+      "category": "Storage",
+      "match": "\\b1\\s?TB\\b.*(nvme|m\\.2)|(nvme|m\\.2).*\\b1\\s?TB\\b",
+      "brand": "samsung|kingston|crucial|western digital|wd|sandisk|predator|corsair|solidigm|sk hynix|team ?group",
+      "exclude": "2tb|4tb|lot|sata",
+      "conditions": [
+        "new"
+      ],
+      "count": 3,
+      "pros": [
+        "Rask lagring uten bevegelige deler",
+        "1 TB gir plass til flere store spill"
+      ],
+      "cons": [
+        "Krever ledig M.2-spor på hovedkortet",
+        "Forskjellen mellom PCIe 3.0 og 4.0 kan merkes lite i vanlig bruk"
+      ]
+    }
+  ],
+  "howWeChoose": "Utvalget er laget fra annonsene i vår katalog. Vi viser de billigste nye annonsene fra kjente merker som oppfyller kravene i overskriften. Vi hopper over annonser for bærbare moduler (SODIMM), servertyper og bulkpakker. Vi har ikke testet produktene selv, og priser og tilgjengelighet endres hele tiden."
+}

@@ -1,0 +1,7 @@
+{
+  "_note": "Only merchants with status 'approved' may be published with affiliate links. Update after confirming in the network dashboard.",
+  "eBay": { "network": "eBay Partner Network", "status": "approved", "market": "US" },
+  "Proshop": { "network": "Partner-Ads", "status": "unconfirmed", "market": "NO" },
+  "Acer": { "network": "Awin", "status": "unconfirmed", "market": "NO" },
+  "MAXFPS": { "network": "unknown", "status": "approved-network-unknown", "market": "NO" }
+}
