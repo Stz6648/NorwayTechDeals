@@ -23,7 +23,7 @@
       "category": "Graphics Cards",
       "q": "RTX 5090 graphics card",
       "mustMatch": "RTX\\s*5090",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 1200,
       "pages": 1
     },
@@ -31,7 +31,7 @@
       "category": "Graphics Cards",
       "q": "RTX 5080 graphics card",
       "mustMatch": "RTX\\s*5080",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 700,
       "pages": 1
     },
@@ -39,7 +39,7 @@
       "category": "Graphics Cards",
       "q": "RTX 5070 Ti graphics card",
       "mustMatch": "RTX\\s*5070\\s*Ti",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 500,
       "pages": 1
     },
@@ -47,7 +47,7 @@
       "category": "Graphics Cards",
       "q": "RTX 5070 graphics card",
       "mustMatch": "RTX\\s*5070",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 400,
       "pages": 1
     },
@@ -55,7 +55,7 @@
       "category": "Graphics Cards",
       "q": "RTX 5060 Ti graphics card",
       "mustMatch": "RTX\\s*5060",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 250,
       "pages": 1
     },
@@ -63,7 +63,7 @@
       "category": "Graphics Cards",
       "q": "RX 9070 XT graphics card",
       "mustMatch": "RX\\s*9070",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 350,
       "pages": 1
     },
@@ -103,7 +103,7 @@
       "category": "Processors",
       "q": "AMD Ryzen 7 processor",
       "mustMatch": "ryzen",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 60,
       "pages": 1
     },
@@ -111,7 +111,7 @@
       "category": "Processors",
       "q": "Intel Core i7 processor",
       "mustMatch": "core\\s*(ultra\\s*)?i?[579]",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 60,
       "pages": 1
     },
@@ -143,7 +143,7 @@
       "category": "Graphics Cards",
       "q": "RTX 4090 graphics card",
       "mustMatch": "RTX\\s*4090",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 900,
       "pages": 1
     },
@@ -151,7 +151,7 @@
       "category": "Graphics Cards",
       "q": "RTX 4080 Super graphics card",
       "mustMatch": "RTX\\s*4080",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 600,
       "pages": 1
     },
@@ -159,7 +159,7 @@
       "category": "Graphics Cards",
       "q": "RTX 4070 Ti Super graphics card",
       "mustMatch": "RTX\\s*4070\\s*Ti",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 400,
       "pages": 1
     },
@@ -167,7 +167,7 @@
       "category": "Graphics Cards",
       "q": "RTX 4070 Super graphics card",
       "mustMatch": "RTX\\s*4070",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 300,
       "pages": 1
     },
@@ -175,7 +175,7 @@
       "category": "Graphics Cards",
       "q": "RTX 4060 Ti graphics card",
       "mustMatch": "RTX\\s*4060\\s*Ti",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 200,
       "pages": 1
     },
@@ -183,7 +183,7 @@
       "category": "Graphics Cards",
       "q": "RTX 4060 graphics card",
       "mustMatch": "RTX\\s*4060",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 150,
       "pages": 1
     },
@@ -191,7 +191,7 @@
       "category": "Graphics Cards",
       "q": "RTX 3090 graphics card",
       "mustMatch": "RTX\\s*3090",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 400,
       "pages": 1
     },
@@ -199,7 +199,7 @@
       "category": "Graphics Cards",
       "q": "RTX 3080 graphics card",
       "mustMatch": "RTX\\s*3080",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 200,
       "pages": 1
     },
@@ -207,7 +207,7 @@
       "category": "Graphics Cards",
       "q": "RTX 3070 graphics card",
       "mustMatch": "RTX\\s*3070",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 120,
       "pages": 1
     },
@@ -215,7 +215,7 @@
       "category": "Graphics Cards",
       "q": "RTX 3060 Ti graphics card",
       "mustMatch": "RTX\\s*3060\\s*Ti",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 100,
       "pages": 1
     },
@@ -223,7 +223,7 @@
       "category": "Graphics Cards",
       "q": "RTX 3060 graphics card",
       "mustMatch": "RTX\\s*3060",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 80,
       "pages": 1
     },
@@ -231,7 +231,7 @@
       "category": "Graphics Cards",
       "q": "RX 7900 XTX graphics card",
       "mustMatch": "RX\\s*7900",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 400,
       "pages": 1
     },
@@ -239,7 +239,7 @@
       "category": "Graphics Cards",
       "q": "RX 7800 XT graphics card",
       "mustMatch": "RX\\s*7800",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 250,
       "pages": 1
     },
@@ -247,7 +247,7 @@
       "category": "Graphics Cards",
       "q": "RX 7600 graphics card",
       "mustMatch": "RX\\s*7600",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 120,
       "pages": 1
     },
@@ -255,7 +255,7 @@
       "category": "Graphics Cards",
       "q": "RX 6800 XT graphics card",
       "mustMatch": "RX\\s*6800",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 150,
       "pages": 1
     },
@@ -263,7 +263,7 @@
       "category": "Graphics Cards",
       "q": "RX 6700 XT graphics card",
       "mustMatch": "RX\\s*6700",
-      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|system|waterblock|water block|bracket|cable|\\bmobile\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 100,
       "pages": 1
     },
@@ -271,7 +271,7 @@
       "category": "Processors",
       "q": "Ryzen 7 9800X3D processor",
       "mustMatch": "9800X3D",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 300,
       "pages": 1
     },
@@ -279,7 +279,7 @@
       "category": "Processors",
       "q": "Ryzen 7 7800X3D processor",
       "mustMatch": "7800X3D",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 200,
       "pages": 1
     },
@@ -287,7 +287,7 @@
       "category": "Processors",
       "q": "Ryzen 7 9700X processor",
       "mustMatch": "9700X",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 150,
       "pages": 1
     },
@@ -295,7 +295,7 @@
       "category": "Processors",
       "q": "Ryzen 7 7700X processor",
       "mustMatch": "7700X",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 100,
       "pages": 1
     },
@@ -303,7 +303,7 @@
       "category": "Processors",
       "q": "Ryzen 7 5800X3D processor",
       "mustMatch": "5800X3D",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 150,
       "pages": 1
     },
@@ -311,7 +311,7 @@
       "category": "Processors",
       "q": "Ryzen 7 5700X processor",
       "mustMatch": "5700X",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 60,
       "pages": 1
     },
@@ -319,7 +319,7 @@
       "category": "Processors",
       "q": "Ryzen 5 7600X processor",
       "mustMatch": "7600X",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 80,
       "pages": 1
     },
@@ -327,7 +327,7 @@
       "category": "Processors",
       "q": "Intel Core i9 14900K processor",
       "mustMatch": "14900K",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 250,
       "pages": 1
     },
@@ -335,7 +335,7 @@
       "category": "Processors",
       "q": "Intel Core i7 14700K processor",
       "mustMatch": "14700K",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 200,
       "pages": 1
     },
@@ -343,7 +343,7 @@
       "category": "Processors",
       "q": "Intel Core i7 13700K processor",
       "mustMatch": "13700K",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 150,
       "pages": 1
     },
@@ -351,7 +351,7 @@
       "category": "Processors",
       "q": "Intel Core i7 12700K processor",
       "mustMatch": "12700K",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 80,
       "pages": 1
     },
@@ -359,7 +359,7 @@
       "category": "Processors",
       "q": "Intel Core Ultra 9 285K processor",
       "mustMatch": "285K",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 250,
       "pages": 1
     },
@@ -367,7 +367,7 @@
       "category": "Processors",
       "q": "Intel Core Ultra 7 265K processor",
       "mustMatch": "265K",
-      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile",
+      "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 200,
       "pages": 1
     }
