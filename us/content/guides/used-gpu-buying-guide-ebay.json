@@ -1,0 +1,111 @@
+{
+  "slug": "used-gpu-buying-guide-ebay",
+  "type": "picks",
+  "title": "How to Buy a Used Graphics Card on eBay (Checklist and Current Prices)",
+  "description": "A practical checklist for buying a used or refurbished GPU on eBay, plus the cheapest current listings for popular RTX cards.",
+  "h1": "How to Buy a Used Graphics Card on eBay",
+  "intro": [
+    "A used graphics card can save real money, but it is also the part of a PC where mistakes cost the most. This guide gives you a checklist and shows the cheapest used and refurbished listings we found for popular RTX cards."
+  ],
+  "picksHeading": "Cheapest used or refurbished listings by card",
+  "picks": [
+    {
+      "label": "Cheapest used or refurbished RTX 3060",
+      "category": "Graphics Cards",
+      "match": "RTX\\s*3060(?!\\s*Ti)",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "conditions": [
+        "used",
+        "refurbished"
+      ],
+      "minPrice": 120,
+      "pros": [
+        "Used and refurbished cards can cost less than buying new",
+        "Older cards are well supported by current drivers"
+      ],
+      "cons": [
+        "Ask whether the card was used for mining and how it was tested",
+        "Check the return policy and that the listing shows the actual card"
+      ]
+    },
+    {
+      "label": "Cheapest used or refurbished RTX 3060 Ti",
+      "category": "Graphics Cards",
+      "match": "RTX\\s*3060\\s*Ti",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "conditions": [
+        "used",
+        "refurbished"
+      ],
+      "minPrice": 150,
+      "pros": [
+        "Used and refurbished cards can cost less than buying new",
+        "Older cards are well supported by current drivers"
+      ],
+      "cons": [
+        "Ask whether the card was used for mining and how it was tested",
+        "Check the return policy and that the listing shows the actual card"
+      ]
+    },
+    {
+      "label": "Cheapest used or refurbished RTX 3070",
+      "category": "Graphics Cards",
+      "match": "RTX\\s*3070(?!\\s*Ti)",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "conditions": [
+        "used",
+        "refurbished"
+      ],
+      "minPrice": 180,
+      "pros": [
+        "Used and refurbished cards can cost less than buying new",
+        "Older cards are well supported by current drivers"
+      ],
+      "cons": [
+        "Ask whether the card was used for mining and how it was tested",
+        "Check the return policy and that the listing shows the actual card"
+      ]
+    },
+    {
+      "label": "Cheapest used or refurbished RTX 3080",
+      "category": "Graphics Cards",
+      "match": "RTX\\s*3080(?!\\s*Ti)",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b",
+      "conditions": [
+        "used",
+        "refurbished"
+      ],
+      "minPrice": 250,
+      "pros": [
+        "Used and refurbished cards can cost less than buying new",
+        "Older cards are well supported by current drivers"
+      ],
+      "cons": [
+        "Ask whether the card was used for mining and how it was tested",
+        "Check the return policy and that the listing shows the actual card"
+      ]
+    }
+  ],
+  "howWeChoose": "We show the lowest-priced listing in each condition from our catalogue snapshot, after skipping listings that are priced far below the normal range or that look like parts, lots or bundles. Lowest price is not the same as best deal, so use the checklist below.",
+  "sections": [
+    {
+      "h2": "Checklist before you click Buy",
+      "list": [
+        "Photos of the real card with its serial number sticker, not stock images.",
+        "A description of how it was tested, ideally with a stress test or benchmark result.",
+        "Whether the card was used for cryptocurrency mining. Mining cards can still work well, but ask and price accordingly.",
+        "Return policy: prefer listings that accept returns, and check eBay's current buyer protection terms for the listing.",
+        "Seller feedback and how long they have been selling. Be careful with brand-new accounts and prices far below the rest.",
+        "Exact model and memory size. Names like 3060 and 3060 Ti are different cards with different prices."
+      ]
+    },
+    {
+      "h2": "After it arrives",
+      "list": [
+        "Inspect for bent pins, damaged fans or a cracked bracket as soon as you open the box.",
+        "Test it right away with a game or benchmark, and watch temperatures.",
+        "If something is wrong, contact the seller and use eBay's returns process within the return window."
+      ]
+    }
+  ]
+}

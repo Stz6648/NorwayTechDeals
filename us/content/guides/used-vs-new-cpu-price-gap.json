@@ -1,0 +1,54 @@
+{
+  "slug": "used-vs-new-cpu-price-gap",
+  "type": "pricegap",
+  "title": "Used vs New CPUs on eBay: How Much Do You Save?",
+  "description": "Cheapest new, open-box, used and refurbished listings for popular Ryzen and Intel CPUs on eBay, and when buying used is actually worth it.",
+  "h1": "Used vs New CPUs on eBay: How Much Do You Save?",
+  "intro": [
+    "Processors are one of the safer things to buy used, because they have no moving parts. But the price gap between a used CPU and a new one on eBay is not always as big as you would expect. This page compares the cheapest listing in each condition for three popular CPUs, from our latest catalogue snapshot.",
+    "Check the tables below, then read the buying checklist at the end before you click through to a listing."
+  ],
+  "tiers": [
+    {
+      "name": "Ryzen 7 7800X3D",
+      "category": "Processors",
+      "match": "7800X3D",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b",
+      "minPrice": 200
+    },
+    {
+      "name": "Ryzen 7 5800X3D",
+      "category": "Processors",
+      "match": "5800X3D",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b",
+      "minPrice": 150
+    },
+    {
+      "name": "Core i7-14700K",
+      "category": "Processors",
+      "match": "14700K",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b",
+      "minPrice": 150
+    }
+  ],
+  "tableNote": "We skip listings priced far below the normal range, since those are often mislabelled or partial listings. The cheapest listing in each condition is shown, which is not necessarily the best deal for you.",
+  "sections": [
+    {
+      "h2": "What to check before buying a used CPU",
+      "list": [
+        "Look for photos of the actual processor, including the pins or contact pads, not stock images.",
+        "Make sure the listing is the exact model you need and not a similar name (for example X3D vs non-X3D, K vs KF).",
+        "Check your motherboard socket and BIOS support before you buy. A CPU that fits the socket may still need a BIOS update.",
+        "Prefer sellers with a clear return policy and high feedback, and keep the listing screenshot until the CPU is installed and tested.",
+        "A CPU sold without a cooler is normal for K-series and X3D parts. Budget for a cooler if you do not have one."
+      ]
+    },
+    {
+      "h2": "Is used or refurbished worth it for a CPU?",
+      "paragraphs": [
+        "For many buyers the answer is yes, if the discount is meaningful and the seller accepts returns. If the used price is only a few dollars below new, buying new with the manufacturer warranty is usually the better choice.",
+        "Prices change quickly. The price you see on eBay is the one that counts."
+      ]
+    }
+  ]
+}
