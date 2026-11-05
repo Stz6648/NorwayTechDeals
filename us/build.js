@@ -114,7 +114,7 @@ function buildGuide(g) {
       main += `<h2>${esc(t.name)}</h2><div class="tw"><table><thead><tr><th>Condition</th><th>Cheapest listing</th><th>Versus cheapest new</th><th>Listing</th></tr></thead><tbody>${rows.join("")}</tbody></table></div>`;
     }
     main += `<p class="muted">${esc(g.tableNote)}</p>`;
-  } else {
+  } else if (g.type !== "text") {
     main += `<h2>${esc(g.picksHeading)}</h2><div class="picks">`;
     for (const spec of g.picks) {
       spec.__slug = g.slug;
