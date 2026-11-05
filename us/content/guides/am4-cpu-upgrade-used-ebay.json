@@ -1,0 +1,87 @@
+{
+  "slug": "am4-cpu-upgrade-used-ebay",
+  "type": "picks",
+  "title": "Upgrading an AM4 PC: Cheapest Used Ryzen 7 5700X and 5800X3D on eBay",
+  "description": "If you have an AM4 motherboard, a used Ryzen 7 5700X or 5800X3D can be a cheap upgrade. See the cheapest current eBay listings and what to check first.",
+  "h1": "Upgrading an AM4 PC: Cheapest Used Ryzen 7 5700X and 5800X3D on eBay",
+  "intro": [
+    "If your PC still uses an AM4 motherboard, swapping in a faster Ryzen processor is one of the cheapest upgrades you can make, because you keep your board and DDR4 memory. Below are the cheapest current eBay listings we found for two popular AM4 CPUs, followed by what to check before you buy."
+  ],
+  "picksHeading": "Cheapest listings for popular AM4 CPUs",
+  "picks": [
+    {
+      "label": "Cheapest used or refurbished Ryzen 7 5700X",
+      "category": "Processors",
+      "match": "5700X",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b|\\bAlienware\\b|\\bLegion\\b|\\bpre-?built\\b",
+      "conditions": [
+        "used",
+        "refurbished"
+      ],
+      "minPrice": 60,
+      "pros": [
+        "Can cost noticeably less than the same CPU new",
+        "AM4 upgrades reuse your existing motherboard and DDR4 memory"
+      ],
+      "cons": [
+        "Confirm your motherboard supports the CPU and needs no BIOS update",
+        "Check the seller's return policy and that photos show the real processor"
+      ]
+    },
+    {
+      "label": "Cheapest used or refurbished Ryzen 7 5800X3D",
+      "category": "Processors",
+      "match": "5800X3D",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b|\\bAlienware\\b|\\bLegion\\b|\\bpre-?built\\b",
+      "conditions": [
+        "used",
+        "refurbished"
+      ],
+      "minPrice": 150,
+      "pros": [
+        "Can cost noticeably less than the same CPU new",
+        "AM4 upgrades reuse your existing motherboard and DDR4 memory"
+      ],
+      "cons": [
+        "Confirm your motherboard supports the CPU and needs no BIOS update",
+        "Check the seller's return policy and that photos show the real processor"
+      ]
+    },
+    {
+      "label": "Cheapest new Ryzen 7 5800X3D",
+      "category": "Processors",
+      "match": "5800X3D",
+      "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b|\\bAlienware\\b|\\bLegion\\b|\\bpre-?built\\b",
+      "conditions": [
+        "new"
+      ],
+      "minPrice": 150,
+      "pros": [
+        "Can cost noticeably less than the same CPU new",
+        "AM4 upgrades reuse your existing motherboard and DDR4 memory"
+      ],
+      "cons": [
+        "Confirm your motherboard supports the CPU and needs no BIOS update",
+        "Check the seller's return policy and that photos show the real processor"
+      ]
+    }
+  ],
+  "howWeChoose": "We show the lowest-priced qualifying listing in each condition from our latest catalogue snapshot, after skipping listings that look like parts, lots or bundles. The cheapest listing is not always the best deal, so read the checklist.",
+  "sections": [
+    {
+      "h2": "Check these before you upgrade",
+      "list": [
+        "Your motherboard model and chipset: look up the manufacturer's CPU support list for the exact CPU.",
+        "BIOS version: some older boards need a BIOS update before a newer CPU will boot, which can be hard to do without a working CPU.",
+        "Cooling: the 5800X3D runs hot and does not come with a cooler, so check that your cooler is good enough.",
+        "Whether you actually need it: if your graphics card is the limit in your games, a new CPU will not help much."
+      ]
+    },
+    {
+      "h2": "Used or new?",
+      "paragraphs": [
+        "CPUs have no moving parts, so a used one in good condition usually works as well as a new one. Prefer sellers who accept returns and show photos of the actual processor, including the pins or contacts."
+      ]
+    }
+  ]
+}

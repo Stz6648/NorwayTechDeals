@@ -1,0 +1,44 @@
+{
+  "slug": "ebay-refurbished-vs-used-explained",
+  "type": "text",
+  "title": "eBay Refurbished vs Used: What Is the Difference?",
+  "description": "What 'refurbished', 'open box' and 'used' mean on eBay for PC hardware, and how to choose between them.",
+  "h1": "eBay Refurbished vs Used: What Is the Difference?",
+  "intro": [
+    "On eBay, the same graphics card or laptop can appear as new, open box, refurbished or used, and the price differences can be large. This guide explains what each label usually means and when each is worth buying. Always read the individual listing and eBay's current terms, since rules can change."
+  ],
+  "sections": [
+    {
+      "h2": "New",
+      "paragraphs": [
+        "A sealed item that has not been used. Check that the seller is a reputable retailer, and ask about the warranty."
+      ]
+    },
+    {
+      "h2": "Open box",
+      "paragraphs": [
+        "The item was opened or returned, and is usually in working order. It may or may not include the original box and accessories, so check the description."
+      ]
+    },
+    {
+      "h2": "Refurbished",
+      "paragraphs": [
+        "The item was inspected, cleaned and tested, and sold with a condition grade such as Excellent, Very Good or Good. Who did the refurbishing matters: manufacturer or eBay-certified programs generally offer stronger terms than a seller's own refurbishing. Check the warranty length in the listing."
+      ]
+    },
+    {
+      "h2": "Used",
+      "paragraphs": [
+        "The item was owned and used before. Used listings can be the cheapest, but they vary the most in quality, so check photos, tests, seller feedback and the return policy."
+      ]
+    },
+    {
+      "h2": "How to choose",
+      "list": [
+        "If the price gap to new is small, buy new for the warranty.",
+        "If you want savings with less risk, a refurbished item with a clear warranty is a middle path.",
+        "If you buy used, choose a seller with a good history and a return window, and test the item as soon as it arrives."
+      ]
+    }
+  ]
+}
