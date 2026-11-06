@@ -69,11 +69,12 @@ function page({ slug, title, desc, body, type = "website" }) {
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="google-site-verification" content="ziac4kcZYhkGJsz7Xocozv1VZAPNtLwRn6E55eAd3Kw" />
-<title>${esc(title)} | ${esc(cfg.brand)}</title>
+<title>${esc(title.length + cfg.brand.length + 3 <= 62 ? title + " | " + cfg.brand : title)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="${ROBOTS}">
 <link rel="canonical" href="${esc(url)}">
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="${type}"><meta property="og:url" content="${esc(url)}">
+${slug ? `<script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":SITE+"/"},{"@type":"ListItem","position":2,"name":title,"item":url}]},...(type==="article"?[{"@type":"Article","headline":title.slice(0,110),"description":desc,"mainEntityOfPage":url,"dateModified":snapDate,"author":{"@type":"Organization","name":cfg.brand},"publisher":{"@type":"Organization","name":cfg.brand}}]:[])]}).replace(/</g,"\\u003c")}</script>` : `<script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"WebSite","name":cfg.brand,"url":SITE+"/"}).replace(/</g,"\\u003c")}</script>`}
 <style>${CSS}</style>
 </head>
 <body>
@@ -187,9 +188,17 @@ fs.mkdirSync(path.join(outDir, "images"), { recursive: true });
 for (const f of fs.readdirSync(outDir)) if (/^price-.*\.html$/.test(f)) fs.unlinkSync(path.join(outDir, f));
 for (const g of guides) buildGuide(g);
 for (const m of modelCfg.models) buildModel(m);
+// Internal links: each model page links to other price pages in the same category and to the guides.
+for (const mp of modelPages) {
+  const f = path.join(outDir, mp.slug + ".html");
+  const related = modelPages.filter(x => x.category === mp.category && x.slug !== mp.slug).slice(0, 6);
+  const block = `<h2>More price checks</h2><ul>${related.map(x => `<li><a href="/${x.slug}.html">${esc(x.name)} price on eBay</a></li>`).join("")}</ul><p>New to buying used? Read our ${mp.category === "Processors" ? `<a href="/used-vs-new-cpu-price-gap.html">used vs new CPU comparison</a>` : `<a href="/used-gpu-buying-guide-ebay.html">used graphics card checklist</a>`} and <a href="/ebay-refurbished-vs-used-explained.html">refurbished vs used explained</a>.</p>`;
+  let html = fs.readFileSync(f, "utf8");
+  if (html.includes("</main>") && !html.includes("More price checks")) { html = html.replace("</main>", block + "</main>"); fs.writeFileSync(f, html); }
+}
 
 write("index", page({
-  slug: "", title: cfg.tagline, desc: "Honest price comparisons of new, open-box, used and refurbished PC hardware on eBay, with the risks spelled out.",
+  slug: "", title: "Used vs New PC Hardware Prices on eBay", desc: "Honest price comparisons of new, open-box, used and refurbished PC hardware on eBay, with the risks spelled out.",
   body: `<section class="hero"><div><h1>${esc(cfg.tagline)}</h1><p>We compare what the same hardware costs new, open-box, used and refurbished on eBay, and explain how to buy safely.</p><div class="chips"><span class="chip"><i style="background:#7eeaff"></i>New</span><span class="chip"><i style="background:#a77bff"></i>Open box</span><span class="chip"><i style="background:#ffb84d"></i>Used</span><span class="chip"><i style="background:#c5f36b"></i>Refurbished</span></div></div><figure class="heroFig"><img src="https://images.unsplash.com/photo-1719927604476-dc404b85358f?auto=format&amp;fit=crop&amp;w=900&amp;h=760&amp;q=80" alt="Gaming PC with glass side panel and blue RGB fans" width="900" height="760" fetchpriority="high"><figcaption>Photo by <a href="https://unsplash.com/photos/GYj9ts-qvlQ?utm_source=usedtechradar&amp;utm_medium=referral" rel="noopener">Bhautik Patel</a> on <a href="https://unsplash.com/?utm_source=usedtechradar&amp;utm_medium=referral" rel="noopener">Unsplash</a></figcaption></figure></section>${PRICE_NOTICE}<h2>Guides</h2>` +
     guides.map(g => `<a class="card" href="/${g.slug}.html"><b>${esc(g.h1)}</b><span>${esc(g.description)}</span></a>`).join("") +
     (modelPages.length ? `<h2>Price check by model</h2>` + ["Graphics Cards", "Processors"].map(c => modelPages.filter(x => x.category === c).length ? `<h3>${c}</h3>` + modelPages.filter(x => x.category === c).map(x => `<a class="card" href="/${x.slug}.html"><b>${esc(x.name)}</b><span>${x.count} listings, from ${usd(x.low)}</span></a>`).join("") : "").join("") : "") + DISCLOSURE

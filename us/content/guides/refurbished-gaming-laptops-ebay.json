@@ -1,7 +1,7 @@
 {
   "slug": "refurbished-gaming-laptops-ebay",
   "type": "picks",
-  "title": "Refurbished Gaming Laptops on eBay: What to Know Before You Buy",
+  "title": "Refurbished Gaming Laptops on eBay: Buyer Guide",
   "description": "Refurbished RTX gaming laptops on eBay, what the Certified, Excellent, Very Good and Good grades mean, and how to check a listing before you buy.",
   "h1": "Refurbished Gaming Laptops on eBay: What to Know Before You Buy",
   "intro": [
@@ -13,28 +13,50 @@
       "label": "Cheapest refurbished RTX 5070 laptop",
       "category": "Laptops",
       "match": "RTX\\s*5070(?!\\s*Ti)",
-      "conditions": ["refurbished"],
+      "conditions": [
+        "refurbished"
+      ],
       "minPrice": 1000,
-      "pros": ["Refurbished listings can cost less than new", "Graded listings come with the eBay Refurbished program terms, see below"],
-      "cons": ["Check which grade the listing uses, since warranty length depends on it", "Check battery condition and what is included in the box"]
+      "pros": [
+        "Refurbished listings can cost less than new",
+        "Graded listings come with the eBay Refurbished program terms, see below"
+      ],
+      "cons": [
+        "Check which grade the listing uses, since warranty length depends on it",
+        "Check battery condition and what is included in the box"
+      ]
     },
     {
       "label": "Cheapest refurbished RTX 5070 Ti laptop",
       "category": "Laptops",
       "match": "RTX\\s*5070\\s*Ti",
-      "conditions": ["refurbished"],
+      "conditions": [
+        "refurbished"
+      ],
       "minPrice": 1000,
-      "pros": ["More GPU headroom for high-refresh QHD gaming"],
-      "cons": ["Higher price, and heavier cooling needs", "Confirm the exact CPU, RAM and storage in the listing"]
+      "pros": [
+        "More GPU headroom for high-refresh QHD gaming"
+      ],
+      "cons": [
+        "Higher price, and heavier cooling needs",
+        "Confirm the exact CPU, RAM and storage in the listing"
+      ]
     },
     {
       "label": "Cheapest refurbished RTX 5090 laptop",
       "category": "Laptops",
       "match": "RTX\\s*5090",
-      "conditions": ["refurbished"],
+      "conditions": [
+        "refurbished"
+      ],
       "minPrice": 2500,
-      "pros": ["Top-tier laptop GPU"],
-      "cons": ["Very high price even refurbished", "Few listings, so check the seller carefully"]
+      "pros": [
+        "Top-tier laptop GPU"
+      ],
+      "cons": [
+        "Very high price even refurbished",
+        "Few listings, so check the seller carefully"
+      ]
     }
   ],
   "howWeChoose": "The picks come from the listings in our catalogue. For each GPU tier we show the cheapest listing sold as refurbished and skip anything that looks like parts, a bundle or an unusually low price. This is not a review. We have not tested these laptops, and prices and availability change constantly.",
