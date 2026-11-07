@@ -61,5 +61,37 @@ module.exports = [
   ["Rengjør først", ["Vask dekkene og fjern steiner fra mønsteret. Merk hvilket hjul som sto hvor, slik at du kan bytte plassering."]],
   ["Med og uten felg", ["Dekk på felg henges eller stables. Dekk uten felg står best oppreist. Roter dem av og til."]],
   ["Hvor?", ["Tørt, mørkt og kjølig. Unngå sollys, kjemikalier og varmekilder. Mange verksteder tilbyr dekkhotell mot betaling."]]
+  ] },
+{ slug: "dekk-til-elbil", title: "Dekk til elbil: hva bør du velge?", desc: "Slik velger du dekk til elbil i Norge: lastindeks, rullemotstand, støy og slitasje.", h1: "Dekk til elbil: hva bør du velge?", cta: true,
+  lead: "Elbiler er tunge og har kraftig akselerasjon fra stillstand. Det stiller litt andre krav til dekkene.",
+  sections: [
+  ["Hvorfor er elbil annerledes?", ["Batteriet gjør elbiler tyngre enn tilsvarende bensin- og dieselbiler. Dessuten gir elmotoren full kraft med en gang, noe som kan slite mer på dekkene."]],
+  ["Hva bør du se etter?", ["Sjekk at lastindeksen på dekkene er minst like høy som vognkortet krever, se <a href=\"dekkstorrelse-forklart.html\">dekkstørrelse forklart</a>.","Lav rullemotstand kan øke rekkevidden. Du finner klassen på <a href=\"eu-dekketikett.html\">EU-dekketiketten</a>.","Støy merkes tydeligere i en stille elbil. Se på desibeltallet på etiketten."]],
+  ["Vinterdekk til elbil", ["Elbil trenger vinterdekk på lik linje med andre biler, og de samme kravene til mønsterdybde gjelder. Mange elbilister velger piggfrie vinterdekk fordi de er stillere. Les mer i <a href=\"piggdekk-eller-friksjonsdekk.html\">piggdekk eller friksjonsdekk</a>."]],
+  ["Slitasje", ["Vekt og kraft kan gi raskere slitasje. Sjekk mønsterdybden jevnlig og bytt plassering på dekkene hvis bilprodusenten anbefaler det."]]
+  ] },
+{ slug: "helarsdekk", title: "Helårsdekk i Norge: er det lov og lurt?", desc: "Hva er helårsdekk, når kan de brukes som vinterdekk i Norge, og for hvem passer de?", h1: "Helårsdekk i Norge: er det lov og lurt?", cta: true,
+  lead: "Helårsdekk lover å fungere både sommer og vinter. Her er hva du bør vite før du velger dem.",
+  sections: [
+  ["Hva er helårsdekk?", ["Helårsdekk er laget som en mellomting mellom sommerdekk og vinterdekk. De kan bli på bilen hele året, men er ikke like gode som spesialdekk i ekstreme forhold."]],
+  ["Hva sier reglene?", ["For å regnes som vinterdekk må dekket være godkjent for vinterbruk og ha minst 3 mm mønsterdybde i vinterperioden. Sjekk at dekket har 3PMSF-symbolet (fjell med snøfnugg). Les vegvesen.no for oppdaterte regler, se <a href=\"vinterdekk-guide.html\">vinterdekk-guiden</a>."]],
+  ["Fordeler og ulemper", ["Fordelen er at du slipper dekkskifte og oppbevaring. Ulempen er at de som regel gir dårligere grep på is og dyp snø enn gode vinterdekk, og slites raskere om sommeren."]],
+  ["Hvem passer det for?", ["Helårsdekk kan passe for deg som kjører lite og mest i by, i områder med lite snø. Bor du i fjellet eller kjører mye vinterstid, er egne vinterdekk tryggere."]]
+  ] },
+{ slug: "dekktrykk", title: "Riktig dekktrykk: slik sjekker du det", desc: "Hvor finner du riktig dekktrykk, hvorfor er det viktig, og hvor ofte bør du sjekke det?", h1: "Riktig dekktrykk: slik sjekker du det", cta: false,
+  lead: "Feil lufttrykk gir dårligere veigrep, høyere forbruk og raskere slitasje. Det tar to minutter å sjekke.",
+  sections: [
+  ["Hvor finner du riktig trykk?", ["Riktig dekktrykk står i bilens instruksjonsbok og som regel på et klistremerke i dørkarmen eller tankluken. Trykket avhenger av bil, dekkstørrelse og last."]],
+  ["Hvordan sjekker du?", ["Mål trykket når dekkene er kalde, for eksempel før du kjører av gårde. Bruk en trykkmåler på bensinstasjonen eller en egen i garasjen. Husk reservehjulet hvis du har et."]],
+  ["Hvor ofte?", ["Sjekk minst en gang i måneden og alltid før lange turer. Temperaturen påvirker trykket, så sjekk ekstra når været skifter mye, for eksempel ved overgang til vinter."]],
+  ["Trykkvarsel i bilen", ["Mange nyere biler har et system som varsler ved lavt trykk. Ikke vent til lampen lyser. Se i bilens instruksjonsbok hvordan systemet nullstilles etter dekkskifte."]]
+  ] },
+{ slug: "bytte-dekk-selv", title: "Slik bytter du dekk selv: steg for steg", desc: "Enkel guide til å bytte hjul selv: verktøy, rekkefølge og sikkerhet, og når du bør la verkstedet gjøre det.", h1: "Slik bytter du dekk selv", cta: false,
+  lead: "Mange bytter hjul selv for å spare tid og penger. Sikkerheten kommer først.",
+  sections: [
+  ["Du trenger", ["Jekk eller garasjejekk, jekkstøtter hvis du skal være under bilen, hjulnøkkel eller momentnøkkel, og en flat, fast og horisontal plass. Les alltid bilens instruksjonsbok for hvor jekken skal settes."]],
+  ["Steg for steg", ["Sett på håndbrekket og la bilen stå i gir eller P. Løsne hjulboltene litt mens hjulet fortsatt står på bakken. Jekk opp bilen og skru ut boltene. Ta av hjulet, sett på det nye og skru boltene på for hånd i kryss. Senk bilen og stram i kryss."]],
+  ["Moment og ettertrekk", ["Bruk riktig tiltrekkingsmoment fra bilens instruksjonsbok. Mange anbefaler å sjekke at boltene sitter fast etter at du har kjørt noen titalls kilometer."]],
+  ["Når bør du bruke verksted?", ["Har du ikke jekk og momentnøkkel, eller er du usikker, er verksted tryggere. Verksted kan også balansere hjulene og sjekke dekkene for skader. Se også <a href=\"nar-skifte-til-vinterdekk.html\">når du skal skifte</a> og <a href=\"oppbevaring-av-dekk.html\">oppbevaring av dekk</a>."]]
   ] }
 ];
