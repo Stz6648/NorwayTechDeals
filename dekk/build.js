@@ -30,4 +30,5 @@ page("personvern.html","Personvern","Personvernerklæring for Dekkguiden.",`<h1>
 const all=["index.html",...guides.map(g=>g.slug+".html"),"om-oss.html","annonselenker.html","personvern.html"];
 fs.writeFileSync(path.join(out,"sitemap.xml"),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${all.map(f=>`<url><loc>${cfg.domain}/${f==="index.html"?"":f}</loc><lastmod>${cfg.updated}</lastmod></url>`).join("")}</urlset>`);
 fs.writeFileSync(path.join(out,"robots.txt"),`User-agent: *\nAllow: /\nSitemap: ${cfg.domain}/sitemap.xml\n`);
+fs.writeFileSync(path.join(out,"googlea9562297fa6e53f6.html"),"google-site-verification: googlea9562297fa6e53f6.html");
 console.log("built",all.length,"pages");
