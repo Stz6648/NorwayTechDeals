@@ -145,6 +145,68 @@ const TIPS = {
   "Refurbished": "Look at who refurbished it: manufacturer or eBay-certified programs carry a warranty, seller-refurbished items often do not."
 };
 const modelPages = [];
+// Display-only cleanup of seller listing titles: emoji, check marks, stale shipping dates and shouting.
+const cleanTitle = s => String(s || "")
+  .replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{FE0F}]/gu, "")
+  .replace(/\b(ships?|shipping)\s+(on\s+)?\d{1,2}\/\d{1,2}\b/ig, "")
+  .replace(/\b(new listing|new low price|stability tested!?)\b/ig, "")
+  .replace(/\s{2,}/g, " ").replace(/\s+([,.;:!])/g, "$1").trim();
+const pctGap = (a, b) => Math.round((1 - a / b) * 100); // how much cheaper a is than b
+
+// Original, data-driven analysis for a model page. Every number comes from the same snapshot as the tables.
+function modelExtras(m, by, newLow) {
+  const stat = g => by[g].length ? (() => { const ps = by[g].map(h => Number(h.o.price)); return { n: ps.length, low: Math.min(...ps), med: median(ps), high: Math.max(...ps) }; })() : null;
+  const S = Object.fromEntries(GROUP_ORDER.map(g => [g, stat(g)]));
+  const isGpu = m.category === "Graphics Cards";
+  const noun = isGpu ? "card" : "processor";
+  const parts = [];
+
+  // 1. Overview: what the page covers and how big the snapshot is.
+  const counts = GROUP_ORDER.filter(g => S[g]).map(g => `${S[g].n} ${g.toLowerCase()}`).join(", ");
+  parts.push(`<h2>${esc(m.name)} on eBay: what the snapshot shows</h2><p>This page tracks ${esc(m.name)} listings on eBay in four conditions: new, open box, used and refurbished. The ${esc(dateEn)} snapshot has ${counts} listings. We only count fixed-price listings and skip parts-only, untested and bundle listings, so the numbers describe working ${noun}s sold as the ${esc(m.name)} itself.</p>`
+    + (m.msrp && newLow ? `<p>The ${esc(m.name)} launched at a US list price of ${usd(m.msrp)}. The cheapest new eBay listing in this snapshot is ${usd(newLow)}, which is ${newLow >= m.msrp ? Math.round((newLow / m.msrp - 1) * 100) + "% above" : pctGap(newLow, m.msrp) + "% below"} that launch price.</p>` : ""));
+
+  // 2. Is used worth it? Computed from the snapshot, with a plain verdict.
+  const u = S["Used"], n = S["New"];
+  if (u && n) {
+    const gapLow = pctGap(u.low, n.low), gapMed = pctGap(u.med, n.med);
+    const verdict = gapMed >= 20 ? "a gap large enough that used can be worth the extra checking" : gapMed >= 8 ? "a moderate gap, so condition, warranty and return policy matter more than the headline price" : `a small gap, so a new ${noun} with the full manufacturer warranty is often the safer buy`;
+    parts.push(`<h2>Is a used ${esc(m.name)} worth it right now?</h2><p>The cheapest used listing is ${usd(u.low)} against ${usd(n.low)} for the cheapest new one, ${gapLow >= 0 ? gapLow + "% less" : Math.abs(gapLow) + "% more"}. Comparing medians, used listings are ${gapMed >= 0 ? gapMed + "% cheaper" : Math.abs(gapMed) + "% more expensive"} than new (${usd(u.med)} against ${usd(n.med)}). That is ${verdict}.</p><p>Prices on eBay move every day, so check this gap again before you buy. If the used discount is small, also look at open box and refurbished listings, which sometimes sit in between.</p>`);
+  }
+  const r = S["Refurbished"];
+  if (r && n) {
+    parts.push(`<p>Refurbished is not always the cheap option. The lowest refurbished listing here is ${usd(r.low)}, ${r.low < n.low ? pctGap(r.low, n.low) + "% below" : Math.round((r.low / n.low - 1) * 100) + "% above"} the cheapest new one. Compare against the lowest new price before you pay extra for a refurbished label, and check who did the refurbishing.</p>`);
+  }
+  const ob = S["Open box"];
+  if (ob && n) {
+    parts.push(`<p>Open box listings start at ${usd(ob.low)} (median ${usd(ob.med)}). They can be a good compromise if the original box, accessories and warranty are included, so ask the seller before you buy.</p>`);
+  }
+
+  // 3. Condition guide.
+  parts.push(`<h2>New, open box, used and refurbished: what each means</h2><ul>${GROUP_ORDER.filter(g => S[g]).map(g => `<li><strong>${g}:</strong> ${esc(TIPS[g])}</li>`).join("")}</ul>`);
+
+  // 4. Checklist.
+  const extra = (m.buyingNotes || []).map(x => `<li>${esc(x)}</li>`).join("");
+  parts.push(`<h2>Checklist before you buy a used ${esc(m.name)}</h2><ol><li>Check the seller: feedback score, account history and a return policy you can actually use.</li><li>Ask for photos of the actual ${noun}, including the serial number sticker. Stock photos alone are a warning sign.</li>${isGpu ? "<li>Ask whether it was used for mining, rendering or in a server. Heavy long-term use wears fans and thermal pads faster than light gaming.</li>" : "<li>Look for bent pins or marks on the socket side, and ask whether the processor was overclocked.</li>"}<li>Ask whether the manufacturer warranty transfers to a new owner. This differs by brand, so confirm with the seller.</li>${extra}<li>Test it as soon as it arrives, during the return window. Run a stress test and watch temperatures.</li><li>Be careful with prices far below the median in the table above, and with listings that say box only, for parts or untested.</li></ol>`);
+
+  // 5. FAQ with the same snapshot numbers.
+  const faq = [];
+  if (u) faq.push([`How much does a used ${m.name} cost on eBay?`, `In our ${dateEn} snapshot, used ${m.name} listings run from ${usd(u.low)} to ${usd(u.high)}, with a median of ${usd(u.med)}, across ${u.n} listings.`]);
+  if (n) faq.push([`How much does a new ${m.name} cost on eBay?`, `New listings start at ${usd(n.low)} and have a median of ${usd(n.med)} in this snapshot (${n.n} listings). Check that the seller is an established retailer and that the listing includes the manufacturer warranty.`]);
+  if (u && n) faq.push([`Is a used ${m.name} cheaper than a new one?`, `Right now the cheapest used listing is ${pctGap(u.low, n.low) >= 0 ? pctGap(u.low, n.low) + "% below" : Math.abs(pctGap(u.low, n.low)) + "% above"} the cheapest new listing. The gap changes with the market, so compare the two rows in the table at the top of this page.`]);
+  faq.push([`Is refurbished better than used?`, `It depends on who refurbished it. Manufacturer or eBay-certified programs usually carry a warranty. A seller's own refurbishment often does not, so read the listing before you buy.`]);
+  faq.push([`How often is this page updated?`, `The catalogue is refreshed from eBay automatically and the date at the top of the page shows the latest snapshot. The price on eBay is always the one that counts.`]);
+  parts.push(`<h2>${esc(m.name)} price FAQ</h2>${faq.map(([q, a]) => `<h3>${esc(q)}</h3><p>${esc(a)}</p>`).join("")}`);
+  return parts.join("");
+}
+
+const descFor = (m, by, newLow) => {
+  const bits = [];
+  if (newLow != null) bits.push(`new from ${usd(newLow)}`);
+  for (const g of ["Open box", "Used", "Refurbished"]) if (by[g].length) bits.push(`${g.toLowerCase()} from ${usd(Number(by[g][0].o.price))}`);
+  return `${m.name} on eBay (${dateEn}): ${bits.join(", ")}. Lowest and median price by condition, a used vs new comparison and a buying checklist.`.slice(0, 300);
+};
+
 function buildModel(m) {
   const hits = [];
   const re = new RegExp(m.match, "i"), ex = m.exclude ? new RegExp(m.exclude, "i") : null;
@@ -169,12 +231,12 @@ function buildModel(m) {
     const diff = g === "New" || newLow == null ? "" : (low < newLow ? `${Math.round((1 - low / newLow) * 100)}% below` : `${Math.round((low / newLow - 1) * 100)}% above`);
     return `<tr><td>${g}</td><td>${prices.length}</td><td>${usd(low)}</td><td>${usd(median(prices))}</td><td>${esc(diff)}</td></tr>`;
   }).join("");
-  const lists = GROUP_ORDER.filter(g => by[g].length).map(g => `<h2>${g} ${esc(m.name)} on eBay</h2><p class="muted">${esc(TIPS[g])}</p><div class="tw"><table><thead><tr><th>Price</th><th>Listing</th><th>Condition</th></tr></thead><tbody>${by[g].slice(0, 5).map(h => `<tr><td>${usd(h.o.price)}</td><td><a href="${esc(h.o.url)}" target="_blank" rel="nofollow sponsored noopener">${esc(h.p.name.slice(0, 80))}${h.p.name.length > 80 ? "…" : ""} ↗</a></td><td>${esc(h.o.condition)}</td></tr>`).join("")}</tbody></table></div>`).join("");
+  const lists = GROUP_ORDER.filter(g => by[g].length).map(g => `<h2>${g} ${esc(m.name)} on eBay</h2><p class="muted">${esc(TIPS[g])}</p><div class="tw"><table><thead><tr><th>Price</th><th>Listing</th><th>Condition</th></tr></thead><tbody>${by[g].slice(0, 5).map(h => `<tr><td>${usd(h.o.price)}</td><td><a href="${esc(h.o.url)}" target="_blank" rel="nofollow sponsored noopener">${esc(cleanTitle(h.p.name).slice(0, 80))}${cleanTitle(h.p.name).length > 80 ? "…" : ""} ↗</a></td><td>${esc(h.o.condition)}</td></tr>`).join("")}</tbody></table></div>`).join("");
   const cheapestAll = hits.reduce((a, b) => Number(b.o.price) < Number(a.o.price) ? b : a);
   const lead = `On ${esc(dateEn)} we found ${hits.length} qualifying eBay listings for the ${esc(m.name)}. ` + (newLow != null ? `The cheapest new one costs ${usd(newLow)}. ` : "") + `The lowest price in any condition is ${usd(cheapestAll.o.price)} (${esc(cheapestAll.g.toLowerCase())}).`;
   const slug = "price-" + m.slug;
-  const body = `<h1>${esc(m.name)} price on eBay by condition</h1><p class="muted">Catalogue snapshot: ${esc(dateEn)}</p><p>${lead}</p>${PRICE_NOTICE}<h2>Price by condition</h2><div class="tw"><table><thead><tr><th>Condition</th><th>Listings</th><th>Lowest</th><th>Median</th><th>Lowest vs cheapest new</th></tr></thead><tbody>${rows}</tbody></table></div><p class="muted">Median and lowest are calculated from the listings in our catalogue snapshot, not from every eBay listing.</p>${lists}<h2>Before you buy</h2><p>Always compare the exact variant, check the seller's feedback and return policy, and read the full listing. A low price is only a good deal if the item is what it says it is.</p>${DISCLOSURE}`;
-  const html = page({ slug, title: `${m.name} price on eBay by condition`, desc: `Current eBay prices for the ${m.name}: new, open box, used and refurbished, with lowest and median price by condition.`, body, type: "article" });
+  const body = `<h1>${esc(m.name)} price on eBay by condition</h1><p class="muted">Last updated: ${esc(dateEn)} · catalogue snapshot</p><p>${lead}</p>${PRICE_NOTICE}<h2>Price by condition</h2><div class="tw"><table><thead><tr><th>Condition</th><th>Listings</th><th>Lowest</th><th>Median</th><th>Lowest vs cheapest new</th></tr></thead><tbody>${rows}</tbody></table></div><p class="muted">Median and lowest are calculated from the listings in our catalogue snapshot, not from every eBay listing.</p>${lists}${modelExtras(m, by, newLow)}<h2>Before you buy</h2><p>Always compare the exact variant, check the seller's feedback and return policy, and read the full listing. A low price is only a good deal if the item is what it says it is.</p>${DISCLOSURE}`;
+  const html = page({ slug, title: `${m.name} price on eBay by condition`, desc: descFor(m, by, newLow), body, type: "article" });
   if (/\bNOK\b|\bkr\b/.test(html)) errors.push(`${slug}: contains NOK/kr`);
   if (!html.includes("eBay Partner Network")) errors.push(`${slug}: missing disclosure`);
   if (/<a [^>]*href="https?:[^"]*ebay[^"]*"(?![^>]*sponsored)/.test(html)) errors.push(`${slug}: eBay link without sponsored rel`);

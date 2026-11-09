@@ -8,7 +8,9 @@
       "category": "Graphics Cards",
       "match": "RTX\\s*5090",
       "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b|\\bAlienware\\b|\\bLegion\\b|\\bpre-?built\\b|5090\\s*D",
-      "minPrice": 1200
+      "minPrice": 1200,
+      "msrp": 1999,
+      "buyingNotes": ["The RTX 5090 uses the high-power 12V-2x6 connector. Check the plug and socket for discoloration or heat marks, and make sure the cable is fully seated when you install it.", "It is a very large, high-power card. Check that your power supply and case can take it before you order."]
     },
     {
       "slug": "rtx-5080",
@@ -16,7 +18,8 @@
       "category": "Graphics Cards",
       "match": "RTX\\s*5080",
       "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b|\\bAlienware\\b|\\bLegion\\b|\\bpre-?built\\b|5090\\s*D",
-      "minPrice": 700
+      "minPrice": 700,
+      "msrp": 999
     },
     {
       "slug": "rtx-5070-ti",
@@ -24,7 +27,8 @@
       "category": "Graphics Cards",
       "match": "RTX\\s*5070\\s*Ti",
       "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b|\\bAlienware\\b|\\bLegion\\b|\\bpre-?built\\b|5090\\s*D",
-      "minPrice": 500
+      "minPrice": 500,
+      "msrp": 749
     },
     {
       "slug": "rtx-5070",
@@ -32,7 +36,8 @@
       "category": "Graphics Cards",
       "match": "RTX\\s*5070(?!\\s*Ti)",
       "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b|\\bAlienware\\b|\\bLegion\\b|\\bpre-?built\\b|5090\\s*D",
-      "minPrice": 400
+      "minPrice": 400,
+      "msrp": 549
     },
     {
       "slug": "rtx-5060-ti",
@@ -48,7 +53,8 @@
       "category": "Graphics Cards",
       "match": "RTX\\s*4090",
       "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b|\\bAlienware\\b|\\bLegion\\b|\\bpre-?built\\b|5090\\s*D",
-      "minPrice": 900
+      "minPrice": 900,
+      "msrp": 1599
     },
     {
       "slug": "rtx-4080-super",
