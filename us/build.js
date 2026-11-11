@@ -254,14 +254,28 @@ for (const m of modelCfg.models) buildModel(m);
 for (const mp of modelPages) {
   const f = path.join(outDir, mp.slug + ".html");
   const related = modelPages.filter(x => x.category === mp.category && x.slug !== mp.slug).slice(0, 6);
-  const block = `<h2>More price checks</h2><ul>${related.map(x => `<li><a href="/${x.slug}">${esc(x.name)} price on eBay</a></li>`).join("")}</ul><p>New to buying used? Read our ${mp.category === "Processors" ? `<a href="/used-vs-new-cpu-price-gap">used vs new CPU comparison</a>` : `<a href="/used-gpu-buying-guide-ebay">used graphics card checklist</a>`} and <a href="/ebay-refurbished-vs-used-explained">refurbished vs used explained</a>.</p>`;
+  const block = `<h2>More price checks</h2><ul>${related.map(x => `<li><a href="/${x.slug}">${esc(x.name)} price on eBay</a></li>`).join("")}</ul><p>New to buying used? Read our ${mp.category === "Processors" ? `<a href="/used-vs-new-cpu-price-gap">used vs new CPU comparison</a>` : `<a href="/used-gpu-buying-guide-ebay">used graphics card checklist</a>`} and <a href="/ebay-refurbished-vs-used-explained">refurbished vs used explained</a>, or see how used prices are moving in our <a href="/used-gpu-price-index">used GPU &amp; CPU price index</a>.</p>`;
   let html = fs.readFileSync(f, "utf8");
   if (html.includes("</main>") && !html.includes("More price checks")) { html = html.replace("</main>", block + "</main>"); fs.writeFileSync(f, html); }
 }
 
+// ---- Used price index page (from price-history.json) ----
+const { buildPriceIndex } = require("./price-index.js");
+let priceIndex = null;
+try {
+  const history = JSON.parse(fs.readFileSync(path.join(root, "price-history.json"), "utf8"));
+  priceIndex = buildPriceIndex({ history, modelCfg, BAD, groupOf, median, usd, esc });
+} catch (e) { errors.push("price index: " + e.message); }
+if (priceIndex) {
+  const html = page({ slug: "used-gpu-price-index", title: "Used GPU Price Index (eBay, US)", desc: priceIndex.desc, body: priceIndex.body + DISCLOSURE, type: "article" });
+  write("used-gpu-price-index", html);
+  fs.writeFileSync(path.join(outDir, "used-price-index.csv"), priceIndex.csv);
+  fs.writeFileSync(path.join(here, "price-index-summary.json"), JSON.stringify({ updated: priceIndex.last, since: priceIndex.first, summary: priceIndex.summary }, null, 2) + "\n");
+}
+
 write("index", page({
   slug: "", title: "Used vs New PC Hardware Prices on eBay", desc: "Honest price comparisons of new, open-box, used and refurbished PC hardware on eBay, with the risks spelled out.",
-  body: `<section class="hero"><div><h1>${esc(cfg.tagline)}</h1><p>We compare what the same hardware costs new, open-box, used and refurbished on eBay, and explain how to buy safely.</p><div class="chips"><span class="chip"><i style="background:#7eeaff"></i>New</span><span class="chip"><i style="background:#a77bff"></i>Open box</span><span class="chip"><i style="background:#ffb84d"></i>Used</span><span class="chip"><i style="background:#c5f36b"></i>Refurbished</span></div></div><figure class="heroFig"><img src="https://images.unsplash.com/photo-1719927604476-dc404b85358f?auto=format&amp;fit=crop&amp;w=900&amp;h=760&amp;q=80" alt="Gaming PC with glass side panel and blue RGB fans" width="900" height="760" fetchpriority="high"><figcaption>Photo by <a href="https://unsplash.com/photos/GYj9ts-qvlQ?utm_source=usedtechradar&amp;utm_medium=referral" rel="noopener">Bhautik Patel</a> on <a href="https://unsplash.com/?utm_source=usedtechradar&amp;utm_medium=referral" rel="noopener">Unsplash</a></figcaption></figure></section>${PRICE_NOTICE}<h2>Guides</h2>` +
+  body: `<section class="hero"><div><h1>${esc(cfg.tagline)}</h1><p>We compare what the same hardware costs new, open-box, used and refurbished on eBay, and explain how to buy safely.</p><div class="chips"><span class="chip"><i style="background:#7eeaff"></i>New</span><span class="chip"><i style="background:#a77bff"></i>Open box</span><span class="chip"><i style="background:#ffb84d"></i>Used</span><span class="chip"><i style="background:#c5f36b"></i>Refurbished</span></div></div><figure class="heroFig"><img src="https://images.unsplash.com/photo-1719927604476-dc404b85358f?auto=format&amp;fit=crop&amp;w=900&amp;h=760&amp;q=80" alt="Gaming PC with glass side panel and blue RGB fans" width="900" height="760" fetchpriority="high"><figcaption>Photo by <a href="https://unsplash.com/photos/GYj9ts-qvlQ?utm_source=usedtechradar&amp;utm_medium=referral" rel="noopener">Bhautik Patel</a> on <a href="https://unsplash.com/?utm_source=usedtechradar&amp;utm_medium=referral" rel="noopener">Unsplash</a></figcaption></figure></section>${PRICE_NOTICE}${priceIndex ? `<a class="card" href="/used-gpu-price-index" style="border-color:var(--acc)"><b>Used GPU &amp; CPU Price Index</b><span>${esc(priceIndex.summary)}</span></a>` : ""}<h2>Guides</h2>` +
     guides.map(g => `<a class="card" href="/${g.slug}"><b>${esc(g.h1)}</b><span>${esc(g.description)}</span></a>`).join("") +
     (modelPages.length ? `<h2>Price check by model</h2>` + ["Graphics Cards", "Processors"].map(c => modelPages.filter(x => x.category === c).length ? `<h3>${c}</h3>` + modelPages.filter(x => x.category === c).map(x => `<a class="card" href="/${x.slug}"><b>${esc(x.name)}</b><span>${x.count} listings, from ${usd(x.low)}</span></a>`).join("") : "").join("") : "") + DISCLOSURE
 }));
@@ -273,7 +287,7 @@ write("privacy", page({ slug: "privacy", title: "Privacy", desc: "Privacy inform
 fs.writeFileSync(path.join(outDir, "404.html"), page({ slug: "", title: "Page not found", desc: "This page does not exist.", body: `<h1>Page not found</h1><p>This page does not exist or has moved. <a href="/">Go to the home page</a> for all price checks and guides.</p>` }).replace(`<meta name="robots" content="${ROBOTS}">`, `<meta name="robots" content="noindex">`).replace(/<link rel="canonical"[^>]*>\n?/, ""));
 fs.writeFileSync(path.join(outDir, "robots.txt"), cfg.publish ? `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n` : "User-agent: *\nDisallow: /\n");
 if (cfg.publish) {
-  const urls = ["", ...guides.map(g => g.slug), ...modelPages.map(x => x.slug), "about", "affiliate-disclosure", "privacy"];
+  const urls = ["", ...guides.map(g => g.slug), ...modelPages.map(x => x.slug), ...(priceIndex ? ["used-gpu-price-index"] : []), "about", "affiliate-disclosure", "privacy"];
   fs.writeFileSync(path.join(outDir, "sitemap.xml"), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls.map(u => `  <url><loc>${SITE}/${u}</loc><lastmod>${snapDate}</lastmod></url>`).join("\n") + "\n</urlset>\n");
 } else if (fs.existsSync(path.join(outDir, "sitemap.xml"))) fs.unlinkSync(path.join(outDir, "sitemap.xml"));
 
