@@ -15,6 +15,9 @@ const fixturePath = args.includes("--fixture") ? args[args.indexOf("--fixture") 
 const dryRun = args.includes("--dry-run");
 const CAMPAIGN = process.env.EBAY_CAMPAIGN_ID || "5339206505";
 const MAX_PER_BUCKET = Number(process.env.MAX_PER_BUCKET || 200);
+// Graphics cards and processors have many model queries; at 200 per condition the bucket filled before the later
+// models were reached, so those never got enough listings for a page. Earlier queries are unaffected by a larger cap.
+const BUCKET_CAP = { "Graphics Cards": 500, Processors: 500 };
 const plan = JSON.parse(fs.readFileSync(path.join(root, "data", "ebay-queries.json"), "utf8"));
 const productsPath = path.join(root, "products.json");
 const previous = fs.existsSync(productsPath) ? JSON.parse(fs.readFileSync(productsPath, "utf8")) : [];
@@ -87,7 +90,7 @@ async function search(q, conditionIds, offset) {
           if (spec.maxPrice && price > spec.maxPrice) continue;
           const key = spec.category + "|" + pass.name;
           const list = buckets.get(key) || [];
-          if (list.length >= MAX_PER_BUCKET) continue;
+          if (list.length >= (process.env.MAX_PER_BUCKET ? MAX_PER_BUCKET : (BUCKET_CAP[spec.category] || MAX_PER_BUCKET))) continue;
           seen.add(it.itemId);
           const review = price > (REVIEW_LIMIT_USD[spec.category] || 5000);
           list.push({

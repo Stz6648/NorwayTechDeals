@@ -10,7 +10,10 @@
       "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\bpc\\b|workstation|\\bddr\\d|core ultra|\\bi[3579][- ]?\\d{4,5}|ryzen|\\d+\\s?gb\\s+(ram|ddr)|\\bram\\b|motherboard|\\bmonitor\\b|\\bwith\\b.*\\b(cpu|processor)\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b|\\bAlienware\\b|\\bLegion\\b|\\bpre-?built\\b|5090\\s*D",
       "minPrice": 1200,
       "msrp": 1999,
-      "buyingNotes": ["The RTX 5090 uses the high-power 12V-2x6 connector. Check the plug and socket for discoloration or heat marks, and make sure the cable is fully seated when you install it.", "It is a very large, high-power card. Check that your power supply and case can take it before you order."]
+      "buyingNotes": [
+        "The RTX 5090 uses the high-power 12V-2x6 connector. Check the plug and socket for discoloration or heat marks, and make sure the cable is fully seated when you install it.",
+        "It is a very large, high-power card. Check that your power supply and case can take it before you order."
+      ]
     },
     {
       "slug": "rtx-5080",
@@ -295,6 +298,114 @@
       "match": "265K",
       "exclude": "laptop|notebook|desktop|gaming pc|prebuilt|waterblock|water block|bracket|cable|\\bmobile\\b|bundle|combo|motherboard|cooler|\\blot\\b|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b|\\bAlienware\\b|\\bLegion\\b|\\bpre-?built\\b",
       "minPrice": 200
+    },
+    {
+      "slug": "laptop-rtx-5070",
+      "name": "RTX 5070 gaming laptop",
+      "category": "Laptops",
+      "match": "RTX\\s*5070(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand|\\blot\\b|bundle",
+      "minPrice": 600,
+      "buyingNotes": [
+        "Laptop GPUs with the same name differ a lot by power limit (TGP). Check the wattage in the specs, not just the GPU name, before comparing prices.",
+        "Ask for a photo of the battery health report and check the charger is included and original."
+      ]
+    },
+    {
+      "slug": "laptop-rtx-5060",
+      "name": "RTX 5060 gaming laptop",
+      "category": "Laptops",
+      "match": "RTX\\s*5060(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand|\\blot\\b|bundle",
+      "minPrice": 500,
+      "buyingNotes": [
+        "Laptop GPUs with the same name differ a lot by power limit (TGP). Check the wattage in the specs, not just the GPU name, before comparing prices.",
+        "Ask for a photo of the battery health report and check the charger is included and original."
+      ]
+    },
+    {
+      "slug": "laptop-rtx-4060",
+      "name": "RTX 4060 gaming laptop",
+      "category": "Laptops",
+      "match": "RTX\\s*4060(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand|\\blot\\b|bundle",
+      "minPrice": 400,
+      "buyingNotes": [
+        "Laptop GPUs with the same name differ a lot by power limit (TGP). Check the wattage in the specs, not just the GPU name, before comparing prices.",
+        "Ask for a photo of the battery health report and check the charger is included and original."
+      ]
+    },
+    {
+      "slug": "laptop-rtx-4070",
+      "name": "RTX 4070 gaming laptop",
+      "category": "Laptops",
+      "match": "RTX\\s*4070(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand|\\blot\\b|bundle",
+      "minPrice": 500,
+      "buyingNotes": [
+        "Laptop GPUs with the same name differ a lot by power limit (TGP). Check the wattage in the specs, not just the GPU name, before comparing prices.",
+        "Ask for a photo of the battery health report and check the charger is included and original."
+      ]
+    },
+    {
+      "slug": "laptop-rtx-4080",
+      "name": "RTX 4080 gaming laptop",
+      "category": "Laptops",
+      "match": "RTX\\s*4080(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand|\\blot\\b|bundle",
+      "minPrice": 800,
+      "buyingNotes": [
+        "Laptop GPUs with the same name differ a lot by power limit (TGP). Check the wattage in the specs, not just the GPU name, before comparing prices.",
+        "Ask for a photo of the battery health report and check the charger is included and original."
+      ]
+    },
+    {
+      "slug": "laptop-rtx-4090",
+      "name": "RTX 4090 gaming laptop",
+      "category": "Laptops",
+      "match": "RTX\\s*4090(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand|\\blot\\b|bundle",
+      "minPrice": 1000,
+      "buyingNotes": [
+        "Laptop GPUs with the same name differ a lot by power limit (TGP). Check the wattage in the specs, not just the GPU name, before comparing prices.",
+        "Ask for a photo of the battery health report and check the charger is included and original."
+      ]
+    },
+    {
+      "slug": "laptop-rtx-5080",
+      "name": "RTX 5080 gaming laptop",
+      "category": "Laptops",
+      "match": "RTX\\s*5080(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand|\\blot\\b|bundle",
+      "minPrice": 1000,
+      "buyingNotes": [
+        "Laptop GPUs with the same name differ a lot by power limit (TGP). Check the wattage in the specs, not just the GPU name, before comparing prices.",
+        "Ask for a photo of the battery health report and check the charger is included and original."
+      ]
+    },
+    {
+      "slug": "laptop-rtx-3060",
+      "name": "RTX 3060 gaming laptop",
+      "category": "Laptops",
+      "match": "RTX\\s*3060(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand|\\blot\\b|bundle",
+      "minPrice": 250,
+      "buyingNotes": [
+        "Laptop GPUs with the same name differ a lot by power limit (TGP). Check the wattage in the specs, not just the GPU name, before comparing prices.",
+        "Ask for a photo of the battery health report and check the charger is included and original."
+      ]
+    },
+    {
+      "slug": "laptop-rtx-3070",
+      "name": "RTX 3070 gaming laptop",
+      "category": "Laptops",
+      "match": "RTX\\s*3070(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand|\\blot\\b|bundle",
+      "minPrice": 300,
+      "buyingNotes": [
+        "Laptop GPUs with the same name differ a lot by power limit (TGP). Check the wattage in the specs, not just the GPU name, before comparing prices.",
+        "Ask for a photo of the battery health report and check the charger is included and original."
+      ]
     }
   ]
 }

@@ -370,6 +370,70 @@
       "exclude": "laptop|notebook|desktop|\\bpc\\b|computer|motherboard|combo|bundle|cooler|mobile|\\b1U\\b|\\bserver\\b|\\brack\\b|\\bOMEN\\b",
       "minPrice": 200,
       "pages": 1
+    },
+    {
+      "category": "Laptops",
+      "q": "gaming laptop RTX 4060",
+      "mustMatch": "RTX\\s*4060(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand",
+      "minPrice": 400,
+      "pages": 1
+    },
+    {
+      "category": "Laptops",
+      "q": "gaming laptop RTX 4070",
+      "mustMatch": "RTX\\s*4070(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand",
+      "minPrice": 500,
+      "pages": 1
+    },
+    {
+      "category": "Laptops",
+      "q": "gaming laptop RTX 4080",
+      "mustMatch": "RTX\\s*4080(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand",
+      "minPrice": 800,
+      "pages": 1
+    },
+    {
+      "category": "Laptops",
+      "q": "gaming laptop RTX 4090",
+      "mustMatch": "RTX\\s*4090(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand",
+      "minPrice": 1000,
+      "pages": 1
+    },
+    {
+      "category": "Laptops",
+      "q": "gaming laptop RTX 5060",
+      "mustMatch": "RTX\\s*5060(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand",
+      "minPrice": 500,
+      "pages": 1
+    },
+    {
+      "category": "Laptops",
+      "q": "gaming laptop RTX 5080",
+      "mustMatch": "RTX\\s*5080(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand",
+      "minPrice": 1000,
+      "pages": 1
+    },
+    {
+      "category": "Laptops",
+      "q": "gaming laptop RTX 3060",
+      "mustMatch": "RTX\\s*3060(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand",
+      "minPrice": 250,
+      "pages": 1
+    },
+    {
+      "category": "Laptops",
+      "q": "gaming laptop RTX 3070",
+      "mustMatch": "RTX\\s*3070(?!\\s*Ti)",
+      "exclude": "desktop|tower|\\bmonitor\\b|keyboard|\\bcase\\b|\\bbag\\b|charger|adapter|\\bscreen only\\b|\\blcd\\b|motherboard|\\bparts\\b|cooling pad|stand",
+      "minPrice": 300,
+      "pages": 1
     }
   ]
 }
