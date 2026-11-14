@@ -158,7 +158,8 @@ function modelExtras(m, by, newLow) {
   const stat = g => by[g].length ? (() => { const ps = by[g].map(h => Number(h.o.price)); return { n: ps.length, low: Math.min(...ps), med: median(ps), high: Math.max(...ps) }; })() : null;
   const S = Object.fromEntries(GROUP_ORDER.map(g => [g, stat(g)]));
   const isGpu = m.category === "Graphics Cards";
-  const noun = isGpu ? "card" : "processor";
+  const isLaptop = m.category === "Laptops";
+  const noun = isGpu ? "card" : isLaptop ? "laptop" : "processor";
   const parts = [];
 
   // 1. Overview: what the page covers and how big the snapshot is.
@@ -187,7 +188,7 @@ function modelExtras(m, by, newLow) {
 
   // 4. Checklist.
   const extra = (m.buyingNotes || []).map(x => `<li>${esc(x)}</li>`).join("");
-  parts.push(`<h2>Checklist before you buy a used ${esc(m.name)}</h2><ol><li>Check the seller: feedback score, account history and a return policy you can actually use.</li><li>Ask for photos of the actual ${noun}, including the serial number sticker. Stock photos alone are a warning sign.</li>${isGpu ? "<li>Ask whether it was used for mining, rendering or in a server. Heavy long-term use wears fans and thermal pads faster than light gaming.</li>" : "<li>Look for bent pins or marks on the socket side, and ask whether the processor was overclocked.</li>"}<li>Ask whether the manufacturer warranty transfers to a new owner. This differs by brand, so confirm with the seller.</li>${extra}<li>Test it as soon as it arrives, during the return window. Run a stress test and watch temperatures.</li><li>Be careful with prices far below the median in the table above, and with listings that say box only, for parts or untested.</li></ol>`);
+  parts.push(`<h2>Checklist before you buy a used ${esc(m.name)}</h2><ol><li>Check the seller: feedback score, account history and a return policy you can actually use.</li><li>Ask for photos of the actual ${noun}, including the serial number sticker. Stock photos alone are a warning sign.</li>${isGpu ? "<li>Ask whether it was used for mining, rendering or in a server. Heavy long-term use wears fans and thermal pads faster than light gaming.</li>" : isLaptop ? "<li>Check the exact CPU, RAM, storage and screen (resolution and refresh rate) in the listing. Two laptops with the same GPU can be very different machines.</li><li>Ask about hinge play, dead pixels, keyboard wear and whether the fans are noisy under load.</li>" : "<li>Look for bent pins or marks on the socket side, and ask whether the processor was overclocked.</li>"}<li>Ask whether the manufacturer warranty transfers to a new owner. This differs by brand, so confirm with the seller.</li>${extra}<li>Test it as soon as it arrives, during the return window. Run a stress test and watch temperatures.</li><li>Be careful with prices far below the median in the table above, and with listings that say box only, for parts or untested.</li></ol>`);
 
   // 5. FAQ with the same snapshot numbers.
   const faq = [];
@@ -222,7 +223,12 @@ function buildModel(m) {
     if (g === "Used" && /\b(brand new|new sealed|sealed|new in box)\b/i.test(p.name)) continue;
     hits.push({ p, o, g });
   }
-  if (hits.length < modelCfg.minListings) return;
+  // Once a model page has been published it stays published (Google may have indexed it), even on days with few listings.
+  const sticky = published.has("price-" + m.slug);
+  if (hits.length < modelCfg.minListings && !(sticky && hits.length >= 1)) {
+    if (sticky) writeThinModel(m);
+    return;
+  }
   for (const h of hits) check("model-" + m.slug, h);
   const by = Object.fromEntries(GROUP_ORDER.map(g => [g, hits.filter(h => h.g === g).sort((a, b) => Number(a.o.price) - Number(b.o.price))]));
   const newLow = by["New"].length ? Number(by["New"][0].o.price) : null;
@@ -235,8 +241,8 @@ function buildModel(m) {
   const cheapestAll = hits.reduce((a, b) => Number(b.o.price) < Number(a.o.price) ? b : a);
   const lead = `On ${esc(dateEn)} we found ${hits.length} qualifying eBay listings for the ${esc(m.name)}. ` + (newLow != null ? `The cheapest new one costs ${usd(newLow)}. ` : "") + `The lowest price in any condition is ${usd(cheapestAll.o.price)} (${esc(cheapestAll.g.toLowerCase())}).`;
   const slug = "price-" + m.slug;
-  const body = `<h1>${esc(m.name)} price on eBay by condition</h1><p class="muted">Last updated: ${esc(dateEn)} · catalogue snapshot</p><p>${lead}</p>${PRICE_NOTICE}<h2>Price by condition</h2><div class="tw"><table><thead><tr><th>Condition</th><th>Listings</th><th>Lowest</th><th>Median</th><th>Lowest vs cheapest new</th></tr></thead><tbody>${rows}</tbody></table></div><p class="muted">Median and lowest are calculated from the listings in our catalogue snapshot, not from every eBay listing.</p>${lists}${modelExtras(m, by, newLow)}<h2>Before you buy</h2><p>Always compare the exact variant, check the seller's feedback and return policy, and read the full listing. A low price is only a good deal if the item is what it says it is.</p>${DISCLOSURE}`;
-  const html = page({ slug, title: `${m.name} price on eBay by condition`, desc: descFor(m, by, newLow), body, type: "article" });
+  const body = `<h1>${esc(m.name)} price on eBay: used vs new, open box and refurbished</h1><p class="muted">Last updated: ${esc(dateEn)} · catalogue snapshot</p><p>${lead}</p>${PRICE_NOTICE}<h2>Price by condition</h2><div class="tw"><table><thead><tr><th>Condition</th><th>Listings</th><th>Lowest</th><th>Median</th><th>Lowest vs cheapest new</th></tr></thead><tbody>${rows}</tbody></table></div><p class="muted">Median and lowest are calculated from the listings in our catalogue snapshot, not from every eBay listing.</p>${lists}${modelExtras(m, by, newLow)}<h2>Before you buy</h2><p>Always compare the exact variant, check the seller's feedback and return policy, and read the full listing. A low price is only a good deal if the item is what it says it is.</p>${DISCLOSURE}`;
+  const html = page({ slug, title: `Used ${m.name} Price on eBay vs New & Refurbished`, desc: descFor(m, by, newLow), body, type: "article" });
   if (/\bNOK\b|\bkr\b/.test(html)) errors.push(`${slug}: contains NOK/kr`);
   if (!html.includes("eBay Partner Network")) errors.push(`${slug}: missing disclosure`);
   if (/<a [^>]*href="https?:[^"]*ebay[^"]*"(?![^>]*sponsored)/.test(html)) errors.push(`${slug}: eBay link without sponsored rel`);
@@ -247,14 +253,26 @@ function buildModel(m) {
 fs.mkdirSync(outDir, { recursive: true });
 fs.mkdirSync(path.join(outDir, "images"), { recursive: true });
 
+// Model pages that have ever been published (kept in us/content/published-models.json, extended on every build).
+const publishedPath = path.join(here, "content", "published-models.json");
+const published = new Set(fs.existsSync(publishedPath) ? JSON.parse(fs.readFileSync(publishedPath, "utf8")) : []);
+for (const f of fs.readdirSync(outDir)) if (/^price-.*\.html$/.test(f)) published.add(f.replace(/\.html$/, ""));
+function writeThinModel(m) {
+  const slug = "price-" + m.slug;
+  const body = `<h1>${esc(m.name)} price on eBay: used vs new, open box and refurbished</h1><p class="muted">Last updated: ${esc(dateEn)} · catalogue snapshot</p><p>Our ${esc(dateEn)} eBay snapshot has no qualifying ${esc(m.name)} listings, so there is no price table today. Listings come and go, and this page fills in again automatically when they return.</p>${PRICE_NOTICE}<p>Meanwhile, see how used prices are moving in the <a href="/used-gpu-price-index">used GPU &amp; CPU price index</a>, or browse <a href="/">all price checks</a>.</p>${DISCLOSURE}`;
+  write(slug, page({ slug, title: `Used ${m.name} Price on eBay vs New & Refurbished`, desc: `${m.name} prices on eBay by condition: used, new, open box and refurbished, updated automatically.`, body, type: "article" }));
+  modelPages.push({ slug, name: m.name, category: m.category, count: 0, low: null });
+}
 for (const f of fs.readdirSync(outDir)) if (/^price-.*\.html$/.test(f)) fs.unlinkSync(path.join(outDir, f));
 for (const g of guides) buildGuide(g);
 for (const m of modelCfg.models) buildModel(m);
+for (const mp of modelPages) published.add(mp.slug);
+fs.writeFileSync(publishedPath, JSON.stringify([...published].sort(), null, 2) + "\n");
 // Internal links: each model page links to other price pages in the same category and to the guides.
 for (const mp of modelPages) {
   const f = path.join(outDir, mp.slug + ".html");
   const related = modelPages.filter(x => x.category === mp.category && x.slug !== mp.slug).slice(0, 6);
-  const block = `<h2>More price checks</h2><ul>${related.map(x => `<li><a href="/${x.slug}">${esc(x.name)} price on eBay</a></li>`).join("")}</ul><p>New to buying used? Read our ${mp.category === "Processors" ? `<a href="/used-vs-new-cpu-price-gap">used vs new CPU comparison</a>` : `<a href="/used-gpu-buying-guide-ebay">used graphics card checklist</a>`} and <a href="/ebay-refurbished-vs-used-explained">refurbished vs used explained</a>, or see how used prices are moving in our <a href="/used-gpu-price-index">used GPU &amp; CPU price index</a>.</p>`;
+  const block = `<h2>More price checks</h2><ul>${related.map(x => `<li><a href="/${x.slug}">${esc(x.name)} price on eBay</a></li>`).join("")}</ul><p>New to buying used? Read our ${mp.category === "Laptops" ? `<a href="/refurbished-gaming-laptops-ebay">refurbished gaming laptop guide</a>` : mp.category === "Processors" ? `<a href="/used-vs-new-cpu-price-gap">used vs new CPU comparison</a>` : `<a href="/used-gpu-buying-guide-ebay">used graphics card checklist</a>`} and <a href="/ebay-refurbished-vs-used-explained">refurbished vs used explained</a>, or see how used prices are moving in our <a href="/used-gpu-price-index">used GPU &amp; CPU price index</a>.</p>`;
   let html = fs.readFileSync(f, "utf8");
   if (html.includes("</main>") && !html.includes("More price checks")) { html = html.replace("</main>", block + "</main>"); fs.writeFileSync(f, html); }
 }
@@ -277,7 +295,7 @@ write("index", page({
   slug: "", title: "Used vs New PC Hardware Prices on eBay", desc: "Honest price comparisons of new, open-box, used and refurbished PC hardware on eBay, with the risks spelled out.",
   body: `<section class="hero"><div><h1>${esc(cfg.tagline)}</h1><p>We compare what the same hardware costs new, open-box, used and refurbished on eBay, and explain how to buy safely.</p><div class="chips"><span class="chip"><i style="background:#7eeaff"></i>New</span><span class="chip"><i style="background:#a77bff"></i>Open box</span><span class="chip"><i style="background:#ffb84d"></i>Used</span><span class="chip"><i style="background:#c5f36b"></i>Refurbished</span></div></div><figure class="heroFig"><img src="https://images.unsplash.com/photo-1719927604476-dc404b85358f?auto=format&amp;fit=crop&amp;w=900&amp;h=760&amp;q=80" alt="Gaming PC with glass side panel and blue RGB fans" width="900" height="760" fetchpriority="high"><figcaption>Photo by <a href="https://unsplash.com/photos/GYj9ts-qvlQ?utm_source=usedtechradar&amp;utm_medium=referral" rel="noopener">Bhautik Patel</a> on <a href="https://unsplash.com/?utm_source=usedtechradar&amp;utm_medium=referral" rel="noopener">Unsplash</a></figcaption></figure></section>${PRICE_NOTICE}${priceIndex ? `<a class="card" href="/used-gpu-price-index" style="border-color:var(--acc)"><b>Used GPU &amp; CPU Price Index</b><span>${esc(priceIndex.summary)}</span></a>` : ""}<h2>Guides</h2>` +
     guides.map(g => `<a class="card" href="/${g.slug}"><b>${esc(g.h1)}</b><span>${esc(g.description)}</span></a>`).join("") +
-    (modelPages.length ? `<h2>Price check by model</h2>` + ["Graphics Cards", "Processors"].map(c => modelPages.filter(x => x.category === c).length ? `<h3>${c}</h3>` + modelPages.filter(x => x.category === c).map(x => `<a class="card" href="/${x.slug}"><b>${esc(x.name)}</b><span>${x.count} listings, from ${usd(x.low)}</span></a>`).join("") : "").join("") : "") + DISCLOSURE
+    (modelPages.length ? `<h2>Price check by model</h2>` + ["Graphics Cards", "Processors", "Laptops"].map(c => modelPages.filter(x => x.category === c).length ? `<h3>${c}</h3>` + modelPages.filter(x => x.category === c).map(x => `<a class="card" href="/${x.slug}"><b>${esc(x.name)}</b><span>${x.count ? `${x.count} listings, from ${usd(x.low)}` : "No listings in today's snapshot"}</span></a>`).join("") : "").join("") : "") + DISCLOSURE
 }));
 write("about", page({ slug: "about", title: "About", desc: `About ${cfg.brand}.`, body: `<h1>About ${esc(cfg.brand)}</h1><p>${esc(cfg.brand)} is an independent site that compares prices for new, open-box, used and refurbished PC hardware on eBay. We earn a commission when you buy through our links, which is how the site is funded.</p><p>We do not sell anything ourselves and we have not tested the products listed. Our prices come from a catalogue snapshot and can be out of date by the time you read them.</p>${cfg.contactEmail ? `<p>Contact: <a href="mailto:${esc(cfg.contactEmail)}">${esc(cfg.contactEmail)}</a></p>` : ""}${DISCLOSURE}` }));
 write("affiliate-disclosure", page({ slug: "affiliate-disclosure", title: "Affiliate disclosure", desc: "How this site earns money from eBay links.", body: `<h1>Affiliate disclosure</h1><p>${esc(cfg.brand)} is a participant in the eBay Partner Network, an affiliate program. When you click a link to eBay on this site and make a qualifying purchase, we may earn a commission. It does not change the price you pay.</p><p>Commissions do not decide which listings appear. We list the cheapest qualifying listing in our catalogue for each category we compare. That is not the same as a recommendation of a particular seller. Always check the seller's feedback, the return policy and the exact condition before you buy.</p>` }));
