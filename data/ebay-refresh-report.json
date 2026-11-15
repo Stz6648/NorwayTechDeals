@@ -1,32 +1,32 @@
 {
-  "fetchedAt": "2026-11-14T22:36:08.864Z",
+  "fetchedAt": "2026-11-15T06:46:36.297Z",
   "mode": "live",
   "apiCalls": 208,
-  "rawItems": 8121,
-  "kept": 4215,
-  "previous": 4217,
+  "rawItems": 8109,
+  "kept": 4185,
+  "previous": 4215,
   "byCategory": {
-    "Graphics Cards": 1667,
-    "Gaming PCs": 159,
-    "Desktop PCs": 145,
+    "Graphics Cards": 1662,
+    "Gaming PCs": 154,
+    "Desktop PCs": 143,
     "Laptops": 800,
-    "Processors": 922,
-    "Memory": 180,
+    "Processors": 907,
+    "Memory": 178,
     "Storage": 174,
-    "Monitors": 168
+    "Monitors": 167
   },
   "byCondition": {
-    "New": 1241,
-    "Open box": 1096,
+    "New": 1228,
+    "Open box": 1093,
     "New – Open box": 8,
     "Opened – never used": 2,
-    "Used": 1248,
-    "Excellent - Refurbished": 340,
-    "Good - Refurbished": 64,
+    "Used": 1241,
+    "Excellent - Refurbished": 338,
+    "Very Good - Refurbished": 128,
+    "Good - Refurbished": 67,
     "Certified refurbished": 4,
-    "Very Good - Refurbished": 131,
-    "Certified - Refurbished": 79,
-    "Brand New": 2
+    "Certified - Refurbished": 75,
+    "Brand New": 1
   },
   "failures": []
 }
