@@ -17,6 +17,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 5090","Graphics Cards",Used,6500.00,45
 2026-11-19,"RTX 5090","Graphics Cards",Used,6599.99,51
 2026-11-20,"RTX 5090","Graphics Cards",Used,6500.00,48
+2026-11-21,"RTX 5090","Graphics Cards",Used,6599.99,43
 2026-11-03,"RTX 5090","Graphics Cards",New,7599.00,41
 2026-11-04,"RTX 5090","Graphics Cards",New,7499.99,43
 2026-11-05,"RTX 5090","Graphics Cards",New,7599.00,43
@@ -35,6 +36,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 5090","Graphics Cards",New,7000.00,54
 2026-11-19,"RTX 5090","Graphics Cards",New,7014.99,59
 2026-11-20,"RTX 5090","Graphics Cards",New,6999.00,51
+2026-11-21,"RTX 5090","Graphics Cards",New,7049.00,43
 2026-11-03,"RTX 5080","Graphics Cards",Used,3312.57,42
 2026-11-04,"RTX 5080","Graphics Cards",Used,2821.26,43
 2026-11-05,"RTX 5080","Graphics Cards",Used,2502.76,44
@@ -53,6 +55,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 5080","Graphics Cards",Used,2274.99,42
 2026-11-19,"RTX 5080","Graphics Cards",Used,2224.99,44
 2026-11-20,"RTX 5080","Graphics Cards",Used,2099.99,46
+2026-11-21,"RTX 5080","Graphics Cards",Used,2049.99,41
 2026-11-03,"RTX 5080","Graphics Cards",New,2724.50,46
 2026-11-04,"RTX 5080","Graphics Cards",New,2596.00,49
 2026-11-05,"RTX 5080","Graphics Cards",New,2596.00,57
@@ -71,6 +74,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 5080","Graphics Cards",New,2300.00,55
 2026-11-19,"RTX 5080","Graphics Cards",New,2299.99,54
 2026-11-20,"RTX 5080","Graphics Cards",New,2374.99,57
+2026-11-21,"RTX 5080","Graphics Cards",New,2449.99,49
 2026-11-03,"RTX 5070 Ti","Graphics Cards",Used,2345.00,24
 2026-11-04,"RTX 5070 Ti","Graphics Cards",Used,2299.00,22
 2026-11-05,"RTX 5070 Ti","Graphics Cards",Used,2473.32,26
@@ -89,6 +93,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 5070 Ti","Graphics Cards",Used,1694.49,28
 2026-11-19,"RTX 5070 Ti","Graphics Cards",Used,1974.99,24
 2026-11-20,"RTX 5070 Ti","Graphics Cards",Used,2274.50,26
+2026-11-21,"RTX 5070 Ti","Graphics Cards",Used,2299.00,30
 2026-11-03,"RTX 5070 Ti","Graphics Cards",New,1999.99,36
 2026-11-04,"RTX 5070 Ti","Graphics Cards",New,1999.99,41
 2026-11-05,"RTX 5070 Ti","Graphics Cards",New,1999.99,49
@@ -107,6 +112,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 5070 Ti","Graphics Cards",New,1675.49,47
 2026-11-19,"RTX 5070 Ti","Graphics Cards",New,1636.99,50
 2026-11-20,"RTX 5070 Ti","Graphics Cards",New,1539.49,49
+2026-11-21,"RTX 5070 Ti","Graphics Cards",New,1544.74,42
 2026-11-03,"RTX 5070","Graphics Cards",Used,839.99,23
 2026-11-04,"RTX 5070","Graphics Cards",Used,849.99,25
 2026-11-05,"RTX 5070","Graphics Cards",Used,849.97,26
@@ -125,6 +131,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 5070","Graphics Cards",Used,874.99,14
 2026-11-19,"RTX 5070","Graphics Cards",Used,879.99,15
 2026-11-20,"RTX 5070","Graphics Cards",Used,920.69,13
+2026-11-21,"RTX 5070","Graphics Cards",Used,1089.99,13
 2026-11-03,"RTX 5070","Graphics Cards",New,1143.32,22
 2026-11-04,"RTX 5070","Graphics Cards",New,1149.00,27
 2026-11-05,"RTX 5070","Graphics Cards",New,1149.00,29
@@ -143,6 +150,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 5070","Graphics Cards",New,1099.99,26
 2026-11-19,"RTX 5070","Graphics Cards",New,1139.99,27
 2026-11-20,"RTX 5070","Graphics Cards",New,1071.91,27
+2026-11-21,"RTX 5070","Graphics Cards",New,1099.99,23
 2026-11-03,"RTX 5060 Ti","Graphics Cards",Used,749.97,28
 2026-11-04,"RTX 5060 Ti","Graphics Cards",Used,714.98,32
 2026-11-05,"RTX 5060 Ti","Graphics Cards",Used,749.97,34
@@ -161,6 +169,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 5060 Ti","Graphics Cards",Used,809.99,35
 2026-11-19,"RTX 5060 Ti","Graphics Cards",Used,824.99,31
 2026-11-20,"RTX 5060 Ti","Graphics Cards",Used,824.99,31
+2026-11-21,"RTX 5060 Ti","Graphics Cards",Used,879.99,35
 2026-11-03,"RTX 5060 Ti","Graphics Cards",New,839.00,45
 2026-11-04,"RTX 5060 Ti","Graphics Cards",New,853.73,51
 2026-11-05,"RTX 5060 Ti","Graphics Cards",New,815.00,50
@@ -179,6 +188,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 5060 Ti","Graphics Cards",New,850.00,51
 2026-11-19,"RTX 5060 Ti","Graphics Cards",New,875.83,55
 2026-11-20,"RTX 5060 Ti","Graphics Cards",New,864.80,51
+2026-11-21,"RTX 5060 Ti","Graphics Cards",New,839.00,43
 2026-11-03,"RTX 4090","Graphics Cards",Used,3599.99,23
 2026-11-04,"RTX 4090","Graphics Cards",Used,3500.00,25
 2026-11-05,"RTX 4090","Graphics Cards",Used,3500.00,25
@@ -197,6 +207,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4090","Graphics Cards",Used,3550.00,44
 2026-11-19,"RTX 4090","Graphics Cards",Used,3499.99,41
 2026-11-20,"RTX 4090","Graphics Cards",Used,3499.99,46
+2026-11-21,"RTX 4090","Graphics Cards",Used,3550.00,40
 2026-11-14,"RTX 4090","Graphics Cards",New,5250.00,31
 2026-11-15,"RTX 4090","Graphics Cards",New,5290.00,31
 2026-11-16,"RTX 4090","Graphics Cards",New,5298.00,33
@@ -204,6 +215,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4090","Graphics Cards",New,5399.00,34
 2026-11-19,"RTX 4090","Graphics Cards",New,5399.00,35
 2026-11-20,"RTX 4090","Graphics Cards",New,5290.00,35
+2026-11-21,"RTX 4090","Graphics Cards",New,5348.50,32
 2026-11-14,"RTX 4080 Super","Graphics Cards",Used,1853.50,33
 2026-11-15,"RTX 4080 Super","Graphics Cards",Used,1853.50,33
 2026-11-16,"RTX 4080 Super","Graphics Cards",Used,1662.49,36
@@ -211,6 +223,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4080 Super","Graphics Cards",Used,1800.00,33
 2026-11-19,"RTX 4080 Super","Graphics Cards",Used,1775.00,34
 2026-11-20,"RTX 4080 Super","Graphics Cards",Used,1775.00,34
+2026-11-21,"RTX 4080 Super","Graphics Cards",Used,1826.75,32
 2026-11-14,"RTX 4080 Super","Graphics Cards",New,2450.00,23
 2026-11-15,"RTX 4080 Super","Graphics Cards",New,2450.00,25
 2026-11-16,"RTX 4080 Super","Graphics Cards",New,2450.00,23
@@ -218,6 +231,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4080 Super","Graphics Cards",New,2450.00,23
 2026-11-19,"RTX 4080 Super","Graphics Cards",New,2450.00,25
 2026-11-20,"RTX 4080 Super","Graphics Cards",New,2450.00,25
+2026-11-21,"RTX 4080 Super","Graphics Cards",New,2450.00,20
 2026-11-14,"RTX 4070 Ti Super","Graphics Cards",Used,1549.49,30
 2026-11-15,"RTX 4070 Ti Super","Graphics Cards",Used,1500.00,31
 2026-11-16,"RTX 4070 Ti Super","Graphics Cards",Used,1598.99,33
@@ -225,6 +239,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4070 Ti Super","Graphics Cards",Used,1524.99,34
 2026-11-19,"RTX 4070 Ti Super","Graphics Cards",Used,1400.00,35
 2026-11-20,"RTX 4070 Ti Super","Graphics Cards",Used,1434.50,34
+2026-11-21,"RTX 4070 Ti Super","Graphics Cards",Used,1434.50,34
 2026-11-14,"RTX 4070 Ti Super","Graphics Cards",New,1739.00,27
 2026-11-15,"RTX 4070 Ti Super","Graphics Cards",New,1739.00,27
 2026-11-16,"RTX 4070 Ti Super","Graphics Cards",New,1739.00,23
@@ -232,6 +247,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4070 Ti Super","Graphics Cards",New,1739.00,23
 2026-11-19,"RTX 4070 Ti Super","Graphics Cards",New,1739.00,25
 2026-11-20,"RTX 4070 Ti Super","Graphics Cards",New,1739.00,25
+2026-11-21,"RTX 4070 Ti Super","Graphics Cards",New,1739.00,23
 2026-11-14,"RTX 4070 Super","Graphics Cards",Used,1150.60,35
 2026-11-15,"RTX 4070 Super","Graphics Cards",Used,1150.00,39
 2026-11-16,"RTX 4070 Super","Graphics Cards",Used,1142.50,36
@@ -239,6 +255,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4070 Super","Graphics Cards",Used,1095.05,33
 2026-11-19,"RTX 4070 Super","Graphics Cards",Used,1095.05,35
 2026-11-20,"RTX 4070 Super","Graphics Cards",Used,1078.10,36
+2026-11-21,"RTX 4070 Super","Graphics Cards",Used,1061.14,31
 2026-11-14,"RTX 4070 Super","Graphics Cards",New,1177.49,18
 2026-11-15,"RTX 4070 Super","Graphics Cards",New,1177.49,18
 2026-11-16,"RTX 4070 Super","Graphics Cards",New,1177.49,18
@@ -246,6 +263,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4070 Super","Graphics Cards",New,1099.00,15
 2026-11-19,"RTX 4070 Super","Graphics Cards",New,1123.50,16
 2026-11-20,"RTX 4070 Super","Graphics Cards",New,1099.00,15
+2026-11-21,"RTX 4070 Super","Graphics Cards",New,1148.00,15
 2026-11-14,"RTX 4060 Ti","Graphics Cards",Used,638.25,39
 2026-11-15,"RTX 4060 Ti","Graphics Cards",Used,638.25,39
 2026-11-16,"RTX 4060 Ti","Graphics Cards",Used,605.00,38
@@ -253,6 +271,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4060 Ti","Graphics Cards",Used,665.26,44
 2026-11-19,"RTX 4060 Ti","Graphics Cards",Used,600.00,43
 2026-11-20,"RTX 4060 Ti","Graphics Cards",Used,549.99,45
+2026-11-21,"RTX 4060 Ti","Graphics Cards",Used,564.87,36
 2026-11-14,"RTX 4060 Ti","Graphics Cards",New,825.00,37
 2026-11-15,"RTX 4060 Ti","Graphics Cards",New,821.59,39
 2026-11-16,"RTX 4060 Ti","Graphics Cards",New,825.00,37
@@ -260,6 +279,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4060 Ti","Graphics Cards",New,825.00,35
 2026-11-19,"RTX 4060 Ti","Graphics Cards",New,829.00,39
 2026-11-20,"RTX 4060 Ti","Graphics Cards",New,823.30,40
+2026-11-21,"RTX 4060 Ti","Graphics Cards",New,821.59,39
 2026-11-14,"RTX 4060","Graphics Cards",Used,399.99,34
 2026-11-15,"RTX 4060","Graphics Cards",Used,399.99,33
 2026-11-16,"RTX 4060","Graphics Cards",Used,399.99,35
@@ -267,6 +287,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4060","Graphics Cards",Used,389.99,28
 2026-11-19,"RTX 4060","Graphics Cards",Used,399.49,32
 2026-11-20,"RTX 4060","Graphics Cards",Used,394.99,31
+2026-11-21,"RTX 4060","Graphics Cards",Used,399.99,28
 2026-11-14,"RTX 4060","Graphics Cards",New,615.86,18
 2026-11-15,"RTX 4060","Graphics Cards",New,629.00,17
 2026-11-16,"RTX 4060","Graphics Cards",New,615.86,16
@@ -274,6 +295,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4060","Graphics Cards",New,550.72,19
 2026-11-19,"RTX 4060","Graphics Cards",New,599.00,19
 2026-11-20,"RTX 4060","Graphics Cards",New,613.00,20
+2026-11-21,"RTX 4060","Graphics Cards",New,574.50,20
 2026-11-14,"RTX 3090","Graphics Cards",Used,1874.50,38
 2026-11-15,"RTX 3090","Graphics Cards",Used,1797.97,44
 2026-11-16,"RTX 3090","Graphics Cards",Used,1795.00,54
@@ -281,6 +303,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 3090","Graphics Cards",Used,1799.99,48
 2026-11-19,"RTX 3090","Graphics Cards",Used,1800.00,45
 2026-11-20,"RTX 3090","Graphics Cards",Used,1799.99,51
+2026-11-21,"RTX 3090","Graphics Cards",Used,1837.49,42
 2026-11-14,"RTX 3090","Graphics Cards",New,2424.50,28
 2026-11-15,"RTX 3090","Graphics Cards",New,2352.78,31
 2026-11-16,"RTX 3090","Graphics Cards",New,2351.39,34
@@ -288,6 +311,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 3090","Graphics Cards",New,2280.00,34
 2026-11-19,"RTX 3090","Graphics Cards",New,2299.50,40
 2026-11-20,"RTX 3090","Graphics Cards",New,2279.50,38
+2026-11-21,"RTX 3090","Graphics Cards",New,2300.00,33
 2026-11-14,"RTX 3080","Graphics Cards",Used,500.00,48
 2026-11-15,"RTX 3080","Graphics Cards",Used,505.00,48
 2026-11-16,"RTX 3080","Graphics Cards",Used,499.99,57
@@ -295,6 +319,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 3080","Graphics Cards",Used,505.49,58
 2026-11-19,"RTX 3080","Graphics Cards",Used,505.49,62
 2026-11-20,"RTX 3080","Graphics Cards",Used,512.50,58
+2026-11-21,"RTX 3080","Graphics Cards",Used,510.00,48
 2026-11-14,"RTX 3080","Graphics Cards",New,799.98,25
 2026-11-15,"RTX 3080","Graphics Cards",New,800.00,28
 2026-11-16,"RTX 3080","Graphics Cards",New,799.99,23
@@ -302,6 +327,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 3080","Graphics Cards",New,799.99,27
 2026-11-19,"RTX 3080","Graphics Cards",New,799.99,29
 2026-11-20,"RTX 3080","Graphics Cards",New,799.99,30
+2026-11-21,"RTX 3080","Graphics Cards",New,799.99,29
 2026-11-14,"RTX 3070","Graphics Cards",Used,319.99,24
 2026-11-15,"RTX 3070","Graphics Cards",Used,320.00,33
 2026-11-16,"RTX 3070","Graphics Cards",Used,319.99,33
@@ -309,6 +335,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 3070","Graphics Cards",Used,314.50,30
 2026-11-19,"RTX 3070","Graphics Cards",Used,319.99,22
 2026-11-20,"RTX 3070","Graphics Cards",Used,317.50,22
+2026-11-21,"RTX 3070","Graphics Cards",Used,317.49,8
 2026-11-14,"RTX 3070","Graphics Cards",New,437.50,16
 2026-11-15,"RTX 3070","Graphics Cards",New,450.00,15
 2026-11-16,"RTX 3070","Graphics Cards",New,450.00,17
@@ -316,6 +343,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 3070","Graphics Cards",New,458.10,20
 2026-11-19,"RTX 3070","Graphics Cards",New,457.39,14
 2026-11-20,"RTX 3070","Graphics Cards",New,450.00,15
+2026-11-21,"RTX 3070","Graphics Cards",New,450.00,15
 2026-11-14,"RTX 3060 Ti","Graphics Cards",New,385.00,8
 2026-11-15,"RTX 3060 Ti","Graphics Cards",New,449.00,11
 2026-11-16,"RTX 3060 Ti","Graphics Cards",New,399.50,16
@@ -339,6 +367,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Radeon RX 9070 XT","Graphics Cards",Used,1124.99,30
 2026-11-19,"Radeon RX 9070 XT","Graphics Cards",Used,1049.99,33
 2026-11-20,"Radeon RX 9070 XT","Graphics Cards",Used,1124.99,32
+2026-11-21,"Radeon RX 9070 XT","Graphics Cards",Used,1200.00,31
 2026-11-03,"Radeon RX 9070 XT","Graphics Cards",New,1092.02,14
 2026-11-04,"Radeon RX 9070 XT","Graphics Cards",New,1046.99,13
 2026-11-14,"Radeon RX 9070 XT","Graphics Cards",New,1197.15,49
@@ -348,6 +377,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Radeon RX 9070 XT","Graphics Cards",New,1248.14,54
 2026-11-19,"Radeon RX 9070 XT","Graphics Cards",New,1229.99,55
 2026-11-20,"Radeon RX 9070 XT","Graphics Cards",New,1242.88,53
+2026-11-21,"Radeon RX 9070 XT","Graphics Cards",New,1204.73,49
 2026-11-03,"Ryzen 7 9800X3D","Processors",Used,518.00,17
 2026-11-04,"Ryzen 7 9800X3D","Processors",Used,470.76,20
 2026-11-05,"Ryzen 7 9800X3D","Processors",Used,518.00,17
@@ -366,6 +396,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Ryzen 7 9800X3D","Processors",Used,384.99,31
 2026-11-19,"Ryzen 7 9800X3D","Processors",Used,389.99,29
 2026-11-20,"Ryzen 7 9800X3D","Processors",Used,387.49,28
+2026-11-21,"Ryzen 7 9800X3D","Processors",Used,384.99,26
 2026-11-03,"Ryzen 7 9800X3D","Processors",New,488.99,23
 2026-11-04,"Ryzen 7 9800X3D","Processors",New,479.00,29
 2026-11-05,"Ryzen 7 9800X3D","Processors",New,469.24,32
@@ -384,6 +415,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Ryzen 7 9800X3D","Processors",New,459.74,36
 2026-11-19,"Ryzen 7 9800X3D","Processors",New,449.99,37
 2026-11-20,"Ryzen 7 9800X3D","Processors",New,449.99,35
+2026-11-21,"Ryzen 7 9800X3D","Processors",New,461.50,28
 2026-11-03,"Ryzen 7 7800X3D","Processors",Used,300.00,37
 2026-11-04,"Ryzen 7 7800X3D","Processors",Used,300.00,40
 2026-11-05,"Ryzen 7 7800X3D","Processors",Used,300.00,40
@@ -402,6 +434,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Ryzen 7 7800X3D","Processors",Used,299.99,48
 2026-11-19,"Ryzen 7 7800X3D","Processors",Used,299.99,45
 2026-11-20,"Ryzen 7 7800X3D","Processors",Used,299.99,45
+2026-11-21,"Ryzen 7 7800X3D","Processors",Used,299.00,39
 2026-11-03,"Ryzen 7 7800X3D","Processors",New,377.50,24
 2026-11-04,"Ryzen 7 7800X3D","Processors",New,381.36,24
 2026-11-05,"Ryzen 7 7800X3D","Processors",New,384.99,27
@@ -420,6 +453,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Ryzen 7 7800X3D","Processors",New,349.92,22
 2026-11-19,"Ryzen 7 7800X3D","Processors",New,349.90,25
 2026-11-20,"Ryzen 7 7800X3D","Processors",New,331.50,24
+2026-11-21,"Ryzen 7 7800X3D","Processors",New,342.42,22
 2026-11-03,"Ryzen 7 5800X3D","Processors",Used,425.00,36
 2026-11-04,"Ryzen 7 5800X3D","Processors",Used,411.20,40
 2026-11-05,"Ryzen 7 5800X3D","Processors",Used,415.00,41
@@ -438,6 +472,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Ryzen 7 5800X3D","Processors",Used,399.88,35
 2026-11-19,"Ryzen 7 5800X3D","Processors",Used,401.87,36
 2026-11-20,"Ryzen 7 5800X3D","Processors",Used,425.00,37
+2026-11-21,"Ryzen 7 5800X3D","Processors",Used,425.00,37
 2026-11-03,"Ryzen 7 5800X3D","Processors",New,415.39,25
 2026-11-04,"Ryzen 7 5800X3D","Processors",New,453.13,28
 2026-11-05,"Ryzen 7 5800X3D","Processors",New,460.00,30
@@ -456,6 +491,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Ryzen 7 5800X3D","Processors",New,429.00,30
 2026-11-19,"Ryzen 7 5800X3D","Processors",New,448.26,29
 2026-11-20,"Ryzen 7 5800X3D","Processors",New,414.06,29
+2026-11-21,"Ryzen 7 5800X3D","Processors",New,400.98,26
 2026-11-03,"Ryzen 7 5700X","Processors",Used,172.00,24
 2026-11-04,"Ryzen 7 5700X","Processors",Used,174.00,29
 2026-11-05,"Ryzen 7 5700X","Processors",Used,174.99,25
@@ -474,6 +510,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Ryzen 7 5700X","Processors",Used,179.00,26
 2026-11-19,"Ryzen 7 5700X","Processors",Used,179.00,26
 2026-11-20,"Ryzen 7 5700X","Processors",Used,178.00,23
+2026-11-21,"Ryzen 7 5700X","Processors",Used,179.99,21
 2026-11-03,"Ryzen 7 5700X","Processors",New,189.97,25
 2026-11-04,"Ryzen 7 5700X","Processors",New,185.97,27
 2026-11-05,"Ryzen 7 5700X","Processors",New,199.97,27
@@ -492,6 +529,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Ryzen 7 5700X","Processors",New,189.00,29
 2026-11-19,"Ryzen 7 5700X","Processors",New,189.97,29
 2026-11-20,"Ryzen 7 5700X","Processors",New,192.98,26
+2026-11-21,"Ryzen 7 5700X","Processors",New,189.97,23
 2026-11-14,"Core i9-14900K","Processors",Used,450.00,25
 2026-11-15,"Core i9-14900K","Processors",Used,450.00,26
 2026-11-16,"Core i9-14900K","Processors",Used,507.71,29
@@ -499,6 +537,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Core i9-14900K","Processors",Used,491.85,32
 2026-11-19,"Core i9-14900K","Processors",Used,507.71,31
 2026-11-20,"Core i9-14900K","Processors",Used,450.00,33
+2026-11-21,"Core i9-14900K","Processors",Used,463.00,28
 2026-11-03,"Core i9-14900K","Processors",New,415.00,7
 2026-11-04,"Core i9-14900K","Processors",New,499.99,7
 2026-11-09,"Core i9-14900K","Processors",New,459.99,11
@@ -512,6 +551,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Core i9-14900K","Processors",New,575.00,33
 2026-11-19,"Core i9-14900K","Processors",New,587.50,32
 2026-11-20,"Core i9-14900K","Processors",New,556.80,28
+2026-11-21,"Core i9-14900K","Processors",New,548.21,26
 2026-11-14,"Core i7-14700K","Processors",Used,599.98,11
 2026-11-15,"Core i7-14700K","Processors",Used,599.98,11
 2026-11-16,"Core i7-14700K","Processors",Used,599.98,13
@@ -519,6 +559,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Core i7-14700K","Processors",Used,599.98,13
 2026-11-19,"Core i7-14700K","Processors",Used,568.00,13
 2026-11-20,"Core i7-14700K","Processors",Used,503.50,14
+2026-11-21,"Core i7-14700K","Processors",Used,568.00,13
 2026-11-14,"Core i7-14700K","Processors",New,500.00,29
 2026-11-15,"Core i7-14700K","Processors",New,527.23,30
 2026-11-16,"Core i7-14700K","Processors",New,494.44,30
@@ -526,6 +567,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Core i7-14700K","Processors",New,494.44,32
 2026-11-19,"Core i7-14700K","Processors",New,496.76,33
 2026-11-20,"Core i7-14700K","Processors",New,466.69,32
+2026-11-21,"Core i7-14700K","Processors",New,444.25,32
 2026-11-14,"Core i7-13700K","Processors",Used,274.99,21
 2026-11-15,"Core i7-13700K","Processors",Used,270.00,20
 2026-11-16,"Core i7-13700K","Processors",Used,265.00,23
@@ -533,6 +575,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Core i7-13700K","Processors",Used,252.50,18
 2026-11-19,"Core i7-13700K","Processors",Used,280.00,21
 2026-11-20,"Core i7-13700K","Processors",Used,280.00,18
+2026-11-21,"Core i7-13700K","Processors",Used,274.99,17
 2026-11-14,"Core i7-13700K","Processors",New,513.89,18
 2026-11-15,"Core i7-13700K","Processors",New,508.88,19
 2026-11-16,"Core i7-13700K","Processors",New,508.88,19
@@ -540,6 +583,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Core i7-13700K","Processors",New,513.89,20
 2026-11-19,"Core i7-13700K","Processors",New,513.89,20
 2026-11-20,"Core i7-13700K","Processors",New,513.89,20
+2026-11-21,"Core i7-13700K","Processors",New,526.45,18
 2026-11-03,"Ryzen 7 9700X","Processors",Used,277.00,30
 2026-11-04,"Ryzen 7 9700X","Processors",Used,279.50,28
 2026-11-05,"Ryzen 7 9700X","Processors",Used,274.95,27
@@ -558,6 +602,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Ryzen 7 9700X","Processors",Used,249.99,38
 2026-11-19,"Ryzen 7 9700X","Processors",Used,272.47,34
 2026-11-20,"Ryzen 7 9700X","Processors",Used,249.99,35
+2026-11-21,"Ryzen 7 9700X","Processors",Used,249.99,31
 2026-11-03,"Ryzen 7 9700X","Processors",New,397.50,22
 2026-11-04,"Ryzen 7 9700X","Processors",New,401.90,22
 2026-11-05,"Ryzen 7 9700X","Processors",New,399.00,23
@@ -576,6 +621,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Ryzen 7 9700X","Processors",New,340.00,25
 2026-11-19,"Ryzen 7 9700X","Processors",New,330.00,27
 2026-11-20,"Ryzen 7 9700X","Processors",New,338.00,22
+2026-11-21,"Ryzen 7 9700X","Processors",New,338.00,22
 2026-11-03,"Ryzen 7 7700X","Processors",Used,184.99,41
 2026-11-04,"Ryzen 7 7700X","Processors",Used,180.00,43
 2026-11-05,"Ryzen 7 7700X","Processors",Used,179.99,42
@@ -594,6 +640,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Ryzen 7 7700X","Processors",Used,179.99,42
 2026-11-19,"Ryzen 7 7700X","Processors",Used,179.99,37
 2026-11-20,"Ryzen 7 7700X","Processors",Used,179.99,39
+2026-11-21,"Ryzen 7 7700X","Processors",Used,174.99,37
 2026-11-03,"Ryzen 7 7700X","Processors",New,294.67,22
 2026-11-04,"Ryzen 7 7700X","Processors",New,307.95,23
 2026-11-05,"Ryzen 7 7700X","Processors",New,301.97,24
@@ -612,6 +659,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Ryzen 7 7700X","Processors",New,288.23,20
 2026-11-19,"Ryzen 7 7700X","Processors",New,312.97,24
 2026-11-20,"Ryzen 7 7700X","Processors",New,288.23,20
+2026-11-21,"Ryzen 7 7700X","Processors",New,288.23,22
 2026-11-03,"Ryzen 5 7600X","Processors",Used,129.99,5
 2026-11-04,"Ryzen 5 7600X","Processors",Used,134.99,7
 2026-11-14,"Ryzen 5 7600X","Processors",Used,139.00,40
@@ -621,6 +669,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Ryzen 5 7600X","Processors",Used,138.13,42
 2026-11-19,"Ryzen 5 7600X","Processors",Used,138.74,42
 2026-11-20,"Ryzen 5 7600X","Processors",Used,137.74,44
+2026-11-21,"Ryzen 5 7600X","Processors",Used,139.00,40
 2026-11-03,"Ryzen 5 7600X","Processors",New,235.00,26
 2026-11-04,"Ryzen 5 7600X","Processors",New,235.00,24
 2026-11-05,"Ryzen 5 7600X","Processors",New,230.00,17
@@ -639,6 +688,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Ryzen 5 7600X","Processors",New,224.99,25
 2026-11-19,"Ryzen 5 7600X","Processors",New,224.99,27
 2026-11-20,"Ryzen 5 7600X","Processors",New,224.99,25
+2026-11-21,"Ryzen 5 7600X","Processors",New,224.00,25
 2026-11-14,"Core i7-12700K","Processors",Used,369.00,26
 2026-11-15,"Core i7-12700K","Processors",Used,369.00,27
 2026-11-16,"Core i7-12700K","Processors",Used,369.00,28
@@ -646,6 +696,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Core i7-12700K","Processors",Used,369.00,29
 2026-11-19,"Core i7-12700K","Processors",Used,369.00,27
 2026-11-20,"Core i7-12700K","Processors",Used,369.00,28
+2026-11-21,"Core i7-12700K","Processors",Used,369.00,25
 2026-11-06,"Core i7-12700K","Processors",New,209.00,5
 2026-11-14,"Core i7-12700K","Processors",New,364.54,25
 2026-11-15,"Core i7-12700K","Processors",New,364.54,25
@@ -654,6 +705,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Core i7-12700K","Processors",New,368.17,23
 2026-11-19,"Core i7-12700K","Processors",New,364.54,23
 2026-11-20,"Core i7-12700K","Processors",New,364.54,21
+2026-11-21,"Core i7-12700K","Processors",New,361.97,20
 2026-11-14,"Core Ultra 9 285K","Processors",Used,734.00,13
 2026-11-15,"Core Ultra 9 285K","Processors",Used,1337.00,13
 2026-11-16,"Core Ultra 9 285K","Processors",Used,1337.00,13
@@ -661,6 +713,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Core Ultra 9 285K","Processors",Used,1337.00,13
 2026-11-19,"Core Ultra 9 285K","Processors",Used,1337.00,13
 2026-11-20,"Core Ultra 9 285K","Processors",Used,1338.50,12
+2026-11-21,"Core Ultra 9 285K","Processors",Used,1338.50,12
 2026-11-14,"Core Ultra 9 285K","Processors",New,626.33,23
 2026-11-15,"Core Ultra 9 285K","Processors",New,598.00,21
 2026-11-16,"Core Ultra 9 285K","Processors",New,694.48,26
@@ -668,11 +721,13 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Core Ultra 9 285K","Processors",New,634.66,22
 2026-11-19,"Core Ultra 9 285K","Processors",New,569.00,23
 2026-11-20,"Core Ultra 9 285K","Processors",New,561.00,19
+2026-11-21,"Core Ultra 9 285K","Processors",New,548.21,16
 2026-11-16,"Core Ultra 7 265K","Processors",Used,304.74,5
 2026-11-17,"Core Ultra 7 265K","Processors",Used,303.17,5
 2026-11-18,"Core Ultra 7 265K","Processors",Used,300.00,5
 2026-11-19,"Core Ultra 7 265K","Processors",Used,300.00,5
 2026-11-20,"Core Ultra 7 265K","Processors",Used,300.00,5
+2026-11-21,"Core Ultra 7 265K","Processors",Used,300.00,5
 2026-11-14,"Core Ultra 7 265K","Processors",New,295.00,25
 2026-11-15,"Core Ultra 7 265K","Processors",New,299.00,25
 2026-11-16,"Core Ultra 7 265K","Processors",New,295.00,27
@@ -680,6 +735,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"Core Ultra 7 265K","Processors",New,284.97,30
 2026-11-19,"Core Ultra 7 265K","Processors",New,289.95,29
 2026-11-20,"Core Ultra 7 265K","Processors",New,289.98,26
+2026-11-21,"Core Ultra 7 265K","Processors",New,289.95,26
 2026-11-03,"RTX 5070 gaming laptop","Laptops",Used,1699.00,31
 2026-11-04,"RTX 5070 gaming laptop","Laptops",Used,1700.00,31
 2026-11-05,"RTX 5070 gaming laptop","Laptops",Used,1699.00,37
@@ -698,6 +754,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 5070 gaming laptop","Laptops",Used,1724.99,32
 2026-11-19,"RTX 5070 gaming laptop","Laptops",Used,1719.99,28
 2026-11-20,"RTX 5070 gaming laptop","Laptops",Used,1550.99,27
+2026-11-21,"RTX 5070 gaming laptop","Laptops",Used,1674.49,26
 2026-11-03,"RTX 5070 gaming laptop","Laptops",New,1874.49,30
 2026-11-04,"RTX 5070 gaming laptop","Laptops",New,1930.29,27
 2026-11-05,"RTX 5070 gaming laptop","Laptops",New,1915.14,28
@@ -716,6 +773,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 5070 gaming laptop","Laptops",New,1994.00,33
 2026-11-19,"RTX 5070 gaming laptop","Laptops",New,1934.14,36
 2026-11-20,"RTX 5070 gaming laptop","Laptops",New,1937.99,33
+2026-11-21,"RTX 5070 gaming laptop","Laptops",New,1963.49,30
 2026-11-07,"RTX 5060 gaming laptop","Laptops",Used,959.99,5
 2026-11-08,"RTX 5060 gaming laptop","Laptops",Used,954.52,6
 2026-11-13,"RTX 5060 gaming laptop","Laptops",Used,1099.99,5
@@ -739,6 +797,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 5060 gaming laptop","Laptops",New,1498.97,51
 2026-11-19,"RTX 5060 gaming laptop","Laptops",New,1476.08,50
 2026-11-20,"RTX 5060 gaming laptop","Laptops",New,1499.00,51
+2026-11-21,"RTX 5060 gaming laptop","Laptops",New,1428.99,44
 2026-11-03,"RTX 4060 gaming laptop","Laptops",Used,842.00,8
 2026-11-05,"RTX 4060 gaming laptop","Laptops",Used,899.99,9
 2026-11-06,"RTX 4060 gaming laptop","Laptops",Used,817.00,8
@@ -752,6 +811,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4060 gaming laptop","Laptops",Used,999.00,51
 2026-11-19,"RTX 4060 gaming laptop","Laptops",Used,1000.00,48
 2026-11-20,"RTX 4060 gaming laptop","Laptops",Used,1000.00,47
+2026-11-21,"RTX 4060 gaming laptop","Laptops",Used,1000.00,41
 2026-11-14,"RTX 4060 gaming laptop","Laptops",New,1529.15,33
 2026-11-15,"RTX 4060 gaming laptop","Laptops",New,1497.95,34
 2026-11-16,"RTX 4060 gaming laptop","Laptops",New,1497.95,34
@@ -759,6 +819,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4060 gaming laptop","Laptops",New,1497.95,32
 2026-11-19,"RTX 4060 gaming laptop","Laptops",New,1499.97,31
 2026-11-20,"RTX 4060 gaming laptop","Laptops",New,1495.32,31
+2026-11-21,"RTX 4060 gaming laptop","Laptops",New,1495.32,29
 2026-11-14,"RTX 4070 gaming laptop","Laptops",Used,1234.99,47
 2026-11-15,"RTX 4070 gaming laptop","Laptops",Used,1218.49,52
 2026-11-16,"RTX 4070 gaming laptop","Laptops",Used,1249.99,57
@@ -766,6 +827,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4070 gaming laptop","Laptops",Used,1232.50,55
 2026-11-19,"RTX 4070 gaming laptop","Laptops",Used,1250.00,55
 2026-11-20,"RTX 4070 gaming laptop","Laptops",Used,1244.50,56
+2026-11-21,"RTX 4070 gaming laptop","Laptops",Used,1200.00,47
 2026-11-14,"RTX 4070 gaming laptop","Laptops",New,1889.99,30
 2026-11-15,"RTX 4070 gaming laptop","Laptops",New,1889.99,30
 2026-11-16,"RTX 4070 gaming laptop","Laptops",New,1799.99,31
@@ -773,6 +835,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4070 gaming laptop","Laptops",New,1724.99,30
 2026-11-19,"RTX 4070 gaming laptop","Laptops",New,1699.99,31
 2026-11-20,"RTX 4070 gaming laptop","Laptops",New,1699.99,31
+2026-11-21,"RTX 4070 gaming laptop","Laptops",New,1724.99,30
 2026-11-14,"RTX 4080 gaming laptop","Laptops",Used,1879.99,23
 2026-11-15,"RTX 4080 gaming laptop","Laptops",Used,1850.00,25
 2026-11-16,"RTX 4080 gaming laptop","Laptops",Used,1909.49,26
@@ -780,6 +843,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4080 gaming laptop","Laptops",Used,1909.99,24
 2026-11-19,"RTX 4080 gaming laptop","Laptops",Used,1900.00,25
 2026-11-20,"RTX 4080 gaming laptop","Laptops",Used,1849.99,26
+2026-11-21,"RTX 4080 gaming laptop","Laptops",Used,1800.00,23
 2026-11-14,"RTX 4080 gaming laptop","Laptops",New,2696.99,7
 2026-11-15,"RTX 4080 gaming laptop","Laptops",New,2696.99,7
 2026-11-16,"RTX 4080 gaming laptop","Laptops",New,2696.99,7
@@ -787,6 +851,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4080 gaming laptop","Laptops",New,2696.99,7
 2026-11-19,"RTX 4080 gaming laptop","Laptops",New,2696.99,7
 2026-11-20,"RTX 4080 gaming laptop","Laptops",New,2696.99,7
+2026-11-21,"RTX 4080 gaming laptop","Laptops",New,2638.99,7
 2026-11-14,"RTX 4090 gaming laptop","Laptops",New,3650.00,7
 2026-11-15,"RTX 4090 gaming laptop","Laptops",New,3650.00,7
 2026-11-16,"RTX 4090 gaming laptop","Laptops",New,3650.00,7
@@ -794,6 +859,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 4090 gaming laptop","Laptops",New,3749.99,6
 2026-11-19,"RTX 4090 gaming laptop","Laptops",New,3750.00,6
 2026-11-20,"RTX 4090 gaming laptop","Laptops",New,3750.00,6
+2026-11-21,"RTX 4090 gaming laptop","Laptops",New,3750.00,6
 2026-11-14,"RTX 5080 gaming laptop","Laptops",New,2939.47,8
 2026-11-15,"RTX 5080 gaming laptop","Laptops",New,3089.97,12
 2026-11-16,"RTX 5080 gaming laptop","Laptops",New,2939.47,8
@@ -801,6 +867,7 @@ date,model,category,condition,median_usd,listings
 2026-11-18,"RTX 5080 gaming laptop","Laptops",New,3299.00,9
 2026-11-19,"RTX 5080 gaming laptop","Laptops",New,3199.50,8
 2026-11-20,"RTX 5080 gaming laptop","Laptops",New,3299.00,9
+2026-11-21,"RTX 5080 gaming laptop","Laptops",New,3057.60,6
 2026-11-03,"RTX 3060 gaming laptop","Laptops",Used,639.99,7
 2026-11-04,"RTX 3060 gaming laptop","Laptops",Used,639.99,7
 2026-11-05,"RTX 3060 gaming laptop","Laptops",Used,610.00,6
