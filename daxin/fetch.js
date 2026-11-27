@@ -174,12 +174,18 @@ async function dailyQuote(dateISO, code) {
 async function yahoo(code, fromISO, toISO) {
   const sym = String(Number(code)).padStart(4, '0') + '.HK';
   const p1 = Math.floor(new Date(fromISO + 'T00:00:00Z') / 1000), p2 = Math.floor(new Date(toISO + 'T23:59:59Z') / 1000);
-  const j = await get(`https://query1.finance.yahoo.com/v8/finance/chart/${sym}?interval=1d&period1=${p1}&period2=${p2}`, 'json', 2);
+  const j = await get(`https://query1.finance.yahoo.com/v8/finance/chart/${sym}?interval=1d&period1=${p1}&period2=${p2}&events=split`, 'json', 2);
   const r = j && j.chart && j.chart.result && j.chart.result[0];
   if (!r) return null;
   const q = (r.indicators.quote || [])[0] || {};
   const rows = (r.timestamp || []).map((t, i) => ({ date: new Date((t + 8 * 3600) * 1000).toISOString().slice(0, 10), open: q.open[i], high: q.high[i], low: q.low[i], close: q.close[i] })).filter(x => x.close != null);
-  return { rows, last: r.meta && r.meta.regularMarketPrice, lastTime: r.meta && r.meta.regularMarketTime };
+  // Yahoo prices are split-adjusted; factor converts today's share count back to listing-day shares
+  let splitFactor = 1;
+  for (const s of Object.values((r.events && r.events.splits) || {})) {
+    const d = new Date((s.date + 8 * 3600) * 1000).toISOString().slice(0, 10);
+    if (d > fromISO && s.numerator && s.denominator) splitFactor *= s.numerator / s.denominator;
+  }
+  return { rows, splitFactor, last: r.meta && r.meta.regularMarketPrice, lastTime: r.meta && r.meta.regularMarketTime };
 }
 
 // ---------- merge ----------
@@ -240,7 +246,7 @@ async function main() {
     });
     if (fOk) Object.assign(o, { priceMin: f.priceMin, priceMax: f.priceMax || f.priceMin, boardLot: o.boardLot || f.boardLot, entryFee: f.entryFee, openDate: f.openDate, closeDate: f.closeDate, formalUrl: f._url, shortEn: o.shortEn || f._short });
     const old = prevByKey[o.code + '|' + o.listDate];
-    if (old) for (const k of ['firstClose', 'firstHigh', 'firstLow', 'firstOpen', 'firstSrc', 'lastPrice', 'lastDate', 'nameS']) if (o[k] == null && old[k] != null) o[k] = old[k];
+    if (old && old.firstSrc === 'hkex') for (const k of ['firstClose', 'firstHigh', 'firstLow', 'firstSrc']) if (o[k] == null && old[k] != null) o[k] = old[k];
     ipos.push(o);
   }
 
@@ -252,8 +258,10 @@ async function main() {
     const code = f.code || f._code;
     const a = pickAllot(code, f.listDate);
     const aOk = a && a.listDate === f.listDate;
+    const nm = String(f.nameEn || '');
+    const zh = (nm.match(/[(（]\s*([\u3400-\u9fff][\u3400-\u9fff\s（）()]*?)\s*[)）]\s*$/) || [])[1];
     ipos.push({
-      code, board: 'main', name: f.nameEn || f._short, shortEn: f._short, listDate: f.listDate,
+      code, board: 'main', name: zh ? zh.replace(/\s+/g, '') : (nm.replace(/\s*[(（][^)）]*[)）]?\s*$/, '').trim() || f._short), nameEnFull: nm.replace(/\s*[(（][^)）]*[)）]?\s*$/, '').trim(), shortEn: f._short, listDate: f.listDate,
       priceMin: f.priceMin, priceMax: f.priceMax || f.priceMin, boardLot: f.boardLot, entryFee: f.entryFee,
       openDate: f.openDate, closeDate: f.closeDate, formalUrl: f._url, sponsors: [],
       status: f.listDate > today ? (f.closeDate && f.closeDate < today ? 'pending' : 'subscribing') : 'listed',
@@ -270,18 +278,20 @@ async function main() {
       if (q) Object.assign(o, { firstClose: q.close, firstHigh: q.high, firstLow: q.low, firstSrc: 'hkex' });
       await sleep(200);
     }
-    const ageDays = (Date.now() - new Date(o.listDate)) / 86400000;
-    if (ageDays < 400 && (o.firstClose == null || !o.lastDate || o.lastDate < today)) {
-      const end = new Date(new Date(o.listDate).getTime() + 7 * 86400000).toISOString().slice(0, 10);
-      const y = await yahoo(o.code, o.listDate, o.firstClose == null ? end : today);
+    if (o.firstClose == null || !o.lastDate || o.lastDate < today) {
+      const y = await yahoo(o.code, o.listDate, today);
       yq++;
       if (y) {
+        const f = y.splitFactor || 1;
+        o.splitFactor = f !== 1 ? +f.toFixed(6) : undefined;
         const first = y.rows[0];
-        if (o.firstClose == null && first && first.date === o.listDate) Object.assign(o, { firstClose: +first.close.toFixed(3), firstOpen: +first.open.toFixed(3), firstHigh: +first.high.toFixed(3), firstLow: +first.low.toFixed(3), firstSrc: 'yahoo' });
-        if (first && first.date === o.listDate && first.open) o.firstOpen = +first.open.toFixed(3);
+        const sane = v => v && o.offerPrice && v / o.offerPrice < 8 && v / o.offerPrice > 0.1;
+        if (o.firstClose == null && first && first.date === o.listDate && sane(first.close * f))
+          Object.assign(o, { firstClose: +(first.close * f).toFixed(3), firstHigh: +(first.high * f).toFixed(3), firstLow: +(first.low * f).toFixed(3), firstSrc: 'yahoo' });
+        if (first && first.date === o.listDate && first.open && sane(first.open * f)) o.firstOpen = +(first.open * f).toFixed(3);
         if (y.last) { o.lastPrice = +(+y.last).toFixed(3); o.lastDate = y.lastTime ? new Date((y.lastTime + 8 * 3600) * 1000).toISOString().slice(0, 10) : today; }
       }
-      await sleep(350);
+      await sleep(300);
     }
   }
   log('yahoo queries', yq);

@@ -37,7 +37,7 @@ const tags = x => {
   return t;
 };
 const firstChg = x => (x.firstClose != null && x.offerPrice ? x.firstClose / x.offerPrice - 1 : null);
-const lastChg = x => (x.lastPrice != null && x.offerPrice ? x.lastPrice / x.offerPrice - 1 : null);
+const lastChg = x => (x.lastPrice != null && x.offerPrice ? (x.lastPrice * (x.splitFactor || 1)) / x.offerPrice - 1 : null);
 const chg = (v, d = 1) => (v == null ? '<span class="mut">—</span>' : `<span class="${v > 0.0005 ? 'up' : v < -0.0005 ? 'dn' : 'flat'}">${v > 0.0005 ? '▲' : v < -0.0005 ? '▼' : ''}${(Math.abs(v) * 100).toFixed(d)}%</span>`);
 const slug = x => `${x.code}-${(x.listDate || '').slice(0, 4)}`;
 const url = x => `/ipo/${slug(x)}/`;
