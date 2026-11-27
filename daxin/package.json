@@ -1,0 +1,13 @@
+{
+  "name": "daxinbang",
+  "private": true,
+  "description": "hkdaxinbang.com - Hong Kong IPO data site (data fetcher + static site builder)",
+  "scripts": {
+    "fetch": "node fetch.js",
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "opencc-js": "1.0.5",
+    "pdfjs-dist": "4.0.379"
+  }
+}

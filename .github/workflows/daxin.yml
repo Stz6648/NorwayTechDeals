@@ -1,0 +1,66 @@
+name: hkdaxinbang - refresh IPO data and rebuild site
+
+# Collects Hong Kong IPO data from HKEX (and prices from public quotes), rebuilds daxin/public
+# and commits the result. On a claude/daxin-* branch it commits straight back to that branch
+# (for previews). On main (schedule) it opens and merges a pull request from data/daxin-refresh.
+on:
+  push:
+    branches: ["claude/daxin-**"]
+    paths: ["daxin/**", ".github/workflows/daxin.yml"]
+  schedule:
+    - cron: "40 1,10,15 * * *"   # 09:40, 18:40, 23:40 Hong Kong time
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: daxin-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    defaults:
+      run:
+        working-directory: daxin
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Fetch IPO data
+        run: node fetch.js
+      - name: Build site
+        run: node build.js
+      - name: Commit to preview branch
+        if: startsWith(github.ref, 'refs/heads/claude/daxin-')
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data public
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          git commit -m "daxin: refresh data $(date -u +%FT%H:%MZ) [skip ci]"
+          git push origin HEAD:${GITHUB_REF#refs/heads/}
+      - name: Open and merge refresh pull request
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data public
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          git checkout -B data/daxin-refresh
+          git commit -m "daxin: refresh data $(date -u +%F)"
+          git push --force origin data/daxin-refresh
+          N=$(gh pr list --head data/daxin-refresh --state open --json number --jq '.[0].number // empty')
+          if [ -z "$N" ]; then
+            gh pr create --base main --head data/daxin-refresh --title "hkdaxinbang: refresh IPO data" --body "Automated refresh of HK IPO data and rebuilt pages."
+            N=$(gh pr list --head data/daxin-refresh --state open --json number --jq '.[0].number // empty')
+          fi
+          gh api -X PUT "repos/${{ github.repository }}/pulls/$N/merge" -f merge_method=merge || echo "::warning::merge failed; PR stays open"
