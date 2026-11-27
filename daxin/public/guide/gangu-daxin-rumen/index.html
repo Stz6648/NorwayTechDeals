@@ -1,0 +1,68 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>港股打新入门：从开户到上市的完整流程</title><meta name="description" content="港股新股认购（打新）是怎么回事？从招股、认购、抽签到上市，一篇讲清楚每一步和要注意的地方。"><link rel="canonical" href="https://hkdaxinbang.com/guide/gangu-daxin-rumen/">
+<meta property="og:title" content="港股打新入门：从开户到上市的完整流程"><meta property="og:description" content="港股新股认购（打新）是怎么回事？从招股、认购、抽签到上市，一篇讲清楚每一步和要注意的地方。"><meta property="og:type" content="website"><meta property="og:url" content="https://hkdaxinbang.com/guide/gangu-daxin-rumen/"><meta property="og:locale" content="zh_CN">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c8102e'/%3E%3Ctext x='32' y='45' font-size='36' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3E%E6%96%B0%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#16181d;--mut:#6b7280;--line:#e5e7eb;--brand:#c8102e;--brand2:#8f0b20;--up:#0a8a4b;--dn:#d32f2f;--chip:#f1f2f4}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f1115;--card:#171a20;--ink:#e8eaee;--mut:#9aa3af;--line:#2a2f38;--chip:#222730;--up:#2fbf71;--dn:#ff6b6b}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.top{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header.top .wrap{display:flex;align-items:center;gap:18px;height:56px}
+.logo{font-weight:800;font-size:20px;color:var(--ink);letter-spacing:.5px;white-space:nowrap}.logo b{color:var(--brand)}
+nav.main{display:flex;gap:14px;overflow-x:auto;font-size:15px;scrollbar-width:none}nav.main a{color:var(--mut);white-space:nowrap}nav.main a.on,nav.main a:hover{color:var(--ink);text-decoration:none}
+main{padding:22px 0 40px}
+h1{font-size:26px;line-height:1.3;margin:6px 0 6px}h2{font-size:20px;margin:30px 0 12px}h3{font-size:17px;margin:0 0 6px}
+.lead{color:var(--mut);margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.stats{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.stat .k{font-size:13px;color:var(--mut)}.stat .v{font-size:24px;font-weight:700;font-variant-numeric:tabular-nums}
+.ipo-card h3 a{color:var(--ink)}.ipo-card .code{color:var(--mut);font-size:13px;margin-left:6px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:14px;margin-top:8px}.kv dt{color:var(--mut)}.kv dd{margin:0;text-align:right;font-variant-numeric:tabular-nums}
+.badge{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;background:var(--chip);color:var(--mut);margin-right:4px;vertical-align:2px}
+.badge.live{background:var(--brand);color:#fff}.badge.wait{background:#f59e0b;color:#fff}
+.tbl-wrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:var(--card)}
+th{font-weight:600;color:var(--mut);font-size:13px;background:var(--card);cursor:default}th[data-k]{cursor:pointer}
+tr:last-child td{border-bottom:0}td .sub{display:block;color:var(--mut);font-size:12px}
+.up{color:var(--up);font-weight:600}.dn{color:var(--dn);font-weight:600}.flat,.mut{color:var(--mut)}
+.note{font-size:13px;color:var(--mut)}
+.disc{font-size:13px;color:var(--mut);border-top:1px solid var(--line);margin-top:28px;padding-top:14px}
+footer{border-top:1px solid var(--line);background:var(--card);padding:20px 0;font-size:13px;color:var(--mut)}footer a{color:var(--mut)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}.filters button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:4px 12px;font:inherit;font-size:14px;cursor:pointer}.filters button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.article{max-width:760px}.article blockquote{margin:12px 0;padding:10px 14px;background:var(--chip);border-radius:8px}
+.crumb{font-size:13px;color:var(--mut)}.crumb a{color:var(--mut)}
+.para{font-size:16px}
+.more{display:inline-block;margin-top:10px;font-size:14px}
+@media (max-width:600px){h1{font-size:22px}.stat .v{font-size:20px}}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"港股打新入门：从开户到上市的完整流程","description":"港股新股认购（打新）是怎么回事？从招股、认购、抽签到上市，一篇讲清楚每一步和要注意的地方。","inLanguage":"zh-CN"}</script></head><body>
+<header class="top"><div class="wrap"><a class="logo" href="/">港股<b>打新榜</b></a><nav class="main"><a href="/">首页</a><a href="/history/">历史战绩</a><a href="/sponsors/">保荐人排行</a><a href="/guide/" class="on">打新教程</a></nav></div></header>
+<main><div class="wrap"><p class="crumb"><a href="/">首页</a> › <a href="/guide/">打新教程</a></p><article class="article"><h1>港股打新入门：从开户到上市的完整流程</h1>
+<p>“打新”就是在新股上市之前，按招股价认购这家公司的股票。港股新股分两部分发售：<strong>香港公开发售</strong>（散户可以参加）和<strong>国际配售</strong>（主要给机构投资者）。我们平时说的打新，指的是参加香港公开发售。</p>
+<h2>一、打新的基本流程</h2>
+<ol>
+<li><strong>公司刊发招股章程</strong>：上面写明招股价区间、每手股数、认购截止日期和上市日期。</li>
+<li><strong>递交认购申请</strong>：通过券商或银行申请，申请的股数必须是“一手”的整数倍，并按最高招股价预先付款。</li>
+<li><strong>定价和公布结果</strong>：截止后公司确定最终发售价，并公布配发结果：认购了多少倍、每种申请股数的中签比例。</li>
+<li><strong>退款</strong>：没有中签的部分，或最终价格低于最高价的差额，会退回你的账户。</li>
+<li><strong>上市交易</strong>：上市当天开始可以买卖。很多券商在上市前一天傍晚还提供“暗盘”交易。</li>
+</ol>
+<h2>二、几个必须知道的概念</h2>
+<ul>
+<li><strong>一手</strong>：最少的买卖单位，每只股票不同，比如 100 股或 500 股。</li>
+<li><strong>入场费</strong>：认购一手需要的钱，等于一手股数 × 最高招股价，再加大约 1.0085% 的佣金和交易费用。</li>
+<li><strong>认购倍数</strong>：申请认购的股数是可供认购股数的多少倍。倍数越高，越难中签。</li>
+<li><strong>一手中签率</strong>：只申请一手的人里，有多少比例能分到股票。详见<a href="/guide/yishou-zhongqianlv/">一手中签率怎么看</a>。</li>
+</ul>
+<h2>三、打新有风险</h2>
+<p>新股不一定上涨。每年都有相当一部分新股首日收市价低于发售价（俗称“破发”）。在本站的<a href="/history/">历史打新战绩</a>里，可以看到每只新股的认购倍数、中签率和首日表现。</p>
+<p>打新前，建议先看清楚招股章程里的业务、财务和风险因素，只用自己承受得起的资金参与。</p></article>
+<p class="disc">本站数据来自香港交易所披露易的官方公告（招股章程、正式通告、配发结果公告）及公开行情，每天自动更新，可能有延迟或误差，请以官方公告为准。本站只提供资料参考，<strong>不构成任何投资建议</strong>。新股投资有风险，可能损失本金。</p>
+</div></main>
+<footer><div class="wrap">© 2026 港股打新榜 · <a href="/about/">关于本站</a> · <a href="/guide/">打新教程</a> · 数据更新：2026-11-27</div></footer>
+</body></html>

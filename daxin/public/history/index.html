@@ -1,0 +1,1000 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>港股新股历史战绩：认购倍数、一手中签率、首日涨跌一览</title><meta name="description" content="全部港股新股的历史打新数据：发售价、公开认购倍数、一手中签率、首日涨跌、至今涨跌，按年份筛选，可排序。"><link rel="canonical" href="https://hkdaxinbang.com/history/">
+<meta property="og:title" content="港股新股历史战绩：认购倍数、一手中签率、首日涨跌一览"><meta property="og:description" content="全部港股新股的历史打新数据：发售价、公开认购倍数、一手中签率、首日涨跌、至今涨跌，按年份筛选，可排序。"><meta property="og:type" content="website"><meta property="og:url" content="https://hkdaxinbang.com/history/"><meta property="og:locale" content="zh_CN">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c8102e'/%3E%3Ctext x='32' y='45' font-size='36' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3E%E6%96%B0%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#16181d;--mut:#6b7280;--line:#e5e7eb;--brand:#c8102e;--brand2:#8f0b20;--up:#0a8a4b;--dn:#d32f2f;--chip:#f1f2f4}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f1115;--card:#171a20;--ink:#e8eaee;--mut:#9aa3af;--line:#2a2f38;--chip:#222730;--up:#2fbf71;--dn:#ff6b6b}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.top{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header.top .wrap{display:flex;align-items:center;gap:18px;height:56px}
+.logo{font-weight:800;font-size:20px;color:var(--ink);letter-spacing:.5px;white-space:nowrap}.logo b{color:var(--brand)}
+nav.main{display:flex;gap:14px;overflow-x:auto;font-size:15px;scrollbar-width:none}nav.main a{color:var(--mut);white-space:nowrap}nav.main a.on,nav.main a:hover{color:var(--ink);text-decoration:none}
+main{padding:22px 0 40px}
+h1{font-size:26px;line-height:1.3;margin:6px 0 6px}h2{font-size:20px;margin:30px 0 12px}h3{font-size:17px;margin:0 0 6px}
+.lead{color:var(--mut);margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(280px,1fr))}
+.stats{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.stat .k{font-size:13px;color:var(--mut)}.stat .v{font-size:24px;font-weight:700;font-variant-numeric:tabular-nums}
+.ipo-card h3 a{color:var(--ink)}.ipo-card .code{color:var(--mut);font-size:13px;margin-left:6px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:14px;margin-top:8px}.kv dt{color:var(--mut)}.kv dd{margin:0;text-align:right;font-variant-numeric:tabular-nums}
+.badge{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;background:var(--chip);color:var(--mut);margin-right:4px;vertical-align:2px}
+.badge.live{background:var(--brand);color:#fff}.badge.wait{background:#f59e0b;color:#fff}
+.tbl-wrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:var(--card)}
+th{font-weight:600;color:var(--mut);font-size:13px;background:var(--card);cursor:default}th[data-k]{cursor:pointer}
+tr:last-child td{border-bottom:0}td .sub{display:block;color:var(--mut);font-size:12px}
+.up{color:var(--up);font-weight:600}.dn{color:var(--dn);font-weight:600}.flat,.mut{color:var(--mut)}
+.note{font-size:13px;color:var(--mut)}
+.disc{font-size:13px;color:var(--mut);border-top:1px solid var(--line);margin-top:28px;padding-top:14px}
+footer{border-top:1px solid var(--line);background:var(--card);padding:20px 0;font-size:13px;color:var(--mut)}footer a{color:var(--mut)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px}.filters button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:4px 12px;font:inherit;font-size:14px;cursor:pointer}.filters button.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.article{max-width:760px}.article blockquote{margin:12px 0;padding:10px 14px;background:var(--chip);border-radius:8px}
+.crumb{font-size:13px;color:var(--mut)}.crumb a{color:var(--mut)}
+.para{font-size:16px}
+.more{display:inline-block;margin-top:10px;font-size:14px}
+@media (max-width:600px){h1{font-size:22px}.stat .v{font-size:20px}}
+</style></head><body>
+<header class="top"><div class="wrap"><a class="logo" href="/">港股<b>打新榜</b></a><nav class="main"><a href="/">首页</a><a href="/history/" class="on">历史战绩</a><a href="/sponsors/">保荐人排行</a><a href="/guide/">打新教程</a></nav></div></header>
+<main><div class="wrap"><h1>港股新股历史打新战绩</h1><p class="lead">2024年以来全部港股新股：发售价、公开认购倍数、一手中签率、首日涨跌和至今涨跌。点击表头可以排序。</p>
+<div class="tbl-wrap"><table><thead><tr><th>年份</th><th>新股数目</th><th>首日上涨</th><th>首日破发</th><th>平均首日涨幅</th><th>集资额（港元）</th></tr></thead><tbody><tr><td>2026年</td><td>128</td><td>63%</td><td>31%</td><td><span class="up">▲47.6%</span></td><td>4101 亿</td></tr><tr><td>2025年</td><td>118</td><td>56%</td><td>38%</td><td><span class="up">▲23.6%</span></td><td>2868 亿</td></tr><tr><td>2024年</td><td>68</td><td>—</td><td>—</td><td><span class="mut">—</span></td><td>877 亿</td></tr></tbody></table></div>
+<h2>全部新股</h2><div class="filters"><button class="on" data-y="all">全部</button><button data-y="2026">2026</button><button data-y="2025">2025</button><button data-y="2024">2024</button></div>
+<div class="tbl-wrap"><table class="sortable"><thead><tr><th data-k="0" data-t="s">新股</th><th data-k="1" data-t="s">上市日期</th><th data-k="2">发售价</th><th data-k="3">公开认购倍数</th><th data-k="4">一手中签率</th><th data-k="5">首日涨跌</th><th data-k="6">至今涨跌</th></tr></thead><tbody><tr data-y="2026"><td><a href="/ipo/01821-2026/">中旅港澳文旅控股</a><span class="sub">01821</span></td>
+<td data-v="2026-11-26">2026-11-26</td><td data-v="">—</td>
+<td data-v="">—</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2026"><td><a href="/ipo/09941-2026/">北京先通国际医药科技</a><span class="sub">09941 · H</span></td>
+<td data-v="2026-11-24">2026-11-24</td><td data-v="52">52.00</td>
+<td data-v="5228.77">5,229 倍</td><td data-v="0.015032502708559046">1.50%</td>
+<td data-v="-0.23076923076923073"><span class="dn">▼23.1%</span></td><td data-v="-0.3653846153846154"><span class="dn">▼36.5%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06935-2026/">成都国星宇航科技</a><span class="sub">06935 · H</span></td>
+<td data-v="2026-11-13">2026-11-13</td><td data-v="24.9">24.90</td>
+<td data-v="3.43">3.43 倍</td><td data-v="0.6">60.00%</td>
+<td data-v="-0.03534136546184741"><span class="dn">▼3.5%</span></td><td data-v="0.15662650602409656"><span class="up">▲15.7%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02065-2026/">珠海一微科技</a><span class="sub">02065 · H</span></td>
+<td data-v="2026-11-12">2026-11-12</td><td data-v="9.9">9.90</td>
+<td data-v="13.95">13.95 倍</td><td data-v="0.5001349527665317">50.01%</td>
+<td data-v="0.38181818181818183"><span class="up">▲38.2%</span></td><td data-v="0.6767676767676769"><span class="up">▲67.7%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02681-2026/">深圳宏芯宇电子</a><span class="sub">02681 · H</span></td>
+<td data-v="2026-11-12">2026-11-12</td><td data-v="72.83">72.83</td>
+<td data-v="2.37">2.37 倍</td><td data-v="1">100.00%</td>
+<td data-v="-0.000411918165591163"><span class="flat">0.0%</span></td><td data-v="-0.04846903748455311"><span class="dn">▼4.8%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02206-2026/">四川新荷花中药饮片</a><span class="sub">02206 · H</span></td>
+<td data-v="2026-11-11">2026-11-11</td><td data-v="40.2">40.20</td>
+<td data-v="2190.99">2,191 倍</td><td data-v="0.020078519349411104">2.01%</td>
+<td data-v="0.716417910447761"><span class="up">▲71.6%</span></td><td data-v="0.8407960199004973"><span class="up">▲84.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/07672-2026/">江苏芯德半导体科技</a><span class="sub">07672 · H</span></td>
+<td data-v="2026-11-10">2026-11-10</td><td data-v="8.88">8.88</td>
+<td data-v="9.84">9.84 倍</td><td data-v="0.8">80.00%</td>
+<td data-v="0.28378378378378377"><span class="up">▲28.4%</span></td><td data-v="0.4234234234234233"><span class="up">▲42.3%</span></td></tr><tr data-y="2026"><td><a href="/ipo/09917-2026/">苏州登临科技</a><span class="sub">09917 · P H</span></td>
+<td data-v="2026-11-10">2026-11-10</td><td data-v="231">231.00</td>
+<td data-v="2.11">2.11 倍</td><td data-v="1">100.00%</td>
+<td data-v="-0.07792207792207795"><span class="dn">▼7.8%</span></td><td data-v="-0.11428571428571432"><span class="dn">▼11.4%</span></td></tr><tr data-y="2026"><td><a href="/ipo/09621-2026/">深圳市远信储能技术</a><span class="sub">09621 · H</span></td>
+<td data-v="2026-11-09">2026-11-09</td><td data-v="9.78">9.78</td>
+<td data-v="1388.75">1,389 倍</td><td data-v="0.05003971405877681">5.00%</td>
+<td data-v="0.5899795501022496"><span class="up">▲59.0%</span></td><td data-v="1.3967280163599183"><span class="up">▲139.7%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02384-2026/">苏州东山精密制造</a><span class="sub">02384 · H</span></td>
+<td data-v="2026-10-28">2026-10-28</td><td data-v="86.8">86.80</td>
+<td data-v="0.52">0.52 倍</td><td data-v="1">100.00%</td>
+<td data-v="-0.007488479262672709"><span class="dn">▼0.7%</span></td><td data-v="0.05011520737327202"><span class="up">▲5.0%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02636-2026/">深圳传音控股</a><span class="sub">02636 · H</span></td>
+<td data-v="2026-10-15">2026-10-15</td><td data-v="35.3">35.30</td>
+<td data-v="4.46">4.46 倍</td><td data-v="1">100.00%</td>
+<td data-v="-0.05722379603399419"><span class="dn">▼5.7%</span></td><td data-v="0.21926345609065168"><span class="up">▲21.9%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01256-2026/">北京奕斯伟计算技术</a><span class="sub">01256 · H</span></td>
+<td data-v="2026-10-09">2026-10-09</td><td data-v="1.55">1.55</td>
+<td data-v="9.09">9.09 倍</td><td data-v="0.10023100616016427">10.02%</td>
+<td data-v="-0.00967741935483879"><span class="dn">▼1.0%</span></td><td data-v="-0.25161290322580654"><span class="dn">▼25.2%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06802-2026/">深圳市欢创科技</a><span class="sub">06802 · H</span></td>
+<td data-v="2026-09-30">2026-09-30</td><td data-v="58.85">58.85</td>
+<td data-v="3546.91">3,547 倍</td><td data-v="0.020014008054631414">2.00%</td>
+<td data-v="2.656754460492778"><span class="up">▲265.7%</span></td><td data-v="0.40696686491079004"><span class="up">▲40.7%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03228-2026/">深圳市景旺电子</a><span class="sub">03228 · H</span></td>
+<td data-v="2026-09-29">2026-09-29</td><td data-v="69.88">69.88</td>
+<td data-v="94.25">94.25 倍</td><td data-v="0.03003274732850741">3.00%</td>
+<td data-v="0.10260446479679453"><span class="up">▲10.3%</span></td><td data-v="-0.10990269032627353"><span class="dn">▼11.0%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03757-2026/">罗博特科智能科技</a><span class="sub">03757 · H</span></td>
+<td data-v="2026-09-29">2026-09-29</td><td data-v="436">436.00</td>
+<td data-v="8.65">8.65 倍</td><td data-v="0.35003441156228493">35.00%</td>
+<td data-v="-0.04954128440366978"><span class="dn">▼5.0%</span></td><td data-v="-0.5665137614678899"><span class="dn">▼56.7%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06731-2026/">本末动力科技</a><span class="sub">06731 · H</span></td>
+<td data-v="2026-09-29">2026-09-29</td><td data-v="21.6">21.60</td>
+<td data-v="208.56">209 倍</td><td data-v="0.6000260145681582">60.00%</td>
+<td data-v="0.07407407407407396"><span class="up">▲7.4%</span></td><td data-v="0.6444444444444444"><span class="up">▲64.4%</span></td></tr><tr data-y="2026"><td><a href="/ipo/09607-2026/">彤程新材料</a><span class="sub">09607</span></td>
+<td data-v="2026-09-29">2026-09-29</td><td data-v="44">44.00</td>
+<td data-v="3.39">3.39 倍</td><td data-v="1">100.00%</td>
+<td data-v="-0.09136363636363642"><span class="dn">▼9.1%</span></td><td data-v="-0.1863636363636364"><span class="dn">▼18.6%</span></td></tr><tr data-y="2026"><td><a href="/ipo/09856-2026/">纳真科技公司</a><span class="sub">09856</span></td>
+<td data-v="2026-09-22">2026-09-22</td><td data-v="32.96">32.96</td>
+<td data-v="35.16">35.16 倍</td><td data-v="0.04010045366169799">4.01%</td>
+<td data-v="0.0461165048543688"><span class="up">▲4.6%</span></td><td data-v="-0.47148058252427183"><span class="dn">▼47.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06727-2026/">星环信息科技</a><span class="sub">06727 · H</span></td>
+<td data-v="2026-09-21">2026-09-21</td><td data-v="49">49.00</td>
+<td data-v="73.86">73.86 倍</td><td data-v="0.10007581501137225">10.01%</td>
+<td data-v="-0.09183673469387754"><span class="dn">▼9.2%</span></td><td data-v="-0.5889795918367347"><span class="dn">▼58.9%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03231-2026/">优地机器人</a><span class="sub">03231 · H</span></td>
+<td data-v="2026-09-09">2026-09-09</td><td data-v="14.45">14.45</td>
+<td data-v="140.02">140 倍</td><td data-v="0.24496124031007752">24.50%</td>
+<td data-v="1.5384083044982702"><span class="up">▲153.8%</span></td><td data-v="1.37923875432526"><span class="up">▲137.9%</span></td></tr><tr data-y="2026"><td><a href="/ipo/09976-2026/">深圳市江波龙电子</a><span class="sub">09976 · H</span></td>
+<td data-v="2026-09-08">2026-09-08</td><td data-v="236">236.00</td>
+<td data-v="40.32">40.32 倍</td><td data-v="0.028531815528312902">2.85%</td>
+<td data-v="-0.01016949152542379"><span class="dn">▼1.0%</span></td><td data-v="-0.4919491525423728"><span class="dn">▼49.2%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02041-2026/">深圳麦科田生物医疗技术</a><span class="sub">02041 · H</span></td>
+<td data-v="2026-09-07">2026-09-07</td><td data-v="15.42">15.42</td>
+<td data-v="436.37">436 倍</td><td data-v="0.05002558853633572">5.00%</td>
+<td data-v="-0.42931258106355374"><span class="dn">▼42.9%</span></td><td data-v="-0.6540207522697795"><span class="dn">▼65.4%</span></td></tr><tr data-y="2026"><td><a href="/ipo/00625-2026/">希音国际控股</a><span class="sub">00625 · W</span></td>
+<td data-v="2026-09-01">2026-09-01</td><td data-v="48.56">48.56</td>
+<td data-v="5.63">5.63 倍</td><td data-v="0.1841692789968652">18.42%</td>
+<td data-v="-0.0012355848434926209"><span class="dn">▼0.1%</span></td><td data-v="-0.2722405271828665"><span class="dn">▼27.2%</span></td></tr><tr data-y="2026"><td><a href="/ipo/09615-2026/">梅卡曼德机器人科技</a><span class="sub">09615 · H</span></td>
+<td data-v="2026-09-01">2026-09-01</td><td data-v="101.7">101.70</td>
+<td data-v="3835.36">3,835 倍</td><td data-v="0.03001109467455621">3.00%</td>
+<td data-v="-0.01868239921337267"><span class="dn">▼1.9%</span></td><td data-v="-0.16470009832841692"><span class="dn">▼16.5%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03223-2026/">北京君正集成电路</a><span class="sub">03223 · H</span></td>
+<td data-v="2026-08-25">2026-08-25</td><td data-v="100">100.00</td>
+<td data-v="927.37">927 倍</td><td data-v="0.002653260717776847">0.27%</td>
+<td data-v="0"><span class="flat">0.0%</span></td><td data-v="-0.243"><span class="dn">▼24.3%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02261-2026/">拿森智能科技</a><span class="sub">02261 · H</span></td>
+<td data-v="2026-08-07">2026-08-07</td><td data-v="10.42">10.42</td>
+<td data-v="2513.54">2,514 倍</td><td data-v="0.08001180986123413">8.00%</td>
+<td data-v="0.6410748560460655"><span class="up">▲64.1%</span></td><td data-v="0.4971209213051824"><span class="up">▲49.7%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03308-2026/">中际旭创</a><span class="sub">03308 · H</span></td>
+<td data-v="2026-07-30">2026-07-30</td><td data-v="980">980.00</td>
+<td data-v="16.84">16.84 倍</td><td data-v="0.6999830594612909">70.00%</td>
+<td data-v="-0.020408163265306145"><span class="dn">▼2.0%</span></td><td data-v="-0.39030612244897955"><span class="dn">▼39.0%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02249-2026/">合肥晶合集成电路</a><span class="sub">02249 · H</span></td>
+<td data-v="2026-07-10">2026-07-10</td><td data-v="32.3">32.30</td>
+<td data-v="344.26">344 倍</td><td data-v="0.08000181204557294">8.00%</td>
+<td data-v="0"><span class="flat">0.0%</span></td><td data-v="-0.18575851393188847"><span class="dn">▼18.6%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06745-2026/">滨化</a><span class="sub">06745 · H</span></td>
+<td data-v="2026-07-10">2026-07-10</td><td data-v="3.48">3.48</td>
+<td data-v="227.58">228 倍</td><td data-v="0.05000472932496768">5.00%</td>
+<td data-v="-0.18678160919540232"><span class="dn">▼18.7%</span></td><td data-v="-0.4295977011494253"><span class="dn">▼43.0%</span></td></tr><tr data-y="2026"><td><a href="/ipo/00537-2026/">普源精电科技</a><span class="sub">00537 · H</span></td>
+<td data-v="2026-07-09">2026-07-09</td><td data-v="45.98">45.98</td>
+<td data-v="356.86">357 倍</td><td data-v="0.08001637629077014">8.00%</td>
+<td data-v="-0.3736407133536319"><span class="dn">▼37.4%</span></td><td data-v="-0.6724662896911701"><span class="dn">▼67.2%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01377-2026/">广东鼎泰高科技术</a><span class="sub">01377 · H</span></td>
+<td data-v="2026-07-09">2026-07-09</td><td data-v="380">380.00</td>
+<td data-v="354.64">355 倍</td><td data-v="0.03001409382460379">3.00%</td>
+<td data-v="-0.017894736842105297"><span class="dn">▼1.8%</span></td><td data-v="-0.726842105263158"><span class="dn">▼72.7%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01770-2026/">浙江东方科脉电子</a><span class="sub">01770 · H</span></td>
+<td data-v="2026-07-09">2026-07-09</td><td data-v="78.64">78.64</td>
+<td data-v="1067.54">1,068 倍</td><td data-v="0.030001130695880496">3.00%</td>
+<td data-v="0.01729399796541209"><span class="up">▲1.7%</span></td><td data-v="1.1007121057985758"><span class="up">▲110.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02475-2026/">立讯精密工业</a><span class="sub">02475 · H</span></td>
+<td data-v="2026-07-09">2026-07-09</td><td data-v="63.28">63.28</td>
+<td data-v="3.78">3.78 倍</td><td data-v="1">100.00%</td>
+<td data-v="-0.015486725663716894"><span class="dn">▼1.5%</span></td><td data-v="-0.20591024020227566"><span class="dn">▼20.6%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02797-2026/">江西齐云山食品</a><span class="sub">02797 · H</span></td>
+<td data-v="2026-07-09">2026-07-09</td><td data-v="8">8.00</td>
+<td data-v="1688.1">1,688 倍</td><td data-v="0.0008970855151982976">0.09%</td>
+<td data-v="1.625"><span class="up">▲162.5%</span></td><td data-v="8.275"><span class="up">▲827.5%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03752-2026/">珞石机器人</a><span class="sub">03752 · H</span></td>
+<td data-v="2026-07-09">2026-07-09</td><td data-v="38">38.00</td>
+<td data-v="156.58">157 倍</td><td data-v="0.10002562295817052">10.00%</td>
+<td data-v="0.15210526315789474"><span class="up">▲15.2%</span></td><td data-v="0.024736842105263168"><span class="up">▲2.5%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06951-2026/">潮州三环</a><span class="sub">06951 · H</span></td>
+<td data-v="2026-07-09">2026-07-09</td><td data-v="100.3">100.30</td>
+<td data-v="327.49">327 倍</td><td data-v="0.006898991685830532">0.69%</td>
+<td data-v="0.046859421734795736"><span class="up">▲4.7%</span></td><td data-v="-0.38384845463609174"><span class="dn">▼38.4%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06880-2026/">MOMENTA GLOBAL</a><span class="sub">06880 · W</span></td>
+<td data-v="2026-07-08">2026-07-08</td><td data-v="295.6">295.60</td>
+<td data-v="413.63">414 倍</td><td data-v="0.050002301601914934">5.00%</td>
+<td data-v="0"><span class="flat">0.0%</span></td><td data-v="-0.4242219215155617"><span class="dn">▼42.4%</span></td></tr><tr data-y="2026"><td><a href="/ipo/07656-2026/">厦门瑞为信息技术</a><span class="sub">07656 · H</span></td>
+<td data-v="2026-07-08">2026-07-08</td><td data-v="21.66">21.66</td>
+<td data-v="3646.06">3,646 倍</td><td data-v="0.030004211626995077">3.00%</td>
+<td data-v="-0.030470914127423865"><span class="dn">▼3.0%</span></td><td data-v="-0.5773314866112651"><span class="dn">▼57.7%</span></td></tr><tr data-y="2026"><td><a href="/ipo/07687-2026/">易控智驾科技</a><span class="sub">07687 · H</span></td>
+<td data-v="2026-07-08">2026-07-08</td><td data-v="87.92">87.92</td>
+<td data-v="157.82">158 倍</td><td data-v="0.09999781377757373">10.00%</td>
+<td data-v="0.09986351228389445"><span class="up">▲10.0%</span></td><td data-v="-0.3175614194722475"><span class="dn">▼31.8%</span></td></tr><tr data-y="2026"><td><a href="/ipo/09971-2026/">深圳基本半导体</a><span class="sub">09971 · H</span></td>
+<td data-v="2026-07-08">2026-07-08</td><td data-v="31.62">31.62</td>
+<td data-v="4812.72">4,813 倍</td><td data-v="0.0016920643184685316">0.17%</td>
+<td data-v="0.05060088551549646"><span class="up">▲5.1%</span></td><td data-v="-0.14927261227071476"><span class="dn">▼14.9%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02667-2026/">北京同仁堂医养投资</a><span class="sub">02667 · H</span></td>
+<td data-v="2026-07-07">2026-07-07</td><td data-v="5.5">5.50</td>
+<td data-v="251.74">252 倍</td><td data-v="0.08001286380447017">8.00%</td>
+<td data-v="-0.3909090909090909"><span class="dn">▼39.1%</span></td><td data-v="-0.7854545454545454"><span class="dn">▼78.5%</span></td></tr><tr data-y="2026"><td><a href="/ipo/00668-2026/">安克创新科技</a><span class="sub">00668 · H</span></td>
+<td data-v="2026-07-02">2026-07-02</td><td data-v="99.32">99.32</td>
+<td data-v="27.57">27.57 倍</td><td data-v="0.29998785965764235">30.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v="-0.045006041079339476"><span class="dn">▼4.5%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02697-2026/">广东真健康医疗科技开发</a><span class="sub">02697 · B H</span></td>
+<td data-v="2026-06-30">2026-06-30</td><td data-v="126.2">126.20</td>
+<td data-v="1790.4">1,790 倍</td><td data-v="0.020011103869457116">2.00%</td>
+<td data-v="2.1695721077654517"><span class="up">▲217.0%</span></td><td data-v="-0.6537242472266244"><span class="dn">▼65.4%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03774-2026/">亮晴控股</a><span class="sub">03774</span></td>
+<td data-v="2026-06-30">2026-06-30</td><td data-v="">—</td>
+<td data-v="">—</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2026"><td><a href="/ipo/03952-2026/">浙江来福谐波传动</a><span class="sub">03952 · H</span></td>
+<td data-v="2026-06-30">2026-06-30</td><td data-v="85.5">85.50</td>
+<td data-v="4571.99">4,572 倍</td><td data-v="0.05001107489795273">5.00%</td>
+<td data-v="-0.14619883040935677"><span class="dn">▼14.6%</span></td><td data-v="-0.7684210526315789"><span class="dn">▼76.8%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06715-2026/">杭州千岛湖鲟龙科技</a><span class="sub">06715 · H</span></td>
+<td data-v="2026-06-30">2026-06-30</td><td data-v="75.5">75.50</td>
+<td data-v="">—</td><td data-v="">—</td>
+<td data-v="0.509933774834437"><span class="up">▲51.0%</span></td><td data-v="-0.40079470198675493"><span class="dn">▼40.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06915-2026/">江西生物制品研究所</a><span class="sub">06915 · H</span></td>
+<td data-v="2026-06-30">2026-06-30</td><td data-v="11.2">11.20</td>
+<td data-v="476.56">477 倍</td><td data-v="0.020016860430921248">2.00%</td>
+<td data-v="-0.12678571428571428"><span class="dn">▼12.7%</span></td><td data-v="-0.5714285714285714"><span class="dn">▼57.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01191-2026/">北京海光芯正科技</a><span class="sub">01191 · H</span></td>
+<td data-v="2026-06-29">2026-06-29</td><td data-v="114">114.00</td>
+<td data-v="1296.89">1,297 倍</td><td data-v="0.03999950648357207">4.00%</td>
+<td data-v="0.44736842105263164"><span class="up">▲44.7%</span></td><td data-v="-0.3035087719298245"><span class="dn">▼30.4%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02672-2026/">白鸽在线 数字科技</a><span class="sub">02672 · H</span></td>
+<td data-v="2026-06-29">2026-06-29</td><td data-v="15.6">15.60</td>
+<td data-v="242.05">242 倍</td><td data-v="0.099995245114355">10.00%</td>
+<td data-v="3.6794871794871797"><span class="up">▲367.9%</span></td><td data-v="0.1858974358974359"><span class="up">▲18.6%</span></td></tr><tr data-y="2026"><td><a href="/ipo/09637-2026/">礼邦医药</a><span class="sub">09637 · B H</span></td>
+<td data-v="2026-06-29">2026-06-29</td><td data-v="22.6">22.60</td>
+<td data-v="963.56">964 倍</td><td data-v="0.06000321517562897">6.00%</td>
+<td data-v="1.0353982300884956"><span class="up">▲103.5%</span></td><td data-v="-0.13539823008849572"><span class="dn">▼13.5%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01688-2026/">广东领益智造</a><span class="sub">01688 · H</span></td>
+<td data-v="2026-06-26">2026-06-26</td><td data-v="10.18">10.18</td>
+<td data-v="96.16">96.16 倍</td><td data-v="0.012277222191183865">1.23%</td>
+<td data-v="-0.04616895874263249"><span class="dn">▼4.6%</span></td><td data-v="-0.543222003929273"><span class="dn">▼54.3%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01956-2026/">北京中科闻歌科技</a><span class="sub">01956 · H</span></td>
+<td data-v="2026-06-26">2026-06-26</td><td data-v="60.7">60.70</td>
+<td data-v="5966.78">5,967 倍</td><td data-v="0.0014540427154843632">0.15%</td>
+<td data-v="0.8401976935749589"><span class="up">▲84.0%</span></td><td data-v="-0.28995057660626034"><span class="dn">▼29.0%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02272-2026/">厦门科拓通讯技术</a><span class="sub">02272 · H</span></td>
+<td data-v="2026-06-26">2026-06-26</td><td data-v="39.55">39.55</td>
+<td data-v="2115.21">2,115 倍</td><td data-v="0.020013227132875178">2.00%</td>
+<td data-v="2.0391908975979773"><span class="up">▲203.9%</span></td><td data-v="3.2477876106194694"><span class="up">▲324.8%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03661-2026/">圣邦微电子</a><span class="sub">03661 · H</span></td>
+<td data-v="2026-06-26">2026-06-26</td><td data-v="85.2">85.20</td>
+<td data-v="251.73">252 倍</td><td data-v="0.1">10.00%</td>
+<td data-v="0.470657276995305"><span class="up">▲47.1%</span></td><td data-v="-0.130868544600939"><span class="dn">▼13.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06228-2026/">PT MERDEKA GOLD RESOURCES Tbk- DRS</a><span class="sub">06228</span></td>
+<td data-v="2026-06-26">2026-06-26</td><td data-v="26.6">26.60</td>
+<td data-v="4.42">4.42 倍</td><td data-v="">—</td>
+<td data-v="-0.06541353383458659"><span class="dn">▼6.5%</span></td><td data-v="-0.24210526315789482"><span class="dn">▼24.2%</span></td></tr><tr data-y="2026"><td><a href="/ipo/09630-2026/">合肥芯碁微电子装备</a><span class="sub">09630 · H</span></td>
+<td data-v="2026-06-26">2026-06-26</td><td data-v="252.73">252.73</td>
+<td data-v="1007.22">1,007 倍</td><td data-v="0.03000894394681689">3.00%</td>
+<td data-v="1.037747794088553"><span class="up">▲103.8%</span></td><td data-v="-0.2292169508962133"><span class="dn">▼22.9%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02335-2026/">陕西麦科奥特医药科技</a><span class="sub">02335 · B H</span></td>
+<td data-v="2026-06-24">2026-06-24</td><td data-v="18.2">18.20</td>
+<td data-v="1181.46">1,181 倍</td><td data-v="0.030004539264639127">3.00%</td>
+<td data-v="1.0274725274725274"><span class="up">▲102.7%</span></td><td data-v="0.25164835164835186"><span class="up">▲25.2%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06106-2026/">上海仙工智能科技</a><span class="sub">06106 · H</span></td>
+<td data-v="2026-06-24">2026-06-24</td><td data-v="101.6">101.60</td>
+<td data-v="5934.56">5,935 倍</td><td data-v="0.04999574866082816">5.00%</td>
+<td data-v="0.04330708661417337"><span class="up">▲4.3%</span></td><td data-v="-0.4758858267716535"><span class="dn">▼47.6%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06067-2026/">深圳市星源材质科技</a><span class="sub">06067 · H</span></td>
+<td data-v="2026-06-23">2026-06-23</td><td data-v="8.98">8.98</td>
+<td data-v="1563.16">1,563 倍</td><td data-v="0.0009752497430085136">0.10%</td>
+<td data-v="0.22494432071269488"><span class="up">▲22.5%</span></td><td data-v="-0.41202672605790647"><span class="dn">▼41.2%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06132-2026/">华健未来科技</a><span class="sub">06132 · B H</span></td>
+<td data-v="2026-06-23">2026-06-23</td><td data-v="81.8">81.80</td>
+<td data-v="2007.6">2,008 倍</td><td data-v="0.01999682590065069">2.00%</td>
+<td data-v="-0.5689486552567238"><span class="dn">▼56.9%</span></td><td data-v="-0.6943765281173594"><span class="dn">▼69.4%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01392-2026/">深圳海清智元科技</a><span class="sub">01392 · H</span></td>
+<td data-v="2026-06-22">2026-06-22</td><td data-v="7.2">7.20</td>
+<td data-v="7181.21">7,181 倍</td><td data-v="0.02000179388285945">2.00%</td>
+<td data-v="2.708333333333333"><span class="up">▲270.8%</span></td><td data-v="0.4027777777777777"><span class="up">▲40.3%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06675-2026/">琻捷电子科技</a><span class="sub">06675 · H</span></td>
+<td data-v="2026-06-17">2026-06-17</td><td data-v="18.36">18.36</td>
+<td data-v="5144.97">5,145 倍</td><td data-v="0.020007371136734585">2.00%</td>
+<td data-v="1.2712418300653598"><span class="up">▲127.1%</span></td><td data-v="-0.07843137254901944"><span class="dn">▼7.8%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06658-2026/">溜溜梅</a><span class="sub">06658 · H</span></td>
+<td data-v="2026-06-15">2026-06-15</td><td data-v="43.58">43.58</td>
+<td data-v="6586.73">6,587 倍</td><td data-v="0.01501826964761256">1.50%</td>
+<td data-v="1.9371271225332722"><span class="up">▲193.7%</span></td><td data-v="2.343276732446076"><span class="up">▲234.3%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01081-2026/">大金重工</a><span class="sub">01081 · H</span></td>
+<td data-v="2026-06-05">2026-06-05</td><td data-v="66.4">66.40</td>
+<td data-v="134.39">134 倍</td><td data-v="0.030014822134387352">3.00%</td>
+<td data-v="0"><span class="flat">0.0%</span></td><td data-v="-0.731777108433735"><span class="dn">▼73.2%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01779-2026/">天辰生物医药</a><span class="sub">01779 · B H</span></td>
+<td data-v="2026-06-05">2026-06-05</td><td data-v="96.06">96.06</td>
+<td data-v="4762.58">4,763 倍</td><td data-v="0.020017984908316064">2.00%</td>
+<td data-v="0.37205912971059774"><span class="up">▲37.2%</span></td><td data-v="-0.5061419945867167"><span class="dn">▼50.6%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02290-2026/">龙丰集团控股</a><span class="sub">02290</span></td>
+<td data-v="2026-06-05">2026-06-05</td><td data-v="5.18">5.18</td>
+<td data-v="664.92">665 倍</td><td data-v="0.050017344549475325">5.00%</td>
+<td data-v="-0.4575289575289575"><span class="dn">▼45.8%</span></td><td data-v="-0.3069498069498069"><span class="dn">▼30.7%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02553-2026/">北京首钢朗泽科技</a><span class="sub">02553 · H</span></td>
+<td data-v="2026-06-03">2026-06-03</td><td data-v="14.6">14.60</td>
+<td data-v="1421.54">1,422 倍</td><td data-v="0.020026615599337855">2.00%</td>
+<td data-v="0.44246575342465744"><span class="up">▲44.2%</span></td><td data-v="-0.0931506849315068"><span class="dn">▼9.3%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03388-2026/">深圳市创想三维科技</a><span class="sub">03388 · H</span></td>
+<td data-v="2026-05-29">2026-05-29</td><td data-v="18.8">18.80</td>
+<td data-v="3829.42">3,829 倍</td><td data-v="0.030013500882750024">3.00%</td>
+<td data-v="0.2127659574468086"><span class="up">▲21.3%</span></td><td data-v="-0.6242021276595744"><span class="dn">▼62.4%</span></td></tr><tr data-y="2026"><td><a href="/ipo/00901-2026/">深圳市华曦达科技</a><span class="sub">00901 · H</span></td>
+<td data-v="2026-05-27">2026-05-27</td><td data-v="32.8">32.80</td>
+<td data-v="1971.99">1,972 倍</td><td data-v="1">100.00%</td>
+<td data-v="0.8658536585365857"><span class="up">▲86.6%</span></td><td data-v="0.8734756097560978"><span class="up">▲87.3%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02723-2026/">北京深演智能科技</a><span class="sub">02723 · H</span></td>
+<td data-v="2026-05-27">2026-05-27</td><td data-v="55.5">55.50</td>
+<td data-v="5480.23">5,480 倍</td><td data-v="0.009999491378871878">1.00%</td>
+<td data-v="2.6576576576576576"><span class="up">▲265.8%</span></td><td data-v="-0.6252252252252253"><span class="dn">▼62.5%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03310-2026/">云英谷科技</a><span class="sub">03310 · H</span></td>
+<td data-v="2026-05-27">2026-05-27</td><td data-v="20.81">20.81</td>
+<td data-v="">—</td><td data-v="0.029994193686397948">3.00%</td>
+<td data-v="0.9173474291206152"><span class="up">▲91.7%</span></td><td data-v="-0.28592023065833727"><span class="dn">▼28.6%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06872-2026/">丹诺医药</a><span class="sub">06872 · B H</span></td>
+<td data-v="2026-05-22">2026-05-22</td><td data-v="75.7">75.70</td>
+<td data-v="9015.11">9,015 倍</td><td data-v="0.008003334722801167">0.80%</td>
+<td data-v="1.7873183619550859"><span class="up">▲178.7%</span></td><td data-v="0.09643328929986783"><span class="up">▲9.6%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01511-2026/">驭势科技</a><span class="sub">01511 · H</span></td>
+<td data-v="2026-05-20">2026-05-20</td><td data-v="60.3">60.30</td>
+<td data-v="6777.29">6,777 倍</td><td data-v="0.050009664325752205">5.00%</td>
+<td data-v="-0.046434494195688125"><span class="dn">▼4.6%</span></td><td data-v="-0.11111111111111105"><span class="dn">▼11.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/07688-2026/">上海拓璞数控科技</a><span class="sub">07688 · H</span></td>
+<td data-v="2026-05-20">2026-05-20</td><td data-v="26.39">26.39</td>
+<td data-v="3764.63">3,765 倍</td><td data-v="0.08000053538922797">8.00%</td>
+<td data-v="0.799924213717317"><span class="up">▲80.0%</span></td><td data-v="-0.5930276619931792"><span class="dn">▼59.3%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06871-2026/">浙江翼菲智能科技</a><span class="sub">06871 · H</span></td>
+<td data-v="2026-05-18">2026-05-18</td><td data-v="30.5">30.50</td>
+<td data-v="14855.4">14,855 倍</td><td data-v="0.0300130308677437">3.00%</td>
+<td data-v="0.7622950819672132"><span class="up">▲76.2%</span></td><td data-v="-0.5593442622950819"><span class="dn">▼55.9%</span></td></tr><tr data-y="2026"><td><a href="/ipo/07630-2026/">南京英派药业</a><span class="sub">07630 · B H</span></td>
+<td data-v="2026-05-13">2026-05-13</td><td data-v="20.1">20.10</td>
+<td data-v="2282.4">2,282 倍</td><td data-v="0.014990723562152133">1.50%</td>
+<td data-v="1.0825870646766167"><span class="up">▲108.3%</span></td><td data-v="-0.6156716417910448"><span class="dn">▼61.6%</span></td></tr><tr data-y="2026"><td><a href="/ipo/07666-2026/">剂泰科技</a><span class="sub">07666 · P H</span></td>
+<td data-v="2026-05-13">2026-05-13</td><td data-v="10.5">10.50</td>
+<td data-v="6910.96">6,911 倍</td><td data-v="0.001414275612317055">0.14%</td>
+<td data-v="1.2666666666666666"><span class="up">▲126.7%</span></td><td data-v="-0.26190476190476186"><span class="dn">▼26.2%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01236-2026/">深圳乐动机器人</a><span class="sub">01236 · H</span></td>
+<td data-v="2026-05-11">2026-05-11</td><td data-v="26.36">26.36</td>
+<td data-v="6707.66">6,708 倍</td><td data-v="0.008009195743260781">0.80%</td>
+<td data-v="1.276176024279211"><span class="up">▲127.6%</span></td><td data-v="0.005311077389984931"><span class="up">▲0.5%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01187-2026/">可孚医疗科技</a><span class="sub">01187 · H</span></td>
+<td data-v="2026-05-06">2026-05-06</td><td data-v="39.33">39.33</td>
+<td data-v="399.08">399 倍</td><td data-v="0.05000692233144123">5.00%</td>
+<td data-v="-0.01093312992626494"><span class="dn">▼1.1%</span></td><td data-v="-0.33638443935926765"><span class="dn">▼33.6%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01609-2026/">北京天星医疗</a><span class="sub">01609 · H</span></td>
+<td data-v="2026-05-05">2026-05-05</td><td data-v="98.5">98.50</td>
+<td data-v="7823.13">7,823 倍</td><td data-v="0.014985072896437784">1.50%</td>
+<td data-v="1.1827411167512691"><span class="up">▲118.3%</span></td><td data-v="-0.4472081218274111"><span class="dn">▼44.7%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06810-2026/">上海商米科技</a><span class="sub">06810 · W H</span></td>
+<td data-v="2026-04-29">2026-04-29</td><td data-v="24.86">24.86</td>
+<td data-v="2003.16">2,003 倍</td><td data-v="0.05000194711632073">5.00%</td>
+<td data-v="2.411102172164119"><span class="up">▲241.1%</span></td><td data-v="3.14722445695897"><span class="up">▲314.7%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01879-2026/">上海曦智科技</a><span class="sub">01879 · P H</span></td>
+<td data-v="2026-04-28">2026-04-28</td><td data-v="183.2">183.20</td>
+<td data-v="5784.7">5,785 倍</td><td data-v="0.060004827419744146">6.00%</td>
+<td data-v="3.8362445414847164"><span class="up">▲383.6%</span></td><td data-v="0.16703056768558966"><span class="up">▲16.7%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02493-2026/">迈威生物科技</a><span class="sub">02493 · B H</span></td>
+<td data-v="2026-04-28">2026-04-28</td><td data-v="27.64">27.64</td>
+<td data-v="481.71">482 倍</td><td data-v="0.010006605483957107">1.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2026"><td><a href="/ipo/03296-2026/">华勤技术</a><span class="sub">03296 · H</span></td>
+<td data-v="2026-04-23">2026-04-23</td><td data-v="77.7">77.70</td>
+<td data-v="531.33">531 倍</td><td data-v="0.12000354123323448">12.00%</td>
+<td data-v="-0.1910296010296011"><span class="dn">▼19.1%</span></td><td data-v="-0.35701415701415706"><span class="dn">▼35.7%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02476-2026/">胜宏科技</a><span class="sub">02476 · H</span></td>
+<td data-v="2026-04-21">2026-04-21</td><td data-v="209.88">209.88</td>
+<td data-v="431.15">431 倍</td><td data-v="0.007139168603150013">0.71%</td>
+<td data-v="0.5008576329331047"><span class="up">▲50.1%</span></td><td data-v="-0.4992376596150181"><span class="dn">▼49.9%</span></td></tr><tr data-y="2026"><td><a href="/ipo/00068-2026/">Manycore Tech</a><span class="sub">00068</span></td>
+<td data-v="2026-04-17">2026-04-17</td><td data-v="7.62">7.62</td>
+<td data-v="1590.56">1,591 倍</td><td data-v="0.0300051225599721">3.00%</td>
+<td data-v="1.4409448818897639"><span class="up">▲144.1%</span></td><td data-v="-0.5426509186351707"><span class="dn">▼54.3%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03277-2026/">长春长光辰芯微电子</a><span class="sub">03277 · H</span></td>
+<td data-v="2026-04-17">2026-04-17</td><td data-v="39.88">39.88</td>
+<td data-v="1138.21">1,138 倍</td><td data-v="0.010007843137254903">1.00%</td>
+<td data-v="0.7552657973921764"><span class="up">▲75.5%</span></td><td data-v="0.10832497492477433"><span class="up">▲10.8%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06051-2026/">有赞科技</a><span class="sub">06051</span></td>
+<td data-v="2026-04-17">2026-04-17</td><td data-v="">—</td>
+<td data-v="">—</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2026"><td><a href="/ipo/06656-2026/">思格新能源</a><span class="sub">06656 · H</span></td>
+<td data-v="2026-04-16">2026-04-16</td><td data-v="324.2">324.20</td>
+<td data-v="1102.05">1,102 倍</td><td data-v="0.020008769209380915">2.00%</td>
+<td data-v="-0.32192165330043176"><span class="dn">▼32.2%</span></td><td data-v="-0.7981184454040715"><span class="dn">▼79.8%</span></td></tr><tr data-y="2026"><td><a href="/ipo/00664-2026/">杭州铜师傅文创</a><span class="sub">00664 · H</span></td>
+<td data-v="2026-03-31">2026-03-31</td><td data-v="60">60.00</td>
+<td data-v="59.55">59.55 倍</td><td data-v="0.027787915124341797">2.78%</td>
+<td data-v="-0.4916666666666667"><span class="dn">▼49.2%</span></td><td data-v="-0.7813333333333333"><span class="dn">▼78.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03625-2026/">上海傅里叶半导体</a><span class="sub">03625 · H</span></td>
+<td data-v="2026-03-31">2026-03-31</td><td data-v="40">40.00</td>
+<td data-v="3118.43">3,118 倍</td><td data-v="0.04999919770221915">5.00%</td>
+<td data-v="1"><span class="up">▲100.0%</span></td><td data-v="-0.25"><span class="dn">▼25.0%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01021-2026/">广东华沿机器人</a><span class="sub">01021 · H</span></td>
+<td data-v="2026-03-30">2026-03-30</td><td data-v="17">17.00</td>
+<td data-v="">—</td><td data-v="0.05001952192963429">5.00%</td>
+<td data-v="0.08235294117647052"><span class="up">▲8.2%</span></td><td data-v="-0.6058823529411765"><span class="dn">▼60.6%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02526-2026/">杭州德适生物科技</a><span class="sub">02526 · B H</span></td>
+<td data-v="2026-03-30">2026-03-30</td><td data-v="99">99.00</td>
+<td data-v="1073.37">1,073 倍</td><td data-v="0.029997277342686462">3.00%</td>
+<td data-v="1.117171717171717"><span class="up">▲111.7%</span></td><td data-v="-0.26969696969696977"><span class="dn">▼27.0%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02726-2026/">瀚天天成电子科技</a><span class="sub">02726 · H</span></td>
+<td data-v="2026-03-30">2026-03-30</td><td data-v="76.26">76.26</td>
+<td data-v="50.66">50.66 倍</td><td data-v="0.20002020406101625">20.00%</td>
+<td data-v="0.3506425386834513"><span class="up">▲35.1%</span></td><td data-v="0.07067925517964868"><span class="up">▲7.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06636-2026/">山东极视角科技</a><span class="sub">06636 · H</span></td>
+<td data-v="2026-03-30">2026-03-30</td><td data-v="40">40.00</td>
+<td data-v="4591.37">4,591 倍</td><td data-v="0.10000964227171921">10.00%</td>
+<td data-v="1.5"><span class="up">▲150.0%</span></td><td data-v="0.6499999999999999"><span class="up">▲65.0%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02632-2026/">江苏泽景汽车电子</a><span class="sub">02632 · H</span></td>
+<td data-v="2026-03-24">2026-03-24</td><td data-v="44.2">44.20</td>
+<td data-v="68.89">68.89 倍</td><td data-v="0.3000264340470526">30.00%</td>
+<td data-v="-0.36923076923076925"><span class="dn">▼36.9%</span></td><td data-v="0.29072398190045234"><span class="up">▲29.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02729-2026/">浙江凯乐士科技</a><span class="sub">02729 · H</span></td>
+<td data-v="2026-03-24">2026-03-24</td><td data-v="16.66">16.66</td>
+<td data-v="2153.26">2,153 倍</td><td data-v="">—</td>
+<td data-v="0.8427370948379351"><span class="up">▲84.3%</span></td><td data-v="-0.687875150060024"><span class="dn">▼68.8%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02701-2026/">国民技术</a><span class="sub">02701 · H</span></td>
+<td data-v="2026-03-23">2026-03-23</td><td data-v="10.8">10.80</td>
+<td data-v="131.83">132 倍</td><td data-v="0.3000371333085778">30.00%</td>
+<td data-v="0.04166666666666652"><span class="up">▲4.2%</span></td><td data-v="-0.5611111111111111"><span class="dn">▼56.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03355-2026/">深圳市飞速创新技术</a><span class="sub">03355 · H</span></td>
+<td data-v="2026-03-23">2026-03-23</td><td data-v="41.6">41.60</td>
+<td data-v="1579.71">1,580 倍</td><td data-v="0.010005849573596872">1.00%</td>
+<td data-v="0.13461538461538458"><span class="up">▲13.5%</span></td><td data-v="-0.20769230769230773"><span class="dn">▼20.8%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01989-2026/">广州广合科技</a><span class="sub">01989 · H</span></td>
+<td data-v="2026-03-20">2026-03-20</td><td data-v="71.88">71.88</td>
+<td data-v="1070.72">1,071 倍</td><td data-v="0.05000361402240694">5.00%</td>
+<td data-v="0.335559265442404"><span class="up">▲33.6%</span></td><td data-v="-0.2814412910406232"><span class="dn">▼28.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/07489-2026/">岚图汽车科技</a><span class="sub">07489 · H</span></td>
+<td data-v="2026-03-19">2026-03-19</td><td data-v="">—</td>
+<td data-v="">—</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2026"><td><a href="/ipo/03268-2026/">美格智能技术</a><span class="sub">03268 · H</span></td>
+<td data-v="2026-03-10">2026-03-10</td><td data-v="28.86">28.86</td>
+<td data-v="174.12">174 倍</td><td data-v="0.04998321302669129">5.00%</td>
+<td data-v="0.01524601524601521"><span class="up">▲1.5%</span></td><td data-v="-0.5024255024255024"><span class="dn">▼50.2%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02649-2026/">苏州优乐赛共享服务</a><span class="sub">02649 · H</span></td>
+<td data-v="2026-03-09">2026-03-09</td><td data-v="11">11.00</td>
+<td data-v="5297.23">5,297 倍</td><td data-v="0.00037261090654041733">0.04%</td>
+<td data-v="-0.4363636363636364"><span class="dn">▼43.6%</span></td><td data-v="-0.6454545454545455"><span class="dn">▼64.5%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02692-2026/">深圳市兆威机电</a><span class="sub">02692 · H</span></td>
+<td data-v="2026-03-09">2026-03-09</td><td data-v="71.28">71.28</td>
+<td data-v="1536.76">1,537 倍</td><td data-v="0.04000926140310257">4.00%</td>
+<td data-v="0.02413019079685741"><span class="up">▲2.4%</span></td><td data-v="-0.6060606060606061"><span class="dn">▼60.6%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02715-2026/">南京埃斯顿自动化</a><span class="sub">02715 · H</span></td>
+<td data-v="2026-03-09">2026-03-09</td><td data-v="15.36">15.36</td>
+<td data-v="19.67">19.67 倍</td><td data-v="0.049887326132566634">4.99%</td>
+<td data-v="-0.16015625"><span class="dn">▼16.0%</span></td><td data-v="-0.14388020833333326"><span class="dn">▼14.4%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02706-2026/">北京海致科技</a><span class="sub">02706 · H</span></td>
+<td data-v="2026-02-13">2026-02-13</td><td data-v="27.06">27.06</td>
+<td data-v="8.39">8.39 倍</td><td data-v="0.0006070613374775387">0.06%</td>
+<td data-v="2.4220251293422024"><span class="up">▲242.2%</span></td><td data-v="0.1382113821138211"><span class="up">▲13.8%</span></td></tr><tr data-y="2026"><td><a href="/ipo/09981-2026/">深圳市沃尔核材</a><span class="sub">09981 · H</span></td>
+<td data-v="2026-02-13">2026-02-13</td><td data-v="20.09">20.09</td>
+<td data-v="569.58">570 倍</td><td data-v="0.0032887130340947045">0.33%</td>
+<td data-v="0.029367844698855228"><span class="up">▲2.9%</span></td><td data-v="-0.6264310602289697"><span class="dn">▼62.6%</span></td></tr><tr data-y="2026"><td><a href="/ipo/00470-2026/">无锡先导智能装备</a><span class="sub">00470 · H</span></td>
+<td data-v="2026-02-11">2026-02-11</td><td data-v="45.8">45.80</td>
+<td data-v="79.54">79.54 倍</td><td data-v="0.18001763150161623">18.00%</td>
+<td data-v="0"><span class="flat">0.0%</span></td><td data-v="-0.5888646288209607"><span class="dn">▼58.9%</span></td></tr><tr data-y="2026"><td><a href="/ipo/00600-2026/">爱芯元智半导体</a><span class="sub">00600 · H</span></td>
+<td data-v="2026-02-10">2026-02-10</td><td data-v="28.2">28.20</td>
+<td data-v="104.82">105 倍</td><td data-v="0.1800148084161165">18.00%</td>
+<td data-v="0"><span class="flat">0.0%</span></td><td data-v="-0.5102836879432624"><span class="dn">▼51.0%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02720-2026/">乐欣户外国际</a><span class="sub">02720</span></td>
+<td data-v="2026-02-10">2026-02-10</td><td data-v="12.25">12.25</td>
+<td data-v="3654.23">3,654 倍</td><td data-v="0.010005854489328862">1.00%</td>
+<td data-v="1.0228571428571431"><span class="up">▲102.3%</span></td><td data-v="0.4693877551020409"><span class="up">▲46.9%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06809-2026/">澜起科技</a><span class="sub">06809 · H</span></td>
+<td data-v="2026-02-09">2026-02-09</td><td data-v="106.89">106.89</td>
+<td data-v="707.3">707 倍</td><td data-v="0.04999520710626378">5.00%</td>
+<td data-v="0.6371971185330714"><span class="up">▲63.7%</span></td><td data-v="0.4351202170455608"><span class="up">▲43.5%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02677-2026/">卓正医疗控股</a><span class="sub">02677</span></td>
+<td data-v="2026-02-06">2026-02-06</td><td data-v="59.9">59.90</td>
+<td data-v="2730.73">2,731 倍</td><td data-v="0.01001588495945155">1.00%</td>
+<td data-v="0.13355592654424053"><span class="up">▲13.4%</span></td><td data-v="-0.6110183639398998"><span class="dn">▼61.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02714-2026/">牧原食品</a><span class="sub">02714 · H</span></td>
+<td data-v="2026-02-06">2026-02-06</td><td data-v="39">39.00</td>
+<td data-v="5.88">5.88 倍</td><td data-v="1">100.00%</td>
+<td data-v="0.03897435897435897"><span class="up">▲3.9%</span></td><td data-v="-0.029743589743589705"><span class="dn">▼3.0%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03200-2026/">深圳市大族数控科技</a><span class="sub">03200 · H</span></td>
+<td data-v="2026-02-06">2026-02-06</td><td data-v="95.8">95.80</td>
+<td data-v="446.39">446 倍</td><td data-v="0.10000159900222261">10.00%</td>
+<td data-v="0.14822546972860118"><span class="up">▲14.8%</span></td><td data-v="-0.5331941544885177"><span class="dn">▼53.3%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02768-2026/">青岛国恩科技</a><span class="sub">02768 · H</span></td>
+<td data-v="2026-02-04">2026-02-04</td><td data-v="36">36.00</td>
+<td data-v="2251.85">2,252 倍</td><td data-v="0.019995674812436578">2.00%</td>
+<td data-v="-0.24624999999999997"><span class="dn">▼24.6%</span></td><td data-v="0.04833333333333334"><span class="up">▲4.8%</span></td></tr><tr data-y="2026"><td><a href="/ipo/09980-2026/">东鹏饮料</a><span class="sub">09980 · H</span></td>
+<td data-v="2026-02-03">2026-02-03</td><td data-v="248">248.00</td>
+<td data-v="57.46">57.46 倍</td><td data-v="0.14999865472058546">15.00%</td>
+<td data-v="-0.21898387096774186"><span class="dn">▼21.9%</span></td><td data-v="-0.6122983870967742"><span class="dn">▼61.2%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01768-2026/">湖南鸣鸣很忙商业连锁</a><span class="sub">01768 · H</span></td>
+<td data-v="2026-01-28">2026-01-28</td><td data-v="236.6">236.60</td>
+<td data-v="1899.49">1,899 倍</td><td data-v="0.030007952350812276">3.00%</td>
+<td data-v="0.6906170752324599"><span class="up">▲69.1%</span></td><td data-v="0.220625528317836"><span class="up">▲22.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/09611-2026/">上海龙旗科技</a><span class="sub">09611 · H</span></td>
+<td data-v="2026-01-22">2026-01-22</td><td data-v="31">31.00</td>
+<td data-v="1149.76">1,150 倍</td><td data-v="0.002044268997603271">0.20%</td>
+<td data-v="0.03548387096774208"><span class="up">▲3.5%</span></td><td data-v="-0.3735483870967742"><span class="dn">▼37.4%</span></td></tr><tr data-y="2026"><td><a href="/ipo/01641-2026/">红星冷链</a><span class="sub">01641 · H</span></td>
+<td data-v="2026-01-13">2026-01-13</td><td data-v="12.26">12.26</td>
+<td data-v="2309.25">2,309 倍</td><td data-v="0.010006539227762824">1.00%</td>
+<td data-v="0.0032626427406199365"><span class="up">▲0.3%</span></td><td data-v="-0.7561174551386622"><span class="dn">▼75.6%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03986-2026/">兆易创新科技</a><span class="sub">03986 · H</span></td>
+<td data-v="2026-01-13">2026-01-13</td><td data-v="162">162.00</td>
+<td data-v="542.22">542 倍</td><td data-v="0.0200172633482675">2.00%</td>
+<td data-v="0.37530864197530867"><span class="up">▲37.5%</span></td><td data-v="0.4654320987654321"><span class="up">▲46.5%</span></td></tr><tr data-y="2026"><td><a href="/ipo/00501-2026/">豪威集成电路</a><span class="sub">00501 · H</span></td>
+<td data-v="2026-01-12">2026-01-12</td><td data-v="104.8">104.80</td>
+<td data-v="9.28">9.28 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v="-0.32538167938931295"><span class="dn">▼32.5%</span></td></tr><tr data-y="2026"><td><a href="/ipo/00100-2026/">MiniMax</a><span class="sub">00100 · W P</span></td>
+<td data-v="2026-01-09">2026-01-09</td><td data-v="165">165.00</td>
+<td data-v="1837.17">1,837 倍</td><td data-v="0.02807327332500682">2.81%</td>
+<td data-v="1.0909090909090908"><span class="up">▲109.1%</span></td><td data-v="-0.33272727272727276"><span class="dn">▼33.3%</span></td></tr><tr data-y="2026"><td><a href="/ipo/03636-2026/">云南金浔资源</a><span class="sub">03636 · H</span></td>
+<td data-v="2026-01-09">2026-01-09</td><td data-v="30">30.00</td>
+<td data-v="143.46">143 倍</td><td data-v="1">100.00%</td>
+<td data-v="-0.496"><span class="dn">▼49.6%</span></td><td data-v="-0.841"><span class="dn">▼84.1%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06938-2026/">苏州瑞博生物技术</a><span class="sub">06938 · B H</span></td>
+<td data-v="2026-01-09">2026-01-09</td><td data-v="57.97">57.97</td>
+<td data-v="101.06">101 倍</td><td data-v="0.017054784296163607">1.71%</td>
+<td data-v="0.4162497843712265"><span class="up">▲41.6%</span></td><td data-v="-0.2772123512161463"><span class="dn">▼27.7%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02513-2026/">北京智谱华章科技</a><span class="sub">02513 · H</span></td>
+<td data-v="2026-01-08">2026-01-08</td><td data-v="116.2">116.20</td>
+<td data-v="1159.46">1,159 倍</td><td data-v="0.05000053845076945">5.00%</td>
+<td data-v="0.13166953528399317"><span class="up">▲13.2%</span></td><td data-v="1.9896729776247848"><span class="up">▲199.0%</span></td></tr><tr data-y="2026"><td><a href="/ipo/02675-2026/">深圳市精锋医疗科技</a><span class="sub">02675 · B H</span></td>
+<td data-v="2026-01-08">2026-01-08</td><td data-v="43.24">43.24</td>
+<td data-v="1091.94">1,092 倍</td><td data-v="0.005006477679453679">0.50%</td>
+<td data-v="0.3089731729879741"><span class="up">▲30.9%</span></td><td data-v="-0.44310823311748393"><span class="dn">▼44.3%</span></td></tr><tr data-y="2026"><td><a href="/ipo/09903-2026/">上海天数智芯半导体</a><span class="sub">09903 · H</span></td>
+<td data-v="2026-01-08">2026-01-08</td><td data-v="144.6">144.60</td>
+<td data-v="414.24">414 倍</td><td data-v="0.06999601023714762">7.00%</td>
+<td data-v="-0.6385408022130014"><span class="dn">▼63.9%</span></td><td data-v="-0.6296680497925311"><span class="dn">▼63.0%</span></td></tr><tr data-y="2026"><td><a href="/ipo/06082-2026/">上海壁仞科技</a><span class="sub">06082 · H</span></td>
+<td data-v="2026-01-02">2026-01-02</td><td data-v="19.6">19.60</td>
+<td data-v="2347.53">2,348 倍</td><td data-v="0.05000114406004027">5.00%</td>
+<td data-v="0.7581632653061223"><span class="up">▲75.8%</span></td><td data-v="-0.1612244897959184"><span class="dn">▼16.1%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02657-2025/">上海林清轩化妆品</a><span class="sub">02657 · H</span></td>
+<td data-v="2025-12-30">2025-12-30</td><td data-v="77.77">77.77</td>
+<td data-v="1235.81">1,236 倍</td><td data-v="0.020012410797393732">2.00%</td>
+<td data-v="0.09296643950109296"><span class="up">▲9.3%</span></td><td data-v="-0.2722129355792722"><span class="dn">▼27.2%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02671-2025/">美联钢结构建筑系统</a><span class="sub">02671 · H</span></td>
+<td data-v="2025-12-30">2025-12-30</td><td data-v="7.1">7.10</td>
+<td data-v="146.25">146 倍</td><td data-v="0.0074633496223900486">0.75%</td>
+<td data-v="0.07605633802816891"><span class="up">▲7.6%</span></td><td data-v="0.11901408450704243"><span class="up">▲11.9%</span></td></tr><tr data-y="2025"><td><a href="/ipo/03317-2025/">深圳迅策科技</a><span class="sub">03317 · H</span></td>
+<td data-v="2025-12-30">2025-12-30</td><td data-v="48">48.00</td>
+<td data-v="7.24">7.24 倍</td><td data-v="0.127831458894345">12.78%</td>
+<td data-v="0.01041666666666674"><span class="up">▲1.0%</span></td><td data-v="-0.025416666666666643"><span class="dn">▼2.5%</span></td></tr><tr data-y="2025"><td><a href="/ipo/03696-2025/">英矽智能</a><span class="sub">03696</span></td>
+<td data-v="2025-12-30">2025-12-30</td><td data-v="24.05">24.05</td>
+<td data-v="1427.37">1,427 倍</td><td data-v="0.010010351613600428">1.00%</td>
+<td data-v="0.24656964656964653"><span class="up">▲24.7%</span></td><td data-v="0.3488565488565487"><span class="up">▲34.9%</span></td></tr><tr data-y="2025"><td><a href="/ipo/06600-2025/">卧安机器人</a><span class="sub">06600 · H</span></td>
+<td data-v="2025-12-30">2025-12-30</td><td data-v="73.8">73.80</td>
+<td data-v="254.5">255 倍</td><td data-v="0.07000231731809053">7.00%</td>
+<td data-v="0.0006775067750677266"><span class="up">▲0.1%</span></td><td data-v="-0.5910569105691057"><span class="dn">▼59.1%</span></td></tr><tr data-y="2025"><td><a href="/ipo/06651-2025/">北京五一视界数字孪生科技</a><span class="sub">06651 · H</span></td>
+<td data-v="2025-12-30">2025-12-30</td><td data-v="30.5">30.50</td>
+<td data-v="256.01">256 倍</td><td data-v="0.10002742355683532">10.00%</td>
+<td data-v="0.2990163934426229"><span class="up">▲29.9%</span></td><td data-v="0.5475409836065575"><span class="up">▲54.8%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02635-2025/">诺比侃人工智能科技</a><span class="sub">02635 · H</span></td>
+<td data-v="2025-12-23">2025-12-23</td><td data-v="80">80.00</td>
+<td data-v="188.74">189 倍</td><td data-v="0.030046185860021318">3.00%</td>
+<td data-v="-0.53625"><span class="dn">▼53.6%</span></td><td data-v="-0.9359999999999999"><span class="dn">▼93.6%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02661-2025/">轻松健康集团</a><span class="sub">02661</span></td>
+<td data-v="2025-12-23">2025-12-23</td><td data-v="22.68">22.68</td>
+<td data-v="1421.47">1,421 倍</td><td data-v="0.05998841922408801">6.00%</td>
+<td data-v="1.5881834215167552"><span class="up">▲158.8%</span></td><td data-v="-0.8794091710758377"><span class="dn">▼87.9%</span></td></tr><tr data-y="2025"><td><a href="/ipo/03378-2025/">翰思艾泰生物医药科技</a><span class="sub">03378 · B H</span></td>
+<td data-v="2025-12-23">2025-12-23</td><td data-v="32">32.00</td>
+<td data-v="3074.09">3,074 倍</td><td data-v="">—</td>
+<td data-v="-0.4625"><span class="dn">▼46.3%</span></td><td data-v="-0.34562499999999996"><span class="dn">▼34.6%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02396-2025/">华芢生物科技</a><span class="sub">02396 · B H</span></td>
+<td data-v="2025-12-22">2025-12-22</td><td data-v="38.2">38.20</td>
+<td data-v="791.95">792 倍</td><td data-v="0.025003805368105942">2.50%</td>
+<td data-v="-0.293193717277487"><span class="dn">▼29.3%</span></td><td data-v="-0.9213350785340314"><span class="dn">▼92.1%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02581-2025/">明基医院</a><span class="sub">02581</span></td>
+<td data-v="2025-12-22">2025-12-22</td><td data-v="9.34">9.34</td>
+<td data-v="6.28">6.28 倍</td><td data-v="0.5000748615062135">50.01%</td>
+<td data-v="-0.4946466809421842"><span class="dn">▼49.5%</span></td><td data-v="-0.7034261241970021"><span class="dn">▼70.3%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02691-2025/">南华期货</a><span class="sub">02691 · H</span></td>
+<td data-v="2025-12-22">2025-12-22</td><td data-v="12">12.00</td>
+<td data-v="1.91">1.91 倍</td><td data-v="0.746424156807346">74.64%</td>
+<td data-v="-0.477"><span class="dn">▼47.7%</span></td><td data-v="-0.5595833333333333"><span class="dn">▼56.0%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02695-2025/">印象大红袍</a><span class="sub">02695 · H</span></td>
+<td data-v="2025-12-22">2025-12-22</td><td data-v="3.6">3.60</td>
+<td data-v="3397.48">3,397 倍</td><td data-v="0.008017385066565394">0.80%</td>
+<td data-v="-0.35277777777777775"><span class="dn">▼35.3%</span></td><td data-v="-0.6777777777777778"><span class="dn">▼67.8%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02546-2025/">西藏智汇矿业</a><span class="sub">02546 · H</span></td>
+<td data-v="2025-12-19">2025-12-19</td><td data-v="4.51">4.51</td>
+<td data-v="5248.15">5,248 倍</td><td data-v="0.009994939271255061">1.00%</td>
+<td data-v="0.9068736141906875"><span class="up">▲90.7%</span></td><td data-v="3.3614190687361427"><span class="up">▲336.1%</span></td></tr><tr data-y="2025"><td><a href="/ipo/03881-2025/">希迪智驾科技</a><span class="sub">03881 · H</span></td>
+<td data-v="2025-12-19">2025-12-19</td><td data-v="263">263.00</td>
+<td data-v="22.55">22.55 倍</td><td data-v="0.5">50.00%</td>
+<td data-v="-0.9136882129277567"><span class="dn">▼91.4%</span></td><td data-v="-0.9615589353612167"><span class="dn">▼96.2%</span></td></tr><tr data-y="2025"><td><a href="/ipo/03887-2025/">HashKey</a><span class="sub">03887</span></td>
+<td data-v="2025-12-17">2025-12-17</td><td data-v="6.68">6.68</td>
+<td data-v="393.71">394 倍</td><td data-v="0.10003058000067956">10.00%</td>
+<td data-v="-0.0014970059880239361"><span class="dn">▼0.1%</span></td><td data-v="-0.7874251497005988"><span class="dn">▼78.7%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02655-2025/">果下科技</a><span class="sub">02655 · H</span></td>
+<td data-v="2025-12-16">2025-12-16</td><td data-v="20.1">20.10</td>
+<td data-v="1890.73">1,891 倍</td><td data-v="1">100.00%</td>
+<td data-v="1.17910447761194"><span class="up">▲117.9%</span></td><td data-v="-0.568407960199005"><span class="dn">▼56.8%</span></td></tr><tr data-y="2025"><td><a href="/ipo/07618-2025/">京东工业</a><span class="sub">07618</span></td>
+<td data-v="2025-12-11">2025-12-11</td><td data-v="14.1">14.10</td>
+<td data-v="60.52">60.52 倍</td><td data-v="0.34999803636649257">35.00%</td>
+<td data-v="0"><span class="flat">0.0%</span></td><td data-v="-0.0921985815602836"><span class="dn">▼9.2%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02659-2025/">上海宝济药业</a><span class="sub">02659 · B H</span></td>
+<td data-v="2025-12-10">2025-12-10</td><td data-v="26.38">26.38</td>
+<td data-v="3526.34">3,526 倍</td><td data-v="0.07000391083300743">7.00%</td>
+<td data-v="1.388172858225929"><span class="up">▲138.8%</span></td><td data-v="-0.6050037907505685"><span class="dn">▼60.5%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02665-2025/">图达通</a><span class="sub">02665</span></td>
+<td data-v="2025-12-10">2025-12-10</td><td data-v="">—</td>
+<td data-v="">—</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02676-2025/">苏州纳芯微电子</a><span class="sub">02676 · H</span></td>
+<td data-v="2025-12-08">2025-12-08</td><td data-v="116">116.00</td>
+<td data-v="25.33">25.33 倍</td><td data-v="0.043226712951483594">4.32%</td>
+<td data-v="-0.0431034482758621"><span class="dn">▼4.3%</span></td><td data-v="-0.061206896551724066"><span class="dn">▼6.1%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02687-2025/">上海卓越睿新数码科技</a><span class="sub">02687 · H</span></td>
+<td data-v="2025-12-08">2025-12-08</td><td data-v="67.5">67.50</td>
+<td data-v="4813.4">4,813 倍</td><td data-v="0.010016228383967055">1.00%</td>
+<td data-v="0.8725925925925926"><span class="up">▲87.3%</span></td><td data-v="1.7837037037037038"><span class="up">▲178.4%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02408-2025/">广州遇见小面餐饮</a><span class="sub">02408 · H</span></td>
+<td data-v="2025-12-05">2025-12-05</td><td data-v="7.04">7.04</td>
+<td data-v="425.97">426 倍</td><td data-v="0.020023241262179314">2.00%</td>
+<td data-v="-0.27840909090909094"><span class="dn">▼27.8%</span></td><td data-v="-0.5099431818181818"><span class="dn">▼51.0%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02658-2025/">广东天域半导体</a><span class="sub">02658 · H</span></td>
+<td data-v="2025-12-05">2025-12-05</td><td data-v="58">58.00</td>
+<td data-v="60.63">60.63 倍</td><td data-v="0.1000158336412097">10.00%</td>
+<td data-v="-0.3017241379310345"><span class="dn">▼30.2%</span></td><td data-v="-0.2931034482758621"><span class="dn">▼29.3%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02539-2025/">乐摩科技服务</a><span class="sub">02539</span></td>
+<td data-v="2025-12-03">2025-12-03</td><td data-v="40">40.00</td>
+<td data-v="7324.29">7,324 倍</td><td data-v="0.008002117608731063">0.80%</td>
+<td data-v="0.36250000000000004"><span class="up">▲36.3%</span></td><td data-v="-0.765"><span class="dn">▼76.5%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02693-2025/">安徽金岩高岭土新材料</a><span class="sub">02693</span></td>
+<td data-v="2025-12-03">2025-12-03</td><td data-v="7.3">7.30</td>
+<td data-v="6876.17">6,876 倍</td><td data-v="1">100.00%</td>
+<td data-v="0.021917808219177992"><span class="up">▲2.2%</span></td><td data-v="-0.6198630136986301"><span class="dn">▼62.0%</span></td></tr><tr data-y="2025"><td><a href="/ipo/09609-2025/">河北海伟电子新材料科技</a><span class="sub">09609 · H</span></td>
+<td data-v="2025-11-28">2025-11-28</td><td data-v="14.28">14.28</td>
+<td data-v="5426.27">5,426 倍</td><td data-v="0.010024309633716642">1.00%</td>
+<td data-v="-0.22969187675070024"><span class="dn">▼23.0%</span></td><td data-v="-0.6638655462184874"><span class="dn">▼66.4%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02685-2025/">量化派控股</a><span class="sub">02685</span></td>
+<td data-v="2025-11-27">2025-11-27</td><td data-v="9.8">9.80</td>
+<td data-v="9366.28">9,366 倍</td><td data-v="1">100.00%</td>
+<td data-v="0.8877551020408161"><span class="up">▲88.8%</span></td><td data-v="-0.7755102040816326"><span class="dn">▼77.6%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02788-2025/">创新实业集团</a><span class="sub">02788</span></td>
+<td data-v="2025-11-24">2025-11-24</td><td data-v="10.99">10.99</td>
+<td data-v="447.2">447 倍</td><td data-v="0.09999731694883421">10.00%</td>
+<td data-v="0.3275705186533211"><span class="up">▲32.8%</span></td><td data-v="0.12647861692447693"><span class="up">▲12.6%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02579-2025/">中伟新材料</a><span class="sub">02579 · H</span></td>
+<td data-v="2025-11-17">2025-11-17</td><td data-v="34">34.00</td>
+<td data-v="27.9">27.90 倍</td><td data-v="0.10002131514441011">10.00%</td>
+<td data-v="-0.0011764705882352233"><span class="dn">▼0.1%</span></td><td data-v="-0.5382352941176471"><span class="dn">▼53.8%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02698-2025/">乐舒适</a><span class="sub">02698</span></td>
+<td data-v="2025-11-10">2025-11-10</td><td data-v="26.2">26.20</td>
+<td data-v="1813.77">1,814 倍</td><td data-v="0.010005368282704874">1.00%</td>
+<td data-v="0.2595419847328244"><span class="up">▲26.0%</span></td><td data-v="0.03969465648854964"><span class="up">▲4.0%</span></td></tr><tr data-y="2025"><td><a href="/ipo/00699-2025/">宁波均胜电子</a><span class="sub">00699 · H</span></td>
+<td data-v="2025-11-06">2025-11-06</td><td data-v="22">22.00</td>
+<td data-v="147.67">148 倍</td><td data-v="0.1599967347605151">16.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v="-0.5727272727272728"><span class="dn">▼57.3%</span></td></tr><tr data-y="2025"><td><a href="/ipo/00800-2025/">文远知行</a><span class="sub">00800 · W</span></td>
+<td data-v="2025-11-06">2025-11-06</td><td data-v="27.1">27.10</td>
+<td data-v="73.44">73.44 倍</td><td data-v="0.06638681592039801">6.64%</td>
+<td data-v="-0.0996309963099632"><span class="dn">▼10.0%</span></td><td data-v="-0.697970479704797"><span class="dn">▼69.8%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02026-2025/">小马智行</a><span class="sub">02026 · W</span></td>
+<td data-v="2025-11-06">2025-11-06</td><td data-v="139">139.00</td>
+<td data-v="15.88">15.88 倍</td><td data-v="0.5500096357679707">55.00%</td>
+<td data-v="-0.09280575539568348"><span class="dn">▼9.3%</span></td><td data-v="-0.8067625899280575"><span class="dn">▼80.7%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02630-2025/">苏州旺山旺水生物医药</a><span class="sub">02630 · B H</span></td>
+<td data-v="2025-11-06">2025-11-06</td><td data-v="33.37">33.37</td>
+<td data-v="6238.42">6,238 倍</td><td data-v="0.01675056191298254">1.68%</td>
+<td data-v="1.457296973329338"><span class="up">▲145.7%</span></td><td data-v="1.3973629008091102"><span class="up">▲139.7%</span></td></tr><tr data-y="2025"><td><a href="/ipo/09927-2025/">赛力斯</a><span class="sub">09927 · H</span></td>
+<td data-v="2025-11-05">2025-11-05</td><td data-v="131.5">131.50</td>
+<td data-v="132.68">133 倍</td><td data-v="0.10000685850896016">10.00%</td>
+<td data-v="0"><span class="flat">0.0%</span></td><td data-v="-0.7998479087452471"><span class="dn">▼80.0%</span></td></tr><tr data-y="2025"><td><a href="/ipo/02718-2025/">明略科技</a><span class="sub">02718 · W</span></td>
+<td data-v="2025-11-03">2025-11-03</td><td data-v="141">141.00</td>
+<td data-v="4452.86">4,453 倍</td><td data-v="0.010002994908655286">1.00%</td>
+<td data-v="1.0609929078014186"><span class="up">▲106.1%</span></td><td data-v="-0.8377304964539007"><span class="dn">▼83.8%</span></td></tr><tr data-y="2025"><td><a href="/ipo/09876-2025/">大洋环球控股</a><span class="sub">09876</span></td>
+<td data-v="2025-11-03">2025-11-03</td><td data-v="">—</td>
+<td data-v="">—</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/01384-2025/">滴普科技</a><span class="sub">01384 · H</span></td>
+<td data-v="2025-10-28">2025-10-28</td><td data-v="26.66">26.66</td>
+<td data-v="7569.83">7,570 倍</td><td data-v="0.030004502972881077">3.00%</td>
+<td data-v="1.5056264066016505"><span class="up">▲150.6%</span></td><td data-v="-0.7269317329332333"><span class="dn">▼72.7%</span></td></tr><tr data-y="2025"><td><a href="/ipo/06031-2025/">三一重工</a><span class="sub">06031 · H</span></td>
+<td data-v="2025-10-28">2025-10-28</td><td data-v="21.3">21.30</td>
+<td data-v="52.93">52.93 倍</td><td data-v="0.5000110168557893">50.00%</td>
+<td data-v="0.028169014084507005"><span class="up">▲2.8%</span></td><td data-v="-0.2873239436619719"><span class="dn">▼28.7%</span></td></tr><tr data-y="2025"><td><a href="/ipo/06166-2025/">上海剑桥科技</a><span class="sub">06166 · H</span></td>
+<td data-v="2025-10-28">2025-10-28</td><td data-v="68.88">68.88</td>
+<td data-v="338.7">339 倍</td><td data-v="0.05001041373142374">5.00%</td>
+<td data-v="0.3385598141695705"><span class="up">▲33.9%</span></td><td data-v="-0.07520325203252021"><span class="dn">▼7.5%</span></td></tr><tr data-y="2025"><td><a href="/ipo/06980-2025/">八马茶业</a><span class="sub">06980 · H</span></td>
+<td data-v="2025-10-28">2025-10-28</td><td data-v="50">50.00</td>
+<td data-v="2680.04">2,680 倍</td><td data-v="0.00800759613862953">0.80%</td>
+<td data-v="0.867"><span class="up">▲86.7%</span></td><td data-v="-0.6126"><span class="dn">▼61.3%</span></td></tr><tr data-y="2025"><td><a href="/ipo/00638-2025/">深圳市广和通无线</a><span class="sub">00638 · H</span></td>
+<td data-v="2025-10-22">2025-10-22</td><td data-v="21.5">21.50</td>
+<td data-v="550.99">551 倍</td><td data-v="0.0031487929626976326">0.31%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/06687-2025/">聚水潭</a><span class="sub">06687</span></td>
+<td data-v="2025-10-21">2025-10-21</td><td data-v="30.6">30.60</td>
+<td data-v="1952.95">1,953 倍</td><td data-v="0.0013473709056397798">0.13%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02637-2025/">福建海西新药创制</a><span class="sub">02637 · H</span></td>
+<td data-v="2025-10-20">2025-10-20</td><td data-v="86.4">86.40</td>
+<td data-v="3165.1">3,165 倍</td><td data-v="0.010002351123501159">1.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02670-2025/">北京云迹科技</a><span class="sub">02670 · H</span></td>
+<td data-v="2025-10-16">2025-10-16</td><td data-v="95.6">95.60</td>
+<td data-v="5657.2">5,657 倍</td><td data-v="0.030005396654074475">3.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02575-2025/">轩竹生物科技</a><span class="sub">02575 · B H</span></td>
+<td data-v="2025-10-15">2025-10-15</td><td data-v="11.6">11.60</td>
+<td data-v="4908.33">4,908 倍</td><td data-v="0.009951058645605781">1.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02650-2025/">上海挚达科技发展</a><span class="sub">02650 · H</span></td>
+<td data-v="2025-10-10">2025-10-10</td><td data-v="66.92">66.92</td>
+<td data-v="5440.8">5,441 倍</td><td data-v="0.00036530421723424117">0.04%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02652-2025/">长风药业</a><span class="sub">02652 · H</span></td>
+<td data-v="2025-10-08">2025-10-08</td><td data-v="14.75">14.75</td>
+<td data-v="6697.8">6,698 倍</td><td data-v="0.010002977076510867">1.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02259-2025/">紫金黄金国际</a><span class="sub">02259</span></td>
+<td data-v="2025-09-30">2025-09-30</td><td data-v="71.59">71.59</td>
+<td data-v="240.74">241 倍</td><td data-v="0.5000055340955628">50.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02583-2025/">深圳西普尼精密科技</a><span class="sub">02583 · H</span></td>
+<td data-v="2025-09-30">2025-09-30</td><td data-v="29.6">29.60</td>
+<td data-v="2505.9">2,506 倍</td><td data-v="0.01000310882724064">1.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02889-2025/">博泰车联网科技</a><span class="sub">02889 · H</span></td>
+<td data-v="2025-09-30">2025-09-30</td><td data-v="102.23">102.23</td>
+<td data-v="529.79">530 倍</td><td data-v="0.00263534372411716">0.26%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/09973-2025/">奇瑞汽车</a><span class="sub">09973 · H</span></td>
+<td data-v="2025-09-25">2025-09-25</td><td data-v="30.75">30.75</td>
+<td data-v="308.18">308 倍</td><td data-v="0.0067427094454121485">0.67%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/06090-2025/">不同集团</a><span class="sub">06090</span></td>
+<td data-v="2025-09-23">2025-09-23</td><td data-v="71.2">71.20</td>
+<td data-v="3317.47">3,317 倍</td><td data-v="0.009999771172284387">1.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02595-2025/">劲方医药科技</a><span class="sub">02595 · B H</span></td>
+<td data-v="2025-09-19">2025-09-19</td><td data-v="20.39">20.39</td>
+<td data-v="2662.79">2,663 倍</td><td data-v="0.0008140440291640121">0.08%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02656-2025/">健康160 国际</a><span class="sub">02656</span></td>
+<td data-v="2025-09-17">2025-09-17</td><td data-v="11.89">11.89</td>
+<td data-v="751.77">752 倍</td><td data-v="0.07999128160418482">8.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02525-2025/">禾赛科技</a><span class="sub">02525 · W</span></td>
+<td data-v="2025-09-16">2025-09-16</td><td data-v="212.8">212.80</td>
+<td data-v="">—</td><td data-v="0.30003446031320596">30.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02543-2025/">大行科工</a><span class="sub">02543 · H</span></td>
+<td data-v="2025-09-09">2025-09-09</td><td data-v="49.5">49.50</td>
+<td data-v="7558.4">7,558 倍</td><td data-v="0.00019862156632967208">0.02%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02580-2025/">奥克斯电气</a><span class="sub">02580</span></td>
+<td data-v="2025-09-02">2025-09-02</td><td data-v="17.42">17.42</td>
+<td data-v="">—</td><td data-v="0.10001216693028349">10.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/03858-2025/">佳鑫国际资源投资</a><span class="sub">03858</span></td>
+<td data-v="2025-08-28">2025-08-28</td><td data-v="10.92">10.92</td>
+<td data-v="2041.62">2,042 倍</td><td data-v="0.009996026044691712">1.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/06960-2025/">双登</a><span class="sub">06960 · H</span></td>
+<td data-v="2025-08-26">2025-08-26</td><td data-v="14.51">14.51</td>
+<td data-v="3876.25">3,876 倍</td><td data-v="0.0005800931371759133">0.06%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02631-2025/">山东天岳先进科技</a><span class="sub">02631 · H</span></td>
+<td data-v="2025-08-20">2025-08-20</td><td data-v="42.8">42.80</td>
+<td data-v="2809.19">2,809 倍</td><td data-v="0.3000066505575384">30.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02591-2025/">广州银诺医药</a><span class="sub">02591 · B H</span></td>
+<td data-v="2025-08-15">2025-08-15</td><td data-v="18.68">18.68</td>
+<td data-v="5341.66">5,342 倍</td><td data-v="0.005012868282564437">0.50%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02627-2025/">江苏中慧元通生物科技</a><span class="sub">02627 · B H</span></td>
+<td data-v="2025-08-11">2025-08-11</td><td data-v="12.9">12.90</td>
+<td data-v="4007.64">4,008 倍</td><td data-v="0.01000565796134719">1.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/06887-2025/">广东东阳光药业</a><span class="sub">06887 · H</span></td>
+<td data-v="2025-08-07">2025-08-07</td><td data-v="">—</td>
+<td data-v="">—</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/09887-2025/">南京维立志博生物科技</a><span class="sub">09887 · B H</span></td>
+<td data-v="2025-07-25">2025-07-25</td><td data-v="35">35.00</td>
+<td data-v="3494.78">3,495 倍</td><td data-v="0.00270901447921532">0.27%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/01304-2025/">峰岹科技</a><span class="sub">01304 · H</span></td>
+<td data-v="2025-07-09">2025-07-09</td><td data-v="120.5">120.50</td>
+<td data-v="138.26">138 倍</td><td data-v="0.2">20.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02590-2025/">北京极智嘉科技</a><span class="sub">02590 · W H</span></td>
+<td data-v="2025-07-09">2025-07-09</td><td data-v="16.8">16.80</td>
+<td data-v="">—</td><td data-v="0.04257396005406217">4.26%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02597-2025/">北京讯众通信技术</a><span class="sub">02597 · H</span></td>
+<td data-v="2025-07-09">2025-07-09</td><td data-v="13.55">13.55</td>
+<td data-v="12.79">12.79 倍</td><td data-v="0.20014257708073427">20.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02651-2025/">武汉大众口腔医疗</a><span class="sub">02651 · H</span></td>
+<td data-v="2025-07-09">2025-07-09</td><td data-v="20">20.00</td>
+<td data-v="108.25">108 倍</td><td data-v="0.10001500600240096">10.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/06613-2025/">蓝思科技</a><span class="sub">06613 · H</span></td>
+<td data-v="2025-07-09">2025-07-09</td><td data-v="18.18">18.18</td>
+<td data-v="462.76">463 倍</td><td data-v="0.2">20.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/01828-2025/">富卫集团</a><span class="sub">01828</span></td>
+<td data-v="2025-07-07">2025-07-07</td><td data-v="38">38.00</td>
+<td data-v="37.13">37.13 倍</td><td data-v="0.20003342245989306">20.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02648-2025/">安井食品</a><span class="sub">02648 · H</span></td>
+<td data-v="2025-07-04">2025-07-04</td><td data-v="60">60.00</td>
+<td data-v="44.2">44.20 倍</td><td data-v="0.6999785545785975">70.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02592-2025/">拨康视云制药</a><span class="sub">02592 · B</span></td>
+<td data-v="2025-07-03">2025-07-03</td><td data-v="10.1">10.10</td>
+<td data-v="78.78">78.78 倍</td><td data-v="0.05003136762860728">5.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/03880-2025/">泰德医药</a><span class="sub">03880 · H</span></td>
+<td data-v="2025-06-30">2025-06-30</td><td data-v="30.6">30.60</td>
+<td data-v="301.15">301 倍</td><td data-v="0.5000204089962855">50.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/06603-2025/">IFBH</a><span class="sub">06603</span></td>
+<td data-v="2025-06-30">2025-06-30</td><td data-v="27.8">27.80</td>
+<td data-v="2682.35">2,682 倍</td><td data-v="0.1000196502259776">10.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/09678-2025/">云知声智能科技</a><span class="sub">09678 · H</span></td>
+<td data-v="2025-06-30">2025-06-30</td><td data-v="205">205.00</td>
+<td data-v="91.66">91.66 倍</td><td data-v="0.10005976265687698">10.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02508-2025/">圣贝拉</a><span class="sub">02508</span></td>
+<td data-v="2025-06-26">2025-06-26</td><td data-v="6.58">6.58</td>
+<td data-v="193">193 倍</td><td data-v="0.025354055057550524">2.54%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/06168-2025/">周六福珠宝</a><span class="sub">06168 · H</span></td>
+<td data-v="2025-06-26">2025-06-26</td><td data-v="24">24.00</td>
+<td data-v="711.11">711 倍</td><td data-v="0.00816284356271957">0.82%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/06883-2025/">颖通控股</a><span class="sub">06883</span></td>
+<td data-v="2025-06-26">2025-06-26</td><td data-v="2.88">2.88</td>
+<td data-v="35.84">35.84 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02619-2025/">湖北香江电器</a><span class="sub">02619 · H</span></td>
+<td data-v="2025-06-25">2025-06-25</td><td data-v="2.86">2.86</td>
+<td data-v="852.38">852 倍</td><td data-v="0.10002975304968759">10.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02643-2025/">曹操出行</a><span class="sub">02643</span></td>
+<td data-v="2025-06-25">2025-06-25</td><td data-v="41.94">41.94</td>
+<td data-v="21.14">21.14 倍</td><td data-v="0.5">50.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02050-2025/">浙江三花智能控制</a><span class="sub">02050 · H</span></td>
+<td data-v="2025-06-23">2025-06-23</td><td data-v="22.53">22.53</td>
+<td data-v="">—</td><td data-v="0.15000244582497677">15.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02609-2025/">佰泽医疗集团</a><span class="sub">02609</span></td>
+<td data-v="2025-06-23">2025-06-23</td><td data-v="4.22">4.22</td>
+<td data-v="25.92">25.92 倍</td><td data-v="0.20003073849227695">20.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02617-2025/">药捷安康科技</a><span class="sub">02617 · B H</span></td>
+<td data-v="2025-06-23">2025-06-23</td><td data-v="13.15">13.15</td>
+<td data-v="3419.87">3,420 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/03288-2025/">佛山市海天调味食品</a><span class="sub">03288 · H</span></td>
+<td data-v="2025-06-19">2025-06-19</td><td data-v="36.3">36.30</td>
+<td data-v="918.15">918 倍</td><td data-v="0.05001381148140325">5.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02573-2025/">新琪安</a><span class="sub">02573 · H</span></td>
+<td data-v="2025-06-10">2025-06-10</td><td data-v="18.9">18.90</td>
+<td data-v="149.37">149 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02605-2025/">MetaLight</a><span class="sub">02605</span></td>
+<td data-v="2025-06-10">2025-06-10</td><td data-v="9.75">9.75</td>
+<td data-v="274.44">274 倍</td><td data-v="0.4499708284714119">45.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/09881-2025/">容大合众科技集团股份公司</a><span class="sub">09881 · H</span></td>
+<td data-v="2025-06-10">2025-06-10</td><td data-v="10">10.00</td>
+<td data-v="275.96">276 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02621-2025/">手回集团</a><span class="sub">02621</span></td>
+<td data-v="2025-05-30">2025-05-30</td><td data-v="8.08">8.08</td>
+<td data-v="990">990 倍</td><td data-v="0.050039140121635454">5.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02565-2025/">派格生物医药</a><span class="sub">02565 · B H</span></td>
+<td data-v="2025-05-27">2025-05-27</td><td data-v="15.6">15.60</td>
+<td data-v="743.78">744 倍</td><td data-v="0.07997627136924985">8.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02603-2025/">厦门吉宏科技</a><span class="sub">02603 · H</span></td>
+<td data-v="2025-05-27">2025-05-27</td><td data-v="7.68">7.68</td>
+<td data-v="49.39">49.39 倍</td><td data-v="0.5">50.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/01276-2025/">江苏恒瑞医药</a><span class="sub">01276 · H</span></td>
+<td data-v="2025-05-23">2025-05-23</td><td data-v="44.05">44.05</td>
+<td data-v="454.85">455 倍</td><td data-v="0.1000089182199233">10.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02629-2025/">Mirxes</a><span class="sub">02629 · B</span></td>
+<td data-v="2025-05-23">2025-05-23</td><td data-v="23.3">23.30</td>
+<td data-v="25.51">25.51 倍</td><td data-v="0.9500384319754035">95.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/03750-2025/">宁德时代新能源科技</a><span class="sub">03750 · H</span></td>
+<td data-v="2025-05-20">2025-05-20</td><td data-v="263">263.00</td>
+<td data-v="">—</td><td data-v="0.10000475398145947">10.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/06831-2025/">绿茶集团</a><span class="sub">06831</span></td>
+<td data-v="2025-05-16">2025-05-16</td><td data-v="7.19">7.19</td>
+<td data-v="317.54">318 倍</td><td data-v="0.4">40.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02589-2025/">沪上阿姨实业</a><span class="sub">02589 · H</span></td>
+<td data-v="2025-05-08">2025-05-08</td><td data-v="113.12">113.12</td>
+<td data-v="3616.83">3,617 倍</td><td data-v="0.09998703151342238">10.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02865-2025/">海南钧达新能源科技</a><span class="sub">02865 · H</span></td>
+<td data-v="2025-05-08">2025-05-08</td><td data-v="22.15">22.15</td>
+<td data-v="3.5">3.50 倍</td><td data-v="0.2383567662565905">23.84%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/01333-2025/">博雷顿科技股份公司</a><span class="sub">01333 · H</span></td>
+<td data-v="2025-05-07">2025-05-07</td><td data-v="18">18.00</td>
+<td data-v="198.72">199 倍</td><td data-v="0.02003154574132492">2.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/09606-2025/">映恩生物</a><span class="sub">09606 · B</span></td>
+<td data-v="2025-04-15">2025-04-15</td><td data-v="94.6">94.60</td>
+<td data-v="115.14">115 倍</td><td data-v="0.8001300672013874">80.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/03677-2025/">江苏正力新能电池技术</a><span class="sub">03677 · H</span></td>
+<td data-v="2025-04-14">2025-04-14</td><td data-v="8.27">8.27</td>
+<td data-v="3.51">3.51 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02625-2025/">江苏宏信超市连锁</a><span class="sub">02625 · H</span></td>
+<td data-v="2025-03-31">2025-03-31</td><td data-v="2.5">2.50</td>
+<td data-v="46.96">46.96 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02569-2025/">舒宝国际集团</a><span class="sub">02569</span></td>
+<td data-v="2025-03-27">2025-03-27</td><td data-v="0.51">0.51</td>
+<td data-v="167.09">167 倍</td><td data-v="0.30008417508417506">30.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02610-2025/">南山铝业国际控股</a><span class="sub">02610</span></td>
+<td data-v="2025-03-25">2025-03-25</td><td data-v="26.6">26.60</td>
+<td data-v="3.89">3.89 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02561-2025/">维升药业</a><span class="sub">02561 · B</span></td>
+<td data-v="2025-03-21">2025-03-21</td><td data-v="68.8">68.80</td>
+<td data-v="72.64">72.64 倍</td><td data-v="0.06274243599689681">6.27%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/06676-2025/">找钢产业互联集团</a><span class="sub">06676 · W</span></td>
+<td data-v="2025-03-10">2025-03-10</td><td data-v="">—</td>
+<td data-v="">—</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/06693-2025/">赤峰吉隆黄金矿业</a><span class="sub">06693 · H</span></td>
+<td data-v="2025-03-10">2025-03-10</td><td data-v="13.72">13.72</td>
+<td data-v="9.53">9.53 倍</td><td data-v="0.2800033950093363">28.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02097-2025/">蜜雪冰城</a><span class="sub">02097 · H</span></td>
+<td data-v="2025-03-03">2025-03-03</td><td data-v="202.5">202.50</td>
+<td data-v="5258.21">5,258 倍</td><td data-v="0.07999573583497681">8.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/09893-2025/">比优集团控股</a><span class="sub">09893</span></td>
+<td data-v="2025-02-18">2025-02-18</td><td data-v="">—</td>
+<td data-v="">—</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/01364-2025/">古茗控股</a><span class="sub">01364</span></td>
+<td data-v="2025-02-12">2025-02-12</td><td data-v="9.94">9.94</td>
+<td data-v="15.03">15.03 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02571-2025/">北京赛目科技</a><span class="sub">02571 · H</span></td>
+<td data-v="2025-01-15">2025-01-15</td><td data-v="12.99">12.99</td>
+<td data-v="2.66">2.66 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/00805-2025/">新吉奥房车</a><span class="sub">00805</span></td>
+<td data-v="2025-01-13">2025-01-13</td><td data-v="1.27">1.27</td>
+<td data-v="2.52">2.52 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02596-2025/">宜宾市商业银行</a><span class="sub">02596 · H</span></td>
+<td data-v="2025-01-13">2025-01-13</td><td data-v="2.59">2.59</td>
+<td data-v="0.21">0.21 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/00325-2025/">布鲁可集团</a><span class="sub">00325</span></td>
+<td data-v="2025-01-10">2025-01-10</td><td data-v="60.35">60.35</td>
+<td data-v="5999.96">6,000 倍</td><td data-v="0.1000080006400512">10.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02530-2025/">纽曼思健康食品控股</a><span class="sub">02530</span></td>
+<td data-v="2025-01-10">2025-01-10</td><td data-v="0.8">0.80</td>
+<td data-v="65.17">65.17 倍</td><td data-v="0.5000929540806841">50.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02560-2025/">安徽海螺材料科技</a><span class="sub">02560 · H</span></td>
+<td data-v="2025-01-09">2025-01-09</td><td data-v="3">3.00</td>
+<td data-v="25.83">25.83 倍</td><td data-v="0.7000155110904297">70.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/02613-2025/">上海汇舸环保科技</a><span class="sub">02613 · H</span></td>
+<td data-v="2025-01-09">2025-01-09</td><td data-v="31.8">31.80</td>
+<td data-v="55.33">55.33 倍</td><td data-v="0.4001427806532215">40.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2025"><td><a href="/ipo/06681-2025/">脑动极光医疗科技</a><span class="sub">06681 · B</span></td>
+<td data-v="2025-01-08">2025-01-08</td><td data-v="3.22">3.22</td>
+<td data-v="11.39">11.39 倍</td><td data-v="0.5000946073793756">50.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02506-2024/">讯飞医疗科技</a><span class="sub">02506 · H</span></td>
+<td data-v="2024-12-30">2024-12-30</td><td data-v="82.8">82.80</td>
+<td data-v="3.66">3.66 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02577-2024/">英诺赛科科技</a><span class="sub">02577 · H</span></td>
+<td data-v="2024-12-30">2024-12-30</td><td data-v="30.86">30.86</td>
+<td data-v="2.87">2.87 倍</td><td data-v="0.8001395186606208">80.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02587-2024/">健康之路</a><span class="sub">02587</span></td>
+<td data-v="2024-12-30">2024-12-30</td><td data-v="7.8">7.80</td>
+<td data-v="34.42">34.42 倍</td><td data-v="0.5">50.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02431-2024/">深圳佑驾创新科技</a><span class="sub">02431 · H</span></td>
+<td data-v="2024-12-27">2024-12-27</td><td data-v="17">17.00</td>
+<td data-v="14.04">14.04 倍</td><td data-v="0.5000942862530643">50.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02432-2024/">深圳市越疆科技</a><span class="sub">02432 · H</span></td>
+<td data-v="2024-12-23">2024-12-23</td><td data-v="18.8">18.80</td>
+<td data-v="9.25">9.25 倍</td><td data-v="0.5">50.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/00999-2024/">小菜园国际控股</a><span class="sub">00999</span></td>
+<td data-v="2024-12-20">2024-12-20</td><td data-v="8.5">8.50</td>
+<td data-v="1.44">1.44 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02593-2024/">草姬集团控股</a><span class="sub">02593</span></td>
+<td data-v="2024-12-19">2024-12-19</td><td data-v="3.75">3.75</td>
+<td data-v="6083.63">6,084 倍</td><td data-v="0.0299830740710889">3.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/01318-2024/">毛戈平化妆品</a><span class="sub">01318 · H</span></td>
+<td data-v="2024-12-10">2024-12-10</td><td data-v="29.8">29.80</td>
+<td data-v="30.34">30.34 倍</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02570-2024/">上海重塑能源</a><span class="sub">02570 · H</span></td>
+<td data-v="2024-12-06">2024-12-06</td><td data-v="147">147.00</td>
+<td data-v="1.55">1.55 倍</td><td data-v="0.5680902497985496">56.81%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02586-2024/">多点数智</a><span class="sub">02586</span></td>
+<td data-v="2024-12-06">2024-12-06</td><td data-v="30.21">30.21</td>
+<td data-v="1.94">1.94 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02585-2024/">梦金园黄金珠宝</a><span class="sub">02585 · H</span></td>
+<td data-v="2024-11-29">2024-11-29</td><td data-v="12">12.00</td>
+<td data-v="20.58">20.58 倍</td><td data-v="0.07663230240549829">7.66%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02566-2024/">杭州九源基因工程</a><span class="sub">02566 · H</span></td>
+<td data-v="2024-11-28">2024-11-28</td><td data-v="12.42">12.42</td>
+<td data-v="675.83">676 倍</td><td data-v="0.20007328691828508">20.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/06936-2024/">顺丰控股</a><span class="sub">06936 · H</span></td>
+<td data-v="2024-11-27">2024-11-27</td><td data-v="34.3">34.30</td>
+<td data-v="10.1">10.10 倍</td><td data-v="0.20001986787860726">20.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02582-2024/">江苏国富氢能技术装备</a><span class="sub">02582 · H</span></td>
+<td data-v="2024-11-15">2024-11-15</td><td data-v="65">65.00</td>
+<td data-v="21.07">21.07 倍</td><td data-v="0.15027422303473492">15.03%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02519-2024/">傲基跨境商务</a><span class="sub">02519 · H</span></td>
+<td data-v="2024-11-08">2024-11-08</td><td data-v="15.6">15.60</td>
+<td data-v="17.74">17.74 倍</td><td data-v="0.7001779359430605">70.02%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02551-2024/">广东晶科电子</a><span class="sub">02551 · H</span></td>
+<td data-v="2024-11-08">2024-11-08</td><td data-v="3.61">3.61</td>
+<td data-v="5677.83">5,678 倍</td><td data-v="0.0024363233665559247">0.24%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02510-2024/">德翔海运</a><span class="sub">02510</span></td>
+<td data-v="2024-11-01">2024-11-01</td><td data-v="4.18">4.18</td>
+<td data-v="12.09">12.09 倍</td><td data-v="0.058713010803193987">5.87%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02563-2024/">北京华昊中天生物医药</a><span class="sub">02563 · B H</span></td>
+<td data-v="2024-10-31">2024-10-31</td><td data-v="16">16.00</td>
+<td data-v="21.45">21.45 倍</td><td data-v="0.04448275862068966">4.45%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02465-2024/">江苏龙蟠科技</a><span class="sub">02465 · H</span></td>
+<td data-v="2024-10-30">2024-10-30</td><td data-v="5.5">5.50</td>
+<td data-v="3.99">3.99 倍</td><td data-v="0.7002295834699902">70.02%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02562-2024/">狮腾控股</a><span class="sub">02562</span></td>
+<td data-v="2024-10-30">2024-10-30</td><td data-v="">—</td>
+<td data-v="">—</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/09660-2024/">地平线</a><span class="sub">09660 · W</span></td>
+<td data-v="2024-10-24">2024-10-24</td><td data-v="3.99">3.99</td>
+<td data-v="33.83">33.83 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02460-2024/">华润饮料</a><span class="sub">02460</span></td>
+<td data-v="2024-10-23">2024-10-23</td><td data-v="14.5">14.50</td>
+<td data-v="234.49">234 倍</td><td data-v="0.30002648071321386">30.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02567-2024/">七牛智能科技</a><span class="sub">02567</span></td>
+<td data-v="2024-10-16">2024-10-16</td><td data-v="2.75">2.75</td>
+<td data-v="19.87">19.87 倍</td><td data-v="0.8">80.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/09639-2024/">荣利营造控股</a><span class="sub">09639</span></td>
+<td data-v="2024-10-09">2024-10-09</td><td data-v="0.73">0.73</td>
+<td data-v="120.6">121 倍</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02576-2024/">浙江太美医疗科技</a><span class="sub">02576 · H</span></td>
+<td data-v="2024-10-08">2024-10-08</td><td data-v="13">13.00</td>
+<td data-v="">—</td><td data-v="0.026913812964708347">2.69%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02549-2024/">卡罗特</a><span class="sub">02549</span></td>
+<td data-v="2024-10-02">2024-10-02</td><td data-v="5.78">5.78</td>
+<td data-v="1347.27">1,347 倍</td><td data-v="0.14997598463016332">15.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/00300-2024/">美的</a><span class="sub">00300 · H</span></td>
+<td data-v="2024-09-17">2024-09-17</td><td data-v="54.8">54.80</td>
+<td data-v="">—</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02410-2024/">浙江同源康医药</a><span class="sub">02410 · B H</span></td>
+<td data-v="2024-08-20">2024-08-20</td><td data-v="12.1">12.10</td>
+<td data-v="2.29">2.29 倍</td><td data-v="0.4788273615635179">47.88%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02533-2024/">黑芝麻智能国际控股</a><span class="sub">02533</span></td>
+<td data-v="2024-08-08">2024-08-08</td><td data-v="28">28.00</td>
+<td data-v="2.52">2.52 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/01471-2024/">众淼控股</a><span class="sub">01471 · H</span></td>
+<td data-v="2024-08-06">2024-08-06</td><td data-v="7">7.00</td>
+<td data-v="16.07">16.07 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02531-2024/">广联科技控股</a><span class="sub">02531</span></td>
+<td data-v="2024-07-15">2024-07-15</td><td data-v="4.7">4.70</td>
+<td data-v="2.49">2.49 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02507-2024/">西锐飞机</a><span class="sub">02507</span></td>
+<td data-v="2024-07-12">2024-07-12</td><td data-v="27.5">27.50</td>
+<td data-v="1.56">1.56 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/01334-2024/">瑞昌国际控股</a><span class="sub">01334</span></td>
+<td data-v="2024-07-10">2024-07-10</td><td data-v="1.05">1.05</td>
+<td data-v="19.24">19.24 倍</td><td data-v="0.20007301935012778">20.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02495-2024/">上海声通信息科技</a><span class="sub">02495 · H</span></td>
+<td data-v="2024-07-10">2024-07-10</td><td data-v="152.1">152.10</td>
+<td data-v="3.51">3.51 倍</td><td data-v="0.3486360612109115">34.86%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/09680-2024/">如祺出行科技</a><span class="sub">09680</span></td>
+<td data-v="2024-07-10">2024-07-10</td><td data-v="35">35.00</td>
+<td data-v="1.18">1.18 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/06086-2024/">方舟云康控股</a><span class="sub">06086</span></td>
+<td data-v="2024-07-09">2024-07-09</td><td data-v="8.18">8.18</td>
+<td data-v="16.63">16.63 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/06657-2024/">百望</a><span class="sub">06657 · H</span></td>
+<td data-v="2024-07-09">2024-07-09</td><td data-v="36">36.00</td>
+<td data-v="6.58">6.58 倍</td><td data-v="0.40009965122072744">40.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/01354-2024/">西安经发物业</a><span class="sub">01354 · H</span></td>
+<td data-v="2024-07-03">2024-07-03</td><td data-v="7.5">7.50</td>
+<td data-v="118.87">119 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02545-2024/">中赣通信控股</a><span class="sub">02545</span></td>
+<td data-v="2024-07-03">2024-07-03</td><td data-v="1.25">1.25</td>
+<td data-v="195.99">196 倍</td><td data-v="0.7001328525336876">70.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02479-2024/">天聚地合 科技</a><span class="sub">02479 · H</span></td>
+<td data-v="2024-06-28">2024-06-28</td><td data-v="83.33">83.33</td>
+<td data-v="">—</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02559-2024/">嘀嗒出行</a><span class="sub">02559</span></td>
+<td data-v="2024-06-28">2024-06-28</td><td data-v="6">6.00</td>
+<td data-v="112.9">113 倍</td><td data-v="0.1000137381508449">10.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/06181-2024/">老铺黄金</a><span class="sub">06181 · H</span></td>
+<td data-v="2024-06-28">2024-06-28</td><td data-v="40.5">40.50</td>
+<td data-v="582.15">582 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02881-2024/">武汉有机控股</a><span class="sub">02881</span></td>
+<td data-v="2024-06-18">2024-06-18</td><td data-v="5.5">5.50</td>
+<td data-v="337.57">338 倍</td><td data-v="0.05007072135785007">5.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02512-2024/">云工场科技控股</a><span class="sub">02512</span></td>
+<td data-v="2024-06-14">2024-06-14</td><td data-v="4.6">4.60</td>
+<td data-v="25.79">25.79 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02228-2024/">QuantumPharm</a><span class="sub">02228 · P</span></td>
+<td data-v="2024-06-13">2024-06-13</td><td data-v="5.28">5.28</td>
+<td data-v="2.13">2.13 倍</td><td data-v="0.2">20.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02522-2024/">江西一脉阳光</a><span class="sub">02522 · H</span></td>
+<td data-v="2024-06-07">2024-06-07</td><td data-v="14.98">14.98</td>
+<td data-v="336.33">336 倍</td><td data-v="0.030134932533733134">3.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02550-2024/">宜搜科技控股</a><span class="sub">02550</span></td>
+<td data-v="2024-06-07">2024-06-07</td><td data-v="5.8">5.80</td>
+<td data-v="114.59">115 倍</td><td data-v="0.10020502306509482">10.02%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02443-2024/">汽车街发展</a><span class="sub">02443</span></td>
+<td data-v="2024-05-31">2024-05-31</td><td data-v="10.2">10.20</td>
+<td data-v="433.34">433 倍</td><td data-v="0.05008673026886384">5.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02505-2024/">EDA集团控股</a><span class="sub">02505</span></td>
+<td data-v="2024-05-28">2024-05-28</td><td data-v="2.28">2.28</td>
+<td data-v="103.44">103 倍</td><td data-v="0.10009017132551848">10.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/00917-2024/">趣致集团</a><span class="sub">00917</span></td>
+<td data-v="2024-05-27">2024-05-27</td><td data-v="25">25.00</td>
+<td data-v="12.05">12.05 倍</td><td data-v="0.6001517450682853">60.02%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02898-2024/">盛禾生物控股</a><span class="sub">02898 · B</span></td>
+<td data-v="2024-05-24">2024-05-24</td><td data-v="13.5">13.50</td>
+<td data-v="10.08">10.08 倍</td><td data-v="0.07816804407713498">7.82%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02529-2024/">泓盈城市运营服务</a><span class="sub">02529 · H</span></td>
+<td data-v="2024-05-17">2024-05-17</td><td data-v="3.2">3.20</td>
+<td data-v="47.59">47.59 倍</td><td data-v="0.8002859866539561">80.03%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02556-2024/">迈富时管理</a><span class="sub">02556</span></td>
+<td data-v="2024-05-16">2024-05-16</td><td data-v="43.6">43.60</td>
+<td data-v="5.95">5.95 倍</td><td data-v="0.5503703703703704">55.04%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02438-2024/">出门问问</a><span class="sub">02438</span></td>
+<td data-v="2024-04-24">2024-04-24</td><td data-v="3.8">3.80</td>
+<td data-v="117.39">117 倍</td><td data-v="0.2500509891902917">25.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02515-2024/">天津建设发展集团股份公司</a><span class="sub">02515 · H</span></td>
+<td data-v="2024-04-23">2024-04-23</td><td data-v="2.5">2.50</td>
+<td data-v="433.06">433 倍</td><td data-v="0.1000697350069735">10.01%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02555-2024/">四川百茶百道实业</a><span class="sub">02555 · H</span></td>
+<td data-v="2024-04-23">2024-04-23</td><td data-v="17.5">17.50</td>
+<td data-v="0.5">0.50 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02497-2024/">富景中国控股</a><span class="sub">02497</span></td>
+<td data-v="2024-03-28">2024-03-28</td><td data-v="1.08">1.08</td>
+<td data-v="294.13">294 倍</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02598-2024/">连连数字科技</a><span class="sub">02598 · H</span></td>
+<td data-v="2024-03-28">2024-03-28</td><td data-v="10.22">10.22</td>
+<td data-v="16.94">16.94 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02536-2024/">百乐皇宫控股</a><span class="sub">02536</span></td>
+<td data-v="2024-03-26">2024-03-26</td><td data-v="2.6">2.60</td>
+<td data-v="15.96">15.96 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/09879-2024/">米高集团控股</a><span class="sub">09879</span></td>
+<td data-v="2024-03-21">2024-03-21</td><td data-v="4.08">4.08</td>
+<td data-v="9.79">9.79 倍</td><td data-v="0.3001693480101609">30.02%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02509-2024/">江苏荃信生物医药</a><span class="sub">02509 · B H</span></td>
+<td data-v="2024-03-20">2024-03-20</td><td data-v="19.8">19.80</td>
+<td data-v="163.15">163 倍</td><td data-v="0.05001219809709685">5.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02535-2024/">泓基集团</a><span class="sub">02535</span></td>
+<td data-v="2024-03-08">2024-03-08</td><td data-v="0.25">0.25</td>
+<td data-v="70.48">70.48 倍</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02540-2024/">乐思集团</a><span class="sub">02540</span></td>
+<td data-v="2024-03-08">2024-03-08</td><td data-v="1.1">1.10</td>
+<td data-v="22.35">22.35 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02477-2024/">经纬天地控股</a><span class="sub">02477</span></td>
+<td data-v="2024-01-12">2024-01-12</td><td data-v="1">1.00</td>
+<td data-v="28.64">28.64 倍</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02453-2024/">美中嘉和医学技术发展</a><span class="sub">02453 · H</span></td>
+<td data-v="2024-01-09">2024-01-09</td><td data-v="14.28">14.28</td>
+<td data-v="1.99">1.99 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02503-2024/">中深建业控股</a><span class="sub">02503</span></td>
+<td data-v="2024-01-09">2024-01-09</td><td data-v="1">1.00</td>
+<td data-v="58.44">58.44 倍</td><td data-v="">—</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/06959-2024/">长久</a><span class="sub">06959</span></td>
+<td data-v="2024-01-09">2024-01-09</td><td data-v="5.95">5.95</td>
+<td data-v="11.67">11.67 倍</td><td data-v="0.20121028744326777">20.12%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr><tr data-y="2024"><td><a href="/ipo/02498-2024/">速腾聚创科技</a><span class="sub">02498</span></td>
+<td data-v="2024-01-05">2024-01-05</td><td data-v="43">43.00</td>
+<td data-v="0.58">0.58 倍</td><td data-v="1">100.00%</td>
+<td data-v=""><span class="mut">—</span></td><td data-v=""><span class="mut">—</span></td></tr></tbody></table></div>
+<p class="note">首日涨跌 = 首日收市价 ÷ 发售价 − 1；至今涨跌按最近收市价计算。“—”表示暂时没有数据。</p><script>
+(function(){var t=document.querySelector('table.sortable');if(!t)return;var tb=t.tBodies[0];
+document.querySelectorAll('.filters button').forEach(function(b){b.onclick=function(){document.querySelectorAll('.filters button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');var y=b.dataset.y;[].forEach.call(tb.rows,function(r){r.style.display=(y==='all'||r.dataset.y===y)?'':'none'});};});
+t.querySelectorAll('th[data-k]').forEach(function(th){th.onclick=function(){var k=+th.dataset.k,s=th.dataset.t==='s',d=th.dataset.d=th.dataset.d==='1'?'-1':'1';var rows=[].slice.call(tb.rows);
+rows.sort(function(a,b){var x=a.cells[k].dataset.v||a.cells[k].textContent,y=b.cells[k].dataset.v||b.cells[k].textContent;if(!s){x=x===''?-1e18:+x;y=y===''?-1e18:+y;return (x-y)*d}return x.localeCompare(y)*d});rows.forEach(function(r){tb.appendChild(r)});};});})();
+</script>
+<p class="disc">本站数据来自香港交易所披露易的官方公告（招股章程、正式通告、配发结果公告）及公开行情，每天自动更新，可能有延迟或误差，请以官方公告为准。本站只提供资料参考，<strong>不构成任何投资建议</strong>。新股投资有风险，可能损失本金。</p>
+</div></main>
+<footer><div class="wrap">© 2026 港股打新榜 · <a href="/about/">关于本站</a> · <a href="/guide/">打新教程</a> · 数据更新：2026-11-27</div></footer>
+</body></html>

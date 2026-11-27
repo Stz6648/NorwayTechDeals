@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hkdaxinbang.com/sitemap.xml
