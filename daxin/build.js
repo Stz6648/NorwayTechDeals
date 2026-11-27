@@ -41,7 +41,7 @@ const lastChg = x => (x.lastPrice != null && x.offerPrice ? (x.lastPrice * (x.sp
 const chg = (v, d = 1) => (v == null ? '<span class="mut">—</span>' : `<span class="${v > 0.0005 ? 'up' : v < -0.0005 ? 'dn' : 'flat'}">${v > 0.0005 ? '▲' : v < -0.0005 ? '▼' : ''}${(Math.abs(v) * 100).toFixed(d)}%</span>`);
 const slug = x => `${x.code}-${(x.listDate || '').slice(0, 4)}`;
 const url = x => `/ipo/${slug(x)}/`;
-const sponsorsOf = x => x.sponsorsS && x.sponsorsS.length ? x.sponsorsS : x.sponsors || [];
+const sponsorsOf = x => (x.sponsorsS && x.sponsorsS.length ? x.sponsorsS : x.sponsors || []).filter(s => !/^(不適用|不适用)$/.test(s));
 const entryFee = x => x.entryFee || (x.boardLot && (x.priceMax || x.offerPrice) ? x.boardLot * (x.priceMax || x.offerPrice) * 1.010085 : null);
 const priceRange = x => (x.priceMin && x.priceMax && x.priceMin !== x.priceMax ? `${fmt(x.priceMin)} – ${fmt(x.priceMax)}` : fmt(x.priceMax || x.priceMin || x.offerPrice));
 

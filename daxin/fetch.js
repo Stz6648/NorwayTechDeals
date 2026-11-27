@@ -61,6 +61,18 @@ async function pdfText(url, maxPages = 999) {
 }
 
 // ---------- 1. New Listing Report ----------
+// Sponsors are separated by "/" or line breaks, but long English names also wrap onto a new line.
+function splitSponsors(v) {
+  const out = [];
+  for (const part of String(v || '').split(/\s*\/\s*/)) {
+    for (const line of part.split(/\r?\n/).map(s => s.trim()).filter(Boolean)) {
+      const prev = out[out.length - 1];
+      if (prev && (!/(公司|Limited|Ltd\.?|L\.?L\.?C\.?|Inc\.?|Company|Corporation|AG|plc|N\.A\.)$/i.test(prev) || /^[(（a-z]/.test(line))) out[out.length - 1] = prev + (/[\u4e00-\u9fff]$/.test(prev) ? '' : ' ') + line;
+      else out.push(line);
+    }
+  }
+  return out.filter(s => !/^(不適用|不适用|N\/?A|-)$/i.test(s));
+}
 const parseDMY = s => { const m = String(s).match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/); return m ? `${m[3]}-${m[2].padStart(2, '0')}-${m[1].padStart(2, '0')}` : null; };
 const toDate = v => excelDate(v) || parseDMY(v);
 
@@ -79,7 +91,7 @@ async function newListingReport(year) {
           code: String(r.B).trim().padStart(5, '0'), board,
           name: String(r.C || '').replace(/\s+/g, ' ').trim(),
           prospectusDate: toDate(r.D), listDate: toDate(r.E),
-          sponsors: String(r.F || '').split(/\s*\/\s*|\r?\n/).map(s => s.trim()).filter(Boolean),
+          sponsors: splitSponsors(r.F),
           auditor: String(r.G || '').replace(/\s+/g, ' ').trim(),
           fundsHK: 0, fundsIntl: 0, offerPrice: parseFloat(r.J) || null,
         };
